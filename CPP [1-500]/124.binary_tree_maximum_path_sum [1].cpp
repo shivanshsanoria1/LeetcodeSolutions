@@ -1,0 +1,34 @@
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    int max_path_sum = INT_MIN;
+    
+    int solve(TreeNode* curr)
+    {
+        if(curr==NULL)
+            return 0;
+        int left_max = solve(curr->left);
+        int right_max = solve(curr->right);
+        left_max = max(left_max,0); //if left_max is -ive then don't include it in the path
+        right_max = max(right_max,0); //if right_max is -ive then don't include it in the path
+        max_path_sum = max(max_path_sum, left_max + right_max + curr->val); //if curr is pivot
+        return curr->val + max(left_max,right_max); //if curr is not the pivot
+    }
+    
+    int maxPathSum(TreeNode* root) {
+        solve(root);
+        return max_path_sum;
+    }
+};
+//here pivot is the node where the resultant path changes direction
+//the resultant path can change direction atmost once
