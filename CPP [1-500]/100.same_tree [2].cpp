@@ -11,27 +11,26 @@
  */
 class Solution {
 public:
-    bool isSameTree(TreeNode* p, TreeNode* q) { // ITERATIVE
-        queue<TreeNode*> qu;
-        qu.push(p);
-        qu.push(q);
-        while(!qu.empty()) // while queue is not empty
+    // Iterative
+    bool isSameTree(TreeNode* p, TreeNode* q) { 
+        queue<pair<TreeNode*, TreeNode*>> qu;
+        qu.push({p, q});
+        while(!qu.empty())
         {
-            TreeNode* curr1=qu.front();
+            auto [curr1, curr2] = qu.front();
             qu.pop();
-            TreeNode* curr2=qu.front();
-            qu.pop();
-            if(curr1==NULL && curr2==NULL) // both are NULL
+
+            if(curr1 == NULL && curr2 == NULL)
                 continue;
-            if(curr1==NULL || curr2==NULL) // one is NULL and the other is not NULL
+            else if(curr1 == NULL || curr2 == NULL)
                 return false;
-            if(curr1->val != curr2->val) // both are not NULL but have unequal value
+            if(curr1->val != curr2->val)
                 return false;
-            qu.push(curr1->left); // push left child of curr1
-            qu.push(curr2->left); // push left child of curr2
-            qu.push(curr1->right); // push right child of curr1
-            qu.push(curr2->right); // push right child of curr2
+
+            qu.push({curr1->left, curr2->left});
+            qu.push({curr1->right, curr2->right});
         }
-        return true; // if queue becomes empty
+
+        return true;
     }
 };
