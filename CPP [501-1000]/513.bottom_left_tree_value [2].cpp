@@ -10,22 +10,28 @@
  * };
  */
 class Solution {
-public:
-    void dfs(TreeNode* curr, int level, int& maxLevel, int& ans){
+private:
+    void dfs(TreeNode* curr, int level, int& maxLevel, int& ans) {
         if(curr == NULL)
             return;
+
+        // new max level found
+        if(level > maxLevel) 
+        {
+            // update the max level
+            maxLevel = level;
+            // leftmost value in the new found level
+            ans = curr->val; 
+        }
+        
         dfs(curr->left, level + 1, maxLevel, ans);
         dfs(curr->right, level + 1, maxLevel, ans);
-        if(level > maxLevel) // new max level found
-        {
-            maxLevel = level; // update the max level
-            ans = curr->val; // leftmost value in the new found level
-        }
     }
-    
+
+public:
     int findBottomLeftValue(TreeNode* root) { // DFS
         int ans = -1;
-        int maxLevel = INT_MIN;
+        int maxLevel = -1;
         dfs(root, 0, maxLevel, ans);
         return ans;
     }

@@ -10,20 +10,24 @@
  * };
  */
 class Solution {
-public:
-    int ans=INT_MIN;
-    int diameterOfBinaryTree(TreeNode* root) { // T.C.=O(n)
-        diameter(root);
-        return ans-1; // to get no. of edges instead of no. of nodes
-    }
-    
-    int diameter(TreeNode *root)
-    {
-        if(root==NULL)
+private:
+    int diameter(TreeNode* curr, int& maxLength) {
+        if(curr == NULL)
             return 0;
-        int lheight=diameter(root->left);
-        int rheight=diameter(root->right);
-        ans = max(ans,lheight+rheight+1);
-        return 1+max(lheight,rheight);
+
+        int leftHeight = diameter(curr->left, maxLength);
+        int rightHeight = diameter(curr->right, maxLength);
+
+        maxLength = max(maxLength, 1 + leftHeight + rightHeight);
+
+        return 1 + max(leftHeight, rightHeight);
+    }
+
+public:
+    int diameterOfBinaryTree(TreeNode* root) { 
+        int maxLength = 0;
+        diameter(root, maxLength);
+        // to get num of edges instead of num of nodes
+        return maxLength - 1; 
     }
 };

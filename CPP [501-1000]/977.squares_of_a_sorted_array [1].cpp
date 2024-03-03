@@ -1,11 +1,10 @@
 class Solution {
 public:
-    vector<int> sortedSquares(vector<int>& nums) { // T.C.=O(nlogn)
-        int n=nums.size();
-        vector<int> ans(n);
-        for(int i=0; i<n; i++)
-            ans[i]=nums[i]*nums[i];
-        sort(ans.begin(),ans.end());
-        return ans;
+    // T.C.=O(n*logn)
+    vector<int> sortedSquares(vector<int>& nums) { 
+        for(int& num: nums)
+            num = num*num;
+        sort(nums.begin(), nums.end());
+        return nums;
     }
 };

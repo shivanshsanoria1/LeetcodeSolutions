@@ -11,32 +11,39 @@
  */
 class Solution {
 public:
+    // BFS
     bool isEvenOddTree(TreeNode* root) {
-        int level=-1;
-        TreeNode* curr=NULL;
         queue<TreeNode*> q;
         q.push(root);
+        int level = 0;
         while(!q.empty())
         {
-            int size= q.size();
-            level++;
-            int prev_val= (level % 2 == 0) ? INT_MIN : INT_MAX;
+            int size = q.size();
+            int prev_val = level % 2 == 0 ? 0 : INT_MAX;
             while(size--)
             {
-                curr= q.front();
+                TreeNode* curr = q.front();
                 q.pop();
-                if(level % 2 == (curr->val) % 2) //level and node value are of same parity
+
+                // level and node value are of same parity
+                if(level % 2 == (curr->val) % 2) 
                     return false;
-                if(level % 2 == 0 && prev_val >= curr->val) //even level and node values in non-increasing order
+                // even level and node values in non-increasing order
+                if(level % 2 == 0 && prev_val >= curr->val)
                     return false;
-                if(level % 2 != 0 && prev_val <= curr->val) //odd level and node values in non-decreasing order
+                // odd level and node values in non-decreasing order
+                if(level % 2 != 0 && prev_val <= curr->val) 
                     return false;
-                prev_val= curr->val; //update prev value
+
+                // update prev value
+                prev_val= curr->val; 
+                
                 if(curr->left != NULL)
                     q.push(curr->left);
                 if(curr->right != NULL)
                     q.push(curr->right);
             }
+            level++;
         }
         return true;
     }

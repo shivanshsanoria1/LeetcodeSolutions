@@ -1,21 +1,22 @@
 class Solution {
 public:
-    vector<int> sortedSquares(vector<int>& nums) { // T.C=O(n)
-        int n=nums.size(), left=0, right=n-1, k=n-1;
+    // T.C=O(n)
+    vector<int> sortedSquares(vector<int>& nums) { 
+        int n=nums.size();
+        int left = 0, right = n-1;
         vector<int> ans(n);
-        while(left<=right)
+        for(int i=n-1; i>=0; i--)
         {
-            if(abs(nums[left]) >= abs(nums[right]))
+            if(abs(nums[left]) > abs(nums[right]))
             {
-                ans[k] = nums[left]*nums[left];
+                ans[i] = nums[left]*nums[left];
                 left++;
             }
             else
             {
-                ans[k] = nums[right]*nums[right];
+                ans[i] = nums[right]*nums[right];
                 right--;
             }
-            k--;
         }
         return ans;
     }

@@ -10,20 +10,32 @@
  */
 class Solution {
 public:
-    ListNode* removeNthFromEnd(ListNode* head, int n) { //1 pass soln.
-        ListNode *dummy = new ListNode(-1); //create a dummy node
-        dummy->next= head; //connect dummy node to 1st node
-        ListNode *first=dummy, *second=head;
-        for(int i=1; i<=n; i++) //to generate a gap of n b/w first and second pointers
-            second= second->next;
-        while(second!=NULL)
+    // T.C.=O(n), S.C.=O(1)
+    // 1 pass soln.
+    ListNode* removeNthFromEnd(ListNode* head, int n) {
+        // create a dummy node
+        ListNode *dummy = new ListNode(-1);
+        // connect dummy node to 1st node
+        dummy->next = head; 
+
+        ListNode *first = dummy, *second = head;
+        // generate a gap of n b/w first and second pointers
+        for(int i=1; i<=n; i++) 
+            second = second->next;
+
+        while(second != NULL)
         {
-            first= first->next;
-            second= second->next;
+            first = first->next;
+            second = second->next;
         }
-        ListNode *del= first->next; //node to be deleted
-        first->next=first->next->next; //skip the node to be deleted
+        
+        // node to be deleted
+        ListNode *del = first->next; 
+        // skip the node to be deleted
+        first->next = first->next->next; 
+        // delete the nth node
         delete del;
+        
         return dummy->next;
     }
 };
