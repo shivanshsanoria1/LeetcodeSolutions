@@ -17,10 +17,10 @@ public:
 };
 /*
 # for odd digit num, last digit has +ive sign
-(+) (-) (+) (-) ... (+)
+  (+) (-) (+) (-) ... (+)
 # for even digit num, last digit have -ive sign
-(+) (-) (+) (-) ... (+) (-)
+  (+) (-) (+) (-) ... (+) (-)
 # here, in the solution we are assuming the last digit has +ive sign, ie, 
-total num of digits in the n is odd
+  total num of digits in the n is odd
 # if the total num of digits in the n is even, then we just flip the sign of the sum
 */
