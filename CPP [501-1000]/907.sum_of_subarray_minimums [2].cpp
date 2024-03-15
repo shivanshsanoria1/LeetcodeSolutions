@@ -42,8 +42,6 @@ public:
         }
         return ans;
     }
-    /*
-    # equality must be only checked in either left or right parts (not both)
-      to avoid the case of duplicate counting
-    */
 };
+// equality must be only checked in either left or right parts (not both)
+// to avoid the case of duplicate counting
