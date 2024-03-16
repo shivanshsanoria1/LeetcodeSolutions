@@ -1,25 +1,26 @@
 class LFUCache {
 private:
     unordered_map<int, vector<int>> mp1; // key -> {value, freq, time}
-    map<int, map<int, int>> mp2; // freq -> {time, key}
-    int time;
-    int capacity;
+    map<int, map<int, int>> mp2; // freq -> {time -> key}
+    int time = 0;
+    int capacity = 0;
 
 public:
     LFUCache(int capacity) {
-        time = 0;
         this->capacity = capacity;
-        mp1.clear();
-        mp2.clear();
+        this->time = 0;
+        this->mp1.clear();
+        this->mp2.clear();
     }
     
     int get(int key) {
         time++;
-
-        if(mp1.find(key) == mp1.end()) // key not found in map1
+        
+        // key not found in map1
+        if(mp1.find(key) == mp1.end()) 
             return -1;
         
-        /* ------ SEARCH ------ */
+        /* ---------- SEARCH ---------- */
 
         // old freq and time of 'key'
         int oldFreq = mp1[key][1];
@@ -41,9 +42,10 @@ public:
     void put(int key, int value) {
         time++;
 
-        /* ------ UPDATE ------ */
+        /* ---------- UPDATE ---------- */
 
-        if(mp1.find(key) != mp1.end()) // key found in map1
+        // key found in map1
+        if(mp1.find(key) != mp1.end()) 
         {
             // old freq and time of 'key'
             int oldFreq = mp1[key][1];
@@ -60,9 +62,10 @@ public:
             return;
         }
 
-        /* ------ DELETE ------ */
+        /* ---------- DELETE ---------- */
 
-        if(mp1.size() == capacity) // capcity is reached
+        // capcity is reached
+        if(mp1.size() == capacity) 
         {
             // iterator to min freq in map2
             auto itrFreq = mp2.begin();
@@ -81,7 +84,7 @@ public:
             mp1.erase(delKey);
         }
 
-        /* ------ INSERT ------ */
+        /* ---------- INSERT ---------- */
 
         // add a new entry with freq 1 and curr time in map2
         mp2[1][time] = key;
