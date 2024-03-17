@@ -5,7 +5,7 @@ private:
     typedef pair<int, int> PI;
 
     // userId -> { {time, tweetId} }
-    unordered_map<int, vector<PI>> userTweetsMap;
+    unordered_map<int, set<PI>> userTweetsMap;
     // userId -> { followerId }
     unordered_map<int, unordered_set<int>> userFollowersMap;
 
@@ -20,17 +20,15 @@ public:
     
     void postTweet(int userId, int tweetId) {
         // tweets of the curr user
-        vector<PI>& tweets = userTweetsMap[userId];
+        set<PI>& tweets = userTweetsMap[userId];
         // time of the curr tweet
         time++;
         // push the curr tweet in tweets
-        tweets.push_back({time, tweetId});
-        // sort the tweets in decreasing order of time
-        sort(tweets.begin(), tweets.end(), greater<PI>());
+        tweets.insert({time, tweetId});
         // only a max of 'FEED_SIZE' tweets are required to be stored
         // so remove the oldest tweet
         if(tweets.size() == FEED_SIZE + 1)
-            tweets.pop_back();
+            tweets.erase(tweets.begin());
     }
     
     vector<int> getNewsFeed(int userId) {
