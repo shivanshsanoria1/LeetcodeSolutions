@@ -1,7 +1,10 @@
 class Solution {
 public:
+    // T.C.=O(n*logn), S.C.=O(1)
     int findMinArrowShots(vector<vector<int>>& points) {
-        sort(points.begin(), points.end()); // sort intervals by start value
+        // sort intervals in increasing order of start value
+        sort(points.begin(), points.end()); 
+
         int count = 1;
         int prevEnd = points[0][1];
         for(int i=1; i<points.size(); i++)
@@ -14,10 +17,11 @@ public:
             else // intervals don't overlap
             {
                 count++;
-                prevEnd = currEnd; // update the prev end
+                // update the prev end
+                prevEnd = currEnd; 
             }
         }
         return count;
     }
 };
-// similar to Leetcode-435 non overlapping intervals
+// similar to [435. non overlapping intervals]

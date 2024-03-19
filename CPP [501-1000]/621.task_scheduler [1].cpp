@@ -1,24 +1,34 @@
 class Solution {
 public:
-    int leastInterval(vector<char>& tasks, int n) { // T.C.=O(26), S.C.=O(26)
+    // T.C.=O(t), S.C.=O(26)
+    // t: size of tasks[]
+    int leastInterval(vector<char>& tasks, int n) { 
         vector<int> freq(26, 0);
         for(char task: tasks)
             freq[task - 'A']++;
-        int maxFreq = 0; // max freq
-        int maxFreqCount = 0; // number of elements with max freq
+        int maxFreq = 0;
+        // number of elements with max freq
+        int maxFreqCount = 0; 
+
         for(int i=0; i<26; i++)
         {
-            if(freq[i] > maxFreq) // new max freq found
+            // new max freq found
+            if(freq[i] > maxFreq) 
             {
-                maxFreq = freq[i]; // update max freq
-                maxFreqCount = 1; // reset max freq count
+                // update max freq
+                maxFreq = freq[i];
+                // reset max freq count 
+                maxFreqCount = 1;
             }
-            else if(freq[i] == maxFreq) // another max freq found
-                maxFreqCount++; // increment max freq count
+            // another max freq found
+            else if(freq[i] == maxFreq) 
+                // increment max freq count
+                maxFreqCount++;
         }
-        int len = tasks.size();
+
         int time = maxFreq + n*(maxFreq - 1) + (maxFreqCount - 1);
-        return max(time, len);
+
+        return max(time, (int)tasks.size());
     }
 };
 /*
