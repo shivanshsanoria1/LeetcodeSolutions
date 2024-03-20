@@ -7,18 +7,22 @@ private:
 
 public:
     MyHashMap() {
-        mp.resize(1000001, -1); // vector of size 1,000,001 filled with -1's
+        // vector of size 1,000,001 filled with -1's
+        this->mp.resize(int(1e6 + 1), -1);
     }
     
-    void put(int key, int value) { // T.C.=O(1)
+    // T.C.=O(1)
+    void put(int key, int value) {
         mp[key] = value;
     }
     
-    int get(int key) { // T.C.=O(1)
+    // T.C.=O(1)
+    int get(int key) { 
         return mp[key];
     }
     
-    void remove(int key) { // T.C.=O(1)
+    // T.C.=O(1)
+    void remove(int key) { 
         mp[key] = -1;
     }
 };

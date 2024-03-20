@@ -1,46 +1,64 @@
 class MyHashMap {
 // Time inefficient and Space efficient soln.
 private:
-    vector<pair<int, int>> mp; // {key, value}
+    // {key, value}
+    vector<pair<int, int>> mp; 
 
 public:
     MyHashMap() {
-        mp.clear();
+        this->mp.clear();
     }
     
-    void put(int key, int value) { // T.C.=O(n)
+    // T.C.=O(n)
+    void put(int key, int value) { 
         for(int i=0; i<mp.size(); i++)
-            if(mp[i].first == key) // key found
+            // key found
+            if(mp[i].first == key) 
             {
-                mp[i].second = value; // update the value corresponding to the key
+                // update the value corresponding to the key
+                mp[i].second = value; 
                 return;
             }
+
         // key not found
-        mp.push_back({key, value}); // push the key-value pair in the map
+        // push the key-value pair in the map
+        mp.push_back({key, value}); 
     }
     
-    int get(int key) { // T.C.=O(n)
+    // T.C.=O(n)
+    int get(int key) {
         for(auto it: mp)
-            if(it.first == key) // key found
-                return it.second; // return the value corresponding to the key
-        return -1; // key not found
+            // key found
+            if(it.first == key)
+                return it.second;
+        
+        // key not found
+        return -1; 
     }
     
-    void remove(int key) { // T.C.=O(n)
+    // T.C.=O(n)
+    void remove(int key) { 
         int idx = -1;
+
         for(int i=0; i<mp.size(); i++)
-            if(mp[i].first == key) // key found
+            // key found
+            if(mp[i].first == key)
             {
                 idx = i;
                 break;
             }
-        if(idx == -1) // key not found in map
+
+        // key not found in map
+        if(idx == -1) 
             return;
-        // move each element after the index idx to their prev index
+
+        // move each element after the index idx to their prev index,
         // element at index idx is lost
         for(int i=idx; i<mp.size()-1; i++)
             mp[i] = mp[i+1];
-        mp.pop_back(); // pop the last element from map
+            
+        // pop the last element from map
+        mp.pop_back(); 
     }
 };
 

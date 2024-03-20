@@ -11,19 +11,27 @@
 class Solution {
 public:
     ListNode* mergeInBetween(ListNode* head1, int a, int b, ListNode* head2) {
-        ListNode *curr_a=head1, *curr_b=head1;
+        ListNode *currA = head1;
+        ListNode *currB = head1;
+        
         while(b--)
         {
             a--;
             if(a > 0)
-                curr_a=curr_a->next;
-            curr_b=curr_b->next;
+                currA = currA->next;
+            currB = currB->next;
         }
-        ListNode *end2=head2;
-        while(end2->next!=NULL) //'end2' pointer at the last node of LL2
-            end2=end2->next;
-        curr_a->next = head2; //join LL1 ath node the LL2 1st node
-        end2->next = curr_b->next; //join LL2 last node the LL1 (b+1)th node
+
+        // pointer to the last node of LL2
+        ListNode *end2 = head2;
+        while(end2->next != nullptr) 
+            end2 = end2->next;
+
+        // join the (a-1)th node of LL1 to 0th node LL2
+        currA->next = head2; 
+        // join the last node of LL2 to (b+1)th node of LL1
+        end2->next = currB->next;
+
         return head1;
     }
 };
