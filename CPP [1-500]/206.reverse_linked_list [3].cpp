@@ -10,15 +10,24 @@
  */
 class Solution {
 public:
-    ListNode* reverseList(ListNode* head) { // S.C.=O(1)
-        ListNode *prev = NULL, *curr = head, *temp = NULL;
-        while(curr != NULL)
+    // S.C.=O(1)
+    ListNode* reverseList(ListNode* head) { 
+        ListNode *prev = nullptr;
+        ListNode *curr = head;
+        ListNode *temp = nullptr;
+
+        while(curr != nullptr)
         {
-            temp = curr->next; // save the next node of curr
-            curr->next = prev; // connect curr->next to prev
-            prev = curr; // move prev forward
-            curr = temp; // move curr forward
+            // save the next node of curr
+            temp = curr->next;
+            // connect curr->next to prev
+            curr->next = prev;
+            // move prev forward 
+            prev = curr;
+            // move curr forward 
+            curr = temp;
         }
+        
         return prev;
     }
 };

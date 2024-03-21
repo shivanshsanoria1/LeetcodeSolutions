@@ -10,10 +10,12 @@
  */
 class Solution {
 public:
-    ListNode* reverseList(ListNode* head) { // S.C.=O(n)
-        ListNode* curr = head;
+    // S.C.=O(n)
+    ListNode* reverseList(ListNode* head) { 
         vector<int> vec;
-        while(curr != NULL)
+
+        ListNode* curr = head;
+        while(curr != nullptr)
         {
             vec.push_back(curr->val);
             curr = curr->next;
@@ -25,6 +27,7 @@ public:
             curr->val = vec[i];
             curr = curr->next;
         }
+        
         return head;
     }
 };

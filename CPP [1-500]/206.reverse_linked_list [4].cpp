@@ -10,12 +10,17 @@
  */
 class Solution {
 public:
-    ListNode* reverseList(ListNode* head) { // recursive
-        if(head == NULL || head->next == NULL)
+    // S.C.=O(n) 
+    // Recursive
+    ListNode* reverseList(ListNode* head) { 
+        if(head == nullptr || head->next == nullptr)
             return head;
+
         ListNode *newHead = reverseList(head->next);
+        
         head->next->next = head;
-        head->next = NULL;
+        head->next = nullptr;
+
         return newHead;
     }
 };

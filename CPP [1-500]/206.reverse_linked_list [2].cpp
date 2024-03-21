@@ -10,16 +10,27 @@
  */
 class Solution {
 public:
-    ListNode* reverseList(ListNode* head) { // S.C.=O(1)
-        ListNode *prev = NULL, *curr = head, *nextnode = head;
-        while(nextnode != NULL)
+    // S.C.=O(1)
+    ListNode* reverseList(ListNode* head) { 
+        ListNode *prev = nullptr;
+        ListNode *curr = head;
+        ListNode *nextnode = head;
+
+        while(nextnode != nullptr)
         {
-            nextnode = curr->next; // store the nextnode
-            curr->next = prev; // make the link from curr to prev
-            prev = curr; // move prev forward
-            curr = nextnode; // move curr forward
+            // store the nextnode
+            nextnode = curr->next;
+            // make the link from curr to prev 
+            curr->next = prev;
+            // move prev forward 
+            prev = curr;
+            // move curr forward
+            curr = nextnode; 
         }
-        head = prev; // prev is at last node so make it the new head
+
+        // prev is at last node so make it the new head
+        head = prev; 
+        
         return head;
     }
 };
