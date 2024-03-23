@@ -10,29 +10,39 @@
  */
 class Solution {
 public:
+    // S.C.=O(1)
     bool isPalindrome(ListNode* head) {
-        ListNode *slow=head, *fast=head;
-        while(fast!=NULL && fast->next!=NULL) //find middle node, ie, 'slow'
+        // find the middle node, ie, 'slow'
+        ListNode *slow = head;
+        ListNode *fast = head;
+        while(fast != nullptr && fast->next != nullptr) 
         {
-            slow= slow->next;
-            fast= fast->next->next;
+            slow = slow->next;
+            fast = fast->next->next;
         }
-        ListNode *prev=NULL, *temp=NULL;
-        while(slow!=NULL) //reverse LL from 'slow' to end
+
+        // reverse LL from 'slow' to end
+        ListNode *prev = nullptr;
+        ListNode *temp = nullptr;
+        while(slow != nullptr) 
         {
-            temp= slow->next;
-            slow->next= prev;
-            prev= slow;
-            slow= temp;
+            temp = slow->next;
+            slow->next = prev;
+            prev = slow;
+            slow = temp;
         }
-        ListNode *left=head, *right=prev;
-        while(right!=NULL) //check the non-reversed and the reversed halves
+
+        // check the non-reversed and the reversed halves
+        ListNode *left = head;
+        ListNode *right = prev;
+        while(right != nullptr) 
         {
             if(left->val != right->val)
                 return false;
-            left= left->next;
-            right= right->next;
+            left = left->next;
+            right = right->next;
         }
+
         return true;
     }
 };

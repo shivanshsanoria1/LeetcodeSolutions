@@ -9,52 +9,72 @@
  * };
  */
 class Solution {
-public:
-    ListNode* reverseList(ListNode* head)
-    {
-        ListNode *prev=NULL, *curr=head, *nextnode=head;
-        while(nextnode!=NULL)
+private:
+    ListNode* reverseLL(ListNode* head) {
+        ListNode *prev = nullptr;
+        ListNode *curr = head;
+        ListNode *temp = nullptr;
+
+        while(curr != nullptr)
         {
-            nextnode= curr->next;
-            curr->next= prev;
-            prev= curr;
-            curr= nextnode;
+            temp = curr->next;
+            curr->next = prev;
+            prev = curr;
+            curr = temp;
         }
-        head= prev;
+
+        head = prev;
         return head;    
     }
     
-    ListNode* middleNode(ListNode* head)
-    {
-        ListNode *slow=head, *fast=head;
-        while(fast!=NULL && fast->next!=NULL)
+    ListNode* getMiddleNode(ListNode* head) {
+        ListNode *slow = head;
+        ListNode *fast = head;
+        while(fast != nullptr && fast->next != nullptr)
         {
-            slow=slow->next;
-            fast=fast->next->next;
+            slow = slow->next;
+            fast = fast->next->next;
         }
         return slow;
     }
-    
-    bool isPalindrome(ListNode* head) { //S.C.=O(1)
-        ListNode* mid= middleNode(head); //find middle of the LL
-        ListNode *right= reverseList(mid); //reverse the LL from mid till the end
-        ListNode *left= head;
-        while(right!=NULL)
+
+public:
+    // S.C.=O(1)
+    bool isPalindrome(ListNode* head) { 
+        // find middle of the LL
+        ListNode *mid = getMiddleNode(head);
+        // reverse the LL from mid till the end
+        ListNode *right= reverseLL(mid); 
+
+        ListNode *left = head;
+        while(right != nullptr)
         {
             if(left->val != right->val)
                 return false;
-            left= left->next;
-            right= right->next;
+            left = left->next;
+            right = right->next;
         }
         return true;
     }
 };
-// 1->2->3->2->1 has mid=3   and   1->2->3->3->2->1 has mid=3 (second 3)
-//       |                                  |
-//       mid                                mid
-// 1->2->3->2->1 becomes 1->2->3<-2<-1   and   1->2->3->3->2->1 becomes 1->2->3->3<-2<-1
-//                             |                                                 |
-//                             NULL                                              NULL
-// 1->2->3<-2<-1   and   1->2->3->3<-2<-1
-// |     |     |         |        |     |
-// left  NULL  right     left     NULL  right
+/*
+
+# after mid is found (in case of even length LL, 2nd mid is considered)
+  1->2->3->2->1   and   1->2->3->3->2->1
+        ^                        ^
+        |                        |
+        mid                      mid
+
+# after reversal
+  1->2->3<-2<-1   and   1->2->3->3<-2<-1
+        |                        |
+        v                        v
+        NULL                     NULL
+
+# starting to check if LL is palindrome
+  1->2->3<-2<-1   and   1->2->3->3<-2<-1
+  ^     |     ^         ^        |     ^ 
+  |     v     |         |        v     |
+  left  NULL  right     left     NULL  right
+
+*/

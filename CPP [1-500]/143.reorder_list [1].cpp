@@ -10,26 +10,32 @@
  */
 class Solution {
 public:
-    void reorderList(ListNode* head) { //S.C.=O(n)
+    // S.C.=O(n)
+    void reorderList(ListNode* head) { 
         vector<int> vec;
-        ListNode *curr=head;
-        while(curr!=NULL)
+        ListNode *curr = head;
+        while(curr != nullptr)
         {
             vec.push_back(curr->val);
-            curr=curr->next;
+            curr = curr->next;
         }
-        curr=head;
-        int left=0, right=vec.size()-1;
+
+        curr = head;
+        int left = 0, right = vec.size()-1;
         while(left < right)
         {
-            curr->val=vec[left];
-            curr=curr->next;
-            curr->val=vec[right];
-            curr=curr->next;
+            curr->val = vec[left];
+            curr = curr->next;
+
+            curr->val = vec[right];
+            curr = curr->next;
+
             left++;
             right--;
         }
+
+        // mid element in odd length LL
         if(left == right)
-            curr->val=vec[left];
+            curr->val = vec[left];
     }
 };

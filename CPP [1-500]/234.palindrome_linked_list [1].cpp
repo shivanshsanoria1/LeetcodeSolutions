@@ -10,14 +10,16 @@
  */
 class Solution {
 public:
-    bool isPalindrome(ListNode* head) { //S.C.=O(n)
+    // S.C.=O(n)
+    bool isPalindrome(ListNode* head) { 
         vector<int> vec;
-        ListNode* curr=head;
-        while(curr!=NULL)
+        ListNode* curr = head;
+        while(curr != nullptr)
         {
             vec.push_back(curr->val);
-            curr=curr->next;
+            curr = curr->next;
         }
+        
         int n=vec.size();
         for(int i=0; i<n; i++)
             if(vec[i] != vec[n-1-i])
