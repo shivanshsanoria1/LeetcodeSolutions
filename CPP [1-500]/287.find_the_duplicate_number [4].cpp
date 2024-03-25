@@ -1,21 +1,31 @@
 class Solution {
 public:
-    int findDuplicate(vector<int>& nums) { // T.C.=O(n), S.C.=O(1)
-        int slow = nums[0], fast = nums[0];
-        while(true) // to detect the loop
+    // T.C.=O(n), S.C.=O(1)
+    int findDuplicate(vector<int>& nums) { 
+        int slow = nums[0];
+        int fast = nums[0];
+
+        // to detect the loop
+        while(true) 
         {
-            slow = nums[slow]; // move slow by 1 step
-            fast = nums[nums[fast]]; // move fast by 2 step
+            // move 'slow' by 1 step
+            slow = nums[slow]; 
+            // move 'fast' by 2 step
+            fast = nums[nums[fast]];
+
             if(slow == fast)
                 break;
         }
         
+        // find the starting of the loop
         int slow2 = nums[0];
-        while(slow != slow2) // to find the starting of the loop
+        while(slow != slow2) 
         {
-            slow = nums[slow]; // move slow by 1 step
-            slow2 = nums[slow2]; // move slow2 by 1 step
+            // move 'slow' and 'slow2 by 1 step
+            slow = nums[slow]; 
+            slow2 = nums[slow2];
         }
+        
         return slow;
     }
 };

@@ -1,6 +1,7 @@
 class Solution {
 public:
-    int findDuplicate(vector<int>& nums) { // T.C.=O(n), S.C.=O(n)
+    // T.C.=O(n), S.C.=O(n)
+    int findDuplicate(vector<int>& nums) { 
         unordered_set<int> s;
         for(int num: nums)
         {

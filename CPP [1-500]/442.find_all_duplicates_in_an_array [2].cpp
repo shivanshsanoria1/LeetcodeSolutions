@@ -1,13 +1,18 @@
 class Solution {
 public:
-    vector<int> findDuplicates(vector<int>& nums) { // T.C.=O(n) , S.C.=O(n)
+    // T.C.=O(n), S.C.=O(n)
+    vector<int> findDuplicates(vector<int>& nums) { 
         int n=nums.size();
-        vector<int> ans, count(n+1,0);
-        for(int i=0; i<n; i++)
-            count[nums[i]]++;
-        for(int i=1; i<n+1; i++)
-            if(count[i]>1)
+        vector<int> freq(n+1, 0);
+
+        for(int num: nums)
+            freq[num]++;
+
+        vector<int> ans;
+        for(int i=1; i<=n; i++)
+            if(freq[i] > 1)
                 ans.push_back(i);
+
         return ans;
     }
 };
