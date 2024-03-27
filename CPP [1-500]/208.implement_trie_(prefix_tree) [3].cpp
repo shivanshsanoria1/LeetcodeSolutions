@@ -4,7 +4,7 @@ private:
 
 public:
     Trie() {
-        dict.clear();
+        this->dict.clear();
     }
     
     void insert(string word) {
@@ -16,13 +16,19 @@ public:
     }
     
     bool startsWith(string prefix) {
-        auto it = dict.lower_bound(prefix); // find the first word >= prefix
-        if(it == dict.end()) // prefix not found in dict
+        // iterator to the first word >= prefix
+        auto itr = dict.lower_bound(prefix);
+
+        // prefix not found in dict
+        if(itr == dict.end()) 
             return false;
-        string word = *it;
-        for(int i=0; i<prefix.length(); i++) // compare prefix and word
+        
+        // compare prefix and word
+        string word = *itr;
+        for(int i=0; i<prefix.length(); i++) 
             if(prefix[i] != word[i])
                 return false;
+                
         return true;
     }
 };

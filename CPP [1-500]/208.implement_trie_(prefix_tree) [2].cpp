@@ -5,13 +5,14 @@ private:
 
 public:
     Trie() {
-        dict.clear();
-        prefixDict.clear();
+        this->dict.clear();
+        this->prefixDict.clear();
     }
     
     void insert(string word) {
         dict.insert(word);
-        // insert every prefix of 'word' in prefix dictionary set 
+
+        // insert every prefix of 'word' in prefix-dictionary
         string prefix = "";
         for(char ch: word)
         {

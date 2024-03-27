@@ -4,7 +4,7 @@ private:
 
 public:
     Trie() {
-        dict.clear();
+        this->dict.clear();
     }
     
     void insert(string word) {
@@ -18,8 +18,9 @@ public:
     bool startsWith(string prefix) {
         for(string word: dict)
         {
-            if(prefix.length() > word.length())
+            if(word.length() < prefix.length())
                 continue;
+
             int count = 0;
             for(int i=0; i<prefix.length(); i++)
             {
@@ -31,6 +32,7 @@ public:
             if(count == prefix.length())
                 return true;
         }
+        
         return false;
     }
 };
