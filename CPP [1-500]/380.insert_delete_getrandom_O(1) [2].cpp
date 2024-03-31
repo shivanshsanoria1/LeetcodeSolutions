@@ -1,35 +1,56 @@
 class RandomizedSet {
 private:
-    unordered_map<int, int> mp; // val -> index
-    vector<int> vec; // vec[index] = val
+    // val -> index
+    unordered_map<int, int> mp; 
+    // vec[index] = val
+    vector<int> vec; 
 
 public:
     RandomizedSet() {
-        mp.clear();
-        vec.clear();
+        // set the seed to be used by rand()
+        // to generate random nums
+        srand(time(0));
+
+        this->mp.clear();
+        this->vec.clear();
     }
     
+    // T.C.=O(1)
     bool insert(int val) {
-        if(mp.find(val) != mp.end()) // val found in map
+        // val found in map
+        if(mp.find(val) != mp.end()) 
             return false;
+
         vec.push_back(val);
-        mp[val] = vec.size() - 1; // val -> last index of vec
+        // val -> last index of vec
+        mp[val] = vec.size() - 1; 
+
         return true;
     }
     
+    // T.C.=O(1)
     bool remove(int val) {
-        auto it = mp.find(val); // iterator to 'val' in map
-        if(it == mp.end()) // val not found in map
+        // iterator to 'val' in map
+        auto itr = mp.find(val); 
+        // 'val' not found in map
+        if(itr == mp.end()) 
             return false;
-        int idx = it->second;
-        // swap the values at index idx and last index
+
+        // index of the value to be removed
+        int idx = itr->second;
+        // swap the values at index 'idx' and last index
         swap(vec[idx], vec[vec.size() - 1]);
-        mp[vec[idx]] = idx; // update the index of the swapped val in map
-        vec.pop_back(); // remove val from vec
-        mp.erase(it); // rmove val from map
+        // update the index of the swapped val in map
+        mp[vec[idx]] = idx;
+        // remove 'val' from vec
+        vec.pop_back();
+        // remove 'val' from map 
+        mp.erase(itr); 
+
         return true;
     }
     
+    // T.C.=O(1)
     int getRandom() {
         return vec[rand() % vec.size()];
     }
