@@ -1,14 +1,18 @@
 class Solution {
 public:
     int lengthOfLastWord(string s) {
-        int n=s.length(),c=0;
-        for(int i=n-1; i>=0; i--)
+        int wordLen = 0;
+
+        for(int i=s.length()-1; i>=0; i--)
         {
-            if(s[i]!=' ') // last word found
-                c++;
-            else if(c>0) // space before last word
-                return c;
+            // char of the last word
+            if(s[i] != ' ')
+                wordLen++;
+            // found the space before the last word
+            else if(wordLen > 0)
+                break;
         }
-        return c; // no space before last word
+
+        return wordLen;
     }
 };
