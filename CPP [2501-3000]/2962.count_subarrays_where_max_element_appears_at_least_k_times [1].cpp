@@ -40,6 +40,6 @@ public:
 # imagine the replacing the original array with a binary array
   where the max element is replaced by 1 and all other elements
   are replaced by 0
-# (num of subarrays with greater than or equal to K 1's)
-  = (total num of subarrays) - (num of subarrays with less than K 1's)
+# { num of subarrays with greater than or equal to K 1's } = 
+  { total num of subarrays } - { num of subarrays with less than K 1's }
 */
