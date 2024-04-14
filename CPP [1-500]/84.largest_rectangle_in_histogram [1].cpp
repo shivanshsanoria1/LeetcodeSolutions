@@ -1,45 +1,64 @@
 class Solution {
 public:
-    int largestRectangleArea(vector<int>& heights) { //T.C.=O(n) , S.C.=O(n) , using 1 stack and 2 vectors
+    // T.C.=O(n), S.C.=O(n)
+    // Monotonic (increasing / non-decreasing) stack + 2 vectors
+    int largestRectangleArea(vector<int>& heights) { 
         int n=heights.size();
-        vector<int> left(n); //left[i]: upto which index on the left the bars have height >= curr bar height, ie, height[i]
-        vector<int> right(n); //right[i]: upto which index on the right the bars have height >= curr bar height, ie, height[i]
-        stack<int> st; //maintain the stack in increasing order, stack contains index (not elements)
+        vector<int> left(n); 
+        vector<int> right(n); 
+        stack<int> st;
 
-        st.push(0); //push the first index into stack
-        left[0]=0; //for the 0th index- the leftmost index is itself
-        for(int i=1; i<n; i++) //find the left index limit of each element 
+        // push the first index into stack
+        st.push(0); 
+        // for the 0th index, the leftmost index is itself
+        left[0] = 0; 
+
+        // find the left index limit of each element 
+        for(int i=1; i<n; i++) 
         {
-            while(!st.empty() && heights[st.top()] >= heights[i]) //from the left side- remove the bars with height >= current bar
+            // from the left side, remove the bars with height >= curr bar, from stack
+            while(!st.empty() && heights[st.top()] >= heights[i]) 
                 st.pop();
-            if(st.empty())
-                left[i]=0; //leftmost index is the left limit
-            else
-                left[i]=st.top()+1;
+            
+            left[i] = !st.empty() ? st.top() + 1 : 0;
+
             st.push(i);
         }
-        while(!st.empty()) //clear the stack
+
+        // clear the stack
+        while(!st.empty()) 
             st.pop();
         
-        st.push(n-1); //push the last index into stack
-        right[n-1]=n-1; //for the last index- the rightmost index is itself
-        for(int i=n-2; i>=0; i--) //find the right index limit of each element 
+        // push the last index in stack
+        st.push(n-1); 
+        // for the last index, the rightmost index is itself
+        right[n-1] = n-1; 
+
+        // find the right index limit of each element 
+        for(int i=n-2; i>=0; i--) 
         {
-            while(!st.empty() && heights[st.top()] >= heights[i]) //from the right side- remove the bars with height >= current bar
+            // from the right side, remove the bars with height >= current bar, from stack
+            while(!st.empty() && heights[st.top()] >= heights[i]) 
                 st.pop();
-            if(st.empty())
-                right[i]=n-1; //rightmost index is the right limit
-            else
-                right[i]=st.top()-1;
+
+            right[i] = !st.empty() ? st.top() - 1 : n-1;
+
             st.push(i);
         }
         
-        int max_area=0;
+        int maxArea = 0;
+
         for(int i=0; i<n; i++)
         {
-            int curr_area= heights[i]*(right[i]-left[i]+1);
-            max_area= max(max_area,curr_area);
+            int width = right[i] - left[i] + 1;
+            maxArea = max(maxArea, heights[i] * width);
         }
-        return max_area;
+
+        return maxArea;
     }
 };
+/*
+# left[i]: upto which index on the left the bars have height >= curr bar height, ie, height[i]
+# right[i]: upto which index on the right the bars have height >= curr bar height, ie, height[i]
+# stack contains indexes (not elements)
+*/

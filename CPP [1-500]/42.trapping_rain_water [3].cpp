@@ -1,25 +1,41 @@
 class Solution {
 public:
-    int trap(vector<int>& height) { //T.C.=O(n) , S.C.=O(n) , using stack
+    // T.C.=O(n), S.C.=O(n) 
+    // Monotonic (decreasing) stack
+    int trap(vector<int>& height) { 
         int n=height.size();
-        if(n < 3) //atleast 3 bars are required to trap water
+        // atleast 3 bars are required to trap water
+        if(n < 3) 
             return 0;
-        int water_sum=0;
-        stack<int> st; //maintain stack in decreasing order, stores index instead of values
+
+        int waterSum = 0;
+        // stores index instead of values
+        stack<int> st; 
+
         for(int i=0; i<n; i++)
         {
-            while(!st.empty() && height[i] > height[st.top()]) //while curr bar height > stack.top bar height
+            // pop out the bars smaller than the curr-bar from stack
+            while(!st.empty() && height[st.top()] < height[i]) 
             {
-                int popped= st.top(); //'popped' is bounded by height[st.top()] on the left and height[i] on the right
+                // 'popped' is bounded by height[st.top()] on the left and height[i] on the right
+                int popped = st.top(); 
                 st.pop();
-                if(st.empty()) //no left bar exists
+
+                // no left bar exists
+                if(st.empty()) 
                     break;
-                int width= i-st.top()-1; //distance between curr element, ie, right bar and stack.top element, ie, left bar
-                int bounded_height= min(height[i], height[st.top()]) - height[popped];
-                water_sum += width*bounded_height;
+
+                // distance between curr element (right bar) and stack.top element (left bar)
+                int width = i - st.top() - 1; 
+                int boundedHeight = min(height[i], height[st.top()]) - height[popped];
+
+                waterSum += width * boundedHeight;
             }
+            
+            // add the curr bar in stack
             st.push(i);
         }
-        return water_sum;
+
+        return waterSum;
     }
 };

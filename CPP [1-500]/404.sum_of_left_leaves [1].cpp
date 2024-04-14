@@ -10,21 +10,21 @@
  * };
  */
 class Solution {
-public:
-    int ans=0;
-    
-    void solve(TreeNode* curr, TreeNode* parent)
-    {
-        if(curr==NULL)
-            return;
-        if(parent!=NULL && parent->left==curr && curr->left==NULL && curr->right==NULL) //left leaf node
-            ans += curr->val;
-        solve(curr->left,curr);
-        solve(curr->right,curr);
+private:
+    int dfs(TreeNode* curr, TreeNode* parent){
+        if(curr == nullptr)
+            return 0;
+
+        // curr is the left-child of its parent and is also a leaf node
+        if(parent != nullptr && parent->left == curr && curr->left == nullptr && curr->right == nullptr) 
+            return curr->val;
+
+        return dfs(curr->left, curr) + dfs(curr->right, curr);
     }
-    
+
+public:
     int sumOfLeftLeaves(TreeNode* root) {
-        solve(root,NULL);   
-        return ans;
+        // root node's parent node is NULL
+        return dfs(root, nullptr);
     }
 };
