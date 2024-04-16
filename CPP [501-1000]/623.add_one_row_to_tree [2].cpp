@@ -10,44 +10,69 @@
  * };
  */
 class Solution {
-public:
-    TreeNode* addOneRow(TreeNode* root, int val, int depth) { //BFS
-        if(depth==1)
-        {
-            TreeNode* newNode = new TreeNode(val); //create a new node
-            newNode->left = root; //make root the left child of new node
-            return newNode;
-        }
-        int curr_depth=0;
-        TreeNode *curr, *temp;
+private:
+    void bfs(TreeNode* root, int val, int depth){
         queue<TreeNode*> q;
         q.push(root);
+
         while(!q.empty())
         {
-            int size= q.size();
-            curr_depth++;
+            int size = q.size();
+            
             while(size--)
             {
-                curr=q.front();
+                TreeNode* curr = q.front();
                 q.pop();
-                if(curr_depth == depth-1)
-                {
-                    TreeNode* new_left_node = new TreeNode(val); //create new left node
-                    temp = curr->left; //temp points to the curr left child
-                    curr->left = new_left_node; //make new node the left child of curr
-                    new_left_node->left = temp; //make old left child the left child of new node
 
-                    TreeNode* new_right_node = new TreeNode(val); //create new right node
-                    temp = curr->right; //temp points to the curr right child
-                    curr->right = new_right_node; //make new node the right child of curr
-                    new_right_node->right = temp; //make old right child the right child of new node
+                if(depth == 0)
+                {
+                    TreeNode* temp = nullptr;
+            
+                    // create a new left node
+                    TreeNode* newLeftNode = new TreeNode(val); 
+                    // save the curr's left-child in temp
+                    temp = curr->left; 
+                    // make the new node the left-child of curr
+                    curr->left = newLeftNode; 
+                    // make the old left-child the left-child of new node
+                    newLeftNode->left = temp; 
+
+                    // create a new right node
+                    TreeNode* newRightNode = new TreeNode(val); 
+                    // save the curr's right-child in temp
+                    temp = curr->right; 
+                    // make the new node the right-child of curr
+                    curr->right = newRightNode; 
+                    // make the old right-child the right-child of new node
+                    newRightNode->right = temp; 
                 }
-                if(curr->left!=NULL)
+
+                if(curr->left != nullptr)
                     q.push(curr->left);
-                if(curr->right!=NULL)
+                if(curr->right != nullptr)
                     q.push(curr->right);
             }
+
+            if(depth == 0)
+                break;
+            depth--;
         }
+    }
+
+public:
+    TreeNode* addOneRow(TreeNode* root, int val, int depth) { 
+        if(depth == 1)
+        {
+            // create a new node
+            TreeNode* newNode = new TreeNode(val);
+            // make root the left child of new node
+            newNode->left = root;
+            
+            return newNode;
+        }
+
+        bfs(root, val, depth - 2);
+
         return root;
     }
 };

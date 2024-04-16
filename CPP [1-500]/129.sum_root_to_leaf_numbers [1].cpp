@@ -10,22 +10,21 @@
  * };
  */
 class Solution {
-public:
-    int total_sum=0;
-    
-    void pathSum(TreeNode *curr, int sum)
-    {
-        if(curr==NULL)
-            return;
+private:
+    int pathSum(TreeNode *curr, int sum){
+        if(curr == nullptr)
+            return 0;
+
         sum = sum*10 + curr->val;
-        if(curr->left==NULL && curr->right==NULL) //leaf node
-            total_sum += sum;
-        pathSum(curr->left,sum);
-        pathSum(curr->right,sum);
+        // leaf node
+        if(curr->left == nullptr && curr->right == nullptr) 
+            return sum;
+
+        return pathSum(curr->left, sum) + pathSum(curr->right, sum);
     }
-    
+
+public:
     int sumNumbers(TreeNode* root) {
-        pathSum(root,0);
-        return total_sum;
+        return pathSum(root, 0);
     }
 };
