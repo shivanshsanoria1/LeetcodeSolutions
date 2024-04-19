@@ -52,7 +52,7 @@ private:
         // mark the curr element as unvisited
         board[i][j] = ch; 
 
-        return up || down|| left || right;
+        return up || down || left || right;
     }
 
 public:

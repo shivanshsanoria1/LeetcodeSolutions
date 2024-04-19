@@ -1,49 +1,65 @@
 class Solution {
-public:
-    typedef pair<int ,int> PI;
+private:
+    typedef pair<int, int> PII;
     
-    void bfs(vector<vector<char>>& grid, vector<PI>& dirs, int x, int y){
-        int row=grid.size(), col=grid[0].size();
-        queue<pair<int,int>> q;
-        grid[x][y] = '2'; // mark curr element as visited
-        q.push({x, y}); // push curr index in queue
+    void bfs(vector<vector<char>>& grid, int startX, int startY){
+        int m=grid.size(), n=grid[0].size();
+
+        // up, down, left, right
+        vector<PII> dirs = {{-1,0}, {1,0}, {0,-1}, {0,1}};
+
+        queue<PII> q;
+        // mark the start cell as visited
+        grid[startX][startY] = '2';
+        q.push({startX, startY});
+
         while(!q.empty())
         {
-            x = q.front().first; // x index of front element in queue
-            y = q.front().second; // y index of front element in queue
+            auto [currX, currY] = q.front();
             q.pop();
-            for(auto dir: dirs) // move in 4 directions
+
+            for(auto [dx, dy]: dirs) 
             {
-                int x1 = x + dir.first;
-                int y1 = y + dir.second;
-                if(x1<0 || x1>=row || y1<0 || y1>=col) // index out of bounds
+                int x = currX + dx;
+                int y = currY + dy;
+                // index out of bounds
+                if(x<0 || x>=m || y<0 || y>=n) 
                     continue;
-                if(grid[x1][y1] == '1') // unvisited land 
-                {
-                    grid[x1][y1] = '2'; // mark the correct index element as visited
-                    q.push({x1, y1}); // push the correct index in queuue
-                }
+                // next cell is not unvisited-land
+                if(grid[x][y] != '1')
+                    continue; 
+                // mark the next cell as visited
+                grid[x][y] = '2'; 
+                q.push({x, y});
             }
         }
     }
-    
-    int numIslands(vector<vector<char>>& grid) {
-        int row=grid.size(), col=grid[0].size();
-        int islands = 0;
-        vector<PI> dirs = {{-1,0},{1,0},{0,-1},{0,1}}; // up, down, left, right
-        for(int i=0; i<row; i++)
-            for(int j=0; j<col; j++)
-                if(grid[i][j] == '1') // curr element is land
-                {
-                    bfs(grid, dirs, i, j);
-                    islands++;
-                }
-        // [not required]: restore the original grid
-        for(int i=0; i<row; i++)
-            for(int j=0; j<col; j++)
+
+    void restoreGrid(vector<vector<char>>& grid){
+        int m=grid.size(), n=grid[0].size();
+        for(int i=0; i<m; i++)
+            for(int j=0; j<n; j++)
                 if(grid[i][j] == '2')
                     grid[i][j] = '1';
+    }
+
+public:
+    // T.C.=O(m*n), S.C.=O(m*n)
+    int numIslands(vector<vector<char>>& grid) {
+        int m=grid.size(), n=grid[0].size();
+        int islands = 0;
+
+        for(int i=0; i<m; i++)
+            for(int j=0; j<n; j++)
+                if(grid[i][j] == '1')
+                {
+                    bfs(grid, i, j);
+                    islands++;
+                }
+
+        restoreGrid(grid);
+
         return islands;
     }
 };
-// 0: water, 1: unvisited land, 2: visited land
+// 0: water, 1: unvisited-land, 2: visited-land

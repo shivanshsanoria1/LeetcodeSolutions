@@ -1,34 +1,47 @@
 class Solution {
-public:
-    void dfs(vector<vector<char>>& grid, int x, int y){
-        int row=grid.size(), col=grid[0].size();
-        if(x<0 || x>=row || y<0 || y>=col) // index out of bounds
+private:
+    void dfs(vector<vector<char>>& grid, int i, int j){
+        int m=grid.size(), n=grid[0].size();
+        // index out of bounds
+        if(i<0 || i>=m || j<0 || j>=n) 
             return;
-        if(grid[x][y]=='0' || grid[x][y]=='2') // curr element is water or visited land
+        // curr element not unvisited-land
+        if(grid[i][j] != '1') 
             return;
-        grid[x][y] = '2'; // mark curr element, ie, unvisited land as visited
-        dfs(grid, x-1, y); // up
-        dfs(grid, x+1, y); // down
-        dfs(grid, x, y-1); // left
-        dfs(grid, x, y+1); // right
+        // mark the curr land as visited
+        grid[i][j] = '2'; 
+
+        dfs(grid, i-1, j); // up
+        dfs(grid, i+1, j); // down
+        dfs(grid, i, j-1); // left
+        dfs(grid, i, j+1); // right
     }
-    
+
+    void restoreGrid(vector<vector<char>>& grid){
+        int m=grid.size(), n=grid[0].size();
+        for(int i=0; i<m; i++)
+            for(int j=0; j<n; j++)
+                if(grid[i][j] == '2')
+                    grid[i][j] = '1';
+    }
+
+public:
+    // T.C.=O(m*n), S.C.=O(m*n)
     int numIslands(vector<vector<char>>& grid) {
-        int row=grid.size(), col=grid[0].size();
+        int m=grid.size(), n=grid[0].size();
         int islands = 0;
-        for(int i=0; i<row; i++)
-            for(int j=0; j<col; j++)
-                if(grid[i][j] == '1') // curr element is land
+
+        for(int i=0; i<m; i++)
+            for(int j=0; j<n; j++)
+                if(grid[i][j] == '1')
                 {
                     dfs(grid, i, j);
                     islands++;
                 }
-        // [not required]: restore the original grid
-        for(int i=0; i<row; i++)
-            for(int j=0; j<col; j++)
-                if(grid[i][j] == '2')
-                    grid[i][j] = '1';
+
+        restoreGrid(grid);
+
         return islands;
     }
 };
-// 0: water, 1: unvisited land, 2: visited land
+// 0: water, 1: unvisited-land, 2: visited-land
