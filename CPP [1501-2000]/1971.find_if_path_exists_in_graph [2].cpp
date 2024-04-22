@@ -1,29 +1,46 @@
 class Solution {
-public:
-    bool validPath(int n, vector<vector<int>>& edges, int source, int destination) { //iterative DFS, T.C.=O(n), S.C.=O(n)
-        vector<vector<int>> graph(n);
-        for(auto edge: edges) // build graph
+private:
+    bool bfs(vector<vector<int>>& graph, int src, int dest){
+        int n=graph.size();
+        vector<bool> visited(n, false);
+        queue<int> q;
+
+        visited[src] = true;
+        q.push(src);
+
+        while(!q.empty())
         {
-            graph[edge[0]].push_back(edge[1]); // edge from vertex a to b
-            graph[edge[1]].push_back(edge[0]); // edge from vertex b to a
-        }
-        vector<bool> visited(n, false); // initially all nodes are unvisited
-        stack<int> st;
-        visited[source] = true; // mark the source node as visited
-        st.push(source); // push the souce node in stack
-        while(!st.empty())
-        {
-            int curr = st.top();
-            st.pop();
-            if(curr == destination) // destination node found
+            int curr = q.front();
+            q.pop();
+
+            if(curr == dest)
                 return true;
-            for(auto ver: graph[curr]) // push the nodes conected curr node in the stack
-                if(visited[ver] == false) // push only the unvisited nodes in stack
-                {
-                    visited[ver] = true; // mark the nodes as visited before pushing them in stack
-                    st.push(ver);
-                }
+
+            for(int nei: graph[curr])
+            {
+                if(visited[nei])
+                    continue;
+
+                visited[nei] = true;
+                q.push(nei);
+            }
         }
+
         return false;
+    }
+
+public:
+    bool validPath(int n, vector<vector<int>>& edges, int source, int destination) { 
+        vector<vector<int>> graph(n);
+        // build graph
+        for(auto& edge: edges) 
+        {
+            int a = edge[0];
+            int b = edge[1];
+            graph[a].push_back(b); 
+            graph[b].push_back(a);
+        }
+
+        return bfs(graph, source, destination);
     }
 };

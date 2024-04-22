@@ -1,40 +1,51 @@
 class Solution {
-public:
-    bool bfs(vector<vector<int>>& graph, vector<int>& color, int v)
-    {
+private:
+    bool bfs(vector<vector<int>>& graph, vector<int>& color, int src){
         queue<int> q;
-        color[v] = 0; // vertex v is marked black color
-        q.push(v);
+
+        // source vertex is marked black color
+        color[src] = 0; 
+        q.push(src);
+
         while(!q.empty())
         {
             int size = q.size();
+
             while(size--)
             {
                 int curr = q.front();
                 q.pop();
+
                 int currColor = color[curr];
-                for(int ver: graph[curr])
+
+                for(int nei: graph[curr])
                 {
-                    if(color[ver] == -1) // uncolored vertex
-                    {
-                        color[ver] = !currColor; // fill opposite color to curr color
-                        q.push(ver);
-                    }
-                    else if(color[ver] == currColor) // same colored adjacent vertices
+                    // same colored adjacent vertices
+                    if(color[nei] == currColor) 
                         return false;
+                    // already colored vertex
+                    if(color[nei] != -1) 
+                        continue;
+                    // fill opposite color to curr color
+                    color[nei] = !currColor; 
+                    q.push(nei);
                 }
             }
         }
+
         return true;
     }
 
+public:
     bool isBipartite(vector<vector<int>>& graph) {
         int n=graph.size();
         vector<int> color(n, -1);
+
         for(int i=0; i<n; i++)
-            if(color[i] == -1) // run bfs() only for uncolored vertices
-                if(bfs(graph, color, i) == false)
-                    return false;
+            // run bfs() only for uncolored vertices
+            if(color[i] == -1 && !bfs(graph, color, i)) 
+                return false;
+
         return true;
     }
 };

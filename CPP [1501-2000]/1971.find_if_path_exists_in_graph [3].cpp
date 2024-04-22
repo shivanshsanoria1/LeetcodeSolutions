@@ -1,26 +1,59 @@
+// DSU by Rank (with Path-Compression)
+class DisjointSet{
+private:
+    vector<int> parent;
+    vector<int> rank;
+
+    int findUltimateParent(int curr){
+        if(curr == parent[curr])
+            return curr;
+        
+        parent[curr] = findUltimateParent(parent[curr]);
+        return parent[curr];
+    }
+
+public:
+    DisjointSet(int n){
+        // initially every node has rank 0
+        this->rank.resize(n, 0);
+
+        this->parent.resize(n);
+        // initially every node is the parent of itself
+        for(int i=0; i<n; i++)
+            this->parent[i] = i;
+    }
+
+    void unionByRank(int a, int b){
+        int ultPar_a = findUltimateParent(a);
+        int ultPar_b = findUltimateParent(b);
+
+        if(ultPar_a == ultPar_b)
+            return;
+            
+        if(rank[ultPar_a] < rank[ultPar_b])
+            parent[ultPar_a] = ultPar_b;
+        else if(rank[ultPar_a] > rank[ultPar_b])
+            parent[ultPar_b] = ultPar_a;
+        else
+        {
+            parent[ultPar_a] = ultPar_b;
+            rank[ultPar_b]++;
+        }
+    }
+
+    bool isConnected(int a, int b){
+        return findUltimateParent(a) == findUltimateParent(b);
+    }
+};
+
 class Solution {
 public:
-    bool dfs(vector<vector<int>>& graph, vector<bool>& visited, int curr, int destination)
-    {
-        if(curr == destination) // found destination node
-            return true;
-        if(visited[curr] == true) // already visited node found and it is not the destination node
-            return false;
-        visited[curr] = true; // mark the curr node as visited
-        for(auto ver: graph[curr]) // check for all the nodes connected to the curr node
-            if(dfs(graph, visited, ver, destination) == true)
-                return true;
-        return false;
-    }
-    
-    bool validPath(int n, vector<vector<int>>& edges, int source, int destination) { //DFS, T.C.=O(n), S.C.=O(n)
-        vector<vector<int>> graph(n);
-        for(auto edge: edges) // build graph
-        {
-            graph[edge[0]].push_back(edge[1]); // edge from vertex a to b
-            graph[edge[1]].push_back(edge[0]); // edge from vertex b to a
-        }
-        vector<bool> visited(n, false); // initially all nodes are unvisited
-        return dfs(graph, visited, source, destination);
+    bool validPath(int n, vector<vector<int>>& edges, int source, int destination) {
+        DisjointSet ds(n);
+
+        for(vector<int>& edge: edges)
+            ds.unionByRank(edge[0], edge[1]);
+        
+        return ds.isConnected(source, destination);
     }
 };
