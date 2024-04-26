@@ -1,57 +1,76 @@
 class Solution {
-public:
+private:
     // returns the height of tree with 'src' as root node
-    int bfs(vector<vector<int>>& graph, int n, int minHeight, int src){
-        queue<int> q;
+    int bfs(vector<vector<int>>& graph, int minHeight, int src){
+        int n=graph.size();
         vector<bool> visited(n, false);
+        queue<int> q;
+        int level = -1;
+
         visited[src] = true;
         q.push(src);
-        int level = 0;
+
         while(!q.empty())
         {
             int size = q.size();
             level++;
-            // curr height exceeded the min height found so far,
-            // so no need to continue the bfs()
+            // curr height exceedes the min height found so far,
+            // so no need to continue bfs()
             if(level > minHeight)
-                return level;
+                break;
+
             while(size--)
             {
                 int curr = q.front();
                 q.pop();
+
                 for(int nei: graph[curr])
                 {
                     if(visited[nei])
                         continue;
+
                     visited[nei] = true;
                     q.push(nei);
                 }
             }
         }
+
         return level;
     }
 
+public:
+    // T.C.=O(n^2)
     vector<int> findMinHeightTrees(int n, vector<vector<int>>& edges) {
         vector<vector<int>> graph(n);
-        for(auto edge: edges) // build graph
+        // build graph
+        for(vector<int>& edge: edges) 
         {
-            graph[edge[0]].push_back(edge[1]);
-            graph[edge[1]].push_back(edge[0]);
+            int a = edge[0];
+            int b = edge[1];
+            graph[a].push_back(b);
+            graph[b].push_back(a);
         }
+
         vector<int> ans;
-        int minHeight = n;
+        int minHeight = n-1;
+
         for(int i=0; i<n; i++)
         {
-            int height = bfs(graph, n, minHeight, i);
-            if(height < minHeight) // new min height found
+            int height = bfs(graph, minHeight, i);
+
+            // new min height found
+            if(height < minHeight) 
             {
-                minHeight = height; // update min height
+                minHeight = height;
                 ans.clear();
                 ans.push_back(i);
             }
-            else if(height == minHeight) // another min height found
+            // another min height found
+            else if(height == minHeight) 
                 ans.push_back(i);
         }
+
         return ans;
     }
 };
+// T.C.=O(V*(V + E)) = O(n*(n + n-1)) = O(n^2)

@@ -1,14 +1,16 @@
 class Solution {
-public:
+private:
     // dfs on graph while skipping the edge a--b
-    void dfs(vector<vector<int>>& graph, vector<bool>& visited, int a, int b, int v){
-        if(visited[v])
+    void dfs(vector<vector<int>>& graph, vector<bool>& visited, int a, int b, int curr){
+        if(visited[curr])
             return;
-        visited[v] = true;
-        for(int nei: graph[v])
+
+        visited[curr] = true;
+
+        for(int nei: graph[curr])
         {
             // skip the edge a--b
-            if((v == a && nei == b) || (v == b && nei == a))
+            if((curr == a && nei == b) || (curr == b && nei == a))
                 continue;
             dfs(graph, visited, a, b, nei);
         }
@@ -18,23 +20,34 @@ public:
     bool isGraphConnected(vector<vector<int>>& graph, int a, int b){
         int n=graph.size();
         vector<bool> visited(n, false);
-        dfs(graph, visited, a, b, 0); // start dfs() at vertex 0
+
+        // start dfs() at vertex 0
+        dfs(graph, visited, a, b, 0); 
+
         for(int i=0; i<n; i++)
-            if(!visited[i]) // unvisited vertex left
+            // unvisited vertex found
+            if(!visited[i]) 
                 return false;
+
         return true;
     }
+
+public:
+    // T.C.=O(E*(V+E))
     vector<vector<int>> criticalConnections(int n, vector<vector<int>>& connections) {
+        // build graph
         vector<vector<int>> graph(n);
-        for(auto& edge: connections) // build graph
+        for(vector<int>& edge: connections) 
         {
             int a = edge[0];
             int b = edge[1];
             graph[a].push_back(b);
             graph[b].push_back(a);
         }
+
         vector<vector<int>> ans;
-        for(auto& edge: connections)
+
+        for(vector<int>& edge: connections)
         {
             int a = edge[0];
             int b = edge[1];
@@ -42,6 +55,7 @@ public:
             if(!isGraphConnected(graph, a, b))
                 ans.push_back({a, b});
         }
+
         return ans;
     }
 };
