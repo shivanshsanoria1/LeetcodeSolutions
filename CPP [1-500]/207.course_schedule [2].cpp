@@ -1,36 +1,58 @@
 class Solution {
-public:
-    bool isCyclic(vector<vector<int>>& graph, vector<bool>& visited, vector<bool>& pathVisited, int curr){
-        visited[curr] = true;
-        pathVisited[curr] = true;
-        for(int nei: graph[curr])
+private:
+    // Kahn's algo.
+    // returns true if the topo-sort does not contain all the nodes
+    // ie, if the graph has a cycle
+    bool isCyclic(vector<vector<int>>& graph, vector<int>& indegree){
+        int n=indegree.size();
+        queue<int> q;
+
+        for(int i=0; i<n; i++)
+            if(indegree[i] == 0)
+                q.push(i);
+        
+        int topoSortCount = 0;
+        
+        while(!q.empty())
         {
-            // neighbour has been path visited, ie, cycle found
-            if(pathVisited[nei]) 
-                return true;
-            // for unvisited neighbours continue the recursion, if cycle is found then return true
-            if(!visited[nei] && isCyclic(graph, visited, pathVisited, nei))
-                return true;
+            int curr = q.front();
+            q.pop();
+            topoSortCount++;
+
+            for(int nei: graph[curr])
+            {
+                indegree[nei]--;
+                if(indegree[nei] == 0)
+                    q.push(nei);
+            }
         }
-        // unmark the curr vertex from path visited
-        pathVisited[curr] = false;
-        return false; // cycle not found
+
+        return topoSortCount != n;
     }
 
+public:
+    // T.C.=O(n + p)
+    // n: numCourses, p: size of prerequisites[]
     bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
-        int n=numCourses;
+        int n = numCourses;
+        // build-graph and compute the indegree of each node
         vector<vector<int>> graph(n);
-        for(auto& it: prerequisites) // build the graph
-            graph[it[0]].push_back(it[1]);
-        // keeps track of visited vertices in the entire graph
-        vector<bool> visited(n, false);
-        // keeps track of visited vertices in the curr path
-        vector<bool> pathVisited(n, false);
-        for(int i=0; i<n; i++)
-            if(!visited[i] && isCyclic(graph, visited, pathVisited, i))
-                return false;
-        return true;
+        vector<int> indegree(n, 0);
+        for(vector<int>& pre: prerequisites) 
+        {
+            int a = pre[0];
+            int b = pre[1];
+            graph[a].push_back(b);
+            indegree[b]++;
+        }
+
+        return !isCyclic(graph, indegree);
     }
 };
-// a -> b indicates 'a' must be taken before 'b'
-// just find if the graph has a cycle or not
+/*
+# A -> B indicates: 
+  # A is dependent on B
+  # B is a prerequisite of A
+  # To complete A we need to complete B first
+# core-idea: just find if the graph has a cycle or not
+*/

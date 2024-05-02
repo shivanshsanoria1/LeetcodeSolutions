@@ -1,18 +1,21 @@
 class Solution {
 public:
-    int findMaxK(vector<int>& nums) { // T.C.=O(n), S.C.=O(2*1001)
-        vector<bool> pos(1001, false);
-        vector<bool> neg(1001, false);
+    // T.C.=O(n), S.C.=O(n)
+    int findMaxK(vector<int>& nums) { 
+        // to store -ive nums
+        unordered_set<int> neg; 
+
         for(int num: nums)
-        {
-            if(num > 0)
-                pos[num] = true;
-            else
-                neg[-num] = true;
-        }
-        for(int i=1000; i>=1; i--)
-            if(pos[i] && neg[i])
-                return i;
-        return -1;
+            if(num < 0)
+                neg.insert(num);
+
+        int maxPosNum = -1;
+
+        for(int num: nums)
+            // curr +ive num's corresponding -ive num is found in set
+            if(num > 0 && neg.find(-num) != neg.end())
+                maxPosNum = max(maxPosNum, num);
+
+        return maxPosNum;
     }
 };

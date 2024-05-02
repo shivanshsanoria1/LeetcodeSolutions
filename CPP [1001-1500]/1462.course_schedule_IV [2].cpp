@@ -1,47 +1,67 @@
 class Solution {
-public:
-    vector<bool> dfs(vector<vector<int>> &graph, vector<vector<bool>> &grid, int curr)
-    {
-        if(grid[curr][curr]) // already visited vertex
-            return grid[curr]; // return the prerequisites of curr
-        grid[curr][curr] = true; // mark the curr vertex as visited
-        for(int ver: graph[curr]) // direct prerequisites of curr
+private:
+    void dfs(vector<vector<int>>& graph, vector<unordered_set<int>>& reachable, int curr){
+        // already visited node
+        if(reachable[curr].find(curr) != reachable[curr].end())
+            return;
+
+        // mark the curr node as visited
+        reachable[curr].insert(curr); 
+
+        for(int nei: graph[curr]) 
         {
-            vector<bool> temp = dfs(graph, grid, ver);
-            for(int j=0; j<temp.size(); j++)
-                if(grid[ver][j]) // mark the indirect prerequisites of curr
-                    grid[curr][j] = true;
+            dfs(graph, reachable, nei);
+            // all the nodes reachable from 'nei' 
+            // are also reachable from 'curr' 
+            for(int r: reachable[nei])
+                reachable[curr].insert(r);
         }
-        return grid[curr]; // return the prerequisites of curr
     }
 
+public:
     vector<bool> checkIfPrerequisite(int numCourses, vector<vector<int>>& prerequisites, vector<vector<int>>& queries) {
-        vector<vector<int>> graph(numCourses);
-        for(auto prerequisite: prerequisites) // build the graph
+        int n = numCourses;
+        // build-graph
+        vector<vector<int>> graph(n);
+        for(vector<int>& pre: prerequisites)
         {
-            int a = prerequisite[0];
-            int b = prerequisite[1];
-            graph[b].push_back(a); // b -> a
+            int a = pre[0];
+            int b = pre[1];
+            graph[b].push_back(a);
         }
 
-        // numCourses * numCourses grid filled with false's
-        vector<vector<bool>> grid(numCourses, vector<bool>(numCourses, false));
-        for(int i=0; i<numCourses; i++)
-            dfs(graph, grid, i);
+        vector<unordered_set<int>> reachable(n);
+
+        for(int i=0; i<n; i++)
+            dfs(graph, reachable, i);
 
         vector<bool> ans;
-        for(auto query: queries)
+
+        for(vector<int>& query: queries)
         {
             int a = query[0];
             int b = query[1];
             // a is prerequisite of b, ie, a <- b
-            ans.push_back(grid[b][a] ? true : false);
+            // starting at b, is it possible to reach a
+            ans.push_back(reachable[b].find(a) != reachable[b].end());
         }
+
         return ans;
     }
 };
 /*
-# edge (a,b) is represented as a <- b indicates a is the prerequisite of b
-# grid[i][j] indicates i needs j as prerequisite, ie, i -> j
-# diagonal cells in grid[][], ie, grid[v][v] are used as visited set for vertex v
+# A -> B indicates: 
+  # A is dependent on B
+  # B is a prerequisite of A
+  # To complete A we need to complete B first
+
+# reachable[i] indicates: 
+  # all the nodes reachable from i
+  # all the prerequisites of i
+
+# reachable[i] can have i itself, since
+  # i is always reachable from itself
+  # i is a prerequisite of itself
+  # reachable[i] having i itself is 
+    used as a visited set here
 */
