@@ -1,77 +1,34 @@
-class SegTree{
-private:
-    vector<int> seg; //vector to hold values of segment tree
-    
-public:
-    SegTree(){ //default constructor
-        
-    }
-    
-    SegTree(vector<int>& nums){
-        int n=nums.size();
-        seg.resize(4*n,0); //max size of segment tree for n elements is 4n
-        buildTree(nums,0,0,n-1); //for root node i=0, left=0, right=n-1
-    }
-    
-    void buildTree(vector<int>& nums, int i, int left, int right){
-        if(left == right)
-        {
-            seg[i]= nums[left];
-            return;
-        }
-        int mid=(left+right)/2;
-        buildTree(nums,2*i+1,left,mid); //left segment from 'left' to 'mid'
-        buildTree(nums,2*i+2,mid+1,right); //right segment from 'mid+1' to 'right'
-        seg[i]= seg[2*i+1] + seg[2*i+2];
-    }
-    
-    void updateTree(int i, int left, int right, int index, int val){ //update 'val' at 'index'
-        if(index < left || index > right) //no overlap
-            return;
-        if(left == right && left == index) //total overlap
-        {
-            seg[i]= val;
-            return;
-        }
-        //partial overlap
-        int mid= (left+right)/2;
-        updateTree(2*i+1,left,mid,index,val); //left segment from 'left' to 'mid'
-        updateTree(2*i+2,mid+1,right,index,val); //right segment from 'mid+1' to 'right'
-        seg[i]= seg[2*i+1] + seg[2*i+2];
-    }
-    
-    int queryTree(int i, int left, int right, int qleft, int qright)
-    {
-        if(qleft <= left && qright >= right) //total overlap, ie, [qleft,qright] is contained within [left,right]
-            return seg[i];
-        if(qright < left || qleft > right) //no overlap
-            return 0;
-        //partial overlap
-        int mid= (left+right)/2;
-        int left_sum= queryTree(2*i+1,left,mid,qleft,qright); //left segment from 'left' to 'mid'
-        int right_sum= queryTree(2*i+2,mid+1,right,qleft,qright); //right segment from 'mid+1' to 'right'
-        return left_sum + right_sum;
-    }
-};
-
-
 class NumArray {
 private:
-    SegTree st;
-    int n; //size of input vector
+    vector<int> nums;
+    vector<int> prefixSum;
     
 public:
-    NumArray(vector<int>& nums) { //T.C.=O(n)
-        this->st= SegTree(nums);
-        this->n= nums.size();
+    NumArray(vector<int>& nums) {
+        this->nums = nums;
+        int n = nums.size();
+
+        prefixSum.resize(n);
+
+        prefixSum[0] = nums[0];
+        for(int i=1; i<n; i++)
+            prefixSum[i] = prefixSum[i-1] + nums[i];
     }
     
-    void update(int index, int val) { //T.C.=O(logn)
-        st.updateTree(0,0,n-1,index,val);
+    // T.C.=O(n)
+    void update(int index, int val) { 
+        // difference between new value and old value
+        int diff = val - nums[index]; 
+        // update the value in the original array
+        nums[index] = val; 
+        // update the prefix sum for indicies 'index' to 'n-1'
+        for(int i=index; i<nums.size(); i++) 
+            prefixSum[i] += diff;
     }
     
-    int sumRange(int qleft, int qright) { //T.C.=O(logn)
-        return st.queryTree(0,0,n-1,qleft,qright);
+    // T.C.=O(1)
+    int sumRange(int left, int right) { 
+        return left == 0 ? prefixSum[right] : prefixSum[right] - prefixSum[left-1];
     }
 };
 

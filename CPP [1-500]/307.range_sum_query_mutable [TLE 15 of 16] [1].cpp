@@ -1,5 +1,4 @@
 class NumArray {
-// S.C.=O(1)
 private:
     vector<int> nums;
     
@@ -8,11 +7,13 @@ public:
         this->nums = nums;
     }
     
-    void update(int index, int val) { // T.C.=O(1)
+    // T.C.=O(1)
+    void update(int index, int val) { 
         nums[index] = val;
     }
     
-    int sumRange(int left, int right) { // T.C.=O(n)
+    // T.C.=O(n)
+    int sumRange(int left, int right) { 
         int sum = 0;
         for(int i=left; i<=right; i++)
             sum += nums[i];

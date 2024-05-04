@@ -7,7 +7,8 @@ public:
         this->arr = arr;
     }
     
-    int query(int left, int right, int value) { // T.C.=O(n)
+    // T.C.=O(n)
+    int query(int left, int right, int value) { 
         int freq = 0;
         for(int i=left; i<=right; i++)
             if(arr[i] == value)

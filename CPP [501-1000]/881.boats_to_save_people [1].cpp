@@ -1,18 +1,24 @@
 class Solution {
 public:
-    int numRescueBoats(vector<int>& people, int limit) { // Greedy, T.C.=O(n*logn), S.C.=O(1)
-        sort(people.begin(), people.end()); 
-        int count = 0;
+    // T.C.=O(n*logn), S.C.=O(1)
+    // Greedy
+    int numRescueBoats(vector<int>& people, int limit) { 
+        sort(people.begin(), people.end());
+
         int left = 0, right = people.size() - 1;
+        int count = 0;
+
         while(left < right)
         {
-            count++;
             // both left and right person can fit in boat
             if(people[right] + people[left] <= limit)
                 left++;
-            // only the right person can fit in boat
+            // else, only the right person can fit in boat
             right--;
+
+            count++;
         }
-        return left == right ? count + 1 : count;
+        
+        return left == right ? 1 + count : count;
     }
 };
