@@ -8,11 +8,15 @@
  */
 class Solution {
 public:
+    // T.C.=O(1)
     void deleteNode(ListNode* node) {
-        ListNode *del;
-        node->val= node->next->val; //copy the value of next node to the given node
-        del= node->next; //delete the next node of the given node
-        node->next= node->next->next; //skip the next node of given node
-        delete del;
+        // next node of the curr node
+        ListNode* nextNode = node->next;
+        // copy the next node's val to curr node
+        node->val = nextNode->val;
+        // connect curr node to next node's next
+        node->next = nextNode->next;
+        // delete the next node
+        delete nextNode;
     }
 };
