@@ -11,17 +11,21 @@
  */
 class Solution {
 public:
-    TreeNode* searchBST(TreeNode* root, int key) { //Iterative
-        TreeNode *curr=root;
-        while(curr!=NULL)
+    // T.C.=O(n), S.C.=O(1)
+    // Iterative
+    TreeNode* searchBST(TreeNode* root, int key) { 
+        TreeNode* curr = root;
+
+        while(curr != nullptr)
         {
             if(key == curr->val)
                 return curr;
             else if(key < curr->val)
-                curr=curr->left;
-            else
-                curr=curr->right;
+                curr = curr->left;
+            else // key > curr->val
+                curr = curr->right;
         }
+
         return curr;
     }
 };

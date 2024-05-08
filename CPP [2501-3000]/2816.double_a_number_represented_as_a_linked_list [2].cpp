@@ -11,23 +11,31 @@
 class Solution {
 private:
     ListNode* reverseLL(ListNode* head) {
-        ListNode *prev = NULL, *curr = head, *temp = NULL;
-        while(curr != NULL)
+        ListNode* prev = nullptr;
+        ListNode* curr = head;
+        ListNode* temp = nullptr;
+
+        while(curr != nullptr)
         {
             temp = curr->next; 
             curr->next = prev;
             prev = curr; 
             curr = temp;
         }
+
         return prev;
     }
 
 public:
-    ListNode* doubleIt(ListNode* head) { // S.C.=O(1)
+    // T.C.=O(n), S.C.=O(1)
+    ListNode* doubleIt(ListNode* head) { 
         head = reverseLL(head);
-        ListNode *curr = head, *prev = NULL;
+
+        ListNode* prev = nullptr;
+        ListNode* curr = head;
         int carry = 0;
-        while(curr != NULL)
+
+        while(curr != nullptr)
         {
             
             int newVal = curr->val * 2 % 10 + carry;
@@ -36,12 +44,14 @@ public:
             prev = curr;
             curr = curr->next;
         }
+
         if(carry == 1)
         {
-            ListNode *newNode = new ListNode(1);
+            ListNode* newNode = new ListNode(1);
             prev->next = newNode;
         }
+
         return reverseLL(head);
     }
 };
-// code used from [206. Reverse Linked List]
+// prerequisite: [206. Reverse Linked List]

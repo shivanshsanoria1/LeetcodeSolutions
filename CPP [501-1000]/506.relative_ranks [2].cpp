@@ -2,20 +2,20 @@ class Solution {
 public:
     // T.C.=O(n*logn), S.C.=O(n)
     vector<string> findRelativeRanks(vector<int>& score) {
-        // max-heap { score, index }
-        priority_queue<pair<int, int>> pq;
+        // { score, index }
+        vector<pair<int, int>> ranks;
 
         int n=score.size();
         for(int i=0; i<n; i++)
-            pq.push({score[i], i});
+            ranks.push_back({score[i], i});
+        
+        // sort in decreasing order of scores
+        sort(ranks.begin(), ranks.end(), greater<pair<int, int>>());
 
         vector<string> ans(n, "");
         int pos = 1; // position
-        while(!pq.empty())
+        for(auto [score, idx]: ranks)
         {
-            auto [score, idx] = pq.top();
-            pq.pop();
-
             if(pos == 1)
                 ans[idx] = "Gold Medal";
             else if(pos == 2)

@@ -11,14 +11,20 @@
  */
 class Solution {
 public:
-    TreeNode* searchBST(TreeNode* root, int key) { //Recursive
-        if(root==NULL)
-            return NULL;
-        if(key == root->val) //found the key
-            return root;
-        else if(key < root->val) //search in left-subtree
-            return searchBST(root->left,key);
-        else //search in right-subtree
-            return searchBST(root->right,key);
+    // T.C.=O(n), S.C.=O(n)
+    // Recursive
+    TreeNode* searchBST(TreeNode* root, int key) { 
+        if(root == nullptr)
+            return nullptr;
+        
+        // search in left-subtree
+        if(key < root->val) 
+            return searchBST(root->left, key);
+        // search in right-subtree
+        else if(key > root->val)
+            return searchBST(root->right, key);
+        
+        // node with value 'key', or null if not found
+        return root;
     }
 };

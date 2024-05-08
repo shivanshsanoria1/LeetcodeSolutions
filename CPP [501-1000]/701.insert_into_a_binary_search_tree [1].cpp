@@ -11,32 +11,20 @@
  */
 class Solution {
 public:
-    TreeNode* insertIntoBST(TreeNode* root, int key) { // ITERATIVE
-        TreeNode *newnode = new TreeNode(key);
-        if(root==NULL) // empty tree
-            return newnode;
-        TreeNode *curr=root;
-        while(1)
+    // T.C.=O(n), S.C.=O(n)
+    // Recursive
+    TreeNode* insertIntoBST(TreeNode* root, int key) {
+        if(root == nullptr)
         {
-            if(key < curr->val)
-            {
-                if(curr->left==NULL) // left child does not exist
-                {
-                    curr->left=newnode;
-                    break;
-                }
-                curr=curr->left; // left child exists, so move to left subtree             
-            }
-            else if(key > curr->val)
-            {
-                if(curr->right==NULL) // right child does not exist
-                {
-                    curr->right=newnode;
-                    break;
-                }
-                curr=curr->right; // right child exists, so move to right subtree
-            }
+            TreeNode* newnode = new TreeNode(key);
+            return newnode;
         }
+
+        if(key < root->val)
+            root->left = insertIntoBST(root->left, key);
+        else if(key > root->val)
+            root->right = insertIntoBST(root->right, key);
+            
         return root;
     }
 };
