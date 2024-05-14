@@ -1,26 +1,51 @@
 class Solution {
-public:
-    int solve(vector<vector<int>>& grid, int m, int n, int i, int j)
-    {
-        if(i<0 || i>=m || j<0 || j>=n) //index out of bounds
-            return 0;
-        if(grid[i][j]<=0) //no gold or visited element
-            return 0;
-        grid[i][j] *= -1; //mark curr element as visited
-        int up= solve(grid,m,n,i-1,j);
-        int down= solve(grid,m,n,i+1,j);
-        int left= solve(grid,m,n,i,j-1);
-        int right= solve(grid,m,n,i,j+1);
-        grid[i][j] *= -1; //mark curr element as unvisited
-        return grid[i][j] + max(up,max(down,max(left,right))); //return the sum of curr element and the max from all the 4 directions
-    }
-    
-    int getMaximumGold(vector<vector<int>>& grid) {
-        int ans=0;
+private:
+    int dfs(vector<vector<int>>& grid, int i, int j){
         int m=grid.size(), n=grid[0].size();
+
+        // index out of bounds
+        if(i<0 || i>=m || j<0 || j>=n) 
+            return 0;
+        // no gold or visited element
+        if(grid[i][j] <= 0) 
+            return 0;
+
+        // mark curr element as visited
+        grid[i][j] *= -1; 
+
+        int up = dfs(grid, i-1, j);
+        int down = dfs(grid, i+1, j);
+        int left = dfs(grid, i, j-1);
+        int right = dfs(grid, i, j+1);
+
+        // mark curr element as unvisited
+        grid[i][j] *= -1; 
+
+        return grid[i][j] + max(max(up, down), max(left, right));
+    }
+
+public:
+    // T.C.=O(m*n*4^g)
+    // g: num of cells with gold (+ive val)
+    // multi-source-DFS + backtracking
+    int getMaximumGold(vector<vector<int>>& grid) {
+        int m=grid.size(), n=grid[0].size();
+
+        int maxSum = 0;
         for(int i=0; i<m; i++)
             for(int j=0; j<n; j++)
-                ans= max(ans,solve(grid,m,n,i,j));
+                maxSum += grid[i][j];
+
+        int ans = 0;
+        for(int i=0; i<m; i++)
+            for(int j=0; j<n; j++)
+            {
+                ans = max(ans, dfs(grid, i, j));
+
+                if(ans == maxSum)
+                    return ans;
+            }
+
         return ans;
     }
 };

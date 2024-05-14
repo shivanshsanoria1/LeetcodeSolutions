@@ -11,26 +11,38 @@
  */
 class Solution {
 private:
-    // Left-Root-Right
     void inorder(TreeNode* curr, vector<int>& nums){
         if(curr == nullptr)
             return;
-
+        
         inorder(curr->left, nums);
         nums.push_back(curr->val);
         inorder(curr->right, nums);
     }
 
-public: 
-    bool isValidBST(TreeNode* root) { 
+    TreeNode* buildTree(vector<int>& nums, int left, int right){
+        if(left < 0 || right >= nums.size() || left > right)
+            return nullptr;
+
+        int mid = left + (right - left)/2;
+
+        TreeNode* newNode = new TreeNode(nums[mid]);
+
+        newNode->left = buildTree(nums, left, mid - 1);
+        newNode->right = buildTree(nums, mid + 1, right);
+
+        return newNode;
+    } 
+
+public:
+    TreeNode* balanceBST(TreeNode* root) {
         vector<int> nums;
         inorder(root, nums);
 
-        for(int i=1; i<nums.size(); i++)
-            if(nums[i-1] >= nums[i]) 
-                return false;
-
-        return true;
+        return buildTree(nums, 0, nums.size()-1);
     }
 };
-// inorder traversal of BST gives values in ascending order
+/*
+# inorder traversal of BST gives values in ascending order
+# build a new tree instead of trying to balance the original one
+*/

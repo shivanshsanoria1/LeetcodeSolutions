@@ -10,16 +10,21 @@
  * };
  */
 class Solution {
-public:
-    bool solve(TreeNode *curr, long long int min, long long int max)
-    {
-        if(curr==NULL)
+private:
+    bool solve(TreeNode* curr, long long int minVal, long long int maxVal){
+        if(curr == nullptr)
             return true;
-        if(!(curr->val > min && curr->val < max)) //curr value is not in the range [min,max]
-            return false;
-        return solve(curr->left, min, curr->val) && solve(curr->right, curr->val, max);
-    } //update right boundary when moving to left subtree and update left boundary when moving to right subtree
 
+        // curr value is not in the range (minVal, maxVal)
+        if(curr->val <= minVal || curr->val >= maxVal) 
+            return false;
+
+        // update the right boundary when moving to left subtree 
+        // and update left boundary when moving to right subtree
+        return solve(curr->left, minVal, curr->val) && solve(curr->right, curr->val, maxVal);
+    } 
+
+public:
     bool isValidBST(TreeNode* root) {
         return solve(root, LLONG_MIN, LLONG_MAX);
     }
