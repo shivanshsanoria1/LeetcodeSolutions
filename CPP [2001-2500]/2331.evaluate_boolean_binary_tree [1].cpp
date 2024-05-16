@@ -10,15 +10,19 @@
  * };
  */
 class Solution {
-public:
+private:
     bool dfs(TreeNode* curr){
-        if(curr->left == NULL && curr->right == NULL) // leaf node
+        // leaf node
+        if(curr->left == nullptr && curr->right == nullptr) 
             return curr->val;
+
         bool left = dfs(curr->left);
         bool right = dfs(curr->right);
+
         return curr->val == 2 ? left || right : left && right; 
     }
 
+public:
     bool evaluateTree(TreeNode* root) {
         return dfs(root);
     }
