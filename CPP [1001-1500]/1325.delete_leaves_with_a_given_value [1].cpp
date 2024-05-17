@@ -11,23 +11,22 @@
  */
 class Solution {
 public:
-    TreeNode* pruneTree(TreeNode* root) {
+    TreeNode* removeLeafNodes(TreeNode* root, int target) {
         if(root == nullptr)
             return nullptr;
 
-        root->left = pruneTree(root->left);
-        root->right = pruneTree(root->right);
+        root->left = removeLeafNodes(root->left, target);
+        root->right = removeLeafNodes(root->right, target);
 
-        // leaf node with val 0
-        if(root->left == nullptr && root->right == nullptr && root->val == 0)
+        // leaf node with value 'target' 
+        if(root->left == nullptr && root->right == nullptr && root->val == target)
             return nullptr;
 
         return root;
     }
 };
 /*
-# idea: delete the leaf-nodes with value 0 recursively
 # this method just breaks the links and 
   does not actually delete the nodes from memory
-# similar: [1325. delete-leaves-with-a-given-value]
+# similar: [814. binary-tree-pruning]
 */

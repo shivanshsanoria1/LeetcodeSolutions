@@ -10,21 +10,29 @@
  * };
  */
 class Solution {
-public:
-    bool solve(TreeNode* curr)
-    {
-        if(curr==NULL)
+private:
+    bool dfs(TreeNode* curr){
+        if(curr == nullptr)
             return false;
-        bool l= solve(curr->left);
-        bool r= solve(curr->right);
-        if(l==false)
-            curr->left=NULL;
-        if(r==false)
-            curr->right=NULL;
-        return curr->val || l || r;
+
+        bool left = dfs(curr->left);
+        bool right = dfs(curr->right);
+
+        if(!left)
+            curr->left = nullptr;
+        if(!right)
+            curr->right = nullptr;
+
+        return curr->val || left || right;
     }
-    
+
+public:
     TreeNode* pruneTree(TreeNode* root) {
-        return solve(root)==true ? root : NULL;
+        return dfs(root) ? root : nullptr;
     }
 };
+/*
+# this method just breaks the links and 
+  does not actually delete the nodes from memory
+# similar: [1325. delete-leaves-with-a-given-value]
+*/
