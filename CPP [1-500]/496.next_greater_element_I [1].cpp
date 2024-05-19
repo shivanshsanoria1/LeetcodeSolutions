@@ -1,23 +1,32 @@
 class Solution {
 public:
-    vector<int> nextGreaterElement(vector<int>& nums1, vector<int>& nums2) { //T.C.=O(n1*n2) , S.C.=O(1)
-        int n1=nums1.size(), n2=nums2.size();
+    // T.C.=O(n1*n2), S.C.=O(1)
+    vector<int> nextGreaterElement(vector<int>& nums1, vector<int>& nums2) { 
+        int n2=nums2.size();
         vector<int> ans;
-        for(int i=0; i<n1; i++)
+
+        for(int num1: nums1)
         {
-            int j;
-            for(j=0; j<n2; j++) //find nums1[i] in nums2 array
-                if(nums1[i] == nums2[j])
+            int i = -1;
+
+            // find num1 in nums2[]
+            for(i=0; i<n2; i++) 
+                if(num1 == nums2[i])
                     break;
-            for(j=j+1; j<n2; j++) //search to the right of the curr element in nums2 array
-                if(nums2[j] > nums1[i]) //NGE found for nums1[i]
+
+            // search for the NGE of num1 in nums2[]
+            for(i=i+1; i<n2; i++) 
+                if(nums2[i] > num1) 
                 {
-                    ans.push_back(nums2[j]);
+                    ans.push_back(nums2[i]);
                     break;
                 }
-            if(j == n2) //NGE not found for nums1[i]
+
+            // NGE of num1 not found in nums2[]
+            if(i == n2) 
                 ans.push_back(-1);
         }
+
         return ans;
     }
 };
