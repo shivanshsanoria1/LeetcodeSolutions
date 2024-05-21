@@ -12,14 +12,13 @@ class Solution {
 public:
     // S.C.=O(1)
     ListNode* reverseList(ListNode* head) { 
-        ListNode *prev = nullptr;
-        ListNode *curr = head;
-        ListNode *temp = nullptr;
+        ListNode* prev = nullptr;
+        ListNode* curr = head;
 
         while(curr != nullptr)
         {
             // save the next node of curr
-            temp = curr->next;
+            ListNode* temp = curr->next;
             // connect curr->next to prev
             curr->next = prev;
             // move prev forward 

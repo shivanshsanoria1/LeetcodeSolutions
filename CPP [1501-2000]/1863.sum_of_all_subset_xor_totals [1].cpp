@@ -1,30 +1,35 @@
 class Solution {
-public:
-    vector<vector<int>> ans; //stores all subsets of array nums
-    int n;
-    void solve(vector<int>& nums, int i, vector<int> subset)
-    {
-        if(i==n)
+private:
+    void solve(vector<int>& nums, vector<vector<int>>& subsets, vector<int>& subset, int i){
+        if(i == nums.size())
         {
-            ans.push_back(subset);
+            subsets.push_back(subset);
             return;
         }
-        solve(nums,i+1,subset); //not including nums[i] in subset
-        subset.push_back(nums[i]); //push nums[i] in subset
-        solve(nums,i+1,subset); //including nums[i] in subset
+
+        // exclude nums[i]
+        solve(nums, subsets, subset, i+1);
+
+        // include nums[i]
+        subset.push_back(nums[i]);
+        solve(nums, subsets, subset, i+1); 
+        subset.pop_back();
     }
-    
+
+public:
+    // T.C.=O(n * 2^n), S.C.=O(n * 2^n)
     int subsetXORSum(vector<int>& nums) {
-        int sum=0;
-        n=nums.size();
+        vector<vector<int>> subsets;
         vector<int> subset;
-        solve(nums,0,subset);
-        for(int i=1; i<ans.size(); i++)
+        solve(nums, subsets, subset, 0);
+
+        int sum = 0;
+        for(vector<int>& subset: subsets)
         {
-            int xored=ans[i][0];
-            for(int j=1; j<ans[i].size(); j++)
-                xored=xored^ans[i][j];
-            sum+=xored;
+            int x = 0;
+            for(int num: subset)
+                x = x^num; 
+            sum += x;
         }
         return sum;
     }

@@ -1,18 +1,25 @@
 class Solution {
-public:
+private:
     void solve(vector<int>& nums, vector<vector<int>>& subsets, vector<int>& subset, int i){
         if(i == nums.size())
         {
             subsets.push_back(subset);
             return;
         }
-        solve(nums, subsets, subset, i+1); // excluding element at index i
+
+        // exclude
+        solve(nums, subsets, subset, i+1);
+
+        // include
         subset.push_back(nums[i]);
-        solve(nums, subsets, subset, i+1); // including element at index i
+        solve(nums, subsets, subset, i+1);
         subset.pop_back();
     }
 
-    vector<vector<int>> subsets(vector<int>& nums) { // Backtracking
+public:
+    // T.C.=O(n * 2^n), S.C.=O(n)
+    // Backtracking
+    vector<vector<int>> subsets(vector<int>& nums) { 
         vector<vector<int>> subsets;
         vector<int> subset;
         solve(nums, subsets, subset, 0);

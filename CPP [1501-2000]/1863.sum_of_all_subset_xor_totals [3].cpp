@@ -1,9 +1,18 @@
 class Solution {
-public:
-    int subsetXORSum(vector<int>& nums) { //idk how this code works
-        int n=nums.size(), ans=0;
-        for(int i=0; i<n; i++)
-            ans= ans | nums[i];
-        return ans*pow(2,n-1);
+private:
+    int solve(vector<int>& nums, int i, int x){
+        if(i == nums.size())
+            return x;
+
+        int include = solve(nums, i+1, x ^ nums[i]);
+        int exclude = solve(nums, i+1, x);
+
+        return include + exclude;
+    }
+
+public:   
+    // T.C.=O(2^n), S.C.=O(n)
+    int subsetXORSum(vector<int>& nums) {
+        return solve(nums, 0, 0);
     }
 };
