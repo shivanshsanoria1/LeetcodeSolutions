@@ -13,35 +13,39 @@ private:
         return true;
     }
     
-    void solve(vector<vector<string>>& ans, vector<string>& vec, string& s, int left) {
+    void solve(vector<vector<string>>& parts, vector<string>& part, string& s, int i) {
         int n=s.length();
 
-        if(left == n)
+        if(i == n)
         {
-            ans.push_back(vec);
+            parts.push_back(part);
             return;
         }
 
-        // left-partition is in index-range [left, right] 
-        // right-partition is in index-range [right + 1, n-1]
-        for(int right=left; right<n; right++) 
+        // left-partition is in index-range [i, j] 
+        // right-partition is in index-range [j+1, n-1]
+        for(int j=i; j<n; j++) 
             // left-partition is palindrome
-            if(isPalindrome(s, left, right)) 
+            if(isPalindrome(s, i, j)) 
             {
                 // push the left-partition in vector
-                vec.push_back(s.substr(left, right - left + 1)); 
+                part.push_back(s.substr(i, j-i+1)); 
                 // check for the right-partition
-                solve(ans, vec, s, right + 1); 
+                solve(parts, part, s, j+1); 
                 // pop the left-partition from vector
-                vec.pop_back(); 
+                part.pop_back(); 
             }
     }
 
 public:
+    // T.C.=O(??), S.C.=O(??)
+    // Backtracking
     vector<vector<string>> partition(string s) {
-        vector<vector<string>> ans;
-        vector<string> vec;
-        solve(ans, vec, s, 0);
-        return ans;
+        vector<vector<string>> parts;
+        vector<string> part;
+
+        solve(parts, part, s, 0);
+        
+        return parts;
     }
 };

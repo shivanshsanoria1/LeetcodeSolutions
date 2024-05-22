@@ -14,12 +14,12 @@ private:
         return true;
     }
     
-    void solve(vector<vector<string>>& ans, vector<string>& vec, string& s) {
+    void solve(vector<vector<string>>& parts, vector<string>& part, string& s) {
         int n=s.length();
 
         if(n == 0)
         {
-            ans.push_back(vec);
+            parts.push_back(part);
             return;
         }
 
@@ -33,21 +33,25 @@ private:
             // left-substring is palindrome
             if(isPalindrome(leftSubstr)) 
             {
-                // add left-substring to vector
-                vec.push_back(leftSubstr); 
+                // add left-substring curr-partition
+                part.push_back(leftSubstr); 
                 // check for the right-substring
-                solve(ans, vec, rightSubstr);
+                solve(parts, part, rightSubstr);
                 // pop back the left-substring 
-                vec.pop_back(); 
+                part.pop_back(); 
             }
         }
     }
 
 public:
+    // T.C.=O(??), S.C.=O(??)
+    // Backtracking
     vector<vector<string>> partition(string s) {
-        vector<vector<string>> ans;
-        vector<string> vec;
-        solve(ans, vec, s);
-        return ans;
+        vector<vector<string>> parts;
+        vector<string> part;
+
+        solve(parts, part, s);
+
+        return parts;
     }
 };
