@@ -10,25 +10,37 @@
  * };
  */
 class Solution {
-public:
-    int max_path_sum = INT_MIN;
-    
-    int solve(TreeNode* curr)
-    {
-        if(curr==NULL)
+private:
+    int dfs(TreeNode* curr, int& maxPathSum){
+        if(curr == nullptr)
             return 0;
-        int left_max = solve(curr->left);
-        int right_max = solve(curr->right);
-        left_max = max(left_max,0); //if left_max is -ive then don't include it in the path
-        right_max = max(right_max,0); //if right_max is -ive then don't include it in the path
-        max_path_sum = max(max_path_sum, left_max + right_max + curr->val); //if curr is pivot
-        return curr->val + max(left_max,right_max); //if curr is not the pivot
+
+        int leftMaxSum = dfs(curr->left, maxPathSum);
+        int rightMaxSum = dfs(curr->right, maxPathSum);
+
+        // if the left or right sums are -ive 
+        // then don't include them in the path, 
+        // ie, basically replacing them with 0
+        leftMaxSum = max(leftMaxSum, 0); 
+        rightMaxSum = max(rightMaxSum, 0); 
+
+        // asuming curr is the pivot
+        maxPathSum = max(maxPathSum, curr->val + leftMaxSum + rightMaxSum); 
+
+        // asuming curr is not the pivot
+        return curr->val + max(leftMaxSum, rightMaxSum); 
     }
-    
+
+public:
     int maxPathSum(TreeNode* root) {
-        solve(root);
-        return max_path_sum;
+        int maxPathSum = INT_MIN;
+        dfs(root, maxPathSum);
+
+        return maxPathSum;
     }
 };
-//here pivot is the node where the resultant path changes direction
-//the resultant path can change direction atmost once
+/*
+# here pivot is the node where the max-sum path changes direction
+# a path can change direction atmost once
+# prerequisite: [543. diameter-of-binary-tree]
+*/

@@ -10,24 +10,32 @@
  * };
  */
 class Solution {
-public:
-    int value;
-    
-    bool solve(TreeNode* curr)
-    {
-        if(curr==NULL)
-            return true;
-        if(curr->val != value)
-            return false;
-        if(solve(curr->left)==false)
-            return false;
-        if(solve(curr->right)==false)
-            return false;
+private:
+    bool bfs(TreeNode* root){
+        int value = root->val;
+
+        queue<TreeNode*> q;
+        q.push(root);
+
+        while(!q.empty())
+        {
+            TreeNode* curr = q.front();
+            q.pop();
+
+            if(curr->val != value)
+                return false;
+            
+            if(curr->left != nullptr)
+                q.push(curr->left);
+            if(curr->right != nullptr)
+                q.push(curr->right);
+        }
+
         return true;
     }
-    
+
+public:
     bool isUnivalTree(TreeNode* root) {
-        value= root->val;
-        return solve(root);
+        return bfs(root);
     }
 };

@@ -11,12 +11,12 @@
  */
 class Solution {
 private:
-    int diameter(TreeNode* curr, int& maxLength) {
-        if(curr == NULL)
+    int dfs(TreeNode* curr, int& maxLength) {
+        if(curr == nullptr)
             return 0;
 
-        int leftHeight = diameter(curr->left, maxLength);
-        int rightHeight = diameter(curr->right, maxLength);
+        int leftHeight = dfs(curr->left, maxLength);
+        int rightHeight = dfs(curr->right, maxLength);
 
         maxLength = max(maxLength, 1 + leftHeight + rightHeight);
 
@@ -26,8 +26,9 @@ private:
 public:
     int diameterOfBinaryTree(TreeNode* root) { 
         int maxLength = 0;
-        diameter(root, maxLength);
-        // to get num of edges instead of num of nodes
+        dfs(root, maxLength);
+        // -1 is done to get num of edges instead of num of nodes
         return maxLength - 1; 
     }
 };
+// similar: [124. binary-tree-maximum-path-sum]
