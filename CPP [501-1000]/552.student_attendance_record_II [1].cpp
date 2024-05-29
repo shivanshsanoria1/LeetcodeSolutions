@@ -7,6 +7,9 @@ private:
     typedef vector<vector<vector<int>>> VEC3D;
 
     int solve(VEC3D& dp, int n, int a, int l){
+        if(a >= 2 || l >= 3)
+            return 0;
+            
         if(n == 0)
             return 1;
             
@@ -16,9 +19,9 @@ private:
         // choosing 'P' does not affect 'a' and resets 'l' to 0
         int p_count = solve(dp, n-1, a, 0);
         // choosing 'L' does not affect 'a' and increments 'l' by 1
-        int l_count = l+1 < 3 ? solve(dp, n-1, a, l+1) : 0;
+        int l_count = solve(dp, n-1, a, l+1);
         // choosing 'A' incrments 'a' by 1 and resets 'l' to 0
-        int a_count = a+1 < 2 ? solve(dp, n-1, a+1, 0) : 0;
+        int a_count = solve(dp, n-1, a+1, 0);
 
         dp[n][a][l] = ((p_count + l_count) % MOD + a_count) % MOD;
 
