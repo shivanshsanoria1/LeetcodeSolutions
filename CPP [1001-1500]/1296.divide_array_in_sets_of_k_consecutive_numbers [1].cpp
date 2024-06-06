@@ -1,42 +1,39 @@
 class Solution {
 public:
-    bool isPossibleDivide(vector<int>& nums, int k) { // T.C.=O(n*logn), S.C.=O(n)
+    // T.C.=O(n*logn), S.C.=O(n)
+    bool isPossibleDivide(vector<int>& nums, int k) {
         int n=nums.size();
-        if(n % k != 0) // all groups cannot be of size k
+        // all groups cannot be of size 'k'
+        if(n % k != 0) 
             return false;
-        map<int, int> mp; // num -> freq
+
+        // num -> freq
+        map<int, int> mp; 
         for(int num: nums)
             mp[num]++;
-        int groups = n / k; // number of groups
+
+        // number of groups
+        int groups = n / k; 
         while(groups--)
         {
-            // iterator to the smallest num currently in map
-            auto itr = mp.begin();
-            // smallest num in map
-            int num = itr->first;
-            // decrement the freq of the smallest num in map
-            itr->second--;
-            // if freq reaches 0, remove that num from map
-            if(itr->second == 0)
-                mp.erase(itr);
-            // group size is 'k-1' excluding the 1st num in that group
-            int size = k - 1;
-            while(size--)
+            // min num in the curr group
+            int start = mp.begin()->first;
+            
+            for(int i=0; i<k; i++)
             {
-                // next consecutive num
-                num++;
-                // iterator to curr num
-                auto itr = mp.find(num);
+                // curr num of the group
+                int curr = start + i;
                 // curr num not found in map
-                if(itr == mp.end())
+                if(mp.find(curr) == mp.end())
                     return false;
                 // decrement the freq of curr num
-                itr->second--;
-                // if freq reaches 0, remove the curr num from map
-                if(itr->second == 0)
-                    mp.erase(itr);
+                mp[curr]--;
+                // if curr num freq reaches 0, remove that num from map
+                if(mp[curr] == 0)
+                    mp.erase(curr);
             }
         }
+
         return true;
     }
 };

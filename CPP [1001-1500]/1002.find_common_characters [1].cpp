@@ -1,28 +1,33 @@
 class Solution {
 public:
+    // T.C.=O(26*n*l), S.C.=O(1)
+    // n: size of words[], l: max length of a word in words[]
     vector<string> commonChars(vector<string>& words) {
         vector<string> ans;
-        vector<int> vec(26,0); //stores freq of char present in all strings in the array words
+
         for(char ch='a'; ch<='z'; ch++)
         {
-            int min_count=INT_MAX;
-            for(int i=0; i<words.size(); i++)
+            int minFreq = INT_MAX;
+
+            for(string& word: words)
             {
-                int count=0;
-                for(int j=0; j<words[i].length(); j++)
-                    if(words[i][j]==ch) //find freq of char ch in string words[i]
-                        count++;
-                min_count=min(min_count,count); //update the min freq of char ch
+                int freq = 0;
+
+                for(char w: word)
+                    if(w == ch)
+                        freq++;
+
+                minFreq = min(minFreq, freq);
             }
-            vec[ch-'a']=min_count;
-        }
-        for(int i=0; i<26; i++)
-            while(vec[i]--)
+
+            while(minFreq--)
             {
-                string s="";
-                s+=(char)(i+97);
+                string s = "";
+                s += ch;
                 ans.push_back(s);
             }
+        }
+
         return ans;
     }
 };

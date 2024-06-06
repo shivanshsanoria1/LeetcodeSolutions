@@ -1,42 +1,39 @@
 class Solution {
 public:
-    bool isNStraightHand(vector<int>& hand, int groupSize) { // T.C.=O(n*logn), S.C.=O(n)
+    // T.C.=O(n*logn), S.C.=O(n)
+    bool isNStraightHand(vector<int>& hand, int groupSize) { 
         int n=hand.size();
-        if(n % groupSize != 0) // all groups cannot be of size 'groupSize'
+        // all groups cannot be of size 'groupSize'
+        if(n % groupSize != 0) 
             return false;
-        map<int, int> mp; // num -> freq
+
+        // num -> freq
+        map<int, int> mp; 
         for(int num: hand)
             mp[num]++;
-        int groups = n / groupSize; // number of groups
+
+        // number of groups
+        int groups = n / groupSize; 
         while(groups--)
         {
-            // iterator to the smallest num currently in map
-            auto itr = mp.begin();
-            // smallest num in map
-            int num = itr->first;
-            // decrement the freq of the smallest num in map
-            itr->second--;
-            // if freq reaches 0, remove that num from map
-            if(itr->second == 0)
-                mp.erase(itr);
-            // group size is 'groupSize-1' excluding the 1st num in that group
-            int size = groupSize - 1;
-            while(size--)
+            // min num in the curr group
+            int start = mp.begin()->first;
+            
+            for(int i=0; i<groupSize; i++)
             {
-                // next consecutive num
-                num++;
-                // iterator to curr num
-                auto itr = mp.find(num);
+                // curr num of the group
+                int curr = start + i;
                 // curr num not found in map
-                if(itr == mp.end())
+                if(mp.find(curr) == mp.end())
                     return false;
                 // decrement the freq of curr num
-                itr->second--;
-                // if freq reaches 0, remove the curr num from map
-                if(itr->second == 0)
-                    mp.erase(itr);
+                mp[curr]--;
+                // if curr num freq reaches 0, remove that num from map
+                if(mp[curr] == 0)
+                    mp.erase(curr);
             }
         }
+
         return true;
     }
 };

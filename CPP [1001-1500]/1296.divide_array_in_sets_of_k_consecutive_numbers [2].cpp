@@ -1,17 +1,29 @@
 class Solution {
 public:
-    bool isPossibleDivide(vector<int>& nums, int k) { // T.C.=O(n*logn), S.C.=O(n)
+    // T.C.=O(n*logn), S.C.=O(n)
+    bool isPossibleDivide(vector<int>& nums, int k) {
         int n=nums.size();
-        if(n % k != 0) // all groups cannot be of size k
+        // all groups cannot be of size 'k'
+        if(n % k != 0) 
             return false;
-        map<int, int> mp; // num -> freq
+
+        // num -> freq
+        unordered_map<int, int> mp; 
         for(int num: nums)
             mp[num]++;
-        int groups = n / k; // number of groups
+
+        priority_queue<int, vector<int>, greater<int>> pq; // min-heap
+        // push the distinct nums in heap
+        for(auto [num, freq]: mp) 
+            pq.push(num);
+
+        // number of groups
+        int groups = n / k; 
         while(groups--)
         {
             // min num in the curr group
-            int start = mp.begin()->first;
+            int start = pq.top();
+            
             for(int i=0; i<k; i++)
             {
                 // curr num of the group
@@ -21,11 +33,20 @@ public:
                     return false;
                 // decrement the freq of curr num
                 mp[curr]--;
-                // if curr num freq reaches 0, remove that num from map
+                // if curr num freq reaches 0, 
+                // remove that num from map and heap
                 if(mp[curr] == 0)
+                {
+                    // heap top does not match with the curr num
+                    if(pq.top() != curr)
+                        return false;
+                        
+                    pq.pop();
                     mp.erase(curr);
+                }
             }
         }
+        
         return true;
     }
 };

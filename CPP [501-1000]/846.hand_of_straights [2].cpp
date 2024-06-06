@@ -1,17 +1,29 @@
 class Solution {
 public:
-    bool isNStraightHand(vector<int>& hand, int groupSize) { // T.C.=O(n*logn), S.C.=O(n)
+    // T.C.=O(n*logn). S.C.=O(n)
+    bool isNStraightHand(vector<int>& hand, int groupSize) { 
         int n=hand.size();
-        if(n % groupSize != 0) // all groups cannot be of size 'groupSize'
+        // all groups cannot be of size 'groupSize'
+        if(n % groupSize != 0) 
             return false;
-        map<int, int> mp; // num -> freq
+
+        // num -> freq
+        unordered_map<int, int> mp; 
         for(int num: hand)
             mp[num]++;
-        int groups = n / groupSize; // number of groups
+
+        priority_queue<int, vector<int>, greater<int>> pq; // min-heap
+        // push the distinct nums in heap
+        for(auto [num, freq]: mp) 
+            pq.push(num);
+
+        // number of groups
+        int groups = n / groupSize; 
         while(groups--)
         {
             // min num in the curr group
-            int start = mp.begin()->first;
+            int start = pq.top();
+            
             for(int i=0; i<groupSize; i++)
             {
                 // curr num of the group
@@ -21,11 +33,20 @@ public:
                     return false;
                 // decrement the freq of curr num
                 mp[curr]--;
-                // if curr num freq reaches 0, remove that num from map
+                // if curr num freq reaches 0, 
+                // remove that num from map and heap
                 if(mp[curr] == 0)
+                {
+                    // heap top does not match with the curr num
+                    if(pq.top() != curr)
+                        return false;
+                        
+                    pq.pop();
                     mp.erase(curr);
+                }
             }
         }
+        
         return true;
     }
 };

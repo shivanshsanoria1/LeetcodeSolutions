@@ -1,42 +1,40 @@
 class Solution {
 public:
+    // T.C.=O(n), S.C.=O(2*26)
     int longestPalindrome(string s) {
-        int n=s.length(), c=0, flag=0;
-        if(n==1)
-            return 1;
-        vector<int> count_lower(26,0), count_upper(26,0); // keeps track of freq. of lowercase and uppercase letters
-        for(int i=0; i<n; i++)
+        vector<int> freqLower(26, 0);
+        vector<int> freqUpper(26, 0);
+
+        for(char ch: s)
         {
-            if(s[i]>='a' && s[i]<='z') // lowercase
-                count_lower[s[i]-'a']++;
-            else // uppercase
-                count_upper[s[i]-'A']++;
+            if(islower(ch))
+                freqLower[ch - 'a']++;
+            else
+                freqUpper[ch - 'A']++;
         }
+
+        int evenFreqSum = 0;
+        bool oddFreqFound = false;
+
         for(int i=0; i<26; i++)
         {
-            if(count_lower[i]>0) // lowercase
+            if(freqLower[i] % 2 == 0)
+                evenFreqSum += freqLower[i];
+            else
             {
-                if(count_lower[i]%2==0) // even freq.
-                    c=c+count_lower[i];
-                else // odd freq.
-                {
-                    c=c+count_lower[i]-1;
-                    flag=1;
-                }
+                evenFreqSum += freqLower[i] - 1;
+                oddFreqFound = true;
             }
-            if(count_upper[i]>0) // uppercase
+            
+            if(freqUpper[i] % 2 == 0)
+                evenFreqSum += freqUpper[i];
+            else
             {
-                if(count_upper[i]%2==0) // even freq.
-                    c=c+count_upper[i];
-                else // odd freq.
-                {
-                    c=c+count_upper[i]-1;
-                    flag=1;
-                }
+                evenFreqSum += freqUpper[i] - 1;
+                oddFreqFound = true;
             }
         }
-        if(flag==1) // atleast 1 letter with odd freq. is found ,i.e., odd length palindrome 
-            return c+1;
-        return c; // even length palindrome
+
+        return oddFreqFound ? 1 + evenFreqSum : evenFreqSum;
     }
 };
