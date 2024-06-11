@@ -1,27 +1,34 @@
 class Solution {
 public:
+    // T.C.=O(n1 + n2 + n1*logn1), S.C.=O(n1)
     vector<int> relativeSortArray(vector<int>& arr1, vector<int>& arr2) {
-        int n1=arr1.size(), n2=arr2.size();
+        // Step-1: find the freq of each element in arr1[]
+        // num1 -> freq
+        unordered_map<int, int> mp1;
+        for(int num1: arr1)
+            mp1[num1]++;
+        
+        // Step-2: find all elements in arr1[] in the order they appear in arr2[]
         vector<int> ans;
-        unordered_map<int,int> mp; //num in arr1 -> freq
-        for(int i=0; i<n1; i++) //count freq of each element in arr1
-            mp[arr1[i]]++;
-        for(int i=0; i<n2; i++)
-        {
-            while(mp[arr2[i]]) //find arr2[i] in map
+        for(int num2: arr2)
+            while(mp1[num2] > 0)
             {
-                ans.push_back(arr2[i]); //add arr2[i] in ans freq num of times
-                mp[arr2[i]]--;
+                ans.push_back(num2);
+                mp1[num2]--;
             }
-        }
-        int index=ans.size();
-        for(auto it: mp) //add the remaining elements of map into ans
-            while(it.second > 0)
+        
+        // Step-3: find all elements in arr1[] which are not found in arr2[]
+        int idx = ans.size();
+        for(auto& [num, freq]: mp1)
+            while(freq > 0)
             {
-                ans.push_back(it.first);
-                it.second--;
+                ans.push_back(num);
+                freq--;
             }
-        sort(ans.begin()+index,ans.end()); //sort the elements not present in arr2
+        
+        // Step-4: sort the elements found only in arr1[]
+        sort(ans.begin() + idx, ans.end());
+        
         return ans;
     }
 };

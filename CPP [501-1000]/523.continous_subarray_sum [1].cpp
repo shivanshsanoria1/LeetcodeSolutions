@@ -1,21 +1,38 @@
 class Solution {
 public:
+    // T.C.=O(n), S.C.=O(min(n, k))
     bool checkSubarraySum(vector<int>& nums, int k) {
-        unordered_map<int,int> mp; //(curr_sum%k)->(curr_sum index)
-        mp[0]=-1; //add {0,-1} in map (to avoid adding valid subarrays of length 1)
-        int curr_sum=0;
-        for(int i=0; i<nums.size(); i++)
+        int n=nums.size();
+        // no subarray of size atleast 2 can be formed
+        if(n == 1)
+            return false;
+
+        // prefixSum % k -> earliest index
+        unordered_map<int, int> mp; 
+        // prefixMod is just prefixSum % k
+        int prefixMod = 0;
+
+        for(int i=0; i<n; i++)
         {
-            curr_sum+=nums[i];
-            int rem=curr_sum%k;
-            if(mp.find(rem) != mp.end()) //rem present in map
+            prefixMod = (prefixMod + nums[i]) % k;
+            
+            // i > 0 is used because subarray must be of size atleast 2
+            if(prefixMod == 0 && i > 0)
+                return true;
+
+            // a subarray with 'prefixMod' was already found
+            if(mp.find(prefixMod) != mp.end())
             {
-                if(i-mp.find(rem)->second >1) //valid subarray length must be >1
+                // check if the index diff between 2 subarrays 
+                // with the same 'prefixMod' is >= 2
+                if(i - mp.find(prefixMod)->second >= 2)
                     return true;
             }
+            // this is the first subarray (starting at index 0) with 'prefixMod'
             else
-                mp[rem]=i; //add rem and its index in map
+                mp[prefixMod] = i;
         }
+
         return false;
     }
 };

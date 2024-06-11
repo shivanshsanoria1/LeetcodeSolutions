@@ -1,12 +1,15 @@
 class Solution {
 public:
-    int heightChecker(vector<int>& heights) { //T.C.=O(nlogn) , S.C.=O(n)
-        vector<int> vec=heights;
-        sort(vec.begin(),vec.end());
-        int c=0;
+    // T.C.=O(n*logn), S.C.=O(n)
+    int heightChecker(vector<int>& heights) { 
+        vector<int> expected(heights.begin(), heights.end());
+        sort(expected.begin(), expected.end());
+
+        int count = 0;
         for(int i=0; i<heights.size(); i++)
-            if(heights[i] != vec[i])
-                c++;
-        return c;
+            if(heights[i] != expected[i])
+                count++;
+
+        return count;
     }
 };
