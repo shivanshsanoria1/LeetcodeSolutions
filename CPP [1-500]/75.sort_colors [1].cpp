@@ -1,24 +1,26 @@
 class Solution {
 public:
-    void sortColors(vector<int>& nums) { // T.C=O(n) , S.C=O(n)
-        int n=nums.size(), start=0, end=n-1;
-        vector<int> vec(n,-1); // vector of size n filled with -1 as each element
-        for(int i=0; i<n; i++)
+    // T.C=O(n), S.C=O(n)
+    void sortColors(vector<int>& nums) { 
+        int n=nums.size();
+        int left = 0, right = n-1;
+        vector<int> temp(n, 1);
+
+        for(int num: nums)
         {
-            if(nums[i]==0) // fill 0's at start of vector
+            if(num == 0)
             {
-                vec[start]=nums[i];
-                start++;
+                temp[left] = 0;
+                left++;
             }
-            else if(nums[i]==2) // fill 2's at the end of vector
+            else if(num == 2)
             {
-                vec[end]=nums[i];
-                end--;
+                temp[right] = 2;
+                right--;
             }
         }
-        for(int i=start; i<=end; i++) // fill the remaining vector with 1's
-            vec[i]=1;
-        for(int i=0; i<n; i++) // copy to original vector
-            nums[i]=vec[i];
+
+        for(int i=0; i<n; i++) 
+            nums[i] = temp[i];
     }
 };

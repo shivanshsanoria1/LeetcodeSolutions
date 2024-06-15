@@ -1,28 +1,26 @@
 class Solution {
 public:
-    void sortColors(vector<int>& nums) { // T.C=O(n) , S.C=O(1), 1 pass
-        int n=nums.size(), left=0, right=n-1;
-        for(int i=0; i<=right; i++)
+    // T.C=O(n), S.C=O(1)
+    // 1 pass, DNF algo (Dutch National Flag)
+    void sortColors(vector<int>& nums) { 
+        int left = 0, right = nums.size()-1;
+        int i = 0;
+
+        while(i <= right)
         {
-            if(nums[i]==0) // here left and i both are incremented simultaneously
+            if(nums[i] == 0)
             {
-                swap_numbers(&nums[i],&nums[left]);
+                swap(nums[i], nums[left]);
                 left++;
             }
-            else if(nums[i]==2) // here right is decremented and i remains in the same place
+            else if(nums[i] == 2)
             {
-                swap_numbers(&nums[i],&nums[right]);
+                swap(nums[i], nums[right]);
                 right--;
                 i--;
             }
+
+            i++;
         }
     }
-    
-     void swap_numbers(int *a,int *b)
-        {
-            int temp;
-            temp=*a;
-            *a=*b;
-            *b=temp;
-        }
 };

@@ -1,16 +1,16 @@
 class Solution {
 public:
+    // T.C.=O(n),S.C.=O(1)
     int minOperations(vector<int>& nums) {
-        int c=0;
+        int ops = 0;
+
         for(int i=1; i<nums.size(); i++)
-        {
-            if(nums[i] <= nums[i-1])
+            if(nums[i-1] >= nums[i])
             {
-                int temp= nums[i]; //save the curr value
-                nums[i]= nums[i-1]+1; //update curr value to prev value + 1
-                c+=nums[i]-temp; //add diff of new curr value and old curr value to count
+                ops += nums[i-1] - nums[i] + 1;
+                nums[i] = nums[i-1] + 1;
             }
-        }
-        return c;
+
+        return ops;
     }
 };
