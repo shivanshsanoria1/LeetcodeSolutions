@@ -1,21 +1,38 @@
 class Solution {
+private:
+    int solve(unordered_map<int, int>& mp, vector<int>& vec, int prevIdx, int i, vector<vector<int>>& dp){
+        if(i >= vec.size())
+            return 0;
+
+        if(dp[prevIdx + 1][i] != -1)
+            return dp[prevIdx + 1][i];
+
+        int exclude = solve(mp, vec, prevIdx, i+1, dp);
+
+        bool cond = prevIdx == -1 || vec[i] - vec[prevIdx] > 1;
+        int include = cond ? vec[i] * mp[vec[i]] + solve(mp, vec, i, i+1, dp) : 0;
+
+        dp[prevIdx + 1][i] = max(include, exclude);
+        return dp[prevIdx + 1][i];
+    }
+
 public:
-    int deleteAndEarn(vector<int>& nums) { //T.C.=O(nlogn) , S.C.=O(n) ; DP
-        unordered_map<int,int> freq; //num -> freq
-        for(int i=0; i<nums.size(); i++)
-            freq[nums[i]]++;
-        set<int> s(nums.begin(),nums.end());
-        vector<int> vec(s.begin(),s.end()); //removed duplicates and sorted 'nums'
+    // T.C.=O(n^2), S.C.=O(n^2)
+    // DP-Memoization
+    int deleteAndEarn(vector<int>& nums) {
+        // num -> freq
+        unordered_map<int, int> mp; 
+        for(int num: nums)
+            mp[num]++;
+            
+        vector<int> vec;
+        for(auto [num, freq]: mp)
+            vec.push_back(num);
+        sort(vec.begin(), vec.end());
+
         int n=vec.size();
-        vector<int> dp(n);
-        if(n == 1) //only 1 identical num in array so just pick that num
-            return nums[0]*freq[nums[0]];
-        dp[0] = vec[0]*freq[vec[0]];
-        dp[1] = (vec[1]-vec[0]==1) ? max(dp[0], vec[1]*freq[vec[1]]) : (dp[0] + vec[1]*freq[vec[1]]);
-        for(int i=2; i<n; i++)
-            dp[i] = (vec[i]-vec[i-1]==1) ? max(dp[i-1], vec[i]*freq[vec[i]] + dp[i-2]) : (dp[i-1] + vec[i]*freq[vec[i]]);
-        return dp[n-1];
+        vector<vector<int>> dp(n+1, vector<int>(n, -1));
+
+        return solve(mp, vec, -1, 0, dp);
     }
 };
-// dp[i]: max amount earned using the nums upto index i
-// similar to Leetcode-198 (House Robber)

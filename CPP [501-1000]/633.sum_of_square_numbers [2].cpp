@@ -1,12 +1,24 @@
 class Solution {
 public:
-    bool judgeSquareSum(int c) { // T.C=O(sqrt(c)*log(c)) ; S.C.=O(1)
-        for(long int a=0; a*a<=c; a++) // a varies from 0 to sqrt(c)
+    // T.C.=O(sqrt(c)), S.C.=O(sqrt(c))
+    // 2-pointer
+    bool judgeSquareSum(int c) {
+        // stores perfect-squares in range [0, sqrt(c)]
+        vector<long long int> perfectSquares;
+        for(int i=0; i <= sqrt(c); i++)
+            perfectSquares.push_back(i*i);
+
+        int left = 0, right = perfectSquares.size() - 1;
+        while(left <= right)
         {
-            double b=sqrt(c-a*a); // finding sqrt(c-a*a) takes O(log c) time in worst case
-            if(b == int(b))
+            if(perfectSquares[left] + perfectSquares[right] == c)
                 return true;
+            else if(perfectSquares[left] + perfectSquares[right] < c)
+                left++;
+            else // perfectSquares[left] + perfectSquares[right] > c
+                right--;
         }
+
         return false;
     }
 };

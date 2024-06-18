@@ -1,20 +1,38 @@
 class Solution {
 public:
-    int deleteAndEarn(vector<int>& nums) { //T.C.=O(nlogn) , S.C.=O(n) ; DP (optimised)
-        unordered_map<int,int> freq; //num -> freq
-        for(int i=0; i<nums.size(); i++)
-            freq[nums[i]]++;
-        set<int> s(nums.begin(),nums.end());
-        vector<int> vec(s.begin(),s.end()); //removed duplicates and sorted 'nums'
-        int prev2=0, prev1=vec[0]*freq[vec[0]]; //prev2 ~ dp[i-2] , prev1 ~ dp[i-1]
-        int curr;
-        for(int i=1; i<vec.size(); i++)
+    // T.C.=O(n*logn), S.C.=O(n)
+    // DP-Tabulation
+    int deleteAndEarn(vector<int>& nums) { 
+        // num -> freq
+        unordered_map<int, int> mp; 
+        for(int num: nums)
+            mp[num]++;
+            
+        vector<int> vec;
+        for(auto [num, freq]: mp)
+            vec.push_back(num);
+        sort(vec.begin(), vec.end());
+
+        int n=vec.size();
+        vector<int> dp(n);
+
+        dp[0] = vec[0] * mp[vec[0]];
+
+        if(n == 1) 
+            return dp[0];
+
+        dp[1] = (vec[1] - vec[0] == 1) ? max(dp[0], vec[1] * mp[vec[1]]) : dp[0] + vec[1] * mp[vec[1]];
+
+        for(int i=2; i<n; i++)
         {
-            curr = (vec[i]-vec[i-1]==1) ? max(prev1, vec[i]*freq[vec[i]] + prev2) : (prev1 + vec[i]*freq[vec[i]]);
-            prev2=prev1; //move prev2 forward
-            prev1=curr; //move prev1 forward
+            if(vec[i] - vec[i-1] == 1)
+                dp[i] = max(dp[i-1], dp[i-2] + vec[i] * mp[vec[i]]);
+            else
+                dp[i] = dp[i-1] + vec[i] * mp[vec[i]];
         }
-        return prev1;
+
+        return dp[n-1];
     }
 };
-// similar to Leetcode-198 (House Robber)
+// dp[i]: max amount earned using the nums upto index i
+// similar: [198. house-robber]
