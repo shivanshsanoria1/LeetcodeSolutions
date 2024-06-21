@@ -6,12 +6,13 @@ public:
         int n=customers.size();
 
         // satisfied customer count (without owner's secret technique)
-        int currSatisfiedCount = 0;
+        int initialSatisfiedCount = 0;
         for(int i=0; i<n; i++)
             if(grumpy[i] == 0)
-                currSatisfiedCount += customers[i];
+                initialSatisfiedCount += customers[i];
 
-        int maxSatisfiedCount = currSatisfiedCount;
+        int maxSatisfiedCount = 0;
+        int currSatisfiedCount = 0;
         
         // satisfied customer count for window in range [0, minutes)
         for(int i=0; i < minutes; i++)
@@ -39,7 +40,7 @@ public:
             right++;
         }
 
-        return maxSatisfiedCount;
+        return initialSatisfiedCount + maxSatisfiedCount;
     }
 };
 // all the customers in the window are satisfied
