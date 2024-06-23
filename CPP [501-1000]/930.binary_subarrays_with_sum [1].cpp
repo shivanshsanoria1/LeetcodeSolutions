@@ -19,3 +19,4 @@ public:
         return count;
     }
 };
+// similar: [1248. count-number-of-nice-subarrays]

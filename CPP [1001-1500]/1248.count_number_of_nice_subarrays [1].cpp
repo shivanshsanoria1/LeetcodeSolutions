@@ -24,6 +24,6 @@ public:
     }
 };
 /*
-# prerequisite: 930. "binary subarrays with sum"
+# prerequisite: [930. binary subarrays with sum]
 # imagine replacing each odd num with 1 and even num with 0
 */
