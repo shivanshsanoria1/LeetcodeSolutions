@@ -14,7 +14,8 @@ public:
                 nums[i+2] = !nums[i+2];
                 flips++;
             }
-        
-        return accumulate(nums.begin(), nums.end(), 0) == n ? flips : -1;
+
+        return nums[n-2] == 0 || nums[n-1] == 0 ? -1 : flips;
     }
 };
+// S.C. can also be considered O(n) as the input array is being modified

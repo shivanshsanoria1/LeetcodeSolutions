@@ -2,20 +2,16 @@ class Solution {
 public:
     // T.C.=O(n), S.C.=O(1)
     int minOperations(vector<int>& nums) {
-        int n=nums.size();
         int flips = 0;
 
-        for(int i=0; i<n; i++)
+        for(int num: nums)
         {
-            nums[i] = flips % 2 == 0 ? nums[i] : !nums[i];
+            int curr = flips % 2 == 0 ? num : !num;
 
-            if(nums[i] == 0)
-            {
-                nums[i] = 1;
+            if(curr == 0)
                 flips++;
-            }
         }
         
-        return accumulate(nums.begin(), nums.end(), 0) == n ? flips : -1;
+        return flips;
     }
 };

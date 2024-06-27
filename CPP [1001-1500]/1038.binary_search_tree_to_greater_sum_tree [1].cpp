@@ -25,7 +25,7 @@ private:
     }
 
 public:
-    TreeNode* convertBST(TreeNode* root) {
+    TreeNode* bstToGst(TreeNode* root) {
         int sum = 0;
         reversedInorder(root, sum);
         
@@ -37,5 +37,5 @@ public:
 # inorder traversal (Left-Curr-Right) gives data in asc. order
 # reversed-inorder traversal (Right-Curr-Left) gives data in desc. order
 
-# same as: [1038. binary-search-tree-to-greater-sum-tree]
+# same as: [538. convert-bst-to-greater-tree]
 */
