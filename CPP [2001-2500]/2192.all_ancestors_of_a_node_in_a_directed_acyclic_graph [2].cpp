@@ -14,13 +14,13 @@ public:
     // T.C.=O(n*(n + e)), S.C.=O(n + e)
     // e: size of edges[]
     vector<vector<int>> getAncestors(int n, vector<vector<int>>& edges) {
-        // build a graph with reversed edges
+        // build graph
         vector<vector<int>> graph(n);
         for(vector<int>& edge: edges)
         {
             int a = edge[0];
             int b = edge[1];
-            graph[b].push_back(a);
+            graph[a].push_back(b);
         }
         
         vector<vector<int>> ans(n);
@@ -29,13 +29,16 @@ public:
             vector<bool> visited(n, false);
             dfs(graph, visited, i);
             
+            // any visited node j must have 
+            // the starting node i as an ancestor
             for(int j=0; j<n; j++)
                 if(visited[j] && j != i)
-                    ans[i].push_back(j);
+                    ans[j].push_back(i);
         }
 
         return ans;
     }
 };
-// initially, A -> B : A is ancestor of B
-// after reversing the edges, A <- B : A is ancestor of B
+// A -> B : A is ancestor of B
+// starting dfs() from any node A, 
+// all the reachable nodes must have A as an ancestor

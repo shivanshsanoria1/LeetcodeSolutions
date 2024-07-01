@@ -21,11 +21,10 @@ private:
     }
 
     TreeNode* buildTree(vector<int>& nums, int left, int right){
-        if(left < 0 || right >= nums.size() || left > right)
+        if(left > right)
             return nullptr;
 
         int mid = left + (right - left)/2;
-
         TreeNode* newNode = new TreeNode(nums[mid]);
 
         newNode->left = buildTree(nums, left, mid - 1);
@@ -45,4 +44,6 @@ public:
 /*
 # inorder traversal of BST gives values in ascending order
 # build a new tree instead of trying to balance the original one
+
+# prerequisite: [108. convert-sorted-array-to-binary-search-tree]
 */
