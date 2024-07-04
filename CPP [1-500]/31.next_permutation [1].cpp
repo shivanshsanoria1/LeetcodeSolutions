@@ -1,32 +1,35 @@
 class Solution {
 public:
+    // T.C.=O(n), S.C.=O(1)
     void nextPermutation(vector<int>& nums) {
-        int n=nums.size(), min=INT_MAX, left, right, temp;
-        bool flag=false;
-        if(n < 2) // no next greater sequence possible
+        int n=nums.size();
+        // no next greater sequence possible
+        if(n < 2) 
             return;
-        for(int i=n-1; i>0; i--)
-        {
-            if(nums[i-1] < nums[i]) // find an element whose immediate left element is smaller
+
+        int left = -1, right = -1;
+        bool flag = false;
+
+        for(left = n-2; left >= 0; left--)
+            if(nums[left] < nums[left + 1]) 
             {
-                left=i-1; // immediate left of current element
-                right=n-1; // last element
-                while(right > i) // search the right subarray to find an element (with least weight possible) 
-                {                // larger than left element
+                // find the rightmost element whcih is > nums[left] 
+                // in the subarray in range [i+1, n-1]
+                for(right = n-1; right > left; right--)
                     if(nums[right] > nums[left])
                         break;
-                    right--;
-                }
-                temp=nums[right];
-                nums[right]=nums[left];
-                nums[left]=temp;
-                flag=true;
+                
+                swap(nums[left], nums[right]);
+                flag = true;
                 break;
             }
-        }
-        if(flag==false) // sequence is in descending order
-            sort(nums.begin(),nums.end());
-        else // sort the subarray after the left index
-            sort(nums.begin()+left+1,nums.end());
+
+        // reverse the subarray after the left index
+        if(flag) 
+            reverse(nums.begin() + left + 1, nums.end());
+        // sequence is in descending order so for the next permutation, 
+        // reverse it to get it in increasing order
+        else 
+            reverse(nums.begin(), nums.end());
     }
 };

@@ -1,19 +1,25 @@
 class Solution {
 public:
-    vector<int> nextGreaterElements(vector<int>& nums) { //T.C.=O(n) , S.C.=O(n)
+    // T.C.=O(n), S.C.=O(n)
+    // Monotonic-Stack (decreasing)
+    vector<int> nextGreaterElements(vector<int>& nums) {
         int n=nums.size();
-        vector<int> ans(n,-1);
-        stack<int> st; //stores index of elements instead of values
+        // stores indexes instead of values
+        stack<int> st; 
+        vector<int> nge(n, -1);
+
         for(int i=0; i<2*n; i++)
         {
-            int index= i % n;
-            while(!st.empty() && nums[index] > nums[st.top()])
+            int idx = i % n;
+            while(!st.empty() && nums[st.top()] < nums[idx])
             {
-                ans[st.top()]= nums[index];
+                nge[st.top()] = nums[idx];
                 st.pop();
             }
-            st.push(index);
+            
+            st.push(idx);
         }
-        return ans;
+
+        return nge;
     }
 };
