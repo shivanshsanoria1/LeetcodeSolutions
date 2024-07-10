@@ -1,17 +1,20 @@
 class Solution {
 public:
+    // T.C.=O(n), S.C.=O(n)
     int minOperations(vector<string>& logs) {
         stack<string> st;
-        for(auto it: logs)
+        
+        for(string& log: logs)
         {
-            if(it == "../")
+            if(log == "../")
             {
                 if(!st.empty())
                     st.pop();
             }
-            else if(it != "./")
-                st.push(it);
+            else if(log != "./")
+                st.push(log);
         }
+
         return st.size();
     }
 };

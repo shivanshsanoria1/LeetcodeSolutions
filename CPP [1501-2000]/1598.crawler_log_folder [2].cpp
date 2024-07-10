@@ -1,17 +1,17 @@
 class Solution {
 public:
+    // T.C.=O(n), S.C.=O(1)
     int minOperations(vector<string>& logs) {
-        stack<bool> st; //no need to push strings into stack, just use some random bool value to save space
-        for(auto it: logs)
+        int count = 0;
+
+        for(string& log: logs)
         {
-            if(it == "../")
-            {
-                if(!st.empty())
-                    st.pop();
-            }
-            else if(it != "./")
-                st.push(true);
+            if(log == "../")
+                count = max(count - 1, 0);
+            else if(log != "./")
+                count++;
         }
-        return st.size();
+
+        return count;
     }
 };
