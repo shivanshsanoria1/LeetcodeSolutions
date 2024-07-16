@@ -7,6 +7,7 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
+
 class Solution {
 private:
     void dfs(TreeNode* curr, int key, vector<TreeNode*>& path, vector<TreeNode*>& currPath){
@@ -17,11 +18,10 @@ private:
 
         if(curr->val == key)
             path = currPath;
-        else
-        {
-            dfs(curr->left, key, path, currPath);
+        else if(curr->val < key)
             dfs(curr->right, key, path, currPath);
-        }
+        else // curr->val > key
+            dfs(curr->left, key, path, currPath);
 
         currPath.pop_back();
     }
@@ -44,4 +44,4 @@ public:
         return lca;
     }
 };
-// similar: [235. lowest-common-ancestor-of-a-binary-search-tree]
+// similar: [236. lowest-common-ancestor-of-a-binary-tree]
