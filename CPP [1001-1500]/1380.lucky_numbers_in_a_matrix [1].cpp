@@ -1,26 +1,25 @@
 class Solution {
 public:
-    vector<int> luckyNumbers (vector<vector<int>>& matrix) { //T.C.=O(m*n) , S.C.=O(m+n)
+    // T.C.=O(m*n*(m+n)), S.C.=O(1)
+    vector<int> luckyNumbers(vector<vector<int>>& matrix) {
         int m=matrix.size(), n=matrix[0].size();
-        vector<int> rows, cols, ans;
-        for(int i=0; i<m; i++) //find min element in each row
-        {
-            int min_row=INT_MAX;
+        vector<int> ans;
+        
+        for(int i=0; i<m; i++)
             for(int j=0; j<n; j++)
-                min_row=min(min_row,matrix[i][j]);
-            rows.push_back(min_row);
-        }
-        for(int j=0; j<n; j++) //find max element in each col
-        {
-            int max_col=INT_MIN;
-            for(int i=0; i<m; i++)
-                max_col=max(max_col,matrix[i][j]);
-            cols.push_back(max_col);
-        }
-        for(int i=0; i<m; i++) //find the common elements in min rows and max col vectors
-            for(int j=0; j<n; j++)
-                if(rows[i]==cols[j])
-                    ans.push_back(rows[i]);
+            {
+                int rowMin = INT_MAX;
+                for(int k=0; k<n; k++)
+                    rowMin = min(rowMin, matrix[i][k]);
+                
+                int colMax = 0;
+                for(int k=0; k<m; k++)
+                    colMax = max(colMax, matrix[k][j]);
+                
+                if(matrix[i][j] == rowMin && matrix[i][j] == colMax)
+                    ans.push_back(matrix[i][j]);
+            }
+
         return ans;
     }
 };
