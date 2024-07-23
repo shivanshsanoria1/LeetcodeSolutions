@@ -1,14 +1,21 @@
 class Solution {
 public:
-    vector<string> sortPeople(vector<string>& names, vector<int>& heights) { // T.C.=O(n*logn), S.C.=O(n)
+    // T.C.=O(n*log(n)), S.C.=O(n)
+    vector<string> sortPeople(vector<string>& names, vector<int>& heights) {
         int n=names.size();
-        vector<pair<int, string>> vec(n);
+
+        // height -> name
+        unordered_map<int, string> mp;
         for(int i=0; i<n; i++)
-            vec[i] = {heights[i], names[i]};
-        // sort in increasing order of heights
-        sort(vec.begin(), vec.end()); 
+            mp[heights[i]] = names[i];
+        
+        // sort in decreasing order of heights
+        sort(heights.begin(), heights.end(), greater<int>());
+
+        // find the name of people with corresponding heights
         for(int i=0; i<n; i++)
-            names[i] = vec[n-i-1].second;
+            names[i] = mp[heights[i]];
+
         return names;
     }
 };

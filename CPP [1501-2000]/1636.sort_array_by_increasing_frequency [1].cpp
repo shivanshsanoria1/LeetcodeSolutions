@@ -1,22 +1,29 @@
 class Solution {
+private:
+    static bool cmp(pair<int, int> &a, pair<int, int> &b){
+        return a.second == b.second ? a.first > b.first : a.second < b.second;
+    }
+
 public:
+    // T.C.=O(n*log(n)), S.C.=O(n)
     vector<int> frequencySort(vector<int>& nums) {
-        int n=nums.size();
+        // num -> freq
+        unordered_map<int, int> mp; 
+        for(int num: nums)
+            mp[num]++;
+        
+        // {num, freq}
+        vector<pair<int, int>> vec; 
+        for(auto [num, freq]: mp)
+            vec.push_back({num, freq});
+        
+        sort(vec.begin(), vec.end(), cmp);
+
         vector<int> ans;
-        unordered_map<int,int> mp; //num -> freq
-        priority_queue<pair<int,int>> pq; //same as max heap , freq -> num
-        for(int i=0; i<n; i++)
-            mp[nums[i]]++;
-        for(auto it: mp)
-            pq.push({-it.second,it.first}); //freq is multiplied by -1 to use max heap as min heap
-        while(!pq.empty())
-        {
-            pair<int,int> curr=pq.top();
-            pq.pop();
-            int freq= -curr.first; //make freq +ive
-            while(freq--) //add num to ans freq number of times
-                ans.push_back(curr.second);
-        }
+        for(auto [num, freq]: vec)
+            while(freq--)
+                ans.push_back(num);
+
         return ans;
     }
 };
