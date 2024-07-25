@@ -1,41 +1,59 @@
 class Solution {
-public:
-    void heapify(vector<int>& vec, int n, int i){
-        // i: curr node index
-        int largest = i; // index of largest value from vec[i], vec[left], vec[right]
-        int left = 2*i + 1; // left-child index
-        int right = 2*i + 2; // right-child index
-        // left child exists and has value > curr node value
-        if(left < n && vec[left] > vec[largest])
-            largest = left;
-        // right child exists and has value > max(curr node value, left child value)
-        if(right < n && vec[right] > vec[largest])
-            largest = right;
-        if(largest != i) // new largest found
+private:
+    // we can only access the part of nums[] in index range [0, n-1]
+    void heapify(vector<int>& nums, int n, int i){
+        while(true)
         {
-            swap(vec[largest], vec[i]);
-            heapify(vec, n, largest);
+            int maxValIdx = i;
+
+            int left = 2*i + 1; // left-child index
+            int right = 2*i + 2; // right-child index
+
+            // left child exists and has val > curr max val
+            if(left < n && nums[left] > nums[maxValIdx])
+                maxValIdx = left;
+            // right child exists and has val > curr max val
+            if(right < n && nums[right] > nums[maxValIdx])
+                maxValIdx = right;
+            
+            // i is already the 'maxValIdx'
+            if(maxValIdx == i)
+                break;
+            
+            swap(nums[i], nums[maxValIdx]);
+            i = maxValIdx;
         }
     }
 
-    void heapSort(vector<int>& vec){
-        int n=vec.size();
+    void heapSort(vector<int>& nums){
+        int n=nums.size();
+
         // skip the leaf nodes, ie, elements in range [n/2, n-1]
-        for(int i=n/2-1; i>=0; i--) // build max-heap
-            heapify(vec, n, i); // heapify() at index i
-        // at each step elemnts in range [i, n-1] will be sorted,
+        // build the max-heap through heapify() by iterating in reverse
+        for(int i=n/2-1; i>=0; i--) 
+            heapify(nums, n, i); 
+
+        // at each step, elemnts in range [i, n-1] will be sorted,
         // so upper limit in heapify() is set as i instead of n
-        // at last element at index 0 will automatically sorted 
+        // at last, element at index 0 will automatically sorted 
         // so no need to run the loop for i=0
-        for(int i=n-1; i>0; i--) // delete from max-heap
+
+        // delete from max-heap
+        for(int i=n-1; i>0; i--) 
         {
-            swap(vec[0], vec[i]); // swap the root node and the last node
-            heapify(vec, i, 0); // heapify() at index 0
+            // swap the root and last unsorted node
+            swap(nums[0], nums[i]);
+            // heapify at index 0 
+            heapify(nums, i, 0); 
         }
     }
 
-    vector<int> sortArray(vector<int>& nums) { // Heap-sort, T.C.O(n*logn)
+public:
+    // T.C.O(n*log(n)), S.C.=O(1)
+    // Heap-sort
+    vector<int> sortArray(vector<int>& nums) { 
         heapSort(nums);
         return nums;
     }
 };
+// heapify() is done in Top-Down manner

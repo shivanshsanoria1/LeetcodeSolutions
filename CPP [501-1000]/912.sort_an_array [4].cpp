@@ -1,45 +1,32 @@
 class Solution {
 public:
-    // returns the digit of num at 'pos' position
-    int getDigit(int num, int pos){
-        return (num / pos) % 10;
-    }
-
-    void radixSort(vector<int>& nums, int pos){
-        int n=nums.size();
-        vector<int> freq(10, 0); 
-        vector<int> sorted(n);
-        // freq of digit at 'pos' position for each number
+    // T.C.=O(n + r), S.C.=O(n)
+    // r: (maxVal - minVal)
+    // Counting-sort with hash-map
+    vector<int> sortArray(vector<int>& nums) { 
+        // num -> freq
+        unordered_map<int, int> mp; 
         for(int num: nums)
-            freq[getDigit(num, pos)]++;
-        // prefix sum of freqs
-        for(int i=1; i<10; i++)
-            freq[i] += freq[i-1];
-        for(int i=n-1; i>=0; i--)
-        {
-            // index of nums[i] in sorted array
-            int idx = --freq[getDigit(nums[i], pos)];
-            sorted[idx] = nums[i];
-        }
-        nums = sorted;
-    }
+            mp[num]++;
 
-    vector<int> sortArray(vector<int>& nums) { // Radix-sort, T.C.=O(n*d), S.C.=O(n)
         int minVal = *min_element(nums.begin(), nums.end());
-        // make all elements in array >= 0
-        for(int& num: nums)
-            num -= minVal;
         int maxVal = *max_element(nums.begin(), nums.end());
-        int pos = 1; // pos=1,10,100,1000,... 
-        while(maxVal / pos > 0)
+
+        for(int num = minVal, i = 0; num <= maxVal; num++)
         {
-            radixSort(nums, pos);
-            pos *= 10;
+            // 'num' not found in map
+            if(mp.find(num) == mp.end()) 
+                continue;
+
+            // write 'num' in nums[] 'freq' times
+            int freq = mp[num];
+            while(freq--)
+            {
+                nums[i] = num;
+                i++;
+            }
         }
-        // restore all elements of array
-        for(int& num: nums)
-            num += minVal;
+
         return nums;
     }
 };
-// d: max num of digits of any num in nums[] 
