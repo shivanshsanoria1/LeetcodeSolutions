@@ -3,9 +3,11 @@ private:
     #define INF int(1e9)
 
 public:
-    int findTheCity(int n, vector<vector<int>>& edges, int distanceThreshold) { // T.C.=O(n^3), S.C.=O(n^2)
+    // T.C.=O(n^3), S.C.=O(n^2)
+    int findTheCity(int n, vector<vector<int>>& edges, int distanceThreshold) { 
         vector<vector<int>> dist(n, vector<int>(n, INF));
-        for(auto& edge: edges) // build adjacency matrix
+        // build adjacency matrix
+        for(vector<int>& edge: edges) 
         {
             int a = edge[0];
             int b = edge[1];
@@ -26,19 +28,23 @@ public:
                 }
 
         int minReachableCities = n;
-        int ans = n-1;
+        int ans = n;
         for(int i=n-1; i>=0; i--)
         {
+            // num of cities at dist. <= threshold dist. from ith city
             int reachableCities = 0;
             for(int j=0; j<n; j++)
                 if(i != j && dist[i][j] <= distanceThreshold)
                     reachableCities++;
+
             if(reachableCities < minReachableCities)
             {
                 minReachableCities = reachableCities;
                 ans = i;
             }
         }
+
         return ans;
     }
 };
+// dist[i][j]: min dist between cities i and j

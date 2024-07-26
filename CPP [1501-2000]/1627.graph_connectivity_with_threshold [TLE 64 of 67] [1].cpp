@@ -1,6 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 class DisjointSet{
 private:
     vector<int> parent;
@@ -9,14 +6,14 @@ private:
 public:
     // Constructor
     DisjointSet(int n){
-        this->parent.resize(n);
+        this->parent.resize(n+1);
         // initially, every node is a parent of itself
-        for(int i=0; i<n; i++)
+        for(int i=0; i<=n; i++)
             this->parent[i] = i;
 
         // initially, size of each component
         // with ultimate-parent i is 1
-        this->size.resize(n, 1);
+        this->size.resize(n+1, 1);
     }
 
     int findUltimateParent(int curr){
@@ -54,30 +51,27 @@ public:
     bool areConnected(int a, int b){
         return findUltimateParent(a) == findUltimateParent(b);
     }
-
-    // num of components is given by
-    // num of distinct ultimate-parents
-    int componentCount(){
-        int n = parent.size();
-        unordered_set<int> ultPars;
-
-        for(int i=0; i<n; i++)
-            ultPars.insert(findUltimateParent(i));
-
-        return ultPars.size();
-    }
 };
 
-int main(){
-    int n = 6;
+class Solution {
+public:
+    // T.C.=O(n^2*log(n) + q)
+    vector<bool> areConnected(int n, int threshold, vector<vector<int>>& queries) {
+        DisjointSet ds(n);
 
-    DisjointSet ds(n);
+        for(int i=1; i<=n; i++)
+            for(int j=1; j<=n; j++)
+                if(i != j && __gcd(i, j) > threshold)
+                    ds.unionBySize(i, j);
+        
+        vector<bool> ans;
+        for(vector<int>& query: queries)
+        {
+            int a = query[0];
+            int b = query[1];
+            ans.push_back(ds.areConnected(a, b));
+        }
 
-    ds.unionBySize(0, 4);
-    ds.unionBySize(0, 2);
-    ds.unionBySize(2, 3);
-
-    cout<<"are 0 and 3 connected ? "<<ds.unionBySize(0, 3)<<endl;
-    // 3 coponents: [0,4,2,3], [1], [5]
-    cout<<ds.componentCount()<<endl;
-}
+        return ans;
+    }
+};
