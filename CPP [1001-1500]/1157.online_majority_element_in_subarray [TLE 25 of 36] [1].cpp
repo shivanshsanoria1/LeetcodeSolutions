@@ -4,18 +4,21 @@ private:
 
 public:
     MajorityChecker(vector<int>& arr) {
-        for(int num: arr)
-            nums.push_back(num);
+        this->nums = arr;
     }
     
+    // T.C.=O(n)
     int query(int left, int right, int threshold) {
-        unordered_map<int, int> mp; // num -> freq
+        // num -> freq
+        unordered_map<int, int> mp; 
         for(int i=left; i<=right; i++)
         {
             mp[nums[i]]++;
+
             if(mp[nums[i]] == threshold)
                 return nums[i];
         }
+
         return -1;
     }
 };

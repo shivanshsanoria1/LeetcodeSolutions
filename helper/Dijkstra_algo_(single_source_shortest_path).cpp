@@ -36,6 +36,7 @@ vector<int> dijkstra(vector<vector<PII>>& graph, int src){
 
 int main() {
     int V = 3; // num of vertices
+    // undirected edges of type {a,b,wt}
     vector<vector<int>> edges = {{0,1,1}, {0,2,6}, {1,2,3}};
     
     // build graph
@@ -63,7 +64,7 @@ int main() {
 # T.C.=O(E*log(V)), S.C.=O(V)
 # edge is represented as {A,B,wt} meaning 
   undirected edge between A and B of weight wt
-# works for both DG (Directed Graph) and UG (Undirected Graph)
+# works for both Directed and Undirected graphs
 # does not work with -ive edge weights
 # gives TLE when there is a -ive weight cycle
 */

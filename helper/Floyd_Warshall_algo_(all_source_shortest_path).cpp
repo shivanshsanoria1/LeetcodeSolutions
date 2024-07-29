@@ -6,6 +6,10 @@ using namespace std;
 vector<vector<int>> floydWahshall(int V, vector<vector<int>>& edges){
     vector<vector<int>> graph(V, vector<int>(V, INF));
     
+    // dist between src and dest is 0 if they are the same
+    for(int i=0; i<V; i++)
+        graph[i][i] = 0;
+    
     for(vector<int>& edge: edges)
     {
         int a = edge[0];
@@ -18,12 +22,7 @@ vector<vector<int>> floydWahshall(int V, vector<vector<int>>& edges){
     for(int via=0; via<V; via++)
         for(int i=0; i<V; i++)
             for(int j=0; j<V; j++)
-            {
-                if(i == j)
-                    graph[i][j] = 0;
-                else
-                    graph[i][j] = min(graph[i][j], graph[i][via] + graph[via][j]);
-            }
+                graph[i][j] = min(graph[i][j], graph[i][via] + graph[via][j]);
     
     return graph;
 }
@@ -48,4 +47,5 @@ int main() {
 /*
 # Floyd Warshall algo; all source shortest path
 # T.C.=O(n^3), S.C.=O(n^2)
+# works for both Directed and Undirected graphs
 */

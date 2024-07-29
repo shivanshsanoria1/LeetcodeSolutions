@@ -67,8 +67,8 @@ int main() {
 # T.C.=O(V*E), S.C.=O(V)
 # edge is represented as {A,B,wt} meaning 
   directed edge from A -> B of weight wt
-# works for both DG (Directed Graph) and UG (Undirected Graph)
-# to make this algo. work or UG (Undirected Graph)
+# works for both Directed and Undirected graphs
+# to make this algo. work for UG Undirected graph
   just replace each undirected edge A--B with 
   2 directed edges A->B and A<-B
 # works with -ive edge weights
