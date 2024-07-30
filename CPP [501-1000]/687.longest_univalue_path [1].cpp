@@ -11,24 +11,30 @@
  */
 class Solution {
 private:
-    int dfs(TreeNode* curr, int& maxLen) {
+    int dfs(TreeNode* curr, int& maxLen){
         if(curr == nullptr)
             return 0;
-
+        
         int leftHeight = dfs(curr->left, maxLen);
         int rightHeight = dfs(curr->right, maxLen);
 
-        maxLen = max(maxLen, 1 + leftHeight + rightHeight);
+        int modifiedLeftHeight = curr->left != nullptr && curr->left->val == curr->val ? leftHeight : 0;
+        int modifiedRightHeight = curr->right != nullptr && curr->right->val == curr->val ? rightHeight : 0;
 
-        return 1 + max(leftHeight, rightHeight);
+        maxLen = max(maxLen, 1 + modifiedLeftHeight + modifiedRightHeight);
+
+        return 1 + max(modifiedLeftHeight, modifiedRightHeight);
     }
 
 public:
-    int diameterOfBinaryTree(TreeNode* root) { 
+    int longestUnivaluePath(TreeNode* root) {
+        if(root == nullptr)
+            return 0;
+            
         int maxLen = 0;
         dfs(root, maxLen);
         // -1 is done to get num of edges instead of num of nodes
-        return maxLen - 1; 
+        return maxLen - 1;
     }
 };
-// similar: [124. binary-tree-maximum-path-sum]
+// prerequisite: [543. diameter-of-binary-tree]
