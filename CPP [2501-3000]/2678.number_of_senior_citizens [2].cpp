@@ -5,7 +5,7 @@ public:
         int count = 0;
         for(string& detail: details)
         {
-            int age = 10*(detail[11] - '0') + (detail[12] - '0');
+            int age = stoi(detail.substr(11, 2));
             if(age > 60)
                 count++;
         }
