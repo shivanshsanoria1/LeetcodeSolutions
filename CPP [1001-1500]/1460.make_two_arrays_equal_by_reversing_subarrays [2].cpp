@@ -1,22 +1,20 @@
 class Solution {
 public:
-    bool canBeEqual(vector<int>& target, vector<int>& arr) { //T.C.=O(n) , S.C.=O(n)
-        int n=arr.size();
-        unordered_map<int,int> mp; //num -> freq
-        for(int i=0; i<n; i++)
-            mp[arr[i]]++; //increment freq
-        for(int i=0; i<n; i++)
-        {
-            if(mp.find(target[i]) != mp.end()) //target[i] present in map
-            {
-                if(mp[target[i]] > 0) //min freq can be 0
-                    mp[target[i]]--; //decrement freq
-                else
-                    return false;
-            }
-            else //target[i] not present in map
+    // T.C.=O(n + 1000), S.C.=O(1000)
+    bool canBeEqual(vector<int>& target, vector<int>& arr) { 
+        vector<int> freq(1001, 0);
+
+        for(int num: arr)
+            freq[num]++;
+
+        for(int num: target)
+            if(--freq[num] < 0)
                 return false;
-        }
+
+        for(int i=1; i<=1000; i++)
+            if(freq[i] != 0)
+                return false;
+        
         return true;
     }
 };

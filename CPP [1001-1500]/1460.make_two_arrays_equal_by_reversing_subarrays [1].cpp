@@ -1,11 +1,10 @@
 class Solution {
 public:
-    bool canBeEqual(vector<int>& target, vector<int>& arr) { //T.C.=O(nlogn) , S.C.=O(1)
-        sort(arr.begin(),arr.end());
-        sort(target.begin(),target.end());
-        for(int i=0; i<arr.size(); i++)
-            if(arr[i] != target[i])
-                return false;
-        return true;
+    // T.C.=O(n*log(n)), S.C.=O(1)
+    bool canBeEqual(vector<int>& target, vector<int>& arr) { 
+        sort(arr.begin(), arr.end());
+        sort(target.begin(), target.end());
+
+        return arr == target;
     }
 };
