@@ -3,30 +3,33 @@ public:
     // T.C.=O(??), S.C.=O(1)
     // Greedy
     int minPatches(vector<int>& nums, int n) {
-        unsigned int prefixSum = 0;
+        unsigned int limit = 0;
         int patches = 0;
 
         for(int num: nums)
         {
-            while(prefixSum < n && num > prefixSum + 1)
+            while(limit < n && limit + 1 < num)
             {
-                prefixSum += prefixSum + 1;
+                limit += limit + 1;
                 patches++;
             }
 
-            if(prefixSum >= n)
+            if(limit >= n)
                 break;
 
-            prefixSum += num;
+            limit += num;
         }
 
-        while(n > prefixSum + 1)
+        while(limit < n)
         {
-            prefixSum += prefixSum + 1;
+            limit += limit + 1;
             patches++;
         }
 
         return patches;
     }
 };
+// limit: we can make all the sums in range [0, limit]
+
 // prerequisite: [1798. maximum-number-of-consecutive-values-you-can-make]
+// similar: [2952. minimum-number-of-coins-to-be-added]

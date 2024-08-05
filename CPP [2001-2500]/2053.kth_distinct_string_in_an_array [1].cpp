@@ -1,16 +1,22 @@
 class Solution {
 public:
-    string kthDistinct(vector<string>& arr, int k) { // T.C.=O(n), S.C.=O(n)
-        unordered_map<string, int> mp; // string -> freq
-        for(string str: arr)
-            mp[str]++;
-        for(string str: arr)
+    // T.C.=O(n^2), S.C.=O(1)
+    string kthDistinct(vector<string>& arr, int k) {
+        int n=arr.size();
+        for(int i=0; i<n; i++)
         {
-            if(mp[str] == 1) // string str is distinct
-                k--;
-            if(k == 0)
-                return str;
+            bool isDistinct = true;
+            for(int j=0; j<n; j++)
+                if(i != j && arr[i] == arr[j])
+                {
+                    isDistinct = false;
+                    break;
+                }
+
+            if(isDistinct && --k == 0)
+                return arr[i];
         }
+
         return "";
     }
 };

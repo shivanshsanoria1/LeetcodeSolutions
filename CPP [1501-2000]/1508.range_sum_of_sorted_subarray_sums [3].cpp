@@ -3,12 +3,12 @@ private:
     #define MOD int(1e9 + 7)
 
 public:
-	// T.C.=O(n^2 + n*m), S.C.=O(n*m)
-	// m: max val in nums[]
+    // T.C.=O(n^2 + s), S.C.=O(s)
+    // s: sum of all elements in nums[]
     // Counting-sort
     int rangeSum(vector<int>& nums, int n, int left, int right) {
-        int maxVal = *max_element(nums.begin(), nums.end());
-        vector<int> freq(n*maxVal + 1, 0);
+        int totalSum = accumulate(nums.begin(), nums.end(), 0);
+        vector<int> freq(totalSum + 1, 0);
 
         for(int i=0; i<n; i++)
         {
@@ -46,7 +46,8 @@ public:
     }
 };
 /*
-# max val in nums[], 'm' is limited to 100 here
+# max val of nums[i] is 100, 
+  so max sum of entire array is limited to n*100
 # 'take' represents the max amount that can be 
   taken from curr freq as required by 'count'
 */
