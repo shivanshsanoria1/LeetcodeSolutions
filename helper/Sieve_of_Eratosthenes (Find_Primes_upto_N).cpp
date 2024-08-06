@@ -1,9 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// --------------- START --------------- //
+
 // returns prime nums in range [1, n]
 vector<int> sieveOfEratosthenes(int n){
-    if(n < 1)
+    if(n < 0)
         return {};
     
     // initially assume all nums are prime
@@ -26,6 +28,8 @@ vector<int> sieveOfEratosthenes(int n){
     
     return primes;
 }
+
+// --------------- END --------------- //
 
 int main() {
     vector<int> primes = sieveOfEratosthenes(100);
