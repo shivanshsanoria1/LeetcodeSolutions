@@ -7,27 +7,34 @@
  * };
  */
 class Solution {
-public:
-    ListNode* startOfLoop(ListNode* head, ListNode* start2)
-    {
-        ListNode* start1=head;
+private:
+    ListNode* startOfCycle(ListNode* head, ListNode* start2){
+        ListNode* start1 = head;
         while(start1 != start2)
         {
-            start1= start1->next;
-            start2= start2->next;
+            start1 = start1->next;
+            start2 = start2->next;
         }
+
         return start1;
     }
 
-    ListNode *detectCycle(ListNode *head) { //Floyd's cycle detection algo.
-        ListNode *slow=head, *fast=head;
-        while(fast!=NULL && fast->next!=NULL)
+public:
+    // T.C.=O(n), S.C.=O(1)
+    // Floyd's Cycle Finding algo.
+    ListNode *detectCycle(ListNode *head) {
+        ListNode* slow = head;
+        ListNode* fast = head;
+        
+        while(fast != nullptr && fast->next != nullptr)
         {
-            slow= slow->next;
-            fast= fast->next->next;
-            if(slow == fast) //cycle found
-                return startOfLoop(head,slow);
+            slow = slow->next;
+            fast = fast->next->next;
+            
+            if(slow == fast)
+                return startOfCycle(head, slow);
         }
-        return NULL; //no cycle found
+        
+        return nullptr;
     }
 };
