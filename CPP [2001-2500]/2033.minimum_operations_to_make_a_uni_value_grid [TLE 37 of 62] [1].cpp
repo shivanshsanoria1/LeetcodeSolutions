@@ -37,3 +37,5 @@ public:
         return minOps == INT_MAX ? -1 : minOps;
     }
 };
+// the final value must be one of the 
+// values already present in the grid
