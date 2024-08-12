@@ -1,35 +1,43 @@
 class Solution {
-public:
-    typedef pair<int ,int> PI;
+private:
+    typedef pair<int, int> PII;
 
-    vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int color) { // BFS
+    void bfs(vector<vector<int>>& image, int newColor, int startX, int startY){
         int m=image.size(), n=image[0].size();
-        int startColor = image[sr][sc];
-        vector<PI> dirs = {{-1,0}, {1,0}, {0,-1}, {0,1}}; // up, down, left, right
-        set<PI> visited;
-        queue<PI> q;
-        visited.insert({sr, sc});
-        q.push({sr, sc});
+        int startColor = image[startX][startY];
+        // up, down, left, right
+        vector<PII> dirs = {{-1,0}, {1,0}, {0,-1}, {0,1}}; 
+        queue<PII> q;
+        image[startX][startY] = newColor;
+        q.push({startX, startY});
+
         while(!q.empty())
         {
-            int x = q.front().first;
-            int y = q.front().second;
+            auto [currX, currY] = q.front();
             q.pop();
-            image[x][y] = color; // fill the new color in the curr cell
-            for(auto dir: dirs)
+
+            for(auto [dx, dy]: dirs)
             {
-                int x1 = x + dir.first;
-                int y1 = y + dir.second;
-                if(x1<0 || x1>=m || y1<0 || y1>=n) // index out of bounds
+                int x = currX + dx;
+                int y = currY + dy;
+
+                if(x<0 || x>=m || y<0 || y>=n)
                     continue;
-                // color of the cell is the same as start color and cell is unvisited
-                if(image[x1][y1] == startColor && visited.find({x1, y1}) == visited.end())
-                {
-                    visited.insert({x1, y1});
-                    q.push({x1, y1});
-                }
+                if(image[x][y] != startColor)
+                    continue;
+                if(image[x][y] == newColor)
+                    continue;
+
+                image[x][y] = newColor;
+                q.push({x, y});
             }
         }
+    }
+
+public:
+    // T.C.=O(m*n), S.C.=O(m*n)
+    vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int color) {
+        bfs(image, color, sr, sc);
         return image;
     }
 };

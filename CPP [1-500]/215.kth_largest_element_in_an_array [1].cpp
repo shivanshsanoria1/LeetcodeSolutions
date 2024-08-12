@@ -1,8 +1,8 @@
 class Solution {
 public:
-    int findKthLargest(vector<int>& nums, int k) { // T.C.=O(nlogn)
-        int n=nums.size();
+    // T.C.=O(n*log(n)), S.C.=O(1)
+    int findKthLargest(vector<int>& nums, int k) { 
         sort(nums.begin(), nums.end());
-        return nums[n-k];
+        return nums[nums.size() - k];
     }
 };

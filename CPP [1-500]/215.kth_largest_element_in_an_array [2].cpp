@@ -1,9 +1,16 @@
 class Solution {
 public:
-    int findKthLargest(vector<int>& nums, int k) { // T.C.=O(n*logn + k*logn), S.C.=O(n)
-        priority_queue<int> pq(nums.begin(), nums.end()); // max heap
-        for(int i=1; i<k; i++) // pop (k-1) elements from heap
-            pq.pop();
+    // T.C.=O(n*log(k)), S.C.=O(k)
+    int findKthLargest(vector<int>& nums, int k) {
+        // min-heap
+        priority_queue<int, vector<int>, greater<int>> pq; 
+        for(int num: nums)
+        {
+            pq.push(num);
+            if(pq.size() == k+1)
+                pq.pop();
+        }
+
         return pq.top();
     }
 };

@@ -1,13 +1,22 @@
 class Solution {
 public:
-    int findKthLargest(vector<int>& nums, int k) { // T.C.=O(n*logk), S.C.=O(k)
-        priority_queue<int, vector<int>, greater<int>> pq; // min heap
+    // T.C.=O(n + (maxVal - minVal)), S.C.=O(maxVal - minVal)
+    // Counting-sort
+    int findKthLargest(vector<int>& nums, int k) { 
+        int minVal = *min_element(nums.begin(), nums.end());
+        int maxVal = *max_element(nums.begin(), nums.end());
+
+        vector<int> freq(maxVal - minVal + 1, 0);
         for(int num: nums)
+            freq[num - minVal]++;
+
+        for(int i=freq.size()-1; i>=0; i--)
         {
-            pq.push(num);
-            if(pq.size() > k)
-                pq.pop();
+            k -= min(k, freq[i]);
+            if(k == 0)
+                return i + minVal;
         }
-        return pq.top();
+
+        return -1;
     }
 };
