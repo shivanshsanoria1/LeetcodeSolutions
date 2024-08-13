@@ -1,46 +1,37 @@
 class Solution {
-public:
-    void solve(vector<int>& nums, vector<vector<int>>& combs, vector<int>& comb, int tar){
-        if(tar < 0)
+private:
+    void solve(vector<int>& nums, vector<vector<int>>& combs, vector<int>& comb, int target, int i){
+        // reached over the target
+        if(target < 0) 
             return;
-        if(tar == 0)
+        // reached the target
+        if(target == 0) 
         {
-            bool combFound = false;
-            for(auto vec: combs)
-            {
-                if(vec.size() != comb.size())
-                    continue;
-                unordered_map<int, int> mp;
-                for(int ele: vec)
-                    mp[ele]++;
-                for(int ele: comb)
-                    mp[ele]--;
-                int freq0 = 0;
-                for(auto it: mp)
-                    if(it.second == 0)
-                        freq0++;
-                if(freq0 == mp.size())
-                {
-                    combFound = true;
-                    break;
-                }
-            }
-            if(!combFound)
-                combs.push_back(comb);
+            combs.push_back(comb);
             return;
         }
-        for(int num: nums)
-        {
-            comb.push_back(num);
-            solve(nums, combs, comb, tar - num);
-            comb.pop_back();
-        }
+        // index out of bounds
+        if(i >= nums.size()) 
+            return;
+
+        // skip the element at index i, ie, move to the next index 
+        // (so that nums[i] can never be picked again)
+        solve(nums, combs, comb, target, i+1); 
+
+        // pick the element at index i, ie, remain at the same index 
+        // (so that nums[i] can possibly be picked again)
+        comb.push_back(nums[i]);
+        solve(nums, combs, comb, target - nums[i], i);
+        comb.pop_back();
     }
 
+public:
+    // Backtracking
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
         vector<vector<int>> combs;
         vector<int> comb;
-        solve(candidates, combs, comb, target);
+        solve(candidates, combs, comb, target, 0);
+
         return combs;
     }
 };
