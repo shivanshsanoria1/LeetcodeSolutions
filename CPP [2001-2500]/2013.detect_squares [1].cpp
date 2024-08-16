@@ -1,46 +1,57 @@
 class DetectSquares {
 private:
+    // grid[i][j]: freq of the point {x, y}
     vector<vector<int>> grid;
+
+    bool isValidPoint(int x, int y){
+        return x >= 0 && x <= 1000 && y >= 0 && y <= 1000;
+    }
 
 public:
     DetectSquares() {
-        grid.resize(1001, vector<int>(1001, 0));
+        this->grid.resize(1001, vector<int>(1001, 0));
     }
     
     void add(vector<int> point) {
-        grid[point[0]][point[1]]++;
-    }
-    
-    bool isValidIndex(int i, int j){
-        return i < 0 || i > 1000 || j < 0 || j > 1000 ? false : true;
+        int x = point[0];
+        int y = point[1];
+        grid[x][y]++;
     }
 
     int count(vector<int> point) {
-        int ans = 0;
         int x = point[0];
         int y = point[1];
+        int ans = 0;
+
         for(int k=1; k<=1000; k++)
         {
-            int x1 = x , y1 = y + k; // north 
-            int x2 = x , y2 = y - k; // south
-            int x3 = x + k, y3 = y; // east
-            int x4 = x - k, y4 = y; // west
-            int x5 = x + k, y5 = y + k; // north-east
-            int x6 = x - k, y6 = y + k; // north-west
-            int x7 = x + k, y7 = y - k; // south-east
-            int x8 = x - k, y8 = y - k; // south-west
+            int x1 = x , y1 = y + k; // North 
+            int x2 = x , y2 = y - k; // South
+            int x3 = x + k, y3 = y; // East
+            int x4 = x - k, y4 = y; // West
+            int x5 = x + k, y5 = y + k; // North-East
+            int x6 = x - k, y6 = y + k; // North-West
+            int x7 = x + k, y7 = y - k; // South-East
+            int x8 = x - k, y8 = y - k; // South-West
+            
             // all diagonal indexes are out of bounds
-            if(!isValidIndex(x5,y5) && !isValidIndex(x6,y6) && !isValidIndex(x7,y7) && !isValidIndex(x8,y8))
+            if(!isValidPoint(x5,y5) && !isValidPoint(x6,y6) && !isValidPoint(x7,y7) && !isValidPoint(x8,y8))
                 break;
-            if(isValidIndex(x1,y1) && isValidIndex(x3,y3) && isValidIndex(x5,y5))
-                ans += grid[x1][y1]*grid[x3][y3]*grid[x5][y5];
-            if(isValidIndex(x1,y1) && isValidIndex(x4,y4) && isValidIndex(x6,y6))
-                ans += grid[x1][y1]*grid[x4][y4]*grid[x6][y6];
-            if(isValidIndex(x2,y2) && isValidIndex(x3,y3) && isValidIndex(x7,y7))
-                ans += grid[x2][y2]*grid[x3][y3]*grid[x7][y7];
-            if(isValidIndex(x2,y2) && isValidIndex(x4,y4) && isValidIndex(x8,y8))
-                ans += grid[x2][y2]*grid[x4][y4]*grid[x8][y8];
+            
+            // North, East, North-East exists
+            if(isValidPoint(x1,y1) && isValidPoint(x3,y3) && isValidPoint(x5,y5))
+                ans += grid[x1][y1] * grid[x3][y3] * grid[x5][y5];
+            // North, West, North-West exists
+            if(isValidPoint(x1,y1) && isValidPoint(x4,y4) && isValidPoint(x6,y6))
+                ans += grid[x1][y1] * grid[x4][y4] * grid[x6][y6];
+            // South, East, South-East exists
+            if(isValidPoint(x2,y2) && isValidPoint(x3,y3) && isValidPoint(x7,y7))
+                ans += grid[x2][y2] * grid[x3][y3] * grid[x7][y7];
+            // South, West, South-West exists
+            if(isValidPoint(x2,y2) && isValidPoint(x4,y4) && isValidPoint(x8,y8))
+                ans += grid[x2][y2] * grid[x4][y4] * grid[x8][y8];
         }
+
         return ans;
     }
 };
@@ -51,3 +62,13 @@ public:
  * obj->add(point);
  * int param_2 = obj->count(point);
  */
+
+/*
+
+(x6,y6) - (x1,y1) - (x5,y5)
+   |         |         |
+(x4,y4)    (x,y)    (x3,y3)
+   |         |         |
+(x8,y8) - (x2,y2) - (x7,y7)
+
+*/

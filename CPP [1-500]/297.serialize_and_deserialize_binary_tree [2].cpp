@@ -10,25 +10,32 @@
 class Codec {
 public:
     // Encodes a tree to a single string.
-    string serialize(TreeNode* root) { // BFS
+    string serialize(TreeNode* root) { 
         string serial = "";
-        if(root == NULL)
+        if(root == nullptr)
             return serial;
+
         queue<TreeNode*> q;
         q.push(root);
+        
         while(!q.empty())
         {
             TreeNode* curr = q.front();
             q.pop();
-            if(curr == NULL)
+
+            if(curr == nullptr)
             {
                 serial += "N,";
                 continue;
             }
+
             serial += to_string(curr->val) + ",";
+
             q.push(curr->left);
             q.push(curr->right);
         }
+
+        // remove the last ','
         serial.pop_back();
         return serial;
     }
@@ -36,24 +43,24 @@ public:
     // Decodes your encoded data to tree.
     TreeNode* deserialize(string data) {
         if(data.length() == 0) 
-            return NULL; 
+            return nullptr; 
 
         stringstream ss(data);
         string val = ""; 
 
         getline(ss, val, ',');
-        TreeNode *root = new TreeNode(stoi(val));
+        TreeNode* root = new TreeNode(stoi(val));
         queue<TreeNode*> q;
         q.push(root); 
         
         while(!q.empty()) 
         {
-            TreeNode *currNode = q.front(); 
+            TreeNode* currNode = q.front(); 
             q.pop(); 
             
             getline(ss, val, ',');
             if(val == "N") 
-                currNode->left = NULL; 
+                currNode->left = nullptr; 
             else 
             {
                 TreeNode* leftNode = new TreeNode(stoi(val)); 
@@ -63,7 +70,7 @@ public:
             
             getline(ss, val, ',');
             if(val == "N") 
-                currNode->right = NULL; 
+                currNode->right = nullptr; 
             else 
             {
                 TreeNode* rightNode = new TreeNode(stoi(val)); 
@@ -71,6 +78,7 @@ public:
                 q.push(rightNode); 
             }
         }
+        
         return root; 
     }
 };

@@ -9,32 +9,35 @@
  */
 class Codec {
 private:
-    string preorder(TreeNode* curr){
-        if(curr == NULL)
+    string preorderSerialize(TreeNode* curr){
+        if(curr == nullptr)
             return "N,";
-        return to_string(curr->val) + "," + preorder(curr->left) + preorder(curr->right); 
+
+        return to_string(curr->val) + "," + preorderSerialize(curr->left) + preorderSerialize(curr->right); 
     }
 
     TreeNode* buildTree(queue<string>& q){
         if(q.empty())
-            return NULL;
+            return nullptr;
 
         string curr = q.front();
         q.pop();
 
         if(curr == "N")
-            return NULL;
+            return nullptr;
 
         TreeNode* currNode = new TreeNode(stoi(curr));
+
         currNode->left = buildTree(q);
         currNode->right = buildTree(q);
+
         return currNode;
     }
 
 public:
     // Encodes a tree to a single string.
     string serialize(TreeNode* root) {
-        return preorder(root);
+        return preorderSerialize(root);
     }
 
     // Decodes your encoded data to tree.
@@ -52,6 +55,7 @@ public:
                 val += ch;
         }
         q.push(val);
+
         return buildTree(q);
     }
 };
