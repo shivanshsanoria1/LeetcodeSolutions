@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// --------------- START --------------- //
+// --------------- START (Disjoint-Set) --------------- //
 
 class DisjointSet{
 private:
@@ -69,6 +69,10 @@ public:
         return ultPars.size();
     }
 };
+
+// --------------- END (Disjoint-Set) --------------- //
+
+// --------------- START --------------- //
 
 int minimumSpanningTree(int V, vector<vector<int>>& edges, vector<vector<int>>& mst){
     // sort in increasing order of edge weights

@@ -24,17 +24,29 @@ public:
 
 class LinkedList{
 public:
+    vector<int> nums;
+
     ListNode* head = nullptr;
     ListNode* tail = nullptr;
     int len = 0;
     
     LinkedList(){
+        this->nums.clear();
+
         this->head = nullptr;
         this->tail = nullptr;
         this->len = 0;
     }
     
-    ListNode* buildLL(vector<int>& nums){
+    LinkedList(vector<int>& nums){
+        this->nums = nums;
+        
+        this->head = nullptr;
+        this->tail = nullptr;
+        this->len = 0;
+    }
+    
+    ListNode* buildLL(){
         for(int num: nums)
         {
             ListNode* newNode = new ListNode(num);
@@ -116,10 +128,10 @@ ListNode* findStartOfCycle(ListNode* head){
 // --------------- END --------------- //
 
 int main() {
-    LinkedList ll;
     vector<int> nums = { 1, 2, 3, 4, 5 };
+    LinkedList ll(nums);
     
-    ListNode* head = ll.buildLL(nums);
+    ListNode* head = ll.buildLL();
     
     // connect the node at last index to the node at index 2
     ll.addCycleToIndex(2);
