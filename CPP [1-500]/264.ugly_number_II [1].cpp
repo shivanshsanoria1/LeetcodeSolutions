@@ -1,19 +1,35 @@
 class Solution {
 public:
-    int nthUglyNumber(int n) { //T.C.=O(n) ; S.C.=O(n)
-        vector<int> dp(n); //vector to store first n ugly numbers
-        int i2=0, i3=0, i5=0; //pointers to the index where 2,3,5 will be multiplied
-        dp[0]=1; //1st ugly num is 1
-        for(int i=1; i<n; i++)
+    int nthUglyNumber(int n) {
+        // multipliers
+        vector<int> muls = { 2, 3, 5 };
+        // min-heap
+        priority_queue<int, vector<int>, greater<int>> pq;
+        unordered_set<int> s;
+        s.insert(1);
+        pq.push(1);
+
+        // run the loop for (n-1) times
+        while(--n)
         {
-            dp[i]=min(2*dp[i2],min(3*dp[i3],5*dp[i5]));
-            if(dp[i]==2*dp[i2])
-                i2++;
-            if(dp[i]==3*dp[i3])
-                i3++;
-            if(dp[i]==5*dp[i5])
-                i5++;
+            int curr = pq.top();
+            pq.pop();
+
+            for(int mul: muls)
+            {
+                long long int next = (long long int)curr * mul;
+                // next val is out of int range
+                if(next > INT_MAX)
+                    continue;
+                // next val already present in set
+                if(s.find(next) != s.end())
+                    continue;
+                
+                s.insert(next);
+                pq.push(next);
+            }
         }
-        return dp[n-1]; //return last element in dp[]
+
+        return pq.top();
     }
 };

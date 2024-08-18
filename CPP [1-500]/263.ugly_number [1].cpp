@@ -1,16 +1,21 @@
 class Solution {
 public:
+    // T.C.=O(log2(n) + log3(n) + log5(n)), S.C.=O(1)
     bool isUgly(int n) {
-        if(n<=0) //num has to be +ive
+        // num has to be +ive
+        if(n <= 0) 
             return false;
-        while(n%2==0) // remove all 2 prime factors
-            n=n/2;
-        while(n%3==0) // remove all 3 prime factors
-            n=n/3;
-        while(n%5==0) // remove all 5 prime factors
-            n=n/5;
-        if(n==1)  // no prime factors except 2,3,5
-            return true;
-        return false;
+       
+        // remove all 2's
+        while(n % 2 == 0) 
+            n /= 2;
+        // remove all 3's
+        while(n % 3 == 0) 
+            n /= 3;
+        // remove all 5's
+        while(n % 5 == 0) 
+            n /= 5;
+        
+        return n == 1;
     }
 };
