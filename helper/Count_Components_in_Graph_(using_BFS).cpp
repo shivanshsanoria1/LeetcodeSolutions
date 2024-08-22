@@ -3,9 +3,7 @@ using namespace std;
 
 // --------------- START --------------- //
 
-void bfs(vector<vector<int>>& graph, int src){
-    int V=graph.size();
-    vector<bool> visited(V, false);
+void bfs(vector<vector<int>>& graph, vector<int>& visited, int src){
     queue<int> q;
     visited[src] = true;
     q.push(src);
@@ -27,6 +25,23 @@ void bfs(vector<vector<int>>& graph, int src){
     }
 }
 
+int getComponentCount(int V, vector<vector<int>>& graph){
+    vector<int> visited(V, false);
+    int componentCount = 0;
+    
+    for(int i=0; i<V; i++)
+    {
+        if(visited[i])
+            continue;
+        
+        bfs(graph, visited, i);
+        cout<<endl;
+        componentCount++;
+    }
+    
+    return componentCount;
+}
+
 // --------------- END --------------- //
 
 int main() {
@@ -44,11 +59,11 @@ int main() {
         graph[b].push_back(a);
     }
     
-    int src = 0; // source vertex
-    cout<<"BFS starting at vertex: "<<src<<endl;
-    bfs(graph, src);
+    cout<<"Components: "<<endl;
+    int componentCount = getComponentCount(V, graph);
+    cout<<"Component Count = "<<componentCount<<endl;
     
-    cout<<endl<<"------------------"<<endl;
+    cout<<"------------------"<<endl;
 
     return 0;
 }

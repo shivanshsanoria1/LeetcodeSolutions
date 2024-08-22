@@ -14,6 +14,23 @@ void dfs(vector<vector<int>>& graph, vector<int>& visited, int curr){
         dfs(graph, visited, nei);
 }
 
+int getComponentCount(int V, vector<vector<int>>& graph){
+    vector<int> visited(V, false);
+    int componentCount = 0;
+    
+    for(int i=0; i<V; i++)
+    {
+        if(visited[i])
+            continue;
+        
+        dfs(graph, visited, i);
+        cout<<endl;
+        componentCount++;
+    }
+    
+    return componentCount;
+}
+
 // --------------- END --------------- //
 
 int main() {
@@ -31,12 +48,11 @@ int main() {
         graph[b].push_back(a);
     }
     
-    int src = 0; // source vertex
-    cout<<"DFS starting at vertex: "<<src<<endl;
-    vector<int> visited(V, false);
-    dfs(graph, visited, src);
+    cout<<"Components: "<<endl;
+    int componentCount = getComponentCount(V, graph);
+    cout<<"Component Count = "<<componentCount<<endl;
     
-    cout<<endl<<"------------------"<<endl;
+    cout<<"------------------"<<endl;
 
     return 0;
 }
