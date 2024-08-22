@@ -1,14 +1,17 @@
 class Solution {
 public:
     // Bit-manipulation
-    int findComplement(int num) {
-        // find the min number of bits to represent the given num
-        int bits = floor(log2(num)) + 1; 
+    int bitwiseComplement(int n) {
+        if(n == 0)
+            return 1;
+
+         // find the min number of bits to represent the given num
+        int bits = floor(log2(n)) + 1; 
         // generate a number with number of set bits equal 
         // to the number of bits in the given num
-        int mask = ((unsigned)1 << bits) - 1; 
+        int mask = (1 << bits) - 1; 
 
-        return num ^ mask;
+        return n ^ mask;
     }
 };
 
@@ -25,5 +28,5 @@ public:
   ---------------------------------
        = (!A(n-1) ... !A2 !A1 !A0)2
 
-# similar: [1009. complement-of-base-10-intege]
+# similar: [476. number-complement]
 */
