@@ -10,19 +10,25 @@
  * };
  */
 class Solution {
-public:
-    void postorder(TreeNode* curr, vector<int>& ans) //Left-Right-Root
-    {
-        if(curr==NULL)
+private:
+    // left-right-curr
+    void postorder(TreeNode* curr, vector<int>& ans){
+        if(curr == nullptr)
             return;
-        postorder(curr->left, ans); //move to left-subtree
-        postorder(curr->right, ans); //move to right-subtree
-        ans.push_back(curr->val); //push the curr value in ans vector
+
+        postorder(curr->left, ans); 
+        postorder(curr->right, ans);
+
+        ans.push_back(curr->val);
     }
     
-    vector<int> postorderTraversal(TreeNode* root) { //Recursive
+public:
+    // T.C.=O(n), S.C.=O(n)
+    // Recursive
+    vector<int> postorderTraversal(TreeNode* root) {
         vector<int> ans;
-        postorder(root,ans);
+        postorder(root, ans);
+
         return ans;
     }
 };

@@ -11,23 +11,30 @@
  */
 class Solution {
 public:
-    vector<int> postorderTraversal(TreeNode* root) { // ITERATIVE
+    // T.C.=O(n), S.C.=O(n)
+    // Iterative
+    vector<int> postorderTraversal(TreeNode* root) {
         vector<int> ans;
-        if(root==NULL)
+        if(root == nullptr)
             return ans;
+
         stack<TreeNode*> st;
-        st.push(root); // push root node in stack
+        st.push(root);
+
         while(!st.empty())
         {
-            TreeNode* curr=st.top();
+            TreeNode* curr = st.top();
             st.pop();
+
             ans.push_back(curr->val);
-            if(curr->left!=NULL) // left child is pushed before right child
-                st.push(curr->left); // to make sure right subtree is processed first
-            if(curr->right!=NULL)
+
+            if(curr->left != nullptr) 
+                st.push(curr->left);
+            if(curr->right != nullptr)
                 st.push(curr->right);
         }
-        reverse(ans.begin(),ans.end()); // reverse the resulting order
+
+        reverse(ans.begin(), ans.end());
         return ans;
     }
 };
