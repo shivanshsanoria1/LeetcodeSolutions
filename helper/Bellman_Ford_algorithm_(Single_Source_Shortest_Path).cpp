@@ -29,7 +29,7 @@ vector<int> bellmanFord(int V, vector<vector<int>>& edges, int src){
                 // relaxation still possible on the Vth iteration
                 // thus a -ive wt. cycle is found
                 if(r == V)
-                    return {};
+                    return {-1};
 
                 dist[b] = dist[a] + wt;
                 isRelaxationDone = true;
@@ -47,15 +47,16 @@ vector<int> bellmanFord(int V, vector<vector<int>>& edges, int src){
 
 int main() {
     int V = 3; // num of vertices
+    // weighted directed edges {a, b, wt}: a -> b of weight wt
     // graph without -ive weight cycle
     vector<vector<int>> edges = {{0,1,5}, {1,0,3}, {1,2,-1}, {2,0,1}};
-
     // graph with -ive weight cycle
     // vector<vector<int>> edges = {{0,1,5}, {1,2,-2}, {2,1,-5}};
     
-    vector<int> dist = bellmanFord(V, edges, 2);
+    int src = 2; // source-vertex
+    vector<int> dist = bellmanFord(V, edges, src);
 
-    if(dist.empty())
+    if(dist.size() == 1 && dist[0] == -1)
         cout<<"Negative weight cycle found"<<endl;
     else
     {
@@ -72,7 +73,7 @@ int main() {
 # edge is represented as {A,B,wt} meaning 
   directed edge from A -> B of weight wt
 # works for both Directed and Undirected graphs
-# to make this algo. work for UG Undirected graph
+# to make this algo. work for UG (Undirected graph)
   just replace each undirected edge A--B with 
   2 directed edges A->B and A<-B
 # works with -ive edge weights

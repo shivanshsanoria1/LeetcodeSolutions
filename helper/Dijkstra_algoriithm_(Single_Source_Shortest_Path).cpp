@@ -40,7 +40,7 @@ vector<int> dijkstra(vector<vector<PII>>& graph, int src){
 
 int main() {
     int V = 3; // num of vertices
-    // undirected edges of type {a,b,wt}
+    // weighted undirected edges {a, b, wt}: a -> b of weight wt
     vector<vector<int>> edges = {{0,1,1}, {0,2,6}, {1,2,3}};
     
     // build graph
@@ -55,7 +55,8 @@ int main() {
         graph[b].push_back({a, wt});
     }
     
-    vector<int> dist = dijkstra(graph, 2);
+    int src = 2;
+    vector<int> dist = dijkstra(graph, src);
 
     for(int i=0; i<V; i++)
         cout<<i<<" -> "<<dist[i]<<endl;
