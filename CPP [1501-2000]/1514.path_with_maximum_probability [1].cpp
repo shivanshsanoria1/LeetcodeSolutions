@@ -1,32 +1,47 @@
 class Solution {
 public:
-    double maxProbability(int n, vector<vector<int>>& edges, vector<double>& succProb, int start, int end) {
+    // T.C.=O(n + E*log(n)), S.C.=O(E + n)
+    // modified Dijkstra's algo.
+    double maxProbability(int n, vector<vector<int>>& edges, vector<double>& succProb, int start_node, int end_node) {
+        int src = start_node; // source
+        int dest = end_node; // destination
+
+        // weighted undirected graph
         vector<vector<pair<int, double>>> graph(n);
-        for(int i=0; i<edges.size(); i++) // build graph
+        for(int i=0; i<edges.size(); i++)
         {
             int a = edges[i][0];
             int b = edges[i][1];
+
             graph[a].push_back({b, succProb[i]});
             graph[b].push_back({a, succProb[i]});
         }
-        vector<bool> visited(n, false);
-        priority_queue<pair<double, int>> pq; // max-heap
-        pq.push({1, start}); // probability to reach start vertex is 1
+
+        // initially probability of reaching any vertex from src vertex is 0
+        vector<double> maxProb(n, 0); 
+        // probability of reaching src vertex from itself is 1
+        maxProb[src] = 1;
+
+        // max-heap; {prob, vertex}
+        priority_queue<pair<double, int>> pq; 
+        pq.push({maxProb[src], src});
+
         while(!pq.empty())
         {
-            auto [currProb, curr] = pq.top();
+            int curr = pq.top().second;
             pq.pop();
-            visited[curr] = true; // mark the curr vertex as visited
-            if(curr == end) // reached the end vertex
-                return currProb;
+
+            if(curr == dest) // reached the dest vertex
+                break;
+
             for(auto [nei, prob]: graph[curr])
-            {
-                if(visited[nei]) // already visited neighbour
-                    continue;
-                pq.push({currProb*prob, nei});
-            }   
+                if(maxProb[curr] * prob > maxProb[nei])
+                {
+                    maxProb[nei] = maxProb[curr] * prob;
+                    pq.push({maxProb[nei], nei});
+                }
         }
-        return 0; // end vertex is unreachable from the start vertex
+
+        return maxProb[dest];
     }
 };
-// Dijkstra's algo.

@@ -2,21 +2,39 @@ class Solution {
 private:
     typedef pair<int, int> PII;
 
-    void dfs(vector<vector<int>>& grid, int i, int j, vector<PII>& island){
+    void bfs(vector<vector<int>>& grid, int startX, int startY, vector<vector<PII>>& islands){
         int m=grid.size(), n=grid[0].size();
-        if(i < 0 || i >= m || j < 0 || j >= n)  
-            return;
-        
-        if(grid[i][j] != 1)
-            return;
-        
-        grid[i][j] = -1;
-        island.push_back({i, j});
+        // up, down, left, right
+        vector<PII> dirs = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+        vector<PII> island;
 
-        dfs(grid, i-1, j, island); // up
-        dfs(grid, i+1, j, island); // down
-        dfs(grid, i, j-1, island); // left
-        dfs(grid, i, j+1, island); // right
+        queue<PII> q;
+        grid[startX][startY] = -1;
+        q.push({startX, startY});
+
+        while(!q.empty())
+        {
+            auto [currX, currY] = q.front();
+            q.pop();
+
+            island.push_back({currX, currY});
+
+            for(auto [dx, dy]: dirs)
+            {
+                int x = currX + dx;
+                int y = currY + dy;
+
+                if(x < 0 || x >= m || y < 0 || y >= n)
+                    continue;
+                if(grid[x][y] != 1)
+                    continue;
+
+                grid[x][y] = -1;
+                q.push({x, y});
+            }
+        }
+
+        islands.push_back(island);
     }
 
     void restoreGrid(vector<vector<int>>& grid){
@@ -36,14 +54,8 @@ public:
         vector<vector<PII>> islands2;
         for(int i=0; i<m; i++)
             for(int j=0; j<n; j++)
-            {
-                if(grid2[i][j] != 1)
-                    continue;
-
-                vector<PII> island2;
-                dfs(grid2, i, j, island2);
-                islands2.push_back(island2);
-            }
+                if(grid2[i][j] == 1)
+                    bfs(grid2, i, j, islands2);
         
         // check if each island of grid2 is a sub-island of grid1
         int subIslands = 0;
