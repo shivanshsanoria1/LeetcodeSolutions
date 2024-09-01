@@ -74,7 +74,7 @@ public:
 
 // --------------- START --------------- //
 
-int minimumSpanningTree(int V, vector<vector<int>>& edges){
+int minimumSpanningTree(int V, vector<vector<int>>& edges, vector<vector<int>>& mst){
     // sort in increasing order of edge weights
     sort(edges.begin(), edges.end(), [](vector<int>& a, vector<int>& b){
         return a[2] < b[2];
@@ -91,7 +91,10 @@ int minimumSpanningTree(int V, vector<vector<int>>& edges){
         
         // a and b belong to the same component
         if(ds.unionBySize(a, b))
+        {
             sumMst += wt;
+            mst.push_back({a, b, wt});
+        }
     }
     
     return sumMst;
@@ -101,14 +104,27 @@ int minimumSpanningTree(int V, vector<vector<int>>& edges){
 
 int main() {
     int V = 5;
-    // edge: {a, b, wt}
+    // weighted undirected edge: {a, b, wt}: a--b of weight wt
     vector<vector<int>> edges = { {0,1,2}, {0,2,1}, {1,2,1}, {2,3,2}, {2,4,2}, {3,4,1} };
     
-    int sumMST = minimumSpanningTree(V, edges);
+    vector<vector<int>> mst;
+    int sumMST = minimumSpanningTree(V, edges, mst);
     
     cout<<"MST weight = "<<sumMST<<endl;
+    cout<<"MST is: "<<endl;
+    cout<<"Edge  | Weight"<<endl;
+    for(vector<int>& edge: mst)
+    {
+        int a = edge[0];
+        int b = edge[1];
+        int wt = edge[2];
+        
+        if(a > b)
+            swap(a, b);
+        cout<<a<<" - "<<b<<" | "<<wt<<endl;
+    }
     
-    cout<<"--------------------"<<endl;
+    cout<<endl<<"--------------------"<<endl;
 
     return 0;
 }

@@ -5,18 +5,16 @@ using namespace std;
 
 typedef pair<int, int> PII;
 
-int minimumSpanningTree(int V, vector<vector<PII>>& graph, vector<vector<int>>& mst){
+int minimumSpanningTree(int V, vector<vector<PII>>& graph){
     vector<int> visited(V, false);
-    // min-heap; {wt, curr, parent}
-    priority_queue<vector<int>, vector<vector<int>>, greater<vector<int>>> pq;
-    pq.push({0, 0, -1});
+    // min-heap; {wt, curr}
+    priority_queue<PII, vector<PII>, greater<PII>> pq;
+    pq.push({0, 0});
     int sumMST = 0;
     
     while(!pq.empty())
     {
-        int wt = pq.top()[0];
-        int curr = pq.top()[1];
-        int parent = pq.top()[2];
+        auto [wt, curr] = pq.top();
         pq.pop();
         
         if(visited[curr])
@@ -24,14 +22,12 @@ int minimumSpanningTree(int V, vector<vector<PII>>& graph, vector<vector<int>>& 
             
         visited[curr] = true;
         sumMST += wt;
-        if(parent != -1)
-            mst.push_back({curr, parent, wt});
         
         for(auto [nei, wt]: graph[curr])
         {
             if(visited[nei])
                 continue;
-            pq.push({wt, nei, curr});
+            pq.push({wt, nei});
         }
     }
     
@@ -42,7 +38,7 @@ int minimumSpanningTree(int V, vector<vector<PII>>& graph, vector<vector<int>>& 
 
 int main() {
     int V = 5;
-    // edge: {a, b, wt}
+    // weighted undirected edge: {a, b, wt}: a--b of weight wt
     vector<vector<int>> edges = { {0,1,2}, {0,2,1}, {1,2,1}, {2,3,2}, {2,4,2}, {3,4,1} };
     
     vector<vector<PII>> graph(V);
@@ -56,23 +52,11 @@ int main() {
         graph[b].push_back({a, wt});
     }
     
-    vector<vector<int>> mst;
-    int sumMST = minimumSpanningTree(V, graph, mst);
+    int sumMST = minimumSpanningTree(V, graph);
     
     cout<<"MST weight = "<<sumMST<<endl;
-    cout<<"MST is: "<<endl;
-    for(vector<int>& edge: mst)
-    {
-        int a = edge[0];
-        int b = edge[1];
-        int wt = edge[2];
-        
-        if(a > b)
-            swap(a, b);
-        cout<<a<<" - "<<b<<" | "<<wt<<endl;
-    }
     
-    cout<<"--------------------"<<endl;
+    cout<<endl<<"--------------------"<<endl;
 
     return 0;
 }

@@ -6,8 +6,13 @@ using namespace std;
 #define INF int(1e9)
 typedef pair<int, int> PII;
 
-vector<int> dijkstra(vector<vector<PII>>& graph, int src){
+vector<int> dijkstra(vector<vector<PII>>& graph, int src, int dest){
     int V = graph.size();
+    
+    // initially every node is a parent of itself
+    vector<int> parent(V);
+    for(int i=0; i<V; i++)
+        parent[i] = i;
     
     // initially distance of reaching any node 
     // from source node is assumed to be infinity
@@ -30,18 +35,31 @@ vector<int> dijkstra(vector<vector<PII>>& graph, int src){
             {
                 dist[nei] = dist[curr] + wt;
                 pq.push({dist[nei], nei});
+                // curr is the new parent of nei
+                parent[nei] = curr;
             }
     }
     
-    return dist;
+    // cannot reach the 'dest' from 'src'
+    if(dist[dest] == INF)
+        return {-1};
+    
+    vector<int> path;
+    for(int curr = dest; curr != src; curr = parent[curr])
+        path.push_back(curr);
+    path.push_back(src);
+
+    reverse(path.begin(), path.end());
+    
+    return path;
 }
 
 // --------------- END --------------- //
 
 int main() {
-    int V = 3; // num of vertices
+    int V = 5; // num of vertices
     // weighted undirected edges {a, b, wt}: a -- b of weight wt
-    vector<vector<int>> edges = {{0,1,1}, {0,2,6}, {1,2,3}};
+    vector<vector<int>> edges = {{0,1,2}, {1,4,5}, {1,2,4}, {0,3,1}, {3,2,3}, {2,4,1}};
     
     // build graph
     vector<vector<PII>> graph(V);
@@ -55,22 +73,21 @@ int main() {
         graph[b].push_back({a, wt});
     }
     
-    int src = 2;
-    vector<int> dist = dijkstra(graph, src);
+    int src = 0; // source
+    int dest = 4; // destination
+    vector<int> path = dijkstra(graph, src, dest);
     
-    cout<<"Distance of reaching the ith node from node "<<src<<":"<<endl;
-    for(int i=0; i<V; i++)
-        cout<<i<<" -> "<<dist[i]<<endl;
+    if(path.size() == 1 && path[0] == -1)
+        cout<<"Cannot reach from "<<src<<" to "<<dest<<endl;
+    else
+    {
+        cout<<"Shortest path from "<<src<<" to "<<dest<<": "<<endl;
+        for(int curr: path)
+            cout<<curr<<" ";
+        cout<<endl;
+    }
+    
+    cout<<endl<<"--------------------"<<endl;
 
     return 0;
 }
-
-/*
-# Dijkstra algo; single source shortest path
-# T.C.=O(E*log(V)), S.C.=O(V)
-# edge is represented as {A,B,wt} meaning 
-  undirected edge between A and B of weight wt
-# works for both Directed and Undirected graphs
-# does not work with -ive edge weights
-# gives TLE when there is a -ive weight cycle
-*/
