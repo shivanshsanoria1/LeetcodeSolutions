@@ -1,24 +1,25 @@
 class Solution {
 public:
-    // T.C.=O(n*log(n)), S.C.=O(n)
+    // T.C.=O(n*log(k)), S.C.=O(k)
     vector<vector<int>> kClosest(vector<vector<int>>& points, int k) {
-        vector<vector<int>> temp;
+        // max-heap; {x^2 + y^2, x, y}
+        priority_queue<vector<int>> pq; 
         for(vector<int>& point: points)
         {
             int x = point[0], y = point[1];
             // square of the distance between (0,0) and (x,y)
             int dist = x*x + y*y; 
 
-            temp.push_back({dist, x, y});
+            pq.push({dist, x, y});
+            if(pq.size() == k+1)
+                pq.pop();
         }
 
-        sort(temp.begin(), temp.end());
-
         vector<vector<int>> ans;
-        for(int i=0; i<k; i++)
+        while(!pq.empty())
         {
-            int x = temp[i][1], y = temp[i][2];
-            ans.push_back({x, y});
+            ans.push_back({pq.top()[1], pq.top()[2]});
+            pq.pop();
         }
 
         return ans;

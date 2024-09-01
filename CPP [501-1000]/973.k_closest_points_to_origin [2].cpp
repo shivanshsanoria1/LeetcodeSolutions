@@ -1,24 +1,30 @@
 class Solution {
 private:
-    typedef pair<int, vector<int>> PI; // {x^2 + y^2, {x, y}}
+    typedef vector<int> VI;
 
 public:
+    // T.C.=O(n*log(n)), S.C.=O(n)
     vector<vector<int>> kClosest(vector<vector<int>>& points, int k) {
-        priority_queue<PI> pq; // max-heap
-        for(auto& point: points)
+        // min-heap; {x^2 + y^2, x, y}
+        priority_queue<VI, vector<VI>, greater<VI>> pq; 
+        for(vector<int>& point: points)
         {
             int x = point[0], y = point[1];
-            int dist = x*x + y*y; // square of the distance between (0,0) and (x,y)
-            pq.push({dist, {x,y}});
-            if(pq.size() > k)
-                pq.pop();
+            // square of the distance between (0,0) and (x,y)
+            int dist = x*x + y*y; 
+
+            pq.push({dist, x, y});
         }
+
         vector<vector<int>> ans;
-        while(!pq.empty())
+        while(k--)
         {
-            ans.push_back(pq.top().second);
+            int x = pq.top()[1], y = pq.top()[2];
             pq.pop();
+
+            ans.push_back({x, y});
         }
+
         return ans;
     }
 };
