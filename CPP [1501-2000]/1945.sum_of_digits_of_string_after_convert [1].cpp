@@ -1,31 +1,31 @@
 class Solution {
-public:
-    int digitSum(int n) //finds sum of digits of num n
-    {
-        int sum=0;
-        while(n>0)
+private:
+    int digitSum(int num){
+        int sum = 0;
+        while(num > 0)
         {
-            sum+=n%10;
-            n/=10;
+            sum += num % 10;
+            num /= 10;
         }
+
         return sum;
     }
-    
+
+public:
     int getLucky(string s, int k) {
-        int sum=0;
-        for(int i=0; i<s.length(); i++)
+        int sum = 0;
+        for(char ch: s)
+            sum += digitSum(ch - 'a' + 1);
+
+        // 1 k got consumed in calculating the sum in for-loop
+        while(--k)
         {
-            int num=s[i]-'a'+1;
-            num=digitSum(num);
-            sum+=num;
+            // sum is a single digit number
+            if(sum <= 9) 
+                break;
+            sum = digitSum(sum);
         }
-        k--; //1 k got consumed in calculating sum in the for loop
-        while(k--)
-        {
-            if(sum<=9) //sum is now a single digit number
-                return sum;
-            sum= digitSum(sum);
-        }
+
         return sum;
     }
 };
