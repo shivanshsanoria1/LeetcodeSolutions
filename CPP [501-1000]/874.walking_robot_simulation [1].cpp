@@ -44,9 +44,9 @@ public:
                 
                 x = nextX;
                 y = nextY;
-                
-                maxDist2 = max(maxDist2, x*x + y*y);
             }
+
+            maxDist2 = max(maxDist2, x*x + y*y);
         }
 
         return maxDist2;
