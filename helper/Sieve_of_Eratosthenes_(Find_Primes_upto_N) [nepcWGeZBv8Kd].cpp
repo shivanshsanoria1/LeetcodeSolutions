@@ -15,7 +15,7 @@ vector<int> sieveOfEratosthenes(int n){
     isPrime[1] = false;
     
     // for every prime num 'i' mark all its 
-    // multiples (starting from i^2) as not-ptime
+    // multiples (starting from i^2) as not-prime
     for(int i=2; i<=n; i++)
         if(isPrime[i])
             for(int m=i*i; m<=n; m += i)
