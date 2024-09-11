@@ -16,7 +16,7 @@ public:
         vector<vector<int>> grid(m, vector<int>(n, -1));
         // right, down, left, up
         vector<pair<int, int>> dirs = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
-        // directional index
+        // directional-index
         int i = 0; 
         // curr coordinates
         int currX = 0, currY = 0;
@@ -24,18 +24,17 @@ public:
         ListNode* curr = head;
         while(curr != nullptr)
         {
-            // fill the cell with curr coordinates
+            // fill the curr corrdinates with curr val of LL
             grid[currX][currY] = curr->val;
-            // move the curr pointer forward
             curr = curr->next;
             
             // next possible coordinates
-            int nextX = currX + dirs[i].first;
-            int nextY = currY + dirs[i].second;
+            int x = currX + dirs[i].first;
+            int y = currY + dirs[i].second;
             
-            // change the direction if the next coordinates reach out of bounds
-            // or is already filled
-            if(nextX < 0 || nextX >= m || nextY < 0 || nextY >= n || grid[nextX][nextY] != -1)
+            // change the direction if the next coordinates 
+            // reach out of bounds or is already filled
+            if(x < 0 || x >= m || y < 0 || y >= n || grid[x][y] != -1)
                 i = (i + 1) % 4;
 
             // update the curr coordinates

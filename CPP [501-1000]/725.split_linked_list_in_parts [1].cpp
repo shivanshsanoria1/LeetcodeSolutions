@@ -10,23 +10,19 @@
  */
 class Solution {
 public:
+    // T.C.=O(n), S.C.=O(1)
     vector<ListNode*> splitListToParts(ListNode* head, int k) {
-        ListNode* curr = head;
         int n = 0;
-        while(curr != NULL)
-        {
+        for(ListNode* curr = head; curr != nullptr; curr = curr->next)
             n++;
-            curr = curr->next;
-        }
 
-        vector<ListNode*> ans;
         int groupSize = n / k;
         int rem = n % k;
-        curr = head;
-        if(curr != NULL)
-            ans.push_back(curr);
-        int k2 = k;
-        while(k2--)
+
+        vector<ListNode*> ans;
+        ListNode* curr = head;
+
+        while(k--)
         {
             int currGroupSize = groupSize;
             if(rem > 0)
@@ -34,33 +30,28 @@ public:
                 currGroupSize++;
                 rem--;
             }
-            while(curr != NULL && currGroupSize--)
+
+            ans.push_back(curr);
+
+            while(curr != nullptr && currGroupSize--)
             {
                 if(currGroupSize == 0)
                 {
                     ListNode* temp = curr->next;
-                    curr->next = NULL;
+                    curr->next = nullptr;
                     curr = temp;
-                    if(curr != NULL)
-                        ans.push_back(curr);
                 }
                 else
                     curr = curr->next;
             }
         }
-        
-        int nulls = k - n;
-        while(nulls > 0)
-        {
-            ans.push_back(NULL);
-            nulls--;
-        }
+    
         return ans;
     }
 };
+
 /*
 # num of groups = k
-# size of the first n % k groups = n / k + 1
-# size of each remaining group = n / k
-# if n < k, size of the last k - n  groups is 0
+# size of the first (n % k) groups = (n / k) + 1
+# size of each remaining groups = (n / k)
 */

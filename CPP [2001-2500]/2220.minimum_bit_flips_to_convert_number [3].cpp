@@ -1,19 +1,7 @@
 class Solution {
-private:
-    int countSetBits(int num){
-        int count = 0;
-        while(num > 0)
-        {
-            count += num & 1;
-            num >>= 1;
-        }
-
-        return count;
-    }
-
 public:
     int minBitFlips(int start, int goal) {
-        return countSetBits(start ^ goal);
+        return __builtin_popcount(start ^ goal);
     }
 };
 
