@@ -1,22 +1,21 @@
 class Solution {
 public:
-    int longestCommonSubsequence(string s1, string s2) { // T.C.=O(n1*n2), S.C.=O(n1*n2), DP
+    // T.C.=O(n1*n2), S.C.=O(n1*n2)
+    // DP: Tabulation
+    int longestCommonSubsequence(string s1, string s2) {
         int n1=s1.length(), n2=s2.length();
-        vector<vector<int>> dp(n1+1, vector<int> (n2+1, -1)); // dp of size (n1+1)*(n2+1) filled with -1's
-        for(int i=0; i<=n1; i++) // fill the 0th col with 0's
-            dp[i][0] = 0;
-        for(int j=0; j<=n2; j++) // fill the 0th row with 0's
-            dp[0][j] = 0;
-        for(int i=1; i<=n1; i++)
-            for(int j=1; j<=n2; j++)
+        vector<vector<int>> dp(n1, vector<int>(n2, 0));
+
+        for(int i=0; i<n1; i++)
+            for(int j=0; j<n2; j++)
             {
-                if(s1[i-1] == s2[j-1])
-                    dp[i][j] = 1 + dp[i-1][j-1];
-                else
-                    dp[i][j] = max(dp[i-1][j], dp[i][j-1]);
+                int northWest = i-1 >= 0 && j-1 >= 0 ? dp[i-1][j-1] : 0;
+                int north = i-1 >= 0 ? dp[i-1][j] : 0;
+                int west = j-1 >= 0 ? dp[i][j-1] : 0;
+                
+                dp[i][j] = s1[i] == s2[j] ? 1 + northWest : max(north, west);
             }
-        return dp[n1][n2]; // return the last element in dp
+        
+        return dp[n1-1][n2-1];
     }
 };
-// ith index of dp is mapped with (i-1)th index of s1
-// jth index of dp is mapped with (j-1)th index of s2

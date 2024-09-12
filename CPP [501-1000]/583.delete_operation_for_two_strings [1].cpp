@@ -28,10 +28,12 @@ private:
 public:
     // T.C.=O(n1*n2), S.C.=O(n1*n2)
     // DP: Memoization
-    int longestCommonSubsequence(string s1, string s2) { 
-        int n1=s1.length(), n2=s2.length();
+    int minDistance(string word1, string word2) {
+        int n1=word1.length(), n2=word2.length();
         vector<vector<int>> dp(n1, vector<int>(n2, -1));
 
-        return lcs(s1, s2, 0, 0, dp);
+        return n1 + n2 - 2*lcs(word1, word2, 0, 0, dp);
     }
 };
+
+// prerequisite: [1143. longest-common-subsequence]

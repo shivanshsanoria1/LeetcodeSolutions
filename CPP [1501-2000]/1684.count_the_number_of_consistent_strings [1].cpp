@@ -1,17 +1,21 @@
 class Solution {
 public:
+    // T.C.=O(26 + n*m), S.C.=O(26)
+    // n: size of words[], m: max length of a word in words[]
     int countConsistentStrings(string allowed, vector<string>& words) {
-        vector<bool> vec(26,false); //keeps track of char present in the string allowed
-        for(int i=0; i<allowed.length(); i++)
-            vec[allowed[i]-'a']=true;
-        int invalid=0;
-        for(int i=0; i<words.size(); i++)
-            for(int j=0; j<words[i].length(); j++)
-                if(vec[words[i][j]-'a']==false) //invalid char found in the string words[i]
+        vector<bool> isAllowed(26, false);
+        for(char ch: allowed)
+            isAllowed[ch - 'a'] = true;
+        
+        int invalid = 0;
+        for(string& word: words)
+            for(char ch: word)
+                if(!isAllowed[ch - 'a'])
                 {
                     invalid++;
                     break;
                 }
-        return words.size()-invalid;
+        
+        return words.size() - invalid;
     }
 };
