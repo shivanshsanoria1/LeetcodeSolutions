@@ -1,8 +1,9 @@
 class Solution {
 public:
-    // T.C.=O(n*logn), S.C.=O(1)
+    // T.C.=O(n*log(n)), S.C.=O(1)
     int findMinDifference(vector<string>& timePoints) {
         sort(timePoints.begin(), timePoints.end());
+
         int n=timePoints.size();
         int minDiff = 24*60;
         for(int i=0; i<n; i++)
@@ -21,6 +22,7 @@ public:
 
             minDiff = min(minDiff, diff);
         }
+        
         return minDiff;
     }
 };

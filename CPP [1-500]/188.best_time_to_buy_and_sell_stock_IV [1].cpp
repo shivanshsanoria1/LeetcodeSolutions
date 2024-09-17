@@ -4,33 +4,49 @@ private:
     typedef vector<vector<int>> VEC2D;
     typedef vector<vector<vector<int>>> VEC3D;
 
-public:
-    int solve(vector<int>& prices, VEC3D& dp, int i, bool canBuy, int limit){
-        if(limit == 0)
+    int solve(vector<int>& prices, int i, int k, bool canBuy, VEC3D& dp){
+        if(i >= prices.size())
             return 0;
-        if(i == prices.size())
+        
+        if(k == 0)
             return 0;
-        if(dp[i][canBuy][limit] != -1)
-            return dp[i][canBuy][limit];
-        int skip = solve(prices, dp, i+1, canBuy, limit);
+        
+        if(dp[i][k][canBuy] != -1)
+            return dp[i][k][canBuy];
+
+        int res = 0;
+
+        int skip = solve(prices, i+1, k, canBuy, dp);
+
         if(canBuy)
         {
-            int buy = solve(prices, dp, i+1, !canBuy, limit) - prices[i];
-            dp[i][canBuy][limit] = max(skip, buy);
+            int buy = solve(prices, i+1, k, !canBuy, dp) - prices[i];
+            res = max(skip, buy);
         }
         else
         {
-            int sell = solve(prices, dp, i+1, !canBuy, limit-1) + prices[i];
-            dp[i][canBuy][limit] = max(skip, sell);
+            int sell = solve(prices, i+1, k-1, !canBuy, dp) + prices[i];
+            res = max(skip, sell);
         }
-        return dp[i][canBuy][limit];
+
+        dp[i][k][canBuy] = res;
+        return dp[i][k][canBuy];
     }
 
-    int maxProfit(int k, vector<int>& prices) { // Memoization, T.C.=O(2*k*n), S.C.=O(2*k*n)    
+public:
+    // T.C.=O(n*k*2), S.C.=O(n*k*2)
+    // DP: Memoization
+    int maxProfit(int k, vector<int>& prices) {
         int n=prices.size();
-        // dp of size n*2*(k+1) filled with -1's
-        VEC3D dp(n, VEC2D(2, VEC1D(k+1, -1)));
-        return solve(prices, dp, 0, true, k);
+        VEC3D dp(n, VEC2D(k+1, VEC1D(2, -1)));
+
+        return solve(prices, 0, k, true, dp);
     }
 };
-// canBuy = true: buy, false: sell
+
+/*
+# canBuy = true (buy)
+         = false (sell)
+# we only need to decrement 'k' while selling, since
+  each stock which is to be sold was surely bought previously
+*/
