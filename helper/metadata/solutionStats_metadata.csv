@@ -1,4 +1,4 @@
-quesId,Title,Language,AcceptedSolutionsCount,UnacceptedSolutionsCount
+quesId,Title,Language(s),AcceptedSolutionsCount,UnacceptedSolutionsCount
 1,two sum,cpp,3,0
 2,add two numbers,cpp,2,0
 3,longest substring without repeating characters,cpp,2,0
@@ -41,7 +41,7 @@ quesId,Title,Language,AcceptedSolutionsCount,UnacceptedSolutionsCount
 47,permutations II,cpp,1,0
 48,rotate image,cpp,3,0
 49,group anagrams,cpp,2,0
-50,pow(x*n),cpp,1,1
+50,pow(x* n),cpp,1,1
 51,n queens,cpp,2,0
 52,n queens II,cpp,1,0
 53,maximum subarray,cpp,2,1
@@ -158,7 +158,7 @@ quesId,Title,Language,AcceptedSolutionsCount,UnacceptedSolutionsCount
 183,customers who never order,sql,2,0
 184,department highest salary,sql,2,0
 187,repeated dna sequences,cpp,1,0
-188,best time to buy and sell stock IV,cpp,1,0
+188,best time to buy and sell stock IV,cpp,1,1
 189,rotate array,cpp,3,0
 190,reverse bits,cpp,2,0
 191,number of 1 bits,cpp,2,0
@@ -554,7 +554,7 @@ quesId,Title,Language,AcceptedSolutionsCount,UnacceptedSolutionsCount
 878,Nth magical number,cpp,0,1
 881,boats to save people,cpp,1,0
 883,projection area of 3D shapes,cpp,2,0
-884,uncommon words from two sentences,cpp,1,0
+884,uncommon words from two sentences,cpp,2,0
 885,spiral matrix III,cpp,1,0
 886,possible bipartition,cpp,1,0
 888,fair candy swap,cpp,1,1
@@ -1048,6 +1048,7 @@ quesId,Title,Language,AcceptedSolutionsCount,UnacceptedSolutionsCount
 1952,three divisors,cpp,2,0
 1957,delete characters to make fancy string,cpp,1,0
 1961,check if string is a prefix of array,cpp,2,0
+1962,remove stones to minimize the total,cpp,1,0
 1963,minimum number of swaps to make the string balanced,cpp,1,0
 1965,employees with missing information,sql,2,0
 1967,number of strings that appear as substrings in word,cpp,3,0
@@ -1571,3 +1572,4 @@ quesId,Title,Language,AcceptedSolutionsCount,UnacceptedSolutionsCount
 3285,find indices of stable mountains,cpp,1,0
 3286,find a safe walk through a grid,cpp,1,1
 3289,the two sneaky numbers of digitville,cpp,2,0
+3290,maximum multiplication score,cpp,2,3
