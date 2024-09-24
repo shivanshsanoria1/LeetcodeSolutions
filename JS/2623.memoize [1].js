@@ -1,15 +1,18 @@
 /**
  * @param {Function} fn
+ * @return {Function}
  */
 function memoize(fn) {
-    const mp = new Map(); // [...args] -> fn(...args)
+    // arguments-hash -> fn(arguments)
+    const mp = new Map();
+
     return function(...args) {
-        const stringifiedArgs = [...args].toString(); // convert array of args to string
-        if(mp.has(stringifiedArgs)) // no need to call fn, result already in map
-            return mp.get(stringifiedArgs);
-        const result = fn(...args);
-        mp.set(stringifiedArgs, result); // add args and result in map
-        return result;
+        const hash = args.join('#')
+
+        if(!mp.has(hash))
+            mp.set(hash, fn(...args))
+
+        return mp.get(hash)
     }
 }
 

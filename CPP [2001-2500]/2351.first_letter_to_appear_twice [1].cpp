@@ -1,13 +1,18 @@
 class Solution {
 public:
+    // T.C.=O(26), S.C.=O(26)
     char repeatedCharacter(string s) {
-        vector<int> vec(26,0);
-        for(int i=0; i<s.length(); i++)
+        vector<bool> visited(26, false);
+        for(char ch: s)
         {
-            if(vec[s[i]-'a']==1)
-                return s[i];
-            vec[s[i]-'a']++;
+            if(visited[ch - 'a'])
+                return ch;
+            else
+                visited[ch - 'a'] = true;
         }
-        return 'a'; //never executed, since string s has atleast 1 repeated character
+
+        // never executed; since string s is guranteed to 
+        // contain at least one letter that appears twice
+        return '#';
     }
 };
