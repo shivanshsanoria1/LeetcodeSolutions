@@ -177,7 +177,7 @@ quesId,Title,Language(s),AcceptedSolutionsCount,UnacceptedSolutionsCount
 208,implement trie (prefix tree),cpp,4,0
 209,minimum size subarray sum,cpp,1,1
 210,course schedule II,cpp,2,0
-211,design add and search words data structure,cpp,1,3
+211,design add and search words data structure,cpp,2,3
 212,word search II,cpp,0,2
 213,house robber II,cpp,1,0
 214,shortest palindrome,cpp,1,2
@@ -714,6 +714,7 @@ quesId,Title,Language(s),AcceptedSolutionsCount,UnacceptedSolutionsCount
 1161,maximum level sum of a binary tree,cpp,1,0
 1162,as far from land as possible,cpp,1,1
 1164,product price at a given date,sql,2,0
+1169,invalid transactions,cpp,1,0
 1170,compare strings by frequency of the smallest character,cpp,2,1
 1171,remove zero sum consecutive nodes from linked list,cpp,1,0
 1173,immediate food delivery I,sql,3,0
@@ -1249,6 +1250,7 @@ quesId,Title,Language(s),AcceptedSolutionsCount,UnacceptedSolutionsCount
 2410,maximum matching of players with trainers,cpp,1,0
 2413,smallest even multiple,cpp,1,0
 2415,reverse odd levels of binary tree,cpp,1,0
+2416,sum of prefix scores of strings,cpp,1,2
 2418,sort the people,cpp,2,0
 2419,longest subarray with maximum bitwise AND,cpp,1,1
 2420,find all good indices,cpp,1,1
