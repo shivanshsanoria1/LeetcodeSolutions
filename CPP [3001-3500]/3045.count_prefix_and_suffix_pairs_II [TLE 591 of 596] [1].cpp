@@ -24,9 +24,9 @@ private:
 public:
     // T.C.=O(n^2*m), S.C.=O(1)
     // n: size of words[], m: max-length of string in words[]
-    int countPrefixSuffixPairs(vector<string>& words) {
+    long long countPrefixSuffixPairs(vector<string>& words) {
         int n=words.size();
-        int count = 0;
+        long long int count = 0;
 
         for(int i=0; i<n-1; i++)
             for(int j=i+1; j<n; j++)

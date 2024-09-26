@@ -7,12 +7,16 @@ public:
         this->nums.clear();
     }
     
+    // T.C.=O(n*(end - start))
+    // n: num of times book() is called
     bool book(int start, int end) {
         for(int i=start; i<end; i++)
             if(nums.find(i) != nums.end())
                 return false;
+
         for(int i=start; i<end; i++)
             nums.insert(i);
+            
         return true;
     }
 };

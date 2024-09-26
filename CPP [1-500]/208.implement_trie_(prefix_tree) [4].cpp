@@ -1,60 +1,65 @@
+class TrieNode{
+public:
+    vector<TrieNode*> children;
+    bool end = false;
+
+    TrieNode(){
+        this->children.resize(26, nullptr);
+        this->end = false;
+    }
+};
+
 class Trie {
 private:
-    struct TrieNode{
-        char val;
-        bool end;
-        TrieNode *next[26];
-    };
-
-    TrieNode* getNode(char ch){
-        TrieNode* newNode = new TrieNode;
-        newNode->val = ch;
-        newNode->end = false;
-        for(int i=0; i<26; i++)
-            newNode->next[i] = NULL;
-        return newNode;
-    }
-
-    TrieNode *root = NULL;
+    TrieNode* root = nullptr;
 
 public:
     Trie() {
-        root = getNode('#');
+        this->root = new TrieNode();
     }
     
     void insert(string word) {
-        TrieNode *curr = root;
+        TrieNode* curr = root;
         for(char ch: word)
         {
-            int index = ch - 'a';
-            if(curr->next[index] == NULL)
-                curr->next[index] = getNode(ch);
-            curr = curr->next[index];
+            int i = ch - 'a';
+
+            if(curr->children[i] == nullptr)
+                curr->children[i] = new TrieNode();
+            
+            curr = curr->children[i];
         }
+
         curr->end = true;
     }
     
     bool search(string word) {
-        TrieNode *curr = root;
+        TrieNode* curr = root;
         for(char ch: word)
         {
-            int index = ch - 'a';
-            if(curr->next[index] == NULL)
+            int i = ch - 'a';
+
+            if(curr->children[i] == nullptr)
                 return false;
-            curr = curr->next[index];
+            
+            curr = curr->children[i];
         }
-        return curr->end ? true : false;
+
+        return curr->end;
     }
     
     bool startsWith(string prefix) {
-        TrieNode *curr = root;
+        TrieNode* curr = root;
         for(char ch: prefix)
         {
-            int index = ch - 'a';
-            if(curr->next[index] == NULL)
+            int i = ch - 'a';
+
+            if(curr->children[i] == nullptr)
                 return false;
-            curr = curr->next[index];
+            
+            curr = curr->children[i];
         }
+
         return true;
     }
 };

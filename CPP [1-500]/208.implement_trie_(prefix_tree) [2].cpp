@@ -22,11 +22,11 @@ public:
     }
     
     bool search(string word) {
-        return dict.find(word) != dict.end() ? true : false;
+        return dict.find(word) != dict.end();
     }
     
     bool startsWith(string prefix) {
-        return prefixDict.find(prefix) != prefixDict.end() ? true : false;
+        return prefixDict.find(prefix) != prefixDict.end();
     }
 };
 

@@ -12,7 +12,7 @@ public:
     }
     
     bool search(string word) {
-        return dict.find(word) != dict.end() ? true : false;
+        return dict.find(word) != dict.end();
     }
     
     bool startsWith(string prefix) {

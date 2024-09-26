@@ -1,7 +1,7 @@
 class MyCalendar {
 private:
     // {start, end} ('start' in inclusive, 'end' is exclusive)
-    set<pair<int, int>> intervals;
+    vector<pair<int, int>> intervals;
 
 public:
     MyCalendar() {
@@ -9,17 +9,16 @@ public:
     }
     
     // T.C.=O(n^2)
+    // n: num of times book() is called
     bool book(int start, int end) {
-        int s2 = start, e2 = end;
-        for(auto [s1, e1]: intervals)
-        {
-            if(s1 >= e2)
-                break;
-            if(s2 < e1)
+        int s1 = start, e1 = end;
+        
+        for(auto [s2, e2]: intervals)
+            if(!(e1 <= s2 || e2 <= s1))
                 return false;
-        }
                 
-        intervals.insert({s2, e2});
+        intervals.push_back({s1, e1});
+
         return true;
     }
 };
@@ -30,5 +29,6 @@ public:
  * bool param_1 = obj->book(start,end);
  */
 
- // intervals [s1, e1) and [s2, e2) intersect 
- // if (s1 < e2) and (s2 < e1)
+// 2 intervals [s1, e1) and [s2, e2) 
+// don't intersect if: 
+// e1 <= s2 or e2 <= s1
