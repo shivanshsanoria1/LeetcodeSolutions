@@ -1,49 +1,61 @@
 class MyCircularDeque {
 private:
     vector<int> q;
-    int front, rear;
-    int size;
+    int n = 0;
+    int front = -1;
+    int rear = -1;
 
 public:
     MyCircularDeque(int k) {
-        q.resize(k, -1); // set the size of vector as k, -1: empty space
-        front = -1;
-        rear = -1;
-        size = k;
+        this->q.resize(k, -1);
+        this->n = k;
+        this->front = -1;
+        this->rear = -1;
     }
     
     bool insertFront(int value) {
         if(isFull())
             return false;
-        if(isEmpty()) // 1st element is inserted in queue
+
+        // 1st element to be inserted in queue
+        if(isEmpty()) 
         {
             front = 0;
             rear = 0;
         }
         else
-            front = (front == 0) ? size-1 : front-1;
+            front = (front - 1 + n) % n;
+
         q[front] = value;
+
         return true;
     }
     
     bool insertLast(int value) {
         if(isFull())
             return false;
-        if(isEmpty()) // 1st element is inserted in queue
+
+        // 1st element to be inserted in queue
+        if(isEmpty()) 
         {
             front = 0;
             rear = 0;
         }
         else
-            rear = (rear+1) % size;
+            rear = (rear + 1) % n;
+
         q[rear] = value;
+
         return true;
     }
     
     bool deleteFront() {
         if(isEmpty())
             return false;
-        q[front] = -1; // [Not required] reset the value at front
+
+        // [Not required] reset the value at front
+        q[front] = -1; 
+
         // only 1 element in queue, reset front and rear
         if(front == rear) 
         {
@@ -51,14 +63,18 @@ public:
             rear = -1;
         }
         else
-            front = (front+1) % size;
+            front = (front + 1) % n;
+
         return true;
     }
     
     bool deleteLast() {
         if(isEmpty())
             return false;
-        q[rear] = -1; // [Not required] reset the value at rear
+
+        // [Not required] reset the value at rear
+        q[rear] = -1; 
+
         // only 1 element in queue, reset front and rear
         if(front == rear)
         { 
@@ -66,7 +82,8 @@ public:
             rear = -1;
         }
         else
-            rear = (rear == 0) ? size-1 : rear-1;
+            rear = (rear - 1 + n) % n;
+
         return true;
     }
     
@@ -79,11 +96,11 @@ public:
     }
     
     bool isEmpty() {
-        return (front == -1 && rear == -1) ? true : false;
+        return front == -1 && rear == -1;
     }
     
     bool isFull() {
-        return ((rear+1) % size == front) ? true : false;
+        return (rear + 1) % n == front;
     }
 };
 

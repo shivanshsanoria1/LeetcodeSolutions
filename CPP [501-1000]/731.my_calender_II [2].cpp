@@ -1,10 +1,10 @@
-class MyCalendar {
+class MyCalendarTwo {
 private:
     // time -> count of net intervals added (+) or removed (-) at this time
     map<int, int> mp;
 
 public:
-    MyCalendar() {
+    MyCalendarTwo() {
         this->mp.clear();
     }
     
@@ -21,8 +21,8 @@ public:
         {
             currCount += count;
 
-            // 2 intervals present at curr time 
-            if(currCount == 2)
+            // 3 intervals present at curr time 
+            if(currCount == 3)
             {
                 // remove the interval [start, end) from map
                 if(--mp[start] == 0)
@@ -39,7 +39,7 @@ public:
 };
 
 /**
- * Your MyCalendar object will be instantiated and called as such:
- * MyCalendar* obj = new MyCalendar();
+ * Your MyCalendarTwo object will be instantiated and called as such:
+ * MyCalendarTwo* obj = new MyCalendarTwo();
  * bool param_1 = obj->book(start,end);
  */

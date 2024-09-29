@@ -11,41 +11,34 @@ public:
         this->s.clear();
     }
     
-    // T.C.=O(logn)
+    // T.C.=O(log(n))
     void inc(string key) {
-        int oldFreq = mp[key];
-
-        auto itr = s.find({oldFreq, key});
-
-        if(itr == s.end())
-            s.insert({1, key});
-        else
+        if(mp.find(key) == mp.end())
         {
-            s.erase(itr);
-            s.insert({oldFreq + 1, key});
+            mp[key] = 1;
+            s.insert({1, key});
+            return;
         }
 
+        int oldFreq = mp[key];
+        auto itr = s.find({oldFreq, key});
+        
         mp[key]++;
+        s.erase(itr);
+        s.insert({oldFreq + 1, key});
     }
     
-    // T.C.=O(logn)
+    // T.C.=O(log(n))
     void dec(string key) {
         int oldFreq = mp[key];
-        
         auto itr = s.find({oldFreq, key});
-
-        if(itr->first == 1)
-            s.erase(itr);
-        else
-        {
-            s.erase(itr);
-            s.insert({oldFreq - 1, key});
-        }
-
-        mp[key]--;
         
-        if(mp[key] == 0)
+        if(--mp[key] == 0)
             mp.erase(key);
+        
+        s.erase(itr);
+        if(--oldFreq > 0)
+            s.insert({oldFreq, key});
     }
     
     // T.C.=O(1)

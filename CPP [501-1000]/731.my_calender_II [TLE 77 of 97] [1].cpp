@@ -8,7 +8,8 @@ public:
         this->mp.clear();
     }
     
-    // T.C.=O(end - start)
+    // T.C.=O(n*(end - start))
+    // n: num of times book() is called
     bool book(int start, int end) {
         for(int i=start; i<end; i++)
             if(mp[i] == 2)
