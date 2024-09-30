@@ -1,31 +1,49 @@
 class CustomStack {
 private:
     vector<int> st;
-    int maxSize = -1;
+    // max-size of stack
+    int n = 0;
+    // index of the top element of stack
     int top = -1;
 
 public:
     CustomStack(int maxSize) {
-        st.resize(maxSize);
-        this->maxSize = maxSize;
-        top = -1;
+        this->st.resize(maxSize, -1);
+        this->n = maxSize;
+        this->top = -1;
     }
     
+    // T.C.=O(1)
     void push(int x) {
-        if(top < maxSize-1)
-            st[++top] = x;
+        // stack is full, so cannot push
+        if(top == n-1)
+            return;
+
+        // increment top and push the new val
+        st[++top] = x;
     }
     
+    // T.C.=O(1)
     int pop() {
-        if(top >= 0)
-            return st[top--];
-        return -1; // stack is empty
+        // stack is empty, so cannot pop
+        if(top == -1)
+            return -1;
+
+        int val = st[top];
+        // reset stack-top [not-required]
+        st[top--] = -1;
+
+        return val;
     }
     
+    // T.C.=O(min(k, top))
     void increment(int k, int val) {
-        if(k > maxSize) // limit k to maxSize
-            k = maxSize;
-        for(int i=0; i<k; i++) // increment the first k elements by val
+        // limit k to the num of elements currently in stack, ie, (top + 1)
+        k = min(k, top + 1);
+        
+        // increment the first k elements, ie, 
+        // all elements in index-range [0, k-1] by val
+        for(int i=0; i<k; i++)
             st[i] += val;
     }
 };
