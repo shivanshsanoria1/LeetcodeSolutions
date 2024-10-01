@@ -1,4 +1,4 @@
-quesId,Title,Language(s),AcceptedSolutionsCount,UnacceptedSolutionsCount
+quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 1,two sum,cpp,3,0
 2,add two numbers,cpp,2,0
 3,longest substring without repeating characters,cpp,2,0
@@ -293,7 +293,7 @@ quesId,Title,Language(s),AcceptedSolutionsCount,UnacceptedSolutionsCount
 423,reconstruct original digits from english,cpp,1,0
 424,longest repeating character replacement,cpp,2,0
 429,N ary tree level order traversal,cpp,1,0
-432,all Oone data structure,cpp,1,0
+432,all O'one data structure,cpp,2,0
 434,number of segments in a string,cpp,2,0
 435,non overlapping intervals,cpp,1,0
 436,find right interval,cpp,3,0
@@ -358,7 +358,7 @@ quesId,Title,Language(s),AcceptedSolutionsCount,UnacceptedSolutionsCount
 532,k diff pairs in an array,cpp,2,0
 537,complex number multiplication,cpp,1,0
 538,convert BST to greater tree,cpp,1,0
-539,minimum time difference,cpp*js,4,0
+539,minimum time difference,cpp+js,2+2,0+0
 540,single element in sorted array,cpp,4,0
 541,reverse string II,cpp,2,0
 542,01 matrix,cpp,1,1
@@ -471,7 +471,9 @@ quesId,Title,Language(s),AcceptedSolutionsCount,UnacceptedSolutionsCount
 725,split linked list in parts,cpp,1,0
 726,number of atoms,cpp,1,0
 728,self dividing numbers,cpp,1,0
-729,my calender I,cpp,3,1
+729,my calender I,cpp,4,1
+731,my calender II,cpp,2,1
+732,my calender III,cpp,1,0
 733,flood fill,cpp,2,0
 735,asteroid collision,cpp,2,0
 738,monotone increasing digits,cpp,1,1
@@ -706,7 +708,7 @@ quesId,Title,Language(s),AcceptedSolutionsCount,UnacceptedSolutionsCount
 1143,longest common subsequence,cpp,5,1
 1146,snapshot array,cpp,1,1
 1148,article views I,sql,1,0
-1154,day of the year,cpp*js,3,0
+1154,day of the year,cpp+js,1+2,0+0
 1155,number of dice rolls with target sum,cpp,5,0
 1157,online majority element in subarray,cpp,0,1
 1158,market analysis I,sql,2,0
@@ -874,9 +876,10 @@ quesId,Title,Language(s),AcceptedSolutionsCount,UnacceptedSolutionsCount
 1492,the kth factor of n,cpp,1,0
 1493,longest subarray of 1s after deleting one element,cpp,1,1
 1496,path crossing,cpp,1,0
+1497,check if array pairs are divisible by K,cpp,2,0
 1502,can make arithmetic progression from sequence,cpp,2,0
 1504,count submatrices with all ones,cpp,1,1
-1507,reformat date,cpp*js,4,0
+1507,reformat date,cpp+js,2+2,0+0
 1508,range sum of sorted subarray sums,cpp,3,0
 1509,minimum difference between largest and smallest value in three moves,cpp,2,0
 1512,number of good pairs,cpp,4,0
@@ -997,6 +1000,7 @@ quesId,Title,Language(s),AcceptedSolutionsCount,UnacceptedSolutionsCount
 1797,design authentication manager,cpp,1,0
 1798,maximum number of consecutive values you can make,cpp,1,0
 1800,maximum ascending subarray sum,cpp,1,0
+1803,count pairs with XOR in a range,cpp,0,1
 1805,number of different integers in a string,cpp,1,0
 1812,determine color of a chessboard square,cpp,1,0
 1814,count nice pairs in an array,cpp,2,1
@@ -1443,8 +1447,9 @@ quesId,Title,Language(s),AcceptedSolutionsCount,UnacceptedSolutionsCount
 2923,find champion I,cpp,2,0
 2924,find champion II,cpp,1,0
 2928,distribute candies among children I,cpp,2,0
-2932,maximum strong pair xor I,cpp,1,0
+2932,maximum strong pair XOR I,cpp,1,0
 2933,high access employees,cpp,1,0
+2935,maximum strong pair XOR II,cpp,0,1
 2937,make three strings equal,cpp,1,0
 2938,separate black and white balls,cpp,1,0
 2942,find words containing character,cpp,1,0
@@ -1479,6 +1484,7 @@ quesId,Title,Language(s),AcceptedSolutionsCount,UnacceptedSolutionsCount
 3039,apply operations to make string empty,cpp,1,0
 3042,count prefix and suffix pairs I,cpp,1,0
 3043,find the length of the longest common prefix,cpp,1,1
+3045,count prefix and suffix pairs II,cpp,0,1
 3046,split the array,cpp,1,0
 3065,minimum operations to exceed threshold value I,cpp,1,0
 3068,find the maximum sum of node values,cpp,1,0
@@ -1583,7 +1589,7 @@ quesId,Title,Language(s),AcceptedSolutionsCount,UnacceptedSolutionsCount
 3271,hash divided string,cpp,1,0
 3274,check if two chessboard squares have the same color,cpp,1,0
 3275,Kth nearest obstacle queries,cpp,1,0
-3280,convert date to binary,cpp*js,2,0
+3280,convert date to binary,cpp+js,1+1,0+0
 3282,reach end of array with max score,cpp,0,2
 3285,find indices of stable mountains,cpp,1,0
 3286,find a safe walk through a grid,cpp,1,1
@@ -1592,3 +1598,11 @@ quesId,Title,Language(s),AcceptedSolutionsCount,UnacceptedSolutionsCount
 3295,report spam message,cpp,1,0
 3297,count substrings that can be rearranged to contain a string I,cpp,1,1
 3298,count substrings that can be rearranged to contain a string II,cpp,1,1
+3300,minimum element after replacement with digit sum,cpp,1,0
+3301,maximize the total height of unique towers,cpp,1,0
+3302,find the lexicographically smallest valid sequence,cpp,0,1
+3303,find the occurrence of first almost equal substring,cpp,0,1
+3304,find the Kth character in string game I,cpp,1,0
+3305,count of substrings containing every vowel and K consonants I,cpp,1,0
+3306,count of substrings containing every vowel and K consonants II,cpp,0,1
+3307,find the Kth character in string game II,cpp,0,1
