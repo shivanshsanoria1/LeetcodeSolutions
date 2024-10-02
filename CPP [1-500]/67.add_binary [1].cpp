@@ -1,97 +1,33 @@
 class Solution {
 public:
-    int func(char x)
-    {
-        if(x=='1')
-            return 1;
-        return 0;
-    }
+    // T.C.=O(n1 + n2), S.C.=O(1)
     string addBinary(string a, string b) {
-        int n1=a.length(), n2=b.length();
-        int i=n1-1, j=n2-1, carry=0, sum;
-        string c="";
-        while(i>=0 && j>=0)
+        reverse(a.begin(), a.end());
+        reverse(b.begin(), b.end());
+
+        int n1 = a.length(), n2 = b.length();
+        int carry = 0;
+        string s = "";
+
+        for(int i=0, j=0; i < n1 || j < n2; i++, j++)
         {
-            sum= func(a[i]) + func(b[j]) + carry;
-            switch(sum)
-            {
-                case 0:
-                    c=c+"0";
-                    carry=0;
-                    break;
-                case 1:
-                    c=c+"1";
-                    carry=0;
-                    break;
-                case 2:
-                    c=c+"0";
-                    carry=1;
-                    break;
-                case 3:
-                    c=c+"1";
-                    carry=1;
-                    break;
-            }
-            i--;
-            j--;
+            int d1 = i < n1 && a[i] == '1' ? 1 : 0;
+            int d2 = j < n2 && b[j] == '1' ? 1 : 0;
+
+            int sum = (d1 + d2 + carry) % 2;
+            carry = (d1 + d2 + carry) / 2;
+
+            s += to_string(sum);
         }
-        if(i!=-1) // if string a is longer
-        {
-            while(i>=0)
-            {
-                sum= func(a[i]) + carry;
-                switch(sum)
-                {
-                    case 0:
-                        c=c+"0";
-                        carry=0;
-                        break;
-                    case 1:
-                        c=c+"1";
-                        carry=0;
-                        break;
-                    case 2:
-                        c=c+"0";
-                        carry=1;
-                        break;
-                    case 3:
-                        c=c+"1";
-                        carry=1;
-                        break;
-                }
-                i--;
-            }
-        }
-        else if(j!=-1) // if string b is longer
-        {
-            while(j>=0)
-            {
-                sum= func(b[j]) + carry;
-                switch(sum)
-                {
-                    case 0:
-                        c=c+"0";
-                        carry=0;
-                        break;
-                    case 1:
-                        c=c+"1";
-                        carry=0;
-                        break;
-                    case 2:
-                        c=c+"0";
-                        carry=1;
-                        break;
-                    case 3:
-                        c=c+"1";
-                        carry=1;
-                        break;
-                }
-                j--;
-            }
-        }
-        if(carry==1) // if carry is generated beyond the MSB of longer string
-            c=c+"1";
-        reverse(c.begin(),c.end());
-        return c;
+
+        // final carry is generated from MSB
+        if(carry == 1)
+            s += "1";
+        
+        reverse(s.begin(), s.end());
+        
+        return s;
     }
 };
+
+// similar: [415. add-strings]

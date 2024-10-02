@@ -206,7 +206,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 241,different ways to add parentheses,cpp,2,0
 242,valid anagram,cpp,3,0
 257,binary tree paths,cpp,2,0
-258,add digits,cpp,1,0
+258,add digits,cpp+js,2+2,0+0
 260,single number III,cpp,4,0
 263,ugly number,cpp,1,0
 264,ugly number II,cpp,2,1
@@ -285,7 +285,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 412,fizz buzz,cpp,2,0
 413,arithmetic slices,cpp,1,0
 414,third maximum number,cpp,1,0
-415,add strings,cpp,2,0
+415,add strings,cpp,1,0
 416,partition equal subset sum,cpp,1,0
 417,pacific atlantic water flow,cpp,1,0
 419,battleships in a board,cpp,1,0
@@ -587,6 +587,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 922,sort array by parity II,cpp,4,0
 923,3sum with multiplicity,cpp,0,1
 924,minimize malware spread,cpp,1,0
+925,long pressed name,cpp,1,0
 926,flip string to monotone increasing,cpp,2,0
 928,minimize malware spread II,cpp,1,0
 929,unique email addresses,cpp,1,0
@@ -787,7 +788,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 1325,delete leaves with a given value,cpp,2,0
 1327,list the products ordered in a period,sql,2,0
 1329,sort the matrix diagonally,cpp,1,0
-1331,rank transform of an array,cpp,3,1
+1331,rank transform of an array,cpp,2,0
 1333,filter restaurants by vegan friendly price and distance,cpp,1,0
 1334,find the city with the smallest number of neighbours at a threshold distance,cpp,1,0
 1337,the k weakest rows in a matrix,cpp,5,0
@@ -855,7 +856,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 1448,count good nodes in binary tree,cpp,1,0
 1450,number of students doing homework at a given time,cpp,1,0
 1451,rearrange words in a sentence,cpp,2,0
-1455,check if a word occurs as a prefix of any word in a sentence,cpp,1,0
+1455,check if a word occurs as a prefix of any word in a sentence,cpp+js,1+1,0+0
 1456,maximum number of vowels in a substring of given length,cpp,1,0
 1457,pseudo palindromic paths in a binary tree,cpp,1,0
 1460,make two arrays equal by reversing subarrays,cpp,3,0
@@ -899,7 +900,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 1550,three consecutive odds,cpp,2,0
 1551,minimum operations to make array equal,cpp,2,0
 1552,magnetic force between two balls,cpp,1,0
-1556,thousand seperator,cpp,1,0
+1556,thousand seperator,cpp+js,1+1,0+0
 1557,minimum number of vertices to reach all nodes,cpp,2,0
 1559,detect cycles in 2D grid,cpp,2,0
 1560,most visited sector in a circular track,cpp,1,0
@@ -961,7 +962,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 1697,checking existence of edge length limited paths,cpp,1,1
 1700,number of students unable to eat lunch,cpp,2,0
 1701,average waiting time,cpp,1,0
-1704,determine if string halves are alike,cpp,1,0
+1704,determine if string halves are alike,cpp+js,1+1,0+0
 1706,where will the ball fall,cpp,1,0
 1710,maximum units on a truck,cpp,3,0
 1716,calculate money in leetcode bank,cpp,1,0
@@ -1353,7 +1354,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 2644,find the maximum divisibility score,cpp,1,0
 2648,generate fibonacci sequence,js,2,0
 2649,nested array generator,js,2,0
-2651,calculate delayed arrival time,cpp,1,0
+2651,calculate delayed arrival time,cpp+js,1+1,0+0
 2652,sum multiples,cpp,2,0
 2656,max sum with exactly k elements,cpp,1,0
 2657,find the prefix common array of two arrays,cpp,1,0

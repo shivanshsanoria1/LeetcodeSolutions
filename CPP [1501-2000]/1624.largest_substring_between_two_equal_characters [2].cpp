@@ -1,17 +1,23 @@
 class Solution {
 public:
-    int maxLengthBetweenEqualCharacters(string s) { // T.C.=O(n), S.C.=O(26)
+    // T.C.=O(n + 26), S.C.=O(26)
+    int maxLengthBetweenEqualCharacters(string s) {
+        vector<int> firstIdx(26, -1);
+        vector<int> lastIdx(26, -1);
         int n=s.length();
-        // to store the index of earliest occurence of each char in string
-        vector<int> indexes(26, -1); 
-        int ans = -1;
+
         for(int i=0; i<n; i++)
-        {
-            if(indexes[s[i] - 'a'] == -1) // s[i] not found in indexes vector
-                indexes[s[i] - 'a'] = i;
-            else // find the length of substring between curr s[i] and its earliest occurence
-                ans = max(ans, i-indexes[s[i] - 'a']-1);
-        }
-        return ans;
+            if(firstIdx[s[i] - 'a'] == -1)
+                firstIdx[s[i] - 'a'] = i;
+        
+        for(int i=n-1; i>=0; i--)
+            if(lastIdx[s[i] - 'a'] == -1)
+                lastIdx[s[i] - 'a'] = i;
+        
+        int maxLen = -1;
+        for(int i=0; i<26; i++)
+            maxLen = max(maxLen, lastIdx[i] - firstIdx[i] - 1);
+        
+        return maxLen;
     }
 };

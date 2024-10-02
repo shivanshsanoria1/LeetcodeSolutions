@@ -1,10 +1,29 @@
 class Solution {
+private:
+    int getDigitSum(int num){
+        int sum = 0;
+        while(num > 0)
+        {
+            sum += num % 10;
+            num /= 10;
+        }
+
+        return sum;
+    }
+
 public:
+    // T.C.=O(??), S.C.=O(1)
     int addDigits(int num) {
-        if(num==0) // num is 0
-            return 0;
-        else if(num%9==0) // num is multiple of 9
-            return 9;
-        return num%9; // num is not a multiple of 9
+        while(true)
+        {
+            int digitSum = getDigitSum(num);
+
+            if(digitSum < 10)
+                return digitSum;
+            
+            num = digitSum;
+        }
+
+        return -1;
     }
 };

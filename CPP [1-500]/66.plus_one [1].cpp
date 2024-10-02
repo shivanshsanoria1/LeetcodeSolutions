@@ -1,17 +1,24 @@
 class Solution {
 public:
+    // T.C.=O(n), S.C.=O(1)
     vector<int> plusOne(vector<int>& digits) {
-        int n=digits.size();
-        for(int i=n-1; i>=0; i--)
+        vector<int> digits1;
+        int carry = 1;
+
+        for(int i=digits.size()-1; i>=0; i--)
         {
-            if(digits[i]<9) // if digit is from 0-8
-            {
-                digits[i]++;  
-                return digits;
-            }
-            digits[i]=0;
+            int sum = (digits[i] + carry) % 10;
+            carry = (digits[i] + carry) / 10;
+
+            digits1.push_back(sum);
         }
-        digits.insert(digits.begin(),1); // if carry is generated
-        return digits;
+
+        // final carry is generated from MSB
+        if(carry == 1)
+            digits1.push_back(1);
+
+        reverse(digits1.begin(), digits1.end());
+
+        return digits1;
     }
 };
