@@ -99,6 +99,13 @@ function readSolutionStats(){
 
 function convertMapToArray(mp){
   const arr = []
+
+  const counts = {
+    cpp: {accepted: 0, unaccepted: 0},
+    js: {accepted: 0, unaccepted: 0},
+    sql: {accepted: 0, unaccepted: 0},
+  }
+
   for(const [quesId, obj] of mp){
     const {quesId, title, languages} = obj
 
@@ -110,18 +117,33 @@ function convertMapToArray(mp){
       languagesArr.push('cpp')
       acceptedCountArr.push(languages.cpp.acceptedCount.toString())
       unacceptedCountArr.push(languages.cpp.unacceptedCount.toString())
+
+      if(languages.cpp.acceptedCount > 0)
+        counts.cpp.accepted++
+      else
+        counts.cpp.unaccepted++
     }
 
     if(languages.js.acceptedCount > 0 || languages.js.unacceptedCount > 0){
       languagesArr.push('js')
       acceptedCountArr.push(languages.js.acceptedCount.toString())
       unacceptedCountArr.push(languages.js.unacceptedCount.toString())
+      
+      if(languages.js.acceptedCount > 0)
+        counts.js.accepted++
+      else
+        counts.js.unaccepted++
     }
 
     if(languages.sql.acceptedCount > 0 || languages.sql.unacceptedCount > 0){
       languagesArr.push('sql')
       acceptedCountArr.push(languages.sql.acceptedCount.toString())
       unacceptedCountArr.push(languages.sql.unacceptedCount.toString())
+      
+      if(languages.sql.acceptedCount > 0)
+        counts.sql.accepted++
+      else
+        counts.sql.unaccepted++
     }
 
     arr.push({
@@ -133,10 +155,20 @@ function convertMapToArray(mp){
     })
   }
 
-  return arr.sort((a, b) => a.quesId - b.quesId)
+  console.log('--------------------')
+  console.log('Solution Count for each language: ')
+  console.log(`CPP: accepted = ${counts.cpp.accepted}, unaccepted = ${counts.cpp.unaccepted}`)
+  console.log(`JS: accepted = ${counts.js.accepted}, unaccepted = ${counts.js.unaccepted}`)
+  console.log(`SQL: accepted = ${counts.sql.accepted}, unaccepted = ${counts.sql.unaccepted}`)
+  console.log('--------------------')
+
+  return {
+    solutionsStatArray: arr.sort((a, b) => a.quesId - b.quesId), 
+    counts
+  }
 }
 
-function writeSolutionStatsToCSV(solutionsStatArray) {
+function writeSolutionStatsToCSV(solutionsStatArray, counts) {
   return new Promise(async(resolve, reject) => {
     try{
       let solutionsStatsStringified = 'quesId,Title,Language(s),AcceptedCount,UnacceptedCount\n'
@@ -154,6 +186,11 @@ function writeSolutionStatsToCSV(solutionsStatArray) {
         
         solutionsStatsStringified += `${quesId},${titleWithOutCommas},${languages},${acceptedCount},${unacceptedCount}\n`
       }
+      
+      solutionsStatsStringified += '\n'
+      solutionsStatsStringified += `,Total,cpp,accepted = ${counts.cpp.accepted},unaccepted = ${counts.cpp.unaccepted}\n`
+      solutionsStatsStringified += `,,js,accepted = ${counts.js.accepted},unaccepted = ${counts.js.unaccepted}\n`
+      solutionsStatsStringified += `,,sql,accepted = ${counts.sql.accepted},unaccepted = ${counts.sql.unaccepted}\n`
       
       const dateTime = new Date().toISOString().split(':').join('-').split('.').join('-')
       const csvFilePath = path.join(__dirname, 'stats', `solution_stats_metadata [${dateTime}].csv`)
@@ -175,9 +212,9 @@ async function generateSolutionStats() {
 
     const solutionsStatMap = await readSolutionStats()
 
-    const solutionsStatArray = convertMapToArray(solutionsStatMap)
+    const {solutionsStatArray, counts} = convertMapToArray(solutionsStatMap)
 
-    await writeSolutionStatsToCSV(solutionsStatArray)
+    await writeSolutionStatsToCSV(solutionsStatArray, counts)
 
     console.log(`Solutions Stat Generation Completed at: ${new Date().toISOString()}`)
     const endTime = Date.now()

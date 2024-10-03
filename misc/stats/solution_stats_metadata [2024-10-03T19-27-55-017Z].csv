@@ -917,6 +917,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 1584,minimum cost to connect all points,cpp,1,0
 1587,bank account summary II,sql,2,0
 1588,sum of all odd length subarrays,cpp,3,0
+1590,make sum divisible by P,cpp,1,1
 1592,rearrange spaces between words,cpp,1,0
 1598,crawler log folder,cpp,2,0
 1603,design parking system,cpp,2,0
@@ -1607,3 +1608,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3305,count of substrings containing every vowel and K consonants I,cpp,1,0
 3306,count of substrings containing every vowel and K consonants II,cpp,0,1
 3307,find the Kth character in string game II,cpp,0,1
+
+,Total,cpp,accepted = 1414,unaccepted = 83
+,,js,accepted = 47,unaccepted = 0
+,,sql,accepted = 74,unaccepted = 0
