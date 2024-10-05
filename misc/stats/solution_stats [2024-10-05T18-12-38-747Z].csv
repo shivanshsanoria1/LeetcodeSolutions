@@ -1609,7 +1609,3 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3305,count of substrings containing every vowel and K consonants I,cpp,1,0
 3306,count of substrings containing every vowel and K consonants II,cpp,0,1
 3307,find the Kth character in string game II,cpp,0,1
-,----------------------------------------
-,Total,cpp,accepted = 1415,unaccepted = 83
-,,js,accepted = 48,unaccepted = 0
-,,sql,accepted = 74,unaccepted = 0

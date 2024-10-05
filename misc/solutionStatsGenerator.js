@@ -186,15 +186,21 @@ function writeSolutionStatsToCSV(solutionsStatArray, counts) {
         
         solutionsStatsStringified += `${quesId},${titleWithOutCommas},${languages},${acceptedCount},${unacceptedCount}\n`
       }
-      
-      solutionsStatsStringified += ',----------------------------------------\n'
-      solutionsStatsStringified += `,Total,cpp,accepted = ${counts.cpp.accepted},unaccepted = ${counts.cpp.unaccepted}\n`
-      solutionsStatsStringified += `,,js,accepted = ${counts.js.accepted},unaccepted = ${counts.js.unaccepted}\n`
-      solutionsStatsStringified += `,,sql,accepted = ${counts.sql.accepted},unaccepted = ${counts.sql.unaccepted}\n`
+
+      console.log(counts.js.accepted.toString().padStart(4, '0'))
+
+      const solutionsStatTotalStringified = 
+      `Language | Accepted | Unaccepted |\n` + 
+      `   cpp   |   ${counts.cpp.accepted.toString().padStart(4, ' ')}   |   ${counts.cpp.unaccepted.toString().padStart(4, ' ')}     |\n` + 
+      `   js    |   ${counts.js.accepted.toString().padStart(4, ' ')}   |   ${counts.js.unaccepted.toString().padStart(4, ' ')}     |\n` + 
+      `   sql   |   ${counts.sql.accepted.toString().padStart(4, ' ')}   |   ${counts.sql.unaccepted.toString().padStart(4, ' ')}     |\n`
       
       const dateTime = new Date().toISOString().split(':').join('-').split('.').join('-')
-      const csvFilePath = path.join(__dirname, 'stats', `solution_stats_metadata [${dateTime}].csv`)
+      const csvFilePath = path.join(__dirname, 'stats', `solution_stats [${dateTime}].csv`)
       await writeFile(csvFilePath, solutionsStatsStringified)
+
+      const txtFilePath = path.join(__dirname, 'stats', `solution_stats_total [${dateTime}].txt`)
+      await writeFile(txtFilePath, solutionsStatTotalStringified)
 
       resolve()
 
