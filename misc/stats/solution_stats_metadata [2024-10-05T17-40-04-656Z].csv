@@ -298,7 +298,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 435,non overlapping intervals,cpp,1,0
 436,find right interval,cpp,3,0
 437,path sum III,cpp,2,0
-438,find all anagrams in a string,cpp,1,0
+438,find all anagrams in a string,cpp,2,0
 440,Kth smallest in lexicographical order,cpp,0,4
 441,arranging coins,cpp,2,0
 442,find all duplicates in an array,cpp,3,0
@@ -374,7 +374,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 561,array partition,cpp,1,0
 563,binary tree tilt,cpp,2,0
 566,reshape the matrix,cpp,2,0
-567,permutation in string,cpp,3,0
+567,permutation in string,cpp,2,0
 570,managers with at least 5 direct reports,sql,2,0
 572,subtree of another tree,cpp,2,0
 576,out of boundary paths,cpp,1,1
@@ -891,7 +891,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 1523,count odd numbers in an interval range,cpp,1,0
 1524,number of subarrays with odd sum,cpp,1,1
 1527,patients with a condition,sql,1,0
-1528,shuffle string,cpp,1,0
+1528,shuffle string,cpp+js,1+1,0+0
 1530,number of good leaf nodes pairs,cpp,2,0
 1534,count good triplets,cpp,1,0
 1535,find the winner of an array game,cpp,1,0
@@ -1289,6 +1289,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 2486,append characters to string to make subsequence,cpp,1,0
 2487,remove nodes from linked list,cpp,2,0
 2490,circular sentence,cpp,2,0
+2491,divide players into teams of equal skill,cpp,2,0
 2492,minimum score of a path between two cities,cpp,2,0
 2496,maximum value of a string in an array,cpp,1,0
 2497,maximum star sum of a graph,cpp,2,0
@@ -1608,7 +1609,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3305,count of substrings containing every vowel and K consonants I,cpp,1,0
 3306,count of substrings containing every vowel and K consonants II,cpp,0,1
 3307,find the Kth character in string game II,cpp,0,1
-
-,Total,cpp,accepted = 1414,unaccepted = 83
-,,js,accepted = 47,unaccepted = 0
+,----------------------------------------
+,Total,cpp,accepted = 1415,unaccepted = 83
+,,js,accepted = 48,unaccepted = 0
 ,,sql,accepted = 74,unaccepted = 0

@@ -187,7 +187,7 @@ function writeSolutionStatsToCSV(solutionsStatArray, counts) {
         solutionsStatsStringified += `${quesId},${titleWithOutCommas},${languages},${acceptedCount},${unacceptedCount}\n`
       }
       
-      solutionsStatsStringified += '\n'
+      solutionsStatsStringified += ',----------------------------------------\n'
       solutionsStatsStringified += `,Total,cpp,accepted = ${counts.cpp.accepted},unaccepted = ${counts.cpp.unaccepted}\n`
       solutionsStatsStringified += `,,js,accepted = ${counts.js.accepted},unaccepted = ${counts.js.unaccepted}\n`
       solutionsStatsStringified += `,,sql,accepted = ${counts.sql.accepted},unaccepted = ${counts.sql.unaccepted}\n`
