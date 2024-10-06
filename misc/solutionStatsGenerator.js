@@ -104,6 +104,8 @@ function convertMapToArray(mp){
     cpp: {accepted: 0, unaccepted: 0},
     js: {accepted: 0, unaccepted: 0},
     sql: {accepted: 0, unaccepted: 0},
+    totalAccepted: 0,
+    totalUnaccepted: 0,
   }
 
   for(const [quesId, obj] of mp){
@@ -133,6 +135,7 @@ function convertMapToArray(mp){
         counts.js.accepted++
       else
         counts.js.unaccepted++
+      
     }
 
     if(languages.sql.acceptedCount > 0 || languages.sql.unacceptedCount > 0){
@@ -146,6 +149,11 @@ function convertMapToArray(mp){
         counts.sql.unaccepted++
     }
 
+    if(languages.cpp.acceptedCount > 0 || languages.js.acceptedCount > 0 || languages.sql.acceptedCount > 0)
+      counts.totalAccepted++
+    else
+      counts.totalUnaccepted++
+
     arr.push({
       quesId,
       title,
@@ -155,12 +163,14 @@ function convertMapToArray(mp){
     })
   }
 
-  console.log('--------------------')
-  console.log('Solution Count for each language: ')
-  console.log(`CPP: accepted = ${counts.cpp.accepted}, unaccepted = ${counts.cpp.unaccepted}`)
-  console.log(`JS: accepted = ${counts.js.accepted}, unaccepted = ${counts.js.unaccepted}`)
-  console.log(`SQL: accepted = ${counts.sql.accepted}, unaccepted = ${counts.sql.unaccepted}`)
-  console.log('--------------------')
+  // console.log('--------------------')
+  // console.log('Solution Count for each language: ')
+  // console.log(`CPP: accepted = ${counts.cpp.accepted}, unaccepted = ${counts.cpp.unaccepted}`)
+  // console.log(`JS: accepted = ${counts.js.accepted}, unaccepted = ${counts.js.unaccepted}`)
+  // console.log(`SQL: accepted = ${counts.sql.accepted}, unaccepted = ${counts.sql.unaccepted}`)
+  // console.log(`Total Accepted = ${counts.totalAccepted}`)
+  // console.log(`Total Unaccepted = ${counts.totalUnaccepted}`)
+  // console.log('--------------------')
 
   return {
     solutionsStatArray: arr.sort((a, b) => a.quesId - b.quesId), 
@@ -187,13 +197,16 @@ function writeSolutionStatsToCSV(solutionsStatArray, counts) {
         solutionsStatsStringified += `${quesId},${titleWithOutCommas},${languages},${acceptedCount},${unacceptedCount}\n`
       }
 
-      console.log(counts.js.accepted.toString().padStart(4, '0'))
-
       const solutionsStatTotalStringified = 
       `Language | Accepted | Unaccepted |\n` + 
       `   cpp   |   ${counts.cpp.accepted.toString().padStart(4, ' ')}   |   ${counts.cpp.unaccepted.toString().padStart(4, ' ')}     |\n` + 
       `   js    |   ${counts.js.accepted.toString().padStart(4, ' ')}   |   ${counts.js.unaccepted.toString().padStart(4, ' ')}     |\n` + 
-      `   sql   |   ${counts.sql.accepted.toString().padStart(4, ' ')}   |   ${counts.sql.unaccepted.toString().padStart(4, ' ')}     |\n`
+      `   sql   |   ${counts.sql.accepted.toString().padStart(4, ' ')}   |   ${counts.sql.unaccepted.toString().padStart(4, ' ')}     |\n` + 
+      `----------------------------------\n\n` + 
+      `Total Accepted = ${counts.totalAccepted}\n` +
+      `Total unaccepted = ${counts.totalUnaccepted}\n` + 
+      `----------------------------------\n\n`
+      
       
       const dateTime = new Date().toISOString().split(':').join('-').split('.').join('-')
       const csvFilePath = path.join(__dirname, 'stats', `solution_stats [${dateTime}].csv`)

@@ -1005,6 +1005,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 1803,count pairs with XOR in a range,cpp,0,1
 1805,number of different integers in a string,cpp,1,0
 1812,determine color of a chessboard square,cpp,1,0
+1813,sentence similarity III,cpp,1,0
 1814,count nice pairs in an array,cpp,2,1
 1816,truncate sentence,cpp,1,0
 1822,sign of the product of an array,cpp,1,0
@@ -1609,3 +1610,6 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3305,count of substrings containing every vowel and K consonants I,cpp,1,0
 3306,count of substrings containing every vowel and K consonants II,cpp,0,1
 3307,find the Kth character in string game II,cpp,0,1
+3309,maximum possible number by binary concatenation,cpp,1,0
+3310,remove methods from project,cpp,1,0
+3312,sorted GCD pair queries,cpp,0,1

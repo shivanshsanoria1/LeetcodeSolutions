@@ -1,4 +1,0 @@
-Language | Accepted | Unaccepted |
-   cpp   |   1415   |     83     |
-   js    |     48   |      0     |
-   sql   |     74   |      0     |
