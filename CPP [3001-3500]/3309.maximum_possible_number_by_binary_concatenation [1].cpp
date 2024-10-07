@@ -34,14 +34,14 @@ public:
         string s2 = intToBinStr(nums[1]);
         string s3 = intToBinStr(nums[2]);
 
-        vector<int> vals;
-        vals.push_back(binStrToInt(s1 + s2 + s3));
-        vals.push_back(binStrToInt(s1 + s3 + s2));
-        vals.push_back(binStrToInt(s2 + s1 + s3));
-        vals.push_back(binStrToInt(s2 + s3 + s1));
-        vals.push_back(binStrToInt(s3 + s1 + s2));
-        vals.push_back(binStrToInt(s3 + s2 + s1));
+        int maxVal = 0;
+        maxVal = max(maxVal, binStrToInt(s1 + s2 + s3));
+        maxVal = max(maxVal, binStrToInt(s1 + s3 + s2));
+        maxVal = max(maxVal, binStrToInt(s2 + s1 + s3));
+        maxVal = max(maxVal, binStrToInt(s2 + s3 + s1));
+        maxVal = max(maxVal, binStrToInt(s3 + s1 + s2));
+        maxVal = max(maxVal, binStrToInt(s3 + s2 + s1));
 
-        return *max_element(vals.begin(), vals.end());
+        return maxVal;
     }
 };

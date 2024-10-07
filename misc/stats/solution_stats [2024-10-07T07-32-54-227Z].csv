@@ -1375,7 +1375,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 2693,call function with custom context,js,4,0
 2694,event emitter,js,1,0
 2695,array wrapper,js,2,0
-2696,minimum string length after removing substrings,cpp,1,0
+2696,minimum string length after removing substrings,cpp+js,3+1,0+0
 2697,lexicographically smallest palindrome,cpp,2,0
 2699,modify graph edge weights,cpp,1,0
 2703,return length of arguments passed,js,1,0

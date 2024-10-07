@@ -203,8 +203,9 @@ function writeSolutionStatsToCSV(solutionsStatArray, counts) {
       `   js    |   ${counts.js.accepted.toString().padStart(4, ' ')}   |   ${counts.js.unaccepted.toString().padStart(4, ' ')}     |\n` + 
       `   sql   |   ${counts.sql.accepted.toString().padStart(4, ' ')}   |   ${counts.sql.unaccepted.toString().padStart(4, ' ')}     |\n` + 
       `----------------------------------\n\n` + 
-      `Total Accepted = ${counts.totalAccepted}\n` +
-      `Total unaccepted = ${counts.totalUnaccepted}\n` + 
+      `Total: \n` + 
+      `Accepted = ${counts.totalAccepted}\n` +
+      `Unaccepted = ${counts.totalUnaccepted}\n` + 
       `----------------------------------\n\n`
       
       

@@ -1,10 +1,11 @@
 Language | Accepted | Unaccepted |
    cpp   |   1418   |     84     |
-   js    |     48   |      0     |
+   js    |     49   |      0     |
    sql   |     74   |      0     |
 ----------------------------------
 
-Total Accepted = 1530
-Total unaccepted = 84
+Total: 
+Accepted = 1530
+Unaccepted = 84
 ----------------------------------
 

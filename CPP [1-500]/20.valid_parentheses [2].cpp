@@ -1,25 +1,55 @@
 class Solution {
+private:
+    int convertChToNum(char ch){
+        if(ch == '(')
+            return 1;
+        if(ch == ')')
+            return -1;
+        if(ch == '{')
+            return 2;
+        if(ch == '}')
+            return -2;
+        if(ch == '[')
+            return 3;
+        if(ch == ']')
+            return -3;
+        
+        return 0;
+    }
+
 public:
     bool isValid(string s) {
-        stack<char> st;
-        for(int i=0; i<s.length(); i++)
+        stack<int> st;
+        for(char ch: s)
         {
-            if(s[i]=='(' || s[i]=='{' || s[i]=='[') //push the left brackets into the stack
+            int num = convertChToNum(ch);
+
+            // push the left-bracket into the stack
+            if(num > 0)
             {
-                st.push(s[i]);
+                st.push(num);
                 continue;
             }
-            if(st.empty()) //no opening brackets
+
+            // no left-bracket to match with the curr right-bracket
+            if(st.empty())
                 return false;
-            char ch= st.top();
+            
+            int tp = st.top();
             st.pop();
-            if(s[i]==')' && (ch=='{' || ch=='[')) //if curr right bracket does the match with the stack top
-                return false;
-            if(s[i]=='}' && (ch=='(' || ch=='['))
-                return false;
-            if(s[i]==']' && (ch=='(' || ch=='{'))
+
+            // curr right-bracket does the match 
+            // with the one at stack top
+            if(num + tp != 0)
                 return false;
         }
-        return st.empty() ? true : false; //if stack is empty then string is valid
+
+        return st.empty();
     }
 };
+
+/*
+# '(': 1, ')': -1
+# '{': 2, '}': -2
+# '[': 3, ']': -3
+*/

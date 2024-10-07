@@ -1,40 +1,34 @@
 class Solution {
 public:
+    // T.C.=O(n), S.C.=O(n)
     bool isValid(string s) {
-        int n=s.length();
         stack<char> st;
-        char c;
-        for(int i=0; i<n; i++)
+        for(char ch: s)
         {
-            if(s[i]=='(' || s[i]=='{' || s[i]=='[') //push the left brackets into the stack
+            // push the left-bracket into the stack
+            if(ch == '(' || ch == '{' || ch == '[') 
             {
-                st.push(s[i]);
+                st.push(ch);
                 continue;
             }
-            if(st.empty())  //no opening brackets
+
+            // no left-bracket to match with the curr right-bracket
+            if(st.empty())
                 return false;
-            switch(s[i])
-            {
-                case ')':
-                    c=st.top();
-                    st.pop();
-                    if(c=='{' || c=='[')
-                        return false;
-                    break;
-                case '}':
-                    c=st.top();
-                    st.pop();
-                    if(c=='(' || c=='[')
-                        return false;
-                    break;
-                case ']':
-                    c=st.top();
-                    st.pop();
-                    if(c=='(' || c=='{')
-                        return false;
-                    break;
-            }
+
+            char tp = st.top();
+            st.pop();
+
+            // curr right-bracket does the match 
+            // with the one at stack top
+            if(ch == ')' && tp != '(') 
+                return false;
+            if(ch == '}' && tp != '{')
+                return false;
+            if(ch == ']' && tp != '[')
+                return false;
         }
-        return(st.empty()); // if stack is empty return true
+
+        return st.empty();
     }
 };
