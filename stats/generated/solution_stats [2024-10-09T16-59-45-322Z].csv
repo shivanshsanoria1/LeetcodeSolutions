@@ -383,6 +383,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 583,delete operation for two strings,cpp,1,0
 584,find customer referee,sql,2,0
 586,customer placing the largest number of orders,sql,1,0
+587,erect the fence,cpp,2,0
 589,N ary tree preorder traversal,cpp,1,0
 590,N ary tree postorder traversal,cpp,1,0
 592,fraction addition and subtraction,cpp,1,0
