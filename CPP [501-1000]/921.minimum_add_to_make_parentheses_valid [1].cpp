@@ -2,21 +2,21 @@ class Solution {
 public:
     // T.C.=O(n), S.C.=O(1)
     int minAddToMakeValid(string s) {
-        // use variable as stack to store the '(' encountered
-        int stack = 0;
-        int count = 0;
+        int extraLeft = 0;
+        int extraRight = 0;
         for(char ch: s)
         {
             if(ch == ')')
             {
-                if(stack > 0)
-                    stack--;
+                if(extraLeft > 0)
+                    extraLeft--;
                 else
-                    count++;
+                    extraRight++;
             }
-            else
-                stack++;
+            else // ch == '('
+                extraLeft++;
         }
-        return stack + count;
+
+        return extraLeft + extraRight;
     }
 };

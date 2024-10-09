@@ -318,6 +318,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 461,hamming distance,cpp,3,0
 462,minimum moves to equal array elements II,cpp,2,0
 463,island perimeter,cpp,1,0
+468,validate IP address,cpp,1,0
 472,concatenated words,cpp,1,2
 473,matchsticks to square,cpp,1,0
 474,ones and zeros,cpp,1,1

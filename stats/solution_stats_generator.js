@@ -210,10 +210,10 @@ function writeSolutionStatsToCSV(solutionsStatArray, counts) {
       
       
       const dateTime = new Date().toISOString().split(':').join('-').split('.').join('-')
-      const csvFilePath = path.join(__dirname, 'stats', `solution_stats [${dateTime}].csv`)
+      const csvFilePath = path.join(__dirname, 'generated', `solution_stats [${dateTime}].csv`)
       await writeFile(csvFilePath, solutionsStatsStringified)
 
-      const txtFilePath = path.join(__dirname, 'stats', `solution_stats_total [${dateTime}].txt`)
+      const txtFilePath = path.join(__dirname, 'generated', `solution_stats_total [${dateTime}].txt`)
       await writeFile(txtFilePath, solutionsStatTotalStringified)
 
       resolve()
