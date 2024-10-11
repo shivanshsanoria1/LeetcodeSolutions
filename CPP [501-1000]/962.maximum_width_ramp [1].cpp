@@ -1,27 +1,28 @@
 class Solution {
 public:
-    // T.C.=O(n), S.C.=O(n)
-    // Monotonic-stack (maintain the stack in decreasing order)
+    // T.C.=O(n*log(n)), S.C.=O(n)
     int maxWidthRamp(vector<int>& nums) {
-        // stack stores indexes and not values
-        stack<int> st;
-
-        int n=nums.size();
-
-        st.push(0);
-        for(int i=1; i<n; i++)
-            if(nums[st.top()] > nums[i])
-                st.push(i);
+        int n = nums.size();
         
+        vector<pair<int, int>> temp;
+        for(int i=0; i<n; i++)
+            temp.push_back({nums[i], i});
+        
+        sort(temp.begin(), temp.end());
+
+        int maxIdx = temp[n-1].second;
         int maxWidth = 0;
 
-        for(int i=n-1; i>=0 && !st.empty(); i--)
-            while(!st.empty() && nums[st.top()] <= nums[i])
-            {
-                maxWidth = max(maxWidth, i - st.top());
-                st.pop();
-            }
+        for(int i=n-2; i>=0; i--)
+        {
+            int idx = temp[i].second;
+
+            maxIdx = max(maxIdx, idx);
+            maxWidth = max(maxWidth, maxIdx - idx);
+        }
         
         return maxWidth;
     }
 };
+
+// similar: [739. daily-temperatures]

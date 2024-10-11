@@ -83,14 +83,17 @@ int main() {
 }
 
 /*
-for 3 points A(x1, y1), B(x2, y2), C(x3, y3)
-the cross-product AB-> X BC-> is given by the determinant:
+# for 3 points A(x1, y1), B(x2, y2), C(x3, y3)
+  # equation of vector AB-> is: (x2-x1)i + (y2-y1)j
+  # equation of vector BC-> is: (x3-x2)i + (y3-y2)j
+  # the cross-product AB-> X BC-> is given by the determinant:
 
-|    i       j    k |
-| (x2-x1) (y2-y1) 0 |
-| (x3-x2) (y3-y2) 0 |
+  |    i       j    k |
+  | (x2-x1) (y2-y1) 0 | = ((x2-x1)*(y3-y2) - (x3-x2)*(y2-y1))k 
+  | (x3-x2) (y3-y2) 0 |
 
-= (x2-x1)*(y3-y2) - (x3-x2)*(y2-y1)
+  # thus, the value of AB-> X BC-> is:
+    = (x2-x1)*(y3-y2) - (x3-x2)*(y2-y1)
 
 # Check out Leetcode 587: [erect-the-fence]
 */

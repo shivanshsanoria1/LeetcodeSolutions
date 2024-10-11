@@ -614,7 +614,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 958,check completeness of a binary tree,cpp,1,0
 959,regions cut by slashes,cpp,2,0
 961,n repeated element in size 2n array,cpp,2,0
-962,maximum width ramp,cpp,1,1
+962,maximum width ramp,cpp,2,1
 963,minimum area rectangle II,cpp,1,0
 965,univalued binary tree,cpp,2,0
 966,vowel spellchecker,cpp,1,0
@@ -1062,6 +1062,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 1935,maximum number of words you can type,cpp,2,0
 1937,maximum number of points with cost,cpp,1,2
 1941,check if all characters have equal number of occurences,cpp,2,0
+1942,the number of the smallest unoccupied chair,cpp,1,0
 1945,sum of digits of string after convert,cpp,1,0
 1952,three divisors,cpp,2,0
 1957,delete characters to make fancy string,cpp,1,0
