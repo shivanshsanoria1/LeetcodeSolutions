@@ -28,6 +28,8 @@ function readSolutionStats(){
 
       const solutionsStatMap = new Map()
 
+      const fileCount = { cpp: 0, js: 0, sql: 0 }
+
       for(const dirPath of dirPaths){
         const fileNames = await readdir(dirPath)
   
@@ -85,10 +87,19 @@ function readSolutionStats(){
           }
 
           solutionsStatMap.set(quesId, solutionstats)
+
+          if(language === 'cpp')
+            fileCount.cpp++
+          else if(language === 'js')
+            fileCount.js++
+          else if(language === 'sql')
+            fileCount.sql++
         }
       }
       
-      resolve(solutionsStatMap)
+      // console.log(`Total files = ${fileCount.cpp} in cpp, ${fileCount.js} in js, ${fileCount.sql} in sql`)
+
+      resolve({solutionsStatMap, fileCount})
 
     }catch(err){
       console.log(err)
@@ -100,7 +111,7 @@ function readSolutionStats(){
 function convertMapToArray(mp){
   const arr = []
 
-  const counts = {
+  const solutionCount = {
     cpp: {accepted: 0, unaccepted: 0},
     js: {accepted: 0, unaccepted: 0},
     sql: {accepted: 0, unaccepted: 0},
@@ -121,9 +132,9 @@ function convertMapToArray(mp){
       unacceptedCountArr.push(languages.cpp.unacceptedCount.toString())
 
       if(languages.cpp.acceptedCount > 0)
-        counts.cpp.accepted++
+        solutionCount.cpp.accepted++
       else
-        counts.cpp.unaccepted++
+        solutionCount.cpp.unaccepted++
     }
 
     if(languages.js.acceptedCount > 0 || languages.js.unacceptedCount > 0){
@@ -132,9 +143,9 @@ function convertMapToArray(mp){
       unacceptedCountArr.push(languages.js.unacceptedCount.toString())
       
       if(languages.js.acceptedCount > 0)
-        counts.js.accepted++
+        solutionCount.js.accepted++
       else
-        counts.js.unaccepted++
+        solutionCount.js.unaccepted++
       
     }
 
@@ -144,15 +155,15 @@ function convertMapToArray(mp){
       unacceptedCountArr.push(languages.sql.unacceptedCount.toString())
       
       if(languages.sql.acceptedCount > 0)
-        counts.sql.accepted++
+        solutionCount.sql.accepted++
       else
-        counts.sql.unaccepted++
+        solutionCount.sql.unaccepted++
     }
 
     if(languages.cpp.acceptedCount > 0 || languages.js.acceptedCount > 0 || languages.sql.acceptedCount > 0)
-      counts.totalAccepted++
+      solutionCount.totalAccepted++
     else
-      counts.totalUnaccepted++
+      solutionCount.totalUnaccepted++
 
     arr.push({
       quesId,
@@ -165,20 +176,20 @@ function convertMapToArray(mp){
 
   // console.log('--------------------')
   // console.log('Solution Count for each language: ')
-  // console.log(`CPP: accepted = ${counts.cpp.accepted}, unaccepted = ${counts.cpp.unaccepted}`)
-  // console.log(`JS: accepted = ${counts.js.accepted}, unaccepted = ${counts.js.unaccepted}`)
-  // console.log(`SQL: accepted = ${counts.sql.accepted}, unaccepted = ${counts.sql.unaccepted}`)
-  // console.log(`Total Accepted = ${counts.totalAccepted}`)
-  // console.log(`Total Unaccepted = ${counts.totalUnaccepted}`)
+  // console.log(`CPP: accepted = ${solutionCount.cpp.accepted}, unaccepted = ${solutionCount.cpp.unaccepted}`)
+  // console.log(`JS: accepted = ${solutionCount.js.accepted}, unaccepted = ${solutionCount.js.unaccepted}`)
+  // console.log(`SQL: accepted = ${solutionCount.sql.accepted}, unaccepted = ${solutionCount.sql.unaccepted}`)
+  // console.log(`Total Accepted = ${solutionCount.totalAccepted}`)
+  // console.log(`Total Unaccepted = ${solutionCount.totalUnaccepted}`)
   // console.log('--------------------')
 
   return {
     solutionsStatArray: arr.sort((a, b) => a.quesId - b.quesId), 
-    counts
+    solutionCount
   }
 }
 
-function writeSolutionStatsToCSV(solutionsStatArray, counts) {
+function writeSolutionStatsToCSV(solutionsStatArray, fileCount, solutionCount) {
   return new Promise(async(resolve, reject) => {
     try{
       let solutionsStatsStringified = 'quesId,Title,Language(s),AcceptedCount,UnacceptedCount\n'
@@ -198,18 +209,24 @@ function writeSolutionStatsToCSV(solutionsStatArray, counts) {
       }
 
       const solutionsStatTotalStringified = 
+      `Solution count per language: \n` + 
       `Language | Accepted | Unaccepted |\n` + 
-      `   cpp   |   ${counts.cpp.accepted.toString().padStart(4, ' ')}   |   ${counts.cpp.unaccepted.toString().padStart(4, ' ')}     |\n` + 
-      `   js    |   ${counts.js.accepted.toString().padStart(4, ' ')}   |   ${counts.js.unaccepted.toString().padStart(4, ' ')}     |\n` + 
-      `   sql   |   ${counts.sql.accepted.toString().padStart(4, ' ')}   |   ${counts.sql.unaccepted.toString().padStart(4, ' ')}     |\n` + 
+      `   cpp   |   ${solutionCount.cpp.accepted.toString().padStart(4, ' ')}   |   ${solutionCount.cpp.unaccepted.toString().padStart(4, ' ')}     |\n` + 
+      `   js    |   ${solutionCount.js.accepted.toString().padStart(4, ' ')}   |   ${solutionCount.js.unaccepted.toString().padStart(4, ' ')}     |\n` + 
+      `   sql   |   ${solutionCount.sql.accepted.toString().padStart(4, ' ')}   |   ${solutionCount.sql.unaccepted.toString().padStart(4, ' ')}     |\n` + 
       `----------------------------------\n\n` + 
-      `Total: \n` + 
-      `Accepted = ${counts.totalAccepted}\n` +
-      `Unaccepted = ${counts.totalUnaccepted}\n` + 
+      `Total Solutions: \n` + 
+      `Accepted = ${solutionCount.totalAccepted}\n` +
+      `Unaccepted = ${solutionCount.totalUnaccepted}\n` + 
+      `----------------------------------\n\n` + 
+      `Total files: \n` + 
+      `cpp = ${fileCount.cpp} \n` + 
+      `js = ${fileCount.js } \n` + 
+      `sql = ${fileCount.sql} \n` + 
       `----------------------------------\n\n`
-      
-      
+
       const dateTime = new Date().toISOString().split(':').join('-').split('.').join('-')
+
       const csvFilePath = path.join(__dirname, 'generated', `solution_stats [${dateTime}].csv`)
       await writeFile(csvFilePath, solutionsStatsStringified)
 
@@ -230,11 +247,11 @@ async function generateSolutionStats() {
     const startTime = Date.now()
     console.log(`Solutions Stat Generation Started at: ${new Date().toISOString()}`)
 
-    const solutionsStatMap = await readSolutionStats()
+    const {solutionsStatMap, fileCount} = await readSolutionStats()
 
-    const {solutionsStatArray, counts} = convertMapToArray(solutionsStatMap)
+    const {solutionsStatArray, solutionCount} = convertMapToArray(solutionsStatMap)
 
-    await writeSolutionStatsToCSV(solutionsStatArray, counts)
+    await writeSolutionStatsToCSV(solutionsStatArray, fileCount, solutionCount)
 
     console.log(`Solutions Stat Generation Completed at: ${new Date().toISOString()}`)
     const endTime = Date.now()
