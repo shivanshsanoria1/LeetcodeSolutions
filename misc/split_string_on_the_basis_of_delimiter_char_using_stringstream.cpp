@@ -15,13 +15,20 @@ vector<string> splitString(string& str, char delimiter){
 }
 
 int main() {
-    string sentence = "this is a space separated sentence";
-    vector<string> tokens = splitString(sentence, ' ');
+    string sentence1 = "this is a space separated sentence";
+    vector<string> tokens1 = splitString(sentence1, ' ');
     
-    // string sentence = "this,is,a,comma,separated,sentence";
-    // vector<string> tokens = splitString(sentence, ',');
+    cout<<sentence1<<endl;
+    for(string& token: tokens1)
+        cout<<token<<endl;
     
-    for(string& token: tokens)
+    cout<<endl;
+    
+    string sentence2 = "this,is,a,comma,separated,sentence";
+    vector<string> tokens2 = splitString(sentence2, ',');
+    
+    cout<<sentence2<<endl;
+    for(string& token: tokens2)
         cout<<token<<endl;
     
     cout<<endl<<"-------------------"<<endl;

@@ -1255,6 +1255,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 2399,check distances between same letters,cpp,2,0
 2404,most frequent even element,cpp,2,0
 2405,optimal partition of string,cpp,2,0
+2406,divide intervals into minimum number of groups,cpp,1,0
 2407,longest increasing subsequence II,cpp,0,2
 2409,count days spent together,cpp,1,0
 2410,maximum matching of players with trainers,cpp,1,0
@@ -1308,6 +1309,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 2525,categorize box according to criteria,cpp,1,0
 2526,find consecutive integers from a data stream,cpp,1,0
 2529,maximum count of positive integer and negative integer,cpp,1,0
+2530,maximal score after applying K operations,cpp,1,0
 2535,difference between element sum and digit sum of an array,cpp,2,0
 2536,increment submatrices by one,cpp,1,0
 2540,minimum common value,cpp,3,0
@@ -1616,3 +1618,9 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3309,maximum possible number by binary concatenation,cpp,1,0
 3310,remove methods from project,cpp,1,0
 3312,sorted GCD pair queries,cpp,0,1
+3314,construct the minimum bitwise array I,cpp,1,0
+3315,construct the minimum bitwise array II,cpp,0,1
+3316,find maximum removals from source string,cpp,0,1
+3318,find X sum of all K long subarrays I,cpp,1,0
+3319,K th largest perfect subtree size in binary tree,cpp,1,0
+3321,find X sum of all K long subarrays II,cpp,0,1
