@@ -866,6 +866,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 1462,course schedule IV,cpp,2,0
 1463,cherry pickup II,cpp,1,1
 1464,maximun product of two elements in an array,cpp,1,0
+1466,reorder routes to make all paths lead to the city zero,cpp,1,0
 1470,shuffle the array,cpp,5,0
 1472,design browser history,cpp,1,0
 1475,final prices with a special discount in a shop,cpp,1,0

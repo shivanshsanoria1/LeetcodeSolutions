@@ -10,6 +10,9 @@ public:
                 swaps += i - idx;
                 idx++;
             }
+
         return swaps;
     }
 };
+
+// 0: white, 1: black
