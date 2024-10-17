@@ -412,7 +412,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 627,swap salary,sql,2,0
 628,maximum product of 3 numbers,cpp,2,0
 629,k inverse pairs array,cpp,0,2
-632,smallest range covering elements from K lists,cpp,1,0
+632,smallest range covering elements from K lists,cpp,2,0
 633,sum of square numbers,cpp,3,1
 637,average of levels in a binary tree,cpp,1,0
 640,solve the equation,cpp,1,0
@@ -434,6 +434,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 665,non decreasing array,cpp,1,0
 668,kth smallest number in multiplication table,cpp,0,2
 669,trim a binary search tree,cpp,1,0
+670,maximum swap,cpp,2,0
 671,second minimum node in a binary tree,cpp,2,0
 673,number of longest increasing subsequence,cpp,1,0
 674,longest continous increasing subsequence,cpp,2,0
@@ -837,6 +838,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 1402,reducing dishes,cpp,1,0
 1403,minimum subsequence in non increasing order,cpp,2,0
 1404,number of steps to reduce a number in binary representation to one,cpp,2,0
+1405,longest happy string,cpp,1,0
 1406,stone game III,cpp,1,1
 1407,top travellers,sql,1,0
 1408,string matching in an array,cpp,2,0
