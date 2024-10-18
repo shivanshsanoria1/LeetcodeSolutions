@@ -1108,6 +1108,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 2038,remove colored pieces if both neighbors are the same color,cpp,2,0
 2042,check if numbers are ascending in a sentence,cpp,1,0
 2043,simple bank system,cpp,1,0
+2044,count number of maximum bitwise OR subsets,cpp,2,0
 2045,second minimum time to reach destination,cpp,1,0
 2047,number of valid words in a sentence,cpp,1,0
 2048,next greater numerically balanced number,cpp,1,0
