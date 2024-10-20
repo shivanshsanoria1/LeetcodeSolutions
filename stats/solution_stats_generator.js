@@ -174,6 +174,8 @@ function convertMapToArray(mp){
     })
   }
 
+  arr.sort((a, b) => a.quesId - b.quesId)
+
   // console.log('--------------------')
   // console.log('Solution Count for each language: ')
   // console.log(`CPP: accepted = ${solutionCount.cpp.accepted}, unaccepted = ${solutionCount.cpp.unaccepted}`)
@@ -183,8 +185,10 @@ function convertMapToArray(mp){
   // console.log(`Total Unaccepted = ${solutionCount.totalUnaccepted}`)
   // console.log('--------------------')
 
+  // console.table(arr.filter(({languages}) => languages.includes('js')))
+
   return {
-    solutionsStatArray: arr.sort((a, b) => a.quesId - b.quesId), 
+    solutionsStatArray: arr, 
     solutionCount
   }
 }

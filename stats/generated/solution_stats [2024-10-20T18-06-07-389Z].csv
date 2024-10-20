@@ -696,6 +696,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 1103,distribute candies to people,cpp,1,0
 1104,path in zigzag labelled binary tree,cpp,1,0
 1105,filling bookcase shelves,cpp,1,1
+1106,parsing a boolean expression,cpp,1,0
 1108,defanging an IP address,cpp,1,0
 1109,corporate flight bookings,cpp,1,0
 1110,delete nodes and return forest,cpp,1,0
@@ -902,6 +903,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 1535,find the winner of an array game,cpp,1,0
 1539,kth missing positive number,cpp,2,0
 1544,make the string great,cpp,2,0
+1545,find Kth bit in Nth binary string,cpp,2,0
 1550,three consecutive odds,cpp,2,0
 1551,minimum operations to make array equal,cpp,2,0
 1552,magnetic force between two balls,cpp,1,0

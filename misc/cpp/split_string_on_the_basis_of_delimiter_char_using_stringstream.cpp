@@ -31,7 +31,7 @@ int main() {
     for(string& token: tokens2)
         cout<<token<<endl;
     
-    cout<<endl<<"-------------------"<<endl;
+    cout<<endl<<string(25, '-')<<endl;
 
     return 0;
 }
