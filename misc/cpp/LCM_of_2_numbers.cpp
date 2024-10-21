@@ -16,14 +16,16 @@ int lcm1(int a, int b){
 int main() {
     int a = 30, b = 45;
     
+    // Method 1
     int lcm_val = lcm1(a, b);
     
+    // Method 2
     // using inbuilt gcd() 
     // int lcm_val = (a*b) / gcd(a, b);
     
     cout<<"LCM of "<<a<<" and "<<b<<" = "<<lcm_val;
 
-    cout<<endl<<"------------------------"<<endl;
+    cout<<endl<<string(25, '-')<<endl;
     return 0;
 }
 

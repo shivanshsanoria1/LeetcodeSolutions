@@ -80,21 +80,32 @@ int gcd5(int a, int b){
 int main() {
     int a = 30, b = 45;
     
+    // Method 1
     int gcd_val = gcd1(a, b);
+    
+    // Method 2
     // int gcd_val = gcd2(a, b);
+    
+    // Method 3
     // int gcd_val = gcd3(a, b);
+    
+    // Method 4
     // int gcd_val = gcd4(a, b);
+    
+    // Method 5
     // int gcd_val = gcd5(a, b);
     
+    // Method 6
     // inbuit; defined in 'algorithm' library; T.C.=O(log(min(a, b)))
     // int gcd_val = __gcd(a, b);
     
+    // Method 7
     // inbuit; defined in 'numeric' library; T.C.=O(log(min(a, b)))
     // int gcd_val = gcd(a, b); 
     
     cout<<"GCD of "<<a<<" and "<<b<<" = "<<gcd_val;
 
-    cout<<endl<<"------------------------"<<endl;
+    cout<<endl<<string(25, '-')<<endl;
     return 0;
 }
 

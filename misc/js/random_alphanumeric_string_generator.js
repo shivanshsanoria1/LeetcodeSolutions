@@ -25,7 +25,9 @@ function generateRandomAlphaNumericString(len = 13){
     return randomStr
 }
 
+// number of random strings to be generated
 let count = 100
+// length of each string (default is 13)
 const len = 13
 console.log(`Generating ${count} alpha-numeric strings of length ${len}...\n`)
 

@@ -7,6 +7,7 @@ using namespace std;
 // n: size of nums[], m: max-val in nums[]
 int findLCM(vector<int>& nums){
     long long int lcm_val = nums[0];
+    
     // using inbuilt gcd() 
     for(int i=1; i<nums.size(); i++)
         lcm_val = ((lcm_val * nums[i]) / gcd(lcm_val, (long long int)nums[i])) % MOD;
@@ -15,11 +16,11 @@ int findLCM(vector<int>& nums){
 }
 
 int main() {
-    vector<int> nums = {1, 2, 8, 3};
+    vector<int> nums = { 1, 2, 8, 3 };
     
-    cout<<"LCM of nums[] = "<<findLCM(nums);
+    cout<<"LCM = "<<findLCM(nums)<<endl;
 
-    cout<<endl<<"------------------------"<<endl;
+    cout<<endl<<string(25, '-')<<endl;
     return 0;
 }
 
