@@ -926,6 +926,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 1588,sum of all odd length subarrays,cpp,3,0
 1590,make sum divisible by P,cpp,1,1
 1592,rearrange spaces between words,cpp,1,0
+1593,split a string into the max number of unique substrings,cpp,1,0
 1598,crawler log folder,cpp,2,0
 1603,design parking system,cpp,2,0
 1605,find valid matrix given row and column sums,cpp,1,0
