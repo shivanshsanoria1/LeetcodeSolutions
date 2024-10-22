@@ -10,31 +10,43 @@
  * };
  */
 class Solution {
+private:
+    typedef long long int lli;
+
 public:
+    // T.C.=O(n + h*log(min(k, h))), S.C.=O(min(k, h))
+    // n: num of nodes in tree, h: height of tree (num of levels)
+    // in the worst-case h = n and k = n
     long long kthLargestLevelSum(TreeNode* root, int k) {
-        vector<long long int> levelSums;
         queue<TreeNode*> q;
         q.push(root);
+        // min-heap
+        priority_queue<lli, vector<lli>, greater<lli>> pq;
+
         while(!q.empty())
         {
             int size = q.size();
-            long long int levelSum = 0;
+            lli levelSum = 0;
+
             while(size--) 
             {
-                TreeNode *curr = q.front();
+                TreeNode* curr = q.front();
                 q.pop();
-                if(curr->left != NULL)
-                    q.push(curr->left); 
-                if(curr->right != NULL)
-                    q.push(curr->right); 
+
                 levelSum += curr->val;
+
+                if(curr->left != nullptr)
+                    q.push(curr->left); 
+                if(curr->right != nullptr)
+                    q.push(curr->right);
             }
-            levelSums.push_back(levelSum);
+
+            pq.push(levelSum);
+
+            if(pq.size() == k+1)
+                pq.pop();
         }
-        int n = levelSums.size();
-        if(k > n) // fewer than k elements in levelSums vector
-            return -1;
-        sort(levelSums.begin(), levelSums.end());
-        return levelSums[n-k]; // return the kth max levleSum
+
+        return pq.size() < k ? -1 : pq.top();
     }
 };

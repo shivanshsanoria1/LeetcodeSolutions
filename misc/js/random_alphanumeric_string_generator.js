@@ -1,39 +1,39 @@
 function generateRandomAlphaNumericString(len = 13){
     const chars = []
 
+    // uppercase-alphabets: A-Z
+    for(let i=0; i<26; i++){
+        chars.push(String.fromCharCode(65 + i))
+    }
+
     // digits: 0-9
     for(let i=0; i<=9; i++){
         chars.push(String.fromCharCode(48 + i))
     }
 
-    // lowercase: a-z
+    // lowercase-alphabets: a-z
     for(let i=0; i<26; i++){
         chars.push(String.fromCharCode(97 + i))
     }
 
-    // uppercase: A-Z
-    for(let i=0; i<26; i++){
-        chars.push(String.fromCharCode(65 + i))
-    }
-
-    let randomStr = ''
+    let randStr = ''
     while(len-- > 0){
-        const randomIdx = Math.floor(Math.random() * chars.length)
-        randomStr += chars[randomIdx]
+        const randIdx = Math.floor(Math.random() * chars.length)
+        randStr += chars[randIdx]
     }
 
-    return randomStr
+    return randStr
 }
 
-// number of random strings to be generated
+// number of strings to be generated
 let count = 100
 // length of each string (default is 13)
 const len = 13
-console.log(`Generating ${count} alpha-numeric strings of length ${len}...\n`)
+
+console.log(`Generating ${count} alpha-numeric strings of length ${len} ...\n`)
 
 for(let i=1; i<=count; i++){
-    const id = generateRandomAlphaNumericString(len)
-    console.log(i + ' -> ' + id)
+    console.log(i + ' -> ' + generateRandomAlphaNumericString(len))
 }
 
 console.log('\n--------------------------------')

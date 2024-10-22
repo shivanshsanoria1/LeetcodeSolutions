@@ -1334,7 +1334,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 2578,split with minimum sum,cpp,2,0
 2579,count total number of colored cells,cpp,2,0
 2582,pass the pillow,cpp,2,0
-2583,kth largest sum in a binary tree,cpp,2,0
+2583,Kth largest sum in a binary tree,cpp,2,0
 2586,count the number of vowel strings in range,cpp,1,0
 2593,find score of an array after marking all elements,cpp,2,0
 2595,number of even and odd bits,cpp,2,0
@@ -1631,3 +1631,5 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3318,find X sum of all K long subarrays I,cpp,1,0
 3319,K th largest perfect subtree size in binary tree,cpp,1,0
 3321,find X sum of all K long subarrays II,cpp,0,1
+3324,find the sequence of strings appeared on the screen,cpp,1,0
+3325,count substrings with K frequency characters I,cpp,2,0
