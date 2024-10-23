@@ -4,15 +4,15 @@ using namespace std;
 string generateRandomAlphaNumericString(int len){
     vector<char> chars;
     
-    // uppercase-alphabets A-Z
+    // uppercase-alphabets: A-Z
     for(char ch = 'A'; ch <= 'Z'; ch++)
         chars.push_back(ch);
     
-    // digits 0-9
+    // digits: 0-9
     for(char ch = '0'; ch <= '9'; ch++)
         chars.push_back(ch);
     
-    // lowercase-alphabets a-z
+    // lowercase-alphabets: a-z
     for(char ch = 'a'; ch <= 'z'; ch++)
         chars.push_back(ch);
     

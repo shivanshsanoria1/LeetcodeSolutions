@@ -10,7 +10,7 @@ vector<int> findPrimeFactors(int num){
         num /= 2;
     }
     
-    for(int i=3; i*i <= num; i+=2)
+    for(int i=3; i*i <= num; i += 2)
         while(num % i == 0)
         {
             primeFactors.push_back(i);
@@ -36,7 +36,7 @@ vector<pair<int, int>> findPrimeFactorsWithExponents(int num){
     if(expo > 0)
         primeFactors.push_back({2, expo});
     
-    for(int i=3; i*i <= num; i+=2)
+    for(int i=3; i*i <= num; i += 2)
     {
         int expo = 0;
         while(num % i == 0)

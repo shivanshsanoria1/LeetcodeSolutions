@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// T.C.=O(sqrt(n))
+// T.C.=O(sqrt(num))
 bool isPrime(int num){
     // 0 and 1 are not prime
     if(num <= 1)
@@ -22,7 +22,6 @@ bool isPrime(int num){
     
     return true;
 }
-
 
 int main() {
     vector<int> nums = { 1, 2, 3, 16, 19, 77, 71, 13 };

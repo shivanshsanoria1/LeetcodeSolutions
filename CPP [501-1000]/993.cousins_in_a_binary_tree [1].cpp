@@ -10,39 +10,40 @@
  * };
  */
 class Solution {
-private:
-    int parValX = -1, parValY = -1; // parent values of nodes with value x and y
-    int levelX = -1, levelY = -1; // level values of nodes with value x and y
-    bool areCousin = false;
-
 public:
-    void dfs(TreeNode* curr, int parVal, int level, int x, int y){
-        if(curr == NULL)
-            return;
-        if(curr->val == x) // found node with val x
-        {
-            parValX = parVal;
-            levelX = level;
-        }
-        else if(curr->val == y) // found node with val y
-        {
-            parValY = parVal;
-            levelY = level;
-        }
-        if(levelX > 0 && levelY > 0) // both x and y nodes are found
-        {
-            if(levelX == levelY && parValX != parValY)
-                areCousin = true;
-            return;
-        } 
-        dfs(curr->left, curr->val, level + 1, x, y);
-        dfs(curr->right, curr->val, level + 1, x, y);
-    }
-
     bool isCousins(TreeNode* root, int x, int y) {
-        dfs(root, -1, 0, x, y); 
-        return areCousin;
+        // {curr node, parent-val}
+        queue<pair<TreeNode*, int>> q;
+        q.push({root, -1});
+
+        while(!q.empty())
+        {
+            int size = q.size();
+            int parentValX = -1, parentValY = -1;
+
+            while(size--)
+            {
+                auto [curr, parentVal] = q.front();
+                q.pop();
+
+                if(curr->val == x)
+                    parentValX = parentVal;
+                else if(curr->val == y)
+                    parentValY = parentVal;
+                
+                // parent vals of both x and y are found
+                if(parentValX != -1 && parentValY != -1)
+                    return parentValX != parentValY;
+                
+                if(curr->left != nullptr)
+                    q.push({curr->left, curr->val});
+                if(curr->right != nullptr)
+                    q.push({curr->right, curr->val});
+            }
+        }
+
+        return false;
     }
 };
-// root has no parent val so -1 is used
-// start the level at 0
+
+// Cousins: 2 nodes on the same level but having different parents

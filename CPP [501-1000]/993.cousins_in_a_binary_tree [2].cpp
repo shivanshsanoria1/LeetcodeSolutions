@@ -10,40 +10,49 @@
  * };
  */
 class Solution {
+private:
+    void dfs(TreeNode* curr, int parentVal, int level, int x, int y, pair<int, int>& parents, pair<int, int>& levels){
+        if(curr == nullptr)
+            return;
+        
+        auto& [parentValX, parentValY] = parents;
+        auto& [levelX, levelY] = levels;
+
+        if(curr->val == x)
+        {
+            parentValX = parentVal;
+            levelX = level;
+        }
+        else if(curr->val == y)
+        {
+            parentValY = parentVal;
+            levelY = level;
+        }
+
+        // parents of both x and y are found
+        if(parentValX != -1 && parentValY != -1)
+            return;
+
+        dfs(curr->left, curr->val, level + 1, x, y, parents, levels);
+        dfs(curr->right, curr->val, level + 1, x, y, parents, levels);
+    }
+
 public:
     bool isCousins(TreeNode* root, int x, int y) {
-        queue<pair<TreeNode*, int>> q; // {curr node, parent val}
-        q.push({root, -1});
-        int level = 0;
-        int parValX = -1, parValY = -1; // parent values of nodes with value x and y
-        int levelX = -1, levelY = -1; // level values of nodes with value x and y
-        while(!q.empty())
-        {
-            int size = q.size();
-            while(size--)
-            {
-                TreeNode* curr = q.front().first;
-                int parVal = q.front().second;
-                q.pop();
-                if(curr->val == x) // found node with val x
-                {
-                    parValX = parVal;
-                    levelX = level;
-                }
-                else if(curr->val == y) // found node with val y
-                {
-                    parValY = parVal;
-                    levelY = level;
-                }
-                if(levelX > 0 && levelY > 0) // both x and y nodes are found
-                    return (levelX == levelY && parValX != parValY) ? true : false;
-                if(curr->left != NULL)
-                    q.push({curr->left, curr->val});
-                if(curr->right != NULL)
-                    q.push({curr->right, curr->val});
-            }
-            level++;
-        }
-        return false; // x or y not found in tree
+        // {parent-val of x, parent-val of y}
+        pair<int, int> parents;
+        // {level x, level y}
+        pair<int, int> levels;
+
+        parents.first = -1;
+        parents.second = -1;
+        levels.first = -1;
+        levels.second = -1;
+
+        dfs(root, -1, 0, x, y, parents, levels);
+
+        return parents.first != parents.second && levels.first == levels.second;
     }
 };
+
+// Cousins: 2 nodes on the same level but having different parents

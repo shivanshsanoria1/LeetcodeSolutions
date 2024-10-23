@@ -1,6 +1,8 @@
 class Solution {
 public:
-    int trailingZeroes(int n) { // Math soln.
+    // T.C.=O(1), S.C.=O(1)
+    // Math
+    int trailingZeroes(int n) { 
         return n/5 + n/25 + n/125 + n/625 + n/3125;
     }
 };
