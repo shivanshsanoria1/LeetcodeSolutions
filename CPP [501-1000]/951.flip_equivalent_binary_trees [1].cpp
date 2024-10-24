@@ -10,41 +10,36 @@
  * };
  */
 class Solution {
-public:
-    bool dfs(TreeNode* curr1, TreeNode* curr2){
-        if(curr1 == NULL && curr2 == NULL)
-            return true;
+private:
+    void dfs(TreeNode* curr, TreeNode* parent, vector<int>& parentVal){
+        if(curr == nullptr)
+            return;
 
-        int leftVal1 = curr1->left != NULL ? curr1->left->val : -1;
-        int rightVal1 = curr1->right != NULL ? curr1->right->val : -1;
-        int leftVal2 = curr2->left != NULL ? curr2->left->val : -1;
-        int rightVal2 = curr2->right != NULL ? curr2->right->val : -1;
-
-        // no flip required
-        if(leftVal1 == leftVal2 && rightVal1 == rightVal2)
-        {
-            bool L1L2 = dfs(curr1->left, curr2->left);
-            bool R1R2 = dfs(curr1->right, curr2->right);
-            return L1L2 && R1R2;
-        }
-        // flip required
-        if(leftVal1 == rightVal2 && rightVal1 == leftVal2)
-        {
-            bool L1R2 = dfs(curr1->left, curr2->right);
-            bool R1L2 = dfs(curr1->right, curr2->left);
-            return L1R2 && R1L2;
-        }
-
-        return false;
+        parentVal[curr->val] = parent != nullptr ? parent->val : -1;
+        
+        dfs(curr->left, curr, parentVal);
+        dfs(curr->right, curr, parentVal);
     }
 
+public:
+    // T.C.=O(n1 + n2), S.C.=O(n1 + n2 + 100)
     bool flipEquiv(TreeNode* root1, TreeNode* root2) {
-        if(root1 == NULL && root2 == NULL) // both root1 and root2 are NULL
+        // both trees are empty
+        if(root1 == nullptr && root2 == nullptr) 
             return true;
-        if(root1 == NULL || root2 == NULL) // one is NULL and other is not NULL
+        // one tree is empty but the other isn't
+        if(root1 == nullptr || root2 == nullptr) 
             return false;
-        if(root1->val != root2->val) // root values don't match
+        // root values don't match
+        if(root1->val != root2->val) 
             return false;
-        return dfs(root1, root2);
+
+        vector<int> parentVal1(100, -1);
+        dfs(root1, nullptr, parentVal1);
+
+        vector<int> parentVal2(100, -1);
+        dfs(root2, nullptr, parentVal2);
+
+        return parentVal1 == parentVal2;
     }
 };

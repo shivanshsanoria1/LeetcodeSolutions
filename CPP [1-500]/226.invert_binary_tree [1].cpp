@@ -10,21 +10,21 @@
  * };
  */
 class Solution {
-public:
-    void inv(TreeNode* root) // similar to preorder traversal (Root-Left-Right)
-    {
-        if(root == NULL)
+private:
+    void dfs(TreeNode* curr){
+        if(curr == nullptr)
             return;
-        // swap left and right child
-        TreeNode* temp = root->right; 
-        root->right = root->left;
-        root->left = temp; 
-        inv(root->left);
-        inv(root->right);
+        
+        swap(curr->left, curr->right);
+
+        dfs(curr->left);
+        dfs(curr->right);
     }
 
-    TreeNode* invertTree(TreeNode* root) { // RECURSIVE
-        inv(root);
+public:
+    TreeNode* invertTree(TreeNode* root) {
+        dfs(root);
+        
         return root;
     }
 };

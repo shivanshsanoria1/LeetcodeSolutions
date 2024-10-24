@@ -10,32 +10,32 @@
  * };
  */
 class Solution {
-public:
+private:
     bool dfs(TreeNode* curr1, TreeNode* curr2){
         // both the curr nodes are NULL
-        if(curr1 == NULL && curr2 == NULL) 
+        if(curr1 == nullptr && curr2 == nullptr) 
             return true;
-        // one of the curr nodes is NULL and the other is not NULL
-        if(curr1 == NULL || curr2 == NULL) 
+
+        // one of the curr nodes is NULL but the other isn't
+        if(curr1 == nullptr || curr2 == nullptr) 
             return false;
+
         // curr node's value don't match
         if(curr1->val != curr2->val)
             return false;
 
-        // no flip required
-        bool L1L2 = dfs(curr1->left, curr2->left);
-        bool R1R2 = dfs(curr1->right, curr2->right);
-        if(L1L2 && R1R2)
+        // without flipping
+        if(dfs(curr1->left, curr2->left) && dfs(curr1->right, curr2->right))
             return true;
-        // flip required
-        bool L1R2 = dfs(curr1->left, curr2->right);
-        bool R1L2 = dfs(curr1->right, curr2->left);
-        if(L1R2 && R1L2)
+
+        // with flipping
+        if(dfs(curr1->left, curr2->right) && dfs(curr1->right, curr2->left))
             return true;
 
         return false;
     }
 
+public:
     bool flipEquiv(TreeNode* root1, TreeNode* root2) {
         return dfs(root1, root2);
     }

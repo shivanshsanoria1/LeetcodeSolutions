@@ -11,24 +11,25 @@
  */
 class Solution {
 public:
-    TreeNode* invertTree(TreeNode* root) { // ITERATIVE
-        if(root == NULL)
+    TreeNode* invertTree(TreeNode* root) {
+        if(root == nullptr)
             return root;
+
         queue<TreeNode*> q;
         q.push(root);
         while(!q.empty())
         {
             TreeNode* curr = q.front();
             q.pop();
-            // swap left and right child of current node
-            TreeNode* temp = curr->right;
-            curr->right = curr->left;
-            curr->left = temp;
-            if(curr->left != NULL)
+
+            swap(curr->left, curr->right);
+
+            if(curr->left != nullptr)
                 q.push(curr->left);
-            if(curr->right != NULL)
+            if(curr->right != nullptr)
                 q.push(curr->right);
         }
+
         return root;
     }
 };
