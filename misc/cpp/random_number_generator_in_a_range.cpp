@@ -7,14 +7,16 @@ int generateRandomNumber(int start, int end){
 }
 
 int main(){
-    int count = 518;
+    int count = 1373;
     int start = 1;
     int end = 50;
     
-    double avgFreq = (double)count / (end - start + 1);
+    double meanFreq = (double)count / (end - start + 1);
 
     // number -> frequency
     map<int, int> mp;
+    // Frequencies
+    vector<int> freqs;
 
     srand(time(0)); // seed for rand()
     
@@ -33,12 +35,27 @@ int main(){
         
         minFreq = min(minFreq, freq);
         maxFreq = max(maxFreq, freq);
+        
+        freqs.push_back(freq);
     }
     
-    cout<<endl;
+    cout<<endl<<string(25, '-')<<endl;
+    
+    cout<<"Expected Mean Freq = "<<meanFreq<<endl;
+    
+    sort(freqs.begin(), freqs.end());
+    double medianFreq = freqs.size() % 2 == 0 
+    ? ((double)freqs[freqs.size()/2 - 1] + freqs[freqs.size()/2])/2 
+    : freqs[freqs.size()/2];
+    cout<<"Median Freq = "<<medianFreq<<endl;
+    
     cout<<"Min Freq = "<<minFreq<<endl;
     cout<<"Max Freq = "<<maxFreq<<endl;
-    cout<<"Avg Freq expected = "<<avgFreq<<endl;
+    
+    double deviationInMinFreq = ((minFreq - meanFreq)/meanFreq) * 100;
+    double deviationInMaxFreq = ((maxFreq - meanFreq)/meanFreq) * 100;
+    cout<<"Deviation in Min freq = "<<deviationInMinFreq<<" % "<<endl;
+    cout<<"Deviation in Max freq = "<<deviationInMaxFreq<<" % "<<endl;
     
     cout<<endl<<string(25, '-')<<endl;
     

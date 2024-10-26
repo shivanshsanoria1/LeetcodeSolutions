@@ -21,15 +21,17 @@ private:
         return 1 + leftCount + rightCount;
     }
 
-    int findDepth(TreeNode* curr, int query){
+    // returns the depth of the tree, 
+    // excluding the subtree with root val 'query'
+    int findHeight(TreeNode* curr, int query){
         if(curr == nullptr)
             return 0;
         
         if(curr->val == query)
             return 0;
         
-        int leftHeight = findDepth(curr->left, query);
-        int rightHeight = findDepth(curr->right, query);
+        int leftHeight = findHeight(curr->left, query);
+        int rightHeight = findHeight(curr->right, query);
 
         return 1 + max(leftHeight, rightHeight);
     }
@@ -44,18 +46,13 @@ public:
         for(int query: queries)
         {
             if(dp[query] == -1)
-            {
-                ans.push_back(findDepth(root, query) - 1);
-                dp[query] = ans.back();
-            }
-            else
-            {
-                dp[query] = findDepth(root, query) - 1;
-                ans.push_back(dp[query]);
-            }
+                dp[query] = findHeight(root, query) - 1;
+
+            ans.push_back(dp[query]);
         }
         
         return ans;
     }
 };
+
 // dp[] is used since queries can be repeated
