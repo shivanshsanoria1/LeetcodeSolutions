@@ -17,6 +17,7 @@ private:
                 findNewParents(graph, nei, curr, s, parent, pathVisitedChars);
 
         // remove the curr-node's char-val from the curr path
+        // by restoring the prev saved val
         pathVisitedChars[s[curr] - 'a'] = temp;
     }
 

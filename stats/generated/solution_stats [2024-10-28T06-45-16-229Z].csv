@@ -1637,3 +1637,6 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3326,minimum division operations to make array non decreasing,cpp,1,0
 3330,find the original typed string I,cpp,1,0
 3331,find subtree sizes after changes,cpp,1,0
+3332,maximum points tourist can earn,cpp,0,1
+3334,find the maximum factor score of array,cpp,1,0
+3335,total characters in string after transformations I,cpp,1,0
