@@ -1,21 +1,16 @@
 class Solution {
 public:
+    // T.C.=O(n), S.C.=O(1)
     bool isCircularSentence(string sentence) {
-        int n=sentence.length();
-        char prev = '#', curr = '#'; 
+        int n = sentence.length();
+
+        if(sentence[0] != sentence[n-1])
+            return false;
+
         for(int i=0; i<n; i++)
-        {
-            prev = curr;
-            if(sentence[i] == ' ')
-            {
-                i++;
-                curr = i < n ? sentence[i] : sentence[0];
-                if(prev != curr)
-                    return false;
-            }
-            else
-                curr = sentence[i];
-        }
-        return sentence[0] == sentence[n-1] ? true : false;
+            if(sentence[i] == ' ' && sentence[i-1] != sentence[i+1])
+                return false;
+
+        return true;
     }
 };
