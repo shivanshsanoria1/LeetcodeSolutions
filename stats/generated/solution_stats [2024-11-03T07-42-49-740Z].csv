@@ -507,7 +507,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 792,number of matching subsequences,cpp,1,1
 793,preimage size of factorial zeroes function,cpp,1,1
 795,number of subarrays with bounded maximum,cpp,1,1
-796,rotate string,cpp,4,0
+796,rotate string,cpp+js,3+1,0+0
 797,all paths from source to target,cpp,1,0
 799,champagne tower,cpp,1,0
 802,find eventual safe states,cpp,3,0
@@ -1642,3 +1642,4 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3332,maximum points tourist can earn,cpp,0,1
 3334,find the maximum factor score of array,cpp,1,0
 3335,total characters in string after transformations I,cpp,1,0
+3340,check balanced string,cpp+js,1+1,0+0
