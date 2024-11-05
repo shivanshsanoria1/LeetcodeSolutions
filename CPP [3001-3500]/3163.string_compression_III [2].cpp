@@ -2,13 +2,16 @@ class Solution {
 public:
     // T.C.=O(n), S.C.=O(1)
     string compressedString(string word) {
-        int n = word.length();
         string comp = "";
-        int count = 1;
+        char prev = '#';
+        int count = 0;
+
+        // to handle the last group case
+        word += "#";
         
-        for(int i=1; i<=n; i++)
+        for(char curr: word)
         {
-            if(i<n && word[i-1] == word[i])
+            if(prev == curr)
             {
                 count++;
                 continue;
@@ -17,19 +20,24 @@ public:
             while(count > 9)
             {
                 comp += "9";
-                comp += word[i-1];
+                comp += prev;
                 count -= 9;
             }
 
             if(count > 0)
             {
                 comp += to_string(count);
-                comp += word[i-1];
+                comp += prev;
             }
 
             // reset count
             count = 1;
+            // update prev
+            prev = curr;
         }
+
+        // restore the original string
+        word.pop_back();
 
         return comp;
     }
