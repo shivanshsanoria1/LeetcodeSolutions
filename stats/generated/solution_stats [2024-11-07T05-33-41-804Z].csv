@@ -1207,6 +1207,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 2265,count nodes equal to average of subtree,cpp,1,0
 2269,find the k beauty of a number,cpp,1,0
 2273,find resultant array after removing anagrams,cpp,1,0
+2275,largest combination with bitwise and greater than zero,cpp,1,0
 2276,count integers in intervals,cpp,0,1
 2278,percentage of letter in string,cpp,1,0
 2279,maximum bags with full capacity of rocks,cpp,1,0
