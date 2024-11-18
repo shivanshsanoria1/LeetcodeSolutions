@@ -1,8 +1,8 @@
 class Solution {
 public:
-    // T.C.=O(n^2), S.C.=O(1)
+    // T.C.=O(n*k), S.C.=O(1)
     vector<int> resultsArray(vector<int>& nums, int k) {
-        int n=nums.size();
+        int n = nums.size();
         vector<int> ans;
 
         for(int i=0; i<=n-k; i++)

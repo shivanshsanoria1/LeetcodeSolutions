@@ -1645,3 +1645,5 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3334,find the maximum factor score of array,cpp,1,0
 3335,total characters in string after transformations I,cpp,1,0
 3340,check balanced string,cpp+js,1+1,0+0
+3345,smallest divisible digit product I,cpp,1,0
+3349,adjacent increasing subarrays detection I,cpp,1,0
