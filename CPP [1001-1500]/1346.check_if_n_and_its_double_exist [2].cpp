@@ -1,11 +1,18 @@
 class Solution {
 public:
-    bool checkIfExist(vector<int>& arr) { // T.C.=O(n^2), S.C.=O(1)
-        int n=arr.size();
-        for(int i=0; i<n-1; i++)
-            for(int j=i+1; j<n; j++)
-                if(arr[i] == 2*arr[j] || arr[j] == 2*arr[i])
-                    return true;
+    // T.C.=O(n), S.C.=O(n)
+    bool checkIfExist(vector<int>& arr) { 
+        unordered_set<int> s;
+        for(int num: arr)
+        {
+            if(s.find(2*num) != s.end())
+                return true;
+            if(num % 2 == 0 && s.find(num/2) != s.end())
+                return true;
+                
+            s.insert(num);
+        }
+
         return false;
     }
 };

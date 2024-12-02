@@ -801,7 +801,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 1341,movie rating,sql,2,0
 1342,number of steps to reduce a number to zero,cpp,1,0
 1344,angle between hands of a clock,cpp,1,0
-1346,check if n and its double exist,cpp,3,0
+1346,check if N and its double exist,cpp,3,0
 1347,minimum number of steps to make two strings anagram,cpp,1,0
 1348,tweet counts per frequency,cpp,1,0
 1351,count negative numbers in a sorted matrix,cpp,3,0
@@ -862,7 +862,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 1448,count good nodes in binary tree,cpp,1,0
 1450,number of students doing homework at a given time,cpp,1,0
 1451,rearrange words in a sentence,cpp,2,0
-1455,check if a word occurs as a prefix of any word in a sentence,cpp+js,1+1,0+0
+1455,check if a word occurs as a prefix of any word in a sentence,cpp+js,2+1,0+0
 1456,maximum number of vowels in a substring of given length,cpp,1,0
 1457,pseudo palindromic paths in a binary tree,cpp,1,0
 1460,make two arrays equal by reversing subarrays,cpp,3,0
@@ -1647,3 +1647,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3340,check balanced string,cpp+js,1+1,0+0
 3345,smallest divisible digit product I,cpp,1,0
 3349,adjacent increasing subarrays detection I,cpp,1,0
+3360,stone removal game,cpp,1,0
+3364,minimum positive sum subarray,cpp,1,0
+3365,rearrange K substrings to form target string,cpp,1,0
+3370,smallest number with all set bits,cpp,2,0
