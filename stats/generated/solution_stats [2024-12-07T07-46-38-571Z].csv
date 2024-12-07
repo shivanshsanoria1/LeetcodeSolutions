@@ -995,6 +995,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 1753,maximum score from removing stones,cpp,3,0
 1757,recyclable and low fat products,sql,1,0
 1758,minimum changes to make alternating binary string,cpp,1,0
+1760,minimum limit of balls in a bag,cpp,1,1
 1761,minimum degree of a connected trio in a graph,cpp,1,0
 1763,longest nice substring,cpp,4,0
 1765,map of highest peak,cpp,1,0
@@ -1232,6 +1233,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 2331,evaluate boolean binary tree,cpp,1,0
 2335,minimum amount of time to fill cups,cpp,2,0
 2336,smallest number in infinite set,cpp,1,0
+2337,move pieces to obtain a string,cpp,1,0
 2341,maximum number of pairs in array,cpp,1,0
 2342,max sum of a pair with equal sum of digits,cpp,1,1
 2343,query Kth smallest trimmed number,cpp,2,0
@@ -1326,6 +1328,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 2544,alternating digit sum,cpp,1,0
 2545,sort the students by their Kth score,cpp,2,0
 2553,seperate the digits in an array,cpp,2,0
+2554,maximum number of integers to choose from a range I,cpp,1,0
 2558,take gifts from the richest pile,cpp,1,0
 2559,count vowel strings in ranges,cpp,1,1
 2562,find the array concatenation value,cpp,1,0
