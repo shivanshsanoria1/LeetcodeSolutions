@@ -1120,6 +1120,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 2048,next greater numerically balanced number,cpp,1,0
 2049,count nodes with the highest score,cpp,1,0
 2053,Kth distinct string in an array,cpp,2,0
+2054,two best non overlapping events,cpp,2,1
 2057,smallest index with equal value,cpp,1,0
 2058,find the minimum and maximum number of nodes between critical points,cpp,2,0
 2062,count vowel substrings of a string,cpp,2,0
@@ -1656,3 +1657,5 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3365,rearrange K substrings to form target string,cpp,1,0
 3370,smallest number with all set bits,cpp,2,0
 3371,identify the largest outlier in an array,cpp,1,1
+3375,minimum operations to make array values equal to K,cpp,1,0
+3379,transformed array,cpp,1,0
