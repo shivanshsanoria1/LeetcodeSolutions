@@ -1492,6 +1492,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 2974,minimum number game,cpp,1,0
 2976,minimum cost to convert string I,cpp,1,0
 2980,check if bitwise or has trailing zeros,cpp,1,0
+2981,find longest special substring that occurs thrice I,cpp,1,0
 2997,minimum number of operations to make array xor equal to k,cpp,1,0
 3000,maximum area of longest diagonal rectangle,cpp,1,0
 3002,maximum size of a set after removals,cpp,1,0
