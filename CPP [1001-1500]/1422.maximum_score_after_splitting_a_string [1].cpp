@@ -11,8 +11,10 @@ public:
                 leftZeros++;
             else
                 rightOnes--;
+
             ans = max(ans, leftZeros + rightOnes);
         }
+        
         return ans;
     }
 };

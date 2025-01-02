@@ -1,20 +1,25 @@
 class Solution {
-public:
+private:
     bool isVowel(char ch){
         return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'; 
     }
 
-    vector<int> vowelStrings(vector<string>& words, vector<vector<int>>& queries) { // T.C.=O(n*q), S.C.=O(1)
+public:
+    // T.C.=O(n*q), S.C.=O(1)
+    vector<int> vowelStrings(vector<string>& words, vector<vector<int>>& queries) { 
         vector<int> ans;
-        for(auto qu: queries)
+        for(vector<int>& query: queries)
         {
-            int left = qu[0], right = qu[1];
+            int left = query[0], right = query[1];
             int count = 0;
+
             for(int i=left; i<=right; i++)
-                if(isVowel(words[i].front()) && isVowel(words[i].back()))
+                if(isVowel(words[i][0]) && isVowel(words[i].back()))
                     count++;
+
             ans.push_back(count);
         }
+
         return ans;
     }
 };

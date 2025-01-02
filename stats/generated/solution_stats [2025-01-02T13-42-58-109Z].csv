@@ -1661,3 +1661,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3371,identify the largest outlier in an array,cpp,1,1
 3375,minimum operations to make array values equal to K,cpp,1,0
 3379,transformed array,cpp,1,0
+3386,button with longest push time,cpp,1,0
+3392,count subarrays of length three with a condition,cpp,1,0
+3396,minimum number of operations to make elements in array distinct,cpp,1,0
+3402,minimum operations to make columns strictly increasing,cpp,1,0
