@@ -1208,6 +1208,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 2264,largest 3 same digit number in string,cpp,2,0
 2265,count nodes equal to average of subtree,cpp,1,0
 2269,find the k beauty of a number,cpp,1,0
+2270,number of ways to split array,cpp,1,0
 2273,find resultant array after removing anagrams,cpp,1,0
 2275,largest combination with bitwise and greater than zero,cpp,1,0
 2276,count integers in intervals,cpp,0,1
@@ -1663,5 +1664,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3379,transformed array,cpp,1,0
 3386,button with longest push time,cpp,1,0
 3392,count subarrays of length three with a condition,cpp,1,0
+3393,count paths with the given XOR value,cpp,1,1
 3396,minimum number of operations to make elements in array distinct,cpp,1,0
 3402,minimum operations to make columns strictly increasing,cpp,1,0
+3407,substring matching pattern,cpp,1,0

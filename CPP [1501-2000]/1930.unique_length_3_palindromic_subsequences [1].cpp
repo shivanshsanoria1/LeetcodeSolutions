@@ -1,8 +1,8 @@
 class Solution {
 public:
-    // T.C.=O(26*n), S.C.=O(26)
+    // T.C.=O(26*(n + 26)), S.C.=O(26)
     int countPalindromicSubsequence(string s) {
-        int n=s.length();
+        int n = s.length();
         // index of the first occurence of a char
         vector<int> firstIdx(26, -1);
         // index of the last occurence of a char
@@ -25,7 +25,6 @@ public:
             }
         
         int count = 0;
-
         for(int i=0; i<26; i++)
         {
             if(firstIdx[i] == lastIdx[i])
@@ -49,9 +48,10 @@ public:
         return count;
     }
 };
+
 /*
 # the idea is to generate length-3 palindromes of the form: 
-  "a$a", "b$b", "c$c", ..., "z$z"; where '$' can be any char from [a, z]
+  "a_a", "b_b", "c_c", ..., "z_z"; where '_' can be any char from [a, z]
 # find the index of first and last occurence each char in string 's'
 # find the number of unique chars in index-range (first, last), both exclusive,
   for each palindrome 
