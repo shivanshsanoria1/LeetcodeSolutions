@@ -1000,6 +1000,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 1763,longest nice substring,cpp,4,0
 1765,map of highest peak,cpp,1,0
 1768,merge strings alternately,cpp,1,0
+1769,minimum number of operations to move all balls to each box,cpp,3,0
 1773,count items matching a rule,cpp,1,0
 1779,find nearest point that has the same x or y coordinate,cpp,1,0
 1780,check if number is a sum of powers of three,cpp,1,0
@@ -1258,6 +1259,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 2374,node with highest edge score,cpp,1,0
 2376,count special integers,cpp,0,1
 2380,time needed to rearrange a binary string,cpp,1,0
+2381,shifting letters II,cpp,1,1
 2383,minimum hours of training to win a competition,cpp,1,0
 2385,amount of time for binary tree to be infected,cpp,2,0
 2389,longest subsequence with limited sum,cpp,3,0
@@ -1668,3 +1670,5 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3396,minimum number of operations to make elements in array distinct,cpp,1,0
 3402,minimum operations to make columns strictly increasing,cpp,1,0
 3407,substring matching pattern,cpp,1,0
+3411,maximum subarray with equal products,cpp,1,0
+3412,find mirror score of a string,cpp,1,1
