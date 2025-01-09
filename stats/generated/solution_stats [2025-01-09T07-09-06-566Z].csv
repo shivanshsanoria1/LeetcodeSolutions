@@ -1177,7 +1177,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 2180,count integers with even digit sum,cpp,1,0
 2181,merge nodes in between zeros,cpp,2,0
 2183,count array pairs divisible by K,cpp,0,1
-2185,counting words with a given prefix,cpp,1,0
+2185,counting words with a given prefix,cpp+js,3+2,0+0
 2190,most frequent number following key in an array,cpp,1,0
 2191,sort the jumbled numbers,cpp,2,0
 2192,all ancestors of a node in a directed acyclic graph,cpp,2,0
@@ -1513,7 +1513,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3034,number of subarrays that match a pattern I,cpp,1,0
 3038,maximum number of operations with the same score I,cpp,1,0
 3039,apply operations to make string empty,cpp,1,0
-3042,count prefix and suffix pairs I,cpp,1,0
+3042,count prefix and suffix pairs I,cpp+js,2+2,0+0
 3043,find the length of the longest common prefix,cpp,1,1
 3045,count prefix and suffix pairs II,cpp,0,1
 3046,split the array,cpp,1,0
@@ -1670,5 +1670,6 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3396,minimum number of operations to make elements in array distinct,cpp,1,0
 3402,minimum operations to make columns strictly increasing,cpp,1,0
 3407,substring matching pattern,cpp,1,0
+3408,design task manager,cpp,1,0
 3411,maximum subarray with equal products,cpp,1,0
 3412,find mirror score of a string,cpp,1,1

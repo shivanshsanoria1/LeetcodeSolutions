@@ -1,8 +1,11 @@
 class Solution {
 public:
+    // T.C.=O(n^2 * m), S.C.=O(1)
+    // n: size of words[], m: max-length of word in words[]
     vector<string> stringMatching(vector<string>& words) {
-        vector<string> ans;
         int n = words.size();
+        vector<string> ans;
+        
         for(int i=0; i<n; i++)
             for(int j=0; j<n; j++)
             {
@@ -15,6 +18,7 @@ public:
                     break;
                 }
             }
+
         return ans;
     }
 };

@@ -8,7 +8,7 @@ public:
 
         for(int i=0; i<n; i++)
         {
-            // closest unmarked indexes of mirror chars of s[i]
+            // indexes of closest unmarked mirror chars of s[i]
             stack<int>& st = idxs[25 - (s[i] - 'a')];
 
             if(!st.empty())
