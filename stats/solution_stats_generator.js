@@ -12,7 +12,7 @@ function readSolutionStats(){
       const dirPath_cpp_2501_3000 = path.join(__dirname, '..', 'CPP [2501-3000]')
       const dirPath_cpp_3001_3500 = path.join(__dirname, '..', 'CPP [3001-3500]')
       const dirPath_js = path.join(__dirname, '..', 'JS')
-      const dirPath_sql = path.join(__dirname, '..', 'SQL')
+      const dirPath_mysql = path.join(__dirname, '..', 'MYSQL')
       
       const dirPaths = [
         dirPath_cpp_1_500,
@@ -23,12 +23,12 @@ function readSolutionStats(){
         dirPath_cpp_2501_3000,
         dirPath_cpp_3001_3500,
         dirPath_js, 
-        dirPath_sql
+        dirPath_mysql
       ]
 
       const solutionsStatMap = new Map()
 
-      const fileCount = { cpp: 0, js: 0, sql: 0 }
+      const fileCount = { cpp: 0, js: 0, mysql: 0 }
 
       for(const dirPath of dirPaths){
         const fileNames = await readdir(dirPath)
@@ -56,7 +56,7 @@ function readSolutionStats(){
                   acceptedCount: language === 'js' && isAccepted ? 1 : 0, 
                   unacceptedCount: language === 'js' && !isAccepted ? 1 : 0, 
                 },
-                sql: {
+                mysql: {
                   acceptedCount: language === 'sql' && isAccepted ? 1 : 0, 
                   unacceptedCount: language === 'sql' && !isAccepted ? 1 : 0, 
                 },
@@ -80,9 +80,9 @@ function readSolutionStats(){
 
             } else if(language === 'sql'){
               if(isAccepted)
-                solutionstats.languages.sql.acceptedCount++
+                solutionstats.languages.mysql.acceptedCount++
               else
-                solutionstats.languages.sql.unacceptedCount++
+                solutionstats.languages.mysql.unacceptedCount++
             }
           }
 
@@ -93,11 +93,11 @@ function readSolutionStats(){
           else if(language === 'js')
             fileCount.js++
           else if(language === 'sql')
-            fileCount.sql++
+            fileCount.mysql++
         }
       }
       
-      // console.log(`Total files = ${fileCount.cpp} in cpp, ${fileCount.js} in js, ${fileCount.sql} in sql`)
+      // console.log(`Total files = ${fileCount.cpp} in cpp, ${fileCount.js} in js, ${fileCount.mysql} in mysql`)
 
       resolve({solutionsStatMap, fileCount})
 
@@ -114,7 +114,7 @@ function convertMapToArray(mp){
   const solutionCount = {
     cpp: {accepted: 0, unaccepted: 0},
     js: {accepted: 0, unaccepted: 0},
-    sql: {accepted: 0, unaccepted: 0},
+    mysql: {accepted: 0, unaccepted: 0},
     totalAccepted: 0,
     totalUnaccepted: 0,
   }
@@ -149,18 +149,18 @@ function convertMapToArray(mp){
       
     }
 
-    if(languages.sql.acceptedCount > 0 || languages.sql.unacceptedCount > 0){
-      languagesArr.push('sql')
-      acceptedCountArr.push(languages.sql.acceptedCount.toString())
-      unacceptedCountArr.push(languages.sql.unacceptedCount.toString())
+    if(languages.mysql.acceptedCount > 0 || languages.mysql.unacceptedCount > 0){
+      languagesArr.push('mysql')
+      acceptedCountArr.push(languages.mysql.acceptedCount.toString())
+      unacceptedCountArr.push(languages.mysql.unacceptedCount.toString())
       
-      if(languages.sql.acceptedCount > 0)
-        solutionCount.sql.accepted++
+      if(languages.mysql.acceptedCount > 0)
+        solutionCount.mysql.accepted++
       else
-        solutionCount.sql.unaccepted++
+        solutionCount.mysql.unaccepted++
     }
 
-    if(languages.cpp.acceptedCount > 0 || languages.js.acceptedCount > 0 || languages.sql.acceptedCount > 0)
+    if(languages.cpp.acceptedCount > 0 || languages.js.acceptedCount > 0 || languages.mysql.acceptedCount > 0)
       solutionCount.totalAccepted++
     else
       solutionCount.totalUnaccepted++
@@ -180,7 +180,7 @@ function convertMapToArray(mp){
   // console.log('Solution Count for each language: ')
   // console.log(`CPP: accepted = ${solutionCount.cpp.accepted}, unaccepted = ${solutionCount.cpp.unaccepted}`)
   // console.log(`JS: accepted = ${solutionCount.js.accepted}, unaccepted = ${solutionCount.js.unaccepted}`)
-  // console.log(`SQL: accepted = ${solutionCount.sql.accepted}, unaccepted = ${solutionCount.sql.unaccepted}`)
+  // console.log(`MYSQL: accepted = ${solutionCount.mysql.accepted}, unaccepted = ${solutionCount.mysql.unaccepted}`)
   // console.log(`Total Accepted = ${solutionCount.totalAccepted}`)
   // console.log(`Total Unaccepted = ${solutionCount.totalUnaccepted}`)
   // console.log('--------------------')
@@ -217,7 +217,7 @@ function writeSolutionStatsToCSV(solutionsStatArray, fileCount, solutionCount) {
       `Language | Accepted | Unaccepted |\n` + 
       `   cpp   |   ${solutionCount.cpp.accepted.toString().padStart(4, ' ')}   |   ${solutionCount.cpp.unaccepted.toString().padStart(4, ' ')}     |\n` + 
       `   js    |   ${solutionCount.js.accepted.toString().padStart(4, ' ')}   |   ${solutionCount.js.unaccepted.toString().padStart(4, ' ')}     |\n` + 
-      `   sql   |   ${solutionCount.sql.accepted.toString().padStart(4, ' ')}   |   ${solutionCount.sql.unaccepted.toString().padStart(4, ' ')}     |\n` + 
+      `  mysql  |   ${solutionCount.mysql.accepted.toString().padStart(4, ' ')}   |   ${solutionCount.mysql.unaccepted.toString().padStart(4, ' ')}     |\n` + 
       `----------------------------------\n\n` + 
       `Total Solutions: \n` + 
       `Accepted = ${solutionCount.totalAccepted}\n` +
@@ -226,7 +226,7 @@ function writeSolutionStatsToCSV(solutionsStatArray, fileCount, solutionCount) {
       `Total files: \n` + 
       `cpp = ${fileCount.cpp} \n` + 
       `js = ${fileCount.js } \n` + 
-      `sql = ${fileCount.sql} \n` + 
+      `mysql = ${fileCount.mysql} \n` + 
       `----------------------------------\n\n`
 
       const dateTime = new Date().toISOString().split(':').join('-').split('.').join('-')
