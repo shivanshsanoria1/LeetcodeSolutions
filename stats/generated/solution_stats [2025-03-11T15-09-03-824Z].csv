@@ -1673,6 +1673,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3408,design task manager,cpp,1,0
 3411,maximum subarray with equal products,cpp,1,0
 3412,find mirror score of a string,cpp,1,1
+3417,zigzag grid traversal with skip,cpp,1,0
 3423,maximum difference between adjacent elements in a circular array,cpp,1,0
 3427,sum of variable length subarrays,cpp,2,0
 3432,count partitions with even sum difference,cpp,3,0
@@ -1687,5 +1688,5 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3471,find the largest almost missing integer,cpp,1,0
 3475,DNA pattern recognition,mysql,1,0
 3477,fruits into baskets II,cpp,1,0
-3478,choose K elements with maximum sum,cpp,0,1
+3478,choose K elements with maximum sum,cpp,1,1
 3479,fruits into baskets III,cpp,0,1
