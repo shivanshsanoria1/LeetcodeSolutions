@@ -1674,15 +1674,20 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3411,maximum subarray with equal products,cpp,1,0
 3412,find mirror score of a string,cpp,1,1
 3417,zigzag grid traversal with skip,cpp,1,0
+3418,maximum amount of money robot can earn,cpp,1,2
+3419,minimize the maximum edge weight of graph,cpp,1,0
 3423,maximum difference between adjacent elements in a circular array,cpp,1,0
 3427,sum of variable length subarrays,cpp,2,0
 3432,count partitions with even sum difference,cpp,3,0
+3433,count mentions per user,cpp,1,0
 3436,find valid emails,mysql,1,0
 3438,find valid pair of adjacent digits in string,cpp,1,0
 3442,maximum difference between even and odd frequency I,cpp,1,0
+3446,sort matrix by diagonals,cpp,1,0
 3452,sum of good numbers,cpp,1,0
 3456,find special substring of length K,cpp,3,0
 3461,check if digits are equal in string after operations I,cpp,1,0
+3462,maximum sum with at most K elements,cpp,1,0
 3465,find products with valid serial numbers,mysql,1,0
 3467,transform array by parity,cpp,1,0
 3471,find the largest almost missing integer,cpp,1,0
