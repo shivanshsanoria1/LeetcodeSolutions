@@ -1695,3 +1695,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3477,fruits into baskets II,cpp,1,0
 3478,choose K elements with maximum sum,cpp,1,1
 3479,fruits into baskets III,cpp,0,1
+3483,unique 3 digit even numbers,cpp,1,0
+3484,design spreadsheet,cpp,1,0
+3487,maximum unique subarray sum after deletion,cpp,1,0
+3488,closest equal element queries,cpp,1,1
