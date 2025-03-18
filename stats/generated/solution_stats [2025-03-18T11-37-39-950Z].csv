@@ -1658,12 +1658,15 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3345,smallest divisible digit product I,cpp,1,0
 3349,adjacent increasing subarrays detection I,cpp,1,0
 3360,stone removal game,cpp,1,0
+3361,shift distance between two strings,cpp,2,0
 3364,minimum positive sum subarray,cpp,1,0
 3365,rearrange K substrings to form target string,cpp,1,0
 3370,smallest number with all set bits,cpp,2,0
 3371,identify the largest outlier in an array,cpp,1,1
 3375,minimum operations to make array values equal to K,cpp,1,0
 3379,transformed array,cpp,1,0
+3380,maximum area rectangle with point constraints I,cpp,2,0
+3382,maximum area rectangle with point constraints II,cpp,0,2
 3386,button with longest push time,cpp,1,0
 3392,count subarrays of length three with a condition,cpp,1,0
 3393,count paths with the given XOR value,cpp,1,1
@@ -1677,6 +1680,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3418,maximum amount of money robot can earn,cpp,1,2
 3419,minimize the maximum edge weight of graph,cpp,1,0
 3423,maximum difference between adjacent elements in a circular array,cpp,1,0
+3424,minimum cost to make arrays identical,cpp,1,0
 3427,sum of variable length subarrays,cpp,2,0
 3432,count partitions with even sum difference,cpp,3,0
 3433,count mentions per user,cpp,1,0
