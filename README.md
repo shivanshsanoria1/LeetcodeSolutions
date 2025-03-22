@@ -15,3 +15,6 @@ This repo contains solutions to over 1500 problems from [leetcode.com](https://l
 * A list of all the Leetcode solutions present in this repo can be found in the file at location './stats/generated/solution_stats [*ISO date-time of generation*].csv'
 * A list of all algorithms can be found in the file at location './algorithms/metadata/algorithms_metadata.csv'
 ---
+
+![bar-chart](./stats/generated/bar-chart.PNG)
+![pie-chart](./stats/generated/pie-chart.PNG)

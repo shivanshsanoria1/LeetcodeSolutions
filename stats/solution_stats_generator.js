@@ -193,10 +193,11 @@ function convertMapToArray(mp){
   }
 }
 
-function writeSolutionStatsToCSV(solutionsStatArray, fileCount, solutionCount) {
+function writeSolutionStatsToFiles(solutionsStatArray, fileCount, solutionCount) {
   return new Promise(async(resolve, reject) => {
     try{
       let solutionsStatsStringified = 'quesId,Title,Language(s),AcceptedCount,UnacceptedCount\n'
+      let solutionsStatArrayStringified = '[\n'
 
       for(const solutionStats of solutionsStatArray){
         const {
@@ -210,7 +211,11 @@ function writeSolutionStatsToCSV(solutionsStatArray, fileCount, solutionCount) {
         const titleWithOutCommas = title.replace(/,/g, '*')
         
         solutionsStatsStringified += `${quesId},${titleWithOutCommas},${languages},${acceptedCount},${unacceptedCount}\n`
+
+        solutionsStatArrayStringified += '  ' + JSON.stringify(solutionStats) + ', \n'
       }
+
+      solutionsStatArrayStringified += ']'
 
       const solutionsStatTotalStringified = 
       `Solution count per language: \n` + 
@@ -237,6 +242,9 @@ function writeSolutionStatsToCSV(solutionsStatArray, fileCount, solutionCount) {
       const txtFilePath = path.join(__dirname, 'generated', `solution_stats_total [${dateTime}].txt`)
       await writeFile(txtFilePath, solutionsStatTotalStringified)
 
+      const jsFilePath = path.join(__dirname, 'generated', `solution_stats_array [${dateTime}].js`)
+      await writeFile(jsFilePath, solutionsStatArrayStringified)
+
       resolve()
 
     }catch(err){
@@ -255,7 +263,7 @@ async function generateSolutionStats() {
 
     const {solutionsStatArray, solutionCount} = convertMapToArray(solutionsStatMap)
 
-    await writeSolutionStatsToCSV(solutionsStatArray, fileCount, solutionCount)
+    await writeSolutionStatsToFiles(solutionsStatArray, fileCount, solutionCount)
 
     console.log(`Solutions Stat Generation Completed at: ${new Date().toISOString()}`)
     const endTime = Date.now()

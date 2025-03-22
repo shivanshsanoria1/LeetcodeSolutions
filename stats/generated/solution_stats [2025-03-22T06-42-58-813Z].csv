@@ -1659,6 +1659,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3342,find minimum time to reach last room II,cpp,1,1
 3345,smallest divisible digit product I,cpp,1,0
 3349,adjacent increasing subarrays detection I,cpp,1,0
+3354,make array elements equal to zero,cpp,2,0
 3360,stone removal game,cpp,1,0
 3361,shift distance between two strings,cpp,2,0
 3364,minimum positive sum subarray,cpp,1,0

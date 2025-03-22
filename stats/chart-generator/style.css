@@ -1,0 +1,22 @@
+body{
+  background-color: #eeeeee;
+}
+
+.container{
+  display: none;
+  margin: 10px 0;
+}
+
+#bar-chart{
+  width: auto;
+  height: 640px;
+  /* border: 2px solid black; */
+  margin: auto;
+}
+
+#pie-chart{
+  width: 600px;
+  padding: 10px;
+  /* border: 2px solid black; */
+  margin: auto;
+}
