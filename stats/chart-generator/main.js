@@ -1,4 +1,5 @@
-const arr = [{"quesId":1,"title":"two sum","languages":"cpp","acceptedCount":"3","unacceptedCount":"0"}, 
+const arr = [
+  {"quesId":1,"title":"two sum","languages":"cpp","acceptedCount":"3","unacceptedCount":"0"}, 
   {"quesId":2,"title":"add two numbers","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":3,"title":"longest substring without repeating characters","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":4,"title":"median of two sorted arrays","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
@@ -1706,9 +1707,133 @@ const arr = [{"quesId":1,"title":"two sum","languages":"cpp","acceptedCount":"3"
   {"quesId":3484,"title":"design spreadsheet","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3487,"title":"maximum unique subarray sum after deletion","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3488,"title":"closest equal element queries","languages":"cpp","acceptedCount":"1","unacceptedCount":"1"}, 
+  {"quesId":3492,"title":"maximum containers on a ship","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3493,"title":"properties graph","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
 ]
 
-const maxQuesId = 3491
+const maxQuesId = 3495
+
+function loadPieChart1(){
+  const solved = arr.reduce((acc, {acceptedCount}) => acc += acceptedCount > 0, 0)
+  console.log(arr.filter(ele => ele.acceptedCount === 0))
+  const partiallySolved = arr.length - solved
+  const unsolved = maxQuesId - solved - partiallySolved
+
+  const data = {
+    labels: [
+      'Solved',
+      'Partially-solved',
+      'Unsolved'
+    ],
+    datasets: [{
+      label: 'Question count',
+      data: [solved, partiallySolved, unsolved],
+      backgroundColor: [
+        '#00ff99', // green
+        '#ffff4d', // yellow
+        '#ff4d4d' // red
+      ],
+      hoverOffset: 4
+    }]
+  };
+
+  const options = {
+    plugins: {
+      title: {
+        display: true,
+        text: `Leetcode Questions solved (as of ${new Date().toUTCString()})`,
+        color: 'green',
+        padding: 4,
+        font: {
+          size: 16
+        }
+      },
+      legend: {
+        display: true,
+        labels: {
+          color: 'green',
+          padding: 25,
+          font: {
+            size: 16
+          }
+        }
+      }
+    }
+  }
+
+  const ctx = document.getElementById('pie-chart-1')
+  ctx.parentElement.style.display = 'block'
+
+  new Chart(ctx, {
+    type: 'pie',
+    data,
+    options,
+  });
+}
+
+function loadPieChart2(){
+  const count_cpp = arr.reduce((acc, {languages, acceptedCount}) => {
+    const idx = languages.split('+').indexOf('cpp')
+    if(idx === -1)
+      return acc
+
+    return acceptedCount.split('+')[idx] > 0 ? acc + 1 : acc
+  }, 0);
+  const count_js = arr.reduce((acc, {languages}) => languages.split('+').indexOf('js') !== -1 ? acc + 1 : acc, 0);
+  const count_mysql = arr.reduce((acc, {languages}) => languages.split('+').indexOf('mysql') !== -1 ? acc + 1 : acc, 0);
+
+  const data = {
+    labels: [
+      'C++',
+      'Javascript',
+      'MySQL'
+    ],
+    datasets: [{
+      label: 'Question count',
+      data: [count_cpp, count_js, count_mysql],
+      backgroundColor: [
+        '#33adff', // blue
+        '#ffe066', // yellow
+        '#00ff99' // green
+      ],
+      hoverOffset: 4
+    }]
+  };
+
+  const options = {
+    plugins: {
+      title: {
+        display: true,
+        text: `Leetcode Questions solved per language (as of ${new Date().toUTCString()})`,
+        color: 'green',
+        padding: 4,
+        font: {
+          size: 16
+        }
+      },
+      legend: {
+        display: true,
+        labels: {
+          color: 'green',
+          padding: 25,
+          font: {
+            size: 16
+          }
+        }
+      }
+    }
+  }
+
+  const ctx = document.getElementById('pie-chart-2')
+  ctx.parentElement.style.display = 'block'
+
+  new Chart(ctx, {
+    type: 'pie',
+    data,
+    options,
+  });
+}
+
 
 function loadBarChart(){
   const groups = Math.ceil(maxQuesId / 100)
@@ -1813,63 +1938,6 @@ function loadBarChart(){
   });
 }
 
-function loadPieChart(){
-  const solved = arr.reduce((acc, {acceptedCount}) => acc += acceptedCount > 0, 0)
-  console.log(arr.filter(ele => ele.acceptedCount === 0))
-  const partiallySolved = arr.length - solved
-  const unsolved = maxQuesId - solved - partiallySolved
-
-  const data = {
-    labels: [
-      'Solved',
-      'Partially-solved',
-      'Unsolved'
-    ],
-    datasets: [{
-      label: 'Question count',
-      data: [solved, partiallySolved, unsolved],
-      backgroundColor: [
-        '#00ff99',
-        '#ffff4d',
-        '#ff4d4d'
-      ],
-      hoverOffset: 4
-    }]
-  };
-
-  const options = {
-    plugins: {
-      title: {
-        display: true,
-        text: `Leetcode Questions solved (as of ${new Date().toUTCString()})`,
-        color: 'green',
-        padding: '10px',
-        font: {
-          size: 22
-        }
-      },
-      legend: {
-        display: true,
-        labels: {
-          color: 'green',
-          padding: 25,
-          font: {
-            size: 16
-          }
-        }
-      }
-    }
-  }
-
-  const ctx = document.getElementById('pie-chart')
-  ctx.parentElement.style.display = 'block'
-
-  new Chart(ctx, {
-    type: 'pie',
-    data,
-    options,
-  });
-}
-
+loadPieChart1()
+loadPieChart2()
 loadBarChart()
-loadPieChart()

@@ -16,5 +16,8 @@ This repo contains solutions to over 1500 problems from [leetcode.com](https://l
 * A list of all algorithms can be found in the file at location './algorithms/metadata/algorithms_metadata.csv'
 ---
 
+![pie-chart-1](./stats/generated/pie-chart-1.PNG)
+![pie-chart-2](./stats/generated/pie-chart-2.PNG)
 ![bar-chart](./stats/generated/bar-chart.PNG)
-![pie-chart](./stats/generated/pie-chart.PNG)
+
+---
