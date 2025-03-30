@@ -1707,6 +1707,9 @@
   {"quesId":3484,"title":"design spreadsheet","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3487,"title":"maximum unique subarray sum after deletion","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3488,"title":"closest equal element queries","languages":"cpp","acceptedCount":"1","unacceptedCount":"1"}, 
-  {"quesId":3492,"title":"maximum containers on a ship","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3492,"title":"maximum containers on a ship","languages":"cpp+js","acceptedCount":"1+1","unacceptedCount":"0+0"}, 
   {"quesId":3493,"title":"properties graph","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3497,"title":"analyze subscription conversion","languages":"mysql","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3498,"title":"reverse degree of a string","languages":"cpp+js","acceptedCount":"1+1","unacceptedCount":"0+0"}, 
+  {"quesId":3502,"title":"minimum cost to reach every position","languages":"cpp+js","acceptedCount":"1+1","unacceptedCount":"0+0"}, 
 ]

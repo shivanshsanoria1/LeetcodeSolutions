@@ -1,3 +1,5 @@
+// ------------ DATA ARRAY START ------------ //
+
 const arr = [
   {"quesId":1,"title":"two sum","languages":"cpp","acceptedCount":"3","unacceptedCount":"0"}, 
   {"quesId":2,"title":"add two numbers","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
@@ -1707,15 +1709,19 @@ const arr = [
   {"quesId":3484,"title":"design spreadsheet","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3487,"title":"maximum unique subarray sum after deletion","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3488,"title":"closest equal element queries","languages":"cpp","acceptedCount":"1","unacceptedCount":"1"}, 
-  {"quesId":3492,"title":"maximum containers on a ship","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3492,"title":"maximum containers on a ship","languages":"cpp+js","acceptedCount":"1+1","unacceptedCount":"0+0"}, 
   {"quesId":3493,"title":"properties graph","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3497,"title":"analyze subscription conversion","languages":"mysql","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3498,"title":"reverse degree of a string","languages":"cpp+js","acceptedCount":"1+1","unacceptedCount":"0+0"}, 
+  {"quesId":3502,"title":"minimum cost to reach every position","languages":"cpp+js","acceptedCount":"1+1","unacceptedCount":"0+0"}, 
 ]
 
-const maxQuesId = 3495
+// ------------ DATA ARRAY END ------------ //
+
+const maxQuesId = 3505
 
 function loadPieChart1(){
-  const solved = arr.reduce((acc, {acceptedCount}) => acc += acceptedCount > 0, 0)
-  console.log(arr.filter(ele => ele.acceptedCount === 0))
+  const solved = arr.reduce((acc, {acceptedCount}) => acc += acceptedCount !== '0', 0)
   const partiallySolved = arr.length - solved
   const unsolved = maxQuesId - solved - partiallySolved
 
@@ -1834,14 +1840,13 @@ function loadPieChart2(){
   });
 }
 
-
 function loadBarChart(){
   const groups = Math.ceil(maxQuesId / 100)
 
   const xAxisValues = Array.from({ length: groups }, (_, i) => `${(i*100 + 1).toString()} - ${((i+1)*100).toString()}`)
   const yAxisValues = Array.from({ length: groups }, () => 0)
 
-  const arrAccepted = arr.filter(({acceptedCount}) => acceptedCount > 0)
+  const arrAccepted = arr.filter(({acceptedCount}) => acceptedCount !== '0')
 
   for(const {quesId} of arrAccepted){
     yAxisValues[Math.floor((quesId - 1)/100)]++

@@ -1707,5 +1707,8 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3484,design spreadsheet,cpp,1,0
 3487,maximum unique subarray sum after deletion,cpp,1,0
 3488,closest equal element queries,cpp,1,1
-3492,maximum containers on a ship,cpp,1,0
+3492,maximum containers on a ship,cpp+js,1+1,0+0
 3493,properties graph,cpp,1,0
+3497,analyze subscription conversion,mysql,1,0
+3498,reverse degree of a string,cpp+js,1+1,0+0
+3502,minimum cost to reach every position,cpp+js,1+1,0+0
