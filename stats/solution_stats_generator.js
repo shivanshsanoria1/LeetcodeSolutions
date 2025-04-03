@@ -11,6 +11,7 @@ function readSolutionStats(){
       const dirPath_cpp_2001_2500 = path.join(__dirname, '..', 'CPP [2001-2500]')
       const dirPath_cpp_2501_3000 = path.join(__dirname, '..', 'CPP [2501-3000]')
       const dirPath_cpp_3001_3500 = path.join(__dirname, '..', 'CPP [3001-3500]')
+      const dirPath_cpp_3501_4000 = path.join(__dirname, '..', 'CPP [3501-4000]')
       const dirPath_js = path.join(__dirname, '..', 'JS')
       const dirPath_mysql = path.join(__dirname, '..', 'MYSQL')
       
@@ -22,6 +23,7 @@ function readSolutionStats(){
         dirPath_cpp_2001_2500,
         dirPath_cpp_2501_3000,
         dirPath_cpp_3001_3500,
+        dirPath_cpp_3501_4000,
         dirPath_js, 
         dirPath_mysql
       ]

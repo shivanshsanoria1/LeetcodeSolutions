@@ -1712,4 +1712,6 @@
   {"quesId":3497,"title":"analyze subscription conversion","languages":"mysql","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3498,"title":"reverse degree of a string","languages":"cpp+js","acceptedCount":"1+1","unacceptedCount":"0+0"}, 
   {"quesId":3502,"title":"minimum cost to reach every position","languages":"cpp+js","acceptedCount":"1+1","unacceptedCount":"0+0"}, 
+  {"quesId":3503,"title":"longest palindrome after substring concatenation I","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3504,"title":"longest palindrome after substring concatenation II","languages":"cpp","acceptedCount":"0","unacceptedCount":"1"}, 
 ]

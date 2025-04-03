@@ -1712,3 +1712,5 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3497,analyze subscription conversion,mysql,1,0
 3498,reverse degree of a string,cpp+js,1+1,0+0
 3502,minimum cost to reach every position,cpp+js,1+1,0+0
+3503,longest palindrome after substring concatenation I,cpp,1,0
+3504,longest palindrome after substring concatenation II,cpp,0,1
