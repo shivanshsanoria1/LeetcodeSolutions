@@ -1694,6 +1694,7 @@
   {"quesId":3446,"title":"sort matrix by diagonals","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3452,"title":"sum of good numbers","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3456,"title":"find special substring of length K","languages":"cpp","acceptedCount":"3","unacceptedCount":"0"}, 
+  {"quesId":3457,"title":"eat pizzas","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3461,"title":"check if digits are equal in string after operations I","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3462,"title":"maximum sum with at most K elements","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3465,"title":"find products with valid serial numbers","languages":"mysql","acceptedCount":"1","unacceptedCount":"0"}, 
@@ -1714,4 +1715,7 @@
   {"quesId":3502,"title":"minimum cost to reach every position","languages":"cpp+js","acceptedCount":"1+1","unacceptedCount":"0+0"}, 
   {"quesId":3503,"title":"longest palindrome after substring concatenation I","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3504,"title":"longest palindrome after substring concatenation II","languages":"cpp","acceptedCount":"0","unacceptedCount":"1"}, 
+  {"quesId":3507,"title":"minimum pair removal to sort array I","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3508,"title":"implement router","languages":"cpp","acceptedCount":"1","unacceptedCount":"1"}, 
+  {"quesId":3510,"title":"minimum pair removal to sort array II","languages":"cpp","acceptedCount":"0","unacceptedCount":"1"}, 
 ]

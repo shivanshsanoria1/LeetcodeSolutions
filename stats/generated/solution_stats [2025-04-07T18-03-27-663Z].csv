@@ -1694,6 +1694,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3446,sort matrix by diagonals,cpp,1,0
 3452,sum of good numbers,cpp,1,0
 3456,find special substring of length K,cpp,3,0
+3457,eat pizzas,cpp,1,0
 3461,check if digits are equal in string after operations I,cpp,1,0
 3462,maximum sum with at most K elements,cpp,1,0
 3465,find products with valid serial numbers,mysql,1,0
@@ -1714,3 +1715,6 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3502,minimum cost to reach every position,cpp+js,1+1,0+0
 3503,longest palindrome after substring concatenation I,cpp,1,0
 3504,longest palindrome after substring concatenation II,cpp,0,1
+3507,minimum pair removal to sort array I,cpp,1,0
+3508,implement router,cpp,1,1
+3510,minimum pair removal to sort array II,cpp,0,1
