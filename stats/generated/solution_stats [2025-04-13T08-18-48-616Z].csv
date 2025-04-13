@@ -1718,3 +1718,9 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3507,minimum pair removal to sort array I,cpp,1,0
 3508,implement router,cpp,1,1
 3510,minimum pair removal to sort array II,cpp,0,1
+3512,minimum operations to make array sum divisible by K,cpp,1,0
+3513,number of unique XOR triplets I,cpp,1,0
+3514,number of unique XOR triplets II,cpp,0,1
+3515,shortest path in a weighted tree,cpp,0,1
+3516,find closest person,cpp,1,0
+3517,smallest palindromic rearrangement I,cpp,2,0
