@@ -1724,3 +1724,5 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3515,shortest path in a weighted tree,cpp,0,1
 3516,find closest person,cpp,1,0
 3517,smallest palindromic rearrangement I,cpp,2,0
+3522,calculate score after performing instructions,cpp,1,0
+3523,make array non decreasing,cpp,1,0

@@ -1724,4 +1724,6 @@
   {"quesId":3515,"title":"shortest path in a weighted tree","languages":"cpp","acceptedCount":"0","unacceptedCount":"1"}, 
   {"quesId":3516,"title":"find closest person","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3517,"title":"smallest palindromic rearrangement I","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
+  {"quesId":3522,"title":"calculate score after performing instructions","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3523,"title":"make array non decreasing","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
 ]

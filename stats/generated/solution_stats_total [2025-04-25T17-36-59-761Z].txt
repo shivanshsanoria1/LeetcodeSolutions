@@ -1,17 +1,17 @@
 Solution count per language: 
 Language | Accepted | Unaccepted |
-   cpp   |   1516   |     93     |
+   cpp   |   1518   |     93     |
    js    |     60   |      0     |
   mysql  |     78   |      0     |
 ----------------------------------
 
 Total Solutions: 
-Accepted = 1632
+Accepted = 1634
 Unaccepted = 93
 ----------------------------------
 
 Total files: 
-cpp = 2718 
+cpp = 2720 
 js = 87 
 mysql = 116 
 ----------------------------------
