@@ -1726,4 +1726,8 @@
   {"quesId":3517,"title":"smallest palindromic rearrangement I","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":3522,"title":"calculate score after performing instructions","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3523,"title":"make array non decreasing","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3527,"title":"find the most common response","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3528,"title":"unit conversion I","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3531,"title":"count covered buildings","languages":"cpp","acceptedCount":"1","unacceptedCount":"1"}, 
+  {"quesId":3532,"title":"path existence queries in a graph I","languages":"cpp","acceptedCount":"0","unacceptedCount":"1"}, 
 ]

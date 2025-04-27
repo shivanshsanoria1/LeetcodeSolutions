@@ -1726,3 +1726,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3517,smallest palindromic rearrangement I,cpp,2,0
 3522,calculate score after performing instructions,cpp,1,0
 3523,make array non decreasing,cpp,1,0
+3527,find the most common response,cpp,1,0
+3528,unit conversion I,cpp,1,0
+3531,count covered buildings,cpp,1,1
+3532,path existence queries in a graph I,cpp,0,1
