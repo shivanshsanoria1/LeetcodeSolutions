@@ -1224,6 +1224,7 @@
   {"quesId":2295,"title":"replace elements in an array","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":2299,"title":"strong password checker II","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":2300,"title":"successful pairs of spells and potions","languages":"cpp","acceptedCount":"1","unacceptedCount":"1"}, 
+  {"quesId":2302,"title":"count subarrays with score less than K","languages":"cpp","acceptedCount":"1","unacceptedCount":"1"}, 
   {"quesId":2303,"title":"calculate amount paid in taxes","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":2306,"title":"naming a company","languages":"cpp","acceptedCount":"0","unacceptedCount":"1"}, 
   {"quesId":2309,"title":"greatest english letter in upper and lower case","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
@@ -1729,5 +1730,6 @@
   {"quesId":3527,"title":"find the most common response","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3528,"title":"unit conversion I","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3531,"title":"count covered buildings","languages":"cpp","acceptedCount":"1","unacceptedCount":"1"}, 
-  {"quesId":3532,"title":"path existence queries in a graph I","languages":"cpp","acceptedCount":"0","unacceptedCount":"1"}, 
+  {"quesId":3532,"title":"path existence queries in a graph I","languages":"cpp","acceptedCount":"1","unacceptedCount":"1"}, 
+  {"quesId":3534,"title":"path existence queries in a graph II","languages":"cpp","acceptedCount":"0","unacceptedCount":"1"}, 
 ]
