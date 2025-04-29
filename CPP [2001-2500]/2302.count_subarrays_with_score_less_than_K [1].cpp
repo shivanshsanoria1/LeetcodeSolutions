@@ -20,8 +20,8 @@ public:
                 left++;
             }
 
-            // every subarray formed from the 
-            // curr valid window is also valid
+            // every subarray starting at index 'left' 
+            // from the curr valid window is also valid
             count += right - left + 1;
             
             right++;

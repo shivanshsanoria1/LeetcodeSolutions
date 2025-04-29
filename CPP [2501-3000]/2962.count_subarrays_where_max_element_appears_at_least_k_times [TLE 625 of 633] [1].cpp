@@ -2,12 +2,17 @@ class Solution {
 public:
     // T.C.=O(n^2), S.C.=O(1)
     long long countSubarrays(vector<int>& nums, int k) {
-        int n=nums.size();
+        int n = nums.size();
         // array must have atleast k elements
         if(n < k)
             return 0;
             
         int maxNum = *max_element(nums.begin(), nums.end());
+        int maxNumCount = count(nums.begin(), nums.end(), maxNum);
+        // max-num appears less than k times in nums[]
+        if(maxNumCount < k)
+            return 0;
+
         long long int count = 0;
 
         for(int i=0; i<n; i++)

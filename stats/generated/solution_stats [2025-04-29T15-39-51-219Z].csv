@@ -1491,7 +1491,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 2956,find common elements between two arrays,cpp,3,0
 2958,length of longest subarray with at most k frequency,cpp,1,1
 2960,count tested devices after test operations,cpp,1,0
-2962,count subarrays where max element appears at least k times,cpp,2,1
+2962,count subarrays where max element appears at least K times,cpp,2,1
 2965,find missing and repeated values,cpp,3,0
 2966,divide array into arrays with max difference,cpp,3,0
 2974,minimum number game,cpp,1,0

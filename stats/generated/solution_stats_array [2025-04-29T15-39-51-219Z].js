@@ -1491,7 +1491,7 @@
   {"quesId":2956,"title":"find common elements between two arrays","languages":"cpp","acceptedCount":"3","unacceptedCount":"0"}, 
   {"quesId":2958,"title":"length of longest subarray with at most k frequency","languages":"cpp","acceptedCount":"1","unacceptedCount":"1"}, 
   {"quesId":2960,"title":"count tested devices after test operations","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
-  {"quesId":2962,"title":"count subarrays where max element appears at least k times","languages":"cpp","acceptedCount":"2","unacceptedCount":"1"}, 
+  {"quesId":2962,"title":"count subarrays where max element appears at least K times","languages":"cpp","acceptedCount":"2","unacceptedCount":"1"}, 
   {"quesId":2965,"title":"find missing and repeated values","languages":"cpp","acceptedCount":"3","unacceptedCount":"0"}, 
   {"quesId":2966,"title":"divide array into arrays with max difference","languages":"cpp","acceptedCount":"3","unacceptedCount":"0"}, 
   {"quesId":2974,"title":"minimum number game","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
