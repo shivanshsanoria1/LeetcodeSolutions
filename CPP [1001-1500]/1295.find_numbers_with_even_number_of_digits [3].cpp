@@ -1,14 +1,7 @@
 class Solution {
 private:
-    int numOfDigits(int num){
-        int digs = 0;
-        while(num > 0)
-        {
-            digs++;
-            num /= 10;
-        }
-
-        return digs;
+    int isNumOfDigitsEven(int num){
+        return (num >= 10 && num <= 99) || (num >= 1000 && num <= 9999) || num == 100000;
     }
 
 public:
@@ -16,7 +9,7 @@ public:
     int findNumbers(vector<int>& nums) {
         int count = 0;
         for(int num: nums)
-            if(numOfDigits(num) % 2 == 0)
+            if(isNumOfDigitsEven(num))
                 count++;
 
         return count;

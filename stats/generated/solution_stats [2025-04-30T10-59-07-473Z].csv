@@ -668,6 +668,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 1037,valid boomerang,cpp,1,0
 1038,binary search tree to greater sum tree,cpp,1,0
 1041,robot bounded in circle,cpp,1,0
+1042,flower planting with no adjacent,cpp,1,0
 1043,partition array for maximum sum,cpp,1,1
 1045,customers who bought all products,mysql,1,0
 1046,last stone weight,cpp,2,0
@@ -774,7 +775,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 1289,minimum falling path sum II,cpp,2,1
 1290,convert binary number in a linked list to integer,cpp,2,0
 1291,sequential digits,cpp,3,1
-1295,find numbers with even number of digits,cpp,1,0
+1295,find numbers with even number of digits,cpp+js,3+1,0+0
 1296,divide array in sets of k consecutive numbers,cpp,2,0
 1299,replace elements with greatest elements on right side,cpp,2,0
 1302,deepest leaves sum,cpp,2,0
@@ -782,6 +783,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 1305,all elements in two binary search trees,cpp,1,0
 1309,decrypt string from alphabet to integer mapping,cpp,2,0
 1310,XOR queries of a subarray,cpp,2,0
+1311,get watched videos by your friends,cpp,1,0
 1314,matrix block sum,cpp,1,0
 1315,sum of nodes with even valued grandparent,cpp,2,0
 1316,distinct echo substrings,cpp,0,1
