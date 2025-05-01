@@ -332,6 +332,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 492,construct the rectangle,cpp,2,0
 493,reverse pairs,cpp,0,1
 494,target sum,cpp,2,0
+495,teemo attacking,cpp,1,0
 496,next greater element I,cpp,2,0
 497,random point in non overlapping rectangles,cpp,0,1
 498,diagonal traverse,cpp,3,0
@@ -635,6 +636,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 987,vertical order traversal of a binary tree,cpp,2,0
 988,smallest string starting from leaf,cpp,1,0
 989,add to array form of integer,cpp,1,0
+990,satisfiability of equality equations,cpp,1,0
 991,broken calculator,cpp,1,0
 992,subarrays with k different integers,cpp,1,1
 993,cousins in a binary tree,cpp,2,0
