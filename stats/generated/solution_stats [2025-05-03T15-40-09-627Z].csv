@@ -532,6 +532,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 832,flipping an image,cpp,2,0
 834,sum of distances in tree,cpp,1,2
 836,rectangle overlap,cpp,1,0
+838,push dominoes,cpp,1,0
 839,similar string groups,cpp,1,0
 840,magic squares in grid,cpp,1,0
 841,keys and rooms,cpp,2,0
@@ -647,7 +648,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 999,available captures for rook,cpp,2,0
 1002,find common characters,cpp,2,0
 1005,maximum sum of array after k negations,cpp,2,0
-1007,minimum domino rotations for equal row,cpp,1,0
+1007,minimum domino rotations for equal row,cpp,2,0
 1008,construct binary search tree from preorder traversal,cpp,1,0
 1009,complement of base 10 integer,cpp,3,0
 1010,pairs of songs with total durations divisible by 60,cpp,2,1

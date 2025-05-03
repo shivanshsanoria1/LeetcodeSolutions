@@ -1,5 +1,6 @@
 // ------------ DATA ARRAY START ------------ //
 
+// ****** please UPDATE before using ****** // 
 const arr = [
   {"quesId":1,"title":"two sum","languages":"cpp","acceptedCount":"3","unacceptedCount":"0"}, 
   {"quesId":2,"title":"add two numbers","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
@@ -334,6 +335,7 @@ const arr = [
   {"quesId":492,"title":"construct the rectangle","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":493,"title":"reverse pairs","languages":"cpp","acceptedCount":"0","unacceptedCount":"1"}, 
   {"quesId":494,"title":"target sum","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
+  {"quesId":495,"title":"teemo attacking","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":496,"title":"next greater element I","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":497,"title":"random point in non overlapping rectangles","languages":"cpp","acceptedCount":"0","unacceptedCount":"1"}, 
   {"quesId":498,"title":"diagonal traverse","languages":"cpp","acceptedCount":"3","unacceptedCount":"0"}, 
@@ -533,6 +535,7 @@ const arr = [
   {"quesId":832,"title":"flipping an image","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":834,"title":"sum of distances in tree","languages":"cpp","acceptedCount":"1","unacceptedCount":"2"}, 
   {"quesId":836,"title":"rectangle overlap","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":838,"title":"push dominoes","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":839,"title":"similar string groups","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":840,"title":"magic squares in grid","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":841,"title":"keys and rooms","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
@@ -637,6 +640,7 @@ const arr = [
   {"quesId":987,"title":"vertical order traversal of a binary tree","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":988,"title":"smallest string starting from leaf","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":989,"title":"add to array form of integer","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":990,"title":"satisfiability of equality equations","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":991,"title":"broken calculator","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":992,"title":"subarrays with k different integers","languages":"cpp","acceptedCount":"1","unacceptedCount":"1"}, 
   {"quesId":993,"title":"cousins in a binary tree","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
@@ -647,7 +651,7 @@ const arr = [
   {"quesId":999,"title":"available captures for rook","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":1002,"title":"find common characters","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":1005,"title":"maximum sum of array after k negations","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
-  {"quesId":1007,"title":"minimum domino rotations for equal row","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":1007,"title":"minimum domino rotations for equal row","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":1008,"title":"construct binary search tree from preorder traversal","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":1009,"title":"complement of base 10 integer","languages":"cpp","acceptedCount":"3","unacceptedCount":"0"}, 
   {"quesId":1010,"title":"pairs of songs with total durations divisible by 60","languages":"cpp","acceptedCount":"2","unacceptedCount":"1"}, 
@@ -670,6 +674,7 @@ const arr = [
   {"quesId":1037,"title":"valid boomerang","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":1038,"title":"binary search tree to greater sum tree","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":1041,"title":"robot bounded in circle","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":1042,"title":"flower planting with no adjacent","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":1043,"title":"partition array for maximum sum","languages":"cpp","acceptedCount":"1","unacceptedCount":"1"}, 
   {"quesId":1045,"title":"customers who bought all products","languages":"mysql","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":1046,"title":"last stone weight","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
@@ -776,7 +781,7 @@ const arr = [
   {"quesId":1289,"title":"minimum falling path sum II","languages":"cpp","acceptedCount":"2","unacceptedCount":"1"}, 
   {"quesId":1290,"title":"convert binary number in a linked list to integer","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":1291,"title":"sequential digits","languages":"cpp","acceptedCount":"3","unacceptedCount":"1"}, 
-  {"quesId":1295,"title":"find numbers with even number of digits","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":1295,"title":"find numbers with even number of digits","languages":"cpp+js","acceptedCount":"3+1","unacceptedCount":"0+0"}, 
   {"quesId":1296,"title":"divide array in sets of k consecutive numbers","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":1299,"title":"replace elements with greatest elements on right side","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":1302,"title":"deepest leaves sum","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
@@ -784,6 +789,7 @@ const arr = [
   {"quesId":1305,"title":"all elements in two binary search trees","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":1309,"title":"decrypt string from alphabet to integer mapping","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":1310,"title":"XOR queries of a subarray","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
+  {"quesId":1311,"title":"get watched videos by your friends","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":1314,"title":"matrix block sum","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":1315,"title":"sum of nodes with even valued grandparent","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":1316,"title":"distinct echo substrings","languages":"cpp","acceptedCount":"0","unacceptedCount":"1"}, 
@@ -1226,6 +1232,7 @@ const arr = [
   {"quesId":2295,"title":"replace elements in an array","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":2299,"title":"strong password checker II","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":2300,"title":"successful pairs of spells and potions","languages":"cpp","acceptedCount":"1","unacceptedCount":"1"}, 
+  {"quesId":2302,"title":"count subarrays with score less than K","languages":"cpp","acceptedCount":"1","unacceptedCount":"1"}, 
   {"quesId":2303,"title":"calculate amount paid in taxes","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":2306,"title":"naming a company","languages":"cpp","acceptedCount":"0","unacceptedCount":"1"}, 
   {"quesId":2309,"title":"greatest english letter in upper and lower case","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
@@ -1492,7 +1499,7 @@ const arr = [
   {"quesId":2956,"title":"find common elements between two arrays","languages":"cpp","acceptedCount":"3","unacceptedCount":"0"}, 
   {"quesId":2958,"title":"length of longest subarray with at most k frequency","languages":"cpp","acceptedCount":"1","unacceptedCount":"1"}, 
   {"quesId":2960,"title":"count tested devices after test operations","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
-  {"quesId":2962,"title":"count subarrays where max element appears at least k times","languages":"cpp","acceptedCount":"2","unacceptedCount":"1"}, 
+  {"quesId":2962,"title":"count subarrays where max element appears at least K times","languages":"cpp","acceptedCount":"2","unacceptedCount":"1"}, 
   {"quesId":2965,"title":"find missing and repeated values","languages":"cpp","acceptedCount":"3","unacceptedCount":"0"}, 
   {"quesId":2966,"title":"divide array into arrays with max difference","languages":"cpp","acceptedCount":"3","unacceptedCount":"0"}, 
   {"quesId":2974,"title":"minimum number game","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
@@ -1728,11 +1735,17 @@ const arr = [
   {"quesId":3517,"title":"smallest palindromic rearrangement I","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":3522,"title":"calculate score after performing instructions","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3523,"title":"make array non decreasing","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3527,"title":"find the most common response","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3528,"title":"unit conversion I","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3531,"title":"count covered buildings","languages":"cpp","acceptedCount":"1","unacceptedCount":"1"}, 
+  {"quesId":3532,"title":"path existence queries in a graph I","languages":"cpp","acceptedCount":"1","unacceptedCount":"1"}, 
+  {"quesId":3534,"title":"path existence queries in a graph II","languages":"cpp","acceptedCount":"0","unacceptedCount":"1"}, 
 ]
 
 // ------------ DATA ARRAY END ------------ //
 
-const maxQuesId = 3505
+// ****** please UPDATE before using ****** // 
+const maxQuesId = 3600
 
 function loadPieChart1(){
   const solved = arr.reduce((acc, {acceptedCount}) => acc += acceptedCount !== '0', 0)
