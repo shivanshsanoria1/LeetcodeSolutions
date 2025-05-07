@@ -1,7 +1,7 @@
 # Summary
-This repo contains solutions to over 1500 problems from [leetcode.com](https://leetcode.com/problemset/ "leetcode") (in 3 languages):
+This repo contains solutions to over 1600 problems from [leetcode.com](https://leetcode.com/problemset/ "leetcode") (in 3 languages):
 * C++ (over **1500** solutions)
-* Javascript (over **55** solutions)
+* Javascript (over **60** solutions)
 * MySQL (over **75** solutions)
 
 ---

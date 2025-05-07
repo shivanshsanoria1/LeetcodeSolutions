@@ -1132,6 +1132,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 2062,count vowel substrings of a string,cpp,2,0
 2063,vowels of all substrings,cpp,1,1
 2064,minimized maximum of products distributed to any store,cpp,1,1
+2065,maximum path quality of a graph,cpp,1,0
 2068,check whether two strings are almost equivalent,cpp,1,0
 2073,time needed to buy tickets,cpp,1,0
 2078,two furthest houses with different colors,cpp,2,0
@@ -1738,3 +1739,4 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3532,path existence queries in a graph I,cpp,1,1
 3534,path existence queries in a graph II,cpp,0,1
 3536,maximum product of two digits,cpp,2,0
+3537,fill a special grid,cpp,1,0

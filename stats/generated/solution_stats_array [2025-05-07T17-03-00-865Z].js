@@ -1132,6 +1132,7 @@
   {"quesId":2062,"title":"count vowel substrings of a string","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":2063,"title":"vowels of all substrings","languages":"cpp","acceptedCount":"1","unacceptedCount":"1"}, 
   {"quesId":2064,"title":"minimized maximum of products distributed to any store","languages":"cpp","acceptedCount":"1","unacceptedCount":"1"}, 
+  {"quesId":2065,"title":"maximum path quality of a graph","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":2068,"title":"check whether two strings are almost equivalent","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":2073,"title":"time needed to buy tickets","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":2078,"title":"two furthest houses with different colors","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
@@ -1738,4 +1739,5 @@
   {"quesId":3532,"title":"path existence queries in a graph I","languages":"cpp","acceptedCount":"1","unacceptedCount":"1"}, 
   {"quesId":3534,"title":"path existence queries in a graph II","languages":"cpp","acceptedCount":"0","unacceptedCount":"1"}, 
   {"quesId":3536,"title":"maximum product of two digits","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
+  {"quesId":3537,"title":"fill a special grid","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
 ]
