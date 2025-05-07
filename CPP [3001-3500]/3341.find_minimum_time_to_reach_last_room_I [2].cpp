@@ -1,13 +1,14 @@
 class Solution {
 private:
     typedef pair<int, int> PII;
+    typedef vector<int> VI;
 
 public:
     // T.C.=O(??), S.C.=O(m*n)
-    // BFS
+    // Dijkstra
     int minTimeToReach(vector<vector<int>>& moveTime) {
         int m = moveTime.size(), n = moveTime[0].size();
-        
+
         // minTime[i][j]: min. time to reach (i, j) from (0, 0)
         vector<vector<int>> minTime(m, vector<int>(n, INT_MAX));
         minTime[0][0] = 0;
@@ -15,15 +16,15 @@ public:
         // up, down, left, right
         vector<PII> dirs = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
 
-        queue<PII> q; // {i, j}
-        q.push({0, 0});
+        // {minTime[i][j], i, j}
+        priority_queue<VI, vector<VI>, greater<VI>> pq;
+        pq.push({minTime[0][0], 0, 0});
 
-        while(!q.empty())
+        while(!pq.empty())
         {
-            auto [currX, currY] = q.front();
-            q.pop();
-
-            int currT = minTime[currX][currY];
+            int currT = pq.top()[0];
+            int currX = pq.top()[1], currY = pq.top()[2];
+            pq.pop();
 
             for(auto [dx, dy]: dirs)
             {
@@ -38,7 +39,7 @@ public:
                 if(t < minTime[x][y])
                 {
                     minTime[x][y] = t;
-                    q.push({x, y});
+                    pq.push({minTime[x][y], x, y});
                 }
             }
         }

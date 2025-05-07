@@ -1,10 +1,12 @@
 class Solution {
 public:
+    // T.C.=O(n), S.C.=O(1)
+    // building a new array
     vector<int> buildArray(vector<int>& nums) {
-        int n=nums.size();
-        vector<int> ans(n);
-        for(int i=0; i<n; i++)
-            ans[i]=nums[nums[i]];
+        vector<int> ans;
+        for(int num: nums)
+            ans.push_back(nums[num]);
+
         return ans;
     }
 };

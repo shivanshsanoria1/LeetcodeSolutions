@@ -710,7 +710,7 @@ const arr = [
   {"quesId":1122,"title":"relative sort array","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":1123,"title":"lowest common ancestor of deepest leaves","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":1124,"title":"longest well performing interval","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
-  {"quesId":1128,"title":"number of equivalent domino pairs","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
+  {"quesId":1128,"title":"number of equivalent domino pairs","languages":"cpp","acceptedCount":"3","unacceptedCount":"0"}, 
   {"quesId":1129,"title":"shortest path with alternating colors","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":1131,"title":"maximum of absolute value expression","languages":"cpp","acceptedCount":"0","unacceptedCount":"1"}, 
   {"quesId":1137,"title":"Nth tribonacci number","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
@@ -1071,7 +1071,7 @@ const arr = [
   {"quesId":1913,"title":"maximum product difference between two pairs","languages":"cpp","acceptedCount":"3","unacceptedCount":"0"}, 
   {"quesId":1915,"title":"number of wonderful substrings","languages":"cpp","acceptedCount":"2","unacceptedCount":"3"}, 
   {"quesId":1916,"title":"mean of array after removing some elements","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
-  {"quesId":1920,"title":"build array from permutation","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
+  {"quesId":1920,"title":"build array from permutation","languages":"cpp+js","acceptedCount":"3+1","unacceptedCount":"0+0"}, 
   {"quesId":1925,"title":"count square sum triples","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":1926,"title":"nearest exit from entrance in maze","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":1929,"title":"concatenation of array","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
@@ -1664,7 +1664,7 @@ const arr = [
   {"quesId":3334,"title":"find the maximum factor score of array","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3335,"title":"total characters in string after transformations I","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3340,"title":"check balanced string","languages":"cpp+js","acceptedCount":"1+1","unacceptedCount":"0+0"}, 
-  {"quesId":3341,"title":"find minimum time to reach last room I","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3341,"title":"find minimum time to reach last room I","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":3342,"title":"find minimum time to reach last room II","languages":"cpp","acceptedCount":"1","unacceptedCount":"1"}, 
   {"quesId":3345,"title":"smallest divisible digit product I","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3349,"title":"adjacent increasing subarrays detection I","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
@@ -1740,6 +1740,7 @@ const arr = [
   {"quesId":3531,"title":"count covered buildings","languages":"cpp","acceptedCount":"1","unacceptedCount":"1"}, 
   {"quesId":3532,"title":"path existence queries in a graph I","languages":"cpp","acceptedCount":"1","unacceptedCount":"1"}, 
   {"quesId":3534,"title":"path existence queries in a graph II","languages":"cpp","acceptedCount":"0","unacceptedCount":"1"}, 
+  {"quesId":3536,"title":"maximum product of two digits","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
 ]
 
 // ------------ DATA ARRAY END ------------ //

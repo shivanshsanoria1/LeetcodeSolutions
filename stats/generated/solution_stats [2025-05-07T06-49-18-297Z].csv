@@ -707,7 +707,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 1122,relative sort array,cpp,2,0
 1123,lowest common ancestor of deepest leaves,cpp,1,0
 1124,longest well performing interval,cpp,2,0
-1128,number of equivalent domino pairs,cpp,2,0
+1128,number of equivalent domino pairs,cpp,3,0
 1129,shortest path with alternating colors,cpp,1,0
 1131,maximum of absolute value expression,cpp,0,1
 1137,Nth tribonacci number,cpp,1,0
@@ -1068,7 +1068,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 1913,maximum product difference between two pairs,cpp,3,0
 1915,number of wonderful substrings,cpp,2,3
 1916,mean of array after removing some elements,cpp,1,0
-1920,build array from permutation,cpp,2,0
+1920,build array from permutation,cpp+js,3+1,0+0
 1925,count square sum triples,cpp,2,0
 1926,nearest exit from entrance in maze,cpp,2,0
 1929,concatenation of array,cpp,1,0
@@ -1661,7 +1661,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3334,find the maximum factor score of array,cpp,1,0
 3335,total characters in string after transformations I,cpp,1,0
 3340,check balanced string,cpp+js,1+1,0+0
-3341,find minimum time to reach last room I,cpp,1,0
+3341,find minimum time to reach last room I,cpp,2,0
 3342,find minimum time to reach last room II,cpp,1,1
 3345,smallest divisible digit product I,cpp,1,0
 3349,adjacent increasing subarrays detection I,cpp,1,0
@@ -1737,3 +1737,4 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3531,count covered buildings,cpp,1,1
 3532,path existence queries in a graph I,cpp,1,1
 3534,path existence queries in a graph II,cpp,0,1
+3536,maximum product of two digits,cpp,2,0

@@ -1,17 +1,24 @@
 class Solution {
 public:
+    // T.C.=O(n + 100), S.C.=O(100)
     int numEquivDominoPairs(vector<vector<int>>& dominoes) {
-        int n=dominoes.size(), ans=0;
-        map<pair<int,int>,int> mp;
-        for(int i=0; i<n; i++)
+        // 10x10 grid filled with 0's
+        vector<vector<int>> freq(10, vector<int>(10, 0)); 
+        for(vector<int>& domino: dominoes)
         {
-            if(dominoes[i][0] > dominoes[i][1]) //converts pairs (b,a) into (a,b) where a<b
-                swap(dominoes[i][0],dominoes[i][1]);
-            mp[make_pair(dominoes[i][0],dominoes[i][1])]++;
+            int a = domino[0], b = domino[1];
+            freq[a][b]++;
         }
-        for(auto it: mp)
-            if(it.second > 1)
-                ans+=((it.second-1)*it.second)/2;
-        return ans;
+
+        int count = 0;
+        for(int i=1; i<=9; i++)
+            for(int j=i; j<=9; j++)
+            {
+                int pairs = i == j ? freq[i][j] : freq[i][j] + freq[j][i];
+                // x equivalent elements will generate xC2= (x*(x-1))/2 pairs
+                count += (pairs*(pairs-1)) / 2;
+            }
+
+        return count;
     }
 };
