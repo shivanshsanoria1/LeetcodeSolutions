@@ -1,20 +1,19 @@
 class Solution {
 private:
-    #define INF INT_MAX
     typedef vector<int> VI;
 
 public:
-    // T.C.=O(??), S.C.=O(m*n)
+    // T.C.=O(m*n*log(m*n)), S.C.=O(m*n)
     // similar to Dijkstra
     int minTimeToReach(vector<vector<int>>& moveTime) {
         int m = moveTime.size(); int n = moveTime[0].size();
 
+        // minTime[i][j]: min. time to reach (i, j) from (0, 0)
+        vector<vector<int>> minTime(m, vector<int>(n, INT_MAX));
+        minTime[0][0] = 0;
+
         // up, down, left, right
         vector<pair<int, int>> dirs = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
-
-        // minTime[i][j]: min. time to reach (i, j) from (0, 0)
-        vector<VI> minTime(m, VI(n, INF));
-        minTime[0][0] = 0;
 
         // min-heap; {minTime, i, j, parity}
         priority_queue<VI, vector<VI>, greater<VI>> pq;

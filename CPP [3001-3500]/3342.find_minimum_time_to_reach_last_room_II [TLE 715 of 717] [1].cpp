@@ -1,35 +1,28 @@
 class Solution {
-private:
-    #define INF INT_MAX
-    typedef pair<int, int> PII;
-
 public:
     // T.C.=O(??), S.C.=O(m*n)
     // BFS
     int minTimeToReach(vector<vector<int>>& moveTime) {
         int m = moveTime.size(); int n = moveTime[0].size();
 
-        // up, down, left, right
-        vector<PII> dirs = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
-
         // minTime[i][j]: min. time to reach (i, j) from (0, 0)
-        vector<vector<int>> minTime(m, vector<int>(n, INF));
+        vector<vector<int>> minTime(m, vector<int>(n, INT_MAX));
         minTime[0][0] = 0;
 
-        // time taken to move from curr cell to the next (alternating between 1 and 2)
-        vector<vector<int>> parity(m, vector<int>(n, 0));
-        parity[0][0] = 2;
+        // up, down, left, right
+        vector<pair<int, int>> dirs = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
         
-        queue<PII> q; // {x, y}
-        q.push({0, 0});
+        queue<vector<int>> q; // {i, j, parity}
+        q.push({0, 0, 2});
 
         while(!q.empty())
         {
-            auto [currX, currY] = q.front();
+            int currX = q.front()[0];
+            int currY = q.front()[1];
+            int currParity = q.front()[2];
             q.pop();
 
             int currT = minTime[currX][currY];
-            int currParity = parity[currX][currY];
 
             for(auto [dx, dy]: dirs)
             {
@@ -45,8 +38,7 @@ public:
                 if(t < minTime[x][y])
                 {
                     minTime[x][y] = t;
-                    parity[x][y] = flippedParity;
-                    q.push({x, y});
+                    q.push({x, y, flippedParity});
                 }
             }
         }
