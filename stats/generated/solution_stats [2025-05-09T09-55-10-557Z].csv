@@ -915,6 +915,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 1552,magnetic force between two balls,cpp,1,0
 1556,thousand seperator,cpp+js,1+1,0+0
 1557,minimum number of vertices to reach all nodes,cpp,2,0
+1558,minimum numbers of function calls to make target array,cpp,2,0
 1559,detect cycles in 2D grid,cpp,2,0
 1560,most visited sector in a circular track,cpp,1,0
 1561,maximum number of coins you can get,cpp,1,0
@@ -1473,6 +1474,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 2869,minimum operations to collect elements,cpp,1,0
 2870,minimum number of operations to make array empty,cpp,1,0
 2873,maximum value of an ordered triplet I,cpp,1,0
+2874,maximum value of an ordered triplet II,cpp,1,2
 2876,count visited nodes in a directed graph,cpp,0,1
 2894,divisible and non divisible sums difference,cpp,1,0
 2895,minimum processing time,cpp,1,0
@@ -1666,6 +1668,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3340,check balanced string,cpp+js,1+1,0+0
 3341,find minimum time to reach last room I,cpp,2,0
 3342,find minimum time to reach last room II,cpp,1,1
+3343,count number of balanced permutations,cpp,0,1
 3345,smallest divisible digit product I,cpp,1,0
 3349,adjacent increasing subarrays detection I,cpp,1,0
 3354,make array elements equal to zero,cpp,2,0
