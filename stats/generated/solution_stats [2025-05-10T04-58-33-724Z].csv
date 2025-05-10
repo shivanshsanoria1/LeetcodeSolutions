@@ -1243,6 +1243,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 2326,spiral matrix IV,cpp,1,0
 2328,number of increasing paths in a grid,cpp,1,1
 2331,evaluate boolean binary tree,cpp,1,0
+2333,minimum sum of squared difference,cpp,1,1
 2335,minimum amount of time to fill cups,cpp,2,0
 2336,smallest number in infinite set,cpp,1,0
 2337,move pieces to obtain a string,cpp,1,0
@@ -1400,6 +1401,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 2667,create hello world function,js,1,0
 2670,find the distinct difference array,cpp,2,0
 2671,frequency tracker,cpp,1,0
+2672,number of adjacent elements with the same color,cpp,1,1
 2677,chunk array,js,2,0
 2678,number of senior citizens,cpp,2,0
 2679,sum in a matrix,cpp,1,0
@@ -1485,6 +1487,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 2913,subarrays distinct element sum of squares I,cpp,1,0
 2914,minimum number of changes to make binary string beautiful,cpp+js,1+1,0+0
 2917,find the k or of an array,cpp,1,0
+2918,minimum equal sum of two arrays after replacing zeros,cpp,1,0
 2923,find champion I,cpp,2,0
 2924,find champion II,cpp,1,0
 2928,distribute candies among children I,cpp,2,0
