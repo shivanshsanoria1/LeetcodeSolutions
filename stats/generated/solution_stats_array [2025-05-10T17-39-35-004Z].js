@@ -647,6 +647,7 @@
   {"quesId":997,"title":"find the town judge","languages":"cpp","acceptedCount":"3","unacceptedCount":"0"}, 
   {"quesId":999,"title":"available captures for rook","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":1002,"title":"find common characters","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
+  {"quesId":1004,"title":"max consecutive ones III","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":1005,"title":"maximum sum of array after k negations","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":1007,"title":"minimum domino rotations for equal row","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":1008,"title":"construct binary search tree from preorder traversal","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
@@ -1748,4 +1749,5 @@
   {"quesId":3534,"title":"path existence queries in a graph II","languages":"cpp","acceptedCount":"0","unacceptedCount":"1"}, 
   {"quesId":3536,"title":"maximum product of two digits","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":3537,"title":"fill a special grid","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3541,"title":"find most frequent vowel and consonant","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
 ]

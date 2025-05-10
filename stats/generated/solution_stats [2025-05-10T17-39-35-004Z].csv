@@ -647,6 +647,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 997,find the town judge,cpp,3,0
 999,available captures for rook,cpp,2,0
 1002,find common characters,cpp,2,0
+1004,max consecutive ones III,cpp,1,0
 1005,maximum sum of array after k negations,cpp,2,0
 1007,minimum domino rotations for equal row,cpp,2,0
 1008,construct binary search tree from preorder traversal,cpp,1,0
@@ -1748,3 +1749,4 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3534,path existence queries in a graph II,cpp,0,1
 3536,maximum product of two digits,cpp,2,0
 3537,fill a special grid,cpp,1,0
+3541,find most frequent vowel and consonant,cpp,1,0
