@@ -4,17 +4,14 @@ public:
     bool threeConsecutiveOdds(vector<int>& arr) {
         // count of consecutive odd nums
         int countOdd = 0;
-
         for(int num: arr)
         {
-            if(num % 2 == 1)
-            {
-                countOdd++;
-                if(countOdd == 3)
-                    return true;
-            }
-            else
+            // reset count
+            if(num % 2 == 0)
                 countOdd = 0;
+            // increment count
+            else if(++countOdd == 3)
+                return true;
         }
 
         return false;

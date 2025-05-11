@@ -1750,3 +1750,5 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3536,maximum product of two digits,cpp,2,0
 3537,fill a special grid,cpp,1,0
 3541,find most frequent vowel and consonant,cpp,1,0
+3545,minimum deletions for at most K distinct characters,cpp,1,0
+3546,equal sum grid partition I,cpp,1,0

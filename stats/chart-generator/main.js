@@ -650,6 +650,7 @@ const arr = [
   {"quesId":997,"title":"find the town judge","languages":"cpp","acceptedCount":"3","unacceptedCount":"0"}, 
   {"quesId":999,"title":"available captures for rook","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":1002,"title":"find common characters","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
+  {"quesId":1004,"title":"max consecutive ones III","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":1005,"title":"maximum sum of array after k negations","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":1007,"title":"minimum domino rotations for equal row","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":1008,"title":"construct binary search tree from preorder traversal","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
@@ -918,6 +919,7 @@ const arr = [
   {"quesId":1552,"title":"magnetic force between two balls","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":1556,"title":"thousand seperator","languages":"cpp+js","acceptedCount":"1+1","unacceptedCount":"0+0"}, 
   {"quesId":1557,"title":"minimum number of vertices to reach all nodes","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
+  {"quesId":1558,"title":"minimum numbers of function calls to make target array","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":1559,"title":"detect cycles in 2D grid","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":1560,"title":"most visited sector in a circular track","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":1561,"title":"maximum number of coins you can get","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
@@ -943,6 +945,7 @@ const arr = [
   {"quesId":1609,"title":"even odd tree","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":1614,"title":"maximum nesting depth of the parentheses","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":1615,"title":"maximal network rank","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
+  {"quesId":1620,"title":"coordinate with maximum network quality","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":1624,"title":"largest substring between two equal characters","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":1626,"title":"best team with no conflicts","languages":"cpp","acceptedCount":"2","unacceptedCount":"1"}, 
   {"quesId":1627,"title":"graph connectivity with threshold","languages":"cpp","acceptedCount":"1","unacceptedCount":"1"}, 
@@ -1244,6 +1247,7 @@ const arr = [
   {"quesId":2326,"title":"spiral matrix IV","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":2328,"title":"number of increasing paths in a grid","languages":"cpp","acceptedCount":"1","unacceptedCount":"1"}, 
   {"quesId":2331,"title":"evaluate boolean binary tree","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":2333,"title":"minimum sum of squared difference","languages":"cpp","acceptedCount":"1","unacceptedCount":"1"}, 
   {"quesId":2335,"title":"minimum amount of time to fill cups","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":2336,"title":"smallest number in infinite set","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":2337,"title":"move pieces to obtain a string","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
@@ -1341,6 +1345,7 @@ const arr = [
   {"quesId":2540,"title":"minimum common value","languages":"cpp","acceptedCount":"3","unacceptedCount":"0"}, 
   {"quesId":2544,"title":"alternating digit sum","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":2545,"title":"sort the students by their Kth score","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
+  {"quesId":2552,"title":"count increasing quadruplets","languages":"cpp","acceptedCount":"0","unacceptedCount":"1"}, 
   {"quesId":2553,"title":"seperate the digits in an array","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":2554,"title":"maximum number of integers to choose from a range I","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":2558,"title":"take gifts from the richest pile","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
@@ -1400,6 +1405,7 @@ const arr = [
   {"quesId":2667,"title":"create hello world function","languages":"js","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":2670,"title":"find the distinct difference array","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":2671,"title":"frequency tracker","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":2672,"title":"number of adjacent elements with the same color","languages":"cpp","acceptedCount":"1","unacceptedCount":"1"}, 
   {"quesId":2677,"title":"chunk array","languages":"js","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":2678,"title":"number of senior citizens","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":2679,"title":"sum in a matrix","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
@@ -1474,6 +1480,7 @@ const arr = [
   {"quesId":2869,"title":"minimum operations to collect elements","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":2870,"title":"minimum number of operations to make array empty","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":2873,"title":"maximum value of an ordered triplet I","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":2874,"title":"maximum value of an ordered triplet II","languages":"cpp","acceptedCount":"1","unacceptedCount":"2"}, 
   {"quesId":2876,"title":"count visited nodes in a directed graph","languages":"cpp","acceptedCount":"0","unacceptedCount":"1"}, 
   {"quesId":2894,"title":"divisible and non divisible sums difference","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":2895,"title":"minimum processing time","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
@@ -1484,6 +1491,7 @@ const arr = [
   {"quesId":2913,"title":"subarrays distinct element sum of squares I","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":2914,"title":"minimum number of changes to make binary string beautiful","languages":"cpp+js","acceptedCount":"1+1","unacceptedCount":"0+0"}, 
   {"quesId":2917,"title":"find the k or of an array","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":2918,"title":"minimum equal sum of two arrays after replacing zeros","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":2923,"title":"find champion I","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":2924,"title":"find champion II","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":2928,"title":"distribute candies among children I","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
@@ -1667,6 +1675,7 @@ const arr = [
   {"quesId":3340,"title":"check balanced string","languages":"cpp+js","acceptedCount":"1+1","unacceptedCount":"0+0"}, 
   {"quesId":3341,"title":"find minimum time to reach last room I","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":3342,"title":"find minimum time to reach last room II","languages":"cpp","acceptedCount":"1","unacceptedCount":"1"}, 
+  {"quesId":3343,"title":"count number of balanced permutations","languages":"cpp","acceptedCount":"0","unacceptedCount":"1"}, 
   {"quesId":3345,"title":"smallest divisible digit product I","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3349,"title":"adjacent increasing subarrays detection I","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3354,"title":"make array elements equal to zero","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
@@ -1743,12 +1752,15 @@ const arr = [
   {"quesId":3534,"title":"path existence queries in a graph II","languages":"cpp","acceptedCount":"0","unacceptedCount":"1"}, 
   {"quesId":3536,"title":"maximum product of two digits","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":3537,"title":"fill a special grid","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3541,"title":"find most frequent vowel and consonant","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3545,"title":"minimum deletions for at most K distinct characters","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3546,"title":"equal sum grid partition I","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
 ]
 
 // ------------ DATA ARRAY END ------------ //
 
 // ****** please UPDATE before using ****** // 
-const maxQuesId = 3540
+const maxQuesId = 3548
 
 function loadPieChart1(){
   const solved = arr.reduce((acc, {acceptedCount}) => acc += acceptedCount !== '0', 0)

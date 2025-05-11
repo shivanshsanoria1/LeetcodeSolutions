@@ -1750,4 +1750,6 @@
   {"quesId":3536,"title":"maximum product of two digits","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":3537,"title":"fill a special grid","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3541,"title":"find most frequent vowel and consonant","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3545,"title":"minimum deletions for at most K distinct characters","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3546,"title":"equal sum grid partition I","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
 ]
