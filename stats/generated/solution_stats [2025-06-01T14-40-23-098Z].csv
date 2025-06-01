@@ -1752,3 +1752,8 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3541,find most frequent vowel and consonant,cpp,1,0
 3545,minimum deletions for at most K distinct characters,cpp,1,0
 3546,equal sum grid partition I,cpp,1,0
+3550,smallest index with digit sum equal to index,cpp+js,1+1,0+0
+3556,sum of largest prime substrings,cpp,1,0
+3560,find minimum log transportation cost,cpp,1,0
+3561,resulting string after adjacent removals,cpp,1,0
+3567,minimum absolute difference in sliding submatrix,cpp,1,0

@@ -1752,4 +1752,9 @@
   {"quesId":3541,"title":"find most frequent vowel and consonant","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3545,"title":"minimum deletions for at most K distinct characters","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3546,"title":"equal sum grid partition I","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3550,"title":"smallest index with digit sum equal to index","languages":"cpp+js","acceptedCount":"1+1","unacceptedCount":"0+0"}, 
+  {"quesId":3556,"title":"sum of largest prime substrings","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3560,"title":"find minimum log transportation cost","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3561,"title":"resulting string after adjacent removals","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3567,"title":"minimum absolute difference in sliding submatrix","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
 ]
