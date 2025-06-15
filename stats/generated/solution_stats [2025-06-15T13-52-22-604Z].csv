@@ -856,6 +856,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 1422,maximum score after splitting a string,cpp,1,0
 1424,diagonal traverse II,cpp,4,0
 1431,kid with the greatest number of candies,cpp,1,0
+1432,max difference you can get from changing an integer,cpp,2,0
 1433,check if a string can break another string,cpp,1,0
 1436,destination city,cpp,3,0
 1437,check if all 1s are at least length k places away,cpp,1,0
@@ -1757,3 +1758,6 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3560,find minimum log transportation cost,cpp,1,0
 3561,resulting string after adjacent removals,cpp,1,0
 3567,minimum absolute difference in sliding submatrix,cpp,1,0
+3572,maximize Y-sum by picking a triplet of distinct X-values,cpp,1,0
+3582,generate tag for video caption,cpp,1,0
+3583,count special triplets,cpp,1,1

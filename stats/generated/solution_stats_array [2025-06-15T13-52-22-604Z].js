@@ -856,6 +856,7 @@
   {"quesId":1422,"title":"maximum score after splitting a string","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":1424,"title":"diagonal traverse II","languages":"cpp","acceptedCount":"4","unacceptedCount":"0"}, 
   {"quesId":1431,"title":"kid with the greatest number of candies","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":1432,"title":"max difference you can get from changing an integer","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":1433,"title":"check if a string can break another string","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":1436,"title":"destination city","languages":"cpp","acceptedCount":"3","unacceptedCount":"0"}, 
   {"quesId":1437,"title":"check if all 1s are at least length k places away","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
@@ -1757,4 +1758,7 @@
   {"quesId":3560,"title":"find minimum log transportation cost","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3561,"title":"resulting string after adjacent removals","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3567,"title":"minimum absolute difference in sliding submatrix","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3572,"title":"maximize Y-sum by picking a triplet of distinct X-values","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3582,"title":"generate tag for video caption","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3583,"title":"count special triplets","languages":"cpp","acceptedCount":"1","unacceptedCount":"1"}, 
 ]
