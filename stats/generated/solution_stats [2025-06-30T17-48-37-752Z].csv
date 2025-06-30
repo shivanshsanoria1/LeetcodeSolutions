@@ -1150,7 +1150,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 2094,finding 3 digit even numbers,cpp,2,0
 2095,delete the middle node of a linked list,cpp,2,0
 2096,step by step directions from a binary tree node to another,cpp,1,2
-2099,find the subsequence of length k with the largest sum,cpp,3,0
+2099,find the subsequence of length K with the largest sum,cpp,2,0
 2100,find good days to rob the bank,cpp,2,1
 2101,detonate the maximum bombs,cpp,2,0
 2102,sequentially ordinal rank tracker,cpp,0,1
@@ -1761,3 +1761,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3572,maximize Y-sum by picking a triplet of distinct X-values,cpp,1,0
 3582,generate tag for video caption,cpp,1,0
 3583,count special triplets,cpp,1,1
+3588,find maximum area of a triangle,cpp,1,0
+3589,count prime gap balanced subarrays,cpp,0,1
+3591,check if any element has prime frequency,cpp,2,0
+3597,partition string,cpp,1,0

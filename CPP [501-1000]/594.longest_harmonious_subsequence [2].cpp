@@ -1,39 +1,27 @@
 class Solution {
 public:
-    int findLHS(vector<int>& nums) { // T.C.=O(n*logn), S.C.=O(1)
-        sort(nums.begin(), nums.end());
-        int freq1 = 1, freq2 = 0;
-        bool found2nd = false;
+    // T.C.=O(n*log(n)), S.C.=O(n)
+    int findLHS(vector<int>& nums) { 
+        // num -> freq
+        map<int, int> mp; 
+        for(int num: nums)
+            mp[num]++;
+
         int ans = 0;
-        for(int i=1; i<nums.size(); i++)
+        for(auto itr1 = mp.begin(); itr1 != mp.end(); itr1++)
         {
-            if(nums[i] == nums[i-1])
-            {
-                if(!found2nd)
-                    freq1++;
-                else
-                    freq2++;
-            }
-            else
-            {
-                if(nums[i] - nums[i-1] == 1)
-                {
-                    if(!found2nd)
-                        found2nd = true;
-                    else
-                        freq1 = freq2;
-                    freq2 = 1;
-                }
-                else
-                {
-                    found2nd = false;
-                    freq1 = 1;
-                    freq2 = 0;
-                }
-            }
-            if(found2nd) // 2nd num exists
+            int num1 = itr1->first, freq1 = itr1->second;
+
+            auto itr2 = next(itr1);
+            if(itr2 == mp.end())
+                break;
+
+            int num2 = itr2->first, freq2 = itr2->second;
+
+            if(num2 - num1 == 1)
                 ans = max(ans, freq1 + freq2);
         }
+        
         return ans;
     }
 };

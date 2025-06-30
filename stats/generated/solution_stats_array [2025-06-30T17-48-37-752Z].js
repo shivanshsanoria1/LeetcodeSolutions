@@ -1150,7 +1150,7 @@
   {"quesId":2094,"title":"finding 3 digit even numbers","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":2095,"title":"delete the middle node of a linked list","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":2096,"title":"step by step directions from a binary tree node to another","languages":"cpp","acceptedCount":"1","unacceptedCount":"2"}, 
-  {"quesId":2099,"title":"find the subsequence of length k with the largest sum","languages":"cpp","acceptedCount":"3","unacceptedCount":"0"}, 
+  {"quesId":2099,"title":"find the subsequence of length K with the largest sum","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":2100,"title":"find good days to rob the bank","languages":"cpp","acceptedCount":"2","unacceptedCount":"1"}, 
   {"quesId":2101,"title":"detonate the maximum bombs","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":2102,"title":"sequentially ordinal rank tracker","languages":"cpp","acceptedCount":"0","unacceptedCount":"1"}, 
@@ -1761,4 +1761,8 @@
   {"quesId":3572,"title":"maximize Y-sum by picking a triplet of distinct X-values","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3582,"title":"generate tag for video caption","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3583,"title":"count special triplets","languages":"cpp","acceptedCount":"1","unacceptedCount":"1"}, 
+  {"quesId":3588,"title":"find maximum area of a triangle","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3589,"title":"count prime gap balanced subarrays","languages":"cpp","acceptedCount":"0","unacceptedCount":"1"}, 
+  {"quesId":3591,"title":"check if any element has prime frequency","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
+  {"quesId":3597,"title":"partition string","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
 ]

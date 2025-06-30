@@ -1,44 +1,37 @@
-class Cmp {
-public:
-    typedef pair<int, int> PI;
-
-    // sort in descending order of 'first' and 'second' for each pair
-    bool operator()(PI &a, PI &b){
-        return a.first == b.first ? a.second < b.second : a.first < b.first;
-    }
-};
-
 class Solution {
-public:
-    typedef pair<int, int> PI;
+private:
+    typedef pair<int, int> PII;
 
-    vector<int> maxSubsequence(vector<int>& nums, int k) { // T.C.=O(n*logn + k*logk), S.C.=O(n+k)
-        vector<int> ans;
-        int n = nums.size();
-        priority_queue<PI, vector<PI>, Cmp> pq; // max-heap
-        // sort in decreasing order of num (and decreasing index if num are equal)
-        for(int i=0; i<n; i++)
-            pq.push({nums[i], i}); // num -> index
-        vector<PI> temp;
-        // pop k elements from heap and push them in the temp vector
-        while(k--)
+public:
+    // T.C.=O(n*log(k) + k*log(k)), S.C.=O(k)
+    vector<int> maxSubsequence(vector<int>& nums, int k) {
+        // min-heap to maintain the k largest elements
+        priority_queue<PII, vector<PII>, greater<PII>> pq;
+
+        for(int i=0; i<nums.size(); i++)
         {
-            auto curr = pq.top();
-            temp.push_back({curr.second, curr.first}); // index -> num
-            pq.pop();
+            pq.push({nums[i], i});
+            if(pq.size() == k+1)
+                pq.pop();
         }
-        // sort the first k elements in increasing order of index
-        sort(temp.begin(), temp.end());
-        // push the num corresponding to the indexes of the correct subsequence
-        for(auto it: temp)
-            ans.push_back(it.second);
+
+        vector<PII> temp; // {num, idx}
+        while(!pq.empty())
+        {
+            auto [num, i] = pq.top();
+            pq.pop();
+            temp.push_back({num, i});
+        }
+
+        // sort in increasing order of index
+        sort(temp.begin(), temp.end(), [](PII &a, PII &b){
+            return a.second < b.second;
+        });
+
+        vector<int> ans;
+        for(int i=0; i<k; i++)
+            ans.push_back(temp[i].first);
+
         return ans;
     }
 };
-/*
-# the comparator function for priority_queue-
-# requires its own class,
-# works opposite to a regular comparator function (for some reason ??)
-# for a regular comparator function: a < b sorts in increasing order
-# for a priority_queue comparator function: a < b sorts in decreasing order
-*/

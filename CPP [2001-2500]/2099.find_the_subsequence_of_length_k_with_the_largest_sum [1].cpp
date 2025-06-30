@@ -1,29 +1,26 @@
 class Solution {
+private:
+    typedef pair<int, int> PII;
+
 public:
-    typedef pair<int, int> PI;
+    // T.C.=O(n*log(n) + k*log(k)), S.C.=O(n)
+    vector<int> maxSubsequence(vector<int>& nums, int k) { 
+        vector<PII> temp; // {num, idx}
+        for(int i=0; i<nums.size(); i++)
+            temp.push_back({nums[i], i});
 
-    // sort in descending order of 'first' and 'second' for each pair
-    static bool cmp1(PI &a, PI &b){
-        return a.first == b.first ? a.second > b.second : a.first > b.first;
-    }
+        // sort in decreasing order of numeric value
+        sort(temp.begin(), temp.end(), greater<PII>());
 
-    // sort in increasing order of 'second' for each pair
-    static bool cmp2(PI &a, PI &b){
-        return a.second < b.second;
-    }
+        // sort the first k pairs in increasing order of index
+        sort(temp.begin(), temp.begin() + k, [](PII &a, PII &b){
+            return a.second < b.second;
+        });
 
-    vector<int> maxSubsequence(vector<int>& nums, int k) { // T.C.=O(n*logn + k*logk), S.C.=O(n)
         vector<int> ans;
-        int n = nums.size();
-        vector<PI> vec;
-        for(int i=0; i<n; i++)
-            vec.push_back({nums[i], i});
-        // sort in decreasing order of num (and decreasing index if num are equal)
-        sort(vec.begin(), vec.end(), cmp1);
-        // sort the first k elements in increasing order of index
-        sort(vec.begin(), vec.begin() + k, cmp2);
         for(int i=0; i<k; i++)
-            ans.push_back(vec[i].first);
+            ans.push_back(temp[i].first);
+
         return ans;
     }
 };
