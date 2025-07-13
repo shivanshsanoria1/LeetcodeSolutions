@@ -21,15 +21,9 @@ private:
         return true;
     }
 
-    bool isValidBusinessLine(string& s, vector<string>& validBusinessLines){
-        for(string& validBusinessLine: validBusinessLines)
-            if(s == validBusinessLine)
-                return true;
-        
-        return false;
-    }
+    int businessLineToInt(string& s){
+        vector<string> validBusinessLines = {"electronics", "grocery", "pharmacy", "restaurant"};
 
-    int convertBusinessLineToInt(string& s, vector<string>& validBusinessLines){
         for(int i=0; i<validBusinessLines.size(); i++)
             if(s == validBusinessLines[i])
                 return i;
@@ -38,24 +32,23 @@ private:
     }
 
 public:
+    // T.C.=O(n*log(n)), S.C.=O(n)
     vector<string> validateCoupons(vector<string>& code, vector<string>& businessLine, vector<bool>& isActive) {
         vector<int> idxs;
-        vector<string> validBusinessLines = {"electronics", "grocery", "pharmacy", "restaurant"};
-
         for(int i=0; i<code.size(); i++)
         {
             if(!isActive[i])
                 continue;
             if(!isValidCode(code[i]))
                 continue;
-            if(!isValidBusinessLine(businessLine[i], validBusinessLines))
+            if(businessLineToInt(businessLine[i]) == -1)
                 continue;
 
             idxs.push_back(i);
         }
         
         sort(idxs.begin(), idxs.end(), [&](int& i, int& j){
-            return businessLine[i] == businessLine[j] ? code[i] < code[j] : convertBusinessLineToInt(businessLine[i], validBusinessLines) < convertBusinessLineToInt(businessLine[j], validBusinessLines);
+            return businessLine[i] == businessLine[j] ? code[i] < code[j] : businessLineToInt(businessLine[i]) < businessLineToInt(businessLine[j]);
         });
 
         vector<string> ans;

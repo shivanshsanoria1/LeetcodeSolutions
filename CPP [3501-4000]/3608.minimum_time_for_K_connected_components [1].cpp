@@ -67,37 +67,33 @@ public:
 
 class Solution {
 public:
-    int minCost(int n, vector<vector<int>>& edges, int k) {
-        // sort edges in increasing order of weight
+    int minTime(int n, vector<vector<int>>& edges, int k) {
+        if(edges.size() == 0)
+            return 0;
+
+        // sort edges in decreasing order of time
         sort(edges.begin(), edges.end(), [](vector<int>& a, vector<int>& b){
-            return a[2] < b[2];
+            return a[2] > b[2];
         });
 
         DisjointSet ds(n);
+        // assume initially all nodes are disconnected
         int compCount = n;
-        int ans = 0;
-
-        for(vector<int>& edge: edges){
+        for(vector<int>& edge: edges)
+        {
             int a = edge[0];
             int b = edge[1];
-            int wt = edge[2];
+            int time = edge[2];
 
-            // a and b are in different components
-            // so we include this edge and thus
-            // the num of components is decremented by 1
+            // a and b are in diff components so unioning 
+            // them would decrement the component count by 1
             if(ds.unionBySize(a, b))
                 compCount--;
-            // a and b are in the same component
-            // so we don't include this edge
-            else
-                continue;
-            
-            if(compCount >= k)
-                ans = wt;
-            else
-                break;
+
+            if(compCount < k)
+                return time;
         }
 
-        return ans;
+        return 0;
     }
 };
