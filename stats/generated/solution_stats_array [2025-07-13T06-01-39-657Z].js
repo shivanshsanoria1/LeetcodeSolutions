@@ -1765,4 +1765,10 @@
   {"quesId":3589,"title":"count prime gap balanced subarrays","languages":"cpp","acceptedCount":"0","unacceptedCount":"1"}, 
   {"quesId":3591,"title":"check if any element has prime frequency","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":3597,"title":"partition string","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3602,"title":"hexadecimal and hexatrigesimal conversion","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3606,"title":"coupon code validator","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
+  {"quesId":3607,"title":"power grid maintenance","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3612,"title":"process string with special operations I","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3613,"title":"minimize maximum component cost","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3614,"title":"process string with special operations II","languages":"cpp","acceptedCount":"0","unacceptedCount":"1"}, 
 ]

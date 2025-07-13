@@ -1765,3 +1765,9 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3589,count prime gap balanced subarrays,cpp,0,1
 3591,check if any element has prime frequency,cpp,2,0
 3597,partition string,cpp,1,0
+3602,hexadecimal and hexatrigesimal conversion,cpp,1,0
+3606,coupon code validator,cpp,2,0
+3607,power grid maintenance,cpp,1,0
+3612,process string with special operations I,cpp,1,0
+3613,minimize maximum component cost,cpp,1,0
+3614,process string with special operations II,cpp,0,1
