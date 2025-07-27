@@ -920,7 +920,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 1558,minimum numbers of function calls to make target array,cpp,2,0
 1559,detect cycles in 2D grid,cpp,2,0
 1560,most visited sector in a circular track,cpp,1,0
-1561,maximum number of coins you can get,cpp,1,0
+1561,maximum number of coins you can get,cpp+js,1+1,0+0
 1562,find latest group of size M,cpp,0,1
 1566,detect pattern of length m repeated k or more times,cpp,1,0
 1568,minimum number of days to disconnect island,cpp,1,0
@@ -1195,7 +1195,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 2196,create binary tree from descriptions,cpp,1,0
 2200,find all k distant indices in an array,cpp,1,0
 2206,divide array into equal pairs,cpp,1,0
-2210,count hills and valleys in an array,cpp,2,0
+2210,count hills and valleys in an array,cpp,1,0
 2211,count collisions on a road,cpp,2,0
 2215,find the difference of two arrays,cpp,2,0
 2218,maximum value of K coins from piles,cpp,0,1
@@ -1772,3 +1772,8 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3612,process string with special operations I,cpp,1,0
 3613,minimize maximum component cost,cpp,1,0
 3614,process string with special operations II,cpp,0,1
+3618,split array by prime indices,cpp,1,0
+3619,count islands with total value divisible by K,cpp,2,0
+3622,check divisibility by digit sum and product,cpp,1,0
+3623,count number of trapezoids I,cpp,1,1
+3627,maximum median sum of subsequences of size 3,cpp+js,1+1,0+0
