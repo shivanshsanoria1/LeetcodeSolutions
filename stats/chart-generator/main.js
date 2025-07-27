@@ -1785,7 +1785,7 @@ const arr = [
 // ------------ DATA ARRAY END ------------ //
 
 // ****** please UPDATE before using ****** // 
-const maxQuesId = 3548
+const maxQuesId = arr.reduce((acc, curr) => Math.max(acc, curr.quesId), 0)
 
 function loadPieChart1(){
   const solved = arr.reduce((acc, {acceptedCount}) => acc += acceptedCount !== '0', 0)
