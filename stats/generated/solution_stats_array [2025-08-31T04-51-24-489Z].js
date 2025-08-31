@@ -1777,4 +1777,6 @@
   {"quesId":3622,"title":"check divisibility by digit sum and product","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3623,"title":"count number of trapezoids I","languages":"cpp","acceptedCount":"1","unacceptedCount":"1"}, 
   {"quesId":3627,"title":"maximum median sum of subsequences of size 3","languages":"cpp+js","acceptedCount":"1+1","unacceptedCount":"0+0"}, 
+  {"quesId":3633,"title":"earliest finish time for land and water rides I","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3637,"title":"trionic array I","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
 ]

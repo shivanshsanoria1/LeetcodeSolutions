@@ -1777,3 +1777,5 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3622,check divisibility by digit sum and product,cpp,1,0
 3623,count number of trapezoids I,cpp,1,1
 3627,maximum median sum of subsequences of size 3,cpp+js,1+1,0+0
+3633,earliest finish time for land and water rides I,cpp,1,0
+3637,trionic array I,cpp,1,0
