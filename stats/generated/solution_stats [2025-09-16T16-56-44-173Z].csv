@@ -456,7 +456,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 698,partition to k equal sum subsets,cpp,0,1
 700,search in a binary search tree,cpp,2,0
 701,insert into a binary search tree,cpp,2,0
-703,Kth largest element in a stream,cpp,1,0
+703,kth largest element in a stream,cpp,1,0
 704,binary search,cpp,1,0
 705,design hashset,cpp,2,0
 706,design hashmap,cpp,2,0
@@ -711,7 +711,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 1128,number of equivalent domino pairs,cpp,3,0
 1129,shortest path with alternating colors,cpp,1,0
 1131,maximum of absolute value expression,cpp,0,1
-1137,Nth tribonacci number,cpp,1,0
+1137,nth tribonacci number,cpp,1,0
 1138,alphabet board path,cpp,1,0
 1140,stone game II,cpp,1,1
 1141,user activity for the past 30 days I,mysql,1,0
@@ -783,7 +783,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 1296,divide array in sets of k consecutive numbers,cpp,2,0
 1299,replace elements with greatest elements on right side,cpp,2,0
 1302,deepest leaves sum,cpp,2,0
-1304,find n unique integers sum up to zero,cpp,1,0
+1304,find N unique integers sum up to zero,cpp,1,0
 1305,all elements in two binary search trees,cpp,1,0
 1309,decrypt string from alphabet to integer mapping,cpp,2,0
 1310,XOR queries of a subarray,cpp,2,0
@@ -807,7 +807,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 1341,movie rating,mysql,2,0
 1342,number of steps to reduce a number to zero,cpp,1,0
 1344,angle between hands of a clock,cpp,1,0
-1346,check if N and its double exist,cpp,3,0
+1346,check if n and its double exist,cpp,3,0
 1347,minimum number of steps to make two strings anagram,cpp,1,0
 1348,tweet counts per frequency,cpp,1,0
 1351,count negative numbers in a sorted matrix,cpp,3,0
@@ -1047,7 +1047,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 1854,maximum population year,cpp,2,0
 1857,largest color value in a directed graph,cpp,1,0
 1859,sorting the sentence,cpp,1,0
-1863,sum of all subset XOR totals,cpp,3,0
+1863,sum of all subset xor totals,cpp,3,0
 1865,finding pairs with a certain sum,cpp,1,0
 1869,longest contiguous segments of ones than zeros,cpp,1,0
 1870,minimum speed to arrive on time,cpp,1,1
@@ -1150,7 +1150,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 2094,finding 3 digit even numbers,cpp,2,0
 2095,delete the middle node of a linked list,cpp,2,0
 2096,step by step directions from a binary tree node to another,cpp,1,2
-2099,find the subsequence of length K with the largest sum,cpp,2,0
+2099,find the subsequence of length k with the largest sum,cpp,2,0
 2100,find good days to rob the bank,cpp,2,1
 2101,detonate the maximum bombs,cpp,2,0
 2102,sequentially ordinal rank tracker,cpp,0,1
@@ -1357,7 +1357,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 2578,split with minimum sum,cpp,2,0
 2579,count total number of colored cells,cpp,2,0
 2582,pass the pillow,cpp,2,0
-2583,Kth largest sum in a binary tree,cpp,2,0
+2583,kth largest sum in a binary tree,cpp,2,0
 2586,count the number of vowel strings in range,cpp,1,0
 2593,find score of an array after marking all elements,cpp,2,0
 2595,number of even and odd bits,cpp,2,0
@@ -1493,7 +1493,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 2923,find champion I,cpp,2,0
 2924,find champion II,cpp,1,0
 2928,distribute candies among children I,cpp,2,0
-2932,maximum strong pair XOR I,cpp,1,0
+2932,maximum strong pair xor I,cpp,1,0
 2933,high access employees,cpp,1,0
 2935,maximum strong pair XOR II,cpp,0,1
 2937,make three strings equal,cpp,1,0
@@ -1506,7 +1506,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 2956,find common elements between two arrays,cpp,3,0
 2958,length of longest subarray with at most k frequency,cpp,1,1
 2960,count tested devices after test operations,cpp,1,0
-2962,count subarrays where max element appears at least K times,cpp,2,1
+2962,count subarrays where max element appears at least k times,cpp,2,1
 2965,find missing and repeated values,cpp,3,0
 2966,divide array into arrays with max difference,cpp,3,0
 2974,minimum number game,cpp,1,0
@@ -1779,3 +1779,13 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3627,maximum median sum of subsequences of size 3,cpp+js,1+1,0+0
 3633,earliest finish time for land and water rides I,cpp,1,0
 3637,trionic array I,cpp,1,0
+3658,GCD of odd and even sums,cpp,2,0
+3663,find the least frequent digit,cpp,1,0
+3665,twisted mirror path count,cpp,1,1
+3668,restore finishing order,cpp,2,0
+3674,minimum operations to equalize array,cpp,1,0
+3675,minimum operations to transform string,cpp,1,0
+3677,count binary palindromic numbers,cpp,0,1
+3678,smallest absent positive greater than average,cpp,1,0
+3683,earliest time to finish one task,cpp,1,0
+3684,maximize sum of at most K distinct elements,cpp,1,0
