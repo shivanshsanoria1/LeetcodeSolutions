@@ -1779,6 +1779,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3627,maximum median sum of subsequences of size 3,cpp+js,1+1,0+0
 3633,earliest finish time for land and water rides I,cpp,1,0
 3637,trionic array I,cpp,1,0
+3653,XOR after range multiplication queries I,cpp,1,0
 3658,GCD of odd and even sums,cpp,2,0
 3663,find the least frequent digit,cpp,1,0
 3665,twisted mirror path count,cpp,1,1
@@ -1789,3 +1790,5 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3678,smallest absent positive greater than average,cpp,1,0
 3683,earliest time to finish one task,cpp,1,0
 3684,maximize sum of at most K distinct elements,cpp,1,0
+3688,bitwise OR of even numbers in an array,cpp,1,0
+3689,maximum total subarray value I,cpp,1,0

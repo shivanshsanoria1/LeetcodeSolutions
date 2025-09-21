@@ -1779,6 +1779,7 @@
   {"quesId":3627,"title":"maximum median sum of subsequences of size 3","languages":"cpp+js","acceptedCount":"1+1","unacceptedCount":"0+0"}, 
   {"quesId":3633,"title":"earliest finish time for land and water rides I","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3637,"title":"trionic array I","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3653,"title":"XOR after range multiplication queries I","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3658,"title":"GCD of odd and even sums","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":3663,"title":"find the least frequent digit","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3665,"title":"twisted mirror path count","languages":"cpp","acceptedCount":"1","unacceptedCount":"1"}, 
@@ -1789,4 +1790,6 @@
   {"quesId":3678,"title":"smallest absent positive greater than average","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3683,"title":"earliest time to finish one task","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3684,"title":"maximize sum of at most K distinct elements","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3688,"title":"bitwise OR of even numbers in an array","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3689,"title":"maximum total subarray value I","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
 ]
