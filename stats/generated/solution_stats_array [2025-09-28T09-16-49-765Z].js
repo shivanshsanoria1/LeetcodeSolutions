@@ -783,7 +783,7 @@
   {"quesId":1296,"title":"divide array in sets of k consecutive numbers","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":1299,"title":"replace elements with greatest elements on right side","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":1302,"title":"deepest leaves sum","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
-  {"quesId":1304,"title":"find N unique integers sum up to zero","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":1304,"title":"find n unique integers sum up to zero","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":1305,"title":"all elements in two binary search trees","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":1309,"title":"decrypt string from alphabet to integer mapping","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":1310,"title":"XOR queries of a subarray","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
@@ -1792,4 +1792,7 @@
   {"quesId":3684,"title":"maximize sum of at most K distinct elements","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3688,"title":"bitwise OR of even numbers in an array","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3689,"title":"maximum total subarray value I","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3692,"title":"majority frequency characters","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3694,"title":"distinct points reachable after substring removal","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3697,"title":"compute decimal representation","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
 ]

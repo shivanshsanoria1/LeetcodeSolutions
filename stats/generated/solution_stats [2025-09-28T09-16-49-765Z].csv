@@ -783,7 +783,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 1296,divide array in sets of k consecutive numbers,cpp,2,0
 1299,replace elements with greatest elements on right side,cpp,2,0
 1302,deepest leaves sum,cpp,2,0
-1304,find N unique integers sum up to zero,cpp,1,0
+1304,find n unique integers sum up to zero,cpp,1,0
 1305,all elements in two binary search trees,cpp,1,0
 1309,decrypt string from alphabet to integer mapping,cpp,2,0
 1310,XOR queries of a subarray,cpp,2,0
@@ -1792,3 +1792,6 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3684,maximize sum of at most K distinct elements,cpp,1,0
 3688,bitwise OR of even numbers in an array,cpp,1,0
 3689,maximum total subarray value I,cpp,1,0
+3692,majority frequency characters,cpp,1,0
+3694,distinct points reachable after substring removal,cpp,1,0
+3697,compute decimal representation,cpp,1,0
