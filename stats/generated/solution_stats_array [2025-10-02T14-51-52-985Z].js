@@ -1793,6 +1793,7 @@
   {"quesId":3688,"title":"bitwise OR of even numbers in an array","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3689,"title":"maximum total subarray value I","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3692,"title":"majority frequency characters","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3693,"title":"climbing stairs II","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":3694,"title":"distinct points reachable after substring removal","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3697,"title":"compute decimal representation","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
 ]

@@ -1793,5 +1793,6 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3688,bitwise OR of even numbers in an array,cpp,1,0
 3689,maximum total subarray value I,cpp,1,0
 3692,majority frequency characters,cpp,1,0
+3693,climbing stairs II,cpp,2,0
 3694,distinct points reachable after substring removal,cpp,1,0
 3697,compute decimal representation,cpp,1,0

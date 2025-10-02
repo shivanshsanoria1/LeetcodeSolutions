@@ -8,6 +8,7 @@ public:
             if(rem > 0)
                 ans.push_back(rem * mul);
                 
+            // to prevent int overflow
             if(mul <= INT_MAX/10)
                 mul *= 10;
         }
