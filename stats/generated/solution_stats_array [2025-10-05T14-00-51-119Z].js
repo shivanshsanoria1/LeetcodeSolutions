@@ -1796,4 +1796,6 @@
   {"quesId":3693,"title":"climbing stairs II","languages":"cpp","acceptedCount":"2","unacceptedCount":"0"}, 
   {"quesId":3694,"title":"distinct points reachable after substring removal","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3697,"title":"compute decimal representation","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3701,"title":"compute alternating sum","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3702,"title":"longest subsequence with non zero bitwise XOR","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
 ]

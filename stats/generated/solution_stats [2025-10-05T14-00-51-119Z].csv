@@ -1796,3 +1796,5 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3693,climbing stairs II,cpp,2,0
 3694,distinct points reachable after substring removal,cpp,1,0
 3697,compute decimal representation,cpp,1,0
+3701,compute alternating sum,cpp,1,0
+3702,longest subsequence with non zero bitwise XOR,cpp,1,0
