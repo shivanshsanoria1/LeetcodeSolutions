@@ -1798,3 +1798,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3697,compute decimal representation,cpp,1,0
 3701,compute alternating sum,cpp,1,0
 3702,longest subsequence with non zero bitwise XOR,cpp,1,0
+3707,equal score substrings,cpp,1,0
+3708,longest fibonacci subarray,cpp,1,0
+3709,design exam scores tracker,cpp,1,0
+3712,sum of elements with frequency divisible by K,cpp,1,0

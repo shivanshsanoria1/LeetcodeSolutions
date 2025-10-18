@@ -1798,4 +1798,8 @@
   {"quesId":3697,"title":"compute decimal representation","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3701,"title":"compute alternating sum","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
   {"quesId":3702,"title":"longest subsequence with non zero bitwise XOR","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3707,"title":"equal score substrings","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3708,"title":"longest fibonacci subarray","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3709,"title":"design exam scores tracker","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
+  {"quesId":3712,"title":"sum of elements with frequency divisible by K","languages":"cpp","acceptedCount":"1","unacceptedCount":"0"}, 
 ]
