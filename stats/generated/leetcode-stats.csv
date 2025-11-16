@@ -1,4 +1,4 @@
-quesId,Title,Language(s),AcceptedCount,UnacceptedCount
+quesId,Title,Language(s),accepted,partially-accepted
 1,two sum,cpp,3,0
 2,add two numbers,cpp,2,0
 3,longest substring without repeating characters,cpp,2,0
@@ -1779,6 +1779,7 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3627,maximum median sum of subsequences of size 3,cpp+js,1+1,0+0
 3633,earliest finish time for land and water rides I,cpp,1,0
 3637,trionic array I,cpp,1,0
+3643,flip square submatrix vertically,cpp,1,0
 3653,XOR after range multiplication queries I,cpp,1,0
 3658,GCD of odd and even sums,cpp,2,0
 3663,find the least frequent digit,cpp,1,0
@@ -1802,3 +1803,6 @@ quesId,Title,Language(s),AcceptedCount,UnacceptedCount
 3708,longest fibonacci subarray,cpp,1,0
 3709,design exam scores tracker,cpp,1,0
 3712,sum of elements with frequency divisible by K,cpp,1,0
+3718,smallest missing multiple of K,cpp,1,0
+3726,remove zeros in decimal representation,cpp,2,0
+3731,find missing elements,cpp,1,0
