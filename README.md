@@ -15,8 +15,9 @@ This repo contains solutions to over 1700 problems from [leetcode.com](https://l
 * There are some problems with solutions in multiple languages (C++ and Javascript).
 * The C++ directory is split into 8 parts (with a range of 500 each): [1-500], [501-1000], ..., [3501-4000]. This is done to overcome the limitation of github webview only allowing a max of 1000 files to be displayed in a directory.
 ---
+
 ## Stats
-Last updated on _Sun, 16 Nov 2025 13:32:57 GMT_
+Last updated on _Sun, 16 Nov 2025 17:21:18 GMT_
 ### Total problems solved:
 | Accepted | Partially accepted |
 | --- | --- |

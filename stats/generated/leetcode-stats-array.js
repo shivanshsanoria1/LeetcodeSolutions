@@ -8,7 +8,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2,
@@ -19,7 +20,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3,
@@ -30,7 +32,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 4,
@@ -41,7 +44,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 5,
@@ -52,7 +56,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 7,
@@ -63,7 +68,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 8,
@@ -74,7 +80,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 9,
@@ -85,7 +92,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 11,
@@ -96,7 +104,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 12,
@@ -107,7 +116,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 13,
@@ -118,7 +128,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 14,
@@ -129,7 +140,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 15,
@@ -140,7 +152,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 16,
@@ -151,7 +164,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 17,
@@ -162,7 +176,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 18,
@@ -173,7 +188,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 19,
@@ -184,7 +200,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 20,
@@ -195,7 +212,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 21,
@@ -206,7 +224,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 22,
@@ -217,7 +236,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 23,
@@ -228,7 +248,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 24,
@@ -239,7 +260,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 25,
@@ -250,7 +272,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 26,
@@ -261,7 +284,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 27,
@@ -272,7 +296,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 28,
@@ -283,7 +308,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 29,
@@ -294,7 +320,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 31,
@@ -305,7 +332,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 33,
@@ -316,7 +344,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 34,
@@ -327,7 +356,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 35,
@@ -338,7 +368,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 36,
@@ -349,7 +380,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 37,
@@ -360,7 +392,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 39,
@@ -371,7 +404,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 40,
@@ -382,7 +416,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 41,
@@ -393,7 +428,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 42,
@@ -404,7 +440,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 45,
@@ -415,7 +452,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 46,
@@ -426,7 +464,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 47,
@@ -437,7 +476,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 48,
@@ -448,7 +488,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 49,
@@ -459,7 +500,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 50,
@@ -470,7 +512,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 51,
@@ -481,7 +524,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 52,
@@ -492,7 +536,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 53,
@@ -503,7 +548,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 54,
@@ -514,7 +560,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 55,
@@ -525,7 +572,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 56,
@@ -536,7 +584,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 57,
@@ -547,7 +596,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 58,
@@ -558,7 +608,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 59,
@@ -569,7 +620,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 60,
@@ -580,7 +632,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 61,
@@ -591,7 +644,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 62,
@@ -602,7 +656,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 63,
@@ -613,7 +668,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 64,
@@ -624,7 +680,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 66,
@@ -635,7 +692,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 67,
@@ -646,7 +704,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 69,
@@ -657,7 +716,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 70,
@@ -668,7 +728,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 72,
@@ -679,7 +740,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 73,
@@ -690,7 +752,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 74,
@@ -701,7 +764,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 75,
@@ -712,7 +776,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 76,
@@ -723,7 +788,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 77,
@@ -734,7 +800,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 78,
@@ -745,7 +812,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 79,
@@ -756,7 +824,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 80,
@@ -767,7 +836,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 81,
@@ -778,7 +848,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 82,
@@ -789,7 +860,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 83,
@@ -800,7 +872,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 84,
@@ -811,7 +884,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 85,
@@ -822,7 +896,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 86,
@@ -833,7 +908,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 88,
@@ -844,7 +920,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 90,
@@ -855,7 +932,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 91,
@@ -866,7 +944,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 92,
@@ -877,7 +956,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 94,
@@ -888,7 +968,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 96,
@@ -899,7 +980,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 97,
@@ -910,7 +992,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 98,
@@ -921,7 +1004,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 99,
@@ -932,7 +1016,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 100,
@@ -943,7 +1028,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 101,
@@ -954,7 +1040,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 102,
@@ -965,7 +1052,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 103,
@@ -976,7 +1064,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 104,
@@ -987,7 +1076,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 105,
@@ -998,7 +1088,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 106,
@@ -1009,7 +1100,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 107,
@@ -1020,7 +1112,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 108,
@@ -1031,7 +1124,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 109,
@@ -1042,7 +1136,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 110,
@@ -1053,7 +1148,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 111,
@@ -1064,7 +1160,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 112,
@@ -1075,7 +1172,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 113,
@@ -1086,7 +1184,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 114,
@@ -1097,7 +1196,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 115,
@@ -1108,7 +1208,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 116,
@@ -1119,7 +1220,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 117,
@@ -1130,7 +1232,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 118,
@@ -1141,7 +1244,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 119,
@@ -1152,7 +1256,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 120,
@@ -1163,7 +1268,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 121,
@@ -1174,7 +1280,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 122,
@@ -1185,7 +1292,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 123,
@@ -1196,7 +1304,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 124,
@@ -1207,7 +1316,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 125,
@@ -1218,7 +1328,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 127,
@@ -1229,7 +1340,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 128,
@@ -1240,7 +1352,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 129,
@@ -1251,7 +1364,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 130,
@@ -1262,7 +1376,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 131,
@@ -1273,7 +1388,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 133,
@@ -1284,7 +1400,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 134,
@@ -1295,7 +1412,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 135,
@@ -1306,7 +1424,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 136,
@@ -1317,7 +1436,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 137,
@@ -1328,7 +1448,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 139,
@@ -1339,7 +1460,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 140,
@@ -1350,7 +1472,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 141,
@@ -1361,7 +1484,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 142,
@@ -1372,7 +1496,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 143,
@@ -1383,7 +1508,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 144,
@@ -1394,7 +1520,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 145,
@@ -1405,7 +1532,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 146,
@@ -1416,7 +1544,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 148,
@@ -1427,7 +1556,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 149,
@@ -1438,7 +1568,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 150,
@@ -1449,7 +1580,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 151,
@@ -1460,7 +1592,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 152,
@@ -1471,7 +1604,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 153,
@@ -1482,7 +1616,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 154,
@@ -1493,7 +1628,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 155,
@@ -1504,7 +1640,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 160,
@@ -1515,7 +1652,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 162,
@@ -1526,7 +1664,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 164,
@@ -1537,7 +1676,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 165,
@@ -1548,7 +1688,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 167,
@@ -1559,7 +1700,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 168,
@@ -1570,7 +1712,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 169,
@@ -1581,7 +1724,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 171,
@@ -1592,7 +1736,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 172,
@@ -1603,7 +1748,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 173,
@@ -1614,7 +1760,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 174,
@@ -1625,47 +1772,56 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 175,
 	"title": "combine two tables",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 176,
 	"title": "second highest salary",
 	"counter": {
 		"mysql": {
-			"accepted": 3
+			"accepted": 3,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 177,
 	"title": "nth highest salary",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 178,
 	"title": "rank scores",
 	"counter": {
 		"mysql": {
-			"accepted": 2
+			"accepted": 2,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 179,
@@ -1676,57 +1832,68 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 180,
 	"title": "consecutive numbers",
 	"counter": {
 		"mysql": {
-			"accepted": 2
+			"accepted": 2,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 181,
 	"title": "employees earning more than their managers",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 182,
 	"title": "duplicate emails",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 183,
 	"title": "customers who never order",
 	"counter": {
 		"mysql": {
-			"accepted": 2
+			"accepted": 2,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 184,
 	"title": "department highest salary",
 	"counter": {
 		"mysql": {
-			"accepted": 2
+			"accepted": 2,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 187,
@@ -1737,7 +1904,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 188,
@@ -1748,7 +1916,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 189,
@@ -1759,7 +1928,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 190,
@@ -1770,7 +1940,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 191,
@@ -1781,27 +1952,32 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 196,
 	"title": "delete duplicate emails",
 	"counter": {
 		"mysql": {
-			"accepted": 2
+			"accepted": 2,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 197,
 	"title": "rising temperature",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 198,
@@ -1812,7 +1988,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 199,
@@ -1823,7 +2000,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 200,
@@ -1834,7 +2012,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 201,
@@ -1845,7 +2024,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 202,
@@ -1856,7 +2036,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 203,
@@ -1867,7 +2048,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 204,
@@ -1878,7 +2060,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 205,
@@ -1889,7 +2072,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 206,
@@ -1900,7 +2084,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 207,
@@ -1911,7 +2096,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 208,
@@ -1922,7 +2108,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 209,
@@ -1933,7 +2120,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 210,
@@ -1944,7 +2132,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 211,
@@ -1955,7 +2144,8 @@ const statsArr = [
 			"unaccepted": 3
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 212,
@@ -1966,7 +2156,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 213,
@@ -1977,7 +2168,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 214,
@@ -1988,7 +2180,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 215,
@@ -1999,7 +2192,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 216,
@@ -2010,7 +2204,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 217,
@@ -2021,7 +2216,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 219,
@@ -2032,7 +2228,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 220,
@@ -2043,7 +2240,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 221,
@@ -2054,7 +2252,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 222,
@@ -2065,7 +2264,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 225,
@@ -2076,7 +2276,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 226,
@@ -2087,7 +2288,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 228,
@@ -2098,7 +2300,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 229,
@@ -2109,7 +2312,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 230,
@@ -2120,7 +2324,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 231,
@@ -2131,7 +2336,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 232,
@@ -2142,7 +2348,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 233,
@@ -2153,7 +2360,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 234,
@@ -2164,7 +2372,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 235,
@@ -2175,7 +2384,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 236,
@@ -2186,7 +2396,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 237,
@@ -2197,7 +2408,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 238,
@@ -2208,7 +2420,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 239,
@@ -2219,7 +2432,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 240,
@@ -2230,7 +2444,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 241,
@@ -2241,7 +2456,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 242,
@@ -2252,7 +2468,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 257,
@@ -2263,7 +2480,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 258,
@@ -2278,7 +2496,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 260,
@@ -2289,7 +2508,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 263,
@@ -2300,7 +2520,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 264,
@@ -2311,7 +2532,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 268,
@@ -2322,7 +2544,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 273,
@@ -2333,7 +2556,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 274,
@@ -2344,7 +2568,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 275,
@@ -2355,7 +2580,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 278,
@@ -2366,7 +2592,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 279,
@@ -2377,7 +2604,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 283,
@@ -2388,7 +2616,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 287,
@@ -2399,7 +2628,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 289,
@@ -2410,7 +2640,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 290,
@@ -2421,7 +2652,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 292,
@@ -2432,7 +2664,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 295,
@@ -2443,7 +2676,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 297,
@@ -2454,7 +2688,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 300,
@@ -2465,7 +2700,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 303,
@@ -2476,7 +2712,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 304,
@@ -2487,7 +2724,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 307,
@@ -2498,7 +2736,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 309,
@@ -2509,7 +2748,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 310,
@@ -2520,7 +2760,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 313,
@@ -2531,7 +2772,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 315,
@@ -2542,7 +2784,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 316,
@@ -2553,7 +2796,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 319,
@@ -2564,7 +2808,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 322,
@@ -2575,7 +2820,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 326,
@@ -2586,7 +2832,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 327,
@@ -2597,7 +2844,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 328,
@@ -2608,7 +2856,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 329,
@@ -2619,7 +2868,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 330,
@@ -2630,7 +2880,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 331,
@@ -2641,7 +2892,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 332,
@@ -2652,7 +2904,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 334,
@@ -2663,7 +2916,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 336,
@@ -2674,7 +2928,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 337,
@@ -2685,7 +2940,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 338,
@@ -2696,7 +2952,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 342,
@@ -2707,7 +2964,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 343,
@@ -2718,7 +2976,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 344,
@@ -2729,7 +2988,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 345,
@@ -2740,7 +3000,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 347,
@@ -2751,7 +3012,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 349,
@@ -2762,7 +3024,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 350,
@@ -2773,7 +3036,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 352,
@@ -2784,7 +3048,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 355,
@@ -2795,7 +3060,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 357,
@@ -2806,7 +3072,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 365,
@@ -2817,7 +3084,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 367,
@@ -2828,7 +3096,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 368,
@@ -2839,7 +3108,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 373,
@@ -2850,7 +3120,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 374,
@@ -2861,7 +3132,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 377,
@@ -2872,7 +3144,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 378,
@@ -2883,7 +3156,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 380,
@@ -2894,7 +3168,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 381,
@@ -2905,7 +3180,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 382,
@@ -2916,7 +3192,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 383,
@@ -2927,7 +3204,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 386,
@@ -2938,7 +3216,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 387,
@@ -2949,7 +3228,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 389,
@@ -2960,7 +3240,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 392,
@@ -2971,7 +3252,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 394,
@@ -2982,7 +3264,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 395,
@@ -2993,7 +3276,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 396,
@@ -3004,7 +3288,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 397,
@@ -3015,7 +3300,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 398,
@@ -3026,7 +3312,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 399,
@@ -3037,7 +3324,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 402,
@@ -3048,7 +3336,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 403,
@@ -3059,7 +3348,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 404,
@@ -3070,7 +3360,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 405,
@@ -3081,7 +3372,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 406,
@@ -3092,7 +3384,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 409,
@@ -3103,7 +3396,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 412,
@@ -3114,7 +3408,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 413,
@@ -3125,7 +3420,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 414,
@@ -3136,7 +3432,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 415,
@@ -3147,7 +3444,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 416,
@@ -3158,7 +3456,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 417,
@@ -3169,7 +3468,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 419,
@@ -3180,7 +3480,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 421,
@@ -3191,7 +3492,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 423,
@@ -3202,7 +3504,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 424,
@@ -3213,7 +3516,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 429,
@@ -3224,7 +3528,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 432,
@@ -3235,7 +3540,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 434,
@@ -3246,7 +3552,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 435,
@@ -3257,7 +3564,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 436,
@@ -3268,7 +3576,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 437,
@@ -3279,7 +3588,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 438,
@@ -3290,7 +3600,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 440,
@@ -3301,7 +3612,8 @@ const statsArr = [
 			"unaccepted": 4
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 441,
@@ -3312,7 +3624,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 442,
@@ -3323,7 +3636,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 445,
@@ -3334,7 +3648,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 447,
@@ -3345,7 +3660,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 448,
@@ -3356,7 +3672,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 449,
@@ -3367,7 +3684,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 450,
@@ -3378,7 +3696,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 451,
@@ -3389,7 +3708,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 452,
@@ -3400,7 +3720,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 454,
@@ -3411,7 +3732,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 455,
@@ -3422,7 +3744,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 456,
@@ -3433,7 +3756,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 457,
@@ -3444,7 +3768,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 459,
@@ -3455,7 +3780,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 460,
@@ -3466,7 +3792,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 461,
@@ -3477,7 +3804,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 462,
@@ -3488,7 +3816,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 463,
@@ -3499,7 +3828,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 468,
@@ -3510,7 +3840,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 472,
@@ -3521,7 +3852,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 473,
@@ -3532,7 +3864,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 474,
@@ -3543,7 +3876,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 476,
@@ -3554,7 +3888,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 477,
@@ -3565,7 +3900,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 478,
@@ -3576,7 +3912,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 480,
@@ -3587,7 +3924,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 482,
@@ -3598,7 +3936,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 485,
@@ -3609,7 +3948,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 491,
@@ -3620,7 +3960,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 492,
@@ -3631,7 +3972,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 493,
@@ -3642,7 +3984,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 494,
@@ -3653,7 +3996,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 495,
@@ -3664,7 +4008,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 496,
@@ -3675,7 +4020,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 497,
@@ -3686,7 +4032,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 498,
@@ -3697,7 +4044,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 500,
@@ -3708,7 +4056,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 501,
@@ -3719,7 +4068,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 502,
@@ -3730,7 +4080,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 503,
@@ -3741,7 +4092,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 504,
@@ -3752,7 +4104,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 506,
@@ -3763,7 +4116,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 507,
@@ -3774,7 +4128,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 508,
@@ -3785,7 +4140,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 509,
@@ -3796,17 +4152,20 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 511,
 	"title": "game play analysis I",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 513,
@@ -3817,7 +4176,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 514,
@@ -3828,7 +4188,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 515,
@@ -3839,7 +4200,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 516,
@@ -3850,7 +4212,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 518,
@@ -3861,7 +4224,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 519,
@@ -3872,7 +4236,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 520,
@@ -3883,7 +4248,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 523,
@@ -3894,7 +4260,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 524,
@@ -3905,7 +4272,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 525,
@@ -3916,7 +4284,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 530,
@@ -3927,7 +4296,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 532,
@@ -3938,7 +4308,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 537,
@@ -3949,7 +4320,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 538,
@@ -3960,7 +4332,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 539,
@@ -3975,7 +4348,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 540,
@@ -3986,7 +4360,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 541,
@@ -3997,7 +4372,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 542,
@@ -4008,7 +4384,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 543,
@@ -4019,7 +4396,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 547,
@@ -4030,17 +4408,20 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 550,
 	"title": "game play analysis IV",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 551,
@@ -4051,7 +4432,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 552,
@@ -4062,7 +4444,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 556,
@@ -4073,7 +4456,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 557,
@@ -4084,7 +4468,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 559,
@@ -4095,7 +4480,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 560,
@@ -4106,7 +4492,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 561,
@@ -4117,7 +4504,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 563,
@@ -4128,7 +4516,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 566,
@@ -4139,7 +4528,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 567,
@@ -4150,17 +4540,20 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 570,
 	"title": "managers with at least 5 direct reports",
 	"counter": {
 		"mysql": {
-			"accepted": 2
+			"accepted": 2,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 572,
@@ -4171,7 +4564,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 576,
@@ -4182,17 +4576,20 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 577,
 	"title": "employee bonus",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 583,
@@ -4203,27 +4600,32 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 584,
 	"title": "find customer referee",
 	"counter": {
 		"mysql": {
-			"accepted": 2
+			"accepted": 2,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 586,
 	"title": "customer placing the largest number of orders",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 587,
@@ -4234,7 +4636,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 589,
@@ -4245,7 +4648,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 590,
@@ -4256,7 +4660,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 592,
@@ -4267,7 +4672,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 593,
@@ -4278,7 +4684,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 594,
@@ -4289,27 +4696,32 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 595,
 	"title": "big countries",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 596,
 	"title": "classes more than 5 students",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 598,
@@ -4320,7 +4732,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 599,
@@ -4331,17 +4744,20 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 602,
 	"title": "friend requests II who has the most friends",
 	"counter": {
 		"mysql": {
-			"accepted": 2
+			"accepted": 2,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 605,
@@ -4352,7 +4768,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 606,
@@ -4363,27 +4780,32 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 607,
 	"title": "sales person",
 	"counter": {
 		"mysql": {
-			"accepted": 2
+			"accepted": 2,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 608,
 	"title": "tree node",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 609,
@@ -4394,17 +4816,20 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 610,
 	"title": "triangle judgement",
 	"counter": {
 		"mysql": {
-			"accepted": 2
+			"accepted": 2,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 611,
@@ -4415,7 +4840,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 617,
@@ -4426,27 +4852,32 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 619,
 	"title": "biggest single number",
 	"counter": {
 		"mysql": {
-			"accepted": 2
+			"accepted": 2,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 620,
 	"title": "not boring movies",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 621,
@@ -4457,7 +4888,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 622,
@@ -4468,7 +4900,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 623,
@@ -4479,7 +4912,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 624,
@@ -4490,27 +4924,32 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 626,
 	"title": "exchange seats",
 	"counter": {
 		"mysql": {
-			"accepted": 2
+			"accepted": 2,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 627,
 	"title": "swap salary",
 	"counter": {
 		"mysql": {
-			"accepted": 2
+			"accepted": 2,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 628,
@@ -4521,7 +4960,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 629,
@@ -4532,7 +4972,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 632,
@@ -4543,7 +4984,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 633,
@@ -4554,7 +4996,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 637,
@@ -4565,7 +5008,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 640,
@@ -4576,7 +5020,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 641,
@@ -4587,7 +5032,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 643,
@@ -4598,7 +5044,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 645,
@@ -4609,7 +5056,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 646,
@@ -4620,7 +5068,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 647,
@@ -4631,7 +5080,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 648,
@@ -4642,7 +5092,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 650,
@@ -4653,7 +5104,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 652,
@@ -4664,7 +5116,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 653,
@@ -4675,7 +5128,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 654,
@@ -4686,7 +5140,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 655,
@@ -4697,7 +5152,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 657,
@@ -4708,7 +5164,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 658,
@@ -4719,7 +5176,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 661,
@@ -4730,7 +5188,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 662,
@@ -4741,7 +5200,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 665,
@@ -4752,7 +5212,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 668,
@@ -4763,7 +5224,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 669,
@@ -4774,7 +5236,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 670,
@@ -4785,7 +5248,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 671,
@@ -4796,7 +5260,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 673,
@@ -4807,7 +5272,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 674,
@@ -4818,7 +5284,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 676,
@@ -4829,7 +5296,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 677,
@@ -4840,7 +5308,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 678,
@@ -4851,7 +5320,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 680,
@@ -4862,7 +5332,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 682,
@@ -4873,7 +5344,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 684,
@@ -4884,7 +5356,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 685,
@@ -4895,7 +5368,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 687,
@@ -4906,7 +5380,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 690,
@@ -4917,7 +5392,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 692,
@@ -4928,7 +5404,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 693,
@@ -4939,7 +5416,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 695,
@@ -4950,7 +5428,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 696,
@@ -4961,7 +5440,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 697,
@@ -4972,7 +5452,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 698,
@@ -4983,7 +5464,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 700,
@@ -4994,7 +5476,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 701,
@@ -5005,7 +5488,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 703,
@@ -5016,7 +5500,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 704,
@@ -5027,7 +5512,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 705,
@@ -5038,7 +5524,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 706,
@@ -5049,7 +5536,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 707,
@@ -5060,7 +5548,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 709,
@@ -5071,7 +5560,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 710,
@@ -5082,7 +5572,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 712,
@@ -5093,7 +5584,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 713,
@@ -5104,7 +5596,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 714,
@@ -5115,7 +5608,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 715,
@@ -5126,7 +5620,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 718,
@@ -5137,7 +5632,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 719,
@@ -5148,7 +5644,8 @@ const statsArr = [
 			"unaccepted": 3
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 720,
@@ -5159,7 +5656,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 721,
@@ -5170,7 +5668,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 724,
@@ -5181,7 +5680,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 725,
@@ -5192,7 +5692,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 726,
@@ -5203,7 +5704,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 728,
@@ -5214,7 +5716,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 729,
@@ -5225,7 +5728,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 731,
@@ -5236,7 +5740,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 732,
@@ -5247,7 +5752,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 733,
@@ -5258,7 +5764,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 735,
@@ -5269,7 +5776,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 738,
@@ -5280,7 +5788,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 739,
@@ -5291,7 +5800,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 740,
@@ -5302,7 +5812,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 743,
@@ -5313,7 +5824,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 744,
@@ -5324,7 +5836,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 745,
@@ -5335,7 +5848,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 746,
@@ -5346,7 +5860,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 747,
@@ -5357,7 +5872,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 748,
@@ -5368,7 +5884,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 752,
@@ -5379,7 +5896,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 762,
@@ -5390,7 +5908,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 763,
@@ -5401,7 +5920,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 764,
@@ -5412,7 +5932,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 766,
@@ -5423,7 +5944,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 767,
@@ -5434,7 +5956,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 771,
@@ -5445,7 +5968,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 775,
@@ -5456,7 +5980,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 779,
@@ -5467,7 +5992,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 783,
@@ -5478,7 +6004,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 784,
@@ -5489,7 +6016,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 785,
@@ -5500,7 +6028,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 786,
@@ -5511,7 +6040,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 787,
@@ -5522,7 +6052,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 788,
@@ -5533,7 +6064,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 791,
@@ -5544,7 +6076,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 792,
@@ -5555,7 +6088,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 793,
@@ -5566,7 +6100,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 795,
@@ -5577,7 +6112,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 796,
@@ -5592,7 +6128,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 797,
@@ -5603,7 +6140,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 799,
@@ -5614,7 +6152,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 802,
@@ -5625,7 +6164,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 804,
@@ -5636,7 +6176,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 805,
@@ -5647,7 +6188,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 806,
@@ -5658,7 +6200,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 807,
@@ -5669,7 +6212,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 811,
@@ -5680,7 +6224,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 812,
@@ -5691,7 +6236,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 814,
@@ -5702,7 +6248,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 817,
@@ -5713,7 +6260,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 819,
@@ -5724,7 +6272,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 820,
@@ -5735,7 +6284,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 821,
@@ -5746,7 +6296,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 825,
@@ -5757,7 +6308,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 826,
@@ -5768,7 +6320,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 827,
@@ -5779,7 +6332,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 828,
@@ -5790,7 +6344,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 829,
@@ -5801,7 +6356,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 830,
@@ -5812,7 +6368,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 832,
@@ -5823,7 +6380,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 834,
@@ -5834,7 +6392,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 836,
@@ -5845,7 +6404,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 838,
@@ -5856,7 +6416,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 839,
@@ -5867,7 +6428,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 840,
@@ -5878,7 +6440,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 841,
@@ -5889,7 +6452,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 844,
@@ -5900,7 +6464,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 845,
@@ -5911,7 +6476,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 846,
@@ -5922,7 +6488,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 848,
@@ -5933,7 +6500,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 851,
@@ -5944,7 +6512,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 852,
@@ -5955,7 +6524,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 853,
@@ -5966,7 +6536,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 857,
@@ -5977,7 +6548,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 859,
@@ -5988,7 +6560,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 860,
@@ -5999,7 +6572,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 861,
@@ -6010,7 +6584,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 862,
@@ -6021,7 +6596,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 863,
@@ -6032,7 +6608,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 865,
@@ -6043,7 +6620,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 866,
@@ -6054,7 +6632,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 867,
@@ -6065,7 +6644,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 868,
@@ -6076,7 +6656,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 869,
@@ -6087,7 +6668,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 870,
@@ -6098,7 +6680,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 872,
@@ -6109,7 +6692,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 873,
@@ -6120,7 +6704,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 874,
@@ -6131,7 +6716,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 875,
@@ -6142,7 +6728,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 876,
@@ -6153,7 +6740,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 877,
@@ -6164,7 +6752,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 878,
@@ -6175,7 +6764,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 881,
@@ -6186,7 +6776,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 883,
@@ -6197,7 +6788,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 884,
@@ -6208,7 +6800,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 885,
@@ -6219,7 +6812,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 886,
@@ -6230,7 +6824,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 888,
@@ -6241,7 +6836,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 889,
@@ -6252,7 +6848,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 890,
@@ -6263,7 +6860,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 892,
@@ -6274,7 +6872,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 893,
@@ -6285,7 +6884,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 895,
@@ -6296,7 +6896,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 896,
@@ -6307,7 +6908,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 897,
@@ -6318,7 +6920,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 898,
@@ -6329,7 +6932,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 900,
@@ -6340,7 +6944,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 901,
@@ -6351,7 +6956,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 904,
@@ -6362,7 +6968,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 905,
@@ -6373,7 +6980,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 907,
@@ -6384,7 +6992,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 908,
@@ -6395,7 +7004,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 912,
@@ -6406,7 +7016,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 915,
@@ -6417,7 +7028,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 916,
@@ -6428,7 +7040,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 917,
@@ -6439,7 +7052,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 918,
@@ -6450,7 +7064,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 919,
@@ -6461,7 +7076,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 921,
@@ -6472,7 +7088,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 922,
@@ -6483,7 +7100,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 923,
@@ -6494,7 +7112,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 924,
@@ -6505,7 +7124,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 925,
@@ -6516,7 +7136,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 926,
@@ -6527,7 +7148,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 928,
@@ -6538,7 +7160,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 929,
@@ -6549,7 +7172,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 930,
@@ -6560,7 +7184,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 931,
@@ -6571,7 +7196,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 933,
@@ -6582,7 +7208,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 934,
@@ -6593,7 +7220,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 935,
@@ -6604,7 +7232,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 937,
@@ -6615,7 +7244,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 938,
@@ -6626,7 +7256,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 939,
@@ -6637,7 +7268,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 941,
@@ -6648,7 +7280,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 944,
@@ -6659,7 +7292,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 945,
@@ -6670,7 +7304,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 946,
@@ -6681,7 +7316,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 947,
@@ -6692,7 +7328,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 949,
@@ -6703,7 +7340,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 950,
@@ -6714,7 +7352,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 951,
@@ -6725,7 +7364,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 952,
@@ -6736,7 +7376,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 953,
@@ -6747,7 +7388,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 958,
@@ -6758,7 +7400,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 959,
@@ -6769,7 +7412,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 961,
@@ -6780,7 +7424,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 962,
@@ -6791,7 +7436,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 963,
@@ -6802,7 +7448,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 965,
@@ -6813,7 +7460,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 966,
@@ -6824,7 +7472,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 970,
@@ -6835,7 +7484,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 971,
@@ -6846,7 +7496,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 973,
@@ -6857,7 +7508,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 974,
@@ -6868,7 +7520,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 976,
@@ -6879,7 +7532,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 977,
@@ -6890,7 +7544,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 978,
@@ -6901,7 +7556,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 979,
@@ -6912,7 +7568,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 981,
@@ -6923,7 +7580,8 @@ const statsArr = [
 			"unaccepted": 3
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 982,
@@ -6934,7 +7592,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 983,
@@ -6945,7 +7604,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 985,
@@ -6956,7 +7616,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 986,
@@ -6967,7 +7628,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 987,
@@ -6978,7 +7640,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 988,
@@ -6989,7 +7652,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 989,
@@ -7000,7 +7664,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 990,
@@ -7011,7 +7676,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 991,
@@ -7022,7 +7688,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 992,
@@ -7033,7 +7700,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 993,
@@ -7044,7 +7712,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 994,
@@ -7055,7 +7724,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 995,
@@ -7066,7 +7736,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 996,
@@ -7077,7 +7748,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 997,
@@ -7088,7 +7760,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 999,
@@ -7099,7 +7772,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1002,
@@ -7110,7 +7784,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1004,
@@ -7121,7 +7796,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1005,
@@ -7132,7 +7808,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1007,
@@ -7143,7 +7820,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1008,
@@ -7154,7 +7832,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1009,
@@ -7165,7 +7844,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1010,
@@ -7176,7 +7856,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1011,
@@ -7187,7 +7868,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1012,
@@ -7198,7 +7880,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 1013,
@@ -7209,7 +7892,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1016,
@@ -7220,7 +7904,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1018,
@@ -7231,7 +7916,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1019,
@@ -7242,7 +7928,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1020,
@@ -7253,7 +7940,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1021,
@@ -7264,7 +7952,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1022,
@@ -7275,7 +7964,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1023,
@@ -7286,7 +7976,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1024,
@@ -7297,7 +7988,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1026,
@@ -7308,7 +8000,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1029,
@@ -7319,7 +8012,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1032,
@@ -7330,7 +8024,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 1034,
@@ -7341,7 +8036,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1035,
@@ -7352,7 +8048,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1037,
@@ -7363,7 +8060,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1038,
@@ -7374,7 +8072,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1041,
@@ -7385,7 +8084,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1042,
@@ -7396,7 +8096,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1043,
@@ -7407,17 +8108,20 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1045,
 	"title": "customers who bought all products",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1046,
@@ -7428,7 +8132,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1047,
@@ -7439,7 +8144,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1048,
@@ -7450,7 +8156,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1049,
@@ -7461,17 +8168,20 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1050,
 	"title": "actors and directors who cooperated atleast three times",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1051,
@@ -7482,7 +8192,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1052,
@@ -7493,7 +8204,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1054,
@@ -7504,7 +8216,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1061,
@@ -7515,27 +8228,32 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1068,
 	"title": "product sales analysis I",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1070,
 	"title": "product sale analysis III",
 	"counter": {
 		"mysql": {
-			"accepted": 2
+			"accepted": 2,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1071,
@@ -7546,7 +8264,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1074,
@@ -7557,17 +8276,20 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1075,
 	"title": "project employees I",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1078,
@@ -7578,7 +8300,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1079,
@@ -7589,7 +8312,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1081,
@@ -7600,17 +8324,20 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1084,
 	"title": "sales analysis III",
 	"counter": {
 		"mysql": {
-			"accepted": 3
+			"accepted": 3,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1089,
@@ -7621,7 +8348,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1090,
@@ -7632,7 +8360,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1091,
@@ -7643,7 +8372,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1093,
@@ -7654,7 +8384,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1094,
@@ -7665,7 +8396,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1103,
@@ -7676,7 +8408,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1104,
@@ -7687,7 +8420,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1105,
@@ -7698,7 +8432,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1106,
@@ -7709,7 +8444,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1108,
@@ -7720,7 +8456,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1109,
@@ -7731,7 +8468,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1110,
@@ -7742,7 +8480,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1122,
@@ -7753,7 +8492,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1123,
@@ -7764,7 +8504,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1124,
@@ -7775,7 +8516,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1128,
@@ -7786,7 +8528,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1129,
@@ -7797,7 +8540,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1131,
@@ -7808,7 +8552,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 1137,
@@ -7819,7 +8564,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1138,
@@ -7830,7 +8576,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1140,
@@ -7841,17 +8588,20 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1141,
 	"title": "user activity for the past 30 days I",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1143,
@@ -7862,7 +8612,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1146,
@@ -7873,17 +8624,20 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1148,
 	"title": "article views I",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1154,
@@ -7898,7 +8652,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1155,
@@ -7909,7 +8664,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1157,
@@ -7920,17 +8676,20 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 1158,
 	"title": "market analysis I",
 	"counter": {
 		"mysql": {
-			"accepted": 2
+			"accepted": 2,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1160,
@@ -7941,7 +8700,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1161,
@@ -7952,7 +8712,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1162,
@@ -7963,17 +8724,20 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1164,
 	"title": "product price at a given date",
 	"counter": {
 		"mysql": {
-			"accepted": 2
+			"accepted": 2,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1169,
@@ -7984,7 +8748,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1170,
@@ -7995,7 +8760,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1171,
@@ -8006,27 +8772,32 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1173,
 	"title": "immediate food delivery I",
 	"counter": {
 		"mysql": {
-			"accepted": 3
+			"accepted": 3,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1174,
 	"title": "immediate food delivery II",
 	"counter": {
 		"mysql": {
-			"accepted": 2
+			"accepted": 2,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1175,
@@ -8037,7 +8808,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1177,
@@ -8048,17 +8820,20 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1179,
 	"title": "reformat department table",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1184,
@@ -8069,7 +8844,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1185,
@@ -8080,7 +8856,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1189,
@@ -8091,7 +8868,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1190,
@@ -8102,7 +8880,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1192,
@@ -8113,17 +8892,20 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1193,
 	"title": "monthly transactions I",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1200,
@@ -8134,7 +8916,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1201,
@@ -8145,7 +8928,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 1202,
@@ -8156,7 +8940,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1206,
@@ -8167,7 +8952,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1207,
@@ -8178,7 +8964,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1208,
@@ -8189,7 +8976,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1209,
@@ -8200,17 +8988,20 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1211,
 	"title": "queries quality and percentage",
 	"counter": {
 		"mysql": {
-			"accepted": 2
+			"accepted": 2,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1217,
@@ -8221,7 +9012,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1218,
@@ -8232,7 +9024,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1219,
@@ -8243,7 +9036,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1220,
@@ -8254,7 +9048,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1221,
@@ -8265,7 +9060,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1222,
@@ -8276,7 +9072,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1232,
@@ -8287,7 +9084,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1233,
@@ -8298,7 +9096,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1235,
@@ -8309,7 +9108,8 @@ const statsArr = [
 			"unaccepted": 3
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1239,
@@ -8320,7 +9120,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1248,
@@ -8331,7 +9132,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1249,
@@ -8342,17 +9144,20 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1251,
 	"title": "average selling price",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1252,
@@ -8363,7 +9168,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1254,
@@ -8374,7 +9180,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1255,
@@ -8385,7 +9192,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1260,
@@ -8396,7 +9204,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1261,
@@ -8407,7 +9216,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1266,
@@ -8418,7 +9228,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1267,
@@ -8429,7 +9240,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1268,
@@ -8440,7 +9252,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1275,
@@ -8451,7 +9264,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1277,
@@ -8462,17 +9276,20 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1280,
 	"title": "students and examinations",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1281,
@@ -8483,7 +9300,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1282,
@@ -8494,7 +9312,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1283,
@@ -8505,7 +9324,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1287,
@@ -8516,7 +9336,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1289,
@@ -8527,7 +9348,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1290,
@@ -8538,7 +9360,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1291,
@@ -8549,7 +9372,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1295,
@@ -8564,7 +9388,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1296,
@@ -8575,7 +9400,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1299,
@@ -8586,7 +9412,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1302,
@@ -8597,7 +9424,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1304,
@@ -8608,7 +9436,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1305,
@@ -8619,7 +9448,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1309,
@@ -8630,7 +9460,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1310,
@@ -8641,7 +9472,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1311,
@@ -8652,7 +9484,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1314,
@@ -8663,7 +9496,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1315,
@@ -8674,7 +9508,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1316,
@@ -8685,7 +9520,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 1317,
@@ -8696,7 +9532,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1318,
@@ -8707,7 +9544,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1319,
@@ -8718,7 +9556,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1323,
@@ -8729,7 +9568,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1324,
@@ -8740,7 +9580,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1325,
@@ -8751,17 +9592,20 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1327,
 	"title": "list the products ordered in a period",
 	"counter": {
 		"mysql": {
-			"accepted": 2
+			"accepted": 2,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1329,
@@ -8772,7 +9616,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1331,
@@ -8783,7 +9628,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1333,
@@ -8794,7 +9640,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1334,
@@ -8805,7 +9652,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1337,
@@ -8816,7 +9664,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1338,
@@ -8827,17 +9676,20 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1341,
 	"title": "movie rating",
 	"counter": {
 		"mysql": {
-			"accepted": 2
+			"accepted": 2,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1342,
@@ -8848,7 +9700,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1344,
@@ -8859,7 +9712,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1346,
@@ -8870,7 +9724,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1347,
@@ -8881,7 +9736,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1348,
@@ -8892,7 +9748,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1351,
@@ -8903,7 +9760,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1352,
@@ -8914,7 +9772,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1356,
@@ -8925,7 +9784,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1357,
@@ -8936,7 +9796,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1359,
@@ -8947,7 +9808,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1360,
@@ -8958,7 +9820,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1361,
@@ -8969,7 +9832,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1362,
@@ -8980,7 +9844,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1365,
@@ -8991,7 +9856,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1366,
@@ -9002,7 +9868,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1367,
@@ -9013,7 +9880,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1370,
@@ -9024,7 +9892,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1371,
@@ -9035,7 +9904,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1373,
@@ -9046,7 +9916,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1374,
@@ -9057,7 +9928,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1376,
@@ -9068,17 +9940,20 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1378,
 	"title": "replace employee id with the unique identifier",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1379,
@@ -9089,7 +9964,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1380,
@@ -9100,7 +9976,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1381,
@@ -9111,7 +9988,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1382,
@@ -9122,7 +10000,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1385,
@@ -9133,7 +10012,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1386,
@@ -9144,7 +10024,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1387,
@@ -9155,7 +10036,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1389,
@@ -9166,7 +10048,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1392,
@@ -9177,17 +10060,20 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 1393,
 	"title": "capital gain loss",
 	"counter": {
 		"mysql": {
-			"accepted": 2
+			"accepted": 2,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1394,
@@ -9198,7 +10084,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1395,
@@ -9209,7 +10096,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1396,
@@ -9220,7 +10108,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1399,
@@ -9231,7 +10120,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1400,
@@ -9242,7 +10132,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1401,
@@ -9253,7 +10144,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1402,
@@ -9264,7 +10156,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1403,
@@ -9275,7 +10168,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1404,
@@ -9286,7 +10180,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1405,
@@ -9297,7 +10192,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1406,
@@ -9308,17 +10204,20 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1407,
 	"title": "top travellers",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1408,
@@ -9329,7 +10228,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1413,
@@ -9340,7 +10240,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1414,
@@ -9351,7 +10252,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1417,
@@ -9362,7 +10264,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1422,
@@ -9373,7 +10276,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1424,
@@ -9384,7 +10288,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1431,
@@ -9395,7 +10300,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1432,
@@ -9406,7 +10312,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1433,
@@ -9417,7 +10324,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1436,
@@ -9428,7 +10336,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1437,
@@ -9439,7 +10348,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1438,
@@ -9450,7 +10360,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1441,
@@ -9461,7 +10372,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1442,
@@ -9472,7 +10384,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1443,
@@ -9483,7 +10396,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1446,
@@ -9494,7 +10408,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1447,
@@ -9505,7 +10420,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1448,
@@ -9516,7 +10432,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1450,
@@ -9527,7 +10444,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1451,
@@ -9538,7 +10456,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1455,
@@ -9553,7 +10472,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1456,
@@ -9564,7 +10484,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1457,
@@ -9575,7 +10496,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1460,
@@ -9586,7 +10508,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1461,
@@ -9597,7 +10520,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1462,
@@ -9608,7 +10532,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1463,
@@ -9619,7 +10544,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1464,
@@ -9630,7 +10556,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1466,
@@ -9641,7 +10568,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1470,
@@ -9652,7 +10580,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1472,
@@ -9663,7 +10592,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1475,
@@ -9674,7 +10604,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1476,
@@ -9685,7 +10616,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1480,
@@ -9696,7 +10628,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1481,
@@ -9707,7 +10640,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1482,
@@ -9718,17 +10652,20 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1484,
 	"title": "group sold products by the date",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1486,
@@ -9739,7 +10676,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1491,
@@ -9750,7 +10688,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1492,
@@ -9761,7 +10700,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1493,
@@ -9772,7 +10712,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1496,
@@ -9783,7 +10724,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1497,
@@ -9794,7 +10736,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1502,
@@ -9805,7 +10748,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1504,
@@ -9816,7 +10760,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1507,
@@ -9831,7 +10776,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1508,
@@ -9842,7 +10788,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1509,
@@ -9853,7 +10800,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1512,
@@ -9864,7 +10812,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1513,
@@ -9875,7 +10824,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1514,
@@ -9886,17 +10836,20 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1517,
 	"title": "find users with valid emails",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1518,
@@ -9907,7 +10860,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1523,
@@ -9918,7 +10872,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1524,
@@ -9929,17 +10884,20 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1527,
 	"title": "patients with a condition",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1528,
@@ -9954,7 +10912,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1530,
@@ -9965,7 +10924,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1534,
@@ -9976,7 +10936,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1535,
@@ -9987,7 +10948,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1539,
@@ -9998,7 +10960,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1544,
@@ -10009,7 +10972,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1545,
@@ -10020,7 +10984,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1550,
@@ -10031,7 +10996,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1551,
@@ -10042,7 +11008,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1552,
@@ -10053,7 +11020,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1556,
@@ -10068,7 +11036,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1557,
@@ -10079,7 +11048,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1558,
@@ -10090,7 +11060,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1559,
@@ -10101,7 +11072,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1560,
@@ -10112,7 +11084,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1561,
@@ -10127,7 +11100,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1562,
@@ -10138,7 +11112,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 1566,
@@ -10149,7 +11124,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1568,
@@ -10160,7 +11136,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1572,
@@ -10171,7 +11148,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1576,
@@ -10182,7 +11160,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1578,
@@ -10193,7 +11172,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1579,
@@ -10204,17 +11184,20 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1581,
 	"title": "customers who visited but did not make any transactions",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1582,
@@ -10225,7 +11208,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1584,
@@ -10236,17 +11220,20 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1587,
 	"title": "bank account summary II",
 	"counter": {
 		"mysql": {
-			"accepted": 2
+			"accepted": 2,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1588,
@@ -10257,7 +11244,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1590,
@@ -10268,7 +11256,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1592,
@@ -10279,7 +11268,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1593,
@@ -10290,7 +11280,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1598,
@@ -10301,7 +11292,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1603,
@@ -10312,7 +11304,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1605,
@@ -10323,7 +11316,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1608,
@@ -10334,7 +11328,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1609,
@@ -10345,7 +11340,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1614,
@@ -10356,7 +11352,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1615,
@@ -10367,7 +11364,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1620,
@@ -10378,7 +11376,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1624,
@@ -10389,7 +11388,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1626,
@@ -10400,7 +11400,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1627,
@@ -10411,7 +11412,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1629,
@@ -10422,7 +11424,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1630,
@@ -10433,7 +11436,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1631,
@@ -10444,17 +11448,20 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1633,
 	"title": "percentge of users attended a contest",
 	"counter": {
 		"mysql": {
-			"accepted": 2
+			"accepted": 2,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1636,
@@ -10465,7 +11472,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1637,
@@ -10476,7 +11484,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1640,
@@ -10487,7 +11496,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1641,
@@ -10498,7 +11508,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1642,
@@ -10509,7 +11520,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1646,
@@ -10520,7 +11532,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1647,
@@ -10531,7 +11544,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1652,
@@ -10542,7 +11556,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1653,
@@ -10553,7 +11568,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1656,
@@ -10564,7 +11580,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1657,
@@ -10575,7 +11592,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1658,
@@ -10586,17 +11604,20 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1661,
 	"title": "average time of process per machine",
 	"counter": {
 		"mysql": {
-			"accepted": 3
+			"accepted": 3,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1662,
@@ -10607,17 +11628,20 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1667,
 	"title": "fix names in a table",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1668,
@@ -10628,7 +11652,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1669,
@@ -10639,7 +11664,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1670,
@@ -10650,7 +11676,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1671,
@@ -10661,7 +11688,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1672,
@@ -10672,7 +11700,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1678,
@@ -10683,7 +11712,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1679,
@@ -10694,17 +11724,20 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1683,
 	"title": "invalid tweets",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1684,
@@ -10715,7 +11748,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1685,
@@ -10726,7 +11760,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1688,
@@ -10737,17 +11772,20 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1693,
 	"title": "daily leads and partners",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1694,
@@ -10758,7 +11796,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1697,
@@ -10769,7 +11808,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1700,
@@ -10780,7 +11820,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1701,
@@ -10791,7 +11832,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1704,
@@ -10806,7 +11848,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1706,
@@ -10817,7 +11860,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1710,
@@ -10828,7 +11872,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1716,
@@ -10839,7 +11884,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1717,
@@ -10850,7 +11896,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1720,
@@ -10861,7 +11908,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1721,
@@ -10872,7 +11920,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1725,
@@ -10883,7 +11932,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1726,
@@ -10894,27 +11944,32 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1729,
 	"title": "find followers count",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1731,
 	"title": "the number of employees which report to each employee",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1732,
@@ -10925,7 +11980,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1736,
@@ -10936,17 +11992,20 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1741,
 	"title": "find total time spent by each employee",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1742,
@@ -10957,7 +12016,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1743,
@@ -10968,7 +12028,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1748,
@@ -10979,7 +12040,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1750,
@@ -10990,7 +12052,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1752,
@@ -11001,7 +12064,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1753,
@@ -11012,17 +12076,20 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1757,
 	"title": "recyclable and low fat products",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1758,
@@ -11033,7 +12100,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1760,
@@ -11044,7 +12112,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1761,
@@ -11055,7 +12124,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1763,
@@ -11066,7 +12136,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1765,
@@ -11077,7 +12148,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1768,
@@ -11088,7 +12160,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1769,
@@ -11099,7 +12172,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1773,
@@ -11110,7 +12184,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1779,
@@ -11121,7 +12196,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1780,
@@ -11132,7 +12208,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1784,
@@ -11143,17 +12220,20 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1789,
 	"title": "primary department for each employee",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1790,
@@ -11164,7 +12244,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1791,
@@ -11175,7 +12256,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1793,
@@ -11186,17 +12268,20 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1795,
 	"title": "rearrange products table",
 	"counter": {
 		"mysql": {
-			"accepted": 2
+			"accepted": 2,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1796,
@@ -11207,7 +12292,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1797,
@@ -11218,7 +12304,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1798,
@@ -11229,7 +12316,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1800,
@@ -11240,7 +12328,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1803,
@@ -11251,7 +12340,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 1805,
@@ -11262,7 +12352,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1812,
@@ -11273,7 +12364,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1813,
@@ -11284,7 +12376,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1814,
@@ -11295,7 +12388,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1816,
@@ -11306,7 +12400,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1822,
@@ -11317,7 +12412,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1823,
@@ -11328,7 +12424,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1825,
@@ -11339,7 +12436,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 1827,
@@ -11350,7 +12448,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1828,
@@ -11361,7 +12460,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1832,
@@ -11372,7 +12472,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1833,
@@ -11383,7 +12484,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1834,
@@ -11394,7 +12496,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1837,
@@ -11405,7 +12508,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1838,
@@ -11416,7 +12520,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1844,
@@ -11427,7 +12532,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1845,
@@ -11438,7 +12544,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1846,
@@ -11449,7 +12556,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1848,
@@ -11460,7 +12568,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1851,
@@ -11471,7 +12580,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1854,
@@ -11482,7 +12592,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1857,
@@ -11493,7 +12604,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1859,
@@ -11504,7 +12616,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1863,
@@ -11515,7 +12628,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1865,
@@ -11526,7 +12640,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1869,
@@ -11537,7 +12652,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1870,
@@ -11548,17 +12664,20 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1873,
 	"title": "calculate special bonus",
 	"counter": {
 		"mysql": {
-			"accepted": 2
+			"accepted": 2,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1876,
@@ -11569,7 +12688,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1877,
@@ -11580,7 +12700,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1880,
@@ -11591,7 +12712,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1881,
@@ -11602,7 +12724,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1886,
@@ -11613,7 +12736,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1887,
@@ -11624,17 +12748,20 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1890,
 	"title": "the latest login in 2020",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1893,
@@ -11645,7 +12772,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1894,
@@ -11656,7 +12784,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1897,
@@ -11667,7 +12796,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1899,
@@ -11678,7 +12808,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1903,
@@ -11689,7 +12820,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1905,
@@ -11700,17 +12832,20 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1907,
 	"title": "count salary categories",
 	"counter": {
 		"mysql": {
-			"accepted": 2
+			"accepted": 2,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1909,
@@ -11721,7 +12856,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1911,
@@ -11732,7 +12868,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1912,
@@ -11743,7 +12880,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1913,
@@ -11754,7 +12892,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1915,
@@ -11765,7 +12904,8 @@ const statsArr = [
 			"unaccepted": 3
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1916,
@@ -11776,7 +12916,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1920,
@@ -11791,7 +12932,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1925,
@@ -11802,7 +12944,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1926,
@@ -11813,7 +12956,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1929,
@@ -11824,7 +12968,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1930,
@@ -11835,17 +12980,20 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1934,
 	"title": "confirmation rate",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1935,
@@ -11856,7 +13004,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1937,
@@ -11867,7 +13016,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1941,
@@ -11878,7 +13028,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1942,
@@ -11889,7 +13040,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1945,
@@ -11900,7 +13052,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1952,
@@ -11911,7 +13064,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1957,
@@ -11926,7 +13080,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1961,
@@ -11937,7 +13092,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1962,
@@ -11948,7 +13104,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1963,
@@ -11959,17 +13116,20 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1965,
 	"title": "employees with missing information",
 	"counter": {
 		"mysql": {
-			"accepted": 2
+			"accepted": 2,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1967,
@@ -11980,7 +13140,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1968,
@@ -11991,7 +13152,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1971,
@@ -12002,7 +13164,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1974,
@@ -12013,7 +13176,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1976,
@@ -12024,17 +13188,20 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1978,
 	"title": "employees whose manager left the company",
 	"counter": {
 		"mysql": {
-			"accepted": 2
+			"accepted": 2,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 1979,
@@ -12045,7 +13212,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1980,
@@ -12056,7 +13224,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1984,
@@ -12067,7 +13236,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1985,
@@ -12078,7 +13248,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1991,
@@ -12089,7 +13260,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1992,
@@ -12100,7 +13272,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1995,
@@ -12111,7 +13284,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 1996,
@@ -12122,7 +13296,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2000,
@@ -12133,7 +13308,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2001,
@@ -12144,7 +13320,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2002,
@@ -12155,7 +13332,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2006,
@@ -12166,7 +13344,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2007,
@@ -12177,7 +13356,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2009,
@@ -12188,7 +13368,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 2011,
@@ -12199,7 +13380,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2013,
@@ -12210,7 +13392,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2016,
@@ -12221,7 +13404,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2017,
@@ -12232,7 +13416,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2022,
@@ -12243,7 +13428,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2024,
@@ -12254,7 +13440,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2027,
@@ -12265,7 +13452,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2028,
@@ -12276,7 +13464,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2032,
@@ -12287,7 +13476,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2033,
@@ -12298,7 +13488,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2034,
@@ -12309,7 +13500,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2037,
@@ -12320,7 +13512,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2038,
@@ -12331,7 +13524,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2042,
@@ -12342,7 +13536,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2043,
@@ -12353,7 +13548,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2044,
@@ -12364,7 +13560,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2045,
@@ -12375,7 +13572,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2047,
@@ -12386,7 +13584,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2048,
@@ -12397,7 +13596,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2049,
@@ -12408,7 +13608,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2053,
@@ -12419,7 +13620,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2054,
@@ -12430,7 +13632,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2057,
@@ -12441,7 +13644,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2058,
@@ -12452,7 +13656,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2062,
@@ -12463,7 +13668,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2063,
@@ -12474,7 +13680,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2064,
@@ -12485,7 +13692,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2065,
@@ -12496,7 +13704,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2068,
@@ -12507,7 +13716,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2073,
@@ -12518,7 +13728,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2078,
@@ -12529,7 +13740,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2079,
@@ -12540,7 +13752,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2080,
@@ -12551,17 +13764,20 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2082,
 	"title": "the number of rich customers",
 	"counter": {
 		"mysql": {
-			"accepted": 2
+			"accepted": 2,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 2085,
@@ -12572,7 +13788,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2089,
@@ -12583,7 +13800,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2090,
@@ -12594,7 +13812,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2092,
@@ -12605,7 +13824,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2094,
@@ -12616,7 +13836,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2095,
@@ -12627,7 +13848,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2096,
@@ -12638,7 +13860,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2099,
@@ -12649,7 +13872,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2100,
@@ -12660,7 +13884,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2101,
@@ -12671,7 +13896,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2102,
@@ -12682,7 +13908,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 2103,
@@ -12693,7 +13920,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2104,
@@ -12704,7 +13932,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2108,
@@ -12715,7 +13944,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2109,
@@ -12730,7 +13960,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2110,
@@ -12741,7 +13972,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2114,
@@ -12752,7 +13984,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2119,
@@ -12763,7 +13996,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2120,
@@ -12774,7 +14008,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2124,
@@ -12785,7 +14020,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2125,
@@ -12796,7 +14032,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2126,
@@ -12807,7 +14044,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2129,
@@ -12818,7 +14056,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2130,
@@ -12829,7 +14068,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2133,
@@ -12840,7 +14080,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2134,
@@ -12851,7 +14092,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2138,
@@ -12862,7 +14104,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2140,
@@ -12873,7 +14116,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2144,
@@ -12884,7 +14128,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2147,
@@ -12895,7 +14140,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2148,
@@ -12906,7 +14152,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2149,
@@ -12917,7 +14164,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2154,
@@ -12928,7 +14176,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2160,
@@ -12939,7 +14188,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2161,
@@ -12950,7 +14200,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2164,
@@ -12961,7 +14212,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2165,
@@ -12972,7 +14224,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2166,
@@ -12983,7 +14236,8 @@ const statsArr = [
 			"unaccepted": 3
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2169,
@@ -12994,7 +14248,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2176,
@@ -13005,7 +14260,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2177,
@@ -13016,7 +14272,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2180,
@@ -13027,7 +14284,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2181,
@@ -13038,7 +14296,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2183,
@@ -13049,7 +14308,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 2185,
@@ -13064,7 +14324,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2190,
@@ -13075,7 +14336,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2191,
@@ -13086,7 +14348,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2192,
@@ -13097,7 +14360,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2194,
@@ -13108,7 +14372,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2196,
@@ -13119,7 +14384,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2200,
@@ -13130,7 +14396,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2206,
@@ -13141,7 +14408,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2210,
@@ -13152,7 +14420,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2211,
@@ -13163,7 +14432,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2215,
@@ -13174,7 +14444,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2218,
@@ -13185,7 +14456,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 2220,
@@ -13196,7 +14468,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2221,
@@ -13207,7 +14480,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2224,
@@ -13218,7 +14492,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2226,
@@ -13229,7 +14504,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2231,
@@ -13240,7 +14516,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2235,
@@ -13251,7 +14528,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2236,
@@ -13262,7 +14540,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2239,
@@ -13273,7 +14552,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2243,
@@ -13284,7 +14564,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2244,
@@ -13295,7 +14576,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2246,
@@ -13306,7 +14588,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 2248,
@@ -13317,7 +14600,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2249,
@@ -13328,7 +14612,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2255,
@@ -13339,7 +14624,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2257,
@@ -13350,7 +14636,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2259,
@@ -13361,7 +14648,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2261,
@@ -13372,7 +14660,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2264,
@@ -13383,7 +14672,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2265,
@@ -13394,7 +14684,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2269,
@@ -13405,7 +14696,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2270,
@@ -13416,7 +14708,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2273,
@@ -13427,7 +14720,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2275,
@@ -13438,7 +14732,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2276,
@@ -13449,7 +14744,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 2278,
@@ -13460,7 +14756,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2279,
@@ -13471,7 +14768,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2280,
@@ -13482,7 +14780,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2283,
@@ -13493,7 +14792,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2284,
@@ -13504,7 +14804,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2285,
@@ -13515,7 +14816,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2287,
@@ -13526,7 +14828,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2293,
@@ -13537,7 +14840,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2295,
@@ -13548,7 +14852,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2299,
@@ -13559,7 +14864,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2300,
@@ -13570,7 +14876,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2302,
@@ -13581,7 +14888,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2303,
@@ -13592,7 +14900,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2306,
@@ -13603,7 +14912,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 2309,
@@ -13614,7 +14924,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2315,
@@ -13625,7 +14936,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2316,
@@ -13636,7 +14948,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2319,
@@ -13647,7 +14960,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2325,
@@ -13658,7 +14972,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2326,
@@ -13669,7 +14984,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2328,
@@ -13680,7 +14996,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2331,
@@ -13691,7 +15008,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2333,
@@ -13702,7 +15020,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2335,
@@ -13713,7 +15032,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2336,
@@ -13724,7 +15044,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2337,
@@ -13735,7 +15056,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2341,
@@ -13746,7 +15068,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2342,
@@ -13757,7 +15080,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2343,
@@ -13768,7 +15092,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2348,
@@ -13779,7 +15104,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2349,
@@ -13790,7 +15116,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2351,
@@ -13801,7 +15128,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2352,
@@ -13812,7 +15140,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2353,
@@ -13823,17 +15152,20 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2356,
 	"title": "number of unique subjects taught by each teacher",
 	"counter": {
 		"mysql": {
-			"accepted": 2
+			"accepted": 2,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 2357,
@@ -13844,7 +15176,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2359,
@@ -13855,7 +15188,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2360,
@@ -13866,7 +15200,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 2363,
@@ -13877,7 +15212,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2364,
@@ -13888,7 +15224,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2367,
@@ -13899,7 +15236,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2368,
@@ -13910,7 +15248,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2369,
@@ -13921,7 +15260,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2370,
@@ -13932,7 +15272,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2373,
@@ -13943,7 +15284,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2374,
@@ -13954,7 +15296,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2376,
@@ -13965,7 +15308,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 2380,
@@ -13976,7 +15320,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2381,
@@ -13987,7 +15332,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2383,
@@ -13998,7 +15344,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2385,
@@ -14009,7 +15356,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2389,
@@ -14020,7 +15368,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2390,
@@ -14031,7 +15380,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2391,
@@ -14042,7 +15392,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2392,
@@ -14053,7 +15404,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2395,
@@ -14064,7 +15416,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2396,
@@ -14075,7 +15428,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2399,
@@ -14086,7 +15440,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2404,
@@ -14097,7 +15452,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2405,
@@ -14108,7 +15464,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2406,
@@ -14119,7 +15476,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2407,
@@ -14130,7 +15488,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 2409,
@@ -14141,7 +15500,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2410,
@@ -14152,7 +15512,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2413,
@@ -14163,7 +15524,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2415,
@@ -14174,7 +15536,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2416,
@@ -14185,7 +15548,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2418,
@@ -14196,7 +15560,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2419,
@@ -14207,7 +15572,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2420,
@@ -14218,7 +15584,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2423,
@@ -14229,7 +15596,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2424,
@@ -14240,7 +15608,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2426,
@@ -14251,7 +15620,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 2427,
@@ -14262,7 +15632,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2428,
@@ -14273,7 +15644,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2432,
@@ -14284,7 +15656,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2439,
@@ -14295,7 +15668,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2441,
@@ -14306,7 +15680,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2442,
@@ -14317,7 +15692,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2444,
@@ -14328,7 +15704,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2446,
@@ -14339,7 +15716,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2448,
@@ -14350,7 +15728,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2455,
@@ -14361,7 +15740,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2456,
@@ -14372,7 +15752,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2458,
@@ -14383,7 +15764,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2460,
@@ -14394,7 +15776,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2465,
@@ -14405,7 +15788,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2466,
@@ -14416,7 +15800,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2469,
@@ -14427,7 +15812,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2471,
@@ -14438,7 +15824,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2475,
@@ -14449,7 +15836,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2476,
@@ -14460,7 +15848,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2481,
@@ -14471,7 +15860,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2482,
@@ -14482,7 +15872,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2483,
@@ -14493,7 +15884,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2485,
@@ -14504,7 +15896,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2486,
@@ -14515,7 +15908,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2487,
@@ -14526,7 +15920,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2490,
@@ -14541,7 +15936,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2491,
@@ -14552,7 +15948,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2492,
@@ -14563,7 +15960,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2496,
@@ -14574,7 +15972,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2497,
@@ -14585,7 +15984,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2500,
@@ -14596,7 +15996,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2501,
@@ -14607,7 +16008,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2502,
@@ -14618,7 +16020,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2506,
@@ -14629,7 +16032,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2515,
@@ -14640,7 +16044,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2520,
@@ -14651,7 +16056,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2521,
@@ -14662,7 +16068,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2523,
@@ -14673,7 +16080,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2525,
@@ -14684,7 +16092,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2526,
@@ -14695,7 +16104,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2529,
@@ -14706,7 +16116,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2530,
@@ -14717,7 +16128,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2535,
@@ -14728,7 +16140,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2536,
@@ -14739,7 +16152,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2540,
@@ -14750,7 +16164,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2544,
@@ -14761,7 +16176,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2545,
@@ -14772,7 +16188,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2552,
@@ -14783,7 +16200,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 2553,
@@ -14794,7 +16212,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2554,
@@ -14805,7 +16224,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2558,
@@ -14816,7 +16236,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2559,
@@ -14827,7 +16248,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2562,
@@ -14838,7 +16260,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2563,
@@ -14849,7 +16272,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 2564,
@@ -14860,7 +16284,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2566,
@@ -14871,7 +16296,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2570,
@@ -14882,7 +16308,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2574,
@@ -14893,7 +16320,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2578,
@@ -14904,7 +16332,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2579,
@@ -14915,7 +16344,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2582,
@@ -14926,7 +16356,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2583,
@@ -14937,7 +16368,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2586,
@@ -14948,7 +16380,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2593,
@@ -14959,7 +16392,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2595,
@@ -14970,7 +16404,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2597,
@@ -14981,7 +16416,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2600,
@@ -14992,7 +16428,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2605,
@@ -15003,7 +16440,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2609,
@@ -15014,7 +16452,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2610,
@@ -15025,7 +16464,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2611,
@@ -15036,7 +16476,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2614,
@@ -15047,7 +16488,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2618,
@@ -15058,7 +16500,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2619,
@@ -15069,7 +16512,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2620,
@@ -15080,7 +16524,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2621,
@@ -15091,7 +16536,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2622,
@@ -15102,7 +16548,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2623,
@@ -15113,7 +16560,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2624,
@@ -15124,7 +16572,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2625,
@@ -15135,7 +16584,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2626,
@@ -15146,7 +16596,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2627,
@@ -15157,7 +16608,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2629,
@@ -15168,7 +16620,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2631,
@@ -15179,7 +16632,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2632,
@@ -15190,7 +16644,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2634,
@@ -15201,7 +16656,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2635,
@@ -15212,7 +16668,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2637,
@@ -15223,7 +16680,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2639,
@@ -15234,7 +16692,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2640,
@@ -15245,7 +16704,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2641,
@@ -15256,7 +16716,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2642,
@@ -15267,7 +16728,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2643,
@@ -15278,7 +16740,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2644,
@@ -15289,7 +16752,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2648,
@@ -15300,7 +16764,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2649,
@@ -15311,7 +16776,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2651,
@@ -15326,7 +16792,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2652,
@@ -15337,7 +16804,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2656,
@@ -15348,7 +16816,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2657,
@@ -15359,7 +16828,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2658,
@@ -15370,7 +16840,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2661,
@@ -15381,7 +16852,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2665,
@@ -15392,7 +16864,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2666,
@@ -15403,7 +16876,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2667,
@@ -15414,7 +16888,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2670,
@@ -15425,7 +16900,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2671,
@@ -15436,7 +16912,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2672,
@@ -15447,7 +16924,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2677,
@@ -15458,7 +16936,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2678,
@@ -15469,7 +16948,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2679,
@@ -15480,7 +16960,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2684,
@@ -15491,7 +16972,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2685,
@@ -15502,7 +16984,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2693,
@@ -15513,7 +16996,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2694,
@@ -15524,7 +17008,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2695,
@@ -15535,7 +17020,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2696,
@@ -15550,7 +17036,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2697,
@@ -15561,7 +17048,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2699,
@@ -15572,7 +17060,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2703,
@@ -15583,7 +17072,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2704,
@@ -15594,7 +17084,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2705,
@@ -15605,7 +17096,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2706,
@@ -15616,7 +17108,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2707,
@@ -15627,7 +17120,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2709,
@@ -15638,7 +17132,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 2710,
@@ -15649,7 +17144,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2711,
@@ -15660,7 +17156,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2715,
@@ -15671,7 +17168,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2716,
@@ -15682,7 +17180,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2718,
@@ -15693,7 +17192,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2721,
@@ -15704,7 +17204,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2722,
@@ -15715,7 +17216,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2723,
@@ -15726,7 +17228,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2724,
@@ -15737,7 +17240,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2725,
@@ -15748,7 +17252,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2726,
@@ -15759,7 +17264,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2727,
@@ -15770,7 +17276,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2729,
@@ -15781,7 +17288,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2733,
@@ -15792,7 +17300,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2736,
@@ -15803,7 +17312,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 2739,
@@ -15814,7 +17324,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2740,
@@ -15825,7 +17336,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2744,
@@ -15836,7 +17348,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2747,
@@ -15847,7 +17360,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 2748,
@@ -15858,7 +17372,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2751,
@@ -15869,7 +17384,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2761,
@@ -15880,7 +17396,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2762,
@@ -15891,7 +17408,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2765,
@@ -15902,7 +17420,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2769,
@@ -15913,7 +17432,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2778,
@@ -15924,7 +17444,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2779,
@@ -15935,7 +17456,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2780,
@@ -15946,7 +17468,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2784,
@@ -15957,7 +17480,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2785,
@@ -15968,7 +17492,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2788,
@@ -15979,7 +17504,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2791,
@@ -15990,7 +17516,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2798,
@@ -16001,7 +17528,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2799,
@@ -16012,7 +17540,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2806,
@@ -16023,7 +17552,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2807,
@@ -16034,7 +17564,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2810,
@@ -16045,7 +17576,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2812,
@@ -16056,7 +17588,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2815,
@@ -16067,7 +17600,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2816,
@@ -16078,7 +17612,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2817,
@@ -16089,7 +17624,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2824,
@@ -16100,7 +17636,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2825,
@@ -16111,7 +17648,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2828,
@@ -16122,7 +17660,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2833,
@@ -16133,7 +17672,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2840,
@@ -16144,7 +17684,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2843,
@@ -16155,7 +17696,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2848,
@@ -16166,7 +17708,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2855,
@@ -16177,7 +17720,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2857,
@@ -16188,7 +17732,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 2858,
@@ -16199,7 +17744,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 2859,
@@ -16210,7 +17756,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2864,
@@ -16221,7 +17768,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2867,
@@ -16232,7 +17780,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2869,
@@ -16243,7 +17792,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2870,
@@ -16254,7 +17804,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2873,
@@ -16265,7 +17816,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2874,
@@ -16276,7 +17828,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2876,
@@ -16287,7 +17840,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 2894,
@@ -16298,7 +17852,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2895,
@@ -16309,7 +17864,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2903,
@@ -16320,7 +17876,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2905,
@@ -16331,7 +17888,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2908,
@@ -16342,7 +17900,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2909,
@@ -16353,7 +17912,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2913,
@@ -16364,7 +17924,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2914,
@@ -16379,7 +17940,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2917,
@@ -16390,7 +17952,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2918,
@@ -16401,7 +17964,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2923,
@@ -16412,7 +17976,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2924,
@@ -16423,7 +17988,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2928,
@@ -16434,7 +18000,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2932,
@@ -16445,7 +18012,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2933,
@@ -16456,7 +18024,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2935,
@@ -16467,7 +18036,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 2937,
@@ -16478,7 +18048,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2938,
@@ -16489,7 +18060,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2942,
@@ -16500,7 +18072,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2946,
@@ -16511,7 +18084,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2947,
@@ -16522,7 +18096,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2951,
@@ -16533,7 +18108,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2952,
@@ -16544,7 +18120,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2956,
@@ -16555,7 +18132,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2958,
@@ -16566,7 +18144,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2960,
@@ -16577,7 +18156,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2962,
@@ -16588,7 +18168,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2965,
@@ -16599,7 +18180,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2966,
@@ -16610,7 +18192,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2974,
@@ -16621,7 +18204,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2976,
@@ -16632,7 +18216,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2980,
@@ -16643,7 +18228,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2981,
@@ -16654,7 +18240,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 2997,
@@ -16665,7 +18252,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3000,
@@ -16676,7 +18264,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3002,
@@ -16687,7 +18276,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3005,
@@ -16698,7 +18288,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3010,
@@ -16709,7 +18300,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3011,
@@ -16720,7 +18312,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3014,
@@ -16731,7 +18324,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3016,
@@ -16742,7 +18336,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3019,
@@ -16753,7 +18348,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3024,
@@ -16764,7 +18360,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3026,
@@ -16775,7 +18372,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3028,
@@ -16786,7 +18384,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3033,
@@ -16797,7 +18396,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3034,
@@ -16808,7 +18408,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3038,
@@ -16819,7 +18420,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3039,
@@ -16830,7 +18432,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3042,
@@ -16845,7 +18448,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3043,
@@ -16856,7 +18460,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3045,
@@ -16867,7 +18472,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3046,
@@ -16878,7 +18484,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3065,
@@ -16889,7 +18496,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3068,
@@ -16900,7 +18508,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3069,
@@ -16911,7 +18520,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3070,
@@ -16922,7 +18532,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3074,
@@ -16933,7 +18544,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3075,
@@ -16944,7 +18556,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3076,
@@ -16955,7 +18568,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3079,
@@ -16966,7 +18580,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3080,
@@ -16977,7 +18592,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3083,
@@ -16988,7 +18604,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3084,
@@ -16999,7 +18616,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3090,
@@ -17010,7 +18628,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3092,
@@ -17021,7 +18640,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3093,
@@ -17032,7 +18652,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3095,
@@ -17043,7 +18664,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3097,
@@ -17054,7 +18676,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3099,
@@ -17065,7 +18688,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3101,
@@ -17076,7 +18700,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3102,
@@ -17087,7 +18712,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3105,
@@ -17098,7 +18724,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3107,
@@ -17109,7 +18736,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3110,
@@ -17120,7 +18748,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3111,
@@ -17131,7 +18760,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3113,
@@ -17142,7 +18772,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3114,
@@ -17153,7 +18784,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3115,
@@ -17164,7 +18796,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3120,
@@ -17175,7 +18808,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3121,
@@ -17186,7 +18820,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3123,
@@ -17197,7 +18832,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3127,
@@ -17208,7 +18844,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3128,
@@ -17219,7 +18856,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3131,
@@ -17230,7 +18868,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3134,
@@ -17241,7 +18880,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3136,
@@ -17252,7 +18892,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3137,
@@ -17263,7 +18904,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3138,
@@ -17274,7 +18916,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3142,
@@ -17285,7 +18928,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3146,
@@ -17296,7 +18940,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3151,
@@ -17307,7 +18952,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3152,
@@ -17318,7 +18964,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3153,
@@ -17329,7 +18976,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3158,
@@ -17340,7 +18988,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3159,
@@ -17351,7 +19000,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3160,
@@ -17362,7 +19012,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3162,
@@ -17373,7 +19024,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3163,
@@ -17384,7 +19036,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3164,
@@ -17395,7 +19048,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3168,
@@ -17406,7 +19060,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3169,
@@ -17417,7 +19072,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3171,
@@ -17428,7 +19084,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3174,
@@ -17439,7 +19096,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3176,
@@ -17450,7 +19108,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3177,
@@ -17461,7 +19120,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3178,
@@ -17472,7 +19132,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3179,
@@ -17483,7 +19144,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3184,
@@ -17494,7 +19156,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3185,
@@ -17505,7 +19168,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3187,
@@ -17516,7 +19180,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3190,
@@ -17527,7 +19192,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3191,
@@ -17538,7 +19204,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3192,
@@ -17549,7 +19216,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3194,
@@ -17560,7 +19228,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3195,
@@ -17571,7 +19240,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3200,
@@ -17582,7 +19252,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3201,
@@ -17593,7 +19264,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3203,
@@ -17604,7 +19276,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3206,
@@ -17615,7 +19288,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3208,
@@ -17626,7 +19300,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3209,
@@ -17637,7 +19312,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3210,
@@ -17648,7 +19324,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3211,
@@ -17659,7 +19336,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3212,
@@ -17670,7 +19348,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3216,
@@ -17681,7 +19360,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3217,
@@ -17692,17 +19372,20 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3220,
 	"title": "odd and even transactions",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 3222,
@@ -17713,7 +19396,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3223,
@@ -17724,7 +19408,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3226,
@@ -17735,7 +19420,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3227,
@@ -17746,7 +19432,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3228,
@@ -17757,7 +19444,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3232,
@@ -17768,7 +19456,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3233,
@@ -17779,7 +19468,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3234,
@@ -17790,7 +19480,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3238,
@@ -17801,7 +19492,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3239,
@@ -17812,7 +19504,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3241,
@@ -17823,7 +19516,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3242,
@@ -17834,7 +19528,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3243,
@@ -17845,7 +19540,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3244,
@@ -17856,7 +19552,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3248,
@@ -17867,7 +19564,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3249,
@@ -17878,7 +19576,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3254,
@@ -17889,7 +19588,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3255,
@@ -17900,7 +19600,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3258,
@@ -17911,7 +19612,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3259,
@@ -17922,7 +19624,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3261,
@@ -17933,7 +19636,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3264,
@@ -17944,7 +19648,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3265,
@@ -17955,7 +19660,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3266,
@@ -17966,7 +19672,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3270,
@@ -17977,7 +19684,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3271,
@@ -17988,7 +19696,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3274,
@@ -17999,7 +19708,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3275,
@@ -18010,7 +19720,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3280,
@@ -18025,7 +19736,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3282,
@@ -18036,7 +19748,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3285,
@@ -18047,7 +19760,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3286,
@@ -18058,7 +19772,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3289,
@@ -18069,7 +19784,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3290,
@@ -18080,7 +19796,8 @@ const statsArr = [
 			"unaccepted": 3
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3295,
@@ -18091,7 +19808,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3297,
@@ -18102,7 +19820,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3298,
@@ -18113,7 +19832,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3300,
@@ -18124,7 +19844,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3301,
@@ -18135,7 +19856,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3302,
@@ -18146,7 +19868,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3303,
@@ -18157,7 +19880,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3304,
@@ -18168,7 +19892,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3305,
@@ -18179,7 +19904,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3306,
@@ -18190,7 +19916,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3307,
@@ -18201,7 +19928,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3309,
@@ -18212,7 +19940,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3310,
@@ -18223,7 +19952,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3312,
@@ -18234,7 +19964,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3314,
@@ -18245,7 +19976,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3315,
@@ -18256,7 +19988,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3316,
@@ -18267,7 +20000,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3318,
@@ -18278,7 +20012,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3319,
@@ -18289,7 +20024,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3321,
@@ -18300,7 +20036,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3324,
@@ -18311,7 +20048,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3325,
@@ -18322,7 +20060,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3326,
@@ -18333,7 +20072,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3330,
@@ -18344,7 +20084,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3331,
@@ -18355,7 +20096,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3332,
@@ -18366,7 +20108,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3334,
@@ -18377,7 +20120,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3335,
@@ -18388,7 +20132,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3340,
@@ -18403,7 +20148,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3341,
@@ -18414,7 +20160,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3342,
@@ -18425,7 +20172,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3343,
@@ -18436,7 +20184,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3345,
@@ -18447,7 +20196,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3349,
@@ -18458,7 +20208,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3354,
@@ -18469,7 +20220,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3360,
@@ -18480,7 +20232,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3361,
@@ -18491,7 +20244,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3364,
@@ -18502,7 +20256,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3365,
@@ -18513,7 +20268,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3370,
@@ -18524,7 +20280,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3371,
@@ -18535,7 +20292,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3372,
@@ -18546,7 +20304,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3375,
@@ -18557,7 +20316,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3379,
@@ -18568,7 +20328,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3380,
@@ -18579,7 +20340,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3382,
@@ -18590,7 +20352,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3386,
@@ -18601,7 +20364,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3392,
@@ -18612,7 +20376,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3393,
@@ -18623,7 +20388,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3396,
@@ -18634,7 +20400,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3402,
@@ -18645,7 +20412,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3407,
@@ -18656,7 +20424,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3408,
@@ -18667,7 +20436,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3411,
@@ -18678,7 +20448,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3412,
@@ -18689,7 +20460,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3417,
@@ -18700,7 +20472,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3418,
@@ -18711,7 +20484,8 @@ const statsArr = [
 			"unaccepted": 2
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3419,
@@ -18722,7 +20496,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3423,
@@ -18733,7 +20508,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3424,
@@ -18744,7 +20520,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3427,
@@ -18755,7 +20532,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3432,
@@ -18766,7 +20544,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3433,
@@ -18777,17 +20556,20 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3436,
 	"title": "find valid emails",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 3438,
@@ -18798,7 +20580,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3442,
@@ -18809,7 +20592,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3446,
@@ -18820,7 +20604,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3452,
@@ -18831,7 +20616,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3456,
@@ -18842,7 +20628,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3457,
@@ -18853,7 +20640,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3461,
@@ -18864,7 +20652,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3462,
@@ -18875,17 +20664,20 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3465,
 	"title": "find products with valid serial numbers",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 3467,
@@ -18896,7 +20688,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3471,
@@ -18907,17 +20700,20 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3475,
 	"title": "DNA pattern recognition",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 3477,
@@ -18928,7 +20724,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3478,
@@ -18939,7 +20736,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3479,
@@ -18950,7 +20748,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3483,
@@ -18961,7 +20760,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3484,
@@ -18972,7 +20772,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3487,
@@ -18983,7 +20784,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3488,
@@ -18994,7 +20796,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3492,
@@ -19009,7 +20812,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3493,
@@ -19020,17 +20824,20 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3497,
 	"title": "analyze subscription conversion",
 	"counter": {
 		"mysql": {
-			"accepted": 1
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 3498,
@@ -19045,7 +20852,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3502,
@@ -19060,7 +20868,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3503,
@@ -19071,7 +20880,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3504,
@@ -19082,7 +20892,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3507,
@@ -19093,7 +20904,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3508,
@@ -19104,7 +20916,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3510,
@@ -19115,7 +20928,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3512,
@@ -19126,7 +20940,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3513,
@@ -19137,7 +20952,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3514,
@@ -19148,7 +20964,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3515,
@@ -19159,7 +20976,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3516,
@@ -19170,7 +20988,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3517,
@@ -19181,7 +21000,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3522,
@@ -19192,7 +21012,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3523,
@@ -19203,7 +21024,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3527,
@@ -19214,7 +21036,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3528,
@@ -19225,7 +21048,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3531,
@@ -19236,7 +21060,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3532,
@@ -19247,7 +21072,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3534,
@@ -19258,7 +21084,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3536,
@@ -19269,7 +21096,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3537,
@@ -19280,7 +21108,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3541,
@@ -19291,7 +21120,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3545,
@@ -19302,7 +21132,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3546,
@@ -19313,7 +21144,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3550,
@@ -19328,7 +21160,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3556,
@@ -19339,7 +21172,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3560,
@@ -19350,7 +21184,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3561,
@@ -19361,7 +21196,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3567,
@@ -19372,7 +21208,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3572,
@@ -19383,7 +21220,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3582,
@@ -19394,7 +21232,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3583,
@@ -19405,7 +21244,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3588,
@@ -19416,7 +21256,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3589,
@@ -19427,7 +21268,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3591,
@@ -19438,7 +21280,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3597,
@@ -19449,7 +21292,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3602,
@@ -19460,7 +21304,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3606,
@@ -19475,7 +21320,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3607,
@@ -19486,7 +21332,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3608,
@@ -19497,7 +21344,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3612,
@@ -19508,7 +21356,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3613,
@@ -19519,7 +21368,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3614,
@@ -19530,7 +21380,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3618,
@@ -19541,7 +21392,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3619,
@@ -19552,7 +21404,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3622,
@@ -19563,7 +21416,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3623,
@@ -19574,7 +21428,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3627,
@@ -19589,7 +21444,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3633,
@@ -19600,7 +21456,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3637,
@@ -19611,7 +21468,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3643,
@@ -19622,7 +21480,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3653,
@@ -19633,7 +21492,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3658,
@@ -19644,7 +21504,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3663,
@@ -19655,7 +21516,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3665,
@@ -19666,7 +21528,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3668,
@@ -19677,7 +21540,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3674,
@@ -19688,7 +21552,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3675,
@@ -19699,7 +21564,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3677,
@@ -19710,7 +21576,8 @@ const statsArr = [
 			"unaccepted": 1
 		}
 	},
-	"isAccepted": false
+	"isAccepted": false,
+	"type": "general"
 },
 {
 	"quesId": 3678,
@@ -19721,7 +21588,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3683,
@@ -19732,7 +21600,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3684,
@@ -19743,7 +21612,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3688,
@@ -19754,7 +21624,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3689,
@@ -19765,7 +21636,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3692,
@@ -19776,7 +21648,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3693,
@@ -19787,7 +21660,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3694,
@@ -19798,7 +21672,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3697,
@@ -19809,7 +21684,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3701,
@@ -19820,7 +21696,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3702,
@@ -19831,7 +21708,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3707,
@@ -19842,7 +21720,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3708,
@@ -19853,7 +21732,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3709,
@@ -19864,7 +21744,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3712,
@@ -19875,7 +21756,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3718,
@@ -19886,7 +21768,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3726,
@@ -19897,7 +21780,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 },
 {
 	"quesId": 3731,
@@ -19908,7 +21792,8 @@ const statsArr = [
 			"unaccepted": 0
 		}
 	},
-	"isAccepted": true
+	"isAccepted": true,
+	"type": "general"
 }
 ]
 

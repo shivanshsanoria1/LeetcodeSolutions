@@ -1,0 +1,20 @@
+{
+	quesId: <integer>,
+	title: <string>,
+	counter: {
+		<language>: {
+			accepted: <integer>,
+			unaccepted: <integer>,
+		},
+	},
+	isAccepted: <boolean>,
+	type: <string>,
+}
+
+----------------
+Allowed values:
+
+language: ['cpp', 'js', 'mysql']
+type: ['general', 'database']
+
+----------------
