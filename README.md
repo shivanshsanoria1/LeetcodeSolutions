@@ -16,8 +16,9 @@ This repo contains solutions to over 1700 problems from [leetcode.com](https://l
 * The C++ directory is split into 8 parts (with a range of 500 each): [1-500], [501-1000], ..., [3501-4000]. This is done to overcome the limitation of github webview only allowing a max of 1000 files to be displayed in a directory.
 ---
 
+<!-- STATS -->
 ## Stats
-Last updated on _Sun, 16 Nov 2025 17:21:18 GMT_
+Last updated on _Mon, 17 Nov 2025 17:49:07 GMT_
 ### Total problems solved:
 | Accepted | Partially accepted |
 | --- | --- |
@@ -28,7 +29,9 @@ Last updated on _Sun, 16 Nov 2025 17:21:18 GMT_
 | C++ | 1592 | 99 |
 | Javascript | 66 | 0 |
 | MySQL | 78 | 0 |
+<!-- STATS -->
 ---
+
 ![pie-chart-1](./stats/generated/pie-chart-1.PNG)
 ![pie-chart-2](./stats/generated/pie-chart-2.PNG)
 ![bar-chart](./stats/generated/bar-chart.PNG)

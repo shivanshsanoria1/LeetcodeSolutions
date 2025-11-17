@@ -1,35 +1,38 @@
 const path = require("node:path");
-const { readdir, writeFile, appendFile } = require("node:fs/promises");
+// const { readdir, writeFile, appendFile } = require("node:fs/promises");
+const fs = require("node:fs/promises");
 
 const languages = {
   cpp: {
     name: 'cpp',
     formalName: 'C++',
     extension: 'cpp',
-    dirName: 'CPP',
+    type: 'general',
+    dirPaths: [
+      path.join(__dirname, '..', 'CPP [1-500]'),
+      path.join(__dirname, '..', 'CPP [501-1000]'),
+      path.join(__dirname, '..', 'CPP [1001-1500]'),
+      path.join(__dirname, '..', 'CPP [1501-2000]'),
+      path.join(__dirname, '..', 'CPP [2001-2500]'),
+      path.join(__dirname, '..', 'CPP [2501-3000]'),
+      path.join(__dirname, '..', 'CPP [3001-3500]'),
+      path.join(__dirname, '..', 'CPP [3501-4000]'),
+    ]
   },
   js: {
     name: 'js',
     formalName: 'Javascript',
     extension: 'js',
-    dirName: 'JS',
+    type: 'general',
+    dirPaths: [path.join(__dirname, '..', 'JS')]
   },
   mysql: {
     name: 'mysql',
     formalName: 'MySQL',
     extension: 'sql',
-    dirName: 'MYSQL',
+    type: 'database',
+    dirPaths: [path.join(__dirname, '..', 'MYSQL')]
   },
-}
-
-function getLangName(dirName) {
-  for(const lang in languages){
-    if(languages[lang].dirName === dirName){
-      return languages[lang].name
-    }
-  }
-
-  return null
 }
 
 function getLangFormalName(langName) {
@@ -42,8 +45,16 @@ function getLangFormalName(langName) {
   return null
 }
 
-function extractDirNameFromDirPath(dirPath){
-  return dirPath.split(path.sep).pop().split(' ')[0]
+function getLanguageNameFromDirPath(_dirPath){
+  for(const lang in languages){
+    for(const dirPath of languages[lang].dirPaths){
+      if(dirPath === _dirPath){
+        return languages[lang].name
+      }
+    }
+  }
+
+  return null
 }
 
 function updateCounterObj(obj, lang, isAccepted) {
@@ -61,34 +72,17 @@ function updateCounterObj(obj, lang, isAccepted) {
 function generateStatsMap() {
   return new Promise(async (resolve, reject) => {
     try {
-      const dirPath_cpp_0001_0500 = path.join(__dirname, '..', 'CPP [1-500]')
-      const dirPath_cpp_0501_1000 = path.join(__dirname, '..', 'CPP [501-1000]')
-      const dirPath_cpp_1001_1500 = path.join(__dirname, '..', 'CPP [1001-1500]')
-      const dirPath_cpp_1501_2000 = path.join(__dirname, '..', 'CPP [1501-2000]')
-      const dirPath_cpp_2001_2500 = path.join(__dirname, '..', 'CPP [2001-2500]')
-      const dirPath_cpp_2501_3000 = path.join(__dirname, '..', 'CPP [2501-3000]')
-      const dirPath_cpp_3001_3500 = path.join(__dirname, '..', 'CPP [3001-3500]')
-      const dirPath_cpp_3501_4000 = path.join(__dirname, '..', 'CPP [3501-4000]')
-      const dirPath_js = path.join(__dirname, '..', 'JS')
-      const dirPath_mysql = path.join(__dirname, '..', 'MYSQL')
-
-      const dirPaths = [
-        dirPath_cpp_0001_0500,
-        dirPath_cpp_0501_1000,
-        dirPath_cpp_1001_1500,
-        dirPath_cpp_1501_2000,
-        dirPath_cpp_2001_2500,
-        dirPath_cpp_2501_3000,
-        dirPath_cpp_3001_3500,
-        dirPath_cpp_3501_4000,
-        dirPath_js,
-        dirPath_mysql,
-      ];
+      const dirPaths = []
+      for(const lang in languages){
+        for(const dirPath of languages[lang].dirPaths){
+          dirPaths.push(dirPath)
+        }
+      }
 
       const statsMap = new Map();
 
       for (const dirPath of dirPaths) {
-        const fileNames = await readdir(dirPath);
+        const fileNames = await fs.readdir(dirPath);
 
         for (const fileName of fileNames) {
           const filePath = path.join(dirPath, fileName);
@@ -96,7 +90,7 @@ function generateStatsMap() {
           const quesId = parseInt(fileName.split('.')[0]);
           const title = fileName.split('.')[1].split(' ')[0].split('_').join(' ');
           const fileExtension = path.extname(filePath).substring(1);
-          const language = getLangName(extractDirNameFromDirPath(dirPath));
+          const language = getLanguageNameFromDirPath(dirPath)
           const isAccepted = fileName.search('TLE') === -1 && fileName.search('MLE') === -1;
 
           let statObj = null;
@@ -144,47 +138,47 @@ function generateTotalProblemCounterAndUpdateStatsArray(arr) {
   };
 
   // total accepted and unaccepted count per language
-  const totalLanguageCounter = {
-    cpp: { accepted: 0, unaccepted: 0 },
-    js: { accepted: 0, unaccepted: 0 },
-    mysql: { accepted: 0 },
-  };
+  const totalLanguageCounter = {}
 
   // total files per language
-  const fileCounter = {
-    cpp: 0,
-    js: 0,
-    mysql: 0,
-  };
+  const fileCounter = {}
 
-  const languagesDB = ["mysql"];
+  for(const lang in languages){
+    if(languages[lang].type === 'database'){
+      totalLanguageCounter[lang] = { accepted: 0 }
+    }else{
+      totalLanguageCounter[lang] = { accepted: 0, unaccepted: 0 }
+    }
+
+    fileCounter[lang] = 0
+  }
 
   for (const obj of arr) {
     const counter = obj.counter;
     let isAccepted = false;
     let type = "general";
 
-    for (const language in counter) {
-      totalLanguageCounter[language].accepted +=
-        counter[language].accepted > 0 ? 1 : 0;
+    for (const lang in counter) {
+      totalLanguageCounter[lang].accepted +=
+        counter[lang].accepted > 0 ? 1 : 0;
 
       if (
-        counter[language].accepted === 0 &&
-        totalLanguageCounter[language].unaccepted !== undefined &&
-        counter[language].unaccepted !== undefined
+        counter[lang].accepted === 0 &&
+        totalLanguageCounter[lang].unaccepted !== undefined &&
+        counter[lang].unaccepted !== undefined
       ) {
-        totalLanguageCounter[language].unaccepted +=
-          counter[language].unaccepted > 0 ? 1 : 0;
+        totalLanguageCounter[lang].unaccepted +=
+          counter[lang].unaccepted > 0 ? 1 : 0;
       }
 
-      fileCounter[language] +=
-        counter[language].accepted + (counter[language].unaccepted ?? 0);
+      fileCounter[lang] +=
+        counter[lang].accepted + (counter[lang].unaccepted ?? 0);
 
-      if (counter[language].accepted > 0) {
+      if (counter[lang].accepted > 0) {
         isAccepted = true;
       }
 
-      if (languagesDB.includes(language)) {
+      if (languages[lang].type === 'database') {
         type = "database";
       }
     }
@@ -215,7 +209,7 @@ function generateJSfile(statsArr) {
       statsArrStringified += 'export default statsArrStringified';
 
       const filePath = path.join(__dirname, 'generated', 'leetcode-stats-array.js');
-      await writeFile(filePath, statsArrStringified);
+      await fs.writeFile(filePath, statsArrStringified);
 
       resolve();
     } catch (err) {
@@ -254,7 +248,7 @@ function generateCSVfile(statsArr) {
       }
 
       const filePath = path.join(__dirname, "generated", `leetcode-stats.csv`);
-      await writeFile(filePath, statsStringified);
+      await fs.writeFile(filePath, statsStringified);
 
       resolve();
     } catch (err) {
@@ -268,6 +262,10 @@ async function updateStatsinReadmeFile(totalProblemCount, totalLanguageCounter) 
   return new Promise(async (resolve, reject) => {
     try {
       const filePath = path.join(__dirname, '..', 'README.md');
+      const seperator = '<!-- STATS -->'
+
+      const fileData = await fs.readFile(filePath, { encoding: 'utf8' })
+      const fileDataArr = fileData.split(seperator)
 
       let statData = '## Stats\n'
       statData += `Last updated on _${new Date().toUTCString()}_\n`
@@ -287,16 +285,10 @@ async function updateStatsinReadmeFile(totalProblemCount, totalLanguageCounter) 
 
         statData += `| ${getLangFormalName(language)} | ${acceptedCount} | ${unacceptedCount} |\n`;
       }
-
-      statData += '---\n' 
       
-      statData += '![pie-chart-1](./stats/generated/pie-chart-1.PNG)\n'
-      statData += '![pie-chart-2](./stats/generated/pie-chart-2.PNG)\n'
-      statData += '![bar-chart](./stats/generated/bar-chart.PNG)\n'
+      const updatedFileData = fileDataArr[0] + seperator + '\n' + statData + seperator + fileDataArr[fileDataArr.length - 1]
 
-      statData += '---\n'
-
-      await appendFile(filePath, statData);
+      await fs.writeFile(filePath, updatedFileData)
 
       resolve();
     } catch (err) {
