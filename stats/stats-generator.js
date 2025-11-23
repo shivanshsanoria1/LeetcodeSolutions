@@ -31,11 +31,14 @@ function updateCounterObj(obj, lang, isAccepted) {
   const updateUnacceptedValBy = !isAccepted ? 1 : 0;
 
   if(!obj[lang]){
-    obj[lang] = {accepted: 0, unaccepted: 0}
+    obj[lang] = languageModel[lang].type === 'database' ? {accepted: 0} : {accepted: 0, unaccepted: 0}
   }
   
   obj[lang].accepted += updateAcceptedValBy;
-  obj[lang].unaccepted += updateUnacceptedValBy; 
+
+  if(obj[lang].unaccepted != null){
+    obj[lang].unaccepted += updateUnacceptedValBy; 
+  }
 }
 
 function generateStatsMap() {
@@ -123,15 +126,14 @@ function generateTotalProblemCounterAndUpdateStatsArray(statsArr) {
 
   for (const obj of statsArr) {
     const {quesId, counter} = obj
+
     let isAccepted = false;
     let type = 'general'
 
     for (const lang in counter) {
       totalLanguageCounter[lang].accepted += counter[lang].accepted > 0 ? 1 : 0;
 
-      if(totalLanguageCounter[lang].unaccepted && 
-        counter[lang].unaccepted && 
-        counter[lang].accepted === 0) {
+      if(counter[lang].accepted === 0 && counter[lang].unaccepted) {
         totalLanguageCounter[lang].unaccepted += counter[lang].unaccepted > 0 ? 1 : 0;
       }
 
@@ -222,6 +224,31 @@ function generateCSVfile(statsArr) {
   });
 }
 
+function generateDatabaseQuesIdSetFile(statsArr) {
+  return new Promise(async (resolve, reject) => {
+    try {
+      const quesIds = statsArr.filter(({type}) => type === 'database')
+
+      let quesIdsStringified = '// Set containing the ques ids of problems of type "database"\n'
+      quesIdsStringified += `// Set size = ${quesIds.length}\n\n`
+      quesIdsStringified += 'const quesIdSet = new Set([\n';
+      quesIdsStringified += 
+        quesIds
+        .map(({quesId}) => quesId)
+        .join(',\n');
+      quesIdsStringified += '\n])\n';
+
+      const filePath = path.join(__dirname, 'generated', 'ques-id-set-database.js');
+      await fs.writeFile(filePath, quesIdsStringified);
+
+      resolve();
+    } catch (err) {
+      console.log(err);
+      reject();
+    }
+  });
+}
+
 async function updateStatsinReadmeFile(totalProblemCount, totalLanguageCounter) {
   return new Promise(async (resolve, reject) => {
     try {
@@ -281,6 +308,8 @@ async function generateStats() {
     await generateJSfile(statsArr);
 
     await generateCSVfile(statsArr);
+
+    await generateDatabaseQuesIdSetFile(statsArr)
 
     await updateStatsinReadmeFile(totalProblemCount, totalLanguageCounter);
 

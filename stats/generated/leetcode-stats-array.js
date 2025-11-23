@@ -1780,8 +1780,7 @@ const statsArr = [
 	"title": "combine two tables",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -1792,8 +1791,7 @@ const statsArr = [
 	"title": "second highest salary",
 	"counter": {
 		"mysql": {
-			"accepted": 3,
-			"unaccepted": 0
+			"accepted": 3
 		}
 	},
 	"isAccepted": true,
@@ -1804,8 +1802,7 @@ const statsArr = [
 	"title": "nth highest salary",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -1816,8 +1813,7 @@ const statsArr = [
 	"title": "rank scores",
 	"counter": {
 		"mysql": {
-			"accepted": 2,
-			"unaccepted": 0
+			"accepted": 2
 		}
 	},
 	"isAccepted": true,
@@ -1840,8 +1836,7 @@ const statsArr = [
 	"title": "consecutive numbers",
 	"counter": {
 		"mysql": {
-			"accepted": 2,
-			"unaccepted": 0
+			"accepted": 2
 		}
 	},
 	"isAccepted": true,
@@ -1852,8 +1847,7 @@ const statsArr = [
 	"title": "employees earning more than their managers",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -1864,8 +1858,7 @@ const statsArr = [
 	"title": "duplicate emails",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -1876,8 +1869,7 @@ const statsArr = [
 	"title": "customers who never order",
 	"counter": {
 		"mysql": {
-			"accepted": 2,
-			"unaccepted": 0
+			"accepted": 2
 		}
 	},
 	"isAccepted": true,
@@ -1888,8 +1880,7 @@ const statsArr = [
 	"title": "department highest salary",
 	"counter": {
 		"mysql": {
-			"accepted": 2,
-			"unaccepted": 0
+			"accepted": 2
 		}
 	},
 	"isAccepted": true,
@@ -1960,8 +1951,7 @@ const statsArr = [
 	"title": "delete duplicate emails",
 	"counter": {
 		"mysql": {
-			"accepted": 2,
-			"unaccepted": 0
+			"accepted": 2
 		}
 	},
 	"isAccepted": true,
@@ -1972,8 +1962,7 @@ const statsArr = [
 	"title": "rising temperature",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -4160,8 +4149,7 @@ const statsArr = [
 	"title": "game play analysis I",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -4416,8 +4404,7 @@ const statsArr = [
 	"title": "game play analysis IV",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -4548,8 +4535,7 @@ const statsArr = [
 	"title": "managers with at least 5 direct reports",
 	"counter": {
 		"mysql": {
-			"accepted": 2,
-			"unaccepted": 0
+			"accepted": 2
 		}
 	},
 	"isAccepted": true,
@@ -4584,8 +4570,7 @@ const statsArr = [
 	"title": "employee bonus",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -4608,8 +4593,7 @@ const statsArr = [
 	"title": "find customer referee",
 	"counter": {
 		"mysql": {
-			"accepted": 2,
-			"unaccepted": 0
+			"accepted": 2
 		}
 	},
 	"isAccepted": true,
@@ -4620,8 +4604,7 @@ const statsArr = [
 	"title": "customer placing the largest number of orders",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -4704,8 +4687,7 @@ const statsArr = [
 	"title": "big countries",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -4716,8 +4698,7 @@ const statsArr = [
 	"title": "classes more than 5 students",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -4752,8 +4733,7 @@ const statsArr = [
 	"title": "friend requests II who has the most friends",
 	"counter": {
 		"mysql": {
-			"accepted": 2,
-			"unaccepted": 0
+			"accepted": 2
 		}
 	},
 	"isAccepted": true,
@@ -4788,8 +4768,7 @@ const statsArr = [
 	"title": "sales person",
 	"counter": {
 		"mysql": {
-			"accepted": 2,
-			"unaccepted": 0
+			"accepted": 2
 		}
 	},
 	"isAccepted": true,
@@ -4800,8 +4779,7 @@ const statsArr = [
 	"title": "tree node",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -4824,8 +4802,7 @@ const statsArr = [
 	"title": "triangle judgement",
 	"counter": {
 		"mysql": {
-			"accepted": 2,
-			"unaccepted": 0
+			"accepted": 2
 		}
 	},
 	"isAccepted": true,
@@ -4860,8 +4837,7 @@ const statsArr = [
 	"title": "biggest single number",
 	"counter": {
 		"mysql": {
-			"accepted": 2,
-			"unaccepted": 0
+			"accepted": 2
 		}
 	},
 	"isAccepted": true,
@@ -4872,8 +4848,7 @@ const statsArr = [
 	"title": "not boring movies",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -4932,8 +4907,7 @@ const statsArr = [
 	"title": "exchange seats",
 	"counter": {
 		"mysql": {
-			"accepted": 2,
-			"unaccepted": 0
+			"accepted": 2
 		}
 	},
 	"isAccepted": true,
@@ -4944,8 +4918,7 @@ const statsArr = [
 	"title": "swap salary",
 	"counter": {
 		"mysql": {
-			"accepted": 2,
-			"unaccepted": 0
+			"accepted": 2
 		}
 	},
 	"isAccepted": true,
@@ -8116,8 +8089,7 @@ const statsArr = [
 	"title": "customers who bought all products",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -8176,8 +8148,7 @@ const statsArr = [
 	"title": "actors and directors who cooperated atleast three times",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -8236,8 +8207,7 @@ const statsArr = [
 	"title": "product sales analysis I",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -8248,8 +8218,7 @@ const statsArr = [
 	"title": "product sale analysis III",
 	"counter": {
 		"mysql": {
-			"accepted": 2,
-			"unaccepted": 0
+			"accepted": 2
 		}
 	},
 	"isAccepted": true,
@@ -8284,8 +8253,7 @@ const statsArr = [
 	"title": "project employees I",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -8332,8 +8300,7 @@ const statsArr = [
 	"title": "sales analysis III",
 	"counter": {
 		"mysql": {
-			"accepted": 3,
-			"unaccepted": 0
+			"accepted": 3
 		}
 	},
 	"isAccepted": true,
@@ -8596,8 +8563,7 @@ const statsArr = [
 	"title": "user activity for the past 30 days I",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -8632,8 +8598,7 @@ const statsArr = [
 	"title": "article views I",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -8684,8 +8649,7 @@ const statsArr = [
 	"title": "market analysis I",
 	"counter": {
 		"mysql": {
-			"accepted": 2,
-			"unaccepted": 0
+			"accepted": 2
 		}
 	},
 	"isAccepted": true,
@@ -8732,8 +8696,7 @@ const statsArr = [
 	"title": "product price at a given date",
 	"counter": {
 		"mysql": {
-			"accepted": 2,
-			"unaccepted": 0
+			"accepted": 2
 		}
 	},
 	"isAccepted": true,
@@ -8780,8 +8743,7 @@ const statsArr = [
 	"title": "immediate food delivery I",
 	"counter": {
 		"mysql": {
-			"accepted": 3,
-			"unaccepted": 0
+			"accepted": 3
 		}
 	},
 	"isAccepted": true,
@@ -8792,8 +8754,7 @@ const statsArr = [
 	"title": "immediate food delivery II",
 	"counter": {
 		"mysql": {
-			"accepted": 2,
-			"unaccepted": 0
+			"accepted": 2
 		}
 	},
 	"isAccepted": true,
@@ -8828,8 +8789,7 @@ const statsArr = [
 	"title": "reformat department table",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -8900,8 +8860,7 @@ const statsArr = [
 	"title": "monthly transactions I",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -8996,8 +8955,7 @@ const statsArr = [
 	"title": "queries quality and percentage",
 	"counter": {
 		"mysql": {
-			"accepted": 2,
-			"unaccepted": 0
+			"accepted": 2
 		}
 	},
 	"isAccepted": true,
@@ -9152,8 +9110,7 @@ const statsArr = [
 	"title": "average selling price",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -9284,8 +9241,7 @@ const statsArr = [
 	"title": "students and examinations",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -9600,8 +9556,7 @@ const statsArr = [
 	"title": "list the products ordered in a period",
 	"counter": {
 		"mysql": {
-			"accepted": 2,
-			"unaccepted": 0
+			"accepted": 2
 		}
 	},
 	"isAccepted": true,
@@ -9684,8 +9639,7 @@ const statsArr = [
 	"title": "movie rating",
 	"counter": {
 		"mysql": {
-			"accepted": 2,
-			"unaccepted": 0
+			"accepted": 2
 		}
 	},
 	"isAccepted": true,
@@ -9948,8 +9902,7 @@ const statsArr = [
 	"title": "replace employee id with the unique identifier",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -10068,8 +10021,7 @@ const statsArr = [
 	"title": "capital gain loss",
 	"counter": {
 		"mysql": {
-			"accepted": 2,
-			"unaccepted": 0
+			"accepted": 2
 		}
 	},
 	"isAccepted": true,
@@ -10212,8 +10164,7 @@ const statsArr = [
 	"title": "top travellers",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -10660,8 +10611,7 @@ const statsArr = [
 	"title": "group sold products by the date",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -10844,8 +10794,7 @@ const statsArr = [
 	"title": "find users with valid emails",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -10892,8 +10841,7 @@ const statsArr = [
 	"title": "patients with a condition",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -11192,8 +11140,7 @@ const statsArr = [
 	"title": "customers who visited but did not make any transactions",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -11228,8 +11175,7 @@ const statsArr = [
 	"title": "bank account summary II",
 	"counter": {
 		"mysql": {
-			"accepted": 2,
-			"unaccepted": 0
+			"accepted": 2
 		}
 	},
 	"isAccepted": true,
@@ -11456,8 +11402,7 @@ const statsArr = [
 	"title": "percentge of users attended a contest",
 	"counter": {
 		"mysql": {
-			"accepted": 2,
-			"unaccepted": 0
+			"accepted": 2
 		}
 	},
 	"isAccepted": true,
@@ -11612,8 +11557,7 @@ const statsArr = [
 	"title": "average time of process per machine",
 	"counter": {
 		"mysql": {
-			"accepted": 3,
-			"unaccepted": 0
+			"accepted": 3
 		}
 	},
 	"isAccepted": true,
@@ -11636,8 +11580,7 @@ const statsArr = [
 	"title": "fix names in a table",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -11732,8 +11675,7 @@ const statsArr = [
 	"title": "invalid tweets",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -11780,8 +11722,7 @@ const statsArr = [
 	"title": "daily leads and partners",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -11952,8 +11893,7 @@ const statsArr = [
 	"title": "find followers count",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -11964,8 +11904,7 @@ const statsArr = [
 	"title": "the number of employees which report to each employee",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -12000,8 +11939,7 @@ const statsArr = [
 	"title": "find total time spent by each employee",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -12084,8 +12022,7 @@ const statsArr = [
 	"title": "recyclable and low fat products",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -12228,8 +12165,7 @@ const statsArr = [
 	"title": "primary department for each employee",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -12276,8 +12212,7 @@ const statsArr = [
 	"title": "rearrange products table",
 	"counter": {
 		"mysql": {
-			"accepted": 2,
-			"unaccepted": 0
+			"accepted": 2
 		}
 	},
 	"isAccepted": true,
@@ -12672,8 +12607,7 @@ const statsArr = [
 	"title": "calculate special bonus",
 	"counter": {
 		"mysql": {
-			"accepted": 2,
-			"unaccepted": 0
+			"accepted": 2
 		}
 	},
 	"isAccepted": true,
@@ -12756,8 +12690,7 @@ const statsArr = [
 	"title": "the latest login in 2020",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -12840,8 +12773,7 @@ const statsArr = [
 	"title": "count salary categories",
 	"counter": {
 		"mysql": {
-			"accepted": 2,
-			"unaccepted": 0
+			"accepted": 2
 		}
 	},
 	"isAccepted": true,
@@ -12988,8 +12920,7 @@ const statsArr = [
 	"title": "confirmation rate",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -13124,8 +13055,7 @@ const statsArr = [
 	"title": "employees with missing information",
 	"counter": {
 		"mysql": {
-			"accepted": 2,
-			"unaccepted": 0
+			"accepted": 2
 		}
 	},
 	"isAccepted": true,
@@ -13196,8 +13126,7 @@ const statsArr = [
 	"title": "employees whose manager left the company",
 	"counter": {
 		"mysql": {
-			"accepted": 2,
-			"unaccepted": 0
+			"accepted": 2
 		}
 	},
 	"isAccepted": true,
@@ -13772,8 +13701,7 @@ const statsArr = [
 	"title": "the number of rich customers",
 	"counter": {
 		"mysql": {
-			"accepted": 2,
-			"unaccepted": 0
+			"accepted": 2
 		}
 	},
 	"isAccepted": true,
@@ -15160,8 +15088,7 @@ const statsArr = [
 	"title": "number of unique subjects taught by each teacher",
 	"counter": {
 		"mysql": {
-			"accepted": 2,
-			"unaccepted": 0
+			"accepted": 2
 		}
 	},
 	"isAccepted": true,
@@ -19380,8 +19307,7 @@ const statsArr = [
 	"title": "odd and even transactions",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -20564,8 +20490,7 @@ const statsArr = [
 	"title": "find valid emails",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -20672,8 +20597,7 @@ const statsArr = [
 	"title": "find products with valid serial numbers",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -20708,8 +20632,7 @@ const statsArr = [
 	"title": "DNA pattern recognition",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
@@ -20832,8 +20755,7 @@ const statsArr = [
 	"title": "analyze subscription conversion",
 	"counter": {
 		"mysql": {
-			"accepted": 1,
-			"unaccepted": 0
+			"accepted": 1
 		}
 	},
 	"isAccepted": true,
