@@ -31,7 +31,7 @@ const languages = {
     formalName: 'MySQL',
     extension: 'sql',
     type: 'database',
-    dirPaths: [path.join(__dirname, '..', 'MYSQL')]
+    dirPaths: [path.join(__dirname, '..', 'MySQL')]
   },
 }
 
