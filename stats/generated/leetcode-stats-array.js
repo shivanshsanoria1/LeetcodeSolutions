@@ -21794,5 +21794,89 @@ const statsArr = [
 	},
 	"isAccepted": true,
 	"type": "general"
+},
+{
+	"quesId": 3740,
+	"title": "minimum distance between three equal elements I",
+	"counter": {
+		"cpp": {
+			"accepted": 2,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3741,
+	"title": "minimum distance between three equal elements II",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3746,
+	"title": "minimum string length after balanced removals",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3750,
+	"title": "minimum number of flips to reverse binary string",
+	"counter": {
+		"cpp": {
+			"accepted": 2,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3751,
+	"title": "total waviness of numbers in range I",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3753,
+	"title": "total waviness of numbers in range II",
+	"counter": {
+		"cpp": {
+			"accepted": 0,
+			"unaccepted": 1
+		}
+	},
+	"isAccepted": false,
+	"type": "general"
+},
+{
+	"quesId": 3754,
+	"title": "concatenate non zero digits and multiply by sum I",
+	"counter": {
+		"cpp": {
+			"accepted": 2,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
 }
 ]

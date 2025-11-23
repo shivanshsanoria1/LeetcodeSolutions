@@ -13,20 +13,20 @@ This repo contains solutions to over 1700 problems from [leetcode.com](https://l
 * A list of all the Leetcode solutions present in this repo can be found in '[this csv file](./stats/generated/leetcode-stats.csv)'.
 * A list of all algorithms can be found in '[this csv file](./algorithms/metadata/algorithms_metadata.csv)'.
 * There are some problems with solutions in multiple languages (C++ and Javascript).
-* The C++ directory is split into 8 parts (with a range of 500 each): [1-500], [501-1000], ..., [3501-4000]. This is done to overcome the limitation of github webview only allowing a max of 1000 files to be displayed in a directory.
+* The C++ directory is split into 8 parts (with a range of 500 each): [0001-0500], [0501-1000], ..., [3501-4000]. This is done to overcome the limitation of github webview only allowing a max of 1000 files to be displayed in a directory.
 ---
 
 <!-- STATS -->
 ## Stats
-Last updated on _Sun, 23 Nov 2025 08:10:38 GMT_
+Last updated on _Sun, 23 Nov 2025 14:47:01 GMT_
 ### Total problems solved:
 | Accepted | Partially accepted |
 | --- | --- |
-| 1708 | 99 |
+| 1714 | 100 |
 ### Total problems solved per language:
 | Language  | Accepted | Partially accepted |
 | --- | --- | --- |
-| C++ | 1592 | 0 |
+| C++ | 1598 | 0 |
 | Javascript | 66 | 0 |
 | MySQL | 78 | 0 |
 <!-- STATS -->
