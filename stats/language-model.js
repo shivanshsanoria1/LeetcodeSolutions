@@ -8,7 +8,7 @@ const languages = {
     type: 'general',
     dirPaths: [
       path.join(__dirname, '..', 'CPP [1-500]'),
-      path.join(__dirname, '..', 'CPP [501-1000]'),
+      path.join(__dirname, '..', 'CPP [0501-1000]'),
       path.join(__dirname, '..', 'CPP [1001-1500]'),
       path.join(__dirname, '..', 'CPP [1501-2000]'),
       path.join(__dirname, '..', 'CPP [2001-2500]'),
