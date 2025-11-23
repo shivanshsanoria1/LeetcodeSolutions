@@ -1,44 +1,13 @@
 const path = require("node:path");
-// const { readdir, writeFile, appendFile } = require("node:fs/promises");
 const fs = require("node:fs/promises");
 
-const languages = {
-  cpp: {
-    name: 'cpp',
-    formalName: 'C++',
-    extension: 'cpp',
-    type: 'general',
-    dirPaths: [
-      path.join(__dirname, '..', 'CPP [1-500]'),
-      path.join(__dirname, '..', 'CPP [501-1000]'),
-      path.join(__dirname, '..', 'CPP [1001-1500]'),
-      path.join(__dirname, '..', 'CPP [1501-2000]'),
-      path.join(__dirname, '..', 'CPP [2001-2500]'),
-      path.join(__dirname, '..', 'CPP [2501-3000]'),
-      path.join(__dirname, '..', 'CPP [3001-3500]'),
-      path.join(__dirname, '..', 'CPP [3501-4000]'),
-    ]
-  },
-  js: {
-    name: 'js',
-    formalName: 'Javascript',
-    extension: 'js',
-    type: 'general',
-    dirPaths: [path.join(__dirname, '..', 'JS')]
-  },
-  mysql: {
-    name: 'mysql',
-    formalName: 'MySQL',
-    extension: 'sql',
-    type: 'database',
-    dirPaths: [path.join(__dirname, '..', 'MYSQL')]
-  },
-}
+const {languageModel} = require('./language-model.js')
+const {quesIdSetJSTS} = require('./ques-id-set-JS-TS.js')
 
 function getLangFormalName(langName) {
-  for(const lang in languages){
-    if(languages[lang].name === langName){
-      return languages[lang].formalName
+  for(const lang in languageModel){
+    if(languageModel[lang].name === langName){
+      return languageModel[lang].formalName
     }
   }
 
@@ -46,10 +15,10 @@ function getLangFormalName(langName) {
 }
 
 function getLanguageNameFromDirPath(_dirPath){
-  for(const lang in languages){
-    for(const dirPath of languages[lang].dirPaths){
+  for(const lang in languageModel){
+    for(const dirPath of languageModel[lang].dirPaths){
       if(dirPath === _dirPath){
-        return languages[lang].name
+        return languageModel[lang].name
       }
     }
   }
@@ -73,8 +42,8 @@ function generateStatsMap() {
   return new Promise(async (resolve, reject) => {
     try {
       const dirPaths = []
-      for(const lang in languages){
-        for(const dirPath of languages[lang].dirPaths){
+      for(const lang in languageModel){
+        for(const dirPath of languageModel[lang].dirPaths){
           dirPaths.push(dirPath)
         }
       }
@@ -119,18 +88,17 @@ function generateStatsMap() {
 }
 
 function convertMapToArray(mp) {
-  const arr = [];
-
+  const arr = []
   for (const [quesId, obj] of mp) {
-    arr.push(obj);
+    arr.push(obj)
   }
 
-  arr.sort((a, b) => a.quesId - b.quesId);
+  arr.sort((a, b) => a.quesId - b.quesId)
 
-  return arr;
+  return arr
 }
 
-function generateTotalProblemCounterAndUpdateStatsArray(arr) {
+function generateTotalProblemCounterAndUpdateStatsArray(statsArr) {
   // total problem accepted and unaccepted count
   const totalProblemCount = {
     accepted: 0,
@@ -143,8 +111,8 @@ function generateTotalProblemCounterAndUpdateStatsArray(arr) {
   // total files per language
   const fileCounter = {}
 
-  for(const lang in languages){
-    if(languages[lang].type === 'database'){
+  for(const lang in languageModel){
+    if(languageModel[lang].type === 'database'){
       totalLanguageCounter[lang] = { accepted: 0 }
     }else{
       totalLanguageCounter[lang] = { accepted: 0, unaccepted: 0 }
@@ -153,33 +121,30 @@ function generateTotalProblemCounterAndUpdateStatsArray(arr) {
     fileCounter[lang] = 0
   }
 
-  for (const obj of arr) {
-    const counter = obj.counter;
+  for (const obj of statsArr) {
+    const {quesId, counter} = obj
     let isAccepted = false;
-    let type = "general";
+    let type = 'general'
 
     for (const lang in counter) {
-      totalLanguageCounter[lang].accepted +=
-        counter[lang].accepted > 0 ? 1 : 0;
+      totalLanguageCounter[lang].accepted += counter[lang].accepted > 0 ? 1 : 0;
 
-      if (
-        counter[lang].accepted === 0 &&
-        totalLanguageCounter[lang].unaccepted !== undefined &&
-        counter[lang].unaccepted !== undefined
-      ) {
-        totalLanguageCounter[lang].unaccepted +=
-          counter[lang].unaccepted > 0 ? 1 : 0;
+      if(totalLanguageCounter[lang].unaccepted && 
+        counter[lang].unaccepted && 
+        counter[lang].accepted === 0) {
+        totalLanguageCounter[lang].unaccepted += counter[lang].unaccepted > 0 ? 1 : 0;
       }
 
-      fileCounter[lang] +=
-        counter[lang].accepted + (counter[lang].unaccepted ?? 0);
+      fileCounter[lang] += counter[lang].accepted + (counter[lang].unaccepted ?? 0);
 
       if (counter[lang].accepted > 0) {
         isAccepted = true;
       }
 
-      if (languages[lang].type === 'database') {
-        type = "database";
+      if (languageModel[lang].type === 'database') {
+        type = 'database'
+      }else if(quesIdSetJSTS.has(quesId)){
+        type = 'javascript/typescript'
       }
     }
 
@@ -205,8 +170,7 @@ function generateJSfile(statsArr) {
         statsArr
         .map((statObj) => JSON.stringify(statObj, null, '\t'))
         .join(',\n');
-      statsArrStringified += '\n]\n\n';
-      statsArrStringified += 'export default statsArrStringified';
+      statsArrStringified += '\n]\n';
 
       const filePath = path.join(__dirname, 'generated', 'leetcode-stats-array.js');
       await fs.writeFile(filePath, statsArrStringified);
@@ -222,10 +186,10 @@ function generateJSfile(statsArr) {
 function generateCSVfile(statsArr) {
   return new Promise(async (resolve, reject) => {
     try {
-      let statsStringified = 'quesId,Title,Language(s),accepted,partially-accepted\n';
+      let statsStringified = 'S.No.,Title,Type,Language(s),accepted,partially-accepted\n';
 
       for (const statObj of statsArr) {
-        const { quesId, title, counter } = statObj;
+        const { quesId, title, counter, type } = statObj;
 
         const titleWithOutCommas = title.replace(/,/g, "*");
 
@@ -244,10 +208,10 @@ function generateCSVfile(statsArr) {
         acceptedStr = acceptedStr.slice(0, -1);
         unacceptedStr = unacceptedStr.slice(0, -1);
 
-        statsStringified += `${quesId},${titleWithOutCommas},${languagesStr},${acceptedStr},${unacceptedStr}\n`;
+        statsStringified += `${quesId},${titleWithOutCommas},${type},${languagesStr},${acceptedStr},${unacceptedStr}\n`;
       }
 
-      const filePath = path.join(__dirname, "generated", `leetcode-stats.csv`);
+      const filePath = path.join(__dirname, 'generated', 'leetcode-stats.csv');
       await fs.writeFile(filePath, statsStringified);
 
       resolve();
@@ -328,4 +292,5 @@ async function generateStats() {
   }
 }
 
-generateStats();
+// console.log('Count of JS/TS specific questions = ' + quesIdSetJSTS.size)
+generateStats()

@@ -16501,7 +16501,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2619,
@@ -16513,7 +16513,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2620,
@@ -16525,7 +16525,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2621,
@@ -16537,7 +16537,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2622,
@@ -16549,7 +16549,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2623,
@@ -16561,7 +16561,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2624,
@@ -16573,7 +16573,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2625,
@@ -16585,7 +16585,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2626,
@@ -16597,7 +16597,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2627,
@@ -16609,7 +16609,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2629,
@@ -16621,7 +16621,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2631,
@@ -16633,7 +16633,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2632,
@@ -16657,7 +16657,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2635,
@@ -16669,7 +16669,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2637,
@@ -16681,7 +16681,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2639,
@@ -16765,7 +16765,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2649,
@@ -16777,7 +16777,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2651,
@@ -16865,7 +16865,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2666,
@@ -16877,7 +16877,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2667,
@@ -16889,7 +16889,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2670,
@@ -16937,7 +16937,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2678,
@@ -16997,7 +16997,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2694,
@@ -17009,7 +17009,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2695,
@@ -17021,7 +17021,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2696,
@@ -17073,7 +17073,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2704,
@@ -17085,7 +17085,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2705,
@@ -17097,7 +17097,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2706,
@@ -17169,7 +17169,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2716,
@@ -17205,7 +17205,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2722,
@@ -17217,7 +17217,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2723,
@@ -17229,7 +17229,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2724,
@@ -17241,7 +17241,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2725,
@@ -17253,7 +17253,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2726,
@@ -17265,7 +17265,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2727,
@@ -17277,7 +17277,7 @@ const statsArr = [
 		}
 	},
 	"isAccepted": true,
-	"type": "general"
+	"type": "javascript/typescript"
 },
 {
 	"quesId": 2729,
@@ -21796,5 +21796,3 @@ const statsArr = [
 	"type": "general"
 }
 ]
-
-export default statsArrStringified

@@ -18,7 +18,7 @@ This repo contains solutions to over 1700 problems from [leetcode.com](https://l
 
 <!-- STATS -->
 ## Stats
-Last updated on _Mon, 17 Nov 2025 17:49:07 GMT_
+Last updated on _Sun, 23 Nov 2025 07:58:25 GMT_
 ### Total problems solved:
 | Accepted | Partially accepted |
 | --- | --- |
@@ -26,7 +26,7 @@ Last updated on _Mon, 17 Nov 2025 17:49:07 GMT_
 ### Total problems solved per language:
 | Language  | Accepted | Partially accepted |
 | --- | --- | --- |
-| C++ | 1592 | 99 |
+| C++ | 1592 | 0 |
 | Javascript | 66 | 0 |
 | MySQL | 78 | 0 |
 <!-- STATS -->
