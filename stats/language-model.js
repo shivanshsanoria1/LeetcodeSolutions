@@ -23,7 +23,7 @@ const languages = {
     formalName: 'Javascript',
     extension: 'js',
     type: 'general',
-    dirPaths: [path.join(__dirname, '..', 'JS')]
+    dirPaths: [path.join(__dirname, '..', 'Javascript')]
   },
 
   mysql: {
