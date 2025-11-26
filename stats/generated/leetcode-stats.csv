@@ -1805,9 +1805,12 @@ S.No.,Title,Type,Language(s),accepted,partially-accepted
 3712,sum of elements with frequency divisible by K,general,cpp,1,0
 3718,smallest missing multiple of K,general,cpp,1,0
 3726,remove zeros in decimal representation,general,cpp,2,0
+3727,maximum alternating sum of squares,general,cpp,1,0
 3731,find missing elements,general,cpp,1,0
+3732,maximum product of three elements after one replacement,general,cpp,3,0
 3740,minimum distance between three equal elements I,general,cpp,2,0
 3741,minimum distance between three equal elements II,general,cpp,1,0
+3745,maximize expression of three elements,general,cpp,1,0
 3746,minimum string length after balanced removals,general,cpp,1,0
 3750,minimum number of flips to reverse binary string,general,cpp,2,0
 3751,total waviness of numbers in range I,general,cpp,1,0

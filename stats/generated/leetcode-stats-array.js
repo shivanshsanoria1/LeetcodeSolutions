@@ -21706,11 +21706,35 @@ const statsArr = [
 	"type": "general"
 },
 {
+	"quesId": 3727,
+	"title": "maximum alternating sum of squares",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
 	"quesId": 3731,
 	"title": "find missing elements",
 	"counter": {
 		"cpp": {
 			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3732,
+	"title": "maximum product of three elements after one replacement",
+	"counter": {
+		"cpp": {
+			"accepted": 3,
 			"unaccepted": 0
 		}
 	},
@@ -21732,6 +21756,18 @@ const statsArr = [
 {
 	"quesId": 3741,
 	"title": "minimum distance between three equal elements II",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3745,
+	"title": "maximize expression of three elements",
 	"counter": {
 		"cpp": {
 			"accepted": 1,

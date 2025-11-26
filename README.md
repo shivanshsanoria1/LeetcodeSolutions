@@ -1,6 +1,6 @@
 # Summary
 This repo contains solutions to over 1700 problems from [leetcode.com](https://leetcode.com/problemset/ "leetcode") (in 3 languages):
-* C++ (over **1550** solutions)
+* C++ (over **1600** solutions)
 * Javascript (over **65** solutions)
 * MySQL (over **75** solutions)
 
@@ -18,15 +18,15 @@ This repo contains solutions to over 1700 problems from [leetcode.com](https://l
 
 <!-- STATS -->
 ## Stats
-Last updated on _Sun, 23 Nov 2025 17:09:10 GMT_
+Last updated on _Wed, 26 Nov 2025 16:48:43 GMT_
 ### Total problems solved:
 | Accepted | Partially accepted |
 | --- | --- |
-| 1714 | 100 |
+| 1717 | 100 |
 ### Total problems solved per language:
 | Language  | Accepted | Partially accepted |
 | --- | --- | --- |
-| C++ | 1598 | 100 |
+| C++ | 1601 | 100 |
 | Javascript | 66 | 0 |
 | MySQL | 78 | 0 |
 <!-- STATS -->
