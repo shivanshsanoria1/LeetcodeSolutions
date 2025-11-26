@@ -1758,6 +1758,7 @@ S.No.,Title,Type,Language(s),accepted,partially-accepted
 3560,find minimum log transportation cost,general,cpp,1,0
 3561,resulting string after adjacent removals,general,cpp,1,0
 3567,minimum absolute difference in sliding submatrix,general,cpp,1,0
+3570,find books with no available copies,database,mysql,1,0
 3572,maximize Y-sum by picking a triplet of distinct X-values,general,cpp,1,0
 3582,generate tag for video caption,general,cpp,1,0
 3583,count special triplets,general,cpp,1,1

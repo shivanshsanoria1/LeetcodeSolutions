@@ -21134,6 +21134,17 @@ const statsArr = [
 	"type": "general"
 },
 {
+	"quesId": 3570,
+	"title": "find books with no available copies",
+	"counter": {
+		"mysql": {
+			"accepted": 1
+		}
+	},
+	"isAccepted": true,
+	"type": "database"
+},
+{
 	"quesId": 3572,
 	"title": "maximize Y-sum by picking a triplet of distinct X-values",
 	"counter": {

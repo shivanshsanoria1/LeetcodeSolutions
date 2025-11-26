@@ -18,17 +18,17 @@ This repo contains solutions to over 1700 problems from [leetcode.com](https://l
 
 <!-- STATS -->
 ## Stats
-Last updated on _Wed, 26 Nov 2025 16:48:43 GMT_
+Last updated on _Wed, 26 Nov 2025 17:32:29 GMT_
 ### Total problems solved:
 | Accepted | Partially accepted |
 | --- | --- |
-| 1717 | 100 |
+| 1718 | 100 |
 ### Total problems solved per language:
 | Language  | Accepted | Partially accepted |
 | --- | --- | --- |
 | C++ | 1601 | 100 |
 | Javascript | 66 | 0 |
-| MySQL | 78 | 0 |
+| MySQL | 79 | 0 |
 <!-- STATS -->
 ---
 
