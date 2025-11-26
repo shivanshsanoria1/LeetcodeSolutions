@@ -1,6 +1,2 @@
-# Force all files in the MySQL folder (and its sub‑folders) to be counted as SQL
-MySQL/**/*.sql linguist-language=SQL
-
-# Make sure they aren’t excluded as vendored or generated code
-MySQL/**/*.sql linguist-vendored=false
-MySQL/**/*.sql linguist-generated=false
+MySQL/* linguist-detectable=true
+*.sql linguist-language=SQL
