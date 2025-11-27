@@ -224,6 +224,48 @@ function generateCSVfile(statsArr) {
   });
 }
 
+function generateMDlinksFile(statsArr){
+  return new Promise(async (resolve, reject) => {
+    try {
+      let fileDataStringified = '| S.No. | Title | Link(s) |\n';
+      fileDataStringified += '| --- | --- | --- |\n'
+
+      for (const statObj of statsArr) {
+        const { quesId, title, counter } = statObj;
+
+        const titleInFile = title.split(' ').join('_')
+        const titleWithOutCommas = title.replace(/,/g, "*");
+
+        fileDataStringified += `|${quesId} | ${titleWithOutCommas} |`
+
+        for (const lang in counter) {
+          const {extension, dirNames} = languageModel[lang]
+          let dirIdx = 0
+          if(dirNames.length > 1){
+            dirIdx = Number.isInteger(quesId / 500) ? Math.floor(quesId / 500) - 1 : Math.floor(quesId / 500)
+          }
+          const dirName = dirNames[dirIdx]
+
+          for(let i=1; i<=counter[lang].accepted; i++){
+            fileDataStringified += `[${lang}${i}](<../../${dirName}/${quesId}.${titleInFile} [${i}].${extension}>) `
+          }
+        }
+
+        fileDataStringified += '|\n'
+      }
+
+      const filePath = path.join(__dirname, 'generated', 'leetcode-links.md');
+      await fs.writeFile(filePath, fileDataStringified);
+
+      resolve();
+
+    } catch (err) {
+      console.log(err);
+      reject();
+    }
+  });
+}
+
 function generateDatabaseQuesIdSetFile(statsArr) {
   return new Promise(async (resolve, reject) => {
     try {
@@ -308,6 +350,8 @@ async function generateStats() {
     await generateJSfile(statsArr);
 
     await generateCSVfile(statsArr);
+
+    await generateMDlinksFile(statsArr)
 
     await generateDatabaseQuesIdSetFile(statsArr)
 
