@@ -229,11 +229,11 @@ function generateMDlinksFile(statsArr){
     try {
       const statsArrAccepted = statsArr.filter(({isAccepted}) => isAccepted)
 
-      let fileDataStringified = '| Id | Title | Link(s) |\n';
-      fileDataStringified += '| --- | --- | --- |\n'
+      let fileDataStringified = '| Id | Title | Link(s) | Type |\n';
+      fileDataStringified += '| --- | --- | --- | --- |\n'
 
       for (const statObj of statsArrAccepted) {
-        const { quesId, title, counter } = statObj;
+        const { quesId, title, counter, type } = statObj;
 
         const titleInFile = title.split(' ').join('_')
         const titleWithOutCommas = title.replace(/,/g, "*");
@@ -253,7 +253,7 @@ function generateMDlinksFile(statsArr){
           }
         }
 
-        fileDataStringified += '|\n'
+        fileDataStringified += `|${type}|\n`
       }
 
       const filePath = path.join(__dirname, 'generated', 'leetcode-links.md');
