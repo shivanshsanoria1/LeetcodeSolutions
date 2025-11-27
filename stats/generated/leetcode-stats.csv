@@ -1,4 +1,4 @@
-S.No.,Title,Type,Language(s),accepted,partially-accepted
+Id,Title,Type,Language(s),accepted,partially-accepted
 1,two sum,general,cpp,3,0
 2,add two numbers,general,cpp,2,0
 3,longest substring without repeating characters,general,cpp,2,0

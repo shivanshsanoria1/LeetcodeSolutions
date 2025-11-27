@@ -188,7 +188,7 @@ function generateJSfile(statsArr) {
 function generateCSVfile(statsArr) {
   return new Promise(async (resolve, reject) => {
     try {
-      let statsStringified = 'S.No.,Title,Type,Language(s),accepted,partially-accepted\n';
+      let statsStringified = 'Id,Title,Type,Language(s),accepted,partially-accepted\n';
 
       for (const statObj of statsArr) {
         const { quesId, title, counter, type } = statObj;
@@ -227,10 +227,12 @@ function generateCSVfile(statsArr) {
 function generateMDlinksFile(statsArr){
   return new Promise(async (resolve, reject) => {
     try {
-      let fileDataStringified = '| S.No. | Title | Link(s) |\n';
+      const statsArrAccepted = statsArr.filter(({isAccepted}) => isAccepted)
+
+      let fileDataStringified = '| Id | Title | Link(s) |\n';
       fileDataStringified += '| --- | --- | --- |\n'
 
-      for (const statObj of statsArr) {
+      for (const statObj of statsArrAccepted) {
         const { quesId, title, counter } = statObj;
 
         const titleInFile = title.split(' ').join('_')

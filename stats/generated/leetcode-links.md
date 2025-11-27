@@ -1,4 +1,4 @@
-| S.No. | Title | Link(s) |
+| Id | Title | Link(s) |
 | --- | --- | --- |
 |1 | two sum |[cpp1](<../../CPP [0001-0500]/1.two_sum [1].cpp>) [cpp2](<../../CPP [0001-0500]/1.two_sum [2].cpp>) [cpp3](<../../CPP [0001-0500]/1.two_sum [3].cpp>) |
 |2 | add two numbers |[cpp1](<../../CPP [0001-0500]/2.add_two_numbers [1].cpp>) [cpp2](<../../CPP [0001-0500]/2.add_two_numbers [2].cpp>) |
@@ -179,14 +179,12 @@
 |209 | minimum size subarray sum |[cpp1](<../../CPP [0001-0500]/209.minimum_size_subarray_sum [1].cpp>) |
 |210 | course schedule II |[cpp1](<../../CPP [0001-0500]/210.course_schedule_II [1].cpp>) [cpp2](<../../CPP [0001-0500]/210.course_schedule_II [2].cpp>) |
 |211 | design add and search words data structure |[cpp1](<../../CPP [0001-0500]/211.design_add_and_search_words_data_structure [1].cpp>) [cpp2](<../../CPP [0001-0500]/211.design_add_and_search_words_data_structure [2].cpp>) |
-|212 | word search II ||
 |213 | house robber II |[cpp1](<../../CPP [0001-0500]/213.house_robber_II [1].cpp>) |
 |214 | shortest palindrome |[cpp1](<../../CPP [0001-0500]/214.shortest_palindrome [1].cpp>) |
 |215 | kth largest element in an array |[cpp1](<../../CPP [0001-0500]/215.kth_largest_element_in_an_array [1].cpp>) [cpp2](<../../CPP [0001-0500]/215.kth_largest_element_in_an_array [2].cpp>) [cpp3](<../../CPP [0001-0500]/215.kth_largest_element_in_an_array [3].cpp>) |
 |216 | combination sum III |[cpp1](<../../CPP [0001-0500]/216.combination_sum_III [1].cpp>) |
 |217 | contains duplicate |[cpp1](<../../CPP [0001-0500]/217.contains_duplicate [1].cpp>) [cpp2](<../../CPP [0001-0500]/217.contains_duplicate [2].cpp>) |
 |219 | contains duplicate II |[cpp1](<../../CPP [0001-0500]/219.contains_duplicate_II [1].cpp>) |
-|220 | contains duplicate III ||
 |221 | maximal square |[cpp1](<../../CPP [0001-0500]/221.maximal_square [1].cpp>) [cpp2](<../../CPP [0001-0500]/221.maximal_square [2].cpp>) [cpp3](<../../CPP [0001-0500]/221.maximal_square [3].cpp>) |
 |222 | count complete tree nodes |[cpp1](<../../CPP [0001-0500]/222.count_complete_tree_nodes [1].cpp>) [cpp2](<../../CPP [0001-0500]/222.count_complete_tree_nodes [2].cpp>) [cpp3](<../../CPP [0001-0500]/222.count_complete_tree_nodes [3].cpp>) |
 |225 | implement stack using queues |[cpp1](<../../CPP [0001-0500]/225.implement_stack_using_queues [1].cpp>) [cpp2](<../../CPP [0001-0500]/225.implement_stack_using_queues [2].cpp>) |
@@ -196,7 +194,6 @@
 |230 | kth smallest element in a BST |[cpp1](<../../CPP [0001-0500]/230.kth_smallest_element_in_a_BST [1].cpp>) [cpp2](<../../CPP [0001-0500]/230.kth_smallest_element_in_a_BST [2].cpp>) [cpp3](<../../CPP [0001-0500]/230.kth_smallest_element_in_a_BST [3].cpp>) [cpp4](<../../CPP [0001-0500]/230.kth_smallest_element_in_a_BST [4].cpp>) |
 |231 | power of two |[cpp1](<../../CPP [0001-0500]/231.power_of_two [1].cpp>) [cpp2](<../../CPP [0001-0500]/231.power_of_two [2].cpp>) [cpp3](<../../CPP [0001-0500]/231.power_of_two [3].cpp>) [cpp4](<../../CPP [0001-0500]/231.power_of_two [4].cpp>) |
 |232 | implement queue using stacks |[cpp1](<../../CPP [0001-0500]/232.implement_queue_using_stacks [1].cpp>) [cpp2](<../../CPP [0001-0500]/232.implement_queue_using_stacks [2].cpp>) [cpp3](<../../CPP [0001-0500]/232.implement_queue_using_stacks [3].cpp>) [cpp4](<../../CPP [0001-0500]/232.implement_queue_using_stacks [4].cpp>) [cpp5](<../../CPP [0001-0500]/232.implement_queue_using_stacks [5].cpp>) |
-|233 | number of digit one ||
 |234 | palindrome linked list |[cpp1](<../../CPP [0001-0500]/234.palindrome_linked_list [1].cpp>) [cpp2](<../../CPP [0001-0500]/234.palindrome_linked_list [2].cpp>) [cpp3](<../../CPP [0001-0500]/234.palindrome_linked_list [3].cpp>) |
 |235 | lowest common ancestor of a binary search tree |[cpp1](<../../CPP [0001-0500]/235.lowest_common_ancestor_of_a_binary_search_tree [1].cpp>) [cpp2](<../../CPP [0001-0500]/235.lowest_common_ancestor_of_a_binary_search_tree [2].cpp>) |
 |236 | lowest common ancestor of a binary tree |[cpp1](<../../CPP [0001-0500]/236.lowest_common_ancestor_of_a_binary_tree [1].cpp>) [cpp2](<../../CPP [0001-0500]/236.lowest_common_ancestor_of_a_binary_tree [2].cpp>) |
@@ -230,20 +227,16 @@
 |307 | range sum query mutable |[cpp1](<../../CPP [0001-0500]/307.range_sum_query_mutable [1].cpp>) [cpp2](<../../CPP [0001-0500]/307.range_sum_query_mutable [2].cpp>) [cpp3](<../../CPP [0001-0500]/307.range_sum_query_mutable [3].cpp>) |
 |309 | best time to buy and sell stock with cooldown |[cpp1](<../../CPP [0001-0500]/309.best_time_to_buy_and_sell_stock_with_cooldown [1].cpp>) [cpp2](<../../CPP [0001-0500]/309.best_time_to_buy_and_sell_stock_with_cooldown [2].cpp>) [cpp3](<../../CPP [0001-0500]/309.best_time_to_buy_and_sell_stock_with_cooldown [3].cpp>) |
 |310 | minimum height trees |[cpp1](<../../CPP [0001-0500]/310.minimum_height_trees [1].cpp>) |
-|313 | super ugly number ||
-|315 | count of smaller numbers after self ||
 |316 | remove duplicate letters |[cpp1](<../../CPP [0001-0500]/316.remove_duplicate_letters [1].cpp>) |
 |319 | bulb switcher |[cpp1](<../../CPP [0001-0500]/319.bulb_switcher [1].cpp>) |
 |322 | coin change |[cpp1](<../../CPP [0001-0500]/322.coin_change [1].cpp>) [cpp2](<../../CPP [0001-0500]/322.coin_change [2].cpp>) [cpp3](<../../CPP [0001-0500]/322.coin_change [3].cpp>) |
 |326 | power of three |[cpp1](<../../CPP [0001-0500]/326.power_of_three [1].cpp>) |
-|327 | count of range sum ||
 |328 | odd even linked list |[cpp1](<../../CPP [0001-0500]/328.odd_even_linked_list [1].cpp>) [cpp2](<../../CPP [0001-0500]/328.odd_even_linked_list [2].cpp>) [cpp3](<../../CPP [0001-0500]/328.odd_even_linked_list [3].cpp>) |
 |329 | longest increasing path in a matrix |[cpp1](<../../CPP [0001-0500]/329.longest_increasing_path_in_a_matrix [1].cpp>) |
 |330 | patching array |[cpp1](<../../CPP [0001-0500]/330.patching_array [1].cpp>) |
 |331 | verify preorder serialization of a binary tree |[cpp1](<../../CPP [0001-0500]/331.verify_preorder_serialization_of_a_binary_tree [1].cpp>) [cpp2](<../../CPP [0001-0500]/331.verify_preorder_serialization_of_a_binary_tree [2].cpp>) [cpp3](<../../CPP [0001-0500]/331.verify_preorder_serialization_of_a_binary_tree [3].cpp>) |
 |332 | reconstruct itinerary |[cpp1](<../../CPP [0001-0500]/332.reconstruct_itinerary [1].cpp>) |
 |334 | increasing triplet subsequence |[cpp1](<../../CPP [0001-0500]/334.increasing_triplet_subsequence [1].cpp>) [cpp2](<../../CPP [0001-0500]/334.increasing_triplet_subsequence [2].cpp>) [cpp3](<../../CPP [0001-0500]/334.increasing_triplet_subsequence [3].cpp>) |
-|336 | palindrome pairs ||
 |337 | house robber III |[cpp1](<../../CPP [0001-0500]/337.house_robber_III [1].cpp>) |
 |338 | counting bits |[cpp1](<../../CPP [0001-0500]/338.counting_bits [1].cpp>) |
 |342 | power of four |[cpp1](<../../CPP [0001-0500]/342.power_of_four [1].cpp>) [cpp2](<../../CPP [0001-0500]/342.power_of_four [2].cpp>) |
@@ -255,10 +248,8 @@
 |350 | intersection of two arrays II |[cpp1](<../../CPP [0001-0500]/350.intersection_of_two_arrays_II [1].cpp>) [cpp2](<../../CPP [0001-0500]/350.intersection_of_two_arrays_II [2].cpp>) [cpp3](<../../CPP [0001-0500]/350.intersection_of_two_arrays_II [3].cpp>) |
 |352 | data stream as disjoint intervals |[cpp1](<../../CPP [0001-0500]/352.data_stream_as_disjoint_intervals [1].cpp>) |
 |355 | design twitter |[cpp1](<../../CPP [0001-0500]/355.design_twitter [1].cpp>) [cpp2](<../../CPP [0001-0500]/355.design_twitter [2].cpp>) [cpp3](<../../CPP [0001-0500]/355.design_twitter [3].cpp>) |
-|357 | count numbers with unique digits ||
 |365 | water and jug problem |[cpp1](<../../CPP [0001-0500]/365.water_and_jug_problem [1].cpp>) [cpp2](<../../CPP [0001-0500]/365.water_and_jug_problem [2].cpp>) |
 |367 | valid perfect square |[cpp1](<../../CPP [0001-0500]/367.valid_perfect_square [1].cpp>) [cpp2](<../../CPP [0001-0500]/367.valid_perfect_square [2].cpp>) |
-|368 | largest divisible subset ||
 |373 | find k pairs with smallest sums |[cpp1](<../../CPP [0001-0500]/373.find_k_pairs_with_smallest_sums [1].cpp>) |
 |374 | guess number higher or lower |[cpp1](<../../CPP [0001-0500]/374.guess_number_higher_or_lower [1].cpp>) |
 |377 | combination sum IV |[cpp1](<../../CPP [0001-0500]/377.combination_sum_IV [1].cpp>) [cpp2](<../../CPP [0001-0500]/377.combination_sum_IV [2].cpp>) |
@@ -290,7 +281,6 @@
 |416 | partition equal subset sum |[cpp1](<../../CPP [0001-0500]/416.partition_equal_subset_sum [1].cpp>) |
 |417 | pacific atlantic water flow |[cpp1](<../../CPP [0001-0500]/417.pacific_atlantic_water_flow [1].cpp>) |
 |419 | battleships in a board |[cpp1](<../../CPP [0001-0500]/419.battleships_in_a_board [1].cpp>) |
-|421 | maximum XOR of two numbers in an array ||
 |423 | reconstruct original digits from english |[cpp1](<../../CPP [0001-0500]/423.reconstruct_original_digits_from_english [1].cpp>) |
 |424 | longest repeating character replacement |[cpp1](<../../CPP [0001-0500]/424.longest_repeating_character_replacement [1].cpp>) [cpp2](<../../CPP [0001-0500]/424.longest_repeating_character_replacement [2].cpp>) |
 |429 | N ary tree level order traversal |[cpp1](<../../CPP [0001-0500]/429.N_ary_tree_level_order_traversal [1].cpp>) |
@@ -300,7 +290,6 @@
 |436 | find right interval |[cpp1](<../../CPP [0001-0500]/436.find_right_interval [1].cpp>) [cpp2](<../../CPP [0001-0500]/436.find_right_interval [2].cpp>) [cpp3](<../../CPP [0001-0500]/436.find_right_interval [3].cpp>) |
 |437 | path sum III |[cpp1](<../../CPP [0001-0500]/437.path_sum_III [1].cpp>) [cpp2](<../../CPP [0001-0500]/437.path_sum_III [2].cpp>) |
 |438 | find all anagrams in a string |[cpp1](<../../CPP [0001-0500]/438.find_all_anagrams_in_a_string [1].cpp>) [cpp2](<../../CPP [0001-0500]/438.find_all_anagrams_in_a_string [2].cpp>) |
-|440 | Kth smallest in lexicographical order ||
 |441 | arranging coins |[cpp1](<../../CPP [0001-0500]/441.arranging_coins [1].cpp>) [cpp2](<../../CPP [0001-0500]/441.arranging_coins [2].cpp>) |
 |442 | find all duplicates in an array |[cpp1](<../../CPP [0001-0500]/442.find_all_duplicates_in_an_array [1].cpp>) [cpp2](<../../CPP [0001-0500]/442.find_all_duplicates_in_an_array [2].cpp>) [cpp3](<../../CPP [0001-0500]/442.find_all_duplicates_in_an_array [3].cpp>) |
 |445 | add two numbers II |[cpp1](<../../CPP [0001-0500]/445.add_two_numbers_II [1].cpp>) [cpp2](<../../CPP [0001-0500]/445.add_two_numbers_II [2].cpp>) [cpp3](<../../CPP [0001-0500]/445.add_two_numbers_II [3].cpp>) |
@@ -312,7 +301,6 @@
 |452 | minimum number of arrows to burst balloons |[cpp1](<../../CPP [0001-0500]/452.minimum_number_of_arrows_to_burst_balloons [1].cpp>) |
 |454 | 4sum II |[cpp1](<../../CPP [0001-0500]/454.4sum_II [1].cpp>) |
 |455 | assign cookies |[cpp1](<../../CPP [0001-0500]/455.assign_cookies [1].cpp>) |
-|456 | 132 pattern ||
 |457 | circular array loop |[cpp1](<../../CPP [0001-0500]/457.circular_array_loop [1].cpp>) |
 |459 | repeated substring pattern |[cpp1](<../../CPP [0001-0500]/459.repeated_substring_pattern [1].cpp>) [cpp2](<../../CPP [0001-0500]/459.repeated_substring_pattern [2].cpp>) |
 |460 | LFU cache |[cpp1](<../../CPP [0001-0500]/460.LFU_cache [1].cpp>) |
@@ -326,16 +314,13 @@
 |476 | number complement |[cpp1](<../../CPP [0001-0500]/476.number_complement [1].cpp>) [cpp2](<../../CPP [0001-0500]/476.number_complement [2].cpp>) [cpp3](<../../CPP [0001-0500]/476.number_complement [3].cpp>) |
 |477 | total hamming distance |[cpp1](<../../CPP [0001-0500]/477.total_hamming_distance [1].cpp>) |
 |478 | generate random point in a circle |[cpp1](<../../CPP [0001-0500]/478.generate_random_point_in_a_circle [1].cpp>) |
-|480 | sliding window median ||
 |482 | license key formatting |[cpp1](<../../CPP [0001-0500]/482.license_key_formatting [1].cpp>) [cpp2](<../../CPP [0001-0500]/482.license_key_formatting [2].cpp>) |
 |485 | max consecutive ones |[cpp1](<../../CPP [0001-0500]/485.max_consecutive_ones [1].cpp>) |
 |491 | non decreasing subsequences |[cpp1](<../../CPP [0001-0500]/491.non_decreasing_subsequences [1].cpp>) [cpp2](<../../CPP [0001-0500]/491.non_decreasing_subsequences [2].cpp>) |
 |492 | construct the rectangle |[cpp1](<../../CPP [0001-0500]/492.construct_the_rectangle [1].cpp>) [cpp2](<../../CPP [0001-0500]/492.construct_the_rectangle [2].cpp>) |
-|493 | reverse pairs ||
 |494 | target sum |[cpp1](<../../CPP [0001-0500]/494.target_sum [1].cpp>) [cpp2](<../../CPP [0001-0500]/494.target_sum [2].cpp>) |
 |495 | teemo attacking |[cpp1](<../../CPP [0001-0500]/495.teemo_attacking [1].cpp>) |
 |496 | next greater element I |[cpp1](<../../CPP [0001-0500]/496.next_greater_element_I [1].cpp>) [cpp2](<../../CPP [0001-0500]/496.next_greater_element_I [2].cpp>) |
-|497 | random point in non overlapping rectangles ||
 |498 | diagonal traverse |[cpp1](<../../CPP [0001-0500]/498.diagonal_traverse [1].cpp>) [cpp2](<../../CPP [0001-0500]/498.diagonal_traverse [2].cpp>) [cpp3](<../../CPP [0001-0500]/498.diagonal_traverse [3].cpp>) |
 |500 | keyboard row |[cpp1](<../../CPP [0001-0500]/500.keyboard_row [1].cpp>) [cpp2](<../../CPP [0001-0500]/500.keyboard_row [2].cpp>) |
 |501 | find mode in binary search tree |[cpp1](<../../CPP [0501-1000]/501.find_mode_in_binary_search_tree [1].cpp>) |
@@ -352,7 +337,6 @@
 |515 | find largest value in each tree row |[cpp1](<../../CPP [0501-1000]/515.find_largest_value_in_each_tree_row [1].cpp>) |
 |516 | longest palindromic subsequence |[cpp1](<../../CPP [0501-1000]/516.longest_palindromic_subsequence [1].cpp>) |
 |518 | coin change II |[cpp1](<../../CPP [0501-1000]/518.coin_change_II [1].cpp>) [cpp2](<../../CPP [0501-1000]/518.coin_change_II [2].cpp>) |
-|519 | random flip matrix ||
 |520 | detect capital |[cpp1](<../../CPP [0501-1000]/520.detect_capital [1].cpp>) |
 |523 | continous subarray sum |[cpp1](<../../CPP [0501-1000]/523.continous_subarray_sum [1].cpp>) |
 |524 | longest word in dictionary through deleting |[cpp1](<../../CPP [0501-1000]/524.longest_word_in_dictionary_through_deleting [1].cpp>) |
@@ -413,7 +397,6 @@
 |626 | exchange seats |[mysql1](<../../MySQL/626.exchange_seats [1].sql>) [mysql2](<../../MySQL/626.exchange_seats [2].sql>) |
 |627 | swap salary |[mysql1](<../../MySQL/627.swap_salary [1].sql>) [mysql2](<../../MySQL/627.swap_salary [2].sql>) |
 |628 | maximum product of 3 numbers |[cpp1](<../../CPP [0501-1000]/628.maximum_product_of_3_numbers [1].cpp>) [cpp2](<../../CPP [0501-1000]/628.maximum_product_of_3_numbers [2].cpp>) |
-|629 | k inverse pairs array ||
 |632 | smallest range covering elements from K lists |[cpp1](<../../CPP [0501-1000]/632.smallest_range_covering_elements_from_K_lists [1].cpp>) [cpp2](<../../CPP [0501-1000]/632.smallest_range_covering_elements_from_K_lists [2].cpp>) |
 |633 | sum of square numbers |[cpp1](<../../CPP [0501-1000]/633.sum_of_square_numbers [1].cpp>) [cpp2](<../../CPP [0501-1000]/633.sum_of_square_numbers [2].cpp>) [cpp3](<../../CPP [0501-1000]/633.sum_of_square_numbers [3].cpp>) |
 |637 | average of levels in a binary tree |[cpp1](<../../CPP [0501-1000]/637.average_of_levels_in_a_binary_tree [1].cpp>) |
@@ -434,7 +417,6 @@
 |661 | image smoother |[cpp1](<../../CPP [0501-1000]/661.image_smoother [1].cpp>) [cpp2](<../../CPP [0501-1000]/661.image_smoother [2].cpp>) [cpp3](<../../CPP [0501-1000]/661.image_smoother [3].cpp>) |
 |662 | maximum width of binary tree |[cpp1](<../../CPP [0501-1000]/662.maximum_width_of_binary_tree [1].cpp>) |
 |665 | non decreasing array |[cpp1](<../../CPP [0501-1000]/665.non_decreasing_array [1].cpp>) |
-|668 | kth smallest number in multiplication table ||
 |669 | trim a binary search tree |[cpp1](<../../CPP [0501-1000]/669.trim_a_binary_search_tree [1].cpp>) |
 |670 | maximum swap |[cpp1](<../../CPP [0501-1000]/670.maximum_swap [1].cpp>) [cpp2](<../../CPP [0501-1000]/670.maximum_swap [2].cpp>) |
 |671 | second minimum node in a binary tree |[cpp1](<../../CPP [0501-1000]/671.second_minimum_node_in_a_binary_tree [1].cpp>) [cpp2](<../../CPP [0501-1000]/671.second_minimum_node_in_a_binary_tree [2].cpp>) |
@@ -454,7 +436,6 @@
 |695 | max area of island |[cpp1](<../../CPP [0501-1000]/695.max_area_of_island [1].cpp>) |
 |696 | count binary substrings |[cpp1](<../../CPP [0501-1000]/696.count_binary_substrings [1].cpp>) [cpp2](<../../CPP [0501-1000]/696.count_binary_substrings [2].cpp>) |
 |697 | degree of an array |[cpp1](<../../CPP [0501-1000]/697.degree_of_an_array [1].cpp>) [cpp2](<../../CPP [0501-1000]/697.degree_of_an_array [2].cpp>) |
-|698 | partition to k equal sum subsets ||
 |700 | search in a binary search tree |[cpp1](<../../CPP [0501-1000]/700.search_in_a_binary_search_tree [1].cpp>) [cpp2](<../../CPP [0501-1000]/700.search_in_a_binary_search_tree [2].cpp>) |
 |701 | insert into a binary search tree |[cpp1](<../../CPP [0501-1000]/701.insert_into_a_binary_search_tree [1].cpp>) [cpp2](<../../CPP [0501-1000]/701.insert_into_a_binary_search_tree [2].cpp>) |
 |703 | kth largest element in a stream |[cpp1](<../../CPP [0501-1000]/703.kth_largest_element_in_a_stream [1].cpp>) |
@@ -463,11 +444,9 @@
 |706 | design hashmap |[cpp1](<../../CPP [0501-1000]/706.design_hashmap [1].cpp>) [cpp2](<../../CPP [0501-1000]/706.design_hashmap [2].cpp>) |
 |707 | design linked list |[cpp1](<../../CPP [0501-1000]/707.design_linked_list [1].cpp>) [cpp2](<../../CPP [0501-1000]/707.design_linked_list [2].cpp>) |
 |709 | to lower case |[cpp1](<../../CPP [0501-1000]/709.to_lower_case [1].cpp>) [cpp2](<../../CPP [0501-1000]/709.to_lower_case [2].cpp>) |
-|710 | random pick with blacklist ||
 |712 | minimum ASCII delete sum for two strings |[cpp1](<../../CPP [0501-1000]/712.minimum_ASCII_delete_sum_for_two_strings [1].cpp>) [cpp2](<../../CPP [0501-1000]/712.minimum_ASCII_delete_sum_for_two_strings [2].cpp>) |
 |713 | subarray product less than k |[cpp1](<../../CPP [0501-1000]/713.subarray_product_less_than_k [1].cpp>) [cpp2](<../../CPP [0501-1000]/713.subarray_product_less_than_k [2].cpp>) |
 |714 | best time to buy and sell stock with transaction fee |[cpp1](<../../CPP [0501-1000]/714.best_time_to_buy_and_sell_stock_with_transaction_fee [1].cpp>) [cpp2](<../../CPP [0501-1000]/714.best_time_to_buy_and_sell_stock_with_transaction_fee [2].cpp>) [cpp3](<../../CPP [0501-1000]/714.best_time_to_buy_and_sell_stock_with_transaction_fee [3].cpp>) [cpp4](<../../CPP [0501-1000]/714.best_time_to_buy_and_sell_stock_with_transaction_fee [4].cpp>) [cpp5](<../../CPP [0501-1000]/714.best_time_to_buy_and_sell_stock_with_transaction_fee [5].cpp>) |
-|715 | range module ||
 |718 | maximum length of repeated subarray |[cpp1](<../../CPP [0501-1000]/718.maximum_length_of_repeated_subarray [1].cpp>) [cpp2](<../../CPP [0501-1000]/718.maximum_length_of_repeated_subarray [2].cpp>) [cpp3](<../../CPP [0501-1000]/718.maximum_length_of_repeated_subarray [3].cpp>) |
 |719 | find Kth smallest pair distance |[cpp1](<../../CPP [0501-1000]/719.find_Kth_smallest_pair_distance [1].cpp>) [cpp2](<../../CPP [0501-1000]/719.find_Kth_smallest_pair_distance [2].cpp>) |
 |720 | longest word in dictionary |[cpp1](<../../CPP [0501-1000]/720.longest_word_in_dictionary [1].cpp>) |
@@ -514,7 +493,6 @@
 |799 | champagne tower |[cpp1](<../../CPP [0501-1000]/799.champagne_tower [1].cpp>) |
 |802 | find eventual safe states |[cpp1](<../../CPP [0501-1000]/802.find_eventual_safe_states [1].cpp>) [cpp2](<../../CPP [0501-1000]/802.find_eventual_safe_states [2].cpp>) [cpp3](<../../CPP [0501-1000]/802.find_eventual_safe_states [3].cpp>) |
 |804 | unique morse code words |[cpp1](<../../CPP [0501-1000]/804.unique_morse_code_words [1].cpp>) |
-|805 | split array with same average ||
 |806 | number of lines to write string |[cpp1](<../../CPP [0501-1000]/806.number_of_lines_to_write_string [1].cpp>) |
 |807 | max increase to keep city skyline |[cpp1](<../../CPP [0501-1000]/807.max_increase_to_keep_city_skyline [1].cpp>) [cpp2](<../../CPP [0501-1000]/807.max_increase_to_keep_city_skyline [2].cpp>) |
 |811 | subdomain visit count |[cpp1](<../../CPP [0501-1000]/811.subdomain_visit_count [1].cpp>) |
@@ -524,11 +502,9 @@
 |819 | most common word |[cpp1](<../../CPP [0501-1000]/819.most_common_word [1].cpp>) |
 |820 | short encoding of words |[cpp1](<../../CPP [0501-1000]/820.short_encoding_of_words [1].cpp>) |
 |821 | shortest distance to a character |[cpp1](<../../CPP [0501-1000]/821.shortest_distance_to_a_character [1].cpp>) [cpp2](<../../CPP [0501-1000]/821.shortest_distance_to_a_character [2].cpp>) |
-|825 | friends of appropriate ages ||
 |826 | most profit assigning work |[cpp1](<../../CPP [0501-1000]/826.most_profit_assigning_work [1].cpp>) [cpp2](<../../CPP [0501-1000]/826.most_profit_assigning_work [2].cpp>) [cpp3](<../../CPP [0501-1000]/826.most_profit_assigning_work [3].cpp>) [cpp4](<../../CPP [0501-1000]/826.most_profit_assigning_work [4].cpp>) |
 |827 | making a large island |[cpp1](<../../CPP [0501-1000]/827.making_a_large_island [1].cpp>) |
 |828 | count unique characters of all substrings of a given string |[cpp1](<../../CPP [0501-1000]/828.count_unique_characters_of_all_substrings_of_a_given_string [1].cpp>) |
-|829 | consecutive numbers sum ||
 |830 | positions of large groups |[cpp1](<../../CPP [0501-1000]/830.positions_of_large_groups [1].cpp>) |
 |832 | flipping an image |[cpp1](<../../CPP [0501-1000]/832.flipping_an_image [1].cpp>) [cpp2](<../../CPP [0501-1000]/832.flipping_an_image [2].cpp>) |
 |834 | sum of distances in tree |[cpp1](<../../CPP [0501-1000]/834.sum_of_distances_in_tree [1].cpp>) |
@@ -548,10 +524,8 @@
 |859 | buddy strings |[cpp1](<../../CPP [0501-1000]/859.buddy_strings [1].cpp>) |
 |860 | lemonade change |[cpp1](<../../CPP [0501-1000]/860.lemonade_change [1].cpp>) |
 |861 | score after flipping matrix |[cpp1](<../../CPP [0501-1000]/861.score_after_flipping_matrix [1].cpp>) [cpp2](<../../CPP [0501-1000]/861.score_after_flipping_matrix [2].cpp>) |
-|862 | shortest subarray with sum at least K ||
 |863 | all nodes distance k in binary tree |[cpp1](<../../CPP [0501-1000]/863.all_nodes_distance_k_in_binary_tree [1].cpp>) [cpp2](<../../CPP [0501-1000]/863.all_nodes_distance_k_in_binary_tree [2].cpp>) [cpp3](<../../CPP [0501-1000]/863.all_nodes_distance_k_in_binary_tree [3].cpp>) |
 |865 | smallest subtree with all the deepest nodes |[cpp1](<../../CPP [0501-1000]/865.smallest_subtree_with_all_the_deepest_nodes [1].cpp>) |
-|866 | prime palindrome ||
 |867 | transpose matrix |[cpp1](<../../CPP [0501-1000]/867.transpose_matrix [1].cpp>) |
 |868 | binary gap |[cpp1](<../../CPP [0501-1000]/868.binary_gap [1].cpp>) [cpp2](<../../CPP [0501-1000]/868.binary_gap [2].cpp>) |
 |869 | reordered power of 2 |[cpp1](<../../CPP [0501-1000]/869.reordered_power_of_2 [1].cpp>) [cpp2](<../../CPP [0501-1000]/869.reordered_power_of_2 [2].cpp>) |
@@ -562,7 +536,6 @@
 |875 | koko eating bananas |[cpp1](<../../CPP [0501-1000]/875.koko_eating_bananas [1].cpp>) |
 |876 | middle of the linked list |[cpp1](<../../CPP [0501-1000]/876.middle_of_the_linked_list [1].cpp>) [cpp2](<../../CPP [0501-1000]/876.middle_of_the_linked_list [2].cpp>) |
 |877 | stone game |[cpp1](<../../CPP [0501-1000]/877.stone_game [1].cpp>) [cpp2](<../../CPP [0501-1000]/877.stone_game [2].cpp>) |
-|878 | Nth magical number ||
 |881 | boats to save people |[cpp1](<../../CPP [0501-1000]/881.boats_to_save_people [1].cpp>) |
 |883 | projection area of 3D shapes |[cpp1](<../../CPP [0501-1000]/883.projection_area_of_3D_shapes [1].cpp>) [cpp2](<../../CPP [0501-1000]/883.projection_area_of_3D_shapes [2].cpp>) |
 |884 | uncommon words from two sentences |[cpp1](<../../CPP [0501-1000]/884.uncommon_words_from_two_sentences [1].cpp>) [cpp2](<../../CPP [0501-1000]/884.uncommon_words_from_two_sentences [2].cpp>) |
@@ -576,7 +549,6 @@
 |895 | maximum frequency stack |[cpp1](<../../CPP [0501-1000]/895.maximum_frequency_stack [1].cpp>) |
 |896 | monotonic array |[cpp1](<../../CPP [0501-1000]/896.monotonic_array [1].cpp>) |
 |897 | increasing order search tree |[cpp1](<../../CPP [0501-1000]/897.increasing_order_search_tree [1].cpp>) |
-|898 | bitwise ORs of subarrays ||
 |900 | RLE iterator |[cpp1](<../../CPP [0501-1000]/900.RLE_iterator [1].cpp>) [cpp2](<../../CPP [0501-1000]/900.RLE_iterator [2].cpp>) |
 |901 | online stock span problem |[cpp1](<../../CPP [0501-1000]/901.online_stock_span_problem [1].cpp>) [cpp2](<../../CPP [0501-1000]/901.online_stock_span_problem [2].cpp>) |
 |904 | fruit into baskets |[cpp1](<../../CPP [0501-1000]/904.fruit_into_baskets [1].cpp>) |
@@ -591,7 +563,6 @@
 |919 | complete binary tree inserter |[cpp1](<../../CPP [0501-1000]/919.complete_binary_tree_inserter [1].cpp>) |
 |921 | minimum add to make parentheses valid |[cpp1](<../../CPP [0501-1000]/921.minimum_add_to_make_parentheses_valid [1].cpp>) |
 |922 | sort array by parity II |[cpp1](<../../CPP [0501-1000]/922.sort_array_by_parity_II [1].cpp>) [cpp2](<../../CPP [0501-1000]/922.sort_array_by_parity_II [2].cpp>) [cpp3](<../../CPP [0501-1000]/922.sort_array_by_parity_II [3].cpp>) [cpp4](<../../CPP [0501-1000]/922.sort_array_by_parity_II [4].cpp>) |
-|923 | 3sum with multiplicity ||
 |924 | minimize malware spread |[cpp1](<../../CPP [0501-1000]/924.minimize_malware_spread [1].cpp>) |
 |925 | long pressed name |[cpp1](<../../CPP [0501-1000]/925.long_pressed_name [1].cpp>) |
 |926 | flip string to monotone increasing |[cpp1](<../../CPP [0501-1000]/926.flip_string_to_monotone_increasing [1].cpp>) [cpp2](<../../CPP [0501-1000]/926.flip_string_to_monotone_increasing [2].cpp>) |
@@ -631,7 +602,6 @@
 |978 | longest turbulent subarray |[cpp1](<../../CPP [0501-1000]/978.longest_turbulent_subarray [1].cpp>) |
 |979 | distribute coins in binary tree |[cpp1](<../../CPP [0501-1000]/979.distribute_coins_in_binary_tree [1].cpp>) [cpp2](<../../CPP [0501-1000]/979.distribute_coins_in_binary_tree [2].cpp>) |
 |981 | time based key value store |[cpp1](<../../CPP [0501-1000]/981.time_based_key_value_store [1].cpp>) |
-|982 | triples with bitwise and equal to zero ||
 |983 | minimum costs of tickets |[cpp1](<../../CPP [0501-1000]/983.minimum_costs_of_tickets [1].cpp>) |
 |985 | sum of even numbers after queries |[cpp1](<../../CPP [0501-1000]/985.sum_of_even_numbers_after_queries [1].cpp>) |
 |986 | interval list intersections |[cpp1](<../../CPP [0501-1000]/986.interval_list_intersections [1].cpp>) [cpp2](<../../CPP [0501-1000]/986.interval_list_intersections [2].cpp>) |
@@ -644,7 +614,6 @@
 |993 | cousins in a binary tree |[cpp1](<../../CPP [0501-1000]/993.cousins_in_a_binary_tree [1].cpp>) [cpp2](<../../CPP [0501-1000]/993.cousins_in_a_binary_tree [2].cpp>) |
 |994 | rotting oranges |[cpp1](<../../CPP [0501-1000]/994.rotting_oranges [1].cpp>) [cpp2](<../../CPP [0501-1000]/994.rotting_oranges [2].cpp>) |
 |995 | minimum number of K consecutive bit flips |[cpp1](<../../CPP [0501-1000]/995.minimum_number_of_K_consecutive_bit_flips [1].cpp>) |
-|996 | number of squareful arrays ||
 |997 | find the town judge |[cpp1](<../../CPP [0501-1000]/997.find_the_town_judge [1].cpp>) [cpp2](<../../CPP [0501-1000]/997.find_the_town_judge [2].cpp>) [cpp3](<../../CPP [0501-1000]/997.find_the_town_judge [3].cpp>) |
 |999 | available captures for rook |[cpp1](<../../CPP [0501-1000]/999.available_captures_for_rook [1].cpp>) [cpp2](<../../CPP [0501-1000]/999.available_captures_for_rook [2].cpp>) |
 |1002 | find common characters |[cpp1](<../../CPP [1001-1500]/1002.find_common_characters [1].cpp>) [cpp2](<../../CPP [1001-1500]/1002.find_common_characters [2].cpp>) |
@@ -655,7 +624,6 @@
 |1009 | complement of base 10 integer |[cpp1](<../../CPP [1001-1500]/1009.complement_of_base_10_integer [1].cpp>) [cpp2](<../../CPP [1001-1500]/1009.complement_of_base_10_integer [2].cpp>) [cpp3](<../../CPP [1001-1500]/1009.complement_of_base_10_integer [3].cpp>) |
 |1010 | pairs of songs with total durations divisible by 60 |[cpp1](<../../CPP [1001-1500]/1010.pairs_of_songs_with_total_durations_divisible_by_60 [1].cpp>) [cpp2](<../../CPP [1001-1500]/1010.pairs_of_songs_with_total_durations_divisible_by_60 [2].cpp>) |
 |1011 | capacity to ship packages within D days |[cpp1](<../../CPP [1001-1500]/1011.capacity_to_ship_packages_within_D_days [1].cpp>) |
-|1012 | numbers with repeated digits ||
 |1013 | partition array into three parts with equal sum |[cpp1](<../../CPP [1001-1500]/1013.partition_array_into_three_parts_with_equal_sum [1].cpp>) |
 |1016 | binary string with substrings representing 1 to N |[cpp1](<../../CPP [1001-1500]/1016.binary_string_with_substrings_representing_1_to_N [1].cpp>) |
 |1018 | binary prefix divisible by 5 |[cpp1](<../../CPP [1001-1500]/1018.binary_prefix_divisible_by_5 [1].cpp>) |
@@ -667,7 +635,6 @@
 |1024 | video stiching |[cpp1](<../../CPP [1001-1500]/1024.video_stiching [1].cpp>) [cpp2](<../../CPP [1001-1500]/1024.video_stiching [2].cpp>) |
 |1026 | maximum difference between node and ancestor |[cpp1](<../../CPP [1001-1500]/1026.maximum_difference_between_node_and_ancestor [1].cpp>) [cpp2](<../../CPP [1001-1500]/1026.maximum_difference_between_node_and_ancestor [2].cpp>) |
 |1029 | two city scheduling |[cpp1](<../../CPP [1001-1500]/1029.two_city_scheduling [1].cpp>) [cpp2](<../../CPP [1001-1500]/1029.two_city_scheduling [2].cpp>) |
-|1032 | stream of characters ||
 |1034 | coloring a border |[cpp1](<../../CPP [1001-1500]/1034.coloring_a_border [1].cpp>) |
 |1035 | uncrossed lines |[cpp1](<../../CPP [1001-1500]/1035.uncrossed_lines [1].cpp>) [cpp2](<../../CPP [1001-1500]/1035.uncrossed_lines [2].cpp>) |
 |1037 | valid boomerang |[cpp1](<../../CPP [1001-1500]/1037.valid_boomerang [1].cpp>) |
@@ -711,7 +678,6 @@
 |1124 | longest well performing interval |[cpp1](<../../CPP [1001-1500]/1124.longest_well_performing_interval [1].cpp>) [cpp2](<../../CPP [1001-1500]/1124.longest_well_performing_interval [2].cpp>) |
 |1128 | number of equivalent domino pairs |[cpp1](<../../CPP [1001-1500]/1128.number_of_equivalent_domino_pairs [1].cpp>) [cpp2](<../../CPP [1001-1500]/1128.number_of_equivalent_domino_pairs [2].cpp>) [cpp3](<../../CPP [1001-1500]/1128.number_of_equivalent_domino_pairs [3].cpp>) |
 |1129 | shortest path with alternating colors |[cpp1](<../../CPP [1001-1500]/1129.shortest_path_with_alternating_colors [1].cpp>) |
-|1131 | maximum of absolute value expression ||
 |1137 | nth tribonacci number |[cpp1](<../../CPP [1001-1500]/1137.nth_tribonacci_number [1].cpp>) |
 |1138 | alphabet board path |[cpp1](<../../CPP [1001-1500]/1138.alphabet_board_path [1].cpp>) |
 |1140 | stone game II |[cpp1](<../../CPP [1001-1500]/1140.stone_game_II [1].cpp>) |
@@ -721,7 +687,6 @@
 |1148 | article views I |[mysql1](<../../MySQL/1148.article_views_I [1].sql>) |
 |1154 | day of the year |[cpp1](<../../CPP [1001-1500]/1154.day_of_the_year [1].cpp>) [js1](<../../Javascript/1154.day_of_the_year [1].js>) [js2](<../../Javascript/1154.day_of_the_year [2].js>) |
 |1155 | number of dice rolls with target sum |[cpp1](<../../CPP [1001-1500]/1155.number_of_dice_rolls_with_target_sum [1].cpp>) [cpp2](<../../CPP [1001-1500]/1155.number_of_dice_rolls_with_target_sum [2].cpp>) [cpp3](<../../CPP [1001-1500]/1155.number_of_dice_rolls_with_target_sum [3].cpp>) [cpp4](<../../CPP [1001-1500]/1155.number_of_dice_rolls_with_target_sum [4].cpp>) [cpp5](<../../CPP [1001-1500]/1155.number_of_dice_rolls_with_target_sum [5].cpp>) |
-|1157 | online majority element in subarray ||
 |1158 | market analysis I |[mysql1](<../../MySQL/1158.market_analysis_I [1].sql>) [mysql2](<../../MySQL/1158.market_analysis_I [2].sql>) |
 |1160 | find words that can be formed by characters |[cpp1](<../../CPP [1001-1500]/1160.find_words_that_can_be_formed_by_characters [1].cpp>) |
 |1161 | maximum level sum of a binary tree |[cpp1](<../../CPP [1001-1500]/1161.maximum_level_sum_of_a_binary_tree [1].cpp>) |
@@ -742,7 +707,6 @@
 |1192 | critical connections in a network |[cpp1](<../../CPP [1001-1500]/1192.critical_connections_in_a_network [1].cpp>) |
 |1193 | monthly transactions I |[mysql1](<../../MySQL/1193.monthly_transactions_I [1].sql>) |
 |1200 | minimum absolute difference |[cpp1](<../../CPP [1001-1500]/1200.minimum_absolute_difference [1].cpp>) [cpp2](<../../CPP [1001-1500]/1200.minimum_absolute_difference [2].cpp>) |
-|1201 | ugly number III ||
 |1202 | smallest string with swaps |[cpp1](<../../CPP [1001-1500]/1202.smallest_string_with_swaps [1].cpp>) |
 |1206 | design skiplist |[cpp1](<../../CPP [1001-1500]/1206.design_skiplist [1].cpp>) [cpp2](<../../CPP [1001-1500]/1206.design_skiplist [2].cpp>) |
 |1207 | unique number of occurrences |[cpp1](<../../CPP [1001-1500]/1207.unique_number_of_occurrences [1].cpp>) |
@@ -791,7 +755,6 @@
 |1311 | get watched videos by your friends |[cpp1](<../../CPP [1001-1500]/1311.get_watched_videos_by_your_friends [1].cpp>) |
 |1314 | matrix block sum |[cpp1](<../../CPP [1001-1500]/1314.matrix_block_sum [1].cpp>) |
 |1315 | sum of nodes with even valued grandparent |[cpp1](<../../CPP [1001-1500]/1315.sum_of_nodes_with_even_valued_grandparent [1].cpp>) [cpp2](<../../CPP [1001-1500]/1315.sum_of_nodes_with_even_valued_grandparent [2].cpp>) |
-|1316 | distinct echo substrings ||
 |1317 | convert integer to the sum of two no zero integers |[cpp1](<../../CPP [1001-1500]/1317.convert_integer_to_the_sum_of_two_no_zero_integers [1].cpp>) [cpp2](<../../CPP [1001-1500]/1317.convert_integer_to_the_sum_of_two_no_zero_integers [2].cpp>) |
 |1318 | minimum flips to make a or b equal to c |[cpp1](<../../CPP [1001-1500]/1318.minimum_flips_to_make_a_or_b_equal_to_c [1].cpp>) [cpp2](<../../CPP [1001-1500]/1318.minimum_flips_to_make_a_or_b_equal_to_c [2].cpp>) [cpp3](<../../CPP [1001-1500]/1318.minimum_flips_to_make_a_or_b_equal_to_c [3].cpp>) |
 |1319 | number of operations to make network connected |[cpp1](<../../CPP [1001-1500]/1319.number_of_operations_to_make_network_connected [1].cpp>) [cpp2](<../../CPP [1001-1500]/1319.number_of_operations_to_make_network_connected [2].cpp>) [cpp3](<../../CPP [1001-1500]/1319.number_of_operations_to_make_network_connected [3].cpp>) [cpp4](<../../CPP [1001-1500]/1319.number_of_operations_to_make_network_connected [4].cpp>) |
@@ -836,7 +799,6 @@
 |1386 | cinema seat allocation |[cpp1](<../../CPP [1001-1500]/1386.cinema_seat_allocation [1].cpp>) |
 |1387 | sort integers by the power value |[cpp1](<../../CPP [1001-1500]/1387.sort_integers_by_the_power_value [1].cpp>) [cpp2](<../../CPP [1001-1500]/1387.sort_integers_by_the_power_value [2].cpp>) [cpp3](<../../CPP [1001-1500]/1387.sort_integers_by_the_power_value [3].cpp>) |
 |1389 | create target array in the given order |[cpp1](<../../CPP [1001-1500]/1389.create_target_array_in_the_given_order [1].cpp>) [cpp2](<../../CPP [1001-1500]/1389.create_target_array_in_the_given_order [2].cpp>) |
-|1392 | longest happy prefix ||
 |1393 | capital gain loss |[mysql1](<../../MySQL/1393.capital_gain_loss [1].sql>) [mysql2](<../../MySQL/1393.capital_gain_loss [2].sql>) |
 |1394 | find lucky integer in an array |[cpp1](<../../CPP [1001-1500]/1394.find_lucky_integer_in_an_array [1].cpp>) |
 |1395 | count number of teams |[cpp1](<../../CPP [1001-1500]/1395.count_number_of_teams [1].cpp>) [cpp2](<../../CPP [1001-1500]/1395.count_number_of_teams [2].cpp>) |
@@ -922,7 +884,6 @@
 |1559 | detect cycles in 2D grid |[cpp1](<../../CPP [1501-2000]/1559.detect_cycles_in_2D_grid [1].cpp>) [cpp2](<../../CPP [1501-2000]/1559.detect_cycles_in_2D_grid [2].cpp>) |
 |1560 | most visited sector in a circular track |[cpp1](<../../CPP [1501-2000]/1560.most_visited_sector_in_a_circular_track [1].cpp>) |
 |1561 | maximum number of coins you can get |[cpp1](<../../CPP [1501-2000]/1561.maximum_number_of_coins_you_can_get [1].cpp>) [js1](<../../Javascript/1561.maximum_number_of_coins_you_can_get [1].js>) |
-|1562 | find latest group of size M ||
 |1566 | detect pattern of length m repeated k or more times |[cpp1](<../../CPP [1501-2000]/1566.detect_pattern_of_length_m_repeated_k_or_more_times [1].cpp>) |
 |1568 | minimum number of days to disconnect island |[cpp1](<../../CPP [1501-2000]/1568.minimum_number_of_days_to_disconnect_island [1].cpp>) |
 |1572 | matrix diagonal sum |[cpp1](<../../CPP [1501-2000]/1572.matrix_diagonal_sum [1].cpp>) |
@@ -1024,7 +985,6 @@
 |1797 | design authentication manager |[cpp1](<../../CPP [1501-2000]/1797.design_authentication_manager [1].cpp>) |
 |1798 | maximum number of consecutive values you can make |[cpp1](<../../CPP [1501-2000]/1798.maximum_number_of_consecutive_values_you_can_make [1].cpp>) |
 |1800 | maximum ascending subarray sum |[cpp1](<../../CPP [1501-2000]/1800.maximum_ascending_subarray_sum [1].cpp>) |
-|1803 | count pairs with XOR in a range ||
 |1805 | number of different integers in a string |[cpp1](<../../CPP [1501-2000]/1805.number_of_different_integers_in_a_string [1].cpp>) |
 |1812 | determine color of a chessboard square |[cpp1](<../../CPP [1501-2000]/1812.determine_color_of_a_chessboard_square [1].cpp>) |
 |1813 | sentence similarity III |[cpp1](<../../CPP [1501-2000]/1813.sentence_similarity_III [1].cpp>) |
@@ -1032,7 +992,6 @@
 |1816 | truncate sentence |[cpp1](<../../CPP [1501-2000]/1816.truncate_sentence [1].cpp>) |
 |1822 | sign of the product of an array |[cpp1](<../../CPP [1501-2000]/1822.sign_of_the_product_of_an_array [1].cpp>) |
 |1823 | find the winner of the circular game |[cpp1](<../../CPP [1501-2000]/1823.find_the_winner_of_the_circular_game [1].cpp>) [cpp2](<../../CPP [1501-2000]/1823.find_the_winner_of_the_circular_game [2].cpp>) |
-|1825 | finding MK average ||
 |1827 | minimum operations to make the array increasing |[cpp1](<../../CPP [1501-2000]/1827.minimum_operations_to_make_the_array_increasing [1].cpp>) |
 |1828 | queries on number of points inside a circle |[cpp1](<../../CPP [1501-2000]/1828.queries_on_number_of_points_inside_a_circle [1].cpp>) |
 |1832 | check if the sentence is pangram |[cpp1](<../../CPP [1501-2000]/1832.check_if_the_sentence_is_pangram [1].cpp>) [cpp2](<../../CPP [1501-2000]/1832.check_if_the_sentence_is_pangram [2].cpp>) |
@@ -1109,7 +1068,6 @@
 |2002 | maximum product of the length of two palindromic subsequences |[cpp1](<../../CPP [2001-2500]/2002.maximum_product_of_the_length_of_two_palindromic_subsequences [1].cpp>) |
 |2006 | count number of pairs with absolute difference k |[cpp1](<../../CPP [2001-2500]/2006.count_number_of_pairs_with_absolute_difference_k [1].cpp>) [cpp2](<../../CPP [2001-2500]/2006.count_number_of_pairs_with_absolute_difference_k [2].cpp>) [cpp3](<../../CPP [2001-2500]/2006.count_number_of_pairs_with_absolute_difference_k [3].cpp>) |
 |2007 | find original array from doubled array |[cpp1](<../../CPP [2001-2500]/2007.find_original_array_from_doubled_array [1].cpp>) [cpp2](<../../CPP [2001-2500]/2007.find_original_array_from_doubled_array [2].cpp>) |
-|2009 | minimum number of operations to make array continuous ||
 |2011 | final value of variable after performing operations |[cpp1](<../../CPP [2001-2500]/2011.final_value_of_variable_after_performing_operations [1].cpp>) |
 |2013 | detect squares |[cpp1](<../../CPP [2001-2500]/2013.detect_squares [1].cpp>) [cpp2](<../../CPP [2001-2500]/2013.detect_squares [2].cpp>) |
 |2016 | maximum difference between increasing elements |[cpp1](<../../CPP [2001-2500]/2016.maximum_difference_between_increasing_elements [1].cpp>) [cpp2](<../../CPP [2001-2500]/2016.maximum_difference_between_increasing_elements [2].cpp>) |
@@ -1154,7 +1112,6 @@
 |2099 | find the subsequence of length k with the largest sum |[cpp1](<../../CPP [2001-2500]/2099.find_the_subsequence_of_length_k_with_the_largest_sum [1].cpp>) [cpp2](<../../CPP [2001-2500]/2099.find_the_subsequence_of_length_k_with_the_largest_sum [2].cpp>) |
 |2100 | find good days to rob the bank |[cpp1](<../../CPP [2001-2500]/2100.find_good_days_to_rob_the_bank [1].cpp>) [cpp2](<../../CPP [2001-2500]/2100.find_good_days_to_rob_the_bank [2].cpp>) |
 |2101 | detonate the maximum bombs |[cpp1](<../../CPP [2001-2500]/2101.detonate_the_maximum_bombs [1].cpp>) [cpp2](<../../CPP [2001-2500]/2101.detonate_the_maximum_bombs [2].cpp>) |
-|2102 | sequentially ordinal rank tracker ||
 |2103 | rings and rods |[cpp1](<../../CPP [2001-2500]/2103.rings_and_rods [1].cpp>) |
 |2104 | sum of subarray ranges |[cpp1](<../../CPP [2001-2500]/2104.sum_of_subarray_ranges [1].cpp>) |
 |2108 | find first palindromic string in the array |[cpp1](<../../CPP [2001-2500]/2108.find_first_palindromic_string_in_the_array [1].cpp>) |
@@ -1187,7 +1144,6 @@
 |2177 | find three consecutive integers that sum to a given number |[cpp1](<../../CPP [2001-2500]/2177.find_three_consecutive_integers_that_sum_to_a_given_number [1].cpp>) |
 |2180 | count integers with even digit sum |[cpp1](<../../CPP [2001-2500]/2180.count_integers_with_even_digit_sum [1].cpp>) |
 |2181 | merge nodes in between zeros |[cpp1](<../../CPP [2001-2500]/2181.merge_nodes_in_between_zeros [1].cpp>) [cpp2](<../../CPP [2001-2500]/2181.merge_nodes_in_between_zeros [2].cpp>) |
-|2183 | count array pairs divisible by K ||
 |2185 | counting words with a given prefix |[cpp1](<../../CPP [2001-2500]/2185.counting_words_with_a_given_prefix [1].cpp>) [cpp2](<../../CPP [2001-2500]/2185.counting_words_with_a_given_prefix [2].cpp>) [cpp3](<../../CPP [2001-2500]/2185.counting_words_with_a_given_prefix [3].cpp>) [js1](<../../Javascript/2185.counting_words_with_a_given_prefix [1].js>) [js2](<../../Javascript/2185.counting_words_with_a_given_prefix [2].js>) |
 |2190 | most frequent number following key in an array |[cpp1](<../../CPP [2001-2500]/2190.most_frequent_number_following_key_in_an_array [1].cpp>) |
 |2191 | sort the jumbled numbers |[cpp1](<../../CPP [2001-2500]/2191.sort_the_jumbled_numbers [1].cpp>) [cpp2](<../../CPP [2001-2500]/2191.sort_the_jumbled_numbers [2].cpp>) |
@@ -1199,7 +1155,6 @@
 |2210 | count hills and valleys in an array |[cpp1](<../../CPP [2001-2500]/2210.count_hills_and_valleys_in_an_array [1].cpp>) |
 |2211 | count collisions on a road |[cpp1](<../../CPP [2001-2500]/2211.count_collisions_on_a_road [1].cpp>) [cpp2](<../../CPP [2001-2500]/2211.count_collisions_on_a_road [2].cpp>) |
 |2215 | find the difference of two arrays |[cpp1](<../../CPP [2001-2500]/2215.find_the_difference_of_two_arrays [1].cpp>) [cpp2](<../../CPP [2001-2500]/2215.find_the_difference_of_two_arrays [2].cpp>) |
-|2218 | maximum value of K coins from piles ||
 |2220 | minimum bit flips to convert number |[cpp1](<../../CPP [2001-2500]/2220.minimum_bit_flips_to_convert_number [1].cpp>) [cpp2](<../../CPP [2001-2500]/2220.minimum_bit_flips_to_convert_number [2].cpp>) [cpp3](<../../CPP [2001-2500]/2220.minimum_bit_flips_to_convert_number [3].cpp>) |
 |2221 | find triangular sum of an array |[cpp1](<../../CPP [2001-2500]/2221.find_triangular_sum_of_an_array [1].cpp>) [cpp2](<../../CPP [2001-2500]/2221.find_triangular_sum_of_an_array [2].cpp>) |
 |2224 | minimum number of operations to convert time |[cpp1](<../../CPP [2001-2500]/2224.minimum_number_of_operations_to_convert_time [1].cpp>) [cpp2](<../../CPP [2001-2500]/2224.minimum_number_of_operations_to_convert_time [2].cpp>) |
@@ -1210,7 +1165,6 @@
 |2239 | find closest number to zero |[cpp1](<../../CPP [2001-2500]/2239.find_closest_number_to_zero [1].cpp>) |
 |2243 | calculate digit sum of a string |[cpp1](<../../CPP [2001-2500]/2243.calculate_digit_sum_of_a_string [1].cpp>) |
 |2244 | minimum rounds to complete all tasks |[cpp1](<../../CPP [2001-2500]/2244.minimum_rounds_to_complete_all_tasks [1].cpp>) [cpp2](<../../CPP [2001-2500]/2244.minimum_rounds_to_complete_all_tasks [2].cpp>) |
-|2246 | longest path with different adjacent characters ||
 |2248 | intersection of multiple arrays |[cpp1](<../../CPP [2001-2500]/2248.intersection_of_multiple_arrays [1].cpp>) |
 |2249 | count lattice points inside a circle |[cpp1](<../../CPP [2001-2500]/2249.count_lattice_points_inside_a_circle [1].cpp>) [cpp2](<../../CPP [2001-2500]/2249.count_lattice_points_inside_a_circle [2].cpp>) |
 |2255 | count prefixes of a given string |[cpp1](<../../CPP [2001-2500]/2255.count_prefixes_of_a_given_string [1].cpp>) |
@@ -1223,7 +1177,6 @@
 |2270 | number of ways to split array |[cpp1](<../../CPP [2001-2500]/2270.number_of_ways_to_split_array [1].cpp>) |
 |2273 | find resultant array after removing anagrams |[cpp1](<../../CPP [2001-2500]/2273.find_resultant_array_after_removing_anagrams [1].cpp>) |
 |2275 | largest combination with bitwise and greater than zero |[cpp1](<../../CPP [2001-2500]/2275.largest_combination_with_bitwise_and_greater_than_zero [1].cpp>) |
-|2276 | count integers in intervals ||
 |2278 | percentage of letter in string |[cpp1](<../../CPP [2001-2500]/2278.percentage_of_letter_in_string [1].cpp>) |
 |2279 | maximum bags with full capacity of rocks |[cpp1](<../../CPP [2001-2500]/2279.maximum_bags_with_full_capacity_of_rocks [1].cpp>) |
 |2280 | minimum lines to represent a line chart |[cpp1](<../../CPP [2001-2500]/2280.minimum_lines_to_represent_a_line_chart [1].cpp>) |
@@ -1237,7 +1190,6 @@
 |2300 | successful pairs of spells and potions |[cpp1](<../../CPP [2001-2500]/2300.successful_pairs_of_spells_and_potions [1].cpp>) |
 |2302 | count subarrays with score less than K |[cpp1](<../../CPP [2001-2500]/2302.count_subarrays_with_score_less_than_K [1].cpp>) |
 |2303 | calculate amount paid in taxes |[cpp1](<../../CPP [2001-2500]/2303.calculate_amount_paid_in_taxes [1].cpp>) |
-|2306 | naming a company ||
 |2309 | greatest english letter in upper and lower case |[cpp1](<../../CPP [2001-2500]/2309.greatest_english_letter_in_upper_and_lower_case [1].cpp>) |
 |2315 | count asterisks |[cpp1](<../../CPP [2001-2500]/2315.count_asterisks [1].cpp>) |
 |2316 | count unreachable pair of nodes in an undirected graph |[cpp1](<../../CPP [2001-2500]/2316.count_unreachable_pair_of_nodes_in_an_undirected_graph [1].cpp>) [cpp2](<../../CPP [2001-2500]/2316.count_unreachable_pair_of_nodes_in_an_undirected_graph [2].cpp>) |
@@ -1261,7 +1213,6 @@
 |2356 | number of unique subjects taught by each teacher |[mysql1](<../../MySQL/2356.number_of_unique_subjects_taught_by_each_teacher [1].sql>) [mysql2](<../../MySQL/2356.number_of_unique_subjects_taught_by_each_teacher [2].sql>) |
 |2357 | make array zero by subtracting equal amounts |[cpp1](<../../CPP [2001-2500]/2357.make_array_zero_by_subtracting_equal_amounts [1].cpp>) [cpp2](<../../CPP [2001-2500]/2357.make_array_zero_by_subtracting_equal_amounts [2].cpp>) [cpp3](<../../CPP [2001-2500]/2357.make_array_zero_by_subtracting_equal_amounts [3].cpp>) |
 |2359 | find closest node to given two nodes |[cpp1](<../../CPP [2001-2500]/2359.find_closest_node_to_given_two_nodes [1].cpp>) [cpp2](<../../CPP [2001-2500]/2359.find_closest_node_to_given_two_nodes [2].cpp>) |
-|2360 | longest cycle in a graph ||
 |2363 | merge similar items |[cpp1](<../../CPP [2001-2500]/2363.merge_similar_items [1].cpp>) [cpp2](<../../CPP [2001-2500]/2363.merge_similar_items [2].cpp>) |
 |2364 | count number of bad pairs |[cpp1](<../../CPP [2001-2500]/2364.count_number_of_bad_pairs [1].cpp>) |
 |2367 | number of arithmetic triplets |[cpp1](<../../CPP [2001-2500]/2367.number_of_arithmetic_triplets [1].cpp>) [cpp2](<../../CPP [2001-2500]/2367.number_of_arithmetic_triplets [2].cpp>) |
@@ -1270,7 +1221,6 @@
 |2370 | longest ideal subsequence |[cpp1](<../../CPP [2001-2500]/2370.longest_ideal_subsequence [1].cpp>) |
 |2373 | largest local values in a matrix |[cpp1](<../../CPP [2001-2500]/2373.largest_local_values_in_a_matrix [1].cpp>) [cpp2](<../../CPP [2001-2500]/2373.largest_local_values_in_a_matrix [2].cpp>) |
 |2374 | node with highest edge score |[cpp1](<../../CPP [2001-2500]/2374.node_with_highest_edge_score [1].cpp>) |
-|2376 | count special integers ||
 |2380 | time needed to rearrange a binary string |[cpp1](<../../CPP [2001-2500]/2380.time_needed_to_rearrange_a_binary_string [1].cpp>) |
 |2381 | shifting letters II |[cpp1](<../../CPP [2001-2500]/2381.shifting_letters_II [1].cpp>) |
 |2383 | minimum hours of training to win a competition |[cpp1](<../../CPP [2001-2500]/2383.minimum_hours_of_training_to_win_a_competition [1].cpp>) |
@@ -1285,7 +1235,6 @@
 |2404 | most frequent even element |[cpp1](<../../CPP [2001-2500]/2404.most_frequent_even_element [1].cpp>) [cpp2](<../../CPP [2001-2500]/2404.most_frequent_even_element [2].cpp>) |
 |2405 | optimal partition of string |[cpp1](<../../CPP [2001-2500]/2405.optimal_partition_of_string [1].cpp>) [cpp2](<../../CPP [2001-2500]/2405.optimal_partition_of_string [2].cpp>) |
 |2406 | divide intervals into minimum number of groups |[cpp1](<../../CPP [2001-2500]/2406.divide_intervals_into_minimum_number_of_groups [1].cpp>) |
-|2407 | longest increasing subsequence II ||
 |2409 | count days spent together |[cpp1](<../../CPP [2001-2500]/2409.count_days_spent_together [1].cpp>) |
 |2410 | maximum matching of players with trainers |[cpp1](<../../CPP [2001-2500]/2410.maximum_matching_of_players_with_trainers [1].cpp>) |
 |2413 | smallest even multiple |[cpp1](<../../CPP [2001-2500]/2413.smallest_even_multiple [1].cpp>) |
@@ -1296,7 +1245,6 @@
 |2420 | find all good indices |[cpp1](<../../CPP [2001-2500]/2420.find_all_good_indices [1].cpp>) |
 |2423 | remove letter to equalize frequency |[cpp1](<../../CPP [2001-2500]/2423.remove_letter_to_equalize_frequency [1].cpp>) [cpp2](<../../CPP [2001-2500]/2423.remove_letter_to_equalize_frequency [2].cpp>) |
 |2424 | longest uploaded prefix |[cpp1](<../../CPP [2001-2500]/2424.longest_uploaded_prefix [1].cpp>) |
-|2426 | number of pairs satisfying inequality ||
 |2427 | number of common factors |[cpp1](<../../CPP [2001-2500]/2427.number_of_common_factors [1].cpp>) [cpp2](<../../CPP [2001-2500]/2427.number_of_common_factors [2].cpp>) |
 |2428 | maximum sum of an hourglass |[cpp1](<../../CPP [2001-2500]/2428.maximum_sum_of_an_hourglass [1].cpp>) |
 |2432 | the employee that worked on the longest task |[cpp1](<../../CPP [2001-2500]/2432.the_employee_that_worked_on_the_longest_task [1].cpp>) |
@@ -1344,13 +1292,11 @@
 |2540 | minimum common value |[cpp1](<../../CPP [2501-3000]/2540.minimum_common_value [1].cpp>) [cpp2](<../../CPP [2501-3000]/2540.minimum_common_value [2].cpp>) [cpp3](<../../CPP [2501-3000]/2540.minimum_common_value [3].cpp>) |
 |2544 | alternating digit sum |[cpp1](<../../CPP [2501-3000]/2544.alternating_digit_sum [1].cpp>) |
 |2545 | sort the students by their Kth score |[cpp1](<../../CPP [2501-3000]/2545.sort_the_students_by_their_Kth_score [1].cpp>) [cpp2](<../../CPP [2501-3000]/2545.sort_the_students_by_their_Kth_score [2].cpp>) |
-|2552 | count increasing quadruplets ||
 |2553 | seperate the digits in an array |[cpp1](<../../CPP [2501-3000]/2553.seperate_the_digits_in_an_array [1].cpp>) [cpp2](<../../CPP [2501-3000]/2553.seperate_the_digits_in_an_array [2].cpp>) |
 |2554 | maximum number of integers to choose from a range I |[cpp1](<../../CPP [2501-3000]/2554.maximum_number_of_integers_to_choose_from_a_range_I [1].cpp>) |
 |2558 | take gifts from the richest pile |[cpp1](<../../CPP [2501-3000]/2558.take_gifts_from_the_richest_pile [1].cpp>) |
 |2559 | count vowel strings in ranges |[cpp1](<../../CPP [2501-3000]/2559.count_vowel_strings_in_ranges [1].cpp>) |
 |2562 | find the array concatenation value |[cpp1](<../../CPP [2501-3000]/2562.find_the_array_concatenation_value [1].cpp>) |
-|2563 | count the number of fair pairs ||
 |2564 | substring XOR queries |[cpp1](<../../CPP [2501-3000]/2564.substring_XOR_queries [1].cpp>) |
 |2566 | maximum difference by remapping a digit |[cpp1](<../../CPP [2501-3000]/2566.maximum_difference_by_remapping_a_digit [1].cpp>) |
 |2570 | merge two 2d arrays by summing values |[cpp1](<../../CPP [2501-3000]/2570.merge_two_2d_arrays_by_summing_values [1].cpp>) |
@@ -1421,7 +1367,6 @@
 |2705 | compact object |[js1](<../../Javascript/2705.compact_object [1].js>) |
 |2706 | buy two chocolates |[cpp1](<../../CPP [2501-3000]/2706.buy_two_chocolates [1].cpp>) |
 |2707 | extra characters in string |[cpp1](<../../CPP [2501-3000]/2707.extra_characters_in_string [1].cpp>) |
-|2709 | greatest common divisor traversal ||
 |2710 | remove trailing zeros from a string |[cpp1](<../../CPP [2501-3000]/2710.remove_trailing_zeros_from_a_string [1].cpp>) |
 |2711 | difference of number of distinct values on diagonals |[cpp1](<../../CPP [2501-3000]/2711.difference_of_number_of_distinct_values_on_diagonals [1].cpp>) |
 |2715 | execute cancellable function with delay |[js1](<../../Javascript/2715.execute_cancellable_function_with_delay [1].js>) |
@@ -1436,11 +1381,9 @@
 |2727 | is object empty |[js1](<../../Javascript/2727.is_object_empty [1].js>) [js2](<../../Javascript/2727.is_object_empty [2].js>) [js3](<../../Javascript/2727.is_object_empty [3].js>) |
 |2729 | check if the number is fascinating |[cpp1](<../../CPP [2501-3000]/2729.check_if_the_number_is_fascinating [1].cpp>) [cpp2](<../../CPP [2501-3000]/2729.check_if_the_number_is_fascinating [2].cpp>) |
 |2733 | neither minimum nor maximum |[cpp1](<../../CPP [2501-3000]/2733.neither_minimum_nor_maximum [1].cpp>) [cpp2](<../../CPP [2501-3000]/2733.neither_minimum_nor_maximum [2].cpp>) |
-|2736 | maximum sum queries ||
 |2739 | total distance travelled |[cpp1](<../../CPP [2501-3000]/2739.total_distance_travelled [1].cpp>) [cpp2](<../../CPP [2501-3000]/2739.total_distance_travelled [2].cpp>) |
 |2740 | find the value of the partition |[cpp1](<../../CPP [2501-3000]/2740.find_the_value_of_the_partition [1].cpp>) |
 |2744 | find maximum number of string pairs |[cpp1](<../../CPP [2501-3000]/2744.find_maximum_number_of_string_pairs [1].cpp>) [cpp2](<../../CPP [2501-3000]/2744.find_maximum_number_of_string_pairs [2].cpp>) [cpp3](<../../CPP [2501-3000]/2744.find_maximum_number_of_string_pairs [3].cpp>) |
-|2747 | count zero request servers ||
 |2748 | number of beautiful pairs |[cpp1](<../../CPP [2501-3000]/2748.number_of_beautiful_pairs [1].cpp>) [cpp2](<../../CPP [2501-3000]/2748.number_of_beautiful_pairs [2].cpp>) |
 |2751 | robot collisions |[cpp1](<../../CPP [2501-3000]/2751.robot_collisions [1].cpp>) |
 |2761 | prime pairs with target sum |[cpp1](<../../CPP [2501-3000]/2761.prime_pairs_with_target_sum [1].cpp>) |
@@ -1471,8 +1414,6 @@
 |2843 | count symmetric integers |[cpp1](<../../CPP [2501-3000]/2843.count_symmetric_integers [1].cpp>) |
 |2848 | points that intersect with cars |[cpp1](<../../CPP [2501-3000]/2848.points_that_intersect_with_cars [1].cpp>) [cpp2](<../../CPP [2501-3000]/2848.points_that_intersect_with_cars [2].cpp>) [cpp3](<../../CPP [2501-3000]/2848.points_that_intersect_with_cars [3].cpp>) |
 |2855 | minimum right shifts to sort the array |[cpp1](<../../CPP [2501-3000]/2855.minimum_right_shifts_to_sort_the_array [1].cpp>) |
-|2857 | count pairs of points with distance K ||
-|2858 | minimum edge reversals so every node is reachable ||
 |2859 | sum of values at indices with k set bits |[cpp1](<../../CPP [2501-3000]/2859.sum_of_values_at_indices_with_k_set_bits [1].cpp>) [cpp2](<../../CPP [2501-3000]/2859.sum_of_values_at_indices_with_k_set_bits [2].cpp>) |
 |2864 | maximum odd binary number |[cpp1](<../../CPP [2501-3000]/2864.maximum_odd_binary_number [1].cpp>) |
 |2867 | count valid paths in a tree |[cpp1](<../../CPP [2501-3000]/2867.count_valid_paths_in_a_tree [1].cpp>) |
@@ -1480,7 +1421,6 @@
 |2870 | minimum number of operations to make array empty |[cpp1](<../../CPP [2501-3000]/2870.minimum_number_of_operations_to_make_array_empty [1].cpp>) |
 |2873 | maximum value of an ordered triplet I |[cpp1](<../../CPP [2501-3000]/2873.maximum_value_of_an_ordered_triplet_I [1].cpp>) |
 |2874 | maximum value of an ordered triplet II |[cpp1](<../../CPP [2501-3000]/2874.maximum_value_of_an_ordered_triplet_II [1].cpp>) |
-|2876 | count visited nodes in a directed graph ||
 |2894 | divisible and non divisible sums difference |[cpp1](<../../CPP [2501-3000]/2894.divisible_and_non_divisible_sums_difference [1].cpp>) |
 |2895 | minimum processing time |[cpp1](<../../CPP [2501-3000]/2895.minimum_processing_time [1].cpp>) |
 |2903 | find indices with index and value difference I |[cpp1](<../../CPP [2501-3000]/2903.find_indices_with_index_and_value_difference_I [1].cpp>) |
@@ -1496,7 +1436,6 @@
 |2928 | distribute candies among children I |[cpp1](<../../CPP [2501-3000]/2928.distribute_candies_among_children_I [1].cpp>) [cpp2](<../../CPP [2501-3000]/2928.distribute_candies_among_children_I [2].cpp>) |
 |2932 | maximum strong pair xor I |[cpp1](<../../CPP [2501-3000]/2932.maximum_strong_pair_xor_I [1].cpp>) |
 |2933 | high access employees |[cpp1](<../../CPP [2501-3000]/2933.high_access_employees [1].cpp>) |
-|2935 | maximum strong pair XOR II ||
 |2937 | make three strings equal |[cpp1](<../../CPP [2501-3000]/2937.make_three_strings_equal [1].cpp>) |
 |2938 | separate black and white balls |[cpp1](<../../CPP [2501-3000]/2938.separate_black_and_white_balls [1].cpp>) |
 |2942 | find words containing character |[cpp1](<../../CPP [2501-3000]/2942.find_words_containing_character [1].cpp>) |
@@ -1532,7 +1471,6 @@
 |3039 | apply operations to make string empty |[cpp1](<../../CPP [3001-3500]/3039.apply_operations_to_make_string_empty [1].cpp>) |
 |3042 | count prefix and suffix pairs I |[cpp1](<../../CPP [3001-3500]/3042.count_prefix_and_suffix_pairs_I [1].cpp>) [cpp2](<../../CPP [3001-3500]/3042.count_prefix_and_suffix_pairs_I [2].cpp>) [js1](<../../Javascript/3042.count_prefix_and_suffix_pairs_I [1].js>) [js2](<../../Javascript/3042.count_prefix_and_suffix_pairs_I [2].js>) |
 |3043 | find the length of the longest common prefix |[cpp1](<../../CPP [3001-3500]/3043.find_the_length_of_the_longest_common_prefix [1].cpp>) |
-|3045 | count prefix and suffix pairs II ||
 |3046 | split the array |[cpp1](<../../CPP [3001-3500]/3046.split_the_array [1].cpp>) |
 |3065 | minimum operations to exceed threshold value I |[cpp1](<../../CPP [3001-3500]/3065.minimum_operations_to_exceed_threshold_value_I [1].cpp>) |
 |3068 | find the maximum sum of node values |[cpp1](<../../CPP [3001-3500]/3068.find_the_maximum_sum_of_node_values [1].cpp>) |
@@ -1547,17 +1485,13 @@
 |3084 | count substrings starting and ending with given character |[cpp1](<../../CPP [3001-3500]/3084.count_substrings_starting_and_ending_with_given_character [1].cpp>) |
 |3090 | maximum length substring with two occurrences |[cpp1](<../../CPP [3001-3500]/3090.maximum_length_substring_with_two_occurrences [1].cpp>) [cpp2](<../../CPP [3001-3500]/3090.maximum_length_substring_with_two_occurrences [2].cpp>) |
 |3092 | most frequent IDs |[cpp1](<../../CPP [3001-3500]/3092.most_frequent_IDs [1].cpp>) |
-|3093 | longest common suffix queries ||
 |3095 | shortest subarray with OR at least k I |[cpp1](<../../CPP [3001-3500]/3095.shortest_subarray_with_OR_at_least_k_I [1].cpp>) |
-|3097 | shortest subarray with OR at least k II ||
 |3099 | harshad number |[cpp1](<../../CPP [3001-3500]/3099.harshad_number [1].cpp>) |
 |3101 | count alternating subarrays |[cpp1](<../../CPP [3001-3500]/3101.count_alternating_subarrays [1].cpp>) |
-|3102 | minimize manhattan distances ||
 |3105 | longest strictly increasing or strictly decreasing subarray |[cpp1](<../../CPP [3001-3500]/3105.longest_strictly_increasing_or_strictly_decreasing_subarray [1].cpp>) [cpp2](<../../CPP [3001-3500]/3105.longest_strictly_increasing_or_strictly_decreasing_subarray [2].cpp>) |
 |3107 | minimum operations to make median of array equal to K |[cpp1](<../../CPP [3001-3500]/3107.minimum_operations_to_make_median_of_array_equal_to_K [1].cpp>) |
 |3110 | score of a string |[cpp1](<../../CPP [3001-3500]/3110.score_of_a_string [1].cpp>) |
 |3111 | minimum rectangles to cover points |[cpp1](<../../CPP [3001-3500]/3111.minimum_rectangles_to_cover_points [1].cpp>) |
-|3113 | find the number of subarrays where boundary elements are maximum ||
 |3114 | latest time you can obtain after replacing characters |[cpp1](<../../CPP [3001-3500]/3114.latest_time_you_can_obtain_after_replacing_characters [1].cpp>) |
 |3115 | maximum prime difference |[cpp1](<../../CPP [3001-3500]/3115.maximum_prime_difference [1].cpp>) [cpp2](<../../CPP [3001-3500]/3115.maximum_prime_difference [2].cpp>) |
 |3120 | count the number of special characters I |[cpp1](<../../CPP [3001-3500]/3120.count_the_number_of_special_characters_I [1].cpp>) |
@@ -1566,7 +1500,6 @@
 |3127 | make a square with the same color |[cpp1](<../../CPP [3001-3500]/3127.make_a_square_with_the_same_color [1].cpp>) |
 |3128 | right triangles |[cpp1](<../../CPP [3001-3500]/3128.right_triangles [1].cpp>) |
 |3131 | find the integer added to array I |[cpp1](<../../CPP [3001-3500]/3131.find_the_integer_added_to_array_I [1].cpp>) |
-|3134 | find the median of the uniqueness array ||
 |3136 | valid word |[cpp1](<../../CPP [3001-3500]/3136.valid_word [1].cpp>) |
 |3137 | minimum number of operations to make word K periodic |[cpp1](<../../CPP [3001-3500]/3137.minimum_number_of_operations_to_make_word_K_periodic [1].cpp>) |
 |3138 | minimum length of anagram concatenation |[cpp1](<../../CPP [3001-3500]/3138.minimum_length_of_anagram_concatenation [1].cpp>) |
@@ -1583,15 +1516,12 @@
 |3164 | find the number of good pairs II |[cpp1](<../../CPP [3001-3500]/3164.find_the_number_of_good_pairs_II [1].cpp>) |
 |3168 | minimum number of chairs in a waiting room |[cpp1](<../../CPP [3001-3500]/3168.minimum_number_of_chairs_in_a_waiting_room [1].cpp>) |
 |3169 | count days without meetings |[cpp1](<../../CPP [3001-3500]/3169.count_days_without_meetings [1].cpp>) |
-|3171 | find subarray with bitwise AND closest to K ||
 |3174 | clear digits |[cpp1](<../../CPP [3001-3500]/3174.clear_digits [1].cpp>) |
 |3176 | find the maximum length of a good subsequence I |[cpp1](<../../CPP [3001-3500]/3176.find_the_maximum_length_of_a_good_subsequence_I [1].cpp>) |
-|3177 | find the maximum length of a good subsequence II ||
 |3178 | find the child who has the ball after K seconds |[cpp1](<../../CPP [3001-3500]/3178.find_the_child_who_has_the_ball_after_K_seconds [1].cpp>) [cpp2](<../../CPP [3001-3500]/3178.find_the_child_who_has_the_ball_after_K_seconds [2].cpp>) |
 |3179 | find the Nth value after K seconds |[cpp1](<../../CPP [3001-3500]/3179.find_the_Nth_value_after_K_seconds [1].cpp>) |
 |3184 | count pairs that form a complete day I |[cpp1](<../../CPP [3001-3500]/3184.count_pairs_that_form_a_complete_day_I [1].cpp>) |
 |3185 | count pairs that form a complete day II |[cpp1](<../../CPP [3001-3500]/3185.count_pairs_that_form_a_complete_day_II [1].cpp>) |
-|3187 | peaks in array ||
 |3190 | find minimum operations to make all elements divisible by three |[cpp1](<../../CPP [3001-3500]/3190.find_minimum_operations_to_make_all_elements_divisible_by_three [1].cpp>) |
 |3191 | minimum operations to make binary array elements equal to one I |[cpp1](<../../CPP [3001-3500]/3191.minimum_operations_to_make_binary_array_elements_equal_to_one_I [1].cpp>) |
 |3192 | minimum operations to make binary array elements equal to one II |[cpp1](<../../CPP [3001-3500]/3192.minimum_operations_to_make_binary_array_elements_equal_to_one_II [1].cpp>) |
@@ -1601,8 +1531,6 @@
 |3201 | find the maximum length of valid subsequence I |[cpp1](<../../CPP [3001-3500]/3201.find_the_maximum_length_of_valid_subsequence_I [1].cpp>) |
 |3203 | find minimum diameter after merging two trees |[cpp1](<../../CPP [3001-3500]/3203.find_minimum_diameter_after_merging_two_trees [1].cpp>) |
 |3206 | alternating groups I |[cpp1](<../../CPP [3001-3500]/3206.alternating_groups_I [1].cpp>) |
-|3208 | alternating groups II ||
-|3209 | number of subarrays with AND value of K ||
 |3210 | find the encrypted string |[cpp1](<../../CPP [3001-3500]/3210.find_the_encrypted_string [1].cpp>) |
 |3211 | generate binary strings without adjacent zeros |[cpp1](<../../CPP [3001-3500]/3211.generate_binary_strings_without_adjacent_zeros [1].cpp>) |
 |3212 | count submatrices with equal frequency of X and Y |[cpp1](<../../CPP [3001-3500]/3212.count_submatrices_with_equal_frequency_of_X_and_Y [1].cpp>) [cpp2](<../../CPP [3001-3500]/3212.count_submatrices_with_equal_frequency_of_X_and_Y [2].cpp>) |
@@ -1616,29 +1544,22 @@
 |3228 | maximum number of operations to move ones to the end |[cpp1](<../../CPP [3001-3500]/3228.maximum_number_of_operations_to_move_ones_to_the_end [1].cpp>) |
 |3232 | find if digit game can be won |[cpp1](<../../CPP [3001-3500]/3232.find_if_digit_game_can_be_won [1].cpp>) |
 |3233 | find the count of numbers which are not special |[cpp1](<../../CPP [3001-3500]/3233.find_the_count_of_numbers_which_are_not_special [1].cpp>) |
-|3234 | count the number of substrings with dominant ones ||
 |3238 | find the number of winning players |[cpp1](<../../CPP [3001-3500]/3238.find_the_number_of_winning_players [1].cpp>) |
 |3239 | minimum number of flips to make binary grid palindromic I |[cpp1](<../../CPP [3001-3500]/3239.minimum_number_of_flips_to_make_binary_grid_palindromic_I [1].cpp>) |
-|3241 | time taken to mark all nodes ||
 |3242 | design neighbor sum service |[cpp1](<../../CPP [3001-3500]/3242.design_neighbor_sum_service [1].cpp>) |
 |3243 | shortest distance after road addition queries I |[cpp1](<../../CPP [3001-3500]/3243.shortest_distance_after_road_addition_queries_I [1].cpp>) |
-|3244 | shortest distance after road addition queries II ||
 |3248 | snake in matrix |[cpp1](<../../CPP [3001-3500]/3248.snake_in_matrix [1].cpp>) |
 |3249 | count the number of good nodes |[cpp1](<../../CPP [3001-3500]/3249.count_the_number_of_good_nodes [1].cpp>) |
 |3254 | find the power of K size subarrays I |[cpp1](<../../CPP [3001-3500]/3254.find_the_power_of_K_size_subarrays_I [1].cpp>) |
-|3255 | find the power of K size subarrays II ||
 |3258 | count substrings that satisfy K constraint I |[cpp1](<../../CPP [3001-3500]/3258.count_substrings_that_satisfy_K_constraint_I [1].cpp>) |
 |3259 | maximum energy boost from two drinks |[cpp1](<../../CPP [3001-3500]/3259.maximum_energy_boost_from_two_drinks [1].cpp>) [cpp2](<../../CPP [3001-3500]/3259.maximum_energy_boost_from_two_drinks [2].cpp>) [cpp3](<../../CPP [3001-3500]/3259.maximum_energy_boost_from_two_drinks [3].cpp>) |
-|3261 | count substrings that satisfy K constraint II ||
 |3264 | final array state after K multiplication operations I |[cpp1](<../../CPP [3001-3500]/3264.final_array_state_after_K_multiplication_operations_I [1].cpp>) [cpp2](<../../CPP [3001-3500]/3264.final_array_state_after_K_multiplication_operations_I [2].cpp>) |
 |3265 | count almost equal pairs I |[cpp1](<../../CPP [3001-3500]/3265.count_almost_equal_pairs_I [1].cpp>) |
-|3266 | final array state after K multiplication operations II ||
 |3270 | find the key of the numbers |[cpp1](<../../CPP [3001-3500]/3270.find_the_key_of_the_numbers [1].cpp>) [cpp2](<../../CPP [3001-3500]/3270.find_the_key_of_the_numbers [2].cpp>) |
 |3271 | hash divided string |[cpp1](<../../CPP [3001-3500]/3271.hash_divided_string [1].cpp>) |
 |3274 | check if two chessboard squares have the same color |[cpp1](<../../CPP [3001-3500]/3274.check_if_two_chessboard_squares_have_the_same_color [1].cpp>) |
 |3275 | Kth nearest obstacle queries |[cpp1](<../../CPP [3001-3500]/3275.Kth_nearest_obstacle_queries [1].cpp>) |
 |3280 | convert date to binary |[cpp1](<../../CPP [3001-3500]/3280.convert_date_to_binary [1].cpp>) [js1](<../../Javascript/3280.convert_date_to_binary [1].js>) |
-|3282 | reach end of array with max score ||
 |3285 | find indices of stable mountains |[cpp1](<../../CPP [3001-3500]/3285.find_indices_of_stable_mountains [1].cpp>) |
 |3286 | find a safe walk through a grid |[cpp1](<../../CPP [3001-3500]/3286.find_a_safe_walk_through_a_grid [1].cpp>) |
 |3289 | the two sneaky numbers of digitville |[cpp1](<../../CPP [3001-3500]/3289.the_two_sneaky_numbers_of_digitville [1].cpp>) [cpp2](<../../CPP [3001-3500]/3289.the_two_sneaky_numbers_of_digitville [2].cpp>) |
@@ -1648,33 +1569,23 @@
 |3298 | count substrings that can be rearranged to contain a string II |[cpp1](<../../CPP [3001-3500]/3298.count_substrings_that_can_be_rearranged_to_contain_a_string_II [1].cpp>) |
 |3300 | minimum element after replacement with digit sum |[cpp1](<../../CPP [3001-3500]/3300.minimum_element_after_replacement_with_digit_sum [1].cpp>) |
 |3301 | maximize the total height of unique towers |[cpp1](<../../CPP [3001-3500]/3301.maximize_the_total_height_of_unique_towers [1].cpp>) |
-|3302 | find the lexicographically smallest valid sequence ||
-|3303 | find the occurrence of first almost equal substring ||
 |3304 | find the Kth character in string game I |[cpp1](<../../CPP [3001-3500]/3304.find_the_Kth_character_in_string_game_I [1].cpp>) |
 |3305 | count of substrings containing every vowel and K consonants I |[cpp1](<../../CPP [3001-3500]/3305.count_of_substrings_containing_every_vowel_and_K_consonants_I [1].cpp>) |
-|3306 | count of substrings containing every vowel and K consonants II ||
-|3307 | find the Kth character in string game II ||
 |3309 | maximum possible number by binary concatenation |[cpp1](<../../CPP [3001-3500]/3309.maximum_possible_number_by_binary_concatenation [1].cpp>) |
 |3310 | remove methods from project |[cpp1](<../../CPP [3001-3500]/3310.remove_methods_from_project [1].cpp>) |
-|3312 | sorted GCD pair queries ||
 |3314 | construct the minimum bitwise array I |[cpp1](<../../CPP [3001-3500]/3314.construct_the_minimum_bitwise_array_I [1].cpp>) |
-|3315 | construct the minimum bitwise array II ||
-|3316 | find maximum removals from source string ||
 |3318 | find X sum of all K long subarrays I |[cpp1](<../../CPP [3001-3500]/3318.find_X_sum_of_all_K_long_subarrays_I [1].cpp>) |
 |3319 | K th largest perfect subtree size in binary tree |[cpp1](<../../CPP [3001-3500]/3319.K_th_largest_perfect_subtree_size_in_binary_tree [1].cpp>) |
-|3321 | find X sum of all K long subarrays II ||
 |3324 | find the sequence of strings appeared on the screen |[cpp1](<../../CPP [3001-3500]/3324.find_the_sequence_of_strings_appeared_on_the_screen [1].cpp>) |
 |3325 | count substrings with K frequency characters I |[cpp1](<../../CPP [3001-3500]/3325.count_substrings_with_K_frequency_characters_I [1].cpp>) [cpp2](<../../CPP [3001-3500]/3325.count_substrings_with_K_frequency_characters_I [2].cpp>) |
 |3326 | minimum division operations to make array non decreasing |[cpp1](<../../CPP [3001-3500]/3326.minimum_division_operations_to_make_array_non_decreasing [1].cpp>) |
 |3330 | find the original typed string I |[cpp1](<../../CPP [3001-3500]/3330.find_the_original_typed_string_I [1].cpp>) |
 |3331 | find subtree sizes after changes |[cpp1](<../../CPP [3001-3500]/3331.find_subtree_sizes_after_changes [1].cpp>) |
-|3332 | maximum points tourist can earn ||
 |3334 | find the maximum factor score of array |[cpp1](<../../CPP [3001-3500]/3334.find_the_maximum_factor_score_of_array [1].cpp>) |
 |3335 | total characters in string after transformations I |[cpp1](<../../CPP [3001-3500]/3335.total_characters_in_string_after_transformations_I [1].cpp>) |
 |3340 | check balanced string |[cpp1](<../../CPP [3001-3500]/3340.check_balanced_string [1].cpp>) [js1](<../../Javascript/3340.check_balanced_string [1].js>) |
 |3341 | find minimum time to reach last room I |[cpp1](<../../CPP [3001-3500]/3341.find_minimum_time_to_reach_last_room_I [1].cpp>) [cpp2](<../../CPP [3001-3500]/3341.find_minimum_time_to_reach_last_room_I [2].cpp>) |
 |3342 | find minimum time to reach last room II |[cpp1](<../../CPP [3001-3500]/3342.find_minimum_time_to_reach_last_room_II [1].cpp>) |
-|3343 | count number of balanced permutations ||
 |3345 | smallest divisible digit product I |[cpp1](<../../CPP [3001-3500]/3345.smallest_divisible_digit_product_I [1].cpp>) |
 |3349 | adjacent increasing subarrays detection I |[cpp1](<../../CPP [3001-3500]/3349.adjacent_increasing_subarrays_detection_I [1].cpp>) |
 |3354 | make array elements equal to zero |[cpp1](<../../CPP [3001-3500]/3354.make_array_elements_equal_to_zero [1].cpp>) [cpp2](<../../CPP [3001-3500]/3354.make_array_elements_equal_to_zero [2].cpp>) |
@@ -1688,7 +1599,6 @@
 |3375 | minimum operations to make array values equal to K |[cpp1](<../../CPP [3001-3500]/3375.minimum_operations_to_make_array_values_equal_to_K [1].cpp>) |
 |3379 | transformed array |[cpp1](<../../CPP [3001-3500]/3379.transformed_array [1].cpp>) |
 |3380 | maximum area rectangle with point constraints I |[cpp1](<../../CPP [3001-3500]/3380.maximum_area_rectangle_with_point_constraints_I [1].cpp>) [cpp2](<../../CPP [3001-3500]/3380.maximum_area_rectangle_with_point_constraints_I [2].cpp>) |
-|3382 | maximum area rectangle with point constraints II ||
 |3386 | button with longest push time |[cpp1](<../../CPP [3001-3500]/3386.button_with_longest_push_time [1].cpp>) |
 |3392 | count subarrays of length three with a condition |[cpp1](<../../CPP [3001-3500]/3392.count_subarrays_of_length_three_with_a_condition [1].cpp>) |
 |3393 | count paths with the given XOR value |[cpp1](<../../CPP [3001-3500]/3393.count_paths_with_the_given_XOR_value [1].cpp>) |
@@ -1721,7 +1631,6 @@
 |3475 | DNA pattern recognition |[mysql1](<../../MySQL/3475.DNA_pattern_recognition [1].sql>) |
 |3477 | fruits into baskets II |[cpp1](<../../CPP [3001-3500]/3477.fruits_into_baskets_II [1].cpp>) |
 |3478 | choose K elements with maximum sum |[cpp1](<../../CPP [3001-3500]/3478.choose_K_elements_with_maximum_sum [1].cpp>) |
-|3479 | fruits into baskets III ||
 |3483 | unique 3 digit even numbers |[cpp1](<../../CPP [3001-3500]/3483.unique_3_digit_even_numbers [1].cpp>) |
 |3484 | design spreadsheet |[cpp1](<../../CPP [3001-3500]/3484.design_spreadsheet [1].cpp>) |
 |3487 | maximum unique subarray sum after deletion |[cpp1](<../../CPP [3001-3500]/3487.maximum_unique_subarray_sum_after_deletion [1].cpp>) |
@@ -1732,14 +1641,10 @@
 |3498 | reverse degree of a string |[cpp1](<../../CPP [3001-3500]/3498.reverse_degree_of_a_string [1].cpp>) [js1](<../../Javascript/3498.reverse_degree_of_a_string [1].js>) |
 |3502 | minimum cost to reach every position |[cpp1](<../../CPP [3501-4000]/3502.minimum_cost_to_reach_every_position [1].cpp>) [js1](<../../Javascript/3502.minimum_cost_to_reach_every_position [1].js>) |
 |3503 | longest palindrome after substring concatenation I |[cpp1](<../../CPP [3501-4000]/3503.longest_palindrome_after_substring_concatenation_I [1].cpp>) |
-|3504 | longest palindrome after substring concatenation II ||
 |3507 | minimum pair removal to sort array I |[cpp1](<../../CPP [3501-4000]/3507.minimum_pair_removal_to_sort_array_I [1].cpp>) |
 |3508 | implement router |[cpp1](<../../CPP [3501-4000]/3508.implement_router [1].cpp>) |
-|3510 | minimum pair removal to sort array II ||
 |3512 | minimum operations to make array sum divisible by K |[cpp1](<../../CPP [3501-4000]/3512.minimum_operations_to_make_array_sum_divisible_by_K [1].cpp>) |
 |3513 | number of unique XOR triplets I |[cpp1](<../../CPP [3501-4000]/3513.number_of_unique_XOR_triplets_I [1].cpp>) |
-|3514 | number of unique XOR triplets II ||
-|3515 | shortest path in a weighted tree ||
 |3516 | find closest person |[cpp1](<../../CPP [3501-4000]/3516.find_closest_person [1].cpp>) |
 |3517 | smallest palindromic rearrangement I |[cpp1](<../../CPP [3501-4000]/3517.smallest_palindromic_rearrangement_I [1].cpp>) [cpp2](<../../CPP [3501-4000]/3517.smallest_palindromic_rearrangement_I [2].cpp>) |
 |3522 | calculate score after performing instructions |[cpp1](<../../CPP [3501-4000]/3522.calculate_score_after_performing_instructions [1].cpp>) |
@@ -1748,7 +1653,6 @@
 |3528 | unit conversion I |[cpp1](<../../CPP [3501-4000]/3528.unit_conversion_I [1].cpp>) |
 |3531 | count covered buildings |[cpp1](<../../CPP [3501-4000]/3531.count_covered_buildings [1].cpp>) |
 |3532 | path existence queries in a graph I |[cpp1](<../../CPP [3501-4000]/3532.path_existence_queries_in_a_graph_I [1].cpp>) |
-|3534 | path existence queries in a graph II ||
 |3536 | maximum product of two digits |[cpp1](<../../CPP [3501-4000]/3536.maximum_product_of_two_digits [1].cpp>) [cpp2](<../../CPP [3501-4000]/3536.maximum_product_of_two_digits [2].cpp>) |
 |3537 | fill a special grid |[cpp1](<../../CPP [3501-4000]/3537.fill_a_special_grid [1].cpp>) |
 |3541 | find most frequent vowel and consonant |[cpp1](<../../CPP [3501-4000]/3541.find_most_frequent_vowel_and_consonant [1].cpp>) |
@@ -1764,7 +1668,6 @@
 |3582 | generate tag for video caption |[cpp1](<../../CPP [3501-4000]/3582.generate_tag_for_video_caption [1].cpp>) |
 |3583 | count special triplets |[cpp1](<../../CPP [3501-4000]/3583.count_special_triplets [1].cpp>) |
 |3588 | find maximum area of a triangle |[cpp1](<../../CPP [3501-4000]/3588.find_maximum_area_of_a_triangle [1].cpp>) |
-|3589 | count prime gap balanced subarrays ||
 |3591 | check if any element has prime frequency |[cpp1](<../../CPP [3501-4000]/3591.check_if_any_element_has_prime_frequency [1].cpp>) [cpp2](<../../CPP [3501-4000]/3591.check_if_any_element_has_prime_frequency [2].cpp>) |
 |3597 | partition string |[cpp1](<../../CPP [3501-4000]/3597.partition_string [1].cpp>) |
 |3602 | hexadecimal and hexatrigesimal conversion |[cpp1](<../../CPP [3501-4000]/3602.hexadecimal_and_hexatrigesimal_conversion [1].cpp>) |
@@ -1773,7 +1676,6 @@
 |3608 | minimum time for K connected components |[cpp1](<../../CPP [3501-4000]/3608.minimum_time_for_K_connected_components [1].cpp>) |
 |3612 | process string with special operations I |[cpp1](<../../CPP [3501-4000]/3612.process_string_with_special_operations_I [1].cpp>) |
 |3613 | minimize maximum component cost |[cpp1](<../../CPP [3501-4000]/3613.minimize_maximum_component_cost [1].cpp>) |
-|3614 | process string with special operations II ||
 |3618 | split array by prime indices |[cpp1](<../../CPP [3501-4000]/3618.split_array_by_prime_indices [1].cpp>) |
 |3619 | count islands with total value divisible by K |[cpp1](<../../CPP [3501-4000]/3619.count_islands_with_total_value_divisible_by_K [1].cpp>) [cpp2](<../../CPP [3501-4000]/3619.count_islands_with_total_value_divisible_by_K [2].cpp>) |
 |3622 | check divisibility by digit sum and product |[cpp1](<../../CPP [3501-4000]/3622.check_divisibility_by_digit_sum_and_product [1].cpp>) |
@@ -1789,7 +1691,6 @@
 |3668 | restore finishing order |[cpp1](<../../CPP [3501-4000]/3668.restore_finishing_order [1].cpp>) [cpp2](<../../CPP [3501-4000]/3668.restore_finishing_order [2].cpp>) |
 |3674 | minimum operations to equalize array |[cpp1](<../../CPP [3501-4000]/3674.minimum_operations_to_equalize_array [1].cpp>) |
 |3675 | minimum operations to transform string |[cpp1](<../../CPP [3501-4000]/3675.minimum_operations_to_transform_string [1].cpp>) |
-|3677 | count binary palindromic numbers ||
 |3678 | smallest absent positive greater than average |[cpp1](<../../CPP [3501-4000]/3678.smallest_absent_positive_greater_than_average [1].cpp>) |
 |3683 | earliest time to finish one task |[cpp1](<../../CPP [3501-4000]/3683.earliest_time_to_finish_one_task [1].cpp>) |
 |3684 | maximize sum of at most K distinct elements |[cpp1](<../../CPP [3501-4000]/3684.maximize_sum_of_at_most_K_distinct_elements [1].cpp>) |
@@ -1816,5 +1717,4 @@
 |3746 | minimum string length after balanced removals |[cpp1](<../../CPP [3501-4000]/3746.minimum_string_length_after_balanced_removals [1].cpp>) |
 |3750 | minimum number of flips to reverse binary string |[cpp1](<../../CPP [3501-4000]/3750.minimum_number_of_flips_to_reverse_binary_string [1].cpp>) [cpp2](<../../CPP [3501-4000]/3750.minimum_number_of_flips_to_reverse_binary_string [2].cpp>) |
 |3751 | total waviness of numbers in range I |[cpp1](<../../CPP [3501-4000]/3751.total_waviness_of_numbers_in_range_I [1].cpp>) |
-|3753 | total waviness of numbers in range II ||
 |3754 | concatenate non zero digits and multiply by sum I |[cpp1](<../../CPP [3501-4000]/3754.concatenate_non_zero_digits_and_multiply_by_sum_I [1].cpp>) [cpp2](<../../CPP [3501-4000]/3754.concatenate_non_zero_digits_and_multiply_by_sum_I [2].cpp>) |
