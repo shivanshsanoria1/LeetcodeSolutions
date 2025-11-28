@@ -10,7 +10,6 @@ This repo contains solutions to over 1700 problems from [leetcode.com](https://l
 * A problem can have multiple solutions, marked with [1], [2], [3], ... at the end. Generally, higher number indicates more efficient or less intuitive solution.
 * Partially accepted solutions are marked with **[TLE]** or **[MLE]** in their title, representing 'Time Limit Exceeded' and 'Memory Limit Exceeded' respectively.
 * Most solutions have Time and Space Complexity mentioned as **T.C.=O()** and **S.C.=O()** respectively.
-* A table of links for all the accepted solutions present in this repo can be found in '[this table](./stats/generated/leetcode-links.md)' (use ctrl + click to open the links in new tab in this table).
 * A list of all the Leetcode solutions present in this repo can be found in '[this csv file](./stats/generated/leetcode-stats.csv)'.
 * A list of all algorithms can be found in '[this csv file](./algorithms/metadata/algorithms_metadata.csv)'.
 * There are some problems with solutions in multiple languages (C++ and Javascript).
@@ -19,21 +18,22 @@ This repo contains solutions to over 1700 problems from [leetcode.com](https://l
 
 <!-- STATS -->
 ## Stats
-Last updated on _Thu, 27 Nov 2025 17:08:09 GMT_
+Last updated on _Fri, 28 Nov 2025 16:47:46 GMT_
 ### Total problems solved:
 | Accepted | Partially accepted |
 | --- | --- |
 | 1718 | 100 |
 ### Total problems solved per language:
-| Language  | Accepted | Partially accepted |
-| --- | --- | --- |
-| C++ | 1601 | 100 |
-| Javascript | 66 | 0 |
-| MySQL | 79 | 0 |
+| Language  | Accepted | Partially accepted | Links Table |
+| --- | --- | --- | --- |
+| C++ | 1601 | 100 | [click](./stats/generated/leetcode-links-cpp.md)
+| Javascript | 66 | 0 | [click](./stats/generated/leetcode-links-js.md)
+| MySQL | 79 | 0 | [click](./stats/generated/leetcode-links-mysql.md)
 <!-- STATS -->
+##### use ctrl + click to open the links in a new tab for the best experience.
 ---
 
-![pie-chart-1](./stats/generated/pie-chart-1.PNG)
-![pie-chart-2](./stats/generated/pie-chart-2.PNG)
-![bar-chart](./stats/generated/bar-chart.PNG)
+![pie-chart-1](./stats/generated/img/pie-chart-1.PNG)
+![pie-chart-2](./stats/generated/img/pie-chart-2.PNG)
+![bar-chart](./stats/generated/img/bar-chart.PNG)
 ---

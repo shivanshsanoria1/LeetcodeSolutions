@@ -227,20 +227,20 @@ function generateCSVfile(statsArr) {
 function generateMDlinksFile(statsArr){
   return new Promise(async (resolve, reject) => {
     try {
-      const statsArrAccepted = statsArr.filter(({isAccepted}) => isAccepted)
+      for(const lang in languageModel){
+        const statsArrAccepted = statsArr.filter(({isAccepted, counter}) => isAccepted && counter[lang])
 
-      let fileDataStringified = '| Id | Title | Link(s) | Type |\n';
-      fileDataStringified += '| --- | --- | --- | --- |\n'
+        let fileDataStringified = '| Id | Title | Link(s) | Type |\n';
+        fileDataStringified += '| --- | --- | --- | --- |\n'
 
-      for (const statObj of statsArrAccepted) {
-        const { quesId, title, counter, type } = statObj;
+        for (const statObj of statsArrAccepted) {
+          const { quesId, title, counter, type } = statObj;
 
-        const titleInFile = title.split(' ').join('_')
-        const titleWithOutCommas = title.replace(/,/g, "*");
+          const titleInFile = title.split(' ').join('_')
+          const titleWithOutCommas = title.replace(/,/g, "*");
 
-        fileDataStringified += `|${quesId} | ${titleWithOutCommas} |`
+          fileDataStringified += `|${quesId} | ${titleWithOutCommas} |`
 
-        for (const lang in counter) {
           const {extension, dirNames} = languageModel[lang]
           let dirIdx = 0
           if(dirNames.length > 1){
@@ -249,15 +249,15 @@ function generateMDlinksFile(statsArr){
           const dirName = dirNames[dirIdx]
 
           for(let i=1; i<=counter[lang].accepted; i++){
-            fileDataStringified += `[${lang}${i}](<../../${dirName}/${quesId}.${titleInFile} [${i}].${extension}>) `
+            const url = `<../../${dirName}/${quesId}.${titleInFile} [${i}].${extension}>`
+            fileDataStringified += `[L${i}](${url}) `
           }
+
+          fileDataStringified += `|${type}|\n`
         }
-
-        fileDataStringified += `|${type}|\n`
+        const filePath = path.join(__dirname, 'generated', `leetcode-links-${lang}.md`);
+        await fs.writeFile(filePath, fileDataStringified);
       }
-
-      const filePath = path.join(__dirname, 'generated', 'leetcode-links.md');
-      await fs.writeFile(filePath, fileDataStringified);
 
       resolve();
 
@@ -311,14 +311,16 @@ async function updateStatsinReadmeFile(totalProblemCount, totalLanguageCounter) 
       statData += `| ${totalProblemCount.accepted} | ${totalProblemCount.unaccepted} |\n`
 
       statData += '### Total problems solved per language:\n'
-      statData += '| Language  | Accepted | Partially accepted |\n'
-      statData += '| --- | --- | --- |\n'
+      statData += '| Language  | Accepted | Partially accepted | Links Table |\n'
+      statData += '| --- | --- | --- | --- |\n'
 
       for (language in totalLanguageCounter) {
         const acceptedCount = totalLanguageCounter[language].accepted;
         const unacceptedCount = totalLanguageCounter[language].unaccepted ?? 0;
 
-        statData += `| ${getLangFormalName(language)} | ${acceptedCount} | ${unacceptedCount} |\n`;
+        const url = `./stats/generated/leetcode-links-${language}.md`
+
+        statData += `| ${getLangFormalName(language)} | ${acceptedCount} | ${unacceptedCount} | [click](${url})\n`;
       }
       
       const updatedFileData = fileDataArr[0] + seperator + '\n' + statData + seperator + fileDataArr[fileDataArr.length - 1]
