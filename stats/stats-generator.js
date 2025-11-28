@@ -31,7 +31,7 @@ function updateCounterObj(obj, lang, isAccepted) {
   const updateUnacceptedValBy = !isAccepted ? 1 : 0;
 
   if(!obj[lang]){
-    obj[lang] = languageModel[lang].type === 'database' ? {accepted: 0} : {accepted: 0, unaccepted: 0}
+    obj[lang] = languageModel[lang].types.includes('database') ? {accepted: 0} : {accepted: 0, unaccepted: 0}
   }
   
   obj[lang].accepted += updateAcceptedValBy;
@@ -115,7 +115,7 @@ function generateTotalProblemCounterAndUpdateStatsArray(statsArr) {
   const fileCounter = {}
 
   for(const lang in languageModel){
-    if(languageModel[lang].type === 'database'){
+    if(languageModel[lang].types.includes('database')){
       totalLanguageCounter[lang] = { accepted: 0 }
     }else{
       totalLanguageCounter[lang] = { accepted: 0, unaccepted: 0 }
@@ -143,7 +143,7 @@ function generateTotalProblemCounterAndUpdateStatsArray(statsArr) {
         isAccepted = true;
       }
 
-      if (languageModel[lang].type === 'database') {
+      if (languageModel[lang].types.includes('database')) {
         type = 'database'
       }else if(quesIdSetJSTS.has(quesId)){
         type = 'javascript/typescript'
@@ -297,12 +297,12 @@ async function updateStatsinReadmeFile(totalProblemCount, totalLanguageCounter) 
   return new Promise(async (resolve, reject) => {
     try {
       const filePath = path.join(__dirname, '..', 'README.md');
-      const seperator = '<!-- STATS -->'
+      const seperator = '<!-- UPDATE STATS HERE -->'
 
       const fileData = await fs.readFile(filePath, { encoding: 'utf8' })
       const fileDataArr = fileData.split(seperator)
 
-      let statData = '## Stats\n'
+      let statData = ''
       statData += `Last updated on _${new Date().toUTCString()}_\n`
 
       statData += '### Total problems solved:\n'

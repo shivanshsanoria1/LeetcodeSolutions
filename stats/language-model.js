@@ -5,7 +5,7 @@ const languages = {
     name: 'cpp',
     formalName: 'C++',
     extension: 'cpp',
-    type: 'general',
+    types: ['general'],
     dirNames: [
       'CPP [0001-0500]', 
       'CPP [0501-1000]',
@@ -32,7 +32,7 @@ const languages = {
     name: 'js',
     formalName: 'Javascript',
     extension: 'js',
-    type: 'general',
+    types: ['general', 'javascript/typescript'],
     dirNames: ['Javascript'],
     dirPaths: [path.join(__dirname, '..', 'Javascript')]
   },
@@ -41,7 +41,7 @@ const languages = {
     name: 'mysql',
     formalName: 'MySQL',
     extension: 'sql',
-    type: 'database',
+    types: ['database'],
     dirNames: ['MySQL'],
     dirPaths: [path.join(__dirname, '..', 'MySQL')]
   },
