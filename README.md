@@ -45,8 +45,8 @@ use ctrl + click to open the links in a new tab for the best experience.
 
 ---
 
-![pie-chart-1](./stats/generated/img/pie-chart-total-count.PNG)
-![pie-chart-2](./stats/generated/img/pie-chart-type-count.PNG)
-![bar-chart](./stats/generated/img/bar-chart-language-count.PNG)
+![pie-chart-1](./stats/generated/img/pie-chart-total-count.png)
+![pie-chart-2](./stats/generated/img/pie-chart-type-count.png)
+![bar-chart](./stats/generated/img/bar-chart-language-count.png)
 
 ---
