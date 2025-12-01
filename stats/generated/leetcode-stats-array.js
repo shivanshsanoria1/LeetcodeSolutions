@@ -1,4 +1,4 @@
-const statsArr = [
+[
 {
 	"quesId": 1,
 	"title": "two sum",
@@ -21777,6 +21777,18 @@ const statsArr = [
 	"type": "general"
 },
 {
+	"quesId": 3742,
+	"title": "maximum path score in a grid",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 1
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
 	"quesId": 3745,
 	"title": "maximize expression of three elements",
 	"counter": {
@@ -21842,6 +21854,18 @@ const statsArr = [
 	"counter": {
 		"cpp": {
 			"accepted": 2,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3760,
+	"title": "maximum substrings with distinct start",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
 			"unaccepted": 0
 		}
 	},

@@ -1811,9 +1811,11 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 3732,maximum product of three elements after one replacement,general,cpp,3,0
 3740,minimum distance between three equal elements I,general,cpp,2,0
 3741,minimum distance between three equal elements II,general,cpp,1,0
+3742,maximum path score in a grid,general,cpp,1,1
 3745,maximize expression of three elements,general,cpp,1,0
 3746,minimum string length after balanced removals,general,cpp,1,0
 3750,minimum number of flips to reverse binary string,general,cpp,2,0
 3751,total waviness of numbers in range I,general,cpp,1,0
 3753,total waviness of numbers in range II,general,cpp,0,1
 3754,concatenate non zero digits and multiply by sum I,general,cpp,2,0
+3760,maximum substrings with distinct start,general,cpp,1,0
