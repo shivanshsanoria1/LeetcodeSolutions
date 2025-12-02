@@ -4,13 +4,19 @@ import matplotlib.pyplot as plt
 from datetime import datetime, timezone
 from collections import defaultdict
 from typing import List, Dict
-# ------------------------------
+# ------------------------------ #
 
 def getColorHex(color: str) -> str:
 	colorMapping = {
-		'green': '#66ff66',
+		'pink': '#800080',
+		'violet': '#7300e6',
+		'light-blue': '#00ccff',
 		'blue': '#3366ff',
+		'sea-green': '#00b386',
+		'light-green': '#00e64d',
+		'green': '#39ac39',
 		'yellow': '#ffff66',
+		'orange': '#ff751a',
 		'red': '#ff4d4d',
 		'grey': '#dedede',
 	}
@@ -18,24 +24,24 @@ def getColorHex(color: str) -> str:
 
 	color = color.strip().lower()
 	return colorMapping.get(color, defaultColor)
-# ------------------------------
+# ------------------------------ #
 
-def getCurrUTCstring():
+def getCurrUTCstring() -> str:
 	return datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')
-# ------------------------------
+# ------------------------------ #
 
-def loadArr():
+def loadArr() -> List[Dict]:
 	filePathJS = './stats/generated/leetcode-stats-array.js'
 
 	with open(filePathJS, 'r') as file:
 		arrayJS = file.read()
 
-	statsArr = json.loads(arrayJS)
+	stats = json.loads(arrayJS)
 
-	return statsArr
-# ------------------------------
+	return stats
+# ------------------------------ #
 
-def generateTotalCounter(statsArr):
+def generateTotalCounter(stats: List[Dict]) -> Dict:
 	counter = {
 		"accepted": 0,
 		"partiallyAccepted": 0,
@@ -44,14 +50,14 @@ def generateTotalCounter(statsArr):
 
 	maxQuesId = config.maxQuesId
 
-	counter["accepted"] = sum(1 for question in statsArr if question['isAccepted'])
-	counter["partiallyAccepted"] = len(statsArr) - counter["accepted"]
-	counter["unaccepted"] = maxQuesId - len(statsArr)
+	counter["accepted"] = sum(1 for question in stats if question['isAccepted'])
+	counter["partiallyAccepted"] = len(stats) - counter["accepted"]
+	counter["unaccepted"] = maxQuesId - len(stats)
 
 	return counter
-# ------------------------------
+# ------------------------------ #
 
-def generatePieChartTotalCount(counter):
+def plotPieChartTotalCount(counter: Dict, showChart: bool = True) -> None:
 	labelMapping = {
 		"accepted": ("Accepted", getColorHex('green')), 
 		"partiallyAccepted": ("Partially Accepted", getColorHex('yellow')),
@@ -76,26 +82,25 @@ def generatePieChartTotalCount(counter):
 	plt.axis('equal')
 	plt.title(f'Problem Acceptance Status\nLast Updated on: {getCurrUTCstring()}') 
 	plt.savefig('./stats/generated/img/pie-chart-total-count.png', format = 'png') 
-	plt.show()
-# ------------------------------
+	if showChart: 
+		plt.show()
+# ------------------------------ #
 
-def generateTypeCounter(statsArr):
+def generateTypeCounter(stats: List[Dict]) -> Dict:
     counter = {}
 
-    for statObj in statsArr:
-        if not statObj.get('isAccepted'):
+    for stat in stats:
+        if not stat.get('isAccepted'):
             continue
 
-        typ = statObj.get('type')
-        if typ is None:
-            continue
+        typ = stat.get('type')
 
         counter[typ] = counter.get(typ, 0) + 1
 
     return counter
-# ------------------------------
+# ------------------------------ #
 
-def generatePieChartTypeCount(counter):
+def plotPieChartTypeCount(counter: Dict, showChart: bool = True) -> None:
 	labelMapping = {
 		"general": ("General", getColorHex('blue')),
 		"database": ("Database", getColorHex('green')),
@@ -120,8 +125,9 @@ def generatePieChartTypeCount(counter):
 	plt.axis('equal')
 	plt.title(f'Probelm Type Distribution\nLast Updated on: {getCurrUTCstring()}') 
 	plt.savefig('./stats/generated/img/pie-chart-type-count.png', format = 'png') 
-	plt.show()
-# ------------------------------
+	if showChart: 
+		plt.show()
+# ------------------------------ #
 
 def generateLanguageCounter(stats: List[Dict]) -> Dict[str, int]:
     counterLang = defaultdict(int)
@@ -135,9 +141,9 @@ def generateLanguageCounter(stats: List[Dict]) -> Dict[str, int]:
             counterLang[lang] += 1
 
     return dict(counterLang)
-# ------------------------------
+# ------------------------------ #
 
-def generateBarChartLanguageCounter(counterLang: Dict[str, int]) -> None:
+def plotBarChartLanguageCounter(counterLang: Dict[str, int], showChart: bool = True) -> None:
 	languageMapping = {
 		"cpp": ("C++", getColorHex('blue')),
 		"js": ("JavaScript", getColorHex('yellow')),
@@ -158,22 +164,102 @@ def generateBarChartLanguageCounter(counterLang: Dict[str, int]) -> None:
 	plt.xlabel('Language')
 	plt.ylabel('Problems solved')
 	plt.title(f'Accepted Solutions per Language\nLast Updated on: {getCurrUTCstring()}')
-	plt.grid(axis='y', linestyle='--', alpha=0.6)
+	plt.grid(axis = 'y', linestyle = '--', alpha = 0.6)
 
 	for bar in bars:
 		height = bar.get_height()
-		plt.annotate(f'{height}',
-		xy=(bar.get_x() + bar.get_width() / 2, height),
-		xytext=(0, 3),
-		textcoords='offset points',
-		ha='center', va='bottom')
+		plt.annotate(
+			f'{height}',
+			xy = (bar.get_x() + bar.get_width() / 2, height),
+			xytext = (0, 3),
+			textcoords = 'offset points',
+			ha = 'center', 
+			va = 'bottom'
+		)
 
 	plt.tight_layout()
 	plt.savefig('./stats/generated/img/bar-chart-language-count.png', format = 'png') 
-	plt.show()
-# ------------------------------
+	if showChart:
+		plt.show()
+# ------------------------------ #
 
-def main():
+def generateHistogramBuckets(stats: List[Dict], bucketSize: int = 100) -> List[int]:
+    maxQuesId = 0
+    for stat in stats:
+        if stat.get('isAccepted'):
+            maxQuesId = max(maxQuesId, stat.get('quesId'))
+
+    bucketCount = (maxQuesId - 1) // bucketSize + 1
+    buckets = [0] * bucketCount
+
+    for stat in stats:
+        if not stat.get('isAccepted'):
+            continue
+
+        quesId = stat.get('quesId')
+
+        bucketIdx = (quesId - 1) // bucketSize
+        buckets[bucketIdx] += 1
+
+    return buckets
+# ------------------------------ #
+
+def getBarColor(height: int) -> str:
+	colors10 = [
+		getColorHex('red'), # 1-10
+		getColorHex('red'), # 11-20
+		getColorHex('orange'), # 21-30
+		getColorHex('yellow'), # 31-40
+		getColorHex('sea-green'), # 41-50
+		getColorHex('light-blue'), # 51-60
+		getColorHex('blue'), # 61-70
+		getColorHex('blue'), # 71-80
+		getColorHex('violet'), # 81-90
+		getColorHex('pink'), # 91-100
+	]
+
+	idx = min((height - 1) // 10, len(colors10) - 1)
+	return colors10[idx]
+# ------------------------------ #
+
+def plotQuesIdHistogram(buckets: List[int], bucketSize: int = 100, showChart: bool = True) -> None:
+	labels = [
+		f"{i * bucketSize + 1}-{i * bucketSize + bucketSize}"
+		for i in range(len(buckets))
+	]
+
+	barColours = [getBarColor(cnt) for cnt in buckets]
+
+	fig, ax = plt.subplots(figsize = (12, 5))
+	bars = ax.bar(labels, buckets, color = barColours)
+
+	ax.set_xlabel("Problem Id range")
+	ax.set_ylabel("Number of accepted problems")
+	ax.set_title(f"Accepted solutions per {bucketSize} problems\nLast updated on {getCurrUTCstring()}")
+	ax.grid(axis = "y", linestyle = "--", alpha = 0.6)
+	plt.xticks(rotation = 45, ha = "right")
+	plt.tight_layout()
+
+	for rect, count in zip(bars, buckets):
+		y = rect.get_height()
+		offset = max(buckets) * 0.01
+		ax.text(
+			rect.get_x() + rect.get_width() / 2,
+			y + offset,
+			f"{count:,}",
+			ha="center",
+			va="bottom",
+			fontsize=9,
+			color="black",
+		)
+
+	plt.subplots_adjust(top = 0.90)
+	plt.savefig('./stats/generated/img/histogram-chart-ques-id.png', format = 'png') 
+	if showChart:
+		plt.show()
+# ------------------------------ #
+
+if __name__ == '__main__':
 	statsArr = loadArr()
 	print(statsArr[0])
 
@@ -186,9 +272,13 @@ def main():
 	counterLang = generateLanguageCounter(statsArr)
 	print(counterLang)
 
-	generatePieChartTotalCount(counterTotal)
-	generatePieChartTypeCount(counterType)
-	generateBarChartLanguageCounter(counterLang)
-# ------------------------------
+	buckets = generateHistogramBuckets(statsArr, 100)
+	print(buckets)
 
-main()
+	showChart = False
+	plotPieChartTotalCount(counterTotal, showChart)
+	plotPieChartTypeCount(counterType, showChart)
+	plotBarChartLanguageCounter(counterLang, showChart)
+	plotQuesIdHistogram(buckets, 100, showChart)
+
+# ------------------------------ #
