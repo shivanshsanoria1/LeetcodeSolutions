@@ -1,1 +1,3 @@
-maxQuesId = 3763
+MAX_QUES_ID = 3763
+ENABLE_LOGGER = True
+SHOW_CHART = False

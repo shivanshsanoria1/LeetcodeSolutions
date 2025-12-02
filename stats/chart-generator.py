@@ -30,6 +30,11 @@ def getCurrUTCstring() -> str:
 	return datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')
 # ------------------------------ #
 
+def logMsg(msg) -> None:
+	if enableLogger:
+		print(msg)
+# ------------------------------ #
+
 def loadArr() -> List[Dict]:
 	filePathJS = './stats/generated/leetcode-stats-array.js'
 
@@ -48,7 +53,7 @@ def generateTotalCounter(stats: List[Dict]) -> Dict:
 		"unaccepted": 0
 	}
 
-	maxQuesId = config.maxQuesId
+	maxQuesId = config.MAX_QUES_ID
 
 	counter["accepted"] = sum(1 for question in stats if question['isAccepted'])
 	counter["partiallyAccepted"] = len(stats) - counter["accepted"]
@@ -230,7 +235,7 @@ def plotQuesIdHistogram(buckets: List[int], bucketSize: int = 100, showChart: bo
 
 	barColours = [getBarColor(cnt) for cnt in buckets]
 
-	fig, ax = plt.subplots(figsize = (12, 5))
+	fig, ax = plt.subplots(figsize = (12, 5), facecolor = getColorHex('grey'))
 	bars = ax.bar(labels, buckets, color = barColours)
 
 	ax.set_xlabel("Problem Id range")
@@ -260,25 +265,26 @@ def plotQuesIdHistogram(buckets: List[int], bucketSize: int = 100, showChart: bo
 # ------------------------------ #
 
 if __name__ == '__main__':
-	statsArr = loadArr()
-	print(statsArr[0])
+	enableLogger = config.ENABLE_LOGGER
 
-	counterTotal = generateTotalCounter(statsArr)
-	print(counterTotal)
+	stats = loadArr()
+	logMsg(stats[0])
 
-	counterType = generateTypeCounter(statsArr)
-	print(counterType)
+	counterTotal = generateTotalCounter(stats)
+	logMsg(counterTotal)
 
-	counterLang = generateLanguageCounter(statsArr)
-	print(counterLang)
+	counterType = generateTypeCounter(stats)
+	logMsg(counterType)
 
-	buckets = generateHistogramBuckets(statsArr, 100)
-	print(buckets)
+	counterLang = generateLanguageCounter(stats)
+	logMsg(counterLang)
 
-	showChart = False
+	buckets = generateHistogramBuckets(stats, 100)
+	logMsg(buckets)
+
+	showChart = config.SHOW_CHART
 	plotPieChartTotalCount(counterTotal, showChart)
 	plotPieChartTypeCount(counterType, showChart)
 	plotBarChartLanguageCounter(counterLang, showChart)
 	plotQuesIdHistogram(buckets, 100, showChart)
-
 # ------------------------------ #

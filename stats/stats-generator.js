@@ -281,6 +281,7 @@ function generateMDlinksFile(statsArr) {
 				const filePath = path.join(
 					__dirname,
 					"generated",
+					"link-tables",
 					`leetcode-links-${lang}.md`
 				);
 				await fs.writeFile(filePath, fileDataStringified);
@@ -354,7 +355,7 @@ async function updateStatsinReadmeFile(
 				const unacceptedCount =
 					totalLanguageCounter[language].unaccepted ?? 0;
 
-				const url = `./stats/generated/leetcode-links-${language}.md`;
+				const url = `./stats/generated/link-tables/leetcode-links-${language}.md`;
 
 				statData += `| ${getLangFormalName(
 					language
