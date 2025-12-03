@@ -239,7 +239,7 @@ def plotQuesIdHistogram(buckets: List[int], bucketSize: int = 100, showChart: bo
 	bars = ax.bar(labels, buckets, color = barColours)
 
 	ax.set_xlabel("Problem Id range")
-	ax.set_ylabel("Number of accepted problems")
+	ax.set_ylabel("Accepted solutions")
 	ax.set_title(f"Accepted solutions per {bucketSize} problems\nLast updated on {getCurrUTCstring()}")
 	ax.grid(axis = "y", linestyle = "--", alpha = 0.6)
 	plt.xticks(rotation = 45, ha = "right")

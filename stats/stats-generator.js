@@ -272,7 +272,7 @@ function generateMDlinksFile(statsArr) {
 					const dirName = dirNames[dirIdx];
 
 					for (let i = 1; i <= counter[lang].accepted; i++) {
-						const url = `<../../${dirName}/${quesId}.${titleInFile} [${i}].${extension}>`;
+						const url = `<../../../${dirName}/${quesId}.${titleInFile} [${i}].${extension}>`;
 						fileDataStringified += `[L${i}](${url}) `;
 					}
 

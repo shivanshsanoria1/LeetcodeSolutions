@@ -22,7 +22,7 @@ This repo contains solutions to over 1700 problems from [leetcode.com](https://l
 ## Stats
 
 <!-- UPDATE STATS HERE -->
-Last updated on _Tue, 02 Dec 2025 17:56:41 GMT_
+Last updated on _Wed, 03 Dec 2025 16:32:12 GMT_
 ### Total problems solved:
 | Accepted | Partially accepted | Link |
 | --- | --- | --- |
