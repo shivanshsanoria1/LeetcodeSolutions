@@ -1818,4 +1818,5 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 3751,total waviness of numbers in range I,general,cpp,1,0
 3753,total waviness of numbers in range II,general,cpp,0,1
 3754,concatenate non zero digits and multiply by sum I,general,cpp,2,0
+3755,find maximum balanced XOR subarray length,general,cpp,1,1
 3760,maximum substrings with distinct start,general,cpp,1,0

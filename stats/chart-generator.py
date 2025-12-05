@@ -268,7 +268,7 @@ if __name__ == '__main__':
 	enableLogger = config.ENABLE_LOGGER
 
 	stats = loadArr()
-	logMsg(stats[0])
+	# logMsg(stats[0])
 
 	counterTotal = generateTotalCounter(stats)
 	logMsg(counterTotal)

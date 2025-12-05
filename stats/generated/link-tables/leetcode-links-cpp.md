@@ -1602,4 +1602,5 @@
 |3750 | minimum number of flips to reverse binary string |[L1](<../../../CPP [3501-4000]/3750.minimum_number_of_flips_to_reverse_binary_string [1].cpp>) [L2](<../../../CPP [3501-4000]/3750.minimum_number_of_flips_to_reverse_binary_string [2].cpp>) |general|
 |3751 | total waviness of numbers in range I |[L1](<../../../CPP [3501-4000]/3751.total_waviness_of_numbers_in_range_I [1].cpp>) |general|
 |3754 | concatenate non zero digits and multiply by sum I |[L1](<../../../CPP [3501-4000]/3754.concatenate_non_zero_digits_and_multiply_by_sum_I [1].cpp>) [L2](<../../../CPP [3501-4000]/3754.concatenate_non_zero_digits_and_multiply_by_sum_I [2].cpp>) |general|
+|3755 | find maximum balanced XOR subarray length |[L1](<../../../CPP [3501-4000]/3755.find_maximum_balanced_XOR_subarray_length [1].cpp>) |general|
 |3760 | maximum substrings with distinct start |[L1](<../../../CPP [3501-4000]/3760.maximum_substrings_with_distinct_start [1].cpp>) |general|

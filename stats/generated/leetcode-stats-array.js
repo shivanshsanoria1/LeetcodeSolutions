@@ -21861,6 +21861,18 @@
 	"type": "general"
 },
 {
+	"quesId": 3755,
+	"title": "find maximum balanced XOR subarray length",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 1
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
 	"quesId": 3760,
 	"title": "maximum substrings with distinct start",
 	"counter": {

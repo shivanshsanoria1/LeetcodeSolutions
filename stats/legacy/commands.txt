@@ -1,13 +1,18 @@
-node ./stats/stats-generator.js
+Run stats-generator.js
+
+1. node ./stats/stats-generator.js
 ------------------------------
 
-python3 ./stats/chart-generator.py
+Run chart-generator.py
+1. source ./stats/.venv/bin/activate
+2. python3 ./stats/chart-generator.py
+3. deactivate
 ------------------------------
 
-# github
-git add .
-git commit -m "message goes here"
-git push -u origin main
+# Push code to github repo
+1. git add .
+2. git commit -m "message goes here"
+3. git push -u origin main
 ------------------------------
 
 # setting up the virtual-environment for python
@@ -34,4 +39,10 @@ pip install PyGObject
 pip install matplotlib
 pip install config
 
+------------------------------
+pip list --format=freeze
+------------------------------
+
+Recreate the same environment with 
+pip install -r requirements.txt
 ------------------------------
