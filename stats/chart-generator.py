@@ -6,6 +6,11 @@ from collections import defaultdict
 from typing import List, Dict
 # ------------------------------ #
 
+maxQuesId = getattr(config, "MAX_QUES_ID", 0)
+enableLogger = getattr(config, "ENABLE_LOGGER", True)
+showChart = getattr(config, "SHOW_CHART", False)
+# ------------------------------ #
+
 def getColorHex(color: str) -> str:
 	colorMapping = {
 		'pink': '#800080',
@@ -53,8 +58,6 @@ def generateTotalCounter(stats: List[Dict]) -> Dict:
 		"unaccepted": 0
 	}
 
-	maxQuesId = config.MAX_QUES_ID
-
 	counter["accepted"] = sum(1 for question in stats if question['isAccepted'])
 	counter["partiallyAccepted"] = len(stats) - counter["accepted"]
 	counter["unaccepted"] = maxQuesId - len(stats)
@@ -62,7 +65,7 @@ def generateTotalCounter(stats: List[Dict]) -> Dict:
 	return counter
 # ------------------------------ #
 
-def plotPieChartTotalCount(counter: Dict, showChart: bool = True) -> None:
+def plotPieChartTotalCount(counter: Dict) -> None:
 	labelMapping = {
 		"accepted": ("Accepted", getColorHex('green')), 
 		"partiallyAccepted": ("Partially Accepted", getColorHex('yellow')),
@@ -105,7 +108,7 @@ def generateTypeCounter(stats: List[Dict]) -> Dict:
     return counter
 # ------------------------------ #
 
-def plotPieChartTypeCount(counter: Dict, showChart: bool = True) -> None:
+def plotPieChartTypeCount(counter: Dict) -> None:
 	labelMapping = {
 		"general": ("General", getColorHex('blue')),
 		"database": ("Database", getColorHex('green')),
@@ -148,7 +151,7 @@ def generateLanguageCounter(stats: List[Dict]) -> Dict[str, int]:
     return dict(counterLang)
 # ------------------------------ #
 
-def plotBarChartLanguageCounter(counterLang: Dict[str, int], showChart: bool = True) -> None:
+def plotBarChartLanguageCounter(counterLang: Dict[str, int]) -> None:
 	languageMapping = {
 		"cpp": ("C++", getColorHex('blue')),
 		"js": ("JavaScript", getColorHex('yellow')),
@@ -227,7 +230,7 @@ def getBarColor(height: int) -> str:
 	return colors10[idx]
 # ------------------------------ #
 
-def plotQuesIdHistogram(buckets: List[int], bucketSize: int = 100, showChart: bool = True) -> None:
+def plotQuesIdHistogram(buckets: List[int], bucketSize: int = 100) -> None:
 	labels = [
 		f"{i * bucketSize + 1}-{i * bucketSize + bucketSize}"
 		for i in range(len(buckets))
@@ -265,8 +268,6 @@ def plotQuesIdHistogram(buckets: List[int], bucketSize: int = 100, showChart: bo
 # ------------------------------ #
 
 if __name__ == '__main__':
-	enableLogger = config.ENABLE_LOGGER
-
 	stats = loadArr()
 	# logMsg(stats[0])
 
@@ -282,9 +283,8 @@ if __name__ == '__main__':
 	buckets = generateHistogramBuckets(stats, 100)
 	logMsg(buckets)
 
-	showChart = config.SHOW_CHART
-	plotPieChartTotalCount(counterTotal, showChart)
-	plotPieChartTypeCount(counterType, showChart)
-	plotBarChartLanguageCounter(counterLang, showChart)
-	plotQuesIdHistogram(buckets, 100, showChart)
+	plotPieChartTotalCount(counterTotal)
+	plotPieChartTypeCount(counterType)
+	plotBarChartLanguageCounter(counterLang)
+	plotQuesIdHistogram(buckets, 100)
 # ------------------------------ #

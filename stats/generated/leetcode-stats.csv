@@ -1809,6 +1809,8 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 3727,maximum alternating sum of squares,general,cpp,1,0
 3731,find missing elements,general,cpp,1,0
 3732,maximum product of three elements after one replacement,general,cpp,3,0
+3736,minimum moves to equal array elements III,general,cpp,1,0
+3737,count subarrays with majority element I,general,cpp,1,0
 3740,minimum distance between three equal elements I,general,cpp,2,0
 3741,minimum distance between three equal elements II,general,cpp,1,0
 3742,maximum path score in a grid,general,cpp,1,1

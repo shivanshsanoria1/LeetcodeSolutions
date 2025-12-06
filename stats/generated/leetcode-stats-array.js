@@ -21753,6 +21753,30 @@
 	"type": "general"
 },
 {
+	"quesId": 3736,
+	"title": "minimum moves to equal array elements III",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3737,
+	"title": "count subarrays with majority element I",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
 	"quesId": 3740,
 	"title": "minimum distance between three equal elements I",
 	"counter": {

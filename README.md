@@ -22,23 +22,17 @@ This repo contains solutions to over **1700** problems from [leetcode.com](https
 ## Stats
 
 <!-- UPDATE STATS HERE -->
-
-Last updated on _Fri, 05 Dec 2025 16:06:27 GMT_
-
+Last updated on _Sat, 06 Dec 2025 18:18:24 GMT_
 ### Total problems solved:
-
-| Accepted | Partially accepted | Link                                        |
-| -------- | ------------------ | ------------------------------------------- |
-| 1721     | 100                | [csv](./stats/generated/leetcode-stats.csv) |
-
+| Accepted | Partially accepted | Link |
+| --- | --- | --- |
+| 1723 | 100 | [csv](./stats/generated/leetcode-stats.csv)|
 ### Total problems solved per language:
-
-| Language   | Accepted | Partially accepted | Links Table                                                    |
-| ---------- | -------- | ------------------ | -------------------------------------------------------------- |
-| C++        | 1604     | 100                | [click](./stats/generated/link-tables/leetcode-links-cpp.md)   |
-| Javascript | 66       | 0                  | [click](./stats/generated/link-tables/leetcode-links-js.md)    |
-| MySQL      | 79       | 0                  | [click](./stats/generated/link-tables/leetcode-links-mysql.md) |
-
+| Language  | Accepted | Partially accepted | Links Table |
+| --- | --- | --- | --- |
+| C++ | 1606 | 100 | [click](./stats/generated/link-tables/leetcode-links-cpp.md)
+| Javascript | 66 | 0 | [click](./stats/generated/link-tables/leetcode-links-js.md)
+| MySQL | 79 | 0 | [click](./stats/generated/link-tables/leetcode-links-mysql.md)
 <!-- UPDATE STATS HERE -->
 
 use ctrl + click to open the links in a new tab for the best experience.

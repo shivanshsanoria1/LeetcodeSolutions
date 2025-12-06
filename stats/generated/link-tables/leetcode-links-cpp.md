@@ -1594,6 +1594,8 @@
 |3727 | maximum alternating sum of squares |[L1](<../../../CPP [3501-4000]/3727.maximum_alternating_sum_of_squares [1].cpp>) |general|
 |3731 | find missing elements |[L1](<../../../CPP [3501-4000]/3731.find_missing_elements [1].cpp>) |general|
 |3732 | maximum product of three elements after one replacement |[L1](<../../../CPP [3501-4000]/3732.maximum_product_of_three_elements_after_one_replacement [1].cpp>) [L2](<../../../CPP [3501-4000]/3732.maximum_product_of_three_elements_after_one_replacement [2].cpp>) [L3](<../../../CPP [3501-4000]/3732.maximum_product_of_three_elements_after_one_replacement [3].cpp>) |general|
+|3736 | minimum moves to equal array elements III |[L1](<../../../CPP [3501-4000]/3736.minimum_moves_to_equal_array_elements_III [1].cpp>) |general|
+|3737 | count subarrays with majority element I |[L1](<../../../CPP [3501-4000]/3737.count_subarrays_with_majority_element_I [1].cpp>) |general|
 |3740 | minimum distance between three equal elements I |[L1](<../../../CPP [3501-4000]/3740.minimum_distance_between_three_equal_elements_I [1].cpp>) [L2](<../../../CPP [3501-4000]/3740.minimum_distance_between_three_equal_elements_I [2].cpp>) |general|
 |3741 | minimum distance between three equal elements II |[L1](<../../../CPP [3501-4000]/3741.minimum_distance_between_three_equal_elements_II [1].cpp>) |general|
 |3742 | maximum path score in a grid |[L1](<../../../CPP [3501-4000]/3742.maximum_path_score_in_a_grid [1].cpp>) |general|
