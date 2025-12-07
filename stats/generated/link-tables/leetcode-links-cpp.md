@@ -1606,3 +1606,5 @@
 |3754 | concatenate non zero digits and multiply by sum I |[L1](<../../../CPP [3501-4000]/3754.concatenate_non_zero_digits_and_multiply_by_sum_I [1].cpp>) [L2](<../../../CPP [3501-4000]/3754.concatenate_non_zero_digits_and_multiply_by_sum_I [2].cpp>) |general|
 |3755 | find maximum balanced XOR subarray length |[L1](<../../../CPP [3501-4000]/3755.find_maximum_balanced_XOR_subarray_length [1].cpp>) |general|
 |3760 | maximum substrings with distinct start |[L1](<../../../CPP [3501-4000]/3760.maximum_substrings_with_distinct_start [1].cpp>) |general|
+|3769 | sort integers by binary reflection |[L1](<../../../CPP [3501-4000]/3769.sort_integers_by_binary_reflection [1].cpp>) |general|
+|3770 | largest prime from consecutive prime sum |[L1](<../../../CPP [3501-4000]/3770.largest_prime_from_consecutive_prime_sum [1].cpp>) |general|

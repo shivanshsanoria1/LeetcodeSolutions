@@ -21907,5 +21907,29 @@
 	},
 	"isAccepted": true,
 	"type": "general"
+},
+{
+	"quesId": 3769,
+	"title": "sort integers by binary reflection",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3770,
+	"title": "largest prime from consecutive prime sum",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
 }
 ]

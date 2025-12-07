@@ -1822,3 +1822,5 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 3754,concatenate non zero digits and multiply by sum I,general,cpp,2,0
 3755,find maximum balanced XOR subarray length,general,cpp,1,1
 3760,maximum substrings with distinct start,general,cpp,1,0
+3769,sort integers by binary reflection,general,cpp,1,0
+3770,largest prime from consecutive prime sum,general,cpp,1,0
