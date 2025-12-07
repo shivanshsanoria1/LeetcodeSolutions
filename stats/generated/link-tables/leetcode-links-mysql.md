@@ -79,3 +79,5 @@
 |3475 | DNA pattern recognition |[L1](<../../../MySQL/3475.DNA_pattern_recognition [1].sql>) |database|
 |3497 | analyze subscription conversion |[L1](<../../../MySQL/3497.analyze_subscription_conversion [1].sql>) |database|
 |3570 | find books with no available copies |[L1](<../../../MySQL/3570.find_books_with_no_available_copies [1].sql>) |database|
+|3657 | find loyal customers |[L1](<../../../MySQL/3657.find_loyal_customers [1].sql>) |database|
+|3716 | find churn risk customers |[L1](<../../../MySQL/3716.find_churn_risk_customers [1].sql>) |database|

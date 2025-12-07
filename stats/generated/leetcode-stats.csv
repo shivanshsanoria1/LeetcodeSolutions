@@ -1782,6 +1782,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 3637,trionic array I,general,cpp,1,0
 3643,flip square submatrix vertically,general,cpp,1,0
 3653,XOR after range multiplication queries I,general,cpp,1,0
+3657,find loyal customers,database,mysql,1,0
 3658,GCD of odd and even sums,general,cpp,2,0
 3663,find the least frequent digit,general,cpp,1,0
 3665,twisted mirror path count,general,cpp,1,1
@@ -1804,6 +1805,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 3708,longest fibonacci subarray,general,cpp,1,0
 3709,design exam scores tracker,general,cpp,1,0
 3712,sum of elements with frequency divisible by K,general,cpp,1,0
+3716,find churn risk customers,database,mysql,1,0
 3718,smallest missing multiple of K,general,cpp,1,0
 3726,remove zeros in decimal representation,general,cpp,2,0
 3727,maximum alternating sum of squares,general,cpp,1,0

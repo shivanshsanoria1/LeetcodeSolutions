@@ -21429,6 +21429,17 @@
 	"type": "general"
 },
 {
+	"quesId": 3657,
+	"title": "find loyal customers",
+	"counter": {
+		"mysql": {
+			"accepted": 1
+		}
+	},
+	"isAccepted": true,
+	"type": "database"
+},
+{
 	"quesId": 3658,
 	"title": "GCD of odd and even sums",
 	"counter": {
@@ -21691,6 +21702,17 @@
 	},
 	"isAccepted": true,
 	"type": "general"
+},
+{
+	"quesId": 3716,
+	"title": "find churn risk customers",
+	"counter": {
+		"mysql": {
+			"accepted": 1
+		}
+	},
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 3718,
