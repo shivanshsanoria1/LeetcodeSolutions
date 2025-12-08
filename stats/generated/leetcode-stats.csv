@@ -1780,6 +1780,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 3627,maximum median sum of subsequences of size 3,general,cpp+js,1+1,0+0
 3633,earliest finish time for land and water rides I,general,cpp,1,0
 3637,trionic array I,general,cpp,1,0
+3642,find books with polarized opinions,database,mysql,2,0
 3643,flip square submatrix vertically,general,cpp,1,0
 3653,XOR after range multiplication queries I,general,cpp,1,0
 3657,find loyal customers,database,mysql,1,0

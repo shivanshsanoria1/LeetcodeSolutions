@@ -21405,6 +21405,17 @@
 	"type": "general"
 },
 {
+	"quesId": 3642,
+	"title": "find books with polarized opinions",
+	"counter": {
+		"mysql": {
+			"accepted": 2
+		}
+	},
+	"isAccepted": true,
+	"type": "database"
+},
+{
 	"quesId": 3643,
 	"title": "flip square submatrix vertically",
 	"counter": {
