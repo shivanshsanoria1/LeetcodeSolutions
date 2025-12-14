@@ -21157,6 +21157,17 @@
 	"type": "general"
 },
 {
+	"quesId": 3580,
+	"title": "find consistently improving employees",
+	"counter": {
+		"mysql": {
+			"accepted": 2
+		}
+	},
+	"isAccepted": true,
+	"type": "database"
+},
+{
 	"quesId": 3582,
 	"title": "generate tag for video caption",
 	"counter": {
@@ -21227,6 +21238,17 @@
 	},
 	"isAccepted": true,
 	"type": "general"
+},
+{
+	"quesId": 3601,
+	"title": "find drivers with improved fuel efficiency",
+	"counter": {
+		"mysql": {
+			"accepted": 1
+		}
+	},
+	"isAccepted": true,
+	"type": "database"
 },
 {
 	"quesId": 3602,
@@ -21958,6 +21980,46 @@
 	"title": "largest prime from consecutive prime sum",
 	"counter": {
 		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3772,
+	"title": "maximum subgraph score in a tree",
+	"counter": {
+		"cpp": {
+			"accepted": 0,
+			"unaccepted": 1
+		}
+	},
+	"isAccepted": false,
+	"type": "general"
+},
+{
+	"quesId": 3774,
+	"title": "absolute difference between maximum and minimum K elements",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3775,
+	"title": "reverse words with same vowel count",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		},
+		"js": {
 			"accepted": 1,
 			"unaccepted": 0
 		}

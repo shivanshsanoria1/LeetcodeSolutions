@@ -1,5 +1,5 @@
 // Set containing the ques ids of problems of type "database"
-// Set size = 82
+// Set size = 84
 
 const quesIdSet = new Set([
 175,
@@ -81,6 +81,8 @@ const quesIdSet = new Set([
 3475,
 3497,
 3570,
+3580,
+3601,
 3642,
 3657,
 3716

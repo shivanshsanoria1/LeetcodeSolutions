@@ -1760,12 +1760,14 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 3567,minimum absolute difference in sliding submatrix,general,cpp,1,0
 3570,find books with no available copies,database,mysql,1,0
 3572,maximize Y-sum by picking a triplet of distinct X-values,general,cpp,1,0
+3580,find consistently improving employees,database,mysql,2,0
 3582,generate tag for video caption,general,cpp,1,0
 3583,count special triplets,general,cpp,1,1
 3588,find maximum area of a triangle,general,cpp,1,0
 3589,count prime gap balanced subarrays,general,cpp,0,1
 3591,check if any element has prime frequency,general,cpp,2,0
 3597,partition string,general,cpp,1,0
+3601,find drivers with improved fuel efficiency,database,mysql,1,0
 3602,hexadecimal and hexatrigesimal conversion,general,cpp,1,0
 3606,coupon code validator,general,cpp+js,2+1,0+0
 3607,power grid maintenance,general,cpp,1,0
@@ -1827,3 +1829,6 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 3760,maximum substrings with distinct start,general,cpp,1,0
 3769,sort integers by binary reflection,general,cpp,1,0
 3770,largest prime from consecutive prime sum,general,cpp,1,0
+3772,maximum subgraph score in a tree,general,cpp,0,1
+3774,absolute difference between maximum and minimum K elements,general,cpp,1,0
+3775,reverse words with same vowel count,general,cpp+js,1+1,0+0

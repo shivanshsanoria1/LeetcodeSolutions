@@ -8,6 +8,7 @@ from typing import List, Dict
 
 maxQuesId = getattr(config, "MAX_QUES_ID", 0)
 enableLogger = getattr(config, "ENABLE_LOGGER", True)
+saveChart = getattr(config, "SAVE_CHART", True)
 showChart = getattr(config, "SHOW_CHART", False)
 # ------------------------------ #
 
@@ -38,6 +39,14 @@ def getCurrUTCstring() -> str:
 def logMsg(msg) -> None:
 	if enableLogger:
 		print(msg)
+# ------------------------------ #
+
+def chartShowSave(plt, chartName: str) -> None:
+	if saveChart:
+		plt.savefig(f'./stats/generated/img/{chartName}.png', format = 'png') 
+
+	if showChart: 
+		plt.show()
 # ------------------------------ #
 
 def loadArr() -> List[Dict]:
@@ -89,9 +98,8 @@ def plotPieChartTotalCount(counter: Dict) -> None:
 
 	plt.axis('equal')
 	plt.title(f'Problem Acceptance Status\nLast Updated on: {getCurrUTCstring()}') 
-	plt.savefig('./stats/generated/img/pie-chart-total-count.png', format = 'png') 
-	if showChart: 
-		plt.show()
+
+	chartShowSave(plt, 'pie-chart-total-count')
 # ------------------------------ #
 
 def generateTypeCounter(stats: List[Dict]) -> Dict:
@@ -132,9 +140,8 @@ def plotPieChartTypeCount(counter: Dict) -> None:
 
 	plt.axis('equal')
 	plt.title(f'Solved Problem Type Distribution\nLast Updated on: {getCurrUTCstring()}') 
-	plt.savefig('./stats/generated/img/pie-chart-type-count.png', format = 'png') 
-	if showChart: 
-		plt.show()
+
+	chartShowSave(plt, 'pie-chart-type-count')
 # ------------------------------ #
 
 def generateLanguageCounter(stats: List[Dict]) -> Dict[str, int]:
@@ -186,9 +193,8 @@ def plotBarChartLanguageCounter(counterLang: Dict[str, int]) -> None:
 		)
 
 	plt.tight_layout()
-	plt.savefig('./stats/generated/img/bar-chart-language-count.png', format = 'png') 
-	if showChart:
-		plt.show()
+
+	chartShowSave(plt, 'bar-chart-language-count')
 # ------------------------------ #
 
 def generateHistogramBuckets(stats: List[Dict], bucketSize: int = 100) -> List[int]:
@@ -263,9 +269,8 @@ def plotQuesIdHistogram(buckets: List[int], bucketSize: int = 100) -> None:
 		)
 
 	plt.subplots_adjust(top = 0.90)
-	plt.savefig('./stats/generated/img/histogram-chart-ques-id.png', format = 'png') 
-	if showChart:
-		plt.show()
+
+	chartShowSave(plt, 'histogram-chart-ques-id')
 # ------------------------------ #
 
 if __name__ == '__main__':

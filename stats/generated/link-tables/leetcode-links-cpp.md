@@ -1608,3 +1608,5 @@
 |3760 | maximum substrings with distinct start |[L1](<../../../CPP [3501-4000]/3760.maximum_substrings_with_distinct_start [1].cpp>) |general|
 |3769 | sort integers by binary reflection |[L1](<../../../CPP [3501-4000]/3769.sort_integers_by_binary_reflection [1].cpp>) |general|
 |3770 | largest prime from consecutive prime sum |[L1](<../../../CPP [3501-4000]/3770.largest_prime_from_consecutive_prime_sum [1].cpp>) |general|
+|3774 | absolute difference between maximum and minimum K elements |[L1](<../../../CPP [3501-4000]/3774.absolute_difference_between_maximum_and_minimum_K_elements [1].cpp>) |general|
+|3775 | reverse words with same vowel count |[L1](<../../../CPP [3501-4000]/3775.reverse_words_with_same_vowel_count [1].cpp>) |general|

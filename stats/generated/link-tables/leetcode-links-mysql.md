@@ -79,6 +79,8 @@
 |3475 | DNA pattern recognition |[L1](<../../../MySQL/3475.DNA_pattern_recognition [1].sql>) |database|
 |3497 | analyze subscription conversion |[L1](<../../../MySQL/3497.analyze_subscription_conversion [1].sql>) |database|
 |3570 | find books with no available copies |[L1](<../../../MySQL/3570.find_books_with_no_available_copies [1].sql>) |database|
+|3580 | find consistently improving employees |[L1](<../../../MySQL/3580.find_consistently_improving_employees [1].sql>) [L2](<../../../MySQL/3580.find_consistently_improving_employees [2].sql>) |database|
+|3601 | find drivers with improved fuel efficiency |[L1](<../../../MySQL/3601.find_drivers_with_improved_fuel_efficiency [1].sql>) |database|
 |3642 | find books with polarized opinions |[L1](<../../../MySQL/3642.find_books_with_polarized_opinions [1].sql>) [L2](<../../../MySQL/3642.find_books_with_polarized_opinions [2].sql>) |database|
 |3657 | find loyal customers |[L1](<../../../MySQL/3657.find_loyal_customers [1].sql>) |database|
 |3716 | find churn risk customers |[L1](<../../../MySQL/3716.find_churn_risk_customers [1].sql>) |database|
