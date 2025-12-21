@@ -67,3 +67,4 @@
 |3606 | coupon code validator |[L1](<../../../Javascript/3606.coupon_code_validator [1].js>) |general|
 |3627 | maximum median sum of subsequences of size 3 |[L1](<../../../Javascript/3627.maximum_median_sum_of_subsequences_of_size_3 [1].js>) |general|
 |3775 | reverse words with same vowel count |[L1](<../../../Javascript/3775.reverse_words_with_same_vowel_count [1].js>) |general|
+|3783 | mirror distance of an integer |[L1](<../../../Javascript/3783.mirror_distance_of_an_integer [1].js>) |general|

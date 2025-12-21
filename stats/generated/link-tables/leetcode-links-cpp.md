@@ -1610,3 +1610,6 @@
 |3770 | largest prime from consecutive prime sum |[L1](<../../../CPP [3501-4000]/3770.largest_prime_from_consecutive_prime_sum [1].cpp>) |general|
 |3774 | absolute difference between maximum and minimum K elements |[L1](<../../../CPP [3501-4000]/3774.absolute_difference_between_maximum_and_minimum_K_elements [1].cpp>) |general|
 |3775 | reverse words with same vowel count |[L1](<../../../CPP [3501-4000]/3775.reverse_words_with_same_vowel_count [1].cpp>) |general|
+|3779 | minimum number of operations to have distinct elements |[L1](<../../../CPP [3501-4000]/3779.minimum_number_of_operations_to_have_distinct_elements [1].cpp>) |general|
+|3783 | mirror distance of an integer |[L1](<../../../CPP [3501-4000]/3783.mirror_distance_of_an_integer [1].cpp>) [L2](<../../../CPP [3501-4000]/3783.mirror_distance_of_an_integer [2].cpp>) |general|
+|3784 | minimum deletion cost to make all characters equal |[L1](<../../../CPP [3501-4000]/3784.minimum_deletion_cost_to_make_all_characters_equal [1].cpp>) |general|

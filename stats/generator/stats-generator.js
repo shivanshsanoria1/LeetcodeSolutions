@@ -1,8 +1,8 @@
-const path = require("node:path");
-const fs = require("node:fs/promises");
+const path = require('node:path');
+const fs = require('node:fs/promises');
 
-const { languageModel } = require("./language-model.js");
-const { quesIdSetJSTS } = require("./ques-id-set-JS-TS.js");
+const { languageModel } = require('./language-model.js');
+const { quesIdSetJSTS } = require('./ques-id-set-JS-TS.js');
 
 function getLangFormalName(langName) {
 	for (const lang in languageModel) {
@@ -31,7 +31,8 @@ function updateCounterObj(obj, lang, isAccepted) {
 	const updateUnacceptedValBy = !isAccepted ? 1 : 0;
 
 	if (!obj[lang]) {
-		obj[lang] = languageModel[lang].types.includes("database")
+		obj[lang] = 
+			languageModel[lang].types.includes("database")
 			? { accepted: 0 }
 			: { accepted: 0, unaccepted: 0 };
 	}
@@ -62,27 +63,18 @@ function generateStatsMap() {
 					const filePath = path.join(dirPath, fileName);
 
 					const quesId = parseInt(fileName.split(".")[0]);
-					const title = fileName
-						.split(".")[1]
-						.split(" ")[0]
-						.split("_")
-						.join(" ");
+					const title = fileName.split('.')[1].split(' ')[0].split('_').join(' ');
+
 					const fileExtension = path.extname(filePath).substring(1);
 					const language = getLanguageNameFromDirPath(dirPath);
-					const isAccepted =
-						fileName.search("TLE") === -1 &&
-						fileName.search("MLE") === -1;
+					const isAccepted = fileName.search("TLE") === -1 && fileName.search("MLE") === -1;
 
 					let statObj = null;
 
 					if (statsMap.has(quesId)) {
 						statObj = statsMap.get(quesId);
 					} else {
-						statObj = {
-							quesId,
-							title,
-							counter: {},
-						};
+						statObj = { quesId, title, counter: {} };
 					}
 
 					updateCounterObj(statObj.counter, language, isAccepted);
@@ -111,10 +103,7 @@ function convertMapToArray(mp) {
 
 function generateTotalProblemCounterAndUpdateStatsArray(statsArr) {
 	// total problem accepted and unaccepted count
-	const totalProblemCount = {
-		accepted: 0,
-		unaccepted: 0,
-	};
+	const totalProblemCount = { accepted: 0, unaccepted: 0 };
 
 	// total accepted and unaccepted count per language
 	const totalLanguageCounter = {};
@@ -123,7 +112,7 @@ function generateTotalProblemCounterAndUpdateStatsArray(statsArr) {
 	const fileCounter = {};
 
 	for (const lang in languageModel) {
-		if (languageModel[lang].types.includes("database")) {
+		if (languageModel[lang].types.includes('database')) {
 			totalLanguageCounter[lang] = { accepted: 0 };
 		} else {
 			totalLanguageCounter[lang] = { accepted: 0, unaccepted: 0 };
@@ -136,28 +125,25 @@ function generateTotalProblemCounterAndUpdateStatsArray(statsArr) {
 		const { quesId, counter } = obj;
 
 		let isAccepted = false;
-		let type = "general";
+		let type = 'general';
 
 		for (const lang in counter) {
-			totalLanguageCounter[lang].accepted +=
-				counter[lang].accepted > 0 ? 1 : 0;
+			totalLanguageCounter[lang].accepted += counter[lang].accepted > 0 ? 1 : 0;
 
 			if (counter[lang].accepted === 0 && counter[lang].unaccepted) {
-				totalLanguageCounter[lang].unaccepted +=
-					counter[lang].unaccepted > 0 ? 1 : 0;
+				totalLanguageCounter[lang].unaccepted += counter[lang].unaccepted > 0 ? 1 : 0;
 			}
 
-			fileCounter[lang] +=
-				counter[lang].accepted + (counter[lang].unaccepted ?? 0);
+			fileCounter[lang] += counter[lang].accepted + (counter[lang].unaccepted ?? 0);
 
 			if (counter[lang].accepted > 0) {
 				isAccepted = true;
 			}
 
 			if (languageModel[lang].types.includes("database")) {
-				type = "database";
+				type = 'database';
 			} else if (quesIdSetJSTS.has(quesId)) {
-				type = "javascript/typescript";
+				type = 'javascript/typescript';
 			}
 		}
 
@@ -178,17 +164,15 @@ function generateTotalProblemCounterAndUpdateStatsArray(statsArr) {
 function generateJSfile(statsArr) {
 	return new Promise(async (resolve, reject) => {
 		try {
-			let statsArrStringified = "[\n";
-			statsArrStringified += statsArr
-				.map((statObj) => JSON.stringify(statObj, null, "\t"))
-				.join(",\n");
-			statsArrStringified += "\n]\n";
+			let statsArrStringified = '';
+			statsArrStringified += '[\n';
+			statsArrStringified += 
+				statsArr
+				.map((statObj) => JSON.stringify(statObj, null, '\t'))
+				.join(',\n');
+			statsArrStringified += '\n]\n';
 
-			const filePath = path.join(
-				__dirname,
-				"generated",
-				"leetcode-stats-array.js"
-			);
+			const filePath = path.join(__dirname, '..', 'generated', 'leetcode-stats-array.js');
 			await fs.writeFile(filePath, statsArrStringified);
 
 			resolve();
@@ -202,22 +186,22 @@ function generateJSfile(statsArr) {
 function generateCSVfile(statsArr) {
 	return new Promise(async (resolve, reject) => {
 		try {
-			let statsStringified =
-				"Id,Title,Type,Language(s),accepted,partially-accepted\n";
+			let statsStringified = ''
+			statsStringified += 'Id,Title,Type,Language(s),accepted,partially-accepted\n';
 
 			for (const statObj of statsArr) {
 				const { quesId, title, counter, type } = statObj;
 
-				const titleWithOutCommas = title.replace(/,/g, "*");
+				const titleWithOutCommas = title.replace(/,/g, '*');
 
-				let languagesStr = "";
-				let acceptedStr = "";
-				let unacceptedStr = "";
+				let languagesStr = '';
+				let acceptedStr = '';
+				let unacceptedStr = '';
 
 				for (const language in counter) {
-					languagesStr += language + "+";
-					acceptedStr += counter[language].accepted + "+";
-					unacceptedStr += (counter[language].unaccepted ?? 0) + "+";
+					languagesStr += language + '+';
+					acceptedStr += counter[language].accepted + '+';
+					unacceptedStr += (counter[language].unaccepted ?? 0) + '+';
 				}
 
 				// remove the trailing '+' sign
@@ -228,11 +212,7 @@ function generateCSVfile(statsArr) {
 				statsStringified += `${quesId},${titleWithOutCommas},${type},${languagesStr},${acceptedStr},${unacceptedStr}\n`;
 			}
 
-			const filePath = path.join(
-				__dirname,
-				"generated",
-				"leetcode-stats.csv"
-			);
+			const filePath = path.join(__dirname, '..', 'generated', 'leetcode-stats.csv');
 			await fs.writeFile(filePath, statsStringified);
 
 			resolve();
@@ -247,27 +227,26 @@ function generateMDlinksFile(statsArr) {
 	return new Promise(async (resolve, reject) => {
 		try {
 			for (const lang in languageModel) {
-				const statsArrAccepted = statsArr.filter(
-					({ isAccepted, counter }) => isAccepted && counter[lang]
-				);
+				const statsArrAccepted = 
+					statsArr
+					.filter(({ isAccepted, counter }) => isAccepted && counter[lang]);
 
-				let fileDataStringified = "| Id | Title | Link(s) | Type |\n";
-				fileDataStringified += "| --- | --- | --- | --- |\n";
+				let fileDataStringified = '';
+				fileDataStringified += '| Id | Title | Link(s) | Type |\n';
+				fileDataStringified += '| --- | --- | --- | --- |\n';
 
 				for (const statObj of statsArrAccepted) {
 					const { quesId, title, counter, type } = statObj;
 
-					const titleInFile = title.split(" ").join("_");
-					const titleWithOutCommas = title.replace(/,/g, "*");
+					const titleInFile = title.split(' ').join('_');
+					const titleWithOutCommas = title.replace(/,/g, '*');
 
 					fileDataStringified += `|${quesId} | ${titleWithOutCommas} |`;
 
 					const { extension, dirNames } = languageModel[lang];
 					let dirIdx = 0;
 					if (dirNames.length > 1) {
-						dirIdx = Number.isInteger(quesId / 500)
-							? Math.floor(quesId / 500) - 1
-							: Math.floor(quesId / 500);
+						dirIdx = Number.isInteger(quesId / 500) ? Math.floor(quesId / 500) - 1 : Math.floor(quesId / 500);
 					}
 					const dirName = dirNames[dirIdx];
 
@@ -278,12 +257,8 @@ function generateMDlinksFile(statsArr) {
 
 					fileDataStringified += `|${type}|\n`;
 				}
-				const filePath = path.join(
-					__dirname,
-					"generated",
-					"link-tables",
-					`leetcode-links-${lang}.md`
-				);
+
+				const filePath = path.join(__dirname, '..', 'generated', 'link-tables', `leetcode-links-${lang}.md`);
 				await fs.writeFile(filePath, fileDataStringified);
 			}
 
@@ -298,22 +273,19 @@ function generateMDlinksFile(statsArr) {
 function generateDatabaseQuesIdSetFile(statsArr) {
 	return new Promise(async (resolve, reject) => {
 		try {
-			const quesIds = statsArr.filter(({ type }) => type === "database");
+			const quesIds = statsArr.filter(({ type }) => type === 'database');
 
-			let quesIdsStringified =
-				'// Set containing the ques ids of problems of type "database"\n';
+			let quesIdsStringified = '';
+			quesIdsStringified += '// Set containing the ques ids of problems of type "database"\n';
 			quesIdsStringified += `// Set size = ${quesIds.length}\n\n`;
-			quesIdsStringified += "const quesIdSet = new Set([\n";
-			quesIdsStringified += quesIds
+			quesIdsStringified += 'const quesIdSet = new Set([\n';
+			quesIdsStringified += 
+				quesIds
 				.map(({ quesId }) => quesId)
 				.join(",\n");
-			quesIdsStringified += "\n])\n";
+			quesIdsStringified += '\n])\n';
 
-			const filePath = path.join(
-				__dirname,
-				"generated",
-				"ques-id-set-database.js"
-			);
+			const filePath = path.join(__dirname, '..', 'generated', 'ques-id-set-database.js');
 			await fs.writeFile(filePath, quesIdsStringified);
 
 			resolve();
@@ -324,42 +296,35 @@ function generateDatabaseQuesIdSetFile(statsArr) {
 	});
 }
 
-async function updateStatsinReadmeFile(
-	totalProblemCount,
-	totalLanguageCounter
-) {
+async function updateStatsinReadmeFile(totalProblemCount, totalLanguageCounter) {
 	return new Promise(async (resolve, reject) => {
 		try {
-			const filePath = path.join(__dirname, "..", "README.md");
+			const filePath = path.join(__dirname, '..', '..', 'README.md');
 			const seperator = "<!-- UPDATE STATS HERE -->";
 
 			const fileData = await fs.readFile(filePath, { encoding: "utf8" });
 			const fileDataArr = fileData.split(seperator);
 
-			let statData = "";
+			let statData = '';
 			statData += `Last updated on _${new Date().toUTCString()}_\n`;
 
-			statData += "### Total problems solved:\n";
-			statData += "| Accepted | Partially accepted | Link |\n";
-			statData += "| --- | --- | --- |\n";
+			statData += '### Total problems solved:\n';
+			statData += '| Accepted | Partially accepted | Link |\n';
+			statData += '| --- | --- | --- |\n';
 			const csvUrl = `./stats/generated/leetcode-stats.csv`;
 			statData += `| ${totalProblemCount.accepted} | ${totalProblemCount.unaccepted} | [csv](${csvUrl})|\n`;
 
-			statData += "### Total problems solved per language:\n";
-			statData +=
-				"| Language  | Accepted | Partially accepted | Links Table |\n";
-			statData += "| --- | --- | --- | --- |\n";
+			statData += '### Total problems solved per language:\n';
+			statData += '| Language  | Accepted | Partially accepted | Links Table |\n';
+			statData += '| --- | --- | --- | --- |\n';
 
 			for (language in totalLanguageCounter) {
 				const acceptedCount = totalLanguageCounter[language].accepted;
-				const unacceptedCount =
-					totalLanguageCounter[language].unaccepted ?? 0;
+				const unacceptedCount = totalLanguageCounter[language].unaccepted ?? 0;
 
 				const url = `./stats/generated/link-tables/leetcode-links-${language}.md`;
 
-				statData += `| ${getLangFormalName(
-					language
-				)} | ${acceptedCount} | ${unacceptedCount} | [click](${url})\n`;
+				statData += `| ${getLangFormalName(language)} | ${acceptedCount} | ${unacceptedCount} | [click](${url})\n`;
 			}
 
 			const updatedFileData =
@@ -383,9 +348,7 @@ async function updateStatsinReadmeFile(
 async function generateStats() {
 	try {
 		const startTime = Date.now();
-		console.log(
-			`Solutions Stat Generation Started at: ${new Date().toISOString()}`
-		);
+		console.log(`Solutions Stat Generation Started at: ${new Date().toISOString()}`);
 
 		const statsMap = await generateStatsMap();
 
@@ -408,13 +371,9 @@ async function generateStats() {
 
 		await updateStatsinReadmeFile(totalProblemCount, totalLanguageCounter);
 
-		console.log(
-			`Solutions Stat Generation Completed at: ${new Date().toISOString()}`
-		);
+		console.log(`Solutions Stat Generation Completed at: ${new Date().toISOString()}`);
 		const endTime = Date.now();
-		console.log(
-			`Time Taken to Generate Solution stats = ${endTime - startTime} ms`
-		);
+		console.log(`Time Taken to Generate Solution stats = ${endTime - startTime} ms`);
 	} catch (err) {
 		console.log(err);
 	}

@@ -22026,5 +22026,45 @@
 	},
 	"isAccepted": true,
 	"type": "general"
+},
+{
+	"quesId": 3779,
+	"title": "minimum number of operations to have distinct elements",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3783,
+	"title": "mirror distance of an integer",
+	"counter": {
+		"cpp": {
+			"accepted": 2,
+			"unaccepted": 0
+		},
+		"js": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3784,
+	"title": "minimum deletion cost to make all characters equal",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
 }
 ]

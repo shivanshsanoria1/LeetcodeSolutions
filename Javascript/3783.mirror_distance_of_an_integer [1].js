@@ -1,0 +1,9 @@
+/**
+ * @param {number} n
+ * @return {number}
+ */
+var mirrorDistance = function(n) {
+    const revNum = parseInt(n.toString().split('').reverse().join(''))
+    
+    return Math.abs(n - revNum)
+};

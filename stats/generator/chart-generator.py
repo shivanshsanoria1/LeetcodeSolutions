@@ -43,7 +43,8 @@ def logMsg(msg) -> None:
 
 def chartShowSave(plt, chartName: str) -> None:
 	if saveChart:
-		plt.savefig(f'./stats/generated/img/{chartName}.png', format = 'png') 
+		filePath = f'./stats/generated/img/{chartName}.png'
+		plt.savefig(filePath, format = 'png') 
 
 	if showChart: 
 		plt.show()
@@ -247,9 +248,9 @@ def plotQuesIdHistogram(buckets: List[int], bucketSize: int = 100) -> None:
 	fig, ax = plt.subplots(figsize = (12, 5), facecolor = getColorHex('grey'))
 	bars = ax.bar(labels, buckets, color = barColours, width = 0.90)
 
-	ax.set_xlabel("Problem Id range")
-	ax.set_ylabel("Problems solved")
-	ax.set_title(f"Problems solved per {bucketSize} problems\nLast updated on {getCurrUTCstring()}")
+	ax.set_xlabel("Question Id range")
+	ax.set_ylabel("Questions solved")
+	ax.set_title(f"Questions solved per {bucketSize} questions\nLast updated on {getCurrUTCstring()}")
 	ax.grid(axis = "y", linestyle = "--", alpha = 0.6)
 	ax.set_ylim(top = 100)
 	plt.xticks(rotation = 45, ha = "right")

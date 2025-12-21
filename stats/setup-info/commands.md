@@ -3,7 +3,7 @@
 ### Run 'stats-generator.js'
 
 ```
-node ./stats/stats-generator.js
+node ./stats/generator/stats-generator.js
 ```
 
 ---
@@ -11,18 +11,24 @@ node ./stats/stats-generator.js
 ### Run 'chart-generator.py'
 
 ```
-source ./stats/.venv/bin/activate
+source ./stats/generator/.venv/bin/activate
 ```
 
 ```
-python3 ./stats/chart-generator.py
+python3 ./stats/generator/chart-generator.py
 ```
 
 ```
 deactivate
 ```
 
-#### Needs the following dependencies installed (before step 2)
+#### Setup the virtual environment (before step-1)
+
+```
+python3 -m venv ./stats/generator/.venv
+```
+
+#### Needs the following dependencies installed (before step-2)
 
 ```
 pip install matplotlib
@@ -35,7 +41,7 @@ pip install config
 #### Recreate the same environment with
 
 ```
-pip install -r ./stats/requirements.txt
+pip install -r ./stats/setup-info/requirements.txt
 ```
 
 #### Find the dependencies currently installed

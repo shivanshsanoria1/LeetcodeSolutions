@@ -1832,3 +1832,6 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 3772,maximum subgraph score in a tree,general,cpp,0,1
 3774,absolute difference between maximum and minimum K elements,general,cpp,1,0
 3775,reverse words with same vowel count,general,cpp+js,1+1,0+0
+3779,minimum number of operations to have distinct elements,general,cpp,1,0
+3783,mirror distance of an integer,general,cpp+js,2+1,0+0
+3784,minimum deletion cost to make all characters equal,general,cpp,1,0
