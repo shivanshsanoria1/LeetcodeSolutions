@@ -14,21 +14,28 @@ showChart = getattr(config, "SHOW_CHART", False)
 
 def getColorHex(color: str) -> str:
 	colorMapping = {
-		'pink': '#800080',
+		'pink': '#cc0066',
+		'dark-pink': '#993366',
+		'faded-purple': '#862d86',
+		'purple': '#9900cc',
 		'violet': '#7300e6',
 		'light-blue': '#00ccff',
+		'slate-blue': '#0099ff',
 		'blue': '#3366ff',
 		'sea-green': '#00b386',
-		'light-green': '#00e64d',
+		'light-green': '#00e68a',
 		'green': '#39ac39',
 		'yellow': '#ffff66',
 		'orange': '#ff751a',
+		'orange-red': '#ff5c33',
 		'red': '#ff4d4d',
+		'dark-red': '#990033',
 		'grey': '#dedede',
 	}
-	defaultColor = '#000000' 
 
+	defaultColor = '#000000' 
 	color = color.strip().lower()
+
 	return colorMapping.get(color, defaultColor)
 # ------------------------------ #
 
@@ -220,21 +227,34 @@ def generateHistogramBuckets(stats: List[Dict], bucketSize: int = 100) -> List[i
 # ------------------------------ #
 
 def getBarColor(height: int) -> str:
-	colors10 = [
-		getColorHex('red'), # 1-10
-		getColorHex('red'), # 11-20
-		getColorHex('orange'), # 21-30
-		getColorHex('yellow'), # 31-40
-		getColorHex('sea-green'), # 41-50
-		getColorHex('light-blue'), # 51-60
-		getColorHex('blue'), # 61-70
-		getColorHex('blue'), # 71-80
-		getColorHex('violet'), # 81-90
-		getColorHex('pink'), # 91-100
+	# size = 20
+	colors = [
+		getColorHex('red'), # 1‑5
+        getColorHex('red'), # 6‑10
+        getColorHex('dark-red'), # 11‑15
+        getColorHex('dark-red'), # 16‑20
+        getColorHex('orange-red'), # 21‑25
+        getColorHex('orange'), # 26‑30
+        getColorHex('yellow'), # 31‑35
+        getColorHex('light-green'), # 36‑40
+        getColorHex('green'), # 41‑45
+        getColorHex('sea-green'), # 46‑50
+        getColorHex('light-blue'), # 51‑55
+        getColorHex('slate-blue'), # 56‑60
+        getColorHex('blue'), # 61‑65
+        getColorHex('blue'), # 66‑70
+        getColorHex('dark-blue'), # 71‑75
+        getColorHex('dark-blue'), # 76‑80
+        getColorHex('violet'), # 81‑85
+        getColorHex('purple'), # 86‑90
+        getColorHex('pink'), # 91‑95
+        getColorHex('dark-pink'), # 96‑100
 	]
 
-	idx = min((height - 1) // 10, len(colors10) - 1)
-	return colors10[idx]
+	groupSize = 100 // len(colors)
+	idx = min((height - 1) // groupSize, len(colors) - 1)
+
+	return colors[idx]
 # ------------------------------ #
 
 def plotQuesIdHistogram(buckets: List[int], bucketSize: int = 100) -> None:
