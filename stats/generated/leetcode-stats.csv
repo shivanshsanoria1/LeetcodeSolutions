@@ -1835,3 +1835,5 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 3779,minimum number of operations to have distinct elements,general,cpp,1,0
 3783,mirror distance of an integer,general,cpp+js,2+1,0+0
 3784,minimum deletion cost to make all characters equal,general,cpp,1,0
+3788,maximum score of a split,general,cpp,1,0
+3791,number of balanced integers in a range,general,cpp,0,1

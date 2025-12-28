@@ -22066,5 +22066,29 @@
 	},
 	"isAccepted": true,
 	"type": "general"
+},
+{
+	"quesId": 3788,
+	"title": "maximum score of a split",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3791,
+	"title": "number of balanced integers in a range",
+	"counter": {
+		"cpp": {
+			"accepted": 0,
+			"unaccepted": 1
+		}
+	},
+	"isAccepted": false,
+	"type": "general"
 }
 ]
