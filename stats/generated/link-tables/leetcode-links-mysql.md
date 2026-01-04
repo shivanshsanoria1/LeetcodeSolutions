@@ -84,3 +84,4 @@
 |3642 | find books with polarized opinions |[L1](<../../../MySQL/3642.find_books_with_polarized_opinions [1].sql>) [L2](<../../../MySQL/3642.find_books_with_polarized_opinions [2].sql>) |database|
 |3657 | find loyal customers |[L1](<../../../MySQL/3657.find_loyal_customers [1].sql>) |database|
 |3716 | find churn risk customers |[L1](<../../../MySQL/3716.find_churn_risk_customers [1].sql>) |database|
+|3793 | find users with high token usage |[L1](<../../../MySQL/3793.find_users_with_high_token_usage [1].sql>) |database|

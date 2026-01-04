@@ -22,17 +22,17 @@ This repo contains solutions to over **1700** problems from [leetcode.com](https
 ## Stats
 
 <!-- UPDATE STATS HERE -->
-Last updated on _Sun, 28 Dec 2025 10:41:28 GMT_
+Last updated on _Sun, 04 Jan 2026 05:23:05 GMT_
 ### Total problems solved:
 | Accepted | Partially accepted | Link |
 | --- | --- | --- |
-| 1736 | 102 | [csv](./stats/generated/leetcode-stats.csv)|
+| 1738 | 102 | [csv](./stats/generated/leetcode-stats.csv)|
 ### Total problems solved per language:
 | Language  | Accepted | Partially accepted | Links Table |
 | --- | --- | --- | --- |
-| C++ | 1614 | 102 | [click](./stats/generated/link-tables/leetcode-links-cpp.md)
-| Javascript | 68 | 0 | [click](./stats/generated/link-tables/leetcode-links-js.md)
-| MySQL | 84 | 0 | [click](./stats/generated/link-tables/leetcode-links-mysql.md)
+| C++ | 1615 | 102 | [click](./stats/generated/link-tables/leetcode-links-cpp.md)
+| Javascript | 69 | 0 | [click](./stats/generated/link-tables/leetcode-links-js.md)
+| MySQL | 85 | 0 | [click](./stats/generated/link-tables/leetcode-links-mysql.md)
 <!-- UPDATE STATS HERE -->
 
 use ctrl + click to open the links in a new tab for the best experience.

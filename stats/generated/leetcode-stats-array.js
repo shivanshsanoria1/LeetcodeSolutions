@@ -10973,7 +10973,7 @@
 },
 {
 	"quesId": 1556,
-	"title": "thousand seperator",
+	"title": "thousand separator",
 	"counter": {
 		"cpp": {
 			"accepted": 1,
@@ -22089,6 +22089,33 @@
 		}
 	},
 	"isAccepted": false,
+	"type": "general"
+},
+{
+	"quesId": 3793,
+	"title": "find users with high token usage",
+	"counter": {
+		"mysql": {
+			"accepted": 1
+		}
+	},
+	"isAccepted": true,
+	"type": "database"
+},
+{
+	"quesId": 3794,
+	"title": "reverse string prefix",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		},
+		"js": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
 	"type": "general"
 }
 ]

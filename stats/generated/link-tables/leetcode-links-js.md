@@ -10,7 +10,7 @@
 |1455 | check if a word occurs as a prefix of any word in a sentence |[L1](<../../../Javascript/1455.check_if_a_word_occurs_as_a_prefix_of_any_word_in_a_sentence [1].js>) |general|
 |1507 | reformat date |[L1](<../../../Javascript/1507.reformat_date [1].js>) [L2](<../../../Javascript/1507.reformat_date [2].js>) |general|
 |1528 | shuffle string |[L1](<../../../Javascript/1528.shuffle_string [1].js>) |general|
-|1556 | thousand seperator |[L1](<../../../Javascript/1556.thousand_seperator [1].js>) |general|
+|1556 | thousand separator |[L1](<../../../Javascript/1556.thousand_separator [1].js>) |general|
 |1561 | maximum number of coins you can get |[L1](<../../../Javascript/1561.maximum_number_of_coins_you_can_get [1].js>) |general|
 |1704 | determine if string halves are alike |[L1](<../../../Javascript/1704.determine_if_string_halves_are_alike [1].js>) |general|
 |1920 | build array from permutation |[L1](<../../../Javascript/1920.build_array_from_permutation [1].js>) |general|
@@ -68,3 +68,4 @@
 |3627 | maximum median sum of subsequences of size 3 |[L1](<../../../Javascript/3627.maximum_median_sum_of_subsequences_of_size_3 [1].js>) |general|
 |3775 | reverse words with same vowel count |[L1](<../../../Javascript/3775.reverse_words_with_same_vowel_count [1].js>) |general|
 |3783 | mirror distance of an integer |[L1](<../../../Javascript/3783.mirror_distance_of_an_integer [1].js>) |general|
+|3794 | reverse string prefix |[L1](<../../../Javascript/3794.reverse_string_prefix [1].js>) |general|

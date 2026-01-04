@@ -915,7 +915,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 1550,three consecutive odds,general,cpp,2,0
 1551,minimum operations to make array equal,general,cpp,2,0
 1552,magnetic force between two balls,general,cpp,1,0
-1556,thousand seperator,general,cpp+js,1+1,0+0
+1556,thousand separator,general,cpp+js,1+1,0+0
 1557,minimum number of vertices to reach all nodes,general,cpp,2,0
 1558,minimum numbers of function calls to make target array,general,cpp,2,0
 1559,detect cycles in 2D grid,general,cpp,2,0
@@ -1837,3 +1837,5 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 3784,minimum deletion cost to make all characters equal,general,cpp,1,0
 3788,maximum score of a split,general,cpp,1,0
 3791,number of balanced integers in a range,general,cpp,0,1
+3793,find users with high token usage,database,mysql,1,0
+3794,reverse string prefix,general,cpp+js,1+1,0+0

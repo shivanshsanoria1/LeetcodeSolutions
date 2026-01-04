@@ -824,7 +824,7 @@
 |1550 | three consecutive odds |[L1](<../../../CPP [1501-2000]/1550.three_consecutive_odds [1].cpp>) [L2](<../../../CPP [1501-2000]/1550.three_consecutive_odds [2].cpp>) |general|
 |1551 | minimum operations to make array equal |[L1](<../../../CPP [1501-2000]/1551.minimum_operations_to_make_array_equal [1].cpp>) [L2](<../../../CPP [1501-2000]/1551.minimum_operations_to_make_array_equal [2].cpp>) |general|
 |1552 | magnetic force between two balls |[L1](<../../../CPP [1501-2000]/1552.magnetic_force_between_two_balls [1].cpp>) |general|
-|1556 | thousand seperator |[L1](<../../../CPP [1501-2000]/1556.thousand_seperator [1].cpp>) |general|
+|1556 | thousand separator |[L1](<../../../CPP [1501-2000]/1556.thousand_separator [1].cpp>) |general|
 |1557 | minimum number of vertices to reach all nodes |[L1](<../../../CPP [1501-2000]/1557.minimum_number_of_vertices_to_reach_all_nodes [1].cpp>) [L2](<../../../CPP [1501-2000]/1557.minimum_number_of_vertices_to_reach_all_nodes [2].cpp>) |general|
 |1558 | minimum numbers of function calls to make target array |[L1](<../../../CPP [1501-2000]/1558.minimum_numbers_of_function_calls_to_make_target_array [1].cpp>) [L2](<../../../CPP [1501-2000]/1558.minimum_numbers_of_function_calls_to_make_target_array [2].cpp>) |general|
 |1559 | detect cycles in 2D grid |[L1](<../../../CPP [1501-2000]/1559.detect_cycles_in_2D_grid [1].cpp>) [L2](<../../../CPP [1501-2000]/1559.detect_cycles_in_2D_grid [2].cpp>) |general|
@@ -1614,3 +1614,4 @@
 |3783 | mirror distance of an integer |[L1](<../../../CPP [3501-4000]/3783.mirror_distance_of_an_integer [1].cpp>) [L2](<../../../CPP [3501-4000]/3783.mirror_distance_of_an_integer [2].cpp>) |general|
 |3784 | minimum deletion cost to make all characters equal |[L1](<../../../CPP [3501-4000]/3784.minimum_deletion_cost_to_make_all_characters_equal [1].cpp>) |general|
 |3788 | maximum score of a split |[L1](<../../../CPP [3501-4000]/3788.maximum_score_of_a_split [1].cpp>) |general|
+|3794 | reverse string prefix |[L1](<../../../CPP [3501-4000]/3794.reverse_string_prefix [1].cpp>) |general|
