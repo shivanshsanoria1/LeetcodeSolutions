@@ -22,14 +22,11 @@ cte1.max_amount as max_historical_amount,
 cte1.days_as_subscriber
 from cte1
 inner join cte2
+on cte1.user_id = cte2.user_id
 inner join subscription_events T1
-on 
-cte1.user_id = cte2.user_id
-and cte1.user_id = T1.user_id 
-and cte1.max_event_id = T1.event_id
+on cte1.user_id = T1.user_id and cte1.max_event_id = T1.event_id
 where 
-T1.event_type != 'cancel' 
-and T1.monthly_amount * 2 < cte1.max_amount
+T1.event_type != 'cancel' and T1.monthly_amount * 2 < cte1.max_amount
 order by
 cte1.days_as_subscriber desc, cte1.user_id asc;
 

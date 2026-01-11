@@ -1841,3 +1841,6 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 3794,reverse string prefix,general,cpp+js,1+1,0+0
 3798,largest even number,general,cpp+js,1+1,0+0
 3799,word squares II,general,cpp,2,0
+3803,count residue prefixes,general,cpp,1,0
+3804,number of centered subarrays,general,cpp,1,0
+3805,count caesar cipher pairs,general,cpp,1,1

@@ -22145,5 +22145,41 @@
 	},
 	"isAccepted": true,
 	"type": "general"
+},
+{
+	"quesId": 3803,
+	"title": "count residue prefixes",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3804,
+	"title": "number of centered subarrays",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3805,
+	"title": "count caesar cipher pairs",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 1
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
 }
 ]

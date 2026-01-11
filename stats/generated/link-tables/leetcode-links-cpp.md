@@ -1617,3 +1617,6 @@
 |3794 | reverse string prefix |[L1](<../../../CPP [3501-4000]/3794.reverse_string_prefix [1].cpp>) |general|
 |3798 | largest even number |[L1](<../../../CPP [3501-4000]/3798.largest_even_number [1].cpp>) |general|
 |3799 | word squares II |[L1](<../../../CPP [3501-4000]/3799.word_squares_II [1].cpp>) [L2](<../../../CPP [3501-4000]/3799.word_squares_II [2].cpp>) |general|
+|3803 | count residue prefixes |[L1](<../../../CPP [3501-4000]/3803.count_residue_prefixes [1].cpp>) |general|
+|3804 | number of centered subarrays |[L1](<../../../CPP [3501-4000]/3804.number_of_centered_subarrays [1].cpp>) |general|
+|3805 | count caesar cipher pairs |[L1](<../../../CPP [3501-4000]/3805.count_caesar_cipher_pairs [1].cpp>) |general|
