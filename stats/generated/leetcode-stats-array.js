@@ -22117,5 +22117,33 @@
 	},
 	"isAccepted": true,
 	"type": "general"
+},
+{
+	"quesId": 3798,
+	"title": "largest even number",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		},
+		"js": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3799,
+	"title": "word squares II",
+	"counter": {
+		"cpp": {
+			"accepted": 2,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
 }
 ]

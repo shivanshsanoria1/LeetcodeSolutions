@@ -1615,3 +1615,5 @@
 |3784 | minimum deletion cost to make all characters equal |[L1](<../../../CPP [3501-4000]/3784.minimum_deletion_cost_to_make_all_characters_equal [1].cpp>) |general|
 |3788 | maximum score of a split |[L1](<../../../CPP [3501-4000]/3788.maximum_score_of_a_split [1].cpp>) |general|
 |3794 | reverse string prefix |[L1](<../../../CPP [3501-4000]/3794.reverse_string_prefix [1].cpp>) |general|
+|3798 | largest even number |[L1](<../../../CPP [3501-4000]/3798.largest_even_number [1].cpp>) |general|
+|3799 | word squares II |[L1](<../../../CPP [3501-4000]/3799.word_squares_II [1].cpp>) [L2](<../../../CPP [3501-4000]/3799.word_squares_II [2].cpp>) |general|

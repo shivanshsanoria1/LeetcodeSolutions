@@ -1839,3 +1839,5 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 3791,number of balanced integers in a range,general,cpp,0,1
 3793,find users with high token usage,database,mysql,1,0
 3794,reverse string prefix,general,cpp+js,1+1,0+0
+3798,largest even number,general,cpp+js,1+1,0+0
+3799,word squares II,general,cpp,2,0
