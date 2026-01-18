@@ -1620,3 +1620,6 @@
 |3803 | count residue prefixes |[L1](<../../../CPP [3501-4000]/3803.count_residue_prefixes [1].cpp>) |general|
 |3804 | number of centered subarrays |[L1](<../../../CPP [3501-4000]/3804.number_of_centered_subarrays [1].cpp>) |general|
 |3805 | count caesar cipher pairs |[L1](<../../../CPP [3501-4000]/3805.count_caesar_cipher_pairs [1].cpp>) |general|
+|3813 | vowel consonant score |[L1](<../../../CPP [3501-4000]/3813.vowel_consonant_score [1].cpp>) |general|
+|3814 | maximum capacity within budget |[L1](<../../../CPP [3501-4000]/3814.maximum_capacity_within_budget [1].cpp>) |general|
+|3815 | design auction system |[L1](<../../../CPP [3501-4000]/3815.design_auction_system [1].cpp>) |general|

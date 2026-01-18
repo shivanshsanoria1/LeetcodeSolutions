@@ -12459,6 +12459,18 @@
 	"type": "general"
 },
 {
+	"quesId": 1840,
+	"title": "maximum building height",
+	"counter": {
+		"cpp": {
+			"accepted": 0,
+			"unaccepted": 1
+		}
+	},
+	"isAccepted": false,
+	"type": "general"
+},
+{
 	"quesId": 1844,
 	"title": "replace all digits with characters",
 	"counter": {
@@ -22177,6 +22189,42 @@
 		"cpp": {
 			"accepted": 1,
 			"unaccepted": 1
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3813,
+	"title": "vowel consonant score",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3814,
+	"title": "maximum capacity within budget",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3815,
+	"title": "design auction system",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
 		}
 	},
 	"isAccepted": true,

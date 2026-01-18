@@ -1039,6 +1039,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 1834,single threaded cpu,general,cpp,1,0
 1837,sum of digits in base k,general,cpp,1,0
 1838,frequency of the most frequent element,general,cpp,1,1
+1840,maximum building height,general,cpp,0,1
 1844,replace all digits with characters,general,cpp,1,0
 1845,seat reservation manager,general,cpp,2,0
 1846,maximum element after decreasing and rearranging,general,cpp,2,0
@@ -1844,3 +1845,6 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 3803,count residue prefixes,general,cpp,1,0
 3804,number of centered subarrays,general,cpp,1,0
 3805,count caesar cipher pairs,general,cpp,1,1
+3813,vowel consonant score,general,cpp,1,0
+3814,maximum capacity within budget,general,cpp,1,0
+3815,design auction system,general,cpp,1,0
