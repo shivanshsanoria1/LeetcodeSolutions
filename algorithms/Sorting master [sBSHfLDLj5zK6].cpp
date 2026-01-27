@@ -3,6 +3,9 @@
 #include <string>
 #include <random>
 #include <unordered_map>
+#include <chrono>
+#include <algorithm>
+#include <iomanip>
 
 using namespace std;
 
@@ -197,6 +200,42 @@ private:
     }
     // ------------ Heap-sort (iterative) | END ------------ //
     
+    // ------------ Quick-sort | START ------------ //
+    // lomuto-partition-algorithm
+    // returns the index of pivot element in the nums[left, ..., right]
+    static int partition(vector<int>& nums, int left, int right){
+        // choose the last element as pivot
+        int pivot = nums[right];
+        int i = left - 1;
+        
+        for(int j=left; j<right; j++){
+            if(nums[j] <= pivot){
+                i++;
+                swap(nums[i], nums[j]);
+            }
+        }
+        
+        swap(nums[i+1], nums[right]);
+        
+        return i+1;
+    }
+    
+    // T.C.=O(n*log(n)) best/avg, O(n^2) worst
+    // S.C.=O(log(n)) best/avg, O(n) worst 
+    // Unstable | In-place
+    static void quickSort(vector<int>& nums, int left, int right){
+        if(left >= right)
+            return;
+        
+        int idx = partition(nums, left, right);
+        
+        // elements in index range [0, idx-1] are <= nums[idx]
+        quickSort(nums, left, idx - 1);
+        // elements in index range [idx+1, right] are > nums[idx]
+        quickSort(nums, idx + 1, right);
+    }
+    // ------------ Quick-sort | END ------------ //
+    
     typedef unordered_map<string, void(*)(vector<int>&)> Str_FnPtr;
 
     static const Str_FnPtr& getAlgoMap(){
@@ -209,57 +248,81 @@ private:
                 }
             },
             {"heap", &heapSort},
-            {"heap_iterative", &heapSort_iterative}
+            {"heap_iterative", &heapSort_iterative},
+            {"quick", [](vector<int>& nums){
+                    quickSort(nums, 0, (int)nums.size() - 1);
+                }
+            },
         };
         
         return mp;
     }
 
 public:
-    bool enableLog;
+    Sorting(){}
     
-    Sorting(){
-        this->enableLog = true;
-    }
+    static inline bool enableLog = true;
     
-    static void print(const vector<int>& nums){
+    static void printVector(const vector<int>& nums){
         for(int num: nums)
             cout<<num<<" ";
         cout<<endl;
     }
+    
+    static void listAlgoNames(){
+        const auto& mp = Sorting::getAlgoMap();
+        int id = 1;
+        
+        for(const auto& [algoName, _]: mp){
+            cout<<id<<". "<<algoName;
+            if(id < (int)mp.size())
+                cout<<", ";
+            id++;
+        }
+        
+        cout<<endl;
+    }
 
-    void runAlgo(vector<int>& nums, const string algoName){
-        const auto& mp = getAlgoMap();
+    static bool runAlgo(vector<int>& nums, const string& algoName){
+        const auto& mp = Sorting::getAlgoMap();
         
         auto itr = mp.find(algoName);
 
         if(itr == mp.end()){
-            if(enableLog){
-                cout<<"Invalid algo. name"<<endl;
+            if(Sorting::enableLog){
+                cout<<"Invalid algo. name: "<<algoName<<endl;
+                cout<<"Available algo. names: "<<endl;
+                Sorting::listAlgoNames();
                 cout<<string(30, '-')<<endl<<endl;
             }
-            return;
+            return false;
         }
 
-        if(enableLog){
+        if(Sorting::enableLog){
             cout<<"Before Sorting: ";
-            print(nums);   
+            Sorting::printVector(nums);   
         }
 
-        if(enableLog)
+        if(Sorting::enableLog)
             cout<<"Running "<<algoName<<"-sort... "<<endl;
 
         itr->second(nums);
 
-        if(enableLog){
+        if(Sorting::enableLog){
             cout<<"After Sorting: ";
-            print(nums);
+            Sorting::printVector(nums);
             cout<<string(30, '-')<<endl<<endl;
         }
-
+        
+        return true;
     }
     
     static vector<int> generateRandomVector(int n, int minVal, int maxVal){
+        if(n <= 0){
+            cout<<"value of n must be > 0"<<endl;
+            return {};
+        }
+        
         if(minVal > maxVal){
             cout<<"Min-value must be <= Max-value"<<endl;
             return {};
@@ -275,65 +338,68 @@ public:
             
         return nums;
     }
+    
+    static void runBenchmark(int n){
+        cout<<"Running Benchmark... (for n = "<<n<<")"<<endl;
+        
+        vector<int> nums = Sorting::generateRandomVector(n, 1, 50);
+        const auto& mp = Sorting::getAlgoMap();
+        vector<pair<int, string>> times;
+        
+        Sorting::enableLog = false;
+        for(const auto& [algoName, _]: mp){
+            vector<int> temp = nums;
+            
+            auto startTime = chrono::high_resolution_clock::now();
+
+            Sorting::runAlgo(temp, algoName);
+
+            auto endTime = chrono::high_resolution_clock::now();
+            
+            auto duration = chrono::duration_cast<chrono::microseconds>(endTime - startTime);
+            
+            times.push_back({duration.count(), algoName});
+        }
+        Sorting::enableLog = true;
+        
+        sort(times.begin(), times.end());
+        
+        const int colIdWidth = 6;
+        const int colNameWidth = 16;
+        const int colTimeWidth = 12;
+        
+        cout<<left
+            <<setw(colIdWidth)<<"S.No."
+            <<setw(colNameWidth)<<"Algorithm"
+            <<setw(colTimeWidth)<<"Time (in us)"
+            <<endl;
+        cout<<string(colIdWidth + colNameWidth + colTimeWidth, '-')<<endl;
+        
+        int id = 1;
+        for(auto [time_us, algoName]: times)
+            cout<<left
+                <<setw(colIdWidth)<<id++
+                <<setw(colNameWidth)<<algoName
+                <<setw(colTimeWidth)<<time_us
+                <<endl;
+                
+        cout<<string(colIdWidth + colNameWidth + colTimeWidth, '-')<<endl;
+    }
 };
 
 int main() {
-    Sorting st;
+    // vector<int> nums = { 9, 4, 3, 8, 10, 2, 5, 4, 4 };
+    vector<int> nums = Sorting::generateRandomVector(10, 1, 50);
     
-    // vector<int> nums = { 9, 4, 3, 8, 10, 2, 5 };
-    vector<int> nums = st.generateRandomVector(10, 1, 50);
+    // Sorting::runAlgo(nums, "bubble");
+    // Sorting::runAlgo(nums, "selection");
+    // Sorting::runAlgo(nums, "insertion");
+    // Sorting::runAlgo(nums, "merge");
+    // Sorting::runAlgo(nums, "heap");
+    // Sorting::runAlgo(nums, "heap_iterative");
+    // Sorting::runAlgo(nums, "quick");
     
-    // st.runAlgo(nums, "bubble");
-    // st.runAlgo(nums, "selection");
-    // st.runAlgo(nums, "insertion");
-    // st.runAlgo(nums, "merge");
-    // st.runAlgo(nums, "heap");
-    st.runAlgo(nums, "heap_iterative");
-    
+    Sorting::runBenchmark(1300);
+        
     return 0;
 }
-
-/*
-void runAlgo(vector<int>& nums, string algo){
-    if(enableLog){
-        cout<<"Before Sorting: ";
-        print(nums);   
-    }
-    
-    if(algo == "bubble"){
-        if(enableLog)
-            cout<<"Running Bubble-sort..."<<endl;
-        bubbleSort(nums);
-    }else if(algo == "selection"){
-        if(enableLog)
-            cout<<"Running Selection-sort..."<<endl;
-        selectionSort(nums);
-    }else if(algo == "insertion"){
-        if(enableLog)
-            cout<<"Running Insertion-sort..."<<endl;
-        insertionSort(nums);
-    }else if(algo == "merge"){
-        if(enableLog)
-            cout<<"Running Merge-sort..."<<endl;
-        mergeSort(nums, 0, (int)nums.size() - 1);
-    }else if(algo == "heap"){
-        if(enableLog)
-            cout<<"Running Heap-sort..."<<endl;
-        heapSort(nums);
-    }else if(algo == "heap_iterative"){
-        if(enableLog)
-            cout<<"Running Iterative Heap-sort..."<<endl;
-        heapSort_iterative(nums);
-    }else{
-        if(enableLog)
-            cout<<"Invalid algo. name"<<endl;
-        return;
-    }
-    
-    if(enableLog){
-        cout<<"After Sorting: ";
-        print(nums);
-        cout<<string(30, '-')<<endl<<endl;
-    }
-}
-*/
