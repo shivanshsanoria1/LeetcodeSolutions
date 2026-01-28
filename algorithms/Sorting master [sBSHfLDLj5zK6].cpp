@@ -97,7 +97,6 @@ private:
     
         for(;j < temp2.size(); j++, k++)
             nums[k] = temp2[j];
-        
     }
     
     // T.C.=O(n*log(n)), S.C.=O(n) | Stable | Not In-place
@@ -235,6 +234,49 @@ private:
         quickSort(nums, idx + 1, right);
     }
     // ------------ Quick-sort | END ------------ //
+
+    // ------------ Quick-sort (tail-recursion) | START ------------ //
+    // lomuto-partition-algorithm
+    // returns the index of pivot element in the nums[left, ..., right]
+    static int partition_tail(vector<int>& nums, int left, int right){
+        // choose the last element as pivot
+        int pivot = nums[right];
+        int i = left - 1;
+        
+        for(int j=left; j<right; j++){
+            if(nums[j] <= pivot){
+                i++;
+                swap(nums[i], nums[j]);
+            }
+        }
+        
+        swap(nums[i+1], nums[right]);
+        
+        return i+1;
+    }
+    
+    // T.C.=O(n*log(n)) best/avg, O(n^2) worst
+    // S.C.=O(log(n)) 
+    // Unstable | In-place
+    static void quickSort_tail(vector<int>& nums, int left, int right){
+        while(left < right){
+            int idx = partition_tail(nums, left, right);
+
+            int leftSize = idx - left + 1;
+            int rightSize = right - idx + 1;
+
+            if(leftSize < rightSize){
+                // elements in index range [0, idx-1] are <= nums[idx]
+                quickSort_tail(nums, left, idx - 1);
+                left = idx + 1;
+            }else{
+                // elements in index range [idx+1, right] are > nums[idx]
+                quickSort_tail(nums, idx + 1, right);
+                right = idx - 1;
+            }
+        }
+    }
+    // ------------ Quick-sort (tail-recursion)  | END ------------ //
     
     typedef unordered_map<string, void(*)(vector<int>&)> Str_FnPtr;
 
@@ -251,6 +293,14 @@ private:
             {"heap_iterative", &heapSort_iterative},
             {"quick", [](vector<int>& nums){
                     quickSort(nums, 0, (int)nums.size() - 1);
+                }
+            },
+            {"quick_tail", [](vector<int>& nums){
+                    quickSort_tail(nums, 0, (int)nums.size() - 1);
+                }
+            },
+            {"library", [](vector<int>& nums){
+                    sort(nums.begin(), nums.end());
                 }
             },
         };
@@ -317,6 +367,7 @@ public:
         return true;
     }
     
+    // returns a vector of size n with each value in range [minVal, maxVal]
     static vector<int> generateRandomVector(int n, int minVal, int maxVal){
         if(n <= 0){
             cout<<"value of n must be > 0"<<endl;
@@ -339,7 +390,14 @@ public:
         return nums;
     }
     
+    // run all algos for a random vector of size n and 
+    // arranges them in increasing order of time
     static void runBenchmark(int n){
+        if(n <= 0){
+            cout<<"value of n must be > 0"<<endl;
+            return;
+        }
+
         cout<<"Running Benchmark... (for n = "<<n<<")"<<endl;
         
         vector<int> nums = Sorting::generateRandomVector(n, 1, 50);
@@ -375,8 +433,8 @@ public:
             <<endl;
         cout<<string(colIdWidth + colNameWidth + colTimeWidth, '-')<<endl;
         
-        int id = 1;
-        for(auto [time_us, algoName]: times)
+        int id = 0;
+        for(const auto& [time_us, algoName]: times)
             cout<<left
                 <<setw(colIdWidth)<<id++
                 <<setw(colNameWidth)<<algoName
@@ -398,6 +456,7 @@ int main() {
     // Sorting::runAlgo(nums, "heap");
     // Sorting::runAlgo(nums, "heap_iterative");
     // Sorting::runAlgo(nums, "quick");
+    // Sorting::runAlgo(nums, "quick_tail");
     
     Sorting::runBenchmark(1300);
         
