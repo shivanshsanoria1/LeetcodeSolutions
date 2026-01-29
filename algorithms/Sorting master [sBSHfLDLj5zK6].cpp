@@ -11,8 +11,46 @@ using namespace std;
 
 class Sorting{
 private:
+    static inline const int MIN_VEC_SIZE = 1;
+    static inline const int MAX_VEC_SIZE = 100000; // 10^5
+    static inline const int MIN_INT_VAL = -100000; // -10^5
+    static inline const int MAX_INT_VAL = 100000; // +10^5
+
+    typedef unordered_map<string, void(*)(vector<int>&)> Str_FnPtr;
+
+    static const Str_FnPtr& getAlgoMap(){
+        static const Str_FnPtr mp = {
+            {"bubble", &bubbleSort},
+            {"selection", &selectionSort},
+            {"insertion", &insertionSort},
+            {"merge", [](vector<int>& nums){
+                    mergeSort(nums, 0, (int)nums.size() - 1);
+                }
+            },
+            {"heap", &heapSort},
+            {"heap_iterative", &heapSort_iterative},
+            {"quick", [](vector<int>& nums){
+                    quickSort(nums, 0, (int)nums.size() - 1);
+                }
+            },
+            {"quick_tail", [](vector<int>& nums){
+                    quickSort_tail(nums, 0, (int)nums.size() - 1);
+                }
+            },
+            {"counting", &countingSort},
+            {"library", [](vector<int>& nums){
+                    sort(nums.begin(), nums.end());
+                }
+            },
+        };
+        
+        return mp;
+    }
+
     // ------------ Bubble-sort | START ------------ //
-    // T.C.=O(n^2), S.C.=O(1) | Stable | In-place
+    // T.C.=O(n^2)
+    // S.C.=O(1) 
+    // Stable | In-place
     static void bubbleSort(vector<int>& nums){
         int n = nums.size();
         
@@ -32,7 +70,9 @@ private:
     // ------------ Bubble-sort | END ------------ //
     
     // ------------ Selection-sort | START ------------ //
-    // T.C.=O(n^2), S.C.=O(1) | Unstable | In-place
+    // T.C.=O(n^2)
+    // S.C.=O(1)
+    // Unstable | In-place
     static void selectionSort(vector<int>& nums){
         int n = nums.size();
         
@@ -53,7 +93,9 @@ private:
     // ------------ Selection-sort | END ------------ //
     
     // ------------ Insertion-sort | START ------------ //
-    // T.C.=O(n^2), S.C.=O(1) | Stable | In-place
+    // T.C.=O(n^2)
+    // S.C.=O(1)
+    // Stable | In-place
     static void insertionSort(vector<int>& nums){
         int n = nums.size();
         
@@ -99,7 +141,9 @@ private:
             nums[k] = temp2[j];
     }
     
-    // T.C.=O(n*log(n)), S.C.=O(n) | Stable | Not In-place
+    // T.C.=O(n*log(n))
+    // S.C.=O(n)
+    // Stable | Not In-place
     static void mergeSort(vector<int>& nums, int left, int right){
         if(left >= right)
             return;
@@ -137,7 +181,9 @@ private:
         heapify(nums, n, idx);
     }
     
-    // T.C.=O(n*log(n)), S.C.=O(log(n)) | Unstable | In-place
+    // T.C.=O(n*log(n))
+    // S.C.=O(log(n))
+    // Unstable | In-place
     static void heapSort(vector<int>& nums){
         int n = nums.size();
         
@@ -181,7 +227,9 @@ private:
         }
     }
     
-    // T.C.=O(n*log(n)), S.C.=O(1) | Unstable | In-place
+    // T.C.=O(n*log(n))
+    // S.C.=O(1)
+    // Unstable | In-place
     static void heapSort_iterative(vector<int>& nums){
         int n = nums.size();
         
@@ -277,41 +325,53 @@ private:
         }
     }
     // ------------ Quick-sort (tail-recursion)  | END ------------ //
-    
-    typedef unordered_map<string, void(*)(vector<int>&)> Str_FnPtr;
 
-    static const Str_FnPtr& getAlgoMap(){
-        static const Str_FnPtr mp = {
-            {"bubble", &bubbleSort},
-            {"selection", &selectionSort},
-            {"insertion", &insertionSort},
-            {"merge", [](vector<int>& nums){
-                    mergeSort(nums, 0, (int)nums.size() - 1);
-                }
-            },
-            {"heap", &heapSort},
-            {"heap_iterative", &heapSort_iterative},
-            {"quick", [](vector<int>& nums){
-                    quickSort(nums, 0, (int)nums.size() - 1);
-                }
-            },
-            {"quick_tail", [](vector<int>& nums){
-                    quickSort_tail(nums, 0, (int)nums.size() - 1);
-                }
-            },
-            {"library", [](vector<int>& nums){
-                    sort(nums.begin(), nums.end());
-                }
-            },
-        };
+    // ------------ Counting-sort | START ------------ //
+    // T.C.=O(n + r), r: maxVal - minVal
+    // S.C.=O(r), r: maxVal - minVal
+    // Unstable | Not In-place
+    static void countingSort(vector<int>& nums){
+        int n = nums.size();
+
+        int maxVal = *max_element(nums.begin(), nums.end());
+        int minVal = *min_element(nums.begin(), nums.end());
+
+        int offset = minVal < 0 ? -minVal : 0;
+
+        vector<int> freq(maxVal + 1 + offset, 0);
+
+        for(int num: nums)
+            freq[num + offset]++;
+
+        for(int num=0, i=0; num < freq.size(); num++)
+            while(freq[num]--)
+                nums[i++] = num - offset;
+    }
+    // ------------ Counting-sort | END ------------ //
+    
+    static bool validateInputs(int n, int minVal, int maxVal){
+        if(n < MIN_VEC_SIZE || n > MAX_VEC_SIZE){
+            cout<<"Value of n must be in range ["<<MIN_VEC_SIZE<<", "<<MAX_VEC_SIZE<<"]"<<endl;
+            return false;
+        }
         
-        return mp;
+        if(minVal < MIN_INT_VAL || maxVal > MAX_INT_VAL){
+            cout<<"Integer value must be in range ["<<MIN_INT_VAL<<", "<<MAX_INT_VAL<<"]"<<endl;
+            return false;
+        }
+        
+        if(minVal > maxVal){
+            cout<<"Min-value must be <= Max-value"<<endl;
+            return false;
+        }
+
+        return true;
     }
 
 public:
     Sorting(){}
     
-    static inline bool enableLog = true;
+    static inline bool ENABLE_LOG = true;
     
     static void printVector(const vector<int>& nums){
         for(int num: nums)
@@ -339,26 +399,24 @@ public:
         auto itr = mp.find(algoName);
 
         if(itr == mp.end()){
-            if(Sorting::enableLog){
-                cout<<"Invalid algo. name: "<<algoName<<endl;
-                cout<<"Available algo. names: "<<endl;
-                Sorting::listAlgoNames();
-                cout<<string(30, '-')<<endl<<endl;
-            }
+            cout<<"Invalid algo. name: "<<algoName<<endl;
+            cout<<"Available algo. names: "<<endl;
+            Sorting::listAlgoNames();
+            cout<<string(30, '-')<<endl<<endl;
             return false;
         }
 
-        if(Sorting::enableLog){
+        if(ENABLE_LOG){
             cout<<"Before Sorting: ";
             Sorting::printVector(nums);   
         }
 
-        if(Sorting::enableLog)
+        if(ENABLE_LOG)
             cout<<"Running "<<algoName<<"-sort... "<<endl;
 
         itr->second(nums);
 
-        if(Sorting::enableLog){
+        if(ENABLE_LOG){
             cout<<"After Sorting: ";
             Sorting::printVector(nums);
             cout<<string(30, '-')<<endl<<endl;
@@ -369,15 +427,8 @@ public:
     
     // returns a vector of size n with each value in range [minVal, maxVal]
     static vector<int> generateRandomVector(int n, int minVal, int maxVal){
-        if(n <= 0){
-            cout<<"value of n must be > 0"<<endl;
+        if(!validateInputs(n, minVal, maxVal))
             return {};
-        }
-        
-        if(minVal > maxVal){
-            cout<<"Min-value must be <= Max-value"<<endl;
-            return {};
-        }
         
         random_device rd;
         mt19937 gen(rd());
@@ -392,19 +443,17 @@ public:
     
     // run all algos for a random vector of size n and 
     // arranges them in increasing order of time
-    static void runBenchmark(int n){
-        if(n <= 0){
-            cout<<"value of n must be > 0"<<endl;
+    static void runBenchmark(int n, int minVal, int maxVal){
+        if(!validateInputs(n, minVal, maxVal))
             return;
-        }
 
         cout<<"Running Benchmark... (for n = "<<n<<")"<<endl;
         
-        vector<int> nums = Sorting::generateRandomVector(n, 1, 50);
+        vector<int> nums = Sorting::generateRandomVector(n, minVal, maxVal);
         const auto& mp = Sorting::getAlgoMap();
         vector<pair<int, string>> times;
         
-        Sorting::enableLog = false;
+        ENABLE_LOG = false;
         for(const auto& [algoName, _]: mp){
             vector<int> temp = nums;
             
@@ -418,7 +467,7 @@ public:
             
             times.push_back({duration.count(), algoName});
         }
-        Sorting::enableLog = true;
+        ENABLE_LOG = true;
         
         sort(times.begin(), times.end());
         
@@ -427,16 +476,16 @@ public:
         const int colTimeWidth = 12;
         
         cout<<left
-            <<setw(colIdWidth)<<"S.No."
+            <<setw(colIdWidth)<<"Rank"
             <<setw(colNameWidth)<<"Algorithm"
             <<setw(colTimeWidth)<<"Time (in us)"
             <<endl;
         cout<<string(colIdWidth + colNameWidth + colTimeWidth, '-')<<endl;
         
-        int id = 0;
+        int rank = 0;
         for(const auto& [time_us, algoName]: times)
             cout<<left
-                <<setw(colIdWidth)<<id++
+                <<setw(colIdWidth)<<rank++
                 <<setw(colNameWidth)<<algoName
                 <<setw(colTimeWidth)<<time_us
                 <<endl;
@@ -447,7 +496,7 @@ public:
 
 int main() {
     // vector<int> nums = { 9, 4, 3, 8, 10, 2, 5, 4, 4 };
-    vector<int> nums = Sorting::generateRandomVector(10, 1, 50);
+    vector<int> nums = Sorting::generateRandomVector(10, -50, 50);
     
     // Sorting::runAlgo(nums, "bubble");
     // Sorting::runAlgo(nums, "selection");
@@ -457,8 +506,9 @@ int main() {
     // Sorting::runAlgo(nums, "heap_iterative");
     // Sorting::runAlgo(nums, "quick");
     // Sorting::runAlgo(nums, "quick_tail");
+    // Sorting::runAlgo(nums, "counting");
     
-    Sorting::runBenchmark(1300);
+    Sorting::runBenchmark(1300, -1000, 1000);
         
     return 0;
 }
