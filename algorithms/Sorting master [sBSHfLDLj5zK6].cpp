@@ -38,6 +38,8 @@ private:
                 }
             },
             {"counting", &countingSort},
+            {"counting_stable", &countingSort_stable},
+            {"radix", &radixSort},
             {"library", [](vector<int>& nums){
                     sort(nums.begin(), nums.end());
                 }
@@ -52,7 +54,7 @@ private:
     // S.C.=O(1) 
     // Stable | In-place
     static void bubbleSort(vector<int>& nums){
-        int n = nums.size();
+        const int n = nums.size();
         
         for(int i=0; i<n-1; i++){
             bool isSwapped = false;
@@ -74,7 +76,7 @@ private:
     // S.C.=O(1)
     // Unstable | In-place
     static void selectionSort(vector<int>& nums){
-        int n = nums.size();
+        const int n = nums.size();
         
         for(int i=0; i<n-1; i++){
             int minVal = nums[i];
@@ -97,7 +99,7 @@ private:
     // S.C.=O(1)
     // Stable | In-place
     static void insertionSort(vector<int>& nums){
-        int n = nums.size();
+        const int n = nums.size();
         
         for(int i=1; i<n; i++){
             for(int j=i; j>0; j--){
@@ -112,7 +114,7 @@ private:
     // ------------ Insertion-sort | END ------------ //
     
     // ------------ Merge-sort | START ------------ //
-    static void merge(vector<int>& nums, int left, int mid, int right){
+    static void merge(vector<int>& nums, const int left, const int mid, const int right){
         vector<int> temp1;
         for(int i = left; i <= mid; i++)
             temp1.push_back(nums[i]);
@@ -144,11 +146,11 @@ private:
     // T.C.=O(n*log(n))
     // S.C.=O(n)
     // Stable | Not In-place
-    static void mergeSort(vector<int>& nums, int left, int right){
+    static void mergeSort(vector<int>& nums, const int left, const int right){
         if(left >= right)
             return;
     
-        int mid = left + (right - left)/2;
+        const int mid = left + (right - left)/2;
     
         mergeSort(nums, left, mid);
         mergeSort(nums, mid + 1, right);
@@ -160,9 +162,9 @@ private:
     // ------------ Heap-sort | START ------------ //
     // make the heap (rooted at i) valid and 
     // containing the elements in index window [0, n)
-    static void heapify(vector<int>& nums, int n, int i){
-        int left = 2*i + 1;
-        int right = 2*i + 2;
+    static void heapify(vector<int>& nums, const int n, const int i){
+        const int left = 2*i + 1;
+        const int right = 2*i + 2;
         
         int idx = i;
         
@@ -185,7 +187,7 @@ private:
     // S.C.=O(log(n))
     // Unstable | In-place
     static void heapSort(vector<int>& nums){
-        int n = nums.size();
+        const int n = nums.size();
         
         // build the initial max-heap by calling
         // heapify on all the non-leaf nodes
@@ -204,10 +206,10 @@ private:
     // ------------ Heap-sort (iterative) | START ------------ //
     // make the heap (rooted at i) valid and 
     // containing the elements in index window [0, n)
-    static void heapify_iterative(vector<int>& nums, int n, int i){
+    static void heapify_iterative(vector<int>& nums, const int n, int i){
         while(2*i+1 < n){
-            int left = 2*i + 1;
-            int right = 2*i + 2;
+            const int left = 2*i + 1;
+            const int right = 2*i + 2;
             
             int idx = i;
             
@@ -231,7 +233,7 @@ private:
     // S.C.=O(1)
     // Unstable | In-place
     static void heapSort_iterative(vector<int>& nums){
-        int n = nums.size();
+        const int n = nums.size();
         
         // build the initial max-heap by calling
         // heapify on all the non-leaf nodes
@@ -250,9 +252,9 @@ private:
     // ------------ Quick-sort | START ------------ //
     // lomuto-partition-algorithm
     // returns the index of pivot element in the nums[left, ..., right]
-    static int partition(vector<int>& nums, int left, int right){
+    static int partition(vector<int>& nums, const int left, const int right){
         // choose the last element as pivot
-        int pivot = nums[right];
+        const int pivot = nums[right];
         int i = left - 1;
         
         for(int j=left; j<right; j++){
@@ -270,11 +272,11 @@ private:
     // T.C.=O(n*log(n)) best/avg, O(n^2) worst
     // S.C.=O(log(n)) best/avg, O(n) worst 
     // Unstable | In-place
-    static void quickSort(vector<int>& nums, int left, int right){
+    static void quickSort(vector<int>& nums, const int left, const int right){
         if(left >= right)
             return;
         
-        int idx = partition(nums, left, right);
+        const int idx = partition(nums, left, right);
         
         // elements in index range [0, idx-1] are <= nums[idx]
         quickSort(nums, left, idx - 1);
@@ -288,7 +290,7 @@ private:
     // returns the index of pivot element in the nums[left, ..., right]
     static int partition_tail(vector<int>& nums, int left, int right){
         // choose the last element as pivot
-        int pivot = nums[right];
+        const int pivot = nums[right];
         int i = left - 1;
         
         for(int j=left; j<right; j++){
@@ -308,10 +310,10 @@ private:
     // Unstable | In-place
     static void quickSort_tail(vector<int>& nums, int left, int right){
         while(left < right){
-            int idx = partition_tail(nums, left, right);
+            const int idx = partition_tail(nums, left, right);
 
-            int leftSize = idx - left + 1;
-            int rightSize = right - idx + 1;
+            const int leftSize = idx - left + 1;
+            const int rightSize = right - idx + 1;
 
             if(leftSize < rightSize){
                 // elements in index range [0, idx-1] are <= nums[idx]
@@ -331,16 +333,14 @@ private:
     // S.C.=O(r), r: maxVal - minVal
     // Unstable | Not In-place
     static void countingSort(vector<int>& nums){
-        int n = nums.size();
+        const int maxVal = *max_element(nums.begin(), nums.end());
+        const int minVal = *min_element(nums.begin(), nums.end());
 
-        int maxVal = *max_element(nums.begin(), nums.end());
-        int minVal = *min_element(nums.begin(), nums.end());
-
-        int offset = minVal < 0 ? -minVal : 0;
+        const int offset = minVal < 0 ? -minVal : 0;
 
         vector<int> freq(maxVal + 1 + offset, 0);
 
-        for(int num: nums)
+        for(const int num: nums)
             freq[num + offset]++;
 
         for(int num=0, i=0; num < freq.size(); num++)
@@ -348,8 +348,64 @@ private:
                 nums[i++] = num - offset;
     }
     // ------------ Counting-sort | END ------------ //
+
+    // ------------ Counting-sort (stable) | START ------------ //
+    // T.C.=O(n + r), r: maxVal - minVal
+    // S.C.=O(n + r), r: maxVal - minVal
+    // Stable | Not In-place
+    static void countingSort_stable(vector<int>& nums){
+        const int maxVal = *max_element(nums.begin(), nums.end());
+        const int minVal = *min_element(nums.begin(), nums.end());
+
+        const int offset = minVal < 0 ? -minVal : 0;
+
+        vector<int> freq(maxVal + 1 + offset, 0);
+
+        for(const int num: nums)
+            freq[num + offset]++;
+
+        // calculate prefix-sum to find the 
+        // actual index of each num in the sorted vector
+        for(int i=1; i<freq.size(); i++)
+            freq[i] += freq[i-1];
+
+        const int n = nums.size();
+        vector<int> temp(n, 0);
+        for(int i=n-1; i>=0; i--)
+            temp[--freq[nums[i] + offset]] = nums[i];
+
+        // copy temp[] into nums[]
+        nums = temp;
+    }
+    // ------------ Counting-sort (stable) | END ------------ //
+
+    // ------------ Radix-sort | START ------------ //
+    // T.C.=O(m*(n + 10)), m: digits in the abs max num
+    // S.C.=O(n + 10)
+    // Stable | Not In-place
+    static void radixSort(vector<int>& nums){
+        const int maxVal = *max_element(nums.begin(), nums.end());
+        const int minVal = *min_element(nums.begin(), nums.end());
+        
+        const int offset = minVal < 0 ? -minVal : 0;
+        
+        for(int m=1; (maxVal + offset) / m > 0; m *= 10){
+            vector<vector<int>> groups(10);
+
+            for(const int num: nums){
+                const int dig = ((num + offset) / m) % 10;
+                groups[dig].push_back(num);
+            }
+
+            int i=0;
+            for(int dig=0; dig<10; dig++)
+                for(const int num: groups[dig])
+                    nums[i++] = num;
+        }
+    }
+    // ------------ Radix-sort | END ------------ //
     
-    static bool validateInputs(int n, int minVal, int maxVal){
+    static bool validateInputs(const int n, const int minVal, const int maxVal){
         if(n < MIN_VEC_SIZE || n > MAX_VEC_SIZE){
             cout<<"Value of n must be in range ["<<MIN_VEC_SIZE<<", "<<MAX_VEC_SIZE<<"]"<<endl;
             return false;
@@ -374,41 +430,40 @@ public:
     static inline bool ENABLE_LOG = true;
     
     static void printVector(const vector<int>& nums){
-        for(int num: nums)
+        for(const int num: nums)
             cout<<num<<" ";
         cout<<endl;
     }
     
     static void listAlgoNames(){
-        const auto& mp = Sorting::getAlgoMap();
+        const auto& mp = getAlgoMap();
         int id = 1;
         
         for(const auto& [algoName, _]: mp){
             cout<<id<<". "<<algoName;
-            if(id < (int)mp.size())
+            if(id++ < (int)mp.size())
                 cout<<", ";
-            id++;
         }
         
         cout<<endl;
     }
 
     static bool runAlgo(vector<int>& nums, const string& algoName){
-        const auto& mp = Sorting::getAlgoMap();
+        const auto& mp = getAlgoMap();
         
-        auto itr = mp.find(algoName);
+        const auto itr = mp.find(algoName);
 
         if(itr == mp.end()){
             cout<<"Invalid algo. name: "<<algoName<<endl;
             cout<<"Available algo. names: "<<endl;
-            Sorting::listAlgoNames();
+            listAlgoNames();
             cout<<string(30, '-')<<endl<<endl;
             return false;
         }
 
         if(ENABLE_LOG){
             cout<<"Before Sorting: ";
-            Sorting::printVector(nums);   
+            printVector(nums);   
         }
 
         if(ENABLE_LOG)
@@ -418,7 +473,7 @@ public:
 
         if(ENABLE_LOG){
             cout<<"After Sorting: ";
-            Sorting::printVector(nums);
+            printVector(nums);
             cout<<string(30, '-')<<endl<<endl;
         }
         
@@ -449,21 +504,21 @@ public:
 
         cout<<"Running Benchmark... (for n = "<<n<<")"<<endl;
         
-        vector<int> nums = Sorting::generateRandomVector(n, minVal, maxVal);
-        const auto& mp = Sorting::getAlgoMap();
+        vector<int> nums = generateRandomVector(n, minVal, maxVal);
+        const auto& mp = getAlgoMap();
         vector<pair<int, string>> times;
         
         ENABLE_LOG = false;
         for(const auto& [algoName, _]: mp){
             vector<int> temp = nums;
             
-            auto startTime = chrono::high_resolution_clock::now();
+            const auto startTime = chrono::high_resolution_clock::now();
 
-            Sorting::runAlgo(temp, algoName);
+            runAlgo(temp, algoName);
 
-            auto endTime = chrono::high_resolution_clock::now();
+            const auto endTime = chrono::high_resolution_clock::now();
             
-            auto duration = chrono::duration_cast<chrono::microseconds>(endTime - startTime);
+            const auto duration = chrono::duration_cast<chrono::microseconds>(endTime - startTime);
             
             times.push_back({duration.count(), algoName});
         }
@@ -507,8 +562,12 @@ int main() {
     // Sorting::runAlgo(nums, "quick");
     // Sorting::runAlgo(nums, "quick_tail");
     // Sorting::runAlgo(nums, "counting");
+    // Sorting::runAlgo(nums, "counting_stable");
+    // Sorting::runAlgo(nums, "radix");
     
     Sorting::runBenchmark(1300, -1000, 1000);
+    
+    // Sorting::runAlgo(nums, "wrong_name");
         
     return 0;
 }
