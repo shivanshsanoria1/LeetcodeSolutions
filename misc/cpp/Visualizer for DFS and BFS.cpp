@@ -31,7 +31,7 @@ private:
     static void printGrid(const vector<vector<int>>& grid, vector<vector<int>>& colorGrid) {
         const int m = grid.size(), n = grid[0].size();
     
-        // num of digits in max number in grid
+        // num of digits in the max number in grid
         int digs = 0;
     
         if(m*n <= 10)
@@ -42,14 +42,9 @@ private:
             digs = 3;
     
         string line = ".";
-        for(int j=0; j<n; j++){
-            if(digs == 1)
-                line += " - .";
-            else if(digs == 2)
-                line += " -- .";
-            else if(digs == 3)
-                line += " --- .";
-        }
+        for(int j=0; j<n; j++)
+            line += " " + string(digs, '-') + " ."; 
+
         cout<<line<<endl;
         
         for(int i=0; i<m; i++){
@@ -57,11 +52,8 @@ private:
     
             for(int j=0; j<n; j++){
                 string str = to_string(grid[i][j]);
-    
-                if(digs - str.length() == 1)
-                    str = "0" + str;
-                else if(digs - str.length() == 2)
-                    str = "00" + str;
+
+                str = string(digs - str.length(), ' ') + str;
                 
                 cout<<getColor(colorGrid[i][j]); // colored num
                 cout<<str;
@@ -70,14 +62,9 @@ private:
             }
     
             string line = ".";
-            for(int j=0; j<n; j++){
-                if(digs == 1)
-                    line += " - .";
-                else if(digs == 2)
-                    line += " -- .";
-                else if(digs == 3)
-                    line += " --- .";
-            }
+            for(int j=0; j<n; j++)
+                line += " " + string(digs, '-') + " .";
+
             cout<<endl<<line<<endl;
         }
         
@@ -229,7 +216,7 @@ public:
     TraversalVisualiser(){}
     
     // start DFS or BFS at a random point in grid of size m*n 
-    bool visualize(const int m, const int n, string mode){
+    static bool visualize(const int m, const int n, string mode){
         if(!validateMode(mode) || !validateGridDimensions(m, n))
             return false;
         
@@ -244,7 +231,7 @@ public:
     }
     
     // start DFS or BFS at a (i, j)) in grid of size m*n 
-    bool visualize(const int m, const int n, string mode, const int i, const int j){
+    static bool visualize(const int m, const int n, string mode, const int i, const int j){
         if(!validateMode(mode) || !validateGridDimensions(m, n) || !validateGridCoordinates(m, n, i, j))
             return false;
         
@@ -268,18 +255,16 @@ public:
 };
 
 int main(){
-    TraversalVisualiser tv;
-    
     // start at random point
-    tv.visualize(10, 10,  "dfs");
+    TraversalVisualiser::visualize(10, 10, "dfs");
     
     // start at given point
-    tv.visualize(11, 11, "bfs", 5, 5);
+    TraversalVisualiser::visualize(11, 11, "bfs", 5, 5);
 
     return 0;
 }
 
 /*
-g++ "./misc/cpp/Visualizer for DFS and BFS.cpp" -o "./misc/cpp/Visualizer for DFS and BFS"
-"./misc/cpp/Visualizer for DFS and BFS"
+g++ "./misc/cpp/Visualizer for DFS and BFS.cpp" -o "./misc/cpp/compiled/Visualizer for DFS and BFS"
+"./misc/cpp/compiled/Visualizer for DFS and BFS"
 */

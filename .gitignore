@@ -1,5 +1,8 @@
 algorithms/markdown
 
+algorithms/compiled
+misc/cpp/compiled
+
 # python virtual-environment
 .venv
 __pycache__

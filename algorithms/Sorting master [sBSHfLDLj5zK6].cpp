@@ -537,12 +537,16 @@ public:
             <<endl;
         cout<<string(colIdWidth + colNameWidth + colTimeWidth, '-')<<endl;
         
+        int maxTime = 0;
+        for(const auto& [time_us, _]: times)
+            maxTime = max(maxTime, time_us);
+
         int rank = 0;
         for(const auto& [time_us, algoName]: times)
             cout<<left
                 <<setw(colIdWidth)<<rank++
                 <<setw(colNameWidth)<<algoName
-                <<setw(colTimeWidth)<<time_us
+                <<setw(colTimeWidth)<<to_string(time_us).insert(0, to_string(maxTime).length() - to_string(time_us).length(), ' ')
                 <<endl;
                 
         cout<<string(colIdWidth + colNameWidth + colTimeWidth, '-')<<endl;
@@ -571,3 +575,8 @@ int main() {
         
     return 0;
 }
+
+/*
+g++ "./algorithms/Sorting master [sBSHfLDLj5zK6].cpp" -o "./algorithms/compiled/Sorting master [sBSHfLDLj5zK6]"
+"./algorithms/compiled/Sorting master [sBSHfLDLj5zK6]"
+*/
