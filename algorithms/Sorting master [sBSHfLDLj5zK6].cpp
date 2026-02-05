@@ -11,11 +11,6 @@ using namespace std;
 
 class SortingMaster{
 private:
-    static inline const int MIN_VEC_SIZE = 1;
-    static inline const int MAX_VEC_SIZE = 100000; // 10^5
-    static inline const int MIN_INT_VAL = -100000; // -10^5
-    static inline const int MAX_INT_VAL = 100000; // +10^5
-    static inline const int MAX_ITERATIONS_BECNHMARK = 100;
     static inline const int SEPARATOR_LINE_LENGTH = 30;
 
     typedef unordered_map<string, void(*)(vector<int>&)> Str_FnPtr;
@@ -443,6 +438,9 @@ private:
     }
 
     static bool validate_n(const int n){
+        const int MIN_VEC_SIZE = 1;
+        const int MAX_VEC_SIZE = 100000; // 10^5
+
         if(n < MIN_VEC_SIZE || n > MAX_VEC_SIZE){
             logImpMsg("Value of n must be in range [" + to_string(MIN_VEC_SIZE) + ", " + to_string(MAX_VEC_SIZE) + "]");
             return false;
@@ -452,6 +450,9 @@ private:
     }
 
     static bool validate_min_max(const int minVal, const int maxVal){
+        const int MIN_INT_VAL = -100000; // -10^5
+        const int MAX_INT_VAL = 100000; // +10^5
+
         if(minVal < MIN_INT_VAL || maxVal > MAX_INT_VAL){
             logImpMsg("Integer value must be in range [" + to_string(MIN_INT_VAL) + ", " + to_string(MAX_INT_VAL) + "]");
             return false;
@@ -466,6 +467,8 @@ private:
     }
 
     static bool validate_iterations(const int iterations){
+        const int MAX_ITERATIONS_BECNHMARK = 100;
+
         if(iterations < 1 || iterations > MAX_ITERATIONS_BECNHMARK){
             logImpMsg("Number of iterations must be in range [1, " + to_string(MAX_ITERATIONS_BECNHMARK) + "]");
             return false;
@@ -542,6 +545,17 @@ public:
         
         return true;
     }
+
+    static int calculateAlgoRunTime_us(vector<int>& nums, const string& algoName){
+        const auto startTime = chrono::high_resolution_clock::now();
+
+        runAlgo(nums, algoName);
+
+        const auto endTime = chrono::high_resolution_clock::now();
+        const auto duration = chrono::duration_cast<chrono::microseconds>(endTime - startTime);
+
+        return duration.count();
+    }
     
     static void printBenchmarkResults(const vector<pair<int, string>>& times){
         const int colIdWidth = 6;
@@ -572,43 +586,17 @@ public:
 
     // run all algos for a random vector of size n and 
     // arranges them in increasing order of time
-    static bool runBenchmark(int n, int minVal, int maxVal){
-        if(!(validate_n(n) && validate_min_max(minVal, maxVal)))
-            return false;
-        
-        logMsg("Running Benchmark... (for n = " + to_string(n) + ")");
-        
-        vector<int> nums = generateRandomVector(n, minVal, maxVal);
-        const auto& mp = getAlgoMap();
-        vector<pair<int, string>> times;
-        
-        ENABLE_LOG = false;
-        for(const auto& [algoName, _]: mp){
-            vector<int> temp = nums;
-            
-            const auto startTime = chrono::high_resolution_clock::now();
-
-            runAlgo(temp, algoName);
-
-            const auto endTime = chrono::high_resolution_clock::now();
-            const auto duration = chrono::duration_cast<chrono::microseconds>(endTime - startTime);
-            
-            times.push_back({duration.count(), algoName});
-        }
-        ENABLE_LOG = true;
-        
-        sort(times.begin(), times.end());
-
-        printBenchmarkResults(times);
-        
-        return true;
+    static bool runBenchmark(const int n, const int minVal, const int maxVal){
+        return runBenchmark(n, minVal, maxVal, 1);
     }
 
-    static bool runBenchmark(int n, int minVal, int maxVal, int iterations){
+    // run the becnhmark for iterations
+    static bool runBenchmark(const int n, const int minVal, const int maxVal, const int iterations){
         if(!(validate_n(n) && validate_min_max(minVal, maxVal) && validate_iterations(iterations)))
             return false;
 
-        logMsg("Running Benchmark... (for n = " + to_string(n) + "), (" + to_string(iterations) + " iterations)");
+        logMsg("Running Benchmark... (for n = " + to_string(n) + ")" + 
+            (iterations > 1 ? ", (" + to_string(iterations) + " iterations)" : ""));
 
         vector<int> nums = generateRandomVector(n, minVal, maxVal);
         const auto& mp = getAlgoMap();
@@ -620,15 +608,8 @@ public:
 
             for(int t=1; t<=iterations; t++){
                 vector<int> temp = nums;
-            
-                const auto startTime = chrono::high_resolution_clock::now();
-
-                runAlgo(temp, algoName);
-
-                const auto endTime = chrono::high_resolution_clock::now();
-                const auto duration = chrono::duration_cast<chrono::microseconds>(endTime - startTime);
                 
-                totalDuration += duration.count();
+                totalDuration += calculateAlgoRunTime_us(temp, algoName);
             }
 
             times.push_back({totalDuration / iterations, algoName});
@@ -660,7 +641,7 @@ int main() {
     // SortingMaster::runAlgo(nums, "counting");
     // SortingMaster::runAlgo(nums, "radix");
     
-    // SortingMaster::runBenchmark(1300, -1000, 1000);
+    SortingMaster::runBenchmark(1300, -1000, 1000);
     SortingMaster::runBenchmark(1300, -1000, 1000, 12);
     
     // SortingMaster::runAlgo(nums, "wrong_name");
