@@ -3,6 +3,7 @@
 #include <string>
 #include <random>
 #include <unordered_map>
+#include <unordered_set>
 #include <chrono>
 #include <algorithm>
 #include <iomanip>
@@ -38,6 +39,7 @@ private:
             {"pigeonhole", &pigeonholeSort},
             {"counting", &countingSort},
             {"radix", &radixSort},
+            {"radix_bucket", &radixSort_bucket},
             {"library", [](vector<int>& nums){
                     sort(nums.begin(), nums.end());
                 }
@@ -354,7 +356,7 @@ private:
     // ------------ Pigeonhole-sort | START ------------ //
     // T.C.=O(n + r), r: maxVal - minVal
     // S.C.=O(r), r: maxVal - minVal
-    // Stable | Not In-place
+    // Not-Stable | Not In-place
     static void pigeonholeSort(vector<int>& nums){
         const int maxVal = *max_element(nums.begin(), nums.end());
         const int minVal = *min_element(nums.begin(), nums.end());
@@ -413,6 +415,42 @@ private:
         const int offset = minVal < 0 ? -minVal : 0;
         
         for(int m=1; (maxVal + offset) / m > 0; m *= 10){
+            vector<int> freq(10, 0);
+
+            for(const int num: nums){
+                const int dig = ((num + offset) / m) % 10;
+                freq[dig]++;
+            }
+            
+            // calculate prefix-sum to find the 
+            // actual index of each num in the sorted vector
+            for(int i=1; i<freq.size(); i++)
+                freq[i] += freq[i-1];
+
+            const int n = nums.size();
+            vector<int> temp(n, 0);
+            for(int i=n-1; i>=0; i--){
+                const int dig = ((nums[i] + offset) / m) % 10;
+                temp[--freq[dig]] = nums[i];
+            }
+
+            // copy temp[] into nums[]
+            nums = temp;
+        }
+    }
+    // ------------ Radix-sort | END ------------ //
+
+    // ------------ Radix-sort (custom) | START ------------ //
+    // T.C.=O(m*(n + 10)), m: digits in the abs max num
+    // S.C.=O(n + 10)
+    // Stable | Not In-place
+    static void radixSort_bucket(vector<int>& nums){
+        const int maxVal = *max_element(nums.begin(), nums.end());
+        const int minVal = *min_element(nums.begin(), nums.end());
+        
+        const int offset = minVal < 0 ? -minVal : 0;
+        
+        for(int m=1; (maxVal + offset) / m > 0; m *= 10){
             vector<vector<int>> groups(10);
 
             for(const int num: nums){
@@ -426,7 +464,7 @@ private:
                     nums[i++] = num;
         }
     }
-    // ------------ Radix-sort | END ------------ //
+    // ------------ Radix-sort (custom) | END ------------ //
     
     static void logMsg(const string& msg){
         if(ENABLE_LOG)
@@ -437,19 +475,45 @@ private:
         cout<<msg<<endl;
     }
 
+    static void printBenchmarkResults(const vector<pair<int, string>>& times){
+        const int colIdWidth = 6;
+        const int colNameWidth = 16;
+        const int colTimeWidth = 12;
+
+        cout<<left
+            <<setw(colIdWidth)<<"Rank"
+            <<setw(colNameWidth)<<"Algorithm"
+            <<setw(colTimeWidth)<<"Time (in us)"
+            <<endl;
+        cout<<string(colIdWidth + colNameWidth + colTimeWidth, '-')<<endl;
+
+        int maxTime = 0;
+        for(const auto& [time_us, _]: times)
+            maxTime = max(maxTime, time_us);
+
+        int rank = 1;
+        for(const auto& [time_us, algoName]: times)
+            cout<<left
+                <<setw(colIdWidth)<<rank++
+                <<setw(colNameWidth)<<algoName
+                <<setw(colTimeWidth)<<to_string(time_us).insert(0, to_string(maxTime).length() - to_string(time_us).length(), ' ')
+                <<endl;
+                
+        cout<<string(colIdWidth + colNameWidth + colTimeWidth, '-')<<endl;
+    }
+
     static bool validate_n(const int n){
-        const int MIN_VEC_SIZE = 1;
         const int MAX_VEC_SIZE = 100000; // 10^5
 
-        if(n < MIN_VEC_SIZE || n > MAX_VEC_SIZE){
-            logImpMsg("Value of n must be in range [" + to_string(MIN_VEC_SIZE) + ", " + to_string(MAX_VEC_SIZE) + "]");
+        if(n < 1 || n > MAX_VEC_SIZE){
+            logImpMsg("Value of n must be in range [1, " + to_string(MAX_VEC_SIZE) + "]");
             return false;
         }
 
         return true;
     }
 
-    static bool validate_min_max(const int minVal, const int maxVal){
+    static bool validate_minMaxInt(const int minVal, const int maxVal){
         const int MIN_INT_VAL = -100000; // -10^5
         const int MAX_INT_VAL = 100000; // +10^5
 
@@ -477,6 +541,15 @@ private:
         return true;
     }
 
+    static bool validate_listSize(const vector<string>& list){
+        if(list.empty()){
+            logImpMsg("Algo list cannot be empty");
+            return false;
+        }
+
+        return true;
+    }
+
 public:
     SortingMaster(){}
     
@@ -484,7 +557,7 @@ public:
 
     // returns a vector of size n with each value in range [minVal, maxVal]
     static vector<int> generateRandomVector(int n, int minVal, int maxVal){
-        if(!(validate_n(n) && validate_min_max(minVal, maxVal)))
+        if(!(validate_n(n) && validate_minMaxInt(minVal, maxVal)))
             return {};
         
         random_device rd;
@@ -556,54 +629,72 @@ public:
 
         return duration.count();
     }
-    
-    static void printBenchmarkResults(const vector<pair<int, string>>& times){
-        const int colIdWidth = 6;
-        const int colNameWidth = 16;
-        const int colTimeWidth = 12;
 
-        cout<<left
-            <<setw(colIdWidth)<<"Rank"
-            <<setw(colNameWidth)<<"Algorithm"
-            <<setw(colTimeWidth)<<"Time (in us)"
-            <<endl;
-        cout<<string(colIdWidth + colNameWidth + colTimeWidth, '-')<<endl;
-
-        int maxTime = 0;
-        for(const auto& [time_us, _]: times)
-            maxTime = max(maxTime, time_us);
-
-        int rank = 0;
-        for(const auto& [time_us, algoName]: times)
-            cout<<left
-                <<setw(colIdWidth)<<rank++
-                <<setw(colNameWidth)<<algoName
-                <<setw(colTimeWidth)<<to_string(time_us).insert(0, to_string(maxTime).length() - to_string(time_us).length(), ' ')
-                <<endl;
-                
-        cout<<string(colIdWidth + colNameWidth + colTimeWidth, '-')<<endl;
-    }
-
-    // run all algos for a random vector of size n and 
-    // arranges them in increasing order of time
+    // run all the algos to becnhmark
     static bool runBenchmark(const int n, const int minVal, const int maxVal){
         return runBenchmark(n, minVal, maxVal, 1);
     }
 
-    // run the becnhmark for iterations
+    // run all the algos to becnhmark (for specified iterations)
     static bool runBenchmark(const int n, const int minVal, const int maxVal, const int iterations){
-        if(!(validate_n(n) && validate_min_max(minVal, maxVal) && validate_iterations(iterations)))
+        if(!(validate_n(n) && validate_minMaxInt(minVal, maxVal) && validate_iterations(iterations)))
             return false;
 
         logMsg("Running Benchmark... (for n = " + to_string(n) + ")" + 
             (iterations > 1 ? ", (" + to_string(iterations) + " iterations)" : ""));
 
         vector<int> nums = generateRandomVector(n, minVal, maxVal);
-        const auto& mp = getAlgoMap();
+        const auto& algoMap = getAlgoMap();
         vector<pair<int, string>> times;
         
         ENABLE_LOG = false;
-        for(const auto& [algoName, _]: mp){
+        for(const auto& [algoName, _]: algoMap){
+            int totalDuration = 0;
+
+            for(int t=1; t<=iterations; t++){
+                vector<int> temp = nums;
+                
+                totalDuration += calculateAlgoRunTime_us(temp, algoName);
+            }
+
+            times.push_back({totalDuration / iterations, algoName});
+        }
+        ENABLE_LOG = true;
+
+        sort(times.begin(), times.end());
+        
+        printBenchmarkResults(times);
+
+        return true;
+    }
+
+    // run only specific algos to becnhmark
+    static bool runSpecificBenchmark(const int n, const int minVal, const int maxVal, const vector<string>& algoList){
+        return runSpecificBenchmark(n, minVal, maxVal, 1, algoList);
+    }
+
+    // run only specific algos to becnhmark (for specified iterations)
+    static bool runSpecificBenchmark(const int n, const int minVal, const int maxVal, const int iterations, const vector<string>& algoList){
+        if(!(validate_n(n) && validate_minMaxInt(minVal, maxVal) && validate_iterations(iterations) && validate_listSize(algoList)))
+            return false;
+
+        const auto& algoMap = getAlgoMap();
+        unordered_set<string> algoNames;
+        for(const string& algoName: algoList)
+            if(algoMap.find(algoName) != algoMap.end())
+                algoNames.insert(algoName);
+        
+        if(algoNames.empty())
+            return false;
+
+        logMsg("Running Benchmark... (for n = " + to_string(n) + ")" + 
+            (iterations > 1 ? ", (" + to_string(iterations) + " iterations)" : ""));
+
+        vector<int> nums = generateRandomVector(n, minVal, maxVal);
+        vector<pair<int, string>> times;
+        
+        ENABLE_LOG = false;
+        for(const auto& algoName: algoNames){
             int totalDuration = 0;
 
             for(int t=1; t<=iterations; t++){
@@ -640,9 +731,14 @@ int main() {
     // SortingMaster::runAlgo(nums, "pigeonhole");
     // SortingMaster::runAlgo(nums, "counting");
     // SortingMaster::runAlgo(nums, "radix");
+    // SortingMaster::runAlgo(nums, "radix_bucket");
     
-    SortingMaster::runBenchmark(1300, -1000, 1000);
-    SortingMaster::runBenchmark(1300, -1000, 1000, 12);
+    // SortingMaster::runBenchmark(1300, -1000, 1000);
+    // SortingMaster::runBenchmark(1300, -1000, 1000, 12);
+
+    SortingMaster::runSpecificBenchmark(1300, -1000, 1000, {"bubble", "selection", "insertion", "shell"});
+    SortingMaster::runSpecificBenchmark(1300, -1000, 1000, 12, {"merge", "heap", "heap_iterative", "quick", "quick_tail"});
+    SortingMaster::runSpecificBenchmark(1300, -1000, 1000, 12, {"pigeonhole", "counting", "radix", "radix_bucket"});
     
     // SortingMaster::runAlgo(nums, "wrong_name");
         
