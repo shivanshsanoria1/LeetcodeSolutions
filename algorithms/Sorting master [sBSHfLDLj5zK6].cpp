@@ -440,7 +440,7 @@ private:
     }
     // ------------ Radix-sort | END ------------ //
 
-    // ------------ Radix-sort (custom) | START ------------ //
+    // ------------ Radix-sort (bucket) | START ------------ //
     // T.C.=O(m*(n + 10)), m: digits in the abs max num
     // S.C.=O(n + 10)
     // Stable | Not In-place
@@ -464,7 +464,7 @@ private:
                     nums[i++] = num;
         }
     }
-    // ------------ Radix-sort (custom) | END ------------ //
+    // ------------ Radix-sort (bucket) | END ------------ //
     
     static void logMsg(const string& msg){
         if(ENABLE_LOG)
@@ -546,6 +546,34 @@ private:
             logImpMsg("Algo list cannot be empty");
             return false;
         }
+
+        return true;
+    }
+
+    static bool runBenchmark_root(const int n, const int minVal, const int maxVal, const int iterations, const unordered_set<string>& algoNames){
+        logMsg("Running Benchmark... (for n = " + to_string(n) + ")" + 
+            (iterations > 1 ? ", (" + to_string(iterations) + " iterations)" : ""));
+
+        vector<int> nums = generateRandomVector(n, minVal, maxVal);
+        vector<pair<int, string>> times;
+        
+        ENABLE_LOG = false;
+        for(const auto& algoName: algoNames){
+            int totalDuration = 0;
+
+            for(int t=1; t<=iterations; t++){
+                vector<int> temp = nums;
+                
+                totalDuration += calculateAlgoRunTime_us(temp, algoName);
+            }
+
+            times.push_back({totalDuration / iterations, algoName});
+        }
+        ENABLE_LOG = true;
+
+        sort(times.begin(), times.end());
+        
+        printBenchmarkResults(times);
 
         return true;
     }
@@ -640,32 +668,12 @@ public:
         if(!(validate_n(n) && validate_minMaxInt(minVal, maxVal) && validate_iterations(iterations)))
             return false;
 
-        logMsg("Running Benchmark... (for n = " + to_string(n) + ")" + 
-            (iterations > 1 ? ", (" + to_string(iterations) + " iterations)" : ""));
-
-        vector<int> nums = generateRandomVector(n, minVal, maxVal);
         const auto& algoMap = getAlgoMap();
-        vector<pair<int, string>> times;
+        unordered_set<string> algoNames;
+        for(const auto& [algoName, _]: algoMap)
+            algoNames.insert(algoName);
         
-        ENABLE_LOG = false;
-        for(const auto& [algoName, _]: algoMap){
-            int totalDuration = 0;
-
-            for(int t=1; t<=iterations; t++){
-                vector<int> temp = nums;
-                
-                totalDuration += calculateAlgoRunTime_us(temp, algoName);
-            }
-
-            times.push_back({totalDuration / iterations, algoName});
-        }
-        ENABLE_LOG = true;
-
-        sort(times.begin(), times.end());
-        
-        printBenchmarkResults(times);
-
-        return true;
+        return runBenchmark_root(n, minVal, maxVal, iterations, algoNames);
     }
 
     // run only specific algos to becnhmark
@@ -684,34 +692,12 @@ public:
             if(algoMap.find(algoName) != algoMap.end())
                 algoNames.insert(algoName);
         
-        if(algoNames.empty())
+        if(algoNames.empty()){
+            logImpMsg("No valid algo name found!");
             return false;
-
-        logMsg("Running Benchmark... (for n = " + to_string(n) + ")" + 
-            (iterations > 1 ? ", (" + to_string(iterations) + " iterations)" : ""));
-
-        vector<int> nums = generateRandomVector(n, minVal, maxVal);
-        vector<pair<int, string>> times;
-        
-        ENABLE_LOG = false;
-        for(const auto& algoName: algoNames){
-            int totalDuration = 0;
-
-            for(int t=1; t<=iterations; t++){
-                vector<int> temp = nums;
-                
-                totalDuration += calculateAlgoRunTime_us(temp, algoName);
-            }
-
-            times.push_back({totalDuration / iterations, algoName});
         }
-        ENABLE_LOG = true;
 
-        sort(times.begin(), times.end());
-        
-        printBenchmarkResults(times);
-
-        return true;
+        return runBenchmark_root(n, minVal, maxVal, iterations, algoNames);
     }
 };
 
@@ -733,8 +719,8 @@ int main() {
     // SortingMaster::runAlgo(nums, "radix");
     // SortingMaster::runAlgo(nums, "radix_bucket");
     
-    // SortingMaster::runBenchmark(1300, -1000, 1000);
-    // SortingMaster::runBenchmark(1300, -1000, 1000, 12);
+    SortingMaster::runBenchmark(1300, -1000, 1000);
+    SortingMaster::runBenchmark(1300, -1000, 1000, 12);
 
     SortingMaster::runSpecificBenchmark(1300, -1000, 1000, {"bubble", "selection", "insertion", "shell"});
     SortingMaster::runSpecificBenchmark(1300, -1000, 1000, 12, {"merge", "heap", "heap_iterative", "quick", "quick_tail"});
