@@ -553,27 +553,29 @@ private:
     static bool runBenchmark_root(const int n, const int minVal, const int maxVal, const int iterations, const unordered_set<string>& algoNames){
         logMsg("Running Benchmark... (for n = " + to_string(n) + ")" + 
             (iterations > 1 ? ", (" + to_string(iterations) + " iterations)" : ""));
-
-        vector<int> nums = generateRandomVector(n, minVal, maxVal);
-        vector<pair<int, string>> times;
+        
+        // algo-name -> total time (in microsec) to run (for iterations)
+        unordered_map<string, int> algoRunTimeMap;
         
         ENABLE_LOG = false;
-        for(const auto& algoName: algoNames){
-            int totalDuration = 0;
+        for(int t=1; t<=iterations; t++){
+            vector<int> nums = generateRandomVector(n, minVal, maxVal);
 
-            for(int t=1; t<=iterations; t++){
+            for(const auto& algoName: algoNames){
                 vector<int> temp = nums;
-                
-                totalDuration += calculateAlgoRunTime_us(temp, algoName);
+                    
+                algoRunTimeMap[algoName] += calculateAlgoRunTime_us(temp, algoName);
             }
-
-            times.push_back({totalDuration / iterations, algoName});
         }
         ENABLE_LOG = true;
 
-        sort(times.begin(), times.end());
+        vector<pair<int, string>> algoRunTimes;
+        for(const auto& [algoName, totalTime]: algoRunTimeMap)
+            algoRunTimes.push_back({totalTime / iterations, algoName});
+
+        sort(algoRunTimes.begin(), algoRunTimes.end());
         
-        printBenchmarkResults(times);
+        printBenchmarkResults(algoRunTimes);
 
         return true;
     }
@@ -583,7 +585,7 @@ public:
     
     static inline bool ENABLE_LOG = true;
 
-    // returns a vector of size n with each value in range [minVal, maxVal]
+    // returns a vector of size n filled with random int in range [minVal, maxVal]
     static vector<int> generateRandomVector(int n, int minVal, int maxVal){
         if(!(validate_n(n) && validate_minMaxInt(minVal, maxVal)))
             return {};
@@ -702,7 +704,6 @@ public:
 };
 
 int main() {
-    // vector<int> nums = { 9, 4, 3, 8, 10, 2, 5, 4, 4 };
     vector<int> nums = SortingMaster::generateRandomVector(10, -50, 50);
     
     // SortingMaster::runAlgo(nums, "bubble");
@@ -722,9 +723,9 @@ int main() {
     SortingMaster::runBenchmark(1300, -1000, 1000);
     SortingMaster::runBenchmark(1300, -1000, 1000, 12);
 
-    SortingMaster::runSpecificBenchmark(1300, -1000, 1000, {"bubble", "selection", "insertion", "shell"});
-    SortingMaster::runSpecificBenchmark(1300, -1000, 1000, 12, {"merge", "heap", "heap_iterative", "quick", "quick_tail"});
-    SortingMaster::runSpecificBenchmark(1300, -1000, 1000, 12, {"pigeonhole", "counting", "radix", "radix_bucket"});
+    // SortingMaster::runSpecificBenchmark(1300, -1000, 1000, {"bubble", "selection", "insertion", "shell"});
+    // SortingMaster::runSpecificBenchmark(1300, -1000, 1000, 12, {"merge", "heap", "heap_iterative", "quick", "quick_tail"});
+    // SortingMaster::runSpecificBenchmark(1300, -1000, 1000, 12, {"pigeonhole", "counting", "radix", "radix_bucket"});
     
     // SortingMaster::runAlgo(nums, "wrong_name");
         
