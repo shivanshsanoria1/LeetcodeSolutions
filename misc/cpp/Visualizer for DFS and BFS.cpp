@@ -5,11 +5,19 @@
 #include <cstdlib>
 #include <ctime>
 #include <algorithm>
+#include <thread>
+#include <chrono>
+#include <atomic>
+#include <format>
 
 using namespace std;
 
 class TraversalVisualiser{
 private:
+    static inline atomic<bool> STOP_ANIMATION = false;
+    static inline atomic<bool> ANIMATION_RUNNING = false;
+    static inline thread stopThread;
+
     static void logMsg(const string msg, const int separatorLen = 50){
         if(msg.length() > 0)
             cout<<msg<<endl;
@@ -80,8 +88,11 @@ private:
                 grid[i][j] = -1;
     }
     
-    // starts DFS with curr value 'val' at coordinates {i, j}
-    static void dfs(vector<vector<int>>& grid, int& val, int i, int j, vector<vector<int>>& colorGrid){
+    // starts DFS with curr value 'val' at coordinates (i, j)
+    static void dfs(vector<vector<int>>& grid, int& val, const int i, const int j, vector<vector<int>>& colorGrid, const int delay_ms, const string& msg){
+        if(STOP_ANIMATION)
+            return;
+
         const int m = grid.size(), n = grid[0].size();
         
         // index out of bounds
@@ -94,18 +105,22 @@ private:
     
         grid[i][j] = val;
 
+        // color points in alternating manner
         colorGrid[i][j] = val % 2 == 0 ? 1 : -1;
+
         if(val == 0) // start-point
             colorGrid[i][j] = 2;
         else if(val == m*n - 1) // end-point
             colorGrid[i][j] = -2;
+        
+        printGridAndTitleDuringAnimation(grid, colorGrid, delay_ms, msg);
 
         val++;
     
-        dfs(grid, val, i-1, j, colorGrid); // up
-        dfs(grid, val, i, j+1, colorGrid); // right
-        dfs(grid, val, i+1, j, colorGrid); // down
-        dfs(grid, val, i, j-1, colorGrid); // left
+        dfs(grid, val, i-1, j, colorGrid, delay_ms, msg); // up
+        dfs(grid, val, i, j+1, colorGrid, delay_ms, msg); // right
+        dfs(grid, val, i+1, j, colorGrid, delay_ms, msg); // down
+        dfs(grid, val, i, j-1, colorGrid, delay_ms, msg); // left
     }
 
     static void updateFinalLayerColorBFS(vector<vector<int>>& grid, vector<vector<int>>& colorGrid){
@@ -123,12 +138,15 @@ private:
     }
     
     // starts BFS with initial value 'val' at coordinates {startX, startY}
-    static void bfs(vector<vector<int>>& grid, int val, int startX, int startY, vector<vector<int>>& colorGrid){
+    static void bfs(vector<vector<int>>& grid, int val, int startX, int startY, vector<vector<int>>& colorGrid, const int delay_ms, const string& msg){
+        if(STOP_ANIMATION)
+            return;
+
         const int m = grid.size(), n = grid[0].size();
-    
+        
         // up, right, down, left
         vector<pair<int, int>> dirs = {{-1, 0}, {0, 1}, {1, 0}, {0, -1}};
-    
+
         queue<pair<int, int>> q;
         grid[startX][startY] = val;
         colorGrid[startX][startY] = 2; // start-point
@@ -140,9 +158,12 @@ private:
             val++;
             
             while(sz--){
+                if(STOP_ANIMATION)
+                    return;
+
                 const auto [currX, currY] = q.front();
                 q.pop();
-    
+                
                 for(const auto [dx, dy]: dirs){
                     const int x = currX + dx;
                     const int y = currY + dy;
@@ -160,16 +181,18 @@ private:
                     q.push({x, y});
                 }
             }
+            printGridAndTitleDuringAnimation(grid, colorGrid, delay_ms, msg);
 
             parity *= -1; // alternating color in each layer
         }
 
         updateFinalLayerColorBFS(grid, colorGrid);
+        printGridAndTitleDuringAnimation(grid, colorGrid, delay_ms, msg);
     }
 
     static bool validateMode(string& mode){
         if(mode.length() != 3){
-            logMsg("Mode length must be 3. Current mode length = " + to_string(mode.length()));
+            logMsg(format("Mode length must be 3. Current mode length = {}", mode.length()));
             return false;
         }
         
@@ -177,7 +200,7 @@ private:
         transform(mode.begin(), mode.end(), mode.begin(), ::toupper);
         
         if(!(mode == "DFS" || mode == "BFS")){
-            logMsg("Invalid mode: " + modeInput + ".\nAllowed modes are: 1. DFS, 2. BFS (case insensitive)");
+            logMsg(format("Invalid mode: {}.\nAllowed modes are: 1. DFS, 2. BFS (case insensitive)", modeInput));
             return false;
         }
     
@@ -205,49 +228,141 @@ private:
         }
         
         if(i < 0 || i >= m || j < 0 || j >= n){
-            logMsg("Coordinates of point must be in range ([0, " + to_string(m) + "], [0, " + to_string(n) + "])");
+            logMsg(format("Coordinates of point must be in range ([0, {}], [0, {}]).", m-1, n-1));
             return false;
         }
 
         return true;
     }
-    
+
+    static bool validateDelayTime(const int delay_ms){
+        const int maxDelay_ms = 2500;
+
+        if(delay_ms < 0 || delay_ms > maxDelay_ms){
+            logMsg(format("Delay time must be in range [0, {}] ms.", maxDelay_ms));
+            return false;
+        }
+
+        return true;
+    }
+
+    static void clearConsole() {
+        #ifdef _WIN32
+            system("cls");
+        #else
+            system("clear");
+        #endif
+    }
+
+    static void printGridAndTitleDuringAnimation(vector<vector<int>>& grid, vector<vector<int>>& colorGrid, const int delay_ms, const string& msg){
+        if(delay_ms > 0){
+            clearConsole();
+            logMsg(msg, 0);
+            printGrid(grid, colorGrid);
+            logMsg("Press ENTER to stop animation...", 0);
+            this_thread::sleep_for(chrono::milliseconds(delay_ms));
+        }
+    }
+
+    static bool animationStarter(const int delay_ms){
+        // prevent multiple animations
+        if (ANIMATION_RUNNING.exchange(true)) {
+            logMsg("Another animation is already running.");
+            return false;
+        }
+
+        STOP_ANIMATION = false;
+
+        // no animation is needed
+        if(delay_ms == 0)
+            return true;
+
+        // clear leftover input
+        cin.clear();
+        while(cin.rdbuf()->in_avail() > 0)
+            cin.get();
+
+        // start a non-blocking listener thread
+        stopThread = thread([](){
+            if(cin.get() == '\n')
+                STOP_ANIMATION = true;
+
+            const int afterAnimationDelay_ms = 50;
+            this_thread::sleep_for(chrono::milliseconds(afterAnimationDelay_ms));
+
+            // while(!STOP_ANIMATION){
+            //     if(cin.rdbuf()->in_avail() > 0){
+            //         char c = cin.get();
+            //         if(c == '\n'){
+            //             STOP_ANIMATION = true;
+            //             return;
+            //         }
+            //     }
+
+            //     const int afterAnimationDelay_ms = 50;
+            //     this_thread::sleep_for(chrono::milliseconds(afterAnimationDelay_ms));
+            // }
+        });
+
+        return true;
+    }
+
+    static void animationStopper(const int delay_ms){
+        // stop listener thread
+        STOP_ANIMATION = true;
+        if(stopThread.joinable())
+            stopThread.join();
+
+        ANIMATION_RUNNING = false;
+
+        if(delay_ms > 0 && STOP_ANIMATION)
+            logMsg("Animation Stopped.");
+    }
+
 public:
     TraversalVisualiser(){}
     
     // start DFS or BFS at a random point in grid of size m*n 
-    static bool visualize(const int m, const int n, string mode){
-        if(!validateMode(mode) || !validateGridDimensions(m, n))
+    static bool visualize(const int m, const int n, string mode, const int delay_ms = 0){
+        if(!validateGridDimensions(m, n) || !validateMode(mode) || !validateDelayTime(delay_ms))
             return false;
         
         srand(time(0)); // seed for rand()
-        
         int i = rand() % m;
         int j = rand() % n;
         
-        visualize(m, n, mode, i, j);
+        visualize(m, n, mode, i, j, delay_ms);
         
         return true;
     }
     
-    // start DFS or BFS at a (i, j)) in grid of size m*n 
-    static bool visualize(const int m, const int n, string mode, const int i, const int j){
-        if(!validateMode(mode) || !validateGridDimensions(m, n) || !validateGridCoordinates(m, n, i, j))
+    // start DFS or BFS at a (i, j) in grid of size m*n 
+    static bool visualize(const int m, const int n, string mode, const int i, const int j, const int delay_ms = 0){
+        if(!validateGridDimensions(m, n) || !validateGridCoordinates(m, n, i, j) || !validateMode(mode) || !validateDelayTime(delay_ms))
             return false;
         
         vector<vector<int>> grid(m, vector<int>(n, -1));
         vector<vector<int>> colorGrid(m, vector<int>(n, 0));
         
-        logMsg(mode + " started at (" + to_string(i) + ", " + to_string(j) + ") in a " + to_string(m) + " x " + to_string(n) + " grid", 0);
+        const string msg = format("{} started at ({}, {}) in a {} x {} grid.", mode, i, j, m, n);
+        if(delay_ms == 0) // no-animation
+            logMsg(msg, 0);
         
+        if(!animationStarter(delay_ms))
+            return false;
+
         int startVal = 0;
         
         if(mode == "DFS")
-            dfs(grid, startVal, i, j, colorGrid);
+            dfs(grid, startVal, i, j, colorGrid, delay_ms, msg);
         else if(mode == "BFS")
-            bfs(grid, startVal, i, j, colorGrid);
+            bfs(grid, startVal, i, j, colorGrid, delay_ms, msg);
 
-        printGrid(grid, colorGrid);
+        animationStopper(delay_ms);
+
+        if(delay_ms == 0) // no-animation
+            printGrid(grid, colorGrid);
+
         resetGrid(grid);
         
         return true;
@@ -255,16 +370,26 @@ public:
 };
 
 int main(){
-    // start at random point
-    TraversalVisualiser::visualize(10, 10, "dfs");
+    // 1. start at random point
+    // 1.1 no animation
+    // TraversalVisualiser::visualize(10, 10, "dfs");
+    // TraversalVisualiser::visualize(10, 10, "bfs");
+    // 1.2 animation with delay
+    TraversalVisualiser::visualize(10, 10, "dfs", 50);
+    TraversalVisualiser::visualize(10, 10, "bfs", 500);
     
-    // start at given point
-    TraversalVisualiser::visualize(11, 11, "bfs", 5, 5);
+    // 2. start at given point
+    // 2.1 no animation
+    // TraversalVisualiser::visualize(11, 11, "dfs", 5, 5);
+    // TraversalVisualiser::visualize(11, 11, "bfs", 5, 5);
+    // 2.2 animation with delay
+    // TraversalVisualiser::visualize(11, 11, "dfs", 5, 5, 50);
+    // TraversalVisualiser::visualize(11, 11, "bfs", 5, 5, 500);
 
     return 0;
 }
 
 /*
-g++ "./misc/cpp/Visualizer for DFS and BFS.cpp" -o "./misc/cpp/compiled/Visualizer for DFS and BFS"
+g++ -std=c++20 "./misc/cpp/Visualizer for DFS and BFS.cpp" -o "./misc/cpp/compiled/Visualizer for DFS and BFS"
 "./misc/cpp/compiled/Visualizer for DFS and BFS"
 */

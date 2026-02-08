@@ -337,8 +337,8 @@ private:
         while(left < right){
             const int idx = partition_tail(nums, left, right);
 
-            const int leftSize = idx - left + 1;
-            const int rightSize = right - idx + 1;
+            const int leftSize = idx - left;
+            const int rightSize = right - idx;
 
             if(leftSize < rightSize){
                 // elements in index range [0, idx-1] are <= nums[idx]
@@ -356,7 +356,7 @@ private:
     // ------------ Pigeonhole-sort | START ------------ //
     // T.C.=O(n + r), r: maxVal - minVal
     // S.C.=O(r), r: maxVal - minVal
-    // Not-Stable | Not In-place
+    // Stable | Not In-place
     static void pigeonholeSort(vector<int>& nums){
         const int maxVal = *max_element(nums.begin(), nums.end());
         const int minVal = *min_element(nums.begin(), nums.end());
@@ -550,6 +550,7 @@ private:
         return true;
     }
 
+    // single point of source for every public benchmark method
     static bool runBenchmark_root(const int n, const int minVal, const int maxVal, const int iterations, const unordered_set<string>& algoNames){
         logMsg("Running Benchmark... (for n = " + to_string(n) + ")" + 
             (iterations > 1 ? ", (" + to_string(iterations) + " iterations)" : ""));
@@ -621,6 +622,10 @@ public:
     }
 
     static bool runAlgo(vector<int>& nums, const string& algoName){
+        const int n = nums.size();
+        if(!validate_n(n))
+            return false;
+
         const auto& mp = getAlgoMap();
         
         const auto itr = mp.find(algoName);
@@ -704,7 +709,8 @@ public:
 };
 
 int main() {
-    vector<int> nums = SortingMaster::generateRandomVector(10, -50, 50);
+    // vector<int> nums = {-1, -99};
+    vector<int> nums = SortingMaster::generateRandomVector(12, -100, 100);
     
     // SortingMaster::runAlgo(nums, "bubble");
     // SortingMaster::runAlgo(nums, "selection");
@@ -720,7 +726,7 @@ int main() {
     // SortingMaster::runAlgo(nums, "radix");
     // SortingMaster::runAlgo(nums, "radix_bucket");
     
-    SortingMaster::runBenchmark(1300, -1000, 1000);
+    // SortingMaster::runBenchmark(1300, -1000, 1000);
     SortingMaster::runBenchmark(1300, -1000, 1000, 12);
 
     // SortingMaster::runSpecificBenchmark(1300, -1000, 1000, {"bubble", "selection", "insertion", "shell"});
