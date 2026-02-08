@@ -1845,6 +1845,11 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 3803,count residue prefixes,general,cpp,1,0
 3804,number of centered subarrays,general,cpp,1,0
 3805,count caesar cipher pairs,general,cpp,1,1
+3809,best reachable tower,general,cpp,1,0
 3813,vowel consonant score,general,cpp,1,0
 3814,maximum capacity within budget,general,cpp,1,0
 3815,design auction system,general,cpp,1,0
+3818,minimum prefix removal to make array strictly increasing,general,cpp,1,0
+3819,rotate non negative elements,general,cpp,1,0
+3823,reverse letters then special characters in a string,general,cpp,2,0
+3827,count monobit integers,general,cpp+js,1+1,0+0

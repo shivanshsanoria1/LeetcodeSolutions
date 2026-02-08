@@ -1620,6 +1620,11 @@
 |3803 | count residue prefixes |[L1](<../../../CPP [3501-4000]/3803.count_residue_prefixes [1].cpp>) |general|
 |3804 | number of centered subarrays |[L1](<../../../CPP [3501-4000]/3804.number_of_centered_subarrays [1].cpp>) |general|
 |3805 | count caesar cipher pairs |[L1](<../../../CPP [3501-4000]/3805.count_caesar_cipher_pairs [1].cpp>) |general|
+|3809 | best reachable tower |[L1](<../../../CPP [3501-4000]/3809.best_reachable_tower [1].cpp>) |general|
 |3813 | vowel consonant score |[L1](<../../../CPP [3501-4000]/3813.vowel_consonant_score [1].cpp>) |general|
 |3814 | maximum capacity within budget |[L1](<../../../CPP [3501-4000]/3814.maximum_capacity_within_budget [1].cpp>) |general|
 |3815 | design auction system |[L1](<../../../CPP [3501-4000]/3815.design_auction_system [1].cpp>) |general|
+|3818 | minimum prefix removal to make array strictly increasing |[L1](<../../../CPP [3501-4000]/3818.minimum_prefix_removal_to_make_array_strictly_increasing [1].cpp>) |general|
+|3819 | rotate non negative elements |[L1](<../../../CPP [3501-4000]/3819.rotate_non_negative_elements [1].cpp>) |general|
+|3823 | reverse letters then special characters in a string |[L1](<../../../CPP [3501-4000]/3823.reverse_letters_then_special_characters_in_a_string [1].cpp>) [L2](<../../../CPP [3501-4000]/3823.reverse_letters_then_special_characters_in_a_string [2].cpp>) |general|
+|3827 | count monobit integers |[L1](<../../../CPP [3501-4000]/3827.count_monobit_integers [1].cpp>) |general|

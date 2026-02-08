@@ -22195,6 +22195,18 @@
 	"type": "general"
 },
 {
+	"quesId": 3809,
+	"title": "best reachable tower",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
 	"quesId": 3813,
 	"title": "vowel consonant score",
 	"counter": {
@@ -22223,6 +22235,58 @@
 	"title": "design auction system",
 	"counter": {
 		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3818,
+	"title": "minimum prefix removal to make array strictly increasing",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3819,
+	"title": "rotate non negative elements",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3823,
+	"title": "reverse letters then special characters in a string",
+	"counter": {
+		"cpp": {
+			"accepted": 2,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3827,
+	"title": "count monobit integers",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		},
+		"js": {
 			"accepted": 1,
 			"unaccepted": 0
 		}

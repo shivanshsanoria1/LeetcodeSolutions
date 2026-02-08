@@ -70,3 +70,4 @@
 |3783 | mirror distance of an integer |[L1](<../../../Javascript/3783.mirror_distance_of_an_integer [1].js>) |general|
 |3794 | reverse string prefix |[L1](<../../../Javascript/3794.reverse_string_prefix [1].js>) |general|
 |3798 | largest even number |[L1](<../../../Javascript/3798.largest_even_number [1].js>) |general|
+|3827 | count monobit integers |[L1](<../../../Javascript/3827.count_monobit_integers [1].js>) |general|
