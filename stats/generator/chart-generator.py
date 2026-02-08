@@ -22,6 +22,7 @@ def getColorHex(color: str) -> str:
 		'light-blue': '#00ccff',
 		'slate-blue': '#0099ff',
 		'blue': '#3366ff',
+		'dark-blue': '#0044cc',
 		'sea-green': '#00b386',
 		'light-green': '#00e68a',
 		'green': '#39ac39',
