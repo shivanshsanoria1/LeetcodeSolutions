@@ -7,6 +7,7 @@
 #include <chrono>
 #include <algorithm>
 #include <iomanip>
+#include <format>
 
 using namespace std;
 
@@ -106,15 +107,17 @@ private:
         const int n = nums.size();
         
         for(int i=1; i<n; i++){
-            for(int j=i; j>0; j--){
-                if(nums[j-1] > nums[j])
-                    swap(nums[j-1], nums[j]);
+            const int key = nums[i];
+            int j = i-1;
+            for(; j>=0; j--){
+                if(nums[j] > key)
+                    nums[j+1] = nums[j];
                 else
                     break;
             }
+            nums[j+1] = key;
         }
     }
-
     // ------------ Insertion-sort | END ------------ //
 
     // ------------ Shell-sort | START ------------ //
@@ -466,13 +469,18 @@ private:
     }
     // ------------ Radix-sort (bucket) | END ------------ //
     
-    static void logMsg(const string& msg){
-        if(ENABLE_LOG)
-            cout<<msg<<endl;
+    static void logMsg(const string& msg, const bool addNewLine = true){
+        if(ENABLE_LOG){
+            cout<<msg<<" ";
+            if(addNewLine)
+                cout<<endl;
+        }
     }
 
-    static void logImpMsg(const string& msg){
-        cout<<msg<<endl;
+    static void logImpMsg(const string& msg, const bool addNewLine = true){
+        cout<<msg<<" ";
+        if(addNewLine)
+            cout<<endl;
     }
 
     static void printBenchmarkResults(const vector<pair<int, string>>& times){
@@ -506,7 +514,7 @@ private:
         const int MAX_VEC_SIZE = 100000; // 10^5
 
         if(n < 1 || n > MAX_VEC_SIZE){
-            logImpMsg("Value of n must be in range [1, " + to_string(MAX_VEC_SIZE) + "]");
+            logImpMsg(format("Value of n must be in range [1, {}]", MAX_VEC_SIZE));
             return false;
         }
 
@@ -518,7 +526,7 @@ private:
         const int MAX_INT_VAL = 100000; // +10^5
 
         if(minVal < MIN_INT_VAL || maxVal > MAX_INT_VAL){
-            logImpMsg("Integer value must be in range [" + to_string(MIN_INT_VAL) + ", " + to_string(MAX_INT_VAL) + "]");
+            logImpMsg(format("Integer value must be in range [{}, {}]", MIN_INT_VAL, MAX_INT_VAL));
             return false;
         }
         
@@ -531,10 +539,10 @@ private:
     }
 
     static bool validate_iterations(const int iterations){
-        const int MAX_ITERATIONS_BECNHMARK = 100;
+        const int MAX_ITERATIONS_BENCHMARK = 100;
 
-        if(iterations < 1 || iterations > MAX_ITERATIONS_BECNHMARK){
-            logImpMsg("Number of iterations must be in range [1, " + to_string(MAX_ITERATIONS_BECNHMARK) + "]");
+        if(iterations < 1 || iterations > MAX_ITERATIONS_BENCHMARK){
+            logImpMsg(format("Number of iterations must be in range [1, {}]", MAX_ITERATIONS_BENCHMARK));
             return false;
         }
 
@@ -577,6 +585,7 @@ private:
         sort(algoRunTimes.begin(), algoRunTimes.end());
         
         printBenchmarkResults(algoRunTimes);
+        logMsg("");
 
         return true;
     }
@@ -665,14 +674,9 @@ public:
         return duration.count();
     }
 
-    // run all the algos to becnhmark
-    static bool runBenchmark(const int n, const int minVal, const int maxVal){
-        return runBenchmark(n, minVal, maxVal, 1);
-    }
-
-    // run all the algos to becnhmark (for specified iterations)
-    static bool runBenchmark(const int n, const int minVal, const int maxVal, const int iterations){
-        if(!(validate_n(n) && validate_minMaxInt(minVal, maxVal) && validate_iterations(iterations)))
+    // run all the algos to benchmark (for specified iterations)
+    static bool runBenchmark(const int n, const int minVal, const int maxVal, const int iterations = 1){
+        if(!validate_n(n) || !validate_minMaxInt(minVal, maxVal) || !validate_iterations(iterations))
             return false;
 
         const auto& algoMap = getAlgoMap();
@@ -683,34 +687,29 @@ public:
         return runBenchmark_root(n, minVal, maxVal, iterations, algoNames);
     }
 
-    // run only specific algos to becnhmark
-    static bool runSpecificBenchmark(const int n, const int minVal, const int maxVal, const vector<string>& algoList){
-        return runSpecificBenchmark(n, minVal, maxVal, 1, algoList);
-    }
-
-    // run only specific algos to becnhmark (for specified iterations)
-    static bool runSpecificBenchmark(const int n, const int minVal, const int maxVal, const int iterations, const vector<string>& algoList){
-        if(!(validate_n(n) && validate_minMaxInt(minVal, maxVal) && validate_iterations(iterations) && validate_listSize(algoList)))
+    // run only specific algos to benchmark (for specified iterations)
+    static bool runSpecificBenchmark(const int n, const int minVal, const int maxVal, const vector<string>& algoList, const int iterations = 1){
+        if(!validate_n(n) || !validate_minMaxInt(minVal, maxVal) || !validate_iterations(iterations) || !validate_listSize(algoList))
             return false;
 
         const auto& algoMap = getAlgoMap();
-        unordered_set<string> algoNames;
+        unordered_set<string> validAlgoNames;
         for(const string& algoName: algoList)
             if(algoMap.find(algoName) != algoMap.end())
-                algoNames.insert(algoName);
+                validAlgoNames.insert(algoName);
         
-        if(algoNames.empty()){
+        if(validAlgoNames.empty()){
             logImpMsg("No valid algo name found!");
             return false;
         }
 
-        return runBenchmark_root(n, minVal, maxVal, iterations, algoNames);
+        return runBenchmark_root(n, minVal, maxVal, iterations, validAlgoNames);
     }
 };
 
 int main() {
     // vector<int> nums = {-1, -99};
-    vector<int> nums = SortingMaster::generateRandomVector(12, -100, 100);
+    // vector<int> nums = SortingMaster::generateRandomVector(12, -100, 100);
     
     // SortingMaster::runAlgo(nums, "bubble");
     // SortingMaster::runAlgo(nums, "selection");
@@ -726,12 +725,12 @@ int main() {
     // SortingMaster::runAlgo(nums, "radix");
     // SortingMaster::runAlgo(nums, "radix_bucket");
     
-    // SortingMaster::runBenchmark(1300, -1000, 1000);
+    SortingMaster::runBenchmark(1300, -1000, 1000);
     SortingMaster::runBenchmark(1300, -1000, 1000, 12);
 
-    // SortingMaster::runSpecificBenchmark(1300, -1000, 1000, {"bubble", "selection", "insertion", "shell"});
-    // SortingMaster::runSpecificBenchmark(1300, -1000, 1000, 12, {"merge", "heap", "heap_iterative", "quick", "quick_tail"});
-    // SortingMaster::runSpecificBenchmark(1300, -1000, 1000, 12, {"pigeonhole", "counting", "radix", "radix_bucket"});
+    SortingMaster::runSpecificBenchmark(1300, -1000, 1000, {"bubble", "selection", "insertion", "shell"});
+    SortingMaster::runSpecificBenchmark(1300, -1000, 1000, {"merge", "heap", "heap_iterative", "quick", "quick_tail"}, 12);
+    SortingMaster::runSpecificBenchmark(1300, -1000, 1000, {"pigeonhole", "counting", "radix", "radix_bucket"}, 10);
     
     // SortingMaster::runAlgo(nums, "wrong_name");
         
@@ -739,6 +738,8 @@ int main() {
 }
 
 /*
-g++ "./algorithms/Sorting master [sBSHfLDLj5zK6].cpp" -o "./algorithms/compiled/Sorting master [sBSHfLDLj5zK6]"
+step-1: compile
+g++ -std=c++20 "./algorithms/Sorting master [sBSHfLDLj5zK6].cpp" -o "./algorithms/compiled/Sorting master [sBSHfLDLj5zK6]"
+step-2: run
 "./algorithms/compiled/Sorting master [sBSHfLDLj5zK6]"
 */

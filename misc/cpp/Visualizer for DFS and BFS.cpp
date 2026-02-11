@@ -390,6 +390,8 @@ int main(){
 }
 
 /*
+step-1: compile
 g++ -std=c++20 "./misc/cpp/Visualizer for DFS and BFS.cpp" -o "./misc/cpp/compiled/Visualizer for DFS and BFS"
+step-2: run
 "./misc/cpp/compiled/Visualizer for DFS and BFS"
 */
