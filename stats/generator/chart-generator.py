@@ -59,12 +59,12 @@ def chartShowSave(plt, chartName: str) -> None:
 # ------------------------------ #
 
 def loadArr() -> List[Dict]:
-	filePathJS = './stats/generated/leetcode-stats-array.js'
+	filePathJSON = './stats/generated/leetcode-stats-array.json'
 
-	with open(filePathJS, 'r') as file:
-		arrayJS = file.read()
+	with open(filePathJSON, 'r') as file:
+		arrayJSON = file.read()
 
-	stats = json.loads(arrayJS)
+	stats = json.loads(arrayJSON)
 
 	return stats
 # ------------------------------ #

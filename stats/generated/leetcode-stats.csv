@@ -1853,3 +1853,5 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 3819,rotate non negative elements,general,cpp,1,0
 3823,reverse letters then special characters in a string,general,cpp,2,0
 3827,count monobit integers,general,cpp+js,1+1,0+0
+3829,design ride sharing system,general,cpp,1,0
+3833,count dominant indices,general,cpp,2,0

@@ -1628,3 +1628,5 @@
 |3819 | rotate non negative elements |[L1](<../../../CPP [3501-4000]/3819.rotate_non_negative_elements [1].cpp>) |general|
 |3823 | reverse letters then special characters in a string |[L1](<../../../CPP [3501-4000]/3823.reverse_letters_then_special_characters_in_a_string [1].cpp>) [L2](<../../../CPP [3501-4000]/3823.reverse_letters_then_special_characters_in_a_string [2].cpp>) |general|
 |3827 | count monobit integers |[L1](<../../../CPP [3501-4000]/3827.count_monobit_integers [1].cpp>) |general|
+|3829 | design ride sharing system |[L1](<../../../CPP [3501-4000]/3829.design_ride_sharing_system [1].cpp>) |general|
+|3833 | count dominant indices |[L1](<../../../CPP [3501-4000]/3833.count_dominant_indices [1].cpp>) [L2](<../../../CPP [3501-4000]/3833.count_dominant_indices [2].cpp>) |general|

@@ -161,7 +161,7 @@ function generateTotalProblemCounterAndUpdateStatsArray(statsArr) {
 	return { totalProblemCount, totalLanguageCounter, fileCounter };
 }
 
-function generateJSfile(statsArr) {
+function generateJSONfile(statsArr) {
 	return new Promise(async (resolve, reject) => {
 		try {
 			let statsArrStringified = '';
@@ -172,8 +172,8 @@ function generateJSfile(statsArr) {
 				.join(',\n');
 			statsArrStringified += '\n]\n';
 
-			const filePath = path.join(__dirname, '..', 'generated', 'leetcode-stats-array.js');
-			await fs.writeFile(filePath, statsArrStringified);
+			const filePathJSON = path.join(__dirname, '..', 'generated', 'leetcode-stats-array.json');
+			await fs.writeFile(filePathJSON, statsArrStringified);
 
 			resolve();
 		} catch (err) {
@@ -361,7 +361,7 @@ async function generateStats() {
 		console.log(totalLanguageCounter);
 		console.log(fileCounter);
 
-		await generateJSfile(statsArr);
+		await generateJSONfile(statsArr);
 
 		await generateCSVfile(statsArr);
 

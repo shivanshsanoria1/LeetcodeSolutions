@@ -2,7 +2,7 @@
 
 ### Run 'stats-generator.sh'
 ```
-./stats/generator/stats-generator.sh
+./stats/generator/stats-generator-script.sh
 ```
 
 #### Give permissions (before running)

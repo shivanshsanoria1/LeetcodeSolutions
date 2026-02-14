@@ -22293,5 +22293,29 @@
 	},
 	"isAccepted": true,
 	"type": "general"
+},
+{
+	"quesId": 3829,
+	"title": "design ride sharing system",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3833,
+	"title": "count dominant indices",
+	"counter": {
+		"cpp": {
+			"accepted": 2,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
 }
 ]
