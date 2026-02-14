@@ -1630,3 +1630,7 @@
 |3827 | count monobit integers |[L1](<../../../CPP [3501-4000]/3827.count_monobit_integers [1].cpp>) |general|
 |3829 | design ride sharing system |[L1](<../../../CPP [3501-4000]/3829.design_ride_sharing_system [1].cpp>) |general|
 |3833 | count dominant indices |[L1](<../../../CPP [3501-4000]/3833.count_dominant_indices [1].cpp>) [L2](<../../../CPP [3501-4000]/3833.count_dominant_indices [2].cpp>) |general|
+|3834 | merge adjacent equal elements |[L1](<../../../CPP [3501-4000]/3834.merge_adjacent_equal_elements [1].cpp>) |general|
+|3838 | weighted word mapping |[L1](<../../../CPP [3501-4000]/3838.weighted_word_mapping [1].cpp>) |general|
+|3839 | number of prefix connected groups |[L1](<../../../CPP [3501-4000]/3839.number_of_prefix_connected_groups [1].cpp>) |general|
+|3840 | house robber V |[L1](<../../../CPP [3501-4000]/3840.house_robber_V [1].cpp>) [L2](<../../../CPP [3501-4000]/3840.house_robber_V [2].cpp>) |general|

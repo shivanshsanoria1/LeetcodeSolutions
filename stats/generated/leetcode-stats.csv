@@ -1855,3 +1855,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 3827,count monobit integers,general,cpp+js,1+1,0+0
 3829,design ride sharing system,general,cpp,1,0
 3833,count dominant indices,general,cpp,2,0
+3834,merge adjacent equal elements,general,cpp,1,0
+3838,weighted word mapping,general,cpp,1,0
+3839,number of prefix connected groups,general,cpp,1,0
+3840,house robber V,general,cpp,2,0

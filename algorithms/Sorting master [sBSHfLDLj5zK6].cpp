@@ -15,7 +15,7 @@ class SortingMaster{
 private:
     static inline const int SEPARATOR_LINE_LENGTH = 30;
 
-    typedef unordered_map<string, void(*)(vector<int>&)> Str_FnPtr;
+    using Str_FnPtr = unordered_map<string, void(*)(vector<int>&)>;
 
     static const Str_FnPtr& getAlgoMap(){
         static const Str_FnPtr mp = {
@@ -487,7 +487,8 @@ private:
         const int colIdWidth = 6;
         const int colNameWidth = 16;
         const int colTimeWidth = 12;
-
+        
+        cout<<string(colIdWidth + colNameWidth + colTimeWidth, '-')<<endl;
         cout<<left
             <<setw(colIdWidth)<<"Rank"
             <<setw(colNameWidth)<<"Algorithm"
@@ -507,7 +508,7 @@ private:
                 <<setw(colTimeWidth)<<to_string(time_us).insert(0, to_string(maxTime).length() - to_string(time_us).length(), ' ')
                 <<endl;
                 
-        cout<<string(colIdWidth + colNameWidth + colTimeWidth, '-')<<endl;
+        cout<<string(colIdWidth + colNameWidth + colTimeWidth, '-')<<endl<<endl;
     }
 
     static bool validate_n(const int n){
@@ -549,6 +550,20 @@ private:
         return true;
     }
 
+    static bool validate_algoName(const string& algoName){
+        const auto& algoMap = getAlgoMap();
+        // find the iterator for the algo-name from map
+        const auto& itr = getAlgoMap().find(algoName); 
+
+        if(itr == algoMap.end()){
+            logImpMsg("Invalid algo name: " + algoName);
+            listAlgoNames();
+            return false;
+        }
+
+        return true;
+    }
+
     static bool validate_listSize(const vector<string>& list){
         if(list.empty()){
             logImpMsg("Algo list cannot be empty");
@@ -558,25 +573,34 @@ private:
         return true;
     }
 
+    static int calculateAlgoRunTime_us_internal(vector<int>& nums, const string& algoName){
+        const auto& itr = getAlgoMap().find(algoName);
+        const auto startTime = chrono::high_resolution_clock::now();
+
+        itr->second(nums); // run the actual sorting function
+
+        const auto endTime = chrono::high_resolution_clock::now();
+        const auto duration = chrono::duration_cast<chrono::microseconds>(endTime - startTime);
+
+        return duration.count();
+    }
+
     // single point of source for every public benchmark method
     static bool runBenchmark_root(const int n, const int minVal, const int maxVal, const int iterations, const unordered_set<string>& algoNames){
-        logMsg("Running Benchmark... (for n = " + to_string(n) + ")" + 
+        logMsg("\nRunning Benchmark... (for n = " + to_string(n) + ")" + 
             (iterations > 1 ? ", (" + to_string(iterations) + " iterations)" : ""));
         
-        // algo-name -> total time (in microsec) to run (for iterations)
+        // algo-name -> total time (in micro-sec) to run (for iterations)
         unordered_map<string, int> algoRunTimeMap;
         
-        ENABLE_LOG = false;
         for(int t=1; t<=iterations; t++){
             vector<int> nums = generateRandomVector(n, minVal, maxVal);
 
             for(const auto& algoName: algoNames){
                 vector<int> temp = nums;
-                    
-                algoRunTimeMap[algoName] += calculateAlgoRunTime_us(temp, algoName);
+                algoRunTimeMap[algoName] += calculateAlgoRunTime_us_internal(temp, algoName);
             }
         }
-        ENABLE_LOG = true;
 
         vector<pair<int, string>> algoRunTimes;
         for(const auto& [algoName, totalTime]: algoRunTimeMap)
@@ -585,7 +609,6 @@ private:
         sort(algoRunTimes.begin(), algoRunTimes.end());
         
         printBenchmarkResults(algoRunTimes);
-        logMsg("");
 
         return true;
     }
@@ -610,68 +633,73 @@ public:
             
         return nums;
     }
+
+    static bool isSorted(const vector<int>& nums){
+        for(int i=1; i<nums.size(); i++)
+            if(nums[i-1] > nums[i])
+                return false;
+        
+        return true;
+    }
     
     static void printVector(const vector<int>& nums){
         for(const int num: nums)
-            cout<<num<<" ";
-        cout<<endl;
+            logMsg(to_string(num), false);
+        logMsg("");
     }
     
     static void listAlgoNames(){
         const auto& mp = getAlgoMap();
+        vector<string> algoNames;
+        for(const auto& [algoName, _]: mp)
+            algoNames.push_back(algoName);
+
+        sort(algoNames.begin(), algoNames.end());
+
+        logMsg("Available sorting algos: ");
         int id = 1;
-        
-        for(const auto& [algoName, _]: mp){
-            cout<<id<<". "<<algoName;
-            if(id++ < (int)mp.size())
-                cout<<", ";
+        for(const string& algoName: algoNames){
+            logMsg(to_string(id) + ". " + algoName);
+            id++;
         }
-        
-        cout<<endl;
+        logMsg(string(SEPARATOR_LINE_LENGTH, '-'));
     }
 
     static bool runAlgo(vector<int>& nums, const string& algoName){
         const int n = nums.size();
-        if(!validate_n(n))
+        if(!validate_n(n) || !validate_algoName(algoName))
             return false;
 
-        const auto& mp = getAlgoMap();
-        
-        const auto itr = mp.find(algoName);
-
-        if(itr == mp.end()){
-            logImpMsg("Invalid algo. name: " + algoName);
-            logImpMsg("Available algo. names: ");
-            listAlgoNames();
-            cout<<string(SEPARATOR_LINE_LENGTH, '-')<<endl<<endl;
-            return false;
-        }
+        const auto& itr = getAlgoMap().find(algoName);
         
         logMsg("Before Sorting: ");
-        if(ENABLE_LOG)
-            printVector(nums);
+        printVector(nums);
         logMsg("Running " + algoName + "-sort... ");
 
-        itr->second(nums);
+        itr->second(nums); // run the actual sorting function
+
+        if(!isSorted(nums)){
+            logImpMsg(algoName + " failed!");
+            return false;
+        }
 
         logMsg("After Sorting: ");
-        if(ENABLE_LOG){
-            printVector(nums);
-            cout<<string(SEPARATOR_LINE_LENGTH, '-')<<endl<<endl;
-        }
+        printVector(nums);
+        logMsg(string(SEPARATOR_LINE_LENGTH, '-'));
         
         return true;
     }
 
     static int calculateAlgoRunTime_us(vector<int>& nums, const string& algoName){
-        const auto startTime = chrono::high_resolution_clock::now();
+        const int n = nums.size();
+        if(!validate_n(n) || !validate_algoName(algoName))
+            return -1;
 
-        runAlgo(nums, algoName);
+        int time_us = calculateAlgoRunTime_us_internal(nums, algoName);
+        logMsg(format("Time to sort a vector of size {} using {}-sort = {} us.", n, algoName, time_us));
+        logMsg(string(SEPARATOR_LINE_LENGTH, '-'));
 
-        const auto endTime = chrono::high_resolution_clock::now();
-        const auto duration = chrono::duration_cast<chrono::microseconds>(endTime - startTime);
-
-        return duration.count();
+        return time_us;
     }
 
     // run all the algos to benchmark (for specified iterations)
@@ -708,14 +736,19 @@ public:
 };
 
 int main() {
+    // Part-1: List all the available srting algorithms
+    // SortingMaster::listAlgoNames();
+
+    // Part-2: Generate a random vector or declare a vector of choice
     // vector<int> nums = {-1, -99};
-    // vector<int> nums = SortingMaster::generateRandomVector(12, -100, 100);
+    vector<int> nums = SortingMaster::generateRandomVector(16, -100, 100);
     
+    // Part-3: Run the actual sorting algorithm
     // SortingMaster::runAlgo(nums, "bubble");
     // SortingMaster::runAlgo(nums, "selection");
     // SortingMaster::runAlgo(nums, "insertion");
     // SortingMaster::runAlgo(nums, "shell");
-    // SortingMaster::runAlgo(nums, "merge");
+    SortingMaster::runAlgo(nums, "merge");
     // SortingMaster::runAlgo(nums, "heap");
     // SortingMaster::runAlgo(nums, "heap_iterative");
     // SortingMaster::runAlgo(nums, "quick");
@@ -724,15 +757,21 @@ int main() {
     // SortingMaster::runAlgo(nums, "counting");
     // SortingMaster::runAlgo(nums, "radix");
     // SortingMaster::runAlgo(nums, "radix_bucket");
+    // SortingMaster::runAlgo(nums, "mergeee");
+
+    // Part-4: Find the time taken to run the sorting a specific algorithm
+    string algoName = "merge";
+    // string algoName = "mergezzz";
+    int time_us = SortingMaster::calculateAlgoRunTime_us(nums, algoName);
     
-    SortingMaster::runBenchmark(1300, -1000, 1000);
+    // Part-5: Run benchmark for all the algorithms for 1 or multiple iterations
+    // SortingMaster::runBenchmark(1300, -1000, 1000);
     SortingMaster::runBenchmark(1300, -1000, 1000, 12);
 
+    // Part-6: Run benchmark for specified algorithms for 1 or multiple iterations
     SortingMaster::runSpecificBenchmark(1300, -1000, 1000, {"bubble", "selection", "insertion", "shell"});
     SortingMaster::runSpecificBenchmark(1300, -1000, 1000, {"merge", "heap", "heap_iterative", "quick", "quick_tail"}, 12);
     SortingMaster::runSpecificBenchmark(1300, -1000, 1000, {"pigeonhole", "counting", "radix", "radix_bucket"}, 10);
-    
-    // SortingMaster::runAlgo(nums, "wrong_name");
         
     return 0;
 }

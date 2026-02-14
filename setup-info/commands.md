@@ -1,14 +1,16 @@
 ## Commands
 
-### Run 'stats-generator.sh'
+### Run 'stats-generator-script.sh'
 ```
 ./stats/generator/stats-generator-script.sh
 ```
 
 #### Give permissions (before running)
 ```
-chmod +x ./stats/generator/stats-generator.sh
+chmod +x ./stats/generator/stats-generator-script.sh
 ```
+
+---
 
 ### Run 'stats-generator.js'
 ```
