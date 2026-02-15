@@ -8,6 +8,8 @@
 #include <algorithm>
 #include <iomanip>
 #include <format>
+#include <fstream>
+#include <filesystem>
 
 using namespace std;
 
@@ -487,34 +489,6 @@ private:
             cout<<endl;
     }
 
-    static void printBenchmarkResults(const vector<pair<int, string>>& times){
-        const int colIdWidth = 6;
-        const int colNameWidth = 16;
-        const int colTimeWidth = 12;
-        
-        cout<<string(colIdWidth + colNameWidth + colTimeWidth, '-')<<endl;
-        cout<<left
-            <<setw(colIdWidth)<<"Rank"
-            <<setw(colNameWidth)<<"Algorithm"
-            <<setw(colTimeWidth)<<"Time (in us)"
-            <<endl;
-        cout<<string(colIdWidth + colNameWidth + colTimeWidth, '-')<<endl;
-
-        int maxTime = 0;
-        for(const auto& [time_us, _]: times)
-            maxTime = max(maxTime, time_us);
-
-        int rank = 1;
-        for(const auto& [time_us, algoName]: times)
-            cout<<left
-                <<setw(colIdWidth)<<rank++
-                <<setw(colNameWidth)<<algoName
-                <<setw(colTimeWidth)<<to_string(time_us).insert(0, to_string(maxTime).length() - to_string(time_us).length(), ' ')
-                <<endl;
-                
-        cout<<string(colIdWidth + colNameWidth + colTimeWidth, '-')<<endl<<endl;
-    }
-
     static bool validate_n(const int n){
         const int MAX_VEC_SIZE = 100000; // 10^5
 
@@ -577,6 +551,54 @@ private:
         return true;
     }
 
+    static string getCurrentTimestamp_UTC(){
+        const auto now = chrono::system_clock::now();
+        const auto ms = chrono::duration_cast<chrono::milliseconds>(now.time_since_epoch()) % 1000;
+
+        return format("{:%Y-%m-%d-%H-%M-%S}-{:03}", floor<chrono::seconds>(now), ms.count());
+    }
+
+    static bool exportBenchmarkResultToCSV(const vector<pair<int, string>>& times, const int n, const int minVal, const int maxVal, const int iterations){
+        const string filename = "Benchmark-result_" + getCurrentTimestamp_UTC() + ".csv";
+        const filesystem::path dirPath = "./algorithms/generated";
+
+        // Make sure the dir exists
+        error_code ec;
+        filesystem::create_directories(dirPath, ec);
+        if(ec){ // cannot create directory
+            logImpMsg("Failed to create directory");
+            return false;   
+        }
+
+        const filesystem::path filePath = dirPath / filename;
+
+        ofstream out(filePath, ios::out | ios::trunc);
+        
+        if(!out.is_open()){ // cannot open file
+            logImpMsg("Failed to open file: " + filename);
+            return false;
+        }
+
+        const string headerRow = "Rank,Algorithm,Time (in us)\n";
+        out<<headerRow;
+
+        int id = 1;
+        for(const auto& [time_us, algoName]: times){
+            const string row = format("{},{},{}\n", id++, algoName, time_us);
+            out<<row;
+        }
+
+        out<<"\n";
+        const string footerHeader = "n,minVal,maxVal,iterations\n";
+        out<<footerHeader;
+        const string footerRow = format("{},{},{},{}\n", n, minVal, maxVal, iterations);
+        out<<footerRow;
+
+        out.close();
+
+        return out.good(); // status
+    }
+
     static int calculateAlgoRunTime_us_internal(vector<int>& nums, const string& algoName){
         const auto& itr = SortingMasterAlgos::getAlgoMap().find(algoName);
         const auto startTime = chrono::high_resolution_clock::now();
@@ -589,8 +611,36 @@ private:
         return duration.count();
     }
 
+    static void printBenchmarkResults(const vector<pair<int, string>>& times){
+        const int colIdWidth = 6;
+        const int colNameWidth = 16;
+        const int colTimeWidth = 12;
+        
+        cout<<string(colIdWidth + colNameWidth + colTimeWidth, '-')<<endl;
+        cout<<left
+            <<setw(colIdWidth)<<"Rank"
+            <<setw(colNameWidth)<<"Algorithm"
+            <<setw(colTimeWidth)<<"Time (in us)"
+            <<endl;
+        cout<<string(colIdWidth + colNameWidth + colTimeWidth, '-')<<endl;
+
+        int maxTime = 0;
+        for(const auto& [time_us, _]: times)
+            maxTime = max(maxTime, time_us);
+
+        int rank = 1;
+        for(const auto& [time_us, algoName]: times)
+            cout<<left
+                <<setw(colIdWidth)<<rank++
+                <<setw(colNameWidth)<<algoName
+                <<setw(colTimeWidth)<<to_string(time_us).insert(0, to_string(maxTime).length() - to_string(time_us).length(), ' ')
+                <<endl;
+                
+        cout<<string(colIdWidth + colNameWidth + colTimeWidth, '-')<<endl<<endl;
+    }
+
     // single point of source for every public benchmark method
-    static bool runBenchmark_root(const int n, const int minVal, const int maxVal, const int iterations, const unordered_set<string>& algoNames){
+    static bool runBenchmark_root(const int n, const int minVal, const int maxVal, const int iterations, const unordered_set<string>& algoNames, const bool exportCSV){
         logMsg("\nRunning Benchmark... (for n = " + to_string(n) + ")" + 
             (iterations > 1 ? ", (" + to_string(iterations) + " iterations)" : ""));
         
@@ -619,6 +669,9 @@ private:
         sort(algoRunTimes.begin(), algoRunTimes.end());
         
         printBenchmarkResults(algoRunTimes);
+
+        if(exportCSV)
+            exportBenchmarkResultToCSV(algoRunTimes, n, minVal, maxVal, iterations);
 
         return true;
     }
@@ -713,7 +766,7 @@ public:
     }
 
     // run all the algos to benchmark (for specified iterations)
-    static bool runBenchmark(const int n, const int minVal, const int maxVal, const int iterations = 1){
+    static bool runBenchmark(const int n, const int minVal, const int maxVal, const int iterations = 1, const bool exportCSV = false){
         if(!validate_n(n) || !validate_minMaxInt(minVal, maxVal) || !validate_iterations(iterations))
             return false;
 
@@ -722,11 +775,11 @@ public:
         for(const auto& [algoName, _]: algoMap)
             algoNames.insert(algoName);
         
-        return runBenchmark_root(n, minVal, maxVal, iterations, algoNames);
+        return runBenchmark_root(n, minVal, maxVal, iterations, algoNames, exportCSV);
     }
 
     // run only specific algos to benchmark (for specified iterations)
-    static bool runSpecificBenchmark(const int n, const int minVal, const int maxVal, const vector<string>& algoList, const int iterations = 1){
+    static bool runSpecificBenchmark(const int n, const int minVal, const int maxVal, const vector<string>& algoList, const int iterations = 1, const bool exportCSV = false){
         if(!validate_n(n) || !validate_minMaxInt(minVal, maxVal) || !validate_iterations(iterations) || !validate_listSize(algoList))
             return false;
 
@@ -741,7 +794,7 @@ public:
             return false;
         }
 
-        return runBenchmark_root(n, minVal, maxVal, iterations, validAlgoNames);
+        return runBenchmark_root(n, minVal, maxVal, iterations, validAlgoNames, exportCSV);
     }
 };
 
@@ -758,7 +811,7 @@ int main() {
     // SortingMaster::runAlgo(nums, "selection");
     // SortingMaster::runAlgo(nums, "insertion");
     // SortingMaster::runAlgo(nums, "shell");
-    // SortingMaster::runAlgo(nums, "merge");
+    SortingMaster::runAlgo(nums, "merge");
     // SortingMaster::runAlgo(nums, "heap");
     // SortingMaster::runAlgo(nums, "heap_iterative");
     // SortingMaster::runAlgo(nums, "quick");
@@ -766,7 +819,7 @@ int main() {
     // SortingMaster::runAlgo(nums, "pigeonhole");
     // SortingMaster::runAlgo(nums, "counting");
     // SortingMaster::runAlgo(nums, "radix");
-    SortingMaster::runAlgo(nums, "radix_bucket");
+    // SortingMaster::runAlgo(nums, "radix_bucket");
     // SortingMaster::runAlgo(nums, "mergeee");
 
     // Part-4: Find the time taken to run the sorting a specific algorithm
@@ -775,13 +828,14 @@ int main() {
     int time_us = SortingMaster::calculateAlgoRunTime_us(nums, algoName);
     
     // Part-5: Run benchmark for all the algorithms for 1 or multiple iterations
-    // SortingMaster::runBenchmark(1300, -1000, 1000);
-    SortingMaster::runBenchmark(1300, -1000, 1000, 12);
+    SortingMaster::runBenchmark(1300, -1000, 1000);
+    SortingMaster::runBenchmark(1300, -1000, 1000, 10);
+    SortingMaster::runBenchmark(1300, -1000, 1000, 12, true);
 
     // Part-6: Run benchmark for specified algorithms for 1 or multiple iterations
     SortingMaster::runSpecificBenchmark(1300, -1000, 1000, {"bubble", "selection", "insertion", "shell"});
-    SortingMaster::runSpecificBenchmark(1300, -1000, 1000, {"merge", "heap", "heap_iterative", "quick", "quick_tail"}, 12);
-    SortingMaster::runSpecificBenchmark(1300, -1000, 1000, {"pigeonhole", "counting", "radix", "radix_bucket"}, 10);
+    SortingMaster::runSpecificBenchmark(1300, -1000, 1000, {"merge", "heap", "heap_iterative", "quick", "quick_tail"}, 10);
+    SortingMaster::runSpecificBenchmark(1300, -1000, 1000, {"pigeonhole", "counting", "radix", "radix_bucket"}, 12, true);
         
     return 0;
 }

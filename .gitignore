@@ -1,6 +1,7 @@
 algorithms/markdown
-
 algorithms/compiled
+algorithms/generated
+
 misc/cpp/compiled
 
 # python virtual-environment
