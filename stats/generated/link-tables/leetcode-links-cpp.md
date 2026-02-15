@@ -1634,3 +1634,5 @@
 |3838 | weighted word mapping |[L1](<../../../CPP [3501-4000]/3838.weighted_word_mapping [1].cpp>) |general|
 |3839 | number of prefix connected groups |[L1](<../../../CPP [3501-4000]/3839.number_of_prefix_connected_groups [1].cpp>) |general|
 |3840 | house robber V |[L1](<../../../CPP [3501-4000]/3840.house_robber_V [1].cpp>) [L2](<../../../CPP [3501-4000]/3840.house_robber_V [2].cpp>) |general|
+|3842 | toggle light bulbs |[L1](<../../../CPP [3501-4000]/3842.toggle_light_bulbs [1].cpp>) |general|
+|3843 | first element with unique frequency |[L1](<../../../CPP [3501-4000]/3843.first_element_with_unique_frequency [1].cpp>) |general|

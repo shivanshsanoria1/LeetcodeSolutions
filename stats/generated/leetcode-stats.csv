@@ -1859,3 +1859,5 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 3838,weighted word mapping,general,cpp,1,0
 3839,number of prefix connected groups,general,cpp,1,0
 3840,house robber V,general,cpp,2,0
+3842,toggle light bulbs,general,cpp,1,0
+3843,first element with unique frequency,general,cpp,1,0

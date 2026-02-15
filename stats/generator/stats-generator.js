@@ -348,7 +348,7 @@ async function updateStatsinReadmeFile(totalProblemCount, totalLanguageCounter) 
 async function generateStats() {
 	try {
 		const startTime = Date.now();
-		console.log(`Solutions Stat Generation Started at: ${new Date().toISOString()}`);
+		console.log(`[${new Date().toISOString()}]: Solutions Stat Generation Started.`);
 
 		const statsMap = await generateStatsMap();
 
@@ -371,7 +371,7 @@ async function generateStats() {
 
 		await updateStatsinReadmeFile(totalProblemCount, totalLanguageCounter);
 
-		console.log(`Solutions Stat Generation Completed at: ${new Date().toISOString()}`);
+		console.log(`[${new Date().toISOString()}]: Solutions Stat Generation Completed.`);
 		const endTime = Date.now();
 		console.log(`Time Taken to Generate Solution stats = ${endTime - startTime} ms`);
 	} catch (err) {

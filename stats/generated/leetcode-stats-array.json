@@ -22365,5 +22365,29 @@
 	},
 	"isAccepted": true,
 	"type": "general"
+},
+{
+	"quesId": 3842,
+	"title": "toggle light bulbs",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3843,
+	"title": "first element with unique frequency",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
 }
 ]
