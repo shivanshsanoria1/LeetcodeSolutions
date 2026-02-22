@@ -1636,3 +1636,6 @@
 |3840 | house robber V |[L1](<../../../CPP [3501-4000]/3840.house_robber_V [1].cpp>) [L2](<../../../CPP [3501-4000]/3840.house_robber_V [2].cpp>) |general|
 |3842 | toggle light bulbs |[L1](<../../../CPP [3501-4000]/3842.toggle_light_bulbs [1].cpp>) |general|
 |3843 | first element with unique frequency |[L1](<../../../CPP [3501-4000]/3843.first_element_with_unique_frequency [1].cpp>) |general|
+|3847 | find the score difference in a game |[L1](<../../../CPP [3501-4000]/3847.find_the_score_difference_in_a_game [1].cpp>) |general|
+|3848 | check digitorial permutation |[L1](<../../../CPP [3501-4000]/3848.check_digitorial_permutation [1].cpp>) [L2](<../../../CPP [3501-4000]/3848.check_digitorial_permutation [2].cpp>) |general|
+|3849 | maximum bitwise XOR after rearrangement |[L1](<../../../CPP [3501-4000]/3849.maximum_bitwise_XOR_after_rearrangement [1].cpp>) |general|

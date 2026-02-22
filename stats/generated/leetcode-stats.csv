@@ -1861,3 +1861,6 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 3840,house robber V,general,cpp,2,0
 3842,toggle light bulbs,general,cpp,1,0
 3843,first element with unique frequency,general,cpp,1,0
+3847,find the score difference in a game,general,cpp,1,0
+3848,check digitorial permutation,general,cpp,2,0
+3849,maximum bitwise XOR after rearrangement,general,cpp,1,0

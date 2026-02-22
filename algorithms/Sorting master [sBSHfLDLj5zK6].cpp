@@ -799,7 +799,7 @@ public:
 };
 
 int main() {
-    // Part-1: List all the available srting algorithms
+    // Part-1: List all the available sorting algorithms
     // SortingMaster::listAlgoNames();
 
     // Part-2: Generate a random vector or declare a vector of choice
@@ -827,14 +827,20 @@ int main() {
     // string algoName = "mergezzz";
     int time_us = SortingMaster::calculateAlgoRunTime_us(nums, algoName);
     
-    // Part-5: Run benchmark for all the algorithms for 1 or multiple iterations
+    // Part-5: Run benchmark for all the algorithms for:
+    // 5.1: 1 iteration
     SortingMaster::runBenchmark(1300, -1000, 1000);
+    // 5.2: multiple iterations
     SortingMaster::runBenchmark(1300, -1000, 1000, 10);
+    // 5.3: multiple iterations and generate csv
     SortingMaster::runBenchmark(1300, -1000, 1000, 12, true);
 
-    // Part-6: Run benchmark for specified algorithms for 1 or multiple iterations
+    // Part-6: Run benchmark for specified algorithms for:
+    // 6.1: 1 iteration
     SortingMaster::runSpecificBenchmark(1300, -1000, 1000, {"bubble", "selection", "insertion", "shell"});
+    // 6.2: multiple iterations
     SortingMaster::runSpecificBenchmark(1300, -1000, 1000, {"merge", "heap", "heap_iterative", "quick", "quick_tail"}, 10);
+    // 6.3: multiple iterations and generate csv
     SortingMaster::runSpecificBenchmark(1300, -1000, 1000, {"pigeonhole", "counting", "radix", "radix_bucket"}, 12, true);
         
     return 0;

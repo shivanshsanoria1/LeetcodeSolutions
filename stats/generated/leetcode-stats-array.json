@@ -22389,5 +22389,41 @@
 	},
 	"isAccepted": true,
 	"type": "general"
+},
+{
+	"quesId": 3847,
+	"title": "find the score difference in a game",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3848,
+	"title": "check digitorial permutation",
+	"counter": {
+		"cpp": {
+			"accepted": 2,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3849,
+	"title": "maximum bitwise XOR after rearrangement",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
 }
 ]
