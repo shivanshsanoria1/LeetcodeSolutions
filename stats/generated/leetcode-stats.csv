@@ -24,7 +24,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 25,reverse nodes in K group,general,cpp,2,0
 26,remove duplicates from sorted array,general,cpp,1,0
 27,remove element,general,cpp,1,0
-28,find the index of the first occurence in a string,general,cpp,2,0
+28,find the index of the first occurence in a string,general,cpp,3,0
 29,divide two integers,general,cpp,1,2
 31,next permutation,general,cpp,2,0
 33,search in rotated sorted array,general,cpp,1,0
@@ -1864,3 +1864,5 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 3847,find the score difference in a game,general,cpp,1,0
 3848,check digitorial permutation,general,cpp,2,0
 3849,maximum bitwise XOR after rearrangement,general,cpp,1,0
+3852,smallest pair with different frequencies,general,cpp,2,0
+3853,merge close characters,general,cpp,1,0

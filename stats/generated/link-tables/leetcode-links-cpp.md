@@ -25,7 +25,7 @@
 |25 | reverse nodes in K group |[L1](<../../../CPP [0001-0500]/25.reverse_nodes_in_K_group [1].cpp>) [L2](<../../../CPP [0001-0500]/25.reverse_nodes_in_K_group [2].cpp>) |general|
 |26 | remove duplicates from sorted array |[L1](<../../../CPP [0001-0500]/26.remove_duplicates_from_sorted_array [1].cpp>) |general|
 |27 | remove element |[L1](<../../../CPP [0001-0500]/27.remove_element [1].cpp>) |general|
-|28 | find the index of the first occurence in a string |[L1](<../../../CPP [0001-0500]/28.find_the_index_of_the_first_occurence_in_a_string [1].cpp>) [L2](<../../../CPP [0001-0500]/28.find_the_index_of_the_first_occurence_in_a_string [2].cpp>) |general|
+|28 | find the index of the first occurence in a string |[L1](<../../../CPP [0001-0500]/28.find_the_index_of_the_first_occurence_in_a_string [1].cpp>) [L2](<../../../CPP [0001-0500]/28.find_the_index_of_the_first_occurence_in_a_string [2].cpp>) [L3](<../../../CPP [0001-0500]/28.find_the_index_of_the_first_occurence_in_a_string [3].cpp>) |general|
 |29 | divide two integers |[L1](<../../../CPP [0001-0500]/29.divide_two_integers [1].cpp>) |general|
 |31 | next permutation |[L1](<../../../CPP [0001-0500]/31.next_permutation [1].cpp>) [L2](<../../../CPP [0001-0500]/31.next_permutation [2].cpp>) |general|
 |33 | search in rotated sorted array |[L1](<../../../CPP [0001-0500]/33.search_in_rotated_sorted_array [1].cpp>) |general|
@@ -1639,3 +1639,5 @@
 |3847 | find the score difference in a game |[L1](<../../../CPP [3501-4000]/3847.find_the_score_difference_in_a_game [1].cpp>) |general|
 |3848 | check digitorial permutation |[L1](<../../../CPP [3501-4000]/3848.check_digitorial_permutation [1].cpp>) [L2](<../../../CPP [3501-4000]/3848.check_digitorial_permutation [2].cpp>) |general|
 |3849 | maximum bitwise XOR after rearrangement |[L1](<../../../CPP [3501-4000]/3849.maximum_bitwise_XOR_after_rearrangement [1].cpp>) |general|
+|3852 | smallest pair with different frequencies |[L1](<../../../CPP [3501-4000]/3852.smallest_pair_with_different_frequencies [1].cpp>) [L2](<../../../CPP [3501-4000]/3852.smallest_pair_with_different_frequencies [2].cpp>) |general|
+|3853 | merge close characters |[L1](<../../../CPP [3501-4000]/3853.merge_close_characters [1].cpp>) |general|

@@ -304,7 +304,7 @@
 	"title": "find the index of the first occurence in a string",
 	"counter": {
 		"cpp": {
-			"accepted": 2,
+			"accepted": 3,
 			"unaccepted": 0
 		}
 	},
@@ -22417,6 +22417,30 @@
 {
 	"quesId": 3849,
 	"title": "maximum bitwise XOR after rearrangement",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3852,
+	"title": "smallest pair with different frequencies",
+	"counter": {
+		"cpp": {
+			"accepted": 2,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3853,
+	"title": "merge close characters",
 	"counter": {
 		"cpp": {
 			"accepted": 1,
