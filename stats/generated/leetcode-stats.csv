@@ -1866,3 +1866,5 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 3849,maximum bitwise XOR after rearrangement,general,cpp,1,0
 3852,smallest pair with different frequencies,general,cpp,2,0
 3853,merge close characters,general,cpp,1,0
+3856,trim trailing vowels,general,cpp+js,1+1,0+0
+3857,minimum cost to split into ones,general,cpp+js,1+1,0+0

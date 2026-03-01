@@ -22449,5 +22449,37 @@
 	},
 	"isAccepted": true,
 	"type": "general"
+},
+{
+	"quesId": 3856,
+	"title": "trim trailing vowels",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		},
+		"js": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3857,
+	"title": "minimum cost to split into ones",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		},
+		"js": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
 }
 ]

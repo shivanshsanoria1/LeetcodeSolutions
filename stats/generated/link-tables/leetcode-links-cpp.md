@@ -1641,3 +1641,5 @@
 |3849 | maximum bitwise XOR after rearrangement |[L1](<../../../CPP [3501-4000]/3849.maximum_bitwise_XOR_after_rearrangement [1].cpp>) |general|
 |3852 | smallest pair with different frequencies |[L1](<../../../CPP [3501-4000]/3852.smallest_pair_with_different_frequencies [1].cpp>) [L2](<../../../CPP [3501-4000]/3852.smallest_pair_with_different_frequencies [2].cpp>) |general|
 |3853 | merge close characters |[L1](<../../../CPP [3501-4000]/3853.merge_close_characters [1].cpp>) |general|
+|3856 | trim trailing vowels |[L1](<../../../CPP [3501-4000]/3856.trim_trailing_vowels [1].cpp>) |general|
+|3857 | minimum cost to split into ones |[L1](<../../../CPP [3501-4000]/3857.minimum_cost_to_split_into_ones [1].cpp>) |general|

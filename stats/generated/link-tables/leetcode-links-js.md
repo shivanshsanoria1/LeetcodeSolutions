@@ -71,3 +71,5 @@
 |3794 | reverse string prefix |[L1](<../../../Javascript/3794.reverse_string_prefix [1].js>) |general|
 |3798 | largest even number |[L1](<../../../Javascript/3798.largest_even_number [1].js>) |general|
 |3827 | count monobit integers |[L1](<../../../Javascript/3827.count_monobit_integers [1].js>) |general|
+|3856 | trim trailing vowels |[L1](<../../../Javascript/3856.trim_trailing_vowels [1].js>) |general|
+|3857 | minimum cost to split into ones |[L1](<../../../Javascript/3857.minimum_cost_to_split_into_ones [1].js>) |general|
