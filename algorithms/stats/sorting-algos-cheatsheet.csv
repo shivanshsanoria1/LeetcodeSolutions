@@ -1,0 +1,22 @@
+S.No.,Algorithm,T.C. (Best),T.C. (Avg),T.C. (Worst),S.C. (Worst),In-Place,Stable
+1,Bubble,O(n),O(n^2),O(n^2),O(1),Yes,Yes
+2,Selection,O(n^2),O(n^2),O(n^2),O(1),Yes,No
+3,Insertion,O(n),O(n^2),O(n^2),O(1),Yes,Yes
+4,Shell,O(n*log(n)),O(n^1.25) – O(n^1.50),O(n^2),O(1),Yes,No
+5,Merge,O(n*log(n)),O(n*log(n)),O(n*log(n)),O(n),No,Yes
+6,Heap,O(n*log(n)),O(n*log(n)),O(n*log(n)),O(log(n)),Yes,No
+7,Heap (Iterative),O(n*log(n)),O(n*log(n)),O(n*log(n)),O(1),Yes,No
+8,Quick,O(n*log(n)),O(n*log(n)),O(n^2),O(n),No,No
+9,Quick (Tail-optimized),O(n*log(n)),O(n*log(n)),O(n^2),O(log(n)),No,No
+10,Pigeonhole,O(n + r),O(n + r),O(n + r),O(r),No,Yes
+11,Counting,O(n + r),O(n + r),O(n + r),O(n + r),No,Yes
+12,Radix,O(m*(n+b)),O(m*(n+b)),O(m*(n+b)),O(n + b),No,Yes
+,,,,,,,
+Variables,Description,Formula,,,,,
+n,Size of Array,,,,,,
+r,Range of numbers = ,Max-val – Min-val + 1,,,,,
+m,Max number of digits in a number,,,,,,
+b,Base,10 (for decimal),,,,,
+,,,,,,,
+,Note:,,,,,,
+,log() has base 2,,,,,,

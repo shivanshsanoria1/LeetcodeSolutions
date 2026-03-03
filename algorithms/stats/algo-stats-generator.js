@@ -30,7 +30,9 @@ function generateMDlinksFileForAlgos(algos) {
 			for(const algo of algos){
 				const {id, title, difficulty} = algo
 
-				fileDataStringified += `| ${++i} | ${title} | ${difficulty} | `
+				const titleUrl = `<../${title} [${id}].cpp>`
+
+				fileDataStringified += `| ${++i} | [${title}](${titleUrl}) | ${difficulty} | `
 
 				const prerequisite = algo.linked && algo.linked.prerequisite ? algo.linked.prerequisite : []
 				const similar = algo.linked && algo.linked.similar ? algo.linked.similar : []
