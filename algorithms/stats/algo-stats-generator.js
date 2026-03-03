@@ -23,13 +23,14 @@ function generateMDlinksFileForAlgos(algos) {
 	return new Promise(async (resolve, reject) => {
 		try {
 			let fileDataStringified = '';
-			fileDataStringified += '| Title | Difficulty | Prerequisite | Similar | Followup |\n';
-			fileDataStringified += '| --- | --- | --- | --- | --- |\n';
-
+			fileDataStringified += '| S.No. | Title | Difficulty | Prerequisite | Similar | Followup |\n';
+			fileDataStringified += '| --- | --- | --- | --- | --- | --- |\n';
+			
+			let i=0
 			for(const algo of algos){
 				const {id, title, difficulty} = algo
 
-				fileDataStringified += `| ${title} | ${difficulty} | `
+				fileDataStringified += `| ${++i} | ${title} | ${difficulty} | `
 
 				const prerequisite = algo.linked && algo.linked.prerequisite ? algo.linked.prerequisite : []
 				const similar = algo.linked && algo.linked.similar ? algo.linked.similar : []
