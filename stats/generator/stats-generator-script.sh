@@ -4,16 +4,20 @@ START_MS=$(date +%s%3N)
 
 START_TIME=$(date -u +"%Y-%m-%d %H:%M:%S")
 echo "[$START_TIME] Started stat-generator script..."
-
 echo "--------------------"
+
 echo "Running node commands..."
 node ./stats/generator/stats-generator.js
-
 echo "--------------------"
+
 echo "Running python commands..."
 source ./stats/generator/.venv/bin/activate
 python3 ./stats/generator/chart-generator.py
 deactivate
+echo "--------------------"
+
+echo "Running node commands for algos ..."
+node ./algorithms/stats/algo-stats-generator.js
 echo "--------------------"
 
 END_TIME=$(date -u +"%Y-%m-%d %H:%M:%S")

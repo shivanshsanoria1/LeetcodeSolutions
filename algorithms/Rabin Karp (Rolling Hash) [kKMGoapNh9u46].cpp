@@ -6,13 +6,13 @@ using namespace std;
 
 class RabinKarp{
 private:
-    string s1;
+    static string s1;
     
     // prime num to limit the hash-val
-    const int MOD = int(1e9) + 7;
+    static inline const int MOD = int(1e9) + 7;
     // prime base to calculate hash
     // BASE should be a prime > max-distinct chars allowed in string (62)
-    const int BASE = 67;
+    static inline const int BASE = 67;
 
     // 'a'=1, 'b'=2, ..., 'z'=26
     // 'A'=27, 'B'=28, ..., 'Z'=52

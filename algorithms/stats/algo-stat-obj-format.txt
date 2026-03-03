@@ -1,0 +1,19 @@
+{
+	"id": <string>,
+	"title": <string>,
+	"difficulty": <integer>,
+	"linked": {
+		"prerequisite": [<string>],
+		"similar": [<string>],
+		"followup": [<string>]
+	}
+}
+
+------------------------------------------
+
+* "id", "title", "difficulty" are mandatory
+* "id": 13-digit random alphanumeric string
+* "title" must be the same as filename just without the [id] or extension at the end
+  so, if filename is "This is a sample title [abcdxyz].cpp" then title must be "this is a sample title"
+* "difficulty" is an integer from 1-5
+* any id inside "linked" must be present in the json file

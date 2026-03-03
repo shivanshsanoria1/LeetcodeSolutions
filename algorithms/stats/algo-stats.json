@@ -1,0 +1,250 @@
+[
+{
+	"id": "6MQEILcaXfD87",
+	"title": "Kruskal's algorithm (Minimum Spanning Tree)",
+	"difficulty": 4,
+	"linked": {
+		"prerequisite": ["yX14adIAuQBpL"],
+		"similar": ["S8rTWsLPwKfXy"],
+		"followup": ["KXlL0Vu6mtFPx"]
+	}
+},
+{
+	"id": "KXlL0Vu6mtFPx",
+	"title": "Kruskal's algorithm (Print the Minimum Spanning Tree)",
+	"difficulty": 4,
+	"linked": {
+		"prerequisite": ["6MQEILcaXfD87"]
+	}
+},
+{
+	"id": "XT5Wckzc26YEf",
+	"title": "Bellman Ford algorithm (Single Source Shortest Path)",
+	"difficulty": 3,
+	"linked": {
+		"similar": ["BvHx0cfWvgvxP"],
+		"followup": ["FlujlxgaNVnvs"]
+	}
+},
+{
+	"id": "r2vPgjyMxe1ao",
+	"title": "Binary Search",
+	"difficulty": 2,
+	"linked": {
+		"followup": ["2YE0VB5KxW3Xd"]
+	}
+},
+{
+	"id": "2YE0VB5KxW3Xd",
+	"title": "Binary Search with Index",
+	"difficulty": 3,
+	"linked": {
+		"prerequisite": ["r2vPgjyMxe1ao"]
+	}
+},
+{
+	"id": "9Qt6PtP63oPqb",
+	"title": "Boyer Moore Majority Voting algorithm (Find Majority Element in Array)",
+	"difficulty": 2
+},
+{
+	"id": "HxIEOA0A6ZlJn",
+	"title": "Breadth First Search in Graph (BFS)",
+	"difficulty": 2,
+	"linked": {
+		"similar": ["GHcdXRX8Ab7Hc"],
+		"followup": ["nl9l4eYuKU6qh"]
+	}
+},
+{
+	"id": "1J45rjT09Llge",
+	"title": "Breadth First Search in Tree (Level Order Traversal)",
+	"difficulty": 1,
+	"linked": {
+		"similar": ["PuqGZurXTXDIS"]
+	}
+},
+{
+	"id": "nl9l4eYuKU6qh",
+	"title": "Count Components in Graph (using BFS)",
+	"difficulty": 2,
+	"linked": {
+		"prerequisite": ["HxIEOA0A6ZlJn"]
+	}
+},
+{
+	"id": "H4o5htW7ZepX0",
+	"title": "Count Components in Graph (using DFS)",
+	"difficulty": 2,
+	"linked": {
+		"prerequisite": ["GHcdXRX8Ab7Hc"]
+	}
+},
+{
+	"id": "GHcdXRX8Ab7Hc",
+	"title": "Depth First Search in Graph (DFS)",
+	"difficulty": 2,
+	"linked": {
+		"similar": ["HxIEOA0A6ZlJn"],
+		"followup": ["H4o5htW7ZepX0"]
+	}
+},
+{
+	"id": "PuqGZurXTXDIS",
+	"title": "Depth First Search in Tree (Preorder, Inorder, Postorder Traversal)",
+	"difficulty": 1,
+	"linked": {
+		"similar": ["1J45rjT09Llge"]
+	}
+},
+{
+	"id": "XzgeV1OjcZL3q",
+	"title": "Dijkstra algoriithm (Print the Shortest Path Between Source and Destination)",
+	"difficulty": 4,
+	"linked": {
+		"prerequisite": ["BvHx0cfWvgvxP"]
+	}
+},
+{
+	"id": "BvHx0cfWvgvxP",
+	"title": "Dijkstra algoriithm (Single Source Shortest Path)",
+	"difficulty": 4,
+	"linked": {
+		"similar": ["XT5Wckzc26YEf"],
+		"followup": ["XzgeV1OjcZL3q"]
+	}
+},
+{
+	"id": "yX14adIAuQBpL",
+	"title": "Disjoint Set",
+	"difficulty": 4
+},
+{
+	"id": "eCTN8RlZ011Qx",
+	"title": "Euclidean algo for computing the GCD and LCM",
+	"difficulty": 2
+},
+{
+	"id": "vcS5xLzlYJMZt",
+	"title": "Floyd's Cycle Finding algorithm (Detect Cycle in Linked List)",
+	"difficulty": 3,
+	"linked": {
+		"followup": ["y07HxaFDGGaFM"]
+	}
+},
+{
+	"id": "y07HxaFDGGaFM",
+	"title": "Floyd's Cycle Finding algorithm (Find Start of Cycle in Linked List)",
+	"difficulty": 3,
+	"linked": {
+		"followup": ["vcS5xLzlYJMZt"]
+	}
+},
+{
+	"id": "YeuOqjhnDaBcj",
+	"title": "Floyd Warshall algorithm (All Source Shortest Path)",
+	"difficulty": 3
+},
+{
+	"id": "L1uSpWvoGEjCT",
+	"title": "Generate All Subarrays",
+	"difficulty": 1
+},
+{
+	"id": "MMlaJyAE6fMWJ",
+	"title": "Generate All Subsets using Backtracking",
+	"difficulty": 2
+},
+{
+	"id": "4E245KpZPBvQs",
+	"title": "Kadane's algorithm (Maximum Subarray Sum)",
+	"difficulty": 1
+},
+{
+	"id": "gBK4SKzJ6BHf8",
+	"title": "Kahn's algorithm (Topological Sort using BFS)",
+	"difficulty": 3,
+	"linked": {
+		"similar": ["F9Ka6LzzPduCO"]
+	}
+},
+{
+	"id": "tSH8fstxJZM6y",
+	"title": "Kosaraju's algorithm for Strongly Connected Components (SCC)",
+	"difficulty": 4
+},
+{
+	"id": "mhTGJ4z9BaV9y",
+	"title": "M Coloring problem",
+	"difficulty": 3
+},
+{
+	"id": "3wQrSikbRena0",
+	"title": "Monotone Chain algorithm (for Convex Hull)",
+	"difficulty": 4
+},
+{
+	"id": "UadhJBcknowZn",
+	"title": "Morris Traversal (Inorder, Preorder, Postorder)",
+	"difficulty": 5,
+	"linked": {
+		"prerequisite": ["PuqGZurXTXDIS"]
+	}
+},
+{
+	"id": "S8rTWsLPwKfXy",
+	"title": "Prim's algorithm (Minimum Spanning Tree)",
+	"difficulty": 4,
+	"linked": {
+		"similar": ["6MQEILcaXfD87"],
+		"followup": ["ds5G57wDDHAVM"]
+	}
+},
+{
+	"id": "ds5G57wDDHAVM",
+	"title": "Prim's algorithm (Print the Minimum Spanning Tree)",
+	"difficulty": 4,
+	"linked": {
+		"prerequisite": ["S8rTWsLPwKfXy"]
+	}
+},
+{
+	"id": "kKMGoapNh9u46",
+	"title": "Rabin Karp (Rolling Hash)",
+	"difficulty": 3
+},
+{
+	"id": "FlujlxgaNVnvs",
+	"title": "Shortest Path Faster algorithm (Single Source Shortest Path)",
+	"difficulty": 3,
+	"linked": {
+		"prerequisite": ["XT5Wckzc26YEf"]
+	}
+},
+{
+	"id": "nepcWGeZBv8Kd",
+	"title": "Sieve of Eratosthenes (Find Primes upto N)",
+	"difficulty": 2
+},
+{
+	"id": "F9Ka6LzzPduCO",
+	"title": "Topological sort (using DFS)",
+	"difficulty": 3,
+	"linked": {
+		"similar": ["gBK4SKzJ6BHf8"]
+	}
+},
+{
+	"id": "iOlUg8irXBR6M",
+	"title": "Transitive Closure of a graph (using Floyd warshall algorithm)",
+	"difficulty": 3,
+	"linked": {
+		"prerequisite": ["YeuOqjhnDaBcj"]
+	}
+},
+{
+	"id": "yzZXFN2DgxYCo",
+	"title": "Trie (Prefix tree)",
+	"difficulty": 3
+}
+]

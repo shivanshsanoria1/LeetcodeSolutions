@@ -560,7 +560,7 @@ private:
 
     static bool exportBenchmarkResultToCSV(const vector<pair<int, string>>& times, const int n, const int minVal, const int maxVal, const int iterations){
         const string filename = "Benchmark-result_" + getCurrentTimestamp_UTC() + ".csv";
-        const filesystem::path dirPath = "./algorithms/generated";
+        const filesystem::path dirPath = "./algorithms/stats/generated";
 
         // Make sure the dir exists
         error_code ec;
