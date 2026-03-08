@@ -1,15 +1,17 @@
 import json
-import config
 import matplotlib.pyplot as plt
 from datetime import datetime, timezone
 from collections import defaultdict
 from typing import List, Dict
 # ------------------------------ #
 
-maxQuesId = getattr(config, "MAX_QUES_ID", 0)
-enableLogger = getattr(config, "ENABLE_LOGGER", True)
-saveChart = getattr(config, "SAVE_CHART", True)
-showChart = getattr(config, "SHOW_CHART", False)
+with open('./stats/generator/config.json', 'r') as file:
+    config_data = json.load(file)
+
+MAX_QUES_ID = config_data.get("MAX_QUES_ID", 0)
+ENABLE_LOGGER = config_data.get("ENABLE_LOGGER", True)
+SAVE_CHART = config_data.get("SAVE_CHART", True)
+SHOW_CHART = config_data.get("SHOW_CHART", False)
 # ------------------------------ #
 
 def getColorHex(color: str) -> str:
@@ -45,16 +47,16 @@ def getCurrUTCstring() -> str:
 # ------------------------------ #
 
 def logMsg(msg) -> None:
-	if enableLogger:
+	if ENABLE_LOGGER:
 		print(msg)
 # ------------------------------ #
 
 def chartShowSave(plt, chartName: str) -> None:
-	if saveChart:
+	if SAVE_CHART:
 		filePath = f'./stats/generated/img/{chartName}.png'
 		plt.savefig(filePath, format = 'png') 
 
-	if showChart: 
+	if SHOW_CHART: 
 		plt.show()
 # ------------------------------ #
 
@@ -78,7 +80,7 @@ def generateTotalCounter(stats: List[Dict]) -> Dict:
 
 	counter["accepted"] = sum(1 for question in stats if question['isAccepted'])
 	counter["partiallyAccepted"] = len(stats) - counter["accepted"]
-	counter["unaccepted"] = maxQuesId - len(stats)
+	counter["unaccepted"] = MAX_QUES_ID - len(stats)
 
 	return counter
 # ------------------------------ #

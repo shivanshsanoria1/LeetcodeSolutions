@@ -1,6 +1,7 @@
 const path = require('node:path');
 const fs = require('node:fs/promises');
 
+const config = require('./config.json')
 const { languageModel } = require('./language-model.js');
 const { quesIdSetJSTS } = require('./ques-id-set-JS-TS.js');
 
@@ -308,11 +309,11 @@ async function updateStatsinReadmeFile(totalProblemCount, totalLanguageCounter) 
 			let statData = '';
 			statData += `Last updated on _${new Date().toUTCString()}_\n`;
 
-			statData += '### Total problems solved:\n';
-			statData += '| Accepted | Partially accepted | Link |\n';
-			statData += '| --- | --- | --- |\n';
+			statData += '### Total problems:\n';
+			statData += '| Accepted | Partially accepted | Total | Link |\n';
+			statData += '| --- | --- | --- | --- |\n';
 			const csvUrl = `./stats/generated/leetcode-stats.csv`;
-			statData += `| ${totalProblemCount.accepted} | ${totalProblemCount.unaccepted} | [csv](${csvUrl})|\n`;
+			statData += `| ${totalProblemCount.accepted} | ${totalProblemCount.unaccepted} | ${config.MAX_QUES_ID} | [csv](${csvUrl})|\n`;
 
 			statData += '### Total problems solved per language:\n';
 			statData += '| Language  | Accepted | Partially accepted | Links Table |\n';

@@ -6,8 +6,8 @@ S.No.,Algorithm,T.C. (Best),T.C. (Avg),T.C. (Worst),S.C. (Worst),In-Place,Stable
 5,Merge,O(n*log(n)),O(n*log(n)),O(n*log(n)),O(n),No,Yes
 6,Heap,O(n*log(n)),O(n*log(n)),O(n*log(n)),O(log(n)),Yes,No
 7,Heap (Iterative),O(n*log(n)),O(n*log(n)),O(n*log(n)),O(1),Yes,No
-8,Quick,O(n*log(n)),O(n*log(n)),O(n^2),O(n),No,No
-9,Quick (Tail-optimized),O(n*log(n)),O(n*log(n)),O(n^2),O(log(n)),No,No
+8,Quick,O(n*log(n)),O(n*log(n)),O(n^2),O(n),Yes,No
+9,Quick (Tail-optimized),O(n*log(n)),O(n*log(n)),O(n^2),O(log(n)),Yes,No
 10,Pigeonhole,O(n + r),O(n + r),O(n + r),O(r),No,Yes
 11,Counting,O(n + r),O(n + r),O(n + r),O(n + r),No,Yes
 12,Radix,O(m*(n+b)),O(m*(n+b)),O(m*(n+b)),O(n + b),No,Yes
