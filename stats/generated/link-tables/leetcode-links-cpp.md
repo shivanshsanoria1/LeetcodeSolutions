@@ -1644,3 +1644,5 @@
 |3855 | sum of K digit numbers in a range |[L1](<../../../CPP [3501-4000]/3855.sum_of_K_digit_numbers_in_a_range [1].cpp>) |general|
 |3856 | trim trailing vowels |[L1](<../../../CPP [3501-4000]/3856.trim_trailing_vowels [1].cpp>) |general|
 |3857 | minimum cost to split into ones |[L1](<../../../CPP [3501-4000]/3857.minimum_cost_to_split_into_ones [1].cpp>) |general|
+|3861 | minimum capacity box |[L1](<../../../CPP [3501-4000]/3861.minimum_capacity_box [1].cpp>) |general|
+|3862 | find the smallest balanced index |[L1](<../../../CPP [3501-4000]/3862.find_the_smallest_balanced_index [1].cpp>) |general|

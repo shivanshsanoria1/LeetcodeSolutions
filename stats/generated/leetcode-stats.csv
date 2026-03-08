@@ -1869,3 +1869,5 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 3855,sum of K digit numbers in a range,general,cpp,1,0
 3856,trim trailing vowels,general,cpp+js,1+1,0+0
 3857,minimum cost to split into ones,general,cpp+js,1+1,0+0
+3861,minimum capacity box,general,cpp,1,0
+3862,find the smallest balanced index,general,cpp,1,0

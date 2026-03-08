@@ -23,15 +23,15 @@ This repo contains solutions to over **1700** problems from [leetcode.com](https
 ## Stats
 
 <!-- UPDATE STATS HERE -->
-Last updated on _Sun, 01 Mar 2026 15:14:10 GMT_
+Last updated on _Sun, 08 Mar 2026 05:55:23 GMT_
 ### Total problems solved:
 | Accepted | Partially accepted | Link |
 | --- | --- | --- |
-| 1767 | 103 | [csv](./stats/generated/leetcode-stats.csv)|
+| 1769 | 103 | [csv](./stats/generated/leetcode-stats.csv)|
 ### Total problems solved per language:
 | Language  | Accepted | Partially accepted | Links Table |
 | --- | --- | --- | --- |
-| C++ | 1644 | 103 | [click](./stats/generated/link-tables/leetcode-links-cpp.md)
+| C++ | 1646 | 103 | [click](./stats/generated/link-tables/leetcode-links-cpp.md)
 | Javascript | 73 | 0 | [click](./stats/generated/link-tables/leetcode-links-js.md)
 | MySQL | 85 | 0 | [click](./stats/generated/link-tables/leetcode-links-mysql.md)
 <!-- UPDATE STATS HERE -->

@@ -7,7 +7,8 @@ function loadFromJSON() {
 			const jsonFilePath = path.join(__dirname, '..', '..', 'algorithms', 'stats', 'algo-stats.json')
 			const fileData = await fs.readFile(jsonFilePath, { encoding: "utf8" })
 			const algos = JSON.parse(fileData)
-
+			
+			// sort in ascending order by title
 			algos.sort((a, b) => a.title.localeCompare(b.title, undefined, { sensitivity: 'accent' }))
 
 			resolve(algos);
@@ -39,15 +40,16 @@ function generateMDlinksFileForAlgos(algos) {
 				const followup = algo.linked && algo.linked.followup ? algo.linked.followup : []
 				
 				const linked = [prerequisite, similar, followup]
+				const linkDisplayedPrefix = ['P', 'S', 'F']
 
-				for(const ids of linked){
+				for(const [idx, ids] of linked.entries()){
 					for(let i=0; i < ids.length; i++){
 						const algo = algos.find(({id}) => id === ids[i])
 		
 						const title = algo.title
 						const url = `<../${title} [${ids[i]}].cpp>`
 
-						fileDataStringified += `[L${i+1}](${url}) `
+						fileDataStringified += `[${linkDisplayedPrefix[idx]}${i+1}](${url}) `
 					}
 					fileDataStringified += "| "
 				}
