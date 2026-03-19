@@ -1873,5 +1873,6 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 3862,find the smallest balanced index,general,cpp,1,0
 3866,first unique even element,general,cpp,1,0
 3867,sum of gcd of formed pairs,general,cpp,1,0
+3868,minimum cost to equalize arrays using swaps,general,cpp,1,0
 3870,count commas in range,general,cpp,1,0
 3871,count commas in range II,general,cpp,1,0

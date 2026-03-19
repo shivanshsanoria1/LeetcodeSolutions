@@ -1648,5 +1648,6 @@
 |3862 | find the smallest balanced index |[L1](<../../../CPP [3501-4000]/3862.find_the_smallest_balanced_index [1].cpp>) |general|
 |3866 | first unique even element |[L1](<../../../CPP [3501-4000]/3866.first_unique_even_element [1].cpp>) |general|
 |3867 | sum of gcd of formed pairs |[L1](<../../../CPP [3501-4000]/3867.sum_of_gcd_of_formed_pairs [1].cpp>) |general|
+|3868 | minimum cost to equalize arrays using swaps |[L1](<../../../CPP [3501-4000]/3868.minimum_cost_to_equalize_arrays_using_swaps [1].cpp>) |general|
 |3870 | count commas in range |[L1](<../../../CPP [3501-4000]/3870.count_commas_in_range [1].cpp>) |general|
 |3871 | count commas in range II |[L1](<../../../CPP [3501-4000]/3871.count_commas_in_range_II [1].cpp>) |general|

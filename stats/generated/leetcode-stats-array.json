@@ -22543,6 +22543,18 @@
 	"type": "general"
 },
 {
+	"quesId": 3868,
+	"title": "minimum cost to equalize arrays using swaps",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
 	"quesId": 3870,
 	"title": "count commas in range",
 	"counter": {
