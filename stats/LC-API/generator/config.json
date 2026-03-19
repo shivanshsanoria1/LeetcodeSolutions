@@ -1,5 +1,7 @@
 {
-    "BASE_URL": "https://leetcode.com/graphql",
+    "API_URL": "https://leetcode.com/graphql",
+    "ORIGIN": "https://leetcode.com",
+    "REFERER": "https://leetcode.com/problems/",
     "PROBLEM_LIST_FILE": "leetcode-problem-list.json",
     "PROBLEM_LIST_DETAILED_FILE": "leetcode-problem-list-detailed.json",
     "REFRESH_PROBLEM_LIST_JSON": false,

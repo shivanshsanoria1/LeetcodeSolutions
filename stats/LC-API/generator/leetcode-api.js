@@ -101,12 +101,12 @@ async function fetchAllProblems() {
 
 		console.log('Fetching new problem list from Leetcode API...')
 
-		const res = await fetch(config.BASE_URL, {
+		const res = await fetch(config.API_URL, {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
-				"Origin": "https://leetcode.com",
-				"Referer": "https://leetcode.com/problemset/",
+				"Origin": config.ORIGIN,
+				"Referer": config.REFERER,
 				"User-Agent": "Mozilla/5.0"
 			},
 			body: JSON.stringify({ query })
@@ -202,12 +202,12 @@ async function fetchProblemDetailed(titleSlug) {
 			}
 		`;
 
-		const res = await fetch(config.BASE_URL, {
+		const res = await fetch(config.API_URL, {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
-				"Origin": "https://leetcode.com",
-				"Referer": "https://leetcode.com/problems/",
+				"Origin": config.ORIGIN,
+				"Referer": config.REFERER,
 				"User-Agent": "Mozilla/5.0"
 			},
 			body: JSON.stringify({
@@ -285,10 +285,10 @@ async function fetchStatsFromLC(){
 		console.log(`[${new Date().toISOString()}]: Leetcode stat fetching Started.`);
 
 		const problems = await fetchAllProblems();
-		console.log('Problems[] length = ' + problems.length)
+		console.log('Problem list length = ' + problems.length)
 
 		const problemsDetailed = await fetchProblemsDetailed(problems)
-		console.log('Detailed Problems[] length = ' + problemsDetailed.length)	
+		console.log('Detailed Problem list length = ' + problemsDetailed.length)	
 
 		console.log(`[${new Date().toISOString()}]: Leetcode stat fetching Completed.`);
 		const endTime = Date.now();
