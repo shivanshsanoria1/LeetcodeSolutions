@@ -1,0 +1,6 @@
+{
+    "PROBLEM_LIST_FILE": "leetcode-problem-list.json",
+    "PROBLEM_LIST_DETAILED_FILE": "leetcode-problem-list-detailed.json",
+    "FETCH_NEXT_COUNT": 10,
+    "LAST_UPDATED": "2026-03-19T05:36:33.111Z"
+}
