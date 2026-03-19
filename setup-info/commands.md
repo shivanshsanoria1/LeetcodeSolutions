@@ -65,24 +65,31 @@ node ./algorithms/stats/algo-stats-generator.js
 
 ---
 
-### 5. Push code to github repo
-#### 5.1
+### 5. Run 'leetcode-api.js'
+```
+node ./stats/LC-API/generator/leetcode-api.js
+```
+
+---
+
+### 6. Push code to github repo
+#### 6.1
 ```
 git add .
 ```
 
-#### 5.2
+#### 6.2
 ```
 git commit -m "message goes here"
 ```
 
-#### 5.3
-##### 5.3.1 First Time
+#### 6.3
+##### 6.3.1 First Time
 ```
 git push -u origin main
 ```
 
-##### 5.3.2 Subsequent
+##### 6.3.2 Subsequent
 ```
 git push
 ```

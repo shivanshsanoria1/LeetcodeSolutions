@@ -3,8 +3,6 @@ const fs = require('node:fs/promises');
 
 const config = require('./config.json')
 
-const URL = "https://leetcode.com/graphql";
-
 // don't forget to use await when calling this function
 async function readFromJSON(filePath, defaultValue = []) {
 	try {
@@ -14,8 +12,7 @@ async function readFromJSON(filePath, defaultValue = []) {
 		return JSON.parse(problemsJSON)
 	} catch (err) {
 		if (err.code === 'ENOENT') {
-			console.log(`JSON file not found. Creating new file at: ${filePath}`);
-
+			// console.log(`JSON file not found. Creating new file at: ${filePath}`);
 			await fs.writeFile(filePath, JSON.stringify(defaultValue, null, 4));
 
 			return defaultValue;
@@ -37,13 +34,49 @@ async function writeToJSON(filePath, data) {
 	}
 }
 
+// don't forget to use await when calling this function
+async function createBackupJSON(sourceFilePath) {
+	// ensure source file exists, create if missing
+    try {
+    	await fs.access(sourceFilePath);
+    } catch (err) {
+		if(err.code === "ENOENT"){
+			console.log("Source file does not exist. No backup created");
+			return null
+		}
+		throw err;
+    }
+
+	try {
+		const backupDirPath = path.join(__dirname, '..', 'generated', 'backup');
+
+		// ensure backup directory exists
+		await fs.mkdir(backupDirPath, { recursive: true });
+
+		const ext = path.extname(sourceFilePath);
+		const sourceFileName = path.basename(sourceFilePath, ext);
+		const timestamp = new Date().toISOString().replace(/[:.]/g, "-");
+		const backupFileName = `${sourceFileName} [${timestamp}]${ext}`;
+		const backupFilePath = path.join(backupDirPath, backupFileName)
+		
+		// create the backup file
+		await fs.rename(sourceFilePath, backupFilePath);	
+	} catch (err) {
+		console.log(err)
+		throw err
+	}
+}
+
 async function fetchAllProblems() {
 	try{
 		const filePath = path.join(__dirname, '..', 'generated', config.PROBLEM_LIST_FILE);
 
+		const lastUpdatedDatetime = new Date(config.LAST_UPDATED)
+
 		// last update was less than 7 days ago; don't fetch new data from API
-		if(config.LAST_UPDATED && config.LAST_UPDATED.trim() !== '' && 
-			Date.now() - new Date(config.LAST_UPDATED).getTime() < 7*24*60*60*1000){
+		if(!config.REFRESH_PROBLEM_LIST_JSON && 
+			lastUpdatedDatetime.toString() !== "Invalid Date" && 
+			Date.now() - lastUpdatedDatetime.getTime() < 7*24*60*60*1000){
 			console.log('Using the local version of problem-list')
 
 			return await readFromJSON(filePath)
@@ -68,7 +101,7 @@ async function fetchAllProblems() {
 
 		console.log('Fetching new problem list from Leetcode API...')
 
-		const res = await fetch(URL, {
+		const res = await fetch(config.BASE_URL, {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
@@ -100,6 +133,9 @@ async function fetchAllProblems() {
 
 		problems.sort((a, b) => Number(a.questionFrontendId) - Number(b.questionFrontendId));
 
+		// create a backup of the old json
+		await createBackupJSON(filePath)
+
 		await writeToJSON(filePath, problems)
 
 		config.LAST_UPDATED = new Date().toISOString()
@@ -116,54 +152,57 @@ async function fetchAllProblems() {
 	}
 }
 
-function parseProblem(problem){
-	function stripHTML(html) {
-		return html
-			.replace(/<[^>]+>/g, "") // remove tags
-			.replace(/\n+/g, "\n") // clean newlines
-			.replace(/\s+/g, " ") // normalize spaces
-			.trim();
-	}
+function parseDetailedProblem(problem){
+	const stats = JSON.parse(problem.stats)
 
 	return {
-		id: Number(problem.questionFrontendId),
+		id: parseInt(problem.questionFrontendId),
+		questionIdInternal: parseInt(problem.questionId),
 		title: problem.title,
 		slug: problem.titleSlug,
 		difficulty: problem.difficulty,
-		isPaid: problem.isPaidOnly,
-		acceptanceRate: Number(problem.acRate.toFixed(2)),
 		likes: problem.likes,
 		dislikes: problem.dislikes,
-		tags: problem.topicTags.map(tag => tag.name),
-		stats: problem.stats ? JSON.parse(problem.stats) : null,
+		acceptanceRate: Number(problem.acRate.toFixed(2)),
+		isPaid: problem.isPaidOnly,
+		stats: {
+			accepted: stats.totalAcceptedRaw,
+			submissions: stats.totalSubmissionRaw,
+			acceptedDisplayed: stats.totalAccepted,
+			submissionsDisplayed: stats.totalSubmission,
+			acceptanceRate: stats.acRate,
+		},
 		description: problem.content,
+		tags: problem.topicTags.map(tag => tag.name),
 	};
 }
 
 async function fetchProblemDetailed(titleSlug) {
 	try {
 		const query = `
-			query getQuestionDetail($titleSlug: String!) {
+			query getQuestionPublicData($titleSlug: String!) {
 				question(titleSlug: $titleSlug) {
+					questionId
 					questionFrontendId
 					title
 					titleSlug
 					difficulty
-					isPaidOnly
-					acRate
 					likes
 					dislikes
+					acRate
+					isPaidOnly
+					categoryTitle
 					stats
+					content
 					topicTags {
 						name
 						slug
 					}
-					content
 				}
 			}
 		`;
 
-		const res = await fetch(URL, {
+		const res = await fetch(config.BASE_URL, {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
@@ -193,7 +232,7 @@ async function fetchProblemDetailed(titleSlug) {
 			throw new Error("Problem not found");
 		}
 
-		return parseProblem(data.question);
+		return parseDetailedProblem(data.question);
 
 	} catch (err) {
 		console.log(err);
@@ -206,8 +245,17 @@ const sleep = (time_ms = 250) => new Promise((resolve) => setTimeout(resolve, ti
 async function fetchProblemsDetailed(problems) {
 	try{
 		const filePath = path.join(__dirname, '..', 'generated', config.PROBLEM_LIST_DETAILED_FILE);
-		const problemsDetailed = await readFromJSON(filePath)
-
+		let problemsDetailed = []
+		
+		if(config.REFRESH_PROBLEM_LIST_DETAILED_JSON){
+			// create a backup of the old json
+			await createBackupJSON(filePath)
+			// clear the main json
+			await writeToJSON(filePath, [])
+		}else{
+			problemsDetailed = await readFromJSON(filePath)
+		}
+		
 		if(problems.length === problemsDetailed.length)return problemsDetailed
 		else if(problems.length < problemsDetailed.length)throw new Error('Problems length mismatch')
 
@@ -237,8 +285,10 @@ async function fetchStatsFromLC(){
 		console.log(`[${new Date().toISOString()}]: Leetcode stat fetching Started.`);
 
 		const problems = await fetchAllProblems();
+		console.log('Problems[] length = ' + problems.length)
 
 		const problemsDetailed = await fetchProblemsDetailed(problems)
+		console.log('Detailed Problems[] length = ' + problemsDetailed.length)	
 
 		console.log(`[${new Date().toISOString()}]: Leetcode stat fetching Completed.`);
 		const endTime = Date.now();
