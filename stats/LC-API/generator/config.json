@@ -2,10 +2,11 @@
     "API_URL": "https://leetcode.com/graphql",
     "ORIGIN": "https://leetcode.com",
     "REFERER": "https://leetcode.com/problems/",
+    "API_DELAY_MS": 250,
     "PROBLEM_LIST_FILE": "leetcode-problem-list.json",
     "PROBLEM_LIST_DETAILED_FILE": "leetcode-problem-list-detailed.json",
-    "REFRESH_PROBLEM_LIST_JSON": false,
-    "REFRESH_PROBLEM_LIST_DETAILED_JSON": false,
+    "FORCE_REFRESH_PROBLEM_LIST": false,
+    "FORCE_REFRESH_PROBLEM_LIST_DETAILED": false,
     "FETCH_NEXT_COUNT": 100,
-    "LAST_UPDATED": "2026-03-19T16:17:58.307Z"
+    "LAST_UPDATED": "2026-03-21T14:29:35.624Z"
 }

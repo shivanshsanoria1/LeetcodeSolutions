@@ -12,14 +12,14 @@
 |12 | integer to roman |[L1](<../../../CPP [0001-0500]/12.integer_to_roman [1].cpp>) [L2](<../../../CPP [0001-0500]/12.integer_to_roman [2].cpp>) |general|
 |13 | roman to integer |[L1](<../../../CPP [0001-0500]/13.roman_to_integer [1].cpp>) |general|
 |14 | longest common prefix |[L1](<../../../CPP [0001-0500]/14.longest_common_prefix [1].cpp>) |general|
-|15 | 3 sum |[L1](<../../../CPP [0001-0500]/15.3_sum [1].cpp>) |general|
-|16 | 3 sum closest |[L1](<../../../CPP [0001-0500]/16.3_sum_closest [1].cpp>) [L2](<../../../CPP [0001-0500]/16.3_sum_closest [2].cpp>) |general|
+|15 | 3sum |[L1](<../../../CPP [0001-0500]/15.3sum [1].cpp>) |general|
+|16 | 3sum closest |[L1](<../../../CPP [0001-0500]/16.3sum_closest [1].cpp>) [L2](<../../../CPP [0001-0500]/16.3sum_closest [2].cpp>) |general|
 |17 | letter combinations of a phone number |[L1](<../../../CPP [0001-0500]/17.letter_combinations_of_a_phone_number [1].cpp>) |general|
-|18 | 4 sum |[L1](<../../../CPP [0001-0500]/18.4_sum [1].cpp>) |general|
+|18 | 4sum |[L1](<../../../CPP [0001-0500]/18.4sum [1].cpp>) |general|
 |19 | remove nth node from end of list |[L1](<../../../CPP [0001-0500]/19.remove_nth_node_from_end_of_list [1].cpp>) [L2](<../../../CPP [0001-0500]/19.remove_nth_node_from_end_of_list [2].cpp>) |general|
 |20 | valid parentheses |[L1](<../../../CPP [0001-0500]/20.valid_parentheses [1].cpp>) [L2](<../../../CPP [0001-0500]/20.valid_parentheses [2].cpp>) |general|
 |21 | merge two sorted lists |[L1](<../../../CPP [0001-0500]/21.merge_two_sorted_lists [1].cpp>) [L2](<../../../CPP [0001-0500]/21.merge_two_sorted_lists [2].cpp>) [L3](<../../../CPP [0001-0500]/21.merge_two_sorted_lists [3].cpp>) |general|
-|22 | generate parenthesis |[L1](<../../../CPP [0001-0500]/22.generate_parenthesis [1].cpp>) [L2](<../../../CPP [0001-0500]/22.generate_parenthesis [2].cpp>) [L3](<../../../CPP [0001-0500]/22.generate_parenthesis [3].cpp>) [L4](<../../../CPP [0001-0500]/22.generate_parenthesis [4].cpp>) |general|
+|22 | generate parentheses |[L1](<../../../CPP [0001-0500]/22.generate_parentheses [1].cpp>) [L2](<../../../CPP [0001-0500]/22.generate_parentheses [2].cpp>) [L3](<../../../CPP [0001-0500]/22.generate_parentheses [3].cpp>) [L4](<../../../CPP [0001-0500]/22.generate_parentheses [4].cpp>) |general|
 |23 | merge k sorted lists |[L1](<../../../CPP [0001-0500]/23.merge_k_sorted_lists [1].cpp>) [L2](<../../../CPP [0001-0500]/23.merge_k_sorted_lists [2].cpp>) |general|
 |24 | swap nodes in pairs |[L1](<../../../CPP [0001-0500]/24.swap_nodes_in_pairs [1].cpp>) [L2](<../../../CPP [0001-0500]/24.swap_nodes_in_pairs [2].cpp>) |general|
 |25 | reverse nodes in K group |[L1](<../../../CPP [0001-0500]/25.reverse_nodes_in_K_group [1].cpp>) [L2](<../../../CPP [0001-0500]/25.reverse_nodes_in_K_group [2].cpp>) |general|
@@ -1270,13 +1270,13 @@
 |2718 | sum of matrix after queries |[L1](<../../../CPP [2501-3000]/2718.sum_of_matrix_after_queries [1].cpp>) |general|
 |2729 | check if the number is fascinating |[L1](<../../../CPP [2501-3000]/2729.check_if_the_number_is_fascinating [1].cpp>) [L2](<../../../CPP [2501-3000]/2729.check_if_the_number_is_fascinating [2].cpp>) |general|
 |2733 | neither minimum nor maximum |[L1](<../../../CPP [2501-3000]/2733.neither_minimum_nor_maximum [1].cpp>) [L2](<../../../CPP [2501-3000]/2733.neither_minimum_nor_maximum [2].cpp>) |general|
-|2739 | total distance travelled |[L1](<../../../CPP [2501-3000]/2739.total_distance_travelled [1].cpp>) [L2](<../../../CPP [2501-3000]/2739.total_distance_travelled [2].cpp>) |general|
+|2739 | total distance traveled |[L1](<../../../CPP [2501-3000]/2739.total_distance_traveled [1].cpp>) [L2](<../../../CPP [2501-3000]/2739.total_distance_traveled [2].cpp>) |general|
 |2740 | find the value of the partition |[L1](<../../../CPP [2501-3000]/2740.find_the_value_of_the_partition [1].cpp>) |general|
 |2744 | find maximum number of string pairs |[L1](<../../../CPP [2501-3000]/2744.find_maximum_number_of_string_pairs [1].cpp>) [L2](<../../../CPP [2501-3000]/2744.find_maximum_number_of_string_pairs [2].cpp>) [L3](<../../../CPP [2501-3000]/2744.find_maximum_number_of_string_pairs [3].cpp>) |general|
 |2748 | number of beautiful pairs |[L1](<../../../CPP [2501-3000]/2748.number_of_beautiful_pairs [1].cpp>) [L2](<../../../CPP [2501-3000]/2748.number_of_beautiful_pairs [2].cpp>) |general|
 |2751 | robot collisions |[L1](<../../../CPP [2501-3000]/2751.robot_collisions [1].cpp>) |general|
 |2761 | prime pairs with target sum |[L1](<../../../CPP [2501-3000]/2761.prime_pairs_with_target_sum [1].cpp>) |general|
-|2762 | continous subarrays |[L1](<../../../CPP [2501-3000]/2762.continous_subarrays [1].cpp>) |general|
+|2762 | continuous subarrays |[L1](<../../../CPP [2501-3000]/2762.continuous_subarrays [1].cpp>) |general|
 |2765 | longest alternating subarray |[L1](<../../../CPP [2501-3000]/2765.longest_alternating_subarray [1].cpp>) |general|
 |2769 | find the maximum achievable number |[L1](<../../../CPP [2501-3000]/2769.find_the_maximum_achievable_number [1].cpp>) |general|
 |2778 | sum of squares of special elements |[L1](<../../../CPP [2501-3000]/2778.sum_of_squares_of_special_elements [1].cpp>) |general|
@@ -1284,8 +1284,7 @@
 |2780 | minimum index of a valid split |[L1](<../../../CPP [2501-3000]/2780.minimum_index_of_a_valid_split [1].cpp>) [L2](<../../../CPP [2501-3000]/2780.minimum_index_of_a_valid_split [2].cpp>) |general|
 |2784 | check if array is good |[L1](<../../../CPP [2501-3000]/2784.check_if_array_is_good [1].cpp>) [L2](<../../../CPP [2501-3000]/2784.check_if_array_is_good [2].cpp>) |general|
 |2785 | sort vowels in a string |[L1](<../../../CPP [2501-3000]/2785.sort_vowels_in_a_string [1].cpp>) [L2](<../../../CPP [2501-3000]/2785.sort_vowels_in_a_string [2].cpp>) |general|
-|2788 | split strings by seperator |[L1](<../../../CPP [2501-3000]/2788.split_strings_by_seperator [1].cpp>) |general|
-|2791 | find polygon with the largest perimeter |[L1](<../../../CPP [2501-3000]/2791.find_polygon_with_the_largest_perimeter [1].cpp>) |general|
+|2788 | split strings by separator |[L1](<../../../CPP [2501-3000]/2788.split_strings_by_separator [1].cpp>) |general|
 |2798 | number of employees who met the target |[L1](<../../../CPP [2501-3000]/2798.number_of_employees_who_met_the_target [1].cpp>) |general|
 |2799 | count complete subarrays in an array |[L1](<../../../CPP [2501-3000]/2799.count_complete_subarrays_in_an_array [1].cpp>) [L2](<../../../CPP [2501-3000]/2799.count_complete_subarrays_in_an_array [2].cpp>) |general|
 |2806 | account balance after rounded purchase |[L1](<../../../CPP [2501-3000]/2806.account_balance_after_rounded_purchase [1].cpp>) |general|
@@ -1338,6 +1337,7 @@
 |2962 | count subarrays where max element appears at least k times |[L1](<../../../CPP [2501-3000]/2962.count_subarrays_where_max_element_appears_at_least_k_times [1].cpp>) [L2](<../../../CPP [2501-3000]/2962.count_subarrays_where_max_element_appears_at_least_k_times [2].cpp>) |general|
 |2965 | find missing and repeated values |[L1](<../../../CPP [2501-3000]/2965.find_missing_and_repeated_values [1].cpp>) [L2](<../../../CPP [2501-3000]/2965.find_missing_and_repeated_values [2].cpp>) [L3](<../../../CPP [2501-3000]/2965.find_missing_and_repeated_values [3].cpp>) |general|
 |2966 | divide array into arrays with max difference |[L1](<../../../CPP [2501-3000]/2966.divide_array_into_arrays_with_max_difference [1].cpp>) [L2](<../../../CPP [2501-3000]/2966.divide_array_into_arrays_with_max_difference [2].cpp>) [L3](<../../../CPP [2501-3000]/2966.divide_array_into_arrays_with_max_difference [3].cpp>) |general|
+|2971 | find polygon with the largest perimeter |[L1](<../../../CPP [2501-3000]/2971.find_polygon_with_the_largest_perimeter [1].cpp>) |general|
 |2974 | minimum number game |[L1](<../../../CPP [2501-3000]/2974.minimum_number_game [1].cpp>) |general|
 |2976 | minimum cost to convert string I |[L1](<../../../CPP [2501-3000]/2976.minimum_cost_to_convert_string_I [1].cpp>) |general|
 |2980 | check if bitwise or has trailing zeros |[L1](<../../../CPP [2501-3000]/2980.check_if_bitwise_or_has_trailing_zeros [1].cpp>) |general|

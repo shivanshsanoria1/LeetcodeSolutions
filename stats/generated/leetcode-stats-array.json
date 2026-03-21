@@ -145,7 +145,7 @@
 },
 {
 	"quesId": 15,
-	"title": "3 sum",
+	"title": "3sum",
 	"counter": {
 		"cpp": {
 			"accepted": 1,
@@ -157,7 +157,7 @@
 },
 {
 	"quesId": 16,
-	"title": "3 sum closest",
+	"title": "3sum closest",
 	"counter": {
 		"cpp": {
 			"accepted": 2,
@@ -181,7 +181,7 @@
 },
 {
 	"quesId": 18,
-	"title": "4 sum",
+	"title": "4sum",
 	"counter": {
 		"cpp": {
 			"accepted": 1,
@@ -229,7 +229,7 @@
 },
 {
 	"quesId": 22,
-	"title": "generate parenthesis",
+	"title": "generate parentheses",
 	"counter": {
 		"cpp": {
 			"accepted": 4,
@@ -17256,7 +17256,7 @@
 },
 {
 	"quesId": 2739,
-	"title": "total distance travelled",
+	"title": "total distance traveled",
 	"counter": {
 		"cpp": {
 			"accepted": 2,
@@ -17340,7 +17340,7 @@
 },
 {
 	"quesId": 2762,
-	"title": "continous subarrays",
+	"title": "continuous subarrays",
 	"counter": {
 		"cpp": {
 			"accepted": 1,
@@ -17436,19 +17436,7 @@
 },
 {
 	"quesId": 2788,
-	"title": "split strings by seperator",
-	"counter": {
-		"cpp": {
-			"accepted": 1,
-			"unaccepted": 0
-		}
-	},
-	"isAccepted": true,
-	"type": "general"
-},
-{
-	"quesId": 2791,
-	"title": "find polygon with the largest perimeter",
+	"title": "split strings by separator",
 	"counter": {
 		"cpp": {
 			"accepted": 1,
@@ -18128,6 +18116,18 @@
 	"counter": {
 		"cpp": {
 			"accepted": 3,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 2971,
+	"title": "find polygon with the largest perimeter",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
 			"unaccepted": 0
 		}
 	},

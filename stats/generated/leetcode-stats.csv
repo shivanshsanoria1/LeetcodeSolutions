@@ -11,14 +11,14 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 12,integer to roman,general,cpp,2,0
 13,roman to integer,general,cpp,1,0
 14,longest common prefix,general,cpp,1,0
-15,3 sum,general,cpp,1,2
-16,3 sum closest,general,cpp,2,0
+15,3sum,general,cpp,1,2
+16,3sum closest,general,cpp,2,0
 17,letter combinations of a phone number,general,cpp,1,0
-18,4 sum,general,cpp,1,0
+18,4sum,general,cpp,1,0
 19,remove nth node from end of list,general,cpp,2,0
 20,valid parentheses,general,cpp,2,0
 21,merge two sorted lists,general,cpp,3,0
-22,generate parenthesis,general,cpp,4,0
+22,generate parentheses,general,cpp,4,0
 23,merge k sorted lists,general,cpp,2,0
 24,swap nodes in pairs,general,cpp,2,0
 25,reverse nodes in K group,general,cpp,2,0
@@ -1437,14 +1437,14 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 2729,check if the number is fascinating,general,cpp,2,0
 2733,neither minimum nor maximum,general,cpp,2,0
 2736,maximum sum queries,general,cpp,0,1
-2739,total distance travelled,general,cpp,2,0
+2739,total distance traveled,general,cpp,2,0
 2740,find the value of the partition,general,cpp,1,0
 2744,find maximum number of string pairs,general,cpp,3,0
 2747,count zero request servers,general,cpp,0,2
 2748,number of beautiful pairs,general,cpp,2,0
 2751,robot collisions,general,cpp,1,0
 2761,prime pairs with target sum,general,cpp,1,0
-2762,continous subarrays,general,cpp,1,1
+2762,continuous subarrays,general,cpp,1,1
 2765,longest alternating subarray,general,cpp,1,0
 2769,find the maximum achievable number,general,cpp,1,0
 2778,sum of squares of special elements,general,cpp,1,0
@@ -1452,8 +1452,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 2780,minimum index of a valid split,general,cpp,2,1
 2784,check if array is good,general,cpp,2,0
 2785,sort vowels in a string,general,cpp,2,0
-2788,split strings by seperator,general,cpp,1,0
-2791,find polygon with the largest perimeter,general,cpp,1,0
+2788,split strings by separator,general,cpp,1,0
 2798,number of employees who met the target,general,cpp,1,0
 2799,count complete subarrays in an array,general,cpp,2,0
 2806,account balance after rounded purchase,general,cpp,1,0
@@ -1510,6 +1509,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 2962,count subarrays where max element appears at least k times,general,cpp,2,1
 2965,find missing and repeated values,general,cpp,3,0
 2966,divide array into arrays with max difference,general,cpp,3,0
+2971,find polygon with the largest perimeter,general,cpp,1,0
 2974,minimum number game,general,cpp,1,0
 2976,minimum cost to convert string I,general,cpp,1,0
 2980,check if bitwise or has trailing zeros,general,cpp,1,0

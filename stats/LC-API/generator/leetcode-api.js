@@ -3,7 +3,10 @@ const fs = require('node:fs/promises');
 
 const config = require('./config.json')
 
-// don't forget to use await when calling this function
+// don't forget to use await when calling readFromJSON(), writeToJSON(), createBackupJSON()
+
+// reads JSON data from the mentioned path; 
+// creates a JSON file with default-value if file not found
 async function readFromJSON(filePath, defaultValue = []) {
 	try {
 		await fs.mkdir(path.dirname(filePath), { recursive: true });
@@ -23,7 +26,7 @@ async function readFromJSON(filePath, defaultValue = []) {
 	}
 }
 
-// don't forget to use await when calling this function
+// writes JSON data into the file at path
 async function writeToJSON(filePath, data) {
 	try {
 		await fs.mkdir(path.dirname(filePath), { recursive: true });
@@ -34,7 +37,7 @@ async function writeToJSON(filePath, data) {
 	}
 }
 
-// don't forget to use await when calling this function
+// moves the source file (if exists) to a timestamped backup
 async function createBackupJSON(sourceFilePath) {
 	// ensure source file exists, create if missing
     try {
@@ -44,22 +47,22 @@ async function createBackupJSON(sourceFilePath) {
 			console.log("Source file does not exist. No backup created");
 			return null
 		}
+		console.log(err)
 		throw err;
     }
 
 	try {
 		const backupDirPath = path.join(__dirname, '..', 'generated', 'backup');
-
 		// ensure backup directory exists
 		await fs.mkdir(backupDirPath, { recursive: true });
 
-		const ext = path.extname(sourceFilePath);
-		const sourceFileName = path.basename(sourceFilePath, ext);
-		const timestamp = new Date().toISOString().replace(/[:.]/g, "-");
-		const backupFileName = `${sourceFileName} [${timestamp}]${ext}`;
+		const ext = path.extname(sourceFilePath); // file-extension
+		const sourceFileName = path.basename(sourceFilePath, ext); // filename without extension
+		const timestamp = new Date().toISOString().replace(/[:.]/g, "-"); // filename safe timestamp
+		const backupFileName = `${sourceFileName} [${timestamp}]${ext}`; // timestamped backup filename
 		const backupFilePath = path.join(backupDirPath, backupFileName)
 		
-		// create the backup file
+		// create the backup file and delete the source file
 		await fs.rename(sourceFilePath, backupFilePath);	
 	} catch (err) {
 		console.log(err)
@@ -67,16 +70,19 @@ async function createBackupJSON(sourceFilePath) {
 	}
 }
 
+// fetch a list of all problems from LC-API, moves old data to backup;
+// use the local version if last fetch was less than 7 days ago;
+// use manual override to force refresh the list
 async function fetchAllProblems() {
 	try{
 		const filePath = path.join(__dirname, '..', 'generated', config.PROBLEM_LIST_FILE);
 
-		const lastUpdatedDatetime = new Date(config.LAST_UPDATED)
+		const lastUpdatedTimestamp = new Date(config.LAST_UPDATED)
 
 		// last update was less than 7 days ago; don't fetch new data from API
-		if(!config.REFRESH_PROBLEM_LIST_JSON && 
-			lastUpdatedDatetime.toString() !== "Invalid Date" && 
-			Date.now() - lastUpdatedDatetime.getTime() < 7*24*60*60*1000){
+		if(!config.FORCE_REFRESH_PROBLEM_LIST && 
+			lastUpdatedTimestamp.toString() !== "Invalid Date" && 
+			Date.now() - lastUpdatedTimestamp.getTime() < 7*24*60*60*1000){
 			console.log('Using the local version of problem-list')
 
 			return await readFromJSON(filePath)
@@ -126,7 +132,7 @@ async function fetchAllProblems() {
 		}
 
 		if (!data || !data.allQuestions) {
-			throw new Error("Problems not found");
+			throw new Error("Problem list not found");
 		}
 
 		const problems = data.allQuestions
@@ -135,7 +141,7 @@ async function fetchAllProblems() {
 
 		// create a backup of the old json
 		await createBackupJSON(filePath)
-
+		// create the json with fresh data
 		await writeToJSON(filePath, problems)
 
 		config.LAST_UPDATED = new Date().toISOString()
@@ -143,7 +149,7 @@ async function fetchAllProblems() {
 		const filePathConfig = path.join(__dirname, 'config.json');
 		await writeToJSON(filePathConfig, config)
 
-		console.log('Fetched problem list of length = ' + problems.length)
+		console.log('Fetched problem list length = ' + problems.length)
 
   		return problems
 	}catch(err){
@@ -153,30 +159,37 @@ async function fetchAllProblems() {
 }
 
 function parseDetailedProblem(problem){
-	const stats = JSON.parse(problem.stats)
+	try {
+		const stats = JSON.parse(problem.stats)
 
-	return {
-		id: parseInt(problem.questionFrontendId),
-		questionIdInternal: parseInt(problem.questionId),
-		title: problem.title,
-		slug: problem.titleSlug,
-		difficulty: problem.difficulty,
-		likes: problem.likes,
-		dislikes: problem.dislikes,
-		acceptanceRate: Number(problem.acRate.toFixed(2)),
-		isPaid: problem.isPaidOnly,
-		stats: {
-			accepted: stats.totalAcceptedRaw,
-			submissions: stats.totalSubmissionRaw,
-			acceptedDisplayed: stats.totalAccepted,
-			submissionsDisplayed: stats.totalSubmission,
-			acceptanceRate: stats.acRate,
-		},
-		description: problem.content,
-		tags: problem.topicTags.map(tag => tag.name),
-	};
+		return {
+			id: parseInt(problem.questionFrontendId),
+			questionIdInternal: parseInt(problem.questionId),
+			title: problem.title,
+			slug: problem.titleSlug,
+			difficulty: problem.difficulty,
+			likes: problem.likes,
+			dislikes: problem.dislikes,
+			acceptanceRate: Number(problem.acRate.toFixed(2)),
+			isPaid: problem.isPaidOnly,
+			stats: {
+				accepted: stats.totalAcceptedRaw,
+				submissions: stats.totalSubmissionRaw,
+				acceptedDisplayed: stats.totalAccepted,
+				submissionsDisplayed: stats.totalSubmission,
+				acceptanceRate: stats.acRate,
+			},
+			description: problem.content,
+			tags: problem.topicTags.map(tag => tag.name),
+		};
+	} catch (err) {
+		console.log(err)
+		throw err;
+	}
 }
 
+// fetch details for a specific problem by its title-slug from LC-API,
+// parse in a custom format
 async function fetchProblemDetailed(titleSlug) {
 	try {
 		const query = `
@@ -240,14 +253,19 @@ async function fetchProblemDetailed(titleSlug) {
 	}
 }
 
-const sleep = (time_ms = 250) => new Promise((resolve) => setTimeout(resolve, time_ms));
+// provide delay in ms
+const sleep = (time_ms = config.API_DELAY_MS ?? 250) => new Promise((resolve) => setTimeout(resolve, time_ms));
 
+// uses the base problem list to fetch the details for each missing problem sequentially (with limiter);
+// append the new items to the old data list;
+// use manual override to force refresh the list (use with CAUTION, full refresh too slow)
+// takes backup before full refresh
 async function fetchProblemsDetailed(problems) {
 	try{
 		const filePath = path.join(__dirname, '..', 'generated', config.PROBLEM_LIST_DETAILED_FILE);
 		let problemsDetailed = []
 		
-		if(config.REFRESH_PROBLEM_LIST_DETAILED_JSON){
+		if(config.FORCE_REFRESH_PROBLEM_LIST_DETAILED){
 			// create a backup of the old json
 			await createBackupJSON(filePath)
 			// clear the main json
@@ -300,5 +318,3 @@ async function fetchStatsFromLC(){
 }
 
 fetchStatsFromLC()
-
-// node ./stats/LC-API/generator/leetcode-api.js
