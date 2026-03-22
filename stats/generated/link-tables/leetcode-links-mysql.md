@@ -18,7 +18,7 @@
 |584 | find customer referee |[L1](<../../../MySQL/584.find_customer_referee [1].sql>) [L2](<../../../MySQL/584.find_customer_referee [2].sql>) |database|
 |586 | customer placing the largest number of orders |[L1](<../../../MySQL/586.customer_placing_the_largest_number_of_orders [1].sql>) |database|
 |595 | big countries |[L1](<../../../MySQL/595.big_countries [1].sql>) |database|
-|596 | classes more than 5 students |[L1](<../../../MySQL/596.classes_more_than_5_students [1].sql>) |database|
+|596 | classes with at least 5 students |[L1](<../../../MySQL/596.classes_with_at_least_5_students [1].sql>) |database|
 |602 | friend requests II who has the most friends |[L1](<../../../MySQL/602.friend_requests_II_who_has_the_most_friends [1].sql>) [L2](<../../../MySQL/602.friend_requests_II_who_has_the_most_friends [2].sql>) |database|
 |607 | sales person |[L1](<../../../MySQL/607.sales_person [1].sql>) [L2](<../../../MySQL/607.sales_person [2].sql>) |database|
 |608 | tree node |[L1](<../../../MySQL/608.tree_node [1].sql>) |database|
@@ -26,7 +26,7 @@
 |619 | biggest single number |[L1](<../../../MySQL/619.biggest_single_number [1].sql>) [L2](<../../../MySQL/619.biggest_single_number [2].sql>) |database|
 |620 | not boring movies |[L1](<../../../MySQL/620.not_boring_movies [1].sql>) |database|
 |626 | exchange seats |[L1](<../../../MySQL/626.exchange_seats [1].sql>) [L2](<../../../MySQL/626.exchange_seats [2].sql>) |database|
-|627 | swap salary |[L1](<../../../MySQL/627.swap_salary [1].sql>) [L2](<../../../MySQL/627.swap_salary [2].sql>) |database|
+|627 | swap sex of employees |[L1](<../../../MySQL/627.swap_sex_of_employees [1].sql>) [L2](<../../../MySQL/627.swap_sex_of_employees [2].sql>) |database|
 |1045 | customers who bought all products |[L1](<../../../MySQL/1045.customers_who_bought_all_products [1].sql>) |database|
 |1050 | actors and directors who cooperated atleast three times |[L1](<../../../MySQL/1050.actors_and_directors_who_cooperated_atleast_three_times [1].sql>) |database|
 |1068 | product sales analysis I |[L1](<../../../MySQL/1068.product_sales_analysis_I [1].sql>) |database|

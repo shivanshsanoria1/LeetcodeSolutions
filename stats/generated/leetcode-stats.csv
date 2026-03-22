@@ -61,7 +61,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 69,sqrt(x),general,cpp,2,0
 70,climbing stairs,general,cpp,2,0
 72,edit distance,general,cpp,3,1
-73,set matrix zeros,general,cpp,1,0
+73,set matrix zeroes,general,cpp,1,0
 74,search a 2d matrix,general,cpp,3,0
 75,sort colors,general,cpp,3,0
 76,minimum window substring,general,cpp,1,1
@@ -81,7 +81,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 92,reverse linked list II,general,cpp,1,0
 94,binary tree inorder traversal,general,cpp,2,0
 96,unique binary search trees,general,cpp,1,0
-97,interleaving strings,general,cpp,3,1
+97,interleaving string,general,cpp,3,1
 98,validate binary search tree,general,cpp,3,0
 99,recover binary search tree,general,cpp,3,0
 100,same tree,general,cpp,2,0
@@ -92,7 +92,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 105,construct binary tree from preorder and inorder traversal,general,cpp,3,0
 106,construct binary tree from inorder and postorder traversal,general,cpp,1,0
 107,binary tree level order traversal II,general,cpp,1,0
-108,convert sorted array to BST,general,cpp,1,0
+108,convert sorted array to binary search tree,general,cpp,1,0
 109,convert sorted list to binary search tree,general,cpp,1,0
 110,balanced binary tree,general,cpp,3,0
 111,minimum depth of binary tree,general,cpp,3,0
@@ -144,7 +144,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 168,excel sheet column title,general,cpp,1,0
 169,majority element,general,cpp,5,0
 171,excel sheet column number,general,cpp,1,0
-172,factorial trailing zeros,general,cpp,1,0
+172,factorial trailing zeroes,general,cpp,1,0
 173,binary search tree iterator,general,cpp,1,0
 174,dungeon game,general,cpp,2,1
 175,combine two tables,database,mysql,1,0
@@ -216,7 +216,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 275,H index II,general,cpp,2,0
 278,first bad version,general,cpp,1,0
 279,perfect squares,general,cpp,1,0
-283,move zeros,general,cpp,3,0
+283,move zeroes,general,cpp,3,0
 287,find the duplicate number,general,cpp,4,0
 289,game of life,general,cpp,1,0
 290,word pattern,general,cpp,1,0
@@ -249,7 +249,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 343,integer break,general,cpp,2,0
 344,reverse string,general,cpp,1,0
 345,reverse vowels of a string,general,cpp,1,0
-347,top k frequency elements,general,cpp,2,0
+347,top k frequent elements,general,cpp,2,0
 349,intersection of two arrays,general,cpp,5,0
 350,intersection of two arrays II,general,cpp,3,0
 352,data stream as disjoint intervals,general,cpp,1,0
@@ -321,7 +321,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 468,validate IP address,general,cpp,1,0
 472,concatenated words,general,cpp,1,2
 473,matchsticks to square,general,cpp,1,0
-474,ones and zeros,general,cpp,1,1
+474,ones and zeroes,general,cpp,1,1
 476,number complement,general,cpp,3,0
 477,total hamming distance,general,cpp,1,1
 478,generate random point in a circle,general,cpp,1,0
@@ -346,14 +346,14 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 508,most frequent subtree sum,general,cpp,1,0
 509,fibonacci number,general,cpp,2,0
 511,game play analysis I,database,mysql,1,0
-513,bottom left tree value,general,cpp,2,0
+513,find bottom left tree value,general,cpp,2,0
 514,freedom trail,general,cpp,1,1
 515,find largest value in each tree row,general,cpp,1,0
 516,longest palindromic subsequence,general,cpp,1,0
 518,coin change II,general,cpp,2,2
 519,random flip matrix,general,cpp,0,1
 520,detect capital,general,cpp,1,0
-523,continous subarray sum,general,cpp,1,1
+523,continuous subarray sum,general,cpp,1,1
 524,longest word in dictionary through deleting,general,cpp,1,0
 525,contiguous array,general,cpp,1,1
 530,minimum absolute difference in BST,general,cpp,4,0
@@ -361,7 +361,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 537,complex number multiplication,general,cpp,1,0
 538,convert BST to greater tree,general,cpp,1,0
 539,minimum time difference,general,cpp+js,2+2,0+0
-540,single element in sorted array,general,cpp,4,0
+540,single element in a sorted array,general,cpp,4,0
 541,reverse string II,general,cpp,2,0
 542,01 matrix,general,cpp,1,1
 543,diameter of binary tree,general,cpp,1,0
@@ -391,7 +391,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 593,valid square,general,cpp,1,0
 594,longest harmonious subsequence,general,cpp,3,0
 595,big countries,database,mysql,1,0
-596,classes more than 5 students,database,mysql,1,0
+596,classes with at least 5 students,database,mysql,1,0
 598,range addition II,general,cpp,1,1
 599,minimum index sum of two lists,general,cpp,1,0
 602,friend requests II who has the most friends,database,mysql,2,0
@@ -410,12 +410,12 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 623,add one row to tree,general,cpp,2,0
 624,maximum distance in arrays,general,cpp,1,1
 626,exchange seats,database,mysql,2,0
-627,swap salary,database,mysql,2,0
-628,maximum product of 3 numbers,general,cpp,2,0
+627,swap sex of employees,database,mysql,2,0
+628,maximum product of three numbers,general,cpp,2,0
 629,k inverse pairs array,general,cpp,0,2
 632,smallest range covering elements from K lists,general,cpp,2,0
 633,sum of square numbers,general,cpp,3,1
-637,average of levels in a binary tree,general,cpp,1,0
+637,average of levels in binary tree,general,cpp,1,0
 640,solve the equation,general,cpp,1,0
 641,design circular deque,general,cpp,1,0
 643,maximum average subarray I,general,cpp,1,1
@@ -428,7 +428,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 653,two sum IV input in a BST,general,cpp,2,0
 654,maximum binary tree,general,cpp,2,0
 655,print binary tree,general,cpp,1,0
-657,return robot to origin,general,cpp,2,0
+657,robot return to origin,general,cpp,2,0
 658,find K closest elements,general,cpp,1,0
 661,image smoother,general,cpp,3,0
 662,maximum width of binary tree,general,cpp,1,0
@@ -438,7 +438,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 670,maximum swap,general,cpp,2,0
 671,second minimum node in a binary tree,general,cpp,2,0
 673,number of longest increasing subsequence,general,cpp,1,0
-674,longest continous increasing subsequence,general,cpp,2,0
+674,longest continuous increasing subsequence,general,cpp,2,0
 676,implement magic dictionary,general,cpp,1,0
 677,map sum pairs,general,cpp,2,0
 678,valid parenthesis string,general,cpp,3,1
@@ -475,16 +475,16 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 725,split linked list in parts,general,cpp,1,0
 726,number of atoms,general,cpp,1,0
 728,self dividing numbers,general,cpp,1,0
-729,my calender I,general,cpp,4,1
-731,my calender II,general,cpp,2,1
-732,my calender III,general,cpp,1,0
+729,my calendar I,general,cpp,4,1
+731,my calendar II,general,cpp,2,1
+732,my calendar III,general,cpp,1,0
 733,flood fill,general,cpp,2,0
 735,asteroid collision,general,cpp,2,0
 738,monotone increasing digits,general,cpp,1,1
 739,daily temperatures,general,cpp,1,1
-740,earn and delete,general,cpp,3,1
+740,delete and earn,general,cpp,3,1
 743,network delay time,general,cpp,2,0
-744,find the smallest letter greater than target,general,cpp,2,0
+744,find smallest letter greater than target,general,cpp,2,0
 745,prefix and suffix search,general,cpp,2,1
 746,min cost climbing stairs,general,cpp,2,0
 747,largest number at least twice of others,general,cpp,1,0
@@ -577,7 +577,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 897,increasing order search tree,general,cpp,1,0
 898,bitwise ORs of subarrays,general,cpp,0,1
 900,RLE iterator,general,cpp,2,0
-901,online stock span problem,general,cpp,2,0
+901,online stock span,general,cpp,2,0
 904,fruit into baskets,general,cpp,1,1
 905,sort array by parity,general,cpp,1,0
 907,sum of subarray minimums,general,cpp,2,1
@@ -631,7 +631,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 979,distribute coins in binary tree,general,cpp,2,0
 981,time based key value store,general,cpp,1,3
 982,triples with bitwise and equal to zero,general,cpp,0,1
-983,minimum costs of tickets,general,cpp,1,0
+983,minimum cost for tickets,general,cpp,1,0
 985,sum of even numbers after queries,general,cpp,1,0
 986,interval list intersections,general,cpp,2,0
 987,vertical order traversal of a binary tree,general,cpp,2,0
@@ -640,7 +640,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 990,satisfiability of equality equations,general,cpp,1,0
 991,broken calculator,general,cpp,1,0
 992,subarrays with k different integers,general,cpp,1,1
-993,cousins in a binary tree,general,cpp,2,0
+993,cousins in binary tree,general,cpp,2,0
 994,rotting oranges,general,cpp,2,0
 995,minimum number of K consecutive bit flips,general,cpp,1,1
 996,number of squareful arrays,general,cpp,0,1
@@ -648,7 +648,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 999,available captures for rook,general,cpp,2,0
 1002,find common characters,general,cpp,2,0
 1004,max consecutive ones III,general,cpp,1,0
-1005,maximum sum of array after k negations,general,cpp,2,0
+1005,maximize sum of array after k negations,general,cpp,2,0
 1007,minimum domino rotations for equal row,general,cpp,2,0
 1008,construct binary search tree from preorder traversal,general,cpp,1,0
 1009,complement of base 10 integer,general,cpp,3,0
@@ -663,7 +663,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 1021,remove outermost parentheses,general,cpp,2,0
 1022,sum of root to leaf binary numbers,general,cpp,2,0
 1023,camelcase matching,general,cpp,1,0
-1024,video stiching,general,cpp,2,0
+1024,video stitching,general,cpp,2,0
 1026,maximum difference between node and ancestor,general,cpp,2,0
 1029,two city scheduling,general,cpp,2,2
 1032,stream of characters,general,cpp,0,1
@@ -1345,7 +1345,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 2544,alternating digit sum,general,cpp,1,0
 2545,sort the students by their Kth score,general,cpp,2,0
 2552,count increasing quadruplets,general,cpp,0,1
-2553,seperate the digits in an array,general,cpp,2,0
+2553,separate the digits in an array,general,cpp,2,0
 2554,maximum number of integers to choose from a range I,general,cpp,1,0
 2558,take gifts from the richest pile,general,cpp,1,0
 2559,count vowel strings in ranges,general,cpp,1,1
@@ -1387,7 +1387,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 2637,promise time limit,javascript/typescript,js,1,0
 2639,find the width of columns of a grid,general,cpp,2,0
 2640,find the score of all prefixes of an array,general,cpp,1,0
-2641,cousins in a binary tree II,general,cpp,1,0
+2641,cousins in binary tree II,general,cpp,1,0
 2642,design graph with shortest path calculator,general,cpp,3,0
 2643,row with maximum ones,general,cpp,1,0
 2644,find the maximum divisibility score,general,cpp,1,0
@@ -1395,7 +1395,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 2649,nested array generator,javascript/typescript,js,2,0
 2651,calculate delayed arrival time,general,cpp+js,1+1,0+0
 2652,sum multiples,general,cpp,2,0
-2656,max sum with exactly k elements,general,cpp,1,0
+2656,maximum sum with exactly k elements,general,cpp,1,0
 2657,find the prefix common array of two arrays,general,cpp,1,0
 2658,maximum number of fish in a grid,general,cpp,2,0
 2661,first completely painted row or column,general,cpp,1,0
@@ -1420,11 +1420,11 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 2704,to be or not to be,javascript/typescript,js,1,0
 2705,compact object,javascript/typescript,js,1,0
 2706,buy two chocolates,general,cpp,1,0
-2707,extra characters in string,general,cpp,1,1
+2707,extra characters in a string,general,cpp,1,1
 2709,greatest common divisor traversal,general,cpp,0,1
 2710,remove trailing zeros from a string,general,cpp,1,0
 2711,difference of number of distinct values on diagonals,general,cpp,1,0
-2715,execute cancellable function with delay,javascript/typescript,js,1,0
+2715,timeout cancellation,javascript/typescript,js,1,0
 2716,minimize string length,general,cpp,1,0
 2718,sum of matrix after queries,general,cpp,1,1
 2721,execute asynchronous functions in parallel,javascript/typescript,js,4,0
@@ -1523,7 +1523,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 3014,minimum number of pushes to type word I,general,cpp,1,0
 3016,minimum number of pushes to type word II,general,cpp,2,0
 3019,number of changing keys,general,cpp,2,0
-3024,type of triangle II,general,cpp,1,0
+3024,type of triangle,general,cpp,1,0
 3026,maximum good subarray sum,general,cpp,1,1
 3028,ant on the boundary,general,cpp,1,0
 3033,modify the matrix,general,cpp,1,0
@@ -1583,7 +1583,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 3164,find the number of good pairs II,general,cpp,1,2
 3168,minimum number of chairs in a waiting room,general,cpp,1,0
 3169,count days without meetings,general,cpp,1,1
-3171,find subarray with bitwise AND closest to K,general,cpp,0,1
+3171,find subarray with bitwise OR closest to K,general,cpp,0,1
 3174,clear digits,general,cpp,1,0
 3176,find the maximum length of a good subsequence I,general,cpp,1,1
 3177,find the maximum length of a good subsequence II,general,cpp,0,1
@@ -1876,3 +1876,5 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 3868,minimum cost to equalize arrays using swaps,general,cpp,1,0
 3870,count commas in range,general,cpp,1,0
 3871,count commas in range II,general,cpp,1,0
+3875,construct uniform parity array I,general,cpp,1,0
+3876,construct uniform parity array II,general,cpp,1,0

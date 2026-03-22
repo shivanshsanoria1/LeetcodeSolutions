@@ -48,7 +48,7 @@
 |2703 | return length of arguments passed |[L1](<../../../Javascript/2703.return_length_of_arguments_passed [1].js>) |javascript/typescript|
 |2704 | to be or not to be |[L1](<../../../Javascript/2704.to_be_or_not_to_be [1].js>) |javascript/typescript|
 |2705 | compact object |[L1](<../../../Javascript/2705.compact_object [1].js>) |javascript/typescript|
-|2715 | execute cancellable function with delay |[L1](<../../../Javascript/2715.execute_cancellable_function_with_delay [1].js>) |javascript/typescript|
+|2715 | timeout cancellation |[L1](<../../../Javascript/2715.timeout_cancellation [1].js>) |javascript/typescript|
 |2721 | execute asynchronous functions in parallel |[L1](<../../../Javascript/2721.execute_asynchronous_functions_in_parallel [1].js>) [L2](<../../../Javascript/2721.execute_asynchronous_functions_in_parallel [2].js>) [L3](<../../../Javascript/2721.execute_asynchronous_functions_in_parallel [3].js>) [L4](<../../../Javascript/2721.execute_asynchronous_functions_in_parallel [4].js>) |javascript/typescript|
 |2722 | join two arrays by id |[L1](<../../../Javascript/2722.join_two_arrays_by_id [1].js>) |javascript/typescript|
 |2723 | add two promises |[L1](<../../../Javascript/2723.add_two_promises [1].js>) [L2](<../../../Javascript/2723.add_two_promises [2].js>) |javascript/typescript|

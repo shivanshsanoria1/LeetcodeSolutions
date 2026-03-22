@@ -4,566 +4,399 @@
         "myTitle": "find the index of the first occurence in a string",
         "lcTitle": "Find the Index of the First Occurrence in a String",
         "newTitle": "find_the_index_of_the_first_occurrence_in_a_string",
-        "lcTitleSlug": "find-the-index-of-the-first-occurrence-in-a-string"
-    },
-    {
-        "id": 73,
-        "myTitle": "set matrix zeros",
-        "lcTitle": "Set Matrix Zeroes",
-        "newTitle": "set_matrix_zeroes",
-        "lcTitleSlug": "set-matrix-zeroes"
-    },
-    {
-        "id": 97,
-        "myTitle": "interleaving strings",
-        "lcTitle": "Interleaving String",
-        "newTitle": "interleaving_string",
-        "lcTitleSlug": "interleaving-string"
-    },
-    {
-        "id": 108,
-        "myTitle": "convert sorted array to bst",
-        "lcTitle": "Convert Sorted Array to Binary Search Tree",
-        "newTitle": "convert_sorted_array_to_binary_search_tree",
-        "lcTitleSlug": "convert-sorted-array-to-binary-search-tree"
+        "lcTitleSlug": "find-the-index-of-the-first-occurrence-in-a-string",
+        "langs": "cpp"
     },
     {
         "id": 167,
         "myTitle": "two sum ii input array is sorted",
         "lcTitle": "Two Sum II - Input Array Is Sorted",
         "newTitle": "two_sum_ii___input_array_is_sorted",
-        "lcTitleSlug": "two-sum-ii-input-array-is-sorted"
-    },
-    {
-        "id": 172,
-        "myTitle": "factorial trailing zeros",
-        "lcTitle": "Factorial Trailing Zeroes",
-        "newTitle": "factorial_trailing_zeroes",
-        "lcTitleSlug": "factorial-trailing-zeroes"
-    },
-    {
-        "id": 283,
-        "myTitle": "move zeros",
-        "lcTitle": "Move Zeroes",
-        "newTitle": "move_zeroes",
-        "lcTitleSlug": "move-zeroes"
+        "lcTitleSlug": "two-sum-ii-input-array-is-sorted",
+        "langs": "cpp"
     },
     {
         "id": 303,
         "myTitle": "range sum query immutable",
         "lcTitle": "Range Sum Query - Immutable",
         "newTitle": "range_sum_query___immutable",
-        "lcTitleSlug": "range-sum-query-immutable"
+        "lcTitleSlug": "range-sum-query-immutable",
+        "langs": "cpp"
     },
     {
         "id": 304,
         "myTitle": "range sum query 2d immutable",
         "lcTitle": "Range Sum Query 2D - Immutable",
         "newTitle": "range_sum_query_2d___immutable",
-        "lcTitleSlug": "range-sum-query-2d-immutable"
+        "lcTitleSlug": "range-sum-query-2d-immutable",
+        "langs": "cpp"
     },
     {
         "id": 307,
         "myTitle": "range sum query mutable",
         "lcTitle": "Range Sum Query - Mutable",
         "newTitle": "range_sum_query___mutable",
-        "lcTitleSlug": "range-sum-query-mutable"
-    },
-    {
-        "id": 347,
-        "myTitle": "top k frequency elements",
-        "lcTitle": "Top K Frequent Elements",
-        "newTitle": "top_k_frequent_elements",
-        "lcTitleSlug": "top-k-frequent-elements"
+        "lcTitleSlug": "range-sum-query-mutable",
+        "langs": "cpp"
     },
     {
         "id": 381,
         "myTitle": "insert delete getrandom o(1) duplicates allowed",
         "lcTitle": "Insert Delete GetRandom O(1) - Duplicates allowed",
         "newTitle": "insert_delete_getrandom_o(1)___duplicates_allowed",
-        "lcTitleSlug": "insert-delete-getrandom-o1-duplicates-allowed"
+        "lcTitleSlug": "insert-delete-getrandom-o1-duplicates-allowed",
+        "langs": "cpp"
     },
     {
         "id": 432,
         "myTitle": "all o'one data structure",
         "lcTitle": "All O`one Data Structure",
         "newTitle": "all_o`one_data_structure",
-        "lcTitleSlug": "all-oone-data-structure"
+        "lcTitleSlug": "all-oone-data-structure",
+        "langs": "cpp"
     },
     {
         "id": 440,
         "myTitle": "kth smallest in lexicographical order",
         "lcTitle": "K-th Smallest in Lexicographical Order",
         "newTitle": "k_th_smallest_in_lexicographical_order",
-        "lcTitleSlug": "k-th-smallest-in-lexicographical-order"
-    },
-    {
-        "id": 474,
-        "myTitle": "ones and zeros",
-        "lcTitle": "Ones and Zeroes",
-        "newTitle": "ones_and_zeroes",
-        "lcTitleSlug": "ones-and-zeroes"
-    },
-    {
-        "id": 513,
-        "myTitle": "bottom left tree value",
-        "lcTitle": "Find Bottom Left Tree Value",
-        "newTitle": "find_bottom_left_tree_value",
-        "lcTitleSlug": "find-bottom-left-tree-value"
-    },
-    {
-        "id": 523,
-        "myTitle": "continous subarray sum",
-        "lcTitle": "Continuous Subarray Sum",
-        "newTitle": "continuous_subarray_sum",
-        "lcTitleSlug": "continuous-subarray-sum"
-    },
-    {
-        "id": 540,
-        "myTitle": "single element in sorted array",
-        "lcTitle": "Single Element in a Sorted Array",
-        "newTitle": "single_element_in_a_sorted_array",
-        "lcTitleSlug": "single-element-in-a-sorted-array"
-    },
-    {
-        "id": 596,
-        "myTitle": "classes more than 5 students",
-        "lcTitle": "Classes With at Least 5 Students",
-        "newTitle": "classes_with_at_least_5_students",
-        "lcTitleSlug": "classes-with-at-least-5-students"
+        "lcTitleSlug": "k-th-smallest-in-lexicographical-order",
+        "langs": "cpp"
     },
     {
         "id": 602,
         "myTitle": "friend requests ii who has the most friends",
         "lcTitle": "Friend Requests II: Who Has the Most Friends",
         "newTitle": "friend_requests_ii:_who_has_the_most_friends",
-        "lcTitleSlug": "friend-requests-ii-who-has-the-most-friends"
-    },
-    {
-        "id": 627,
-        "myTitle": "swap salary",
-        "lcTitle": "Swap Sex of Employees",
-        "newTitle": "swap_sex_of_employees",
-        "lcTitleSlug": "swap-sex-of-employees"
-    },
-    {
-        "id": 628,
-        "myTitle": "maximum product of 3 numbers",
-        "lcTitle": "Maximum Product of Three Numbers",
-        "newTitle": "maximum_product_of_three_numbers",
-        "lcTitleSlug": "maximum-product-of-three-numbers"
-    },
-    {
-        "id": 637,
-        "myTitle": "average of levels in a binary tree",
-        "lcTitle": "Average of Levels in Binary Tree",
-        "newTitle": "average_of_levels_in_binary_tree",
-        "lcTitleSlug": "average-of-levels-in-binary-tree"
+        "lcTitleSlug": "friend-requests-ii-who-has-the-most-friends",
+        "langs": "mysql"
     },
     {
         "id": 653,
         "myTitle": "two sum iv input in a bst",
         "lcTitle": "Two Sum IV - Input is a BST",
         "newTitle": "two_sum_iv___input_is_a_bst",
-        "lcTitleSlug": "two-sum-iv-input-is-a-bst"
-    },
-    {
-        "id": 657,
-        "myTitle": "return robot to origin",
-        "lcTitle": "Robot Return to Origin",
-        "newTitle": "robot_return_to_origin",
-        "lcTitleSlug": "robot-return-to-origin"
-    },
-    {
-        "id": 674,
-        "myTitle": "longest continous increasing subsequence",
-        "lcTitle": "Longest Continuous Increasing Subsequence",
-        "newTitle": "longest_continuous_increasing_subsequence",
-        "lcTitleSlug": "longest-continuous-increasing-subsequence"
+        "lcTitleSlug": "two-sum-iv-input-is-a-bst",
+        "langs": "cpp"
     },
     {
         "id": 719,
         "myTitle": "find kth smallest pair distance",
         "lcTitle": "Find K-th Smallest Pair Distance",
         "newTitle": "find_k_th_smallest_pair_distance",
-        "lcTitleSlug": "find-k-th-smallest-pair-distance"
-    },
-    {
-        "id": 729,
-        "myTitle": "my calender i",
-        "lcTitle": "My Calendar I",
-        "newTitle": "my_calendar_i",
-        "lcTitleSlug": "my-calendar-i"
-    },
-    {
-        "id": 731,
-        "myTitle": "my calender ii",
-        "lcTitle": "My Calendar II",
-        "newTitle": "my_calendar_ii",
-        "lcTitleSlug": "my-calendar-ii"
-    },
-    {
-        "id": 732,
-        "myTitle": "my calender iii",
-        "lcTitle": "My Calendar III",
-        "newTitle": "my_calendar_iii",
-        "lcTitleSlug": "my-calendar-iii"
-    },
-    {
-        "id": 740,
-        "myTitle": "earn and delete",
-        "lcTitle": "Delete and Earn",
-        "newTitle": "delete_and_earn",
-        "lcTitleSlug": "delete-and-earn"
-    },
-    {
-        "id": 744,
-        "myTitle": "find the smallest letter greater than target",
-        "lcTitle": "Find Smallest Letter Greater Than Target",
-        "newTitle": "find_smallest_letter_greater_than_target",
-        "lcTitleSlug": "find-smallest-letter-greater-than-target"
+        "lcTitleSlug": "find-k-th-smallest-pair-distance",
+        "langs": "cpp"
     },
     {
         "id": 779,
         "myTitle": "kth symbol in grammar",
         "lcTitle": "K-th Symbol in Grammar",
         "newTitle": "k_th_symbol_in_grammar",
-        "lcTitleSlug": "k-th-symbol-in-grammar"
+        "lcTitleSlug": "k-th-symbol-in-grammar",
+        "langs": "cpp"
     },
     {
         "id": 785,
         "myTitle": "is graph bipartite",
         "lcTitle": "Is Graph Bipartite?",
         "newTitle": "is_graph_bipartite?",
-        "lcTitleSlug": "is-graph-bipartite"
+        "lcTitleSlug": "is-graph-bipartite",
+        "langs": "cpp"
     },
     {
         "id": 786,
         "myTitle": "kth smallest prime fraction",
         "lcTitle": "K-th Smallest Prime Fraction",
         "newTitle": "k_th_smallest_prime_fraction",
-        "lcTitleSlug": "k-th-smallest-prime-fraction"
-    },
-    {
-        "id": 901,
-        "myTitle": "online stock span problem",
-        "lcTitle": "Online Stock Span",
-        "newTitle": "online_stock_span",
-        "lcTitleSlug": "online-stock-span"
-    },
-    {
-        "id": 983,
-        "myTitle": "minimum costs of tickets",
-        "lcTitle": "Minimum Cost For Tickets",
-        "newTitle": "minimum_cost_for_tickets",
-        "lcTitleSlug": "minimum-cost-for-tickets"
-    },
-    {
-        "id": 993,
-        "myTitle": "cousins in a binary tree",
-        "lcTitle": "Cousins in Binary Tree",
-        "newTitle": "cousins_in_binary_tree",
-        "lcTitleSlug": "cousins-in-binary-tree"
+        "lcTitleSlug": "k-th-smallest-prime-fraction",
+        "langs": "cpp"
     },
     {
         "id": 1005,
         "myTitle": "maximum sum of array after k negations",
         "lcTitle": "Maximize Sum Of Array After K Negations",
         "newTitle": "maximize_sum_of_array_after_k_negations",
-        "lcTitleSlug": "maximize-sum-of-array-after-k-negations"
+        "lcTitleSlug": "maximize-sum-of-array-after-k-negations",
+        "langs": "cpp"
     },
     {
         "id": 1024,
         "myTitle": "video stiching",
         "lcTitle": "Video Stitching",
         "newTitle": "video_stitching",
-        "lcTitleSlug": "video-stitching"
+        "lcTitleSlug": "video-stitching",
+        "langs": "cpp"
     },
     {
         "id": 1050,
         "myTitle": "actors and directors who cooperated atleast three times",
         "lcTitle": "Actors and Directors Who Cooperated At Least Three Times",
         "newTitle": "actors_and_directors_who_cooperated_at_least_three_times",
-        "lcTitleSlug": "actors-and-directors-who-cooperated-at-least-three-times"
+        "lcTitleSlug": "actors-and-directors-who-cooperated-at-least-three-times",
+        "langs": "mysql"
     },
     {
         "id": 1070,
         "myTitle": "product sale analysis iii",
         "lcTitle": "Product Sales Analysis III",
         "newTitle": "product_sales_analysis_iii",
-        "lcTitleSlug": "product-sales-analysis-iii"
+        "lcTitleSlug": "product-sales-analysis-iii",
+        "langs": "mysql"
     },
     {
         "id": 1137,
         "myTitle": "nth tribonacci number",
         "lcTitle": "N-th Tribonacci Number",
         "newTitle": "n_th_tribonacci_number",
-        "lcTitleSlug": "n-th-tribonacci-number"
+        "lcTitleSlug": "n-th-tribonacci-number",
+        "langs": "cpp"
     },
     {
         "id": 1287,
         "myTitle": "element appearing more than 25 in sorted array",
         "lcTitle": "Element Appearing More Than 25% In Sorted Array",
         "newTitle": "element_appearing_more_than_25%_in_sorted_array",
-        "lcTitleSlug": "element-appearing-more-than-25-in-sorted-array"
+        "lcTitleSlug": "element-appearing-more-than-25-in-sorted-array",
+        "langs": "cpp"
     },
     {
         "id": 1299,
         "myTitle": "replace elements with greatest elements on right side",
         "lcTitle": "Replace Elements with Greatest Element on Right Side",
         "newTitle": "replace_elements_with_greatest_element_on_right_side",
-        "lcTitleSlug": "replace-elements-with-greatest-element-on-right-side"
+        "lcTitleSlug": "replace-elements-with-greatest-element-on-right-side",
+        "langs": "cpp"
     },
     {
         "id": 1333,
         "myTitle": "filter restaurants by vegan friendly price and distance",
         "lcTitle": "Filter Restaurants by Vegan-Friendly, Price and Distance",
         "newTitle": "filter_restaurants_by_vegan_friendly,_price_and_distance",
-        "lcTitleSlug": "filter-restaurants-by-vegan-friendly-price-and-distance"
+        "lcTitleSlug": "filter-restaurants-by-vegan-friendly-price-and-distance",
+        "langs": "cpp"
     },
     {
         "id": 1334,
         "myTitle": "find the city with the smallest number of neighbours at a threshold distance",
         "lcTitle": "Find the City With the Smallest Number of Neighbors at a Threshold Distance",
         "newTitle": "find_the_city_with_the_smallest_number_of_neighbors_at_a_threshold_distance",
-        "lcTitleSlug": "find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance"
+        "lcTitleSlug": "find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance",
+        "langs": "cpp"
     },
     {
         "id": 1393,
         "myTitle": "capital gain loss",
         "lcTitle": "Capital Gain/Loss",
         "newTitle": "capital_gain/loss",
-        "lcTitleSlug": "capital-gainloss"
+        "lcTitleSlug": "capital-gainloss",
+        "langs": "mysql"
     },
     {
         "id": 1431,
         "myTitle": "kid with the greatest number of candies",
         "lcTitle": "Kids With the Greatest Number of Candies",
         "newTitle": "kids_with_the_greatest_number_of_candies",
-        "lcTitleSlug": "kids-with-the-greatest-number-of-candies"
+        "lcTitleSlug": "kids-with-the-greatest-number-of-candies",
+        "langs": "cpp"
     },
     {
         "id": 1437,
         "myTitle": "check if all 1s are at least length k places away",
         "lcTitle": "Check If All 1's Are at Least Length K Places Away",
         "newTitle": "check_if_all_1's_are_at_least_length_k_places_away",
-        "lcTitleSlug": "check-if-all-1s-are-at-least-length-k-places-away"
+        "lcTitleSlug": "check-if-all-1s-are-at-least-length-k-places-away",
+        "langs": "cpp"
     },
     {
         "id": 1464,
         "myTitle": "maximun product of two elements in an array",
         "lcTitle": "Maximum Product of Two Elements in an Array",
         "newTitle": "maximum_product_of_two_elements_in_an_array",
-        "lcTitleSlug": "maximum-product-of-two-elements-in-an-array"
+        "lcTitleSlug": "maximum-product-of-two-elements-in-an-array",
+        "langs": "cpp"
     },
     {
         "id": 1493,
         "myTitle": "longest subarray of 1s after deleting one element",
         "lcTitle": "Longest Subarray of 1's After Deleting One Element",
         "newTitle": "longest_subarray_of_1's_after_deleting_one_element",
-        "lcTitleSlug": "longest-subarray-of-1s-after-deleting-one-element"
+        "lcTitleSlug": "longest-subarray-of-1s-after-deleting-one-element",
+        "langs": "cpp"
     },
     {
         "id": 1517,
         "myTitle": "find users with valid emails",
         "lcTitle": "Find Users With Valid E-Mails",
         "newTitle": "find_users_with_valid_e_mails",
-        "lcTitleSlug": "find-users-with-valid-e-mails"
+        "lcTitleSlug": "find-users-with-valid-e-mails",
+        "langs": "mysql"
     },
     {
         "id": 1524,
         "myTitle": "number of subarrays with odd sum",
         "lcTitle": "Number of Sub-arrays With Odd Sum",
         "newTitle": "number_of_sub_arrays_with_odd_sum",
-        "lcTitleSlug": "number-of-sub-arrays-with-odd-sum"
+        "lcTitleSlug": "number-of-sub-arrays-with-odd-sum",
+        "langs": "cpp"
     },
     {
         "id": 1560,
         "myTitle": "most visited sector in a circular track",
         "lcTitle": "Most Visited Sector in  a Circular Track",
         "newTitle": "most_visited_sector_in__a_circular_track",
-        "lcTitleSlug": "most-visited-sector-in-a-circular-track"
+        "lcTitleSlug": "most-visited-sector-in-a-circular-track",
+        "langs": "cpp"
     },
     {
         "id": 1576,
         "myTitle": "replace all s to avoid consecutive repeating characters",
         "lcTitle": "Replace All ?'s to Avoid Consecutive Repeating Characters",
         "newTitle": "replace_all_?'s_to_avoid_consecutive_repeating_characters",
-        "lcTitleSlug": "replace-all-s-to-avoid-consecutive-repeating-characters"
+        "lcTitleSlug": "replace-all-s-to-avoid-consecutive-repeating-characters",
+        "langs": "cpp"
     },
     {
         "id": 1581,
         "myTitle": "customers who visited but did not make any transactions",
         "lcTitle": "Customer Who Visited but Did Not Make Any Transactions",
         "newTitle": "customer_who_visited_but_did_not_make_any_transactions",
-        "lcTitleSlug": "customer-who-visited-but-did-not-make-any-transactions"
+        "lcTitleSlug": "customer-who-visited-but-did-not-make-any-transactions",
+        "langs": "mysql"
     },
     {
         "id": 1584,
         "myTitle": "minimum cost to connect all points",
         "lcTitle": "Min Cost to Connect All Points",
         "newTitle": "min_cost_to_connect_all_points",
-        "lcTitleSlug": "min-cost-to-connect-all-points"
+        "lcTitleSlug": "min-cost-to-connect-all-points",
+        "langs": "cpp"
     },
     {
         "id": 1633,
         "myTitle": "percentge of users attended a contest",
         "lcTitle": "Percentage of Users Attended a Contest",
         "newTitle": "percentage_of_users_attended_a_contest",
-        "lcTitleSlug": "percentage-of-users-attended-a-contest"
+        "lcTitleSlug": "percentage-of-users-attended-a-contest",
+        "langs": "mysql"
     },
     {
         "id": 1869,
         "myTitle": "longest contiguous segments of ones than zeros",
         "lcTitle": "Longer Contiguous Segments of Ones than Zeros",
         "newTitle": "longer_contiguous_segments_of_ones_than_zeros",
-        "lcTitleSlug": "longer-contiguous-segments-of-ones-than-zeros"
+        "lcTitleSlug": "longer-contiguous-segments-of-ones-than-zeros",
+        "langs": "cpp"
     },
     {
         "id": 1916,
         "myTitle": "mean of array after removing some elements",
         "lcTitle": "Count Ways to Build Rooms in an Ant Colony",
         "newTitle": "count_ways_to_build_rooms_in_an_ant_colony",
-        "lcTitleSlug": "count-ways-to-build-rooms-in-an-ant-colony"
+        "lcTitleSlug": "count-ways-to-build-rooms-in-an-ant-colony",
+        "langs": "cpp"
     },
     {
         "id": 1941,
         "myTitle": "check if all characters have equal number of occurences",
         "lcTitle": "Check if All Characters Have Equal Number of Occurrences",
         "newTitle": "check_if_all_characters_have_equal_number_of_occurrences",
-        "lcTitleSlug": "check-if-all-characters-have-equal-number-of-occurrences"
+        "lcTitleSlug": "check-if-all-characters-have-equal-number-of-occurrences",
+        "langs": "cpp"
     },
     {
         "id": 1968,
         "myTitle": "array with elements not equal to average of neighbours",
         "lcTitle": "Array With Elements Not Equal to Average of Neighbors",
         "newTitle": "array_with_elements_not_equal_to_average_of_neighbors",
-        "lcTitleSlug": "array-with-elements-not-equal-to-average-of-neighbors"
+        "lcTitleSlug": "array-with-elements-not-equal-to-average-of-neighbors",
+        "langs": "cpp"
     },
     {
         "id": 2085,
         "myTitle": "count common words with one occurence",
         "lcTitle": "Count Common Words With One Occurrence",
         "newTitle": "count_common_words_with_one_occurrence",
-        "lcTitleSlug": "count-common-words-with-one-occurrence"
+        "lcTitleSlug": "count-common-words-with-one-occurrence",
+        "langs": "cpp"
     },
     {
         "id": 2099,
         "myTitle": "find the subsequence of length k with the largest sum",
         "lcTitle": "Find Subsequence of Length K With the Largest Sum",
         "newTitle": "find_subsequence_of_length_k_with_the_largest_sum",
-        "lcTitleSlug": "find-subsequence-of-length-k-with-the-largest-sum"
+        "lcTitleSlug": "find-subsequence-of-length-k-with-the-largest-sum",
+        "langs": "cpp"
     },
     {
         "id": 2134,
         "myTitle": "minimum swaps to group all 1s together ii",
         "lcTitle": "Minimum Swaps to Group All 1's Together II",
         "newTitle": "minimum_swaps_to_group_all_1's_together_ii",
-        "lcTitleSlug": "minimum-swaps-to-group-all-1s-together-ii"
+        "lcTitleSlug": "minimum-swaps-to-group-all-1s-together-ii",
+        "langs": "cpp"
     },
     {
         "id": 2316,
         "myTitle": "count unreachable pair of nodes in an undirected graph",
         "lcTitle": "Count Unreachable Pairs of Nodes in an Undirected Graph",
         "newTitle": "count_unreachable_pairs_of_nodes_in_an_undirected_graph",
-        "lcTitleSlug": "count-unreachable-pairs-of-nodes-in-an-undirected-graph"
+        "lcTitleSlug": "count-unreachable-pairs-of-nodes-in-an-undirected-graph",
+        "langs": "cpp"
     },
     {
         "id": 2506,
         "myTitle": "count pair of similar strings",
         "lcTitle": "Count Pairs Of Similar Strings",
         "newTitle": "count_pairs_of_similar_strings",
-        "lcTitleSlug": "count-pairs-of-similar-strings"
-    },
-    {
-        "id": 2553,
-        "myTitle": "seperate the digits in an array",
-        "lcTitle": "Separate the Digits in an Array",
-        "newTitle": "separate_the_digits_in_an_array",
-        "lcTitleSlug": "separate-the-digits-in-an-array"
-    },
-    {
-        "id": 2641,
-        "myTitle": "cousins in a binary tree ii",
-        "lcTitle": "Cousins in Binary Tree II",
-        "newTitle": "cousins_in_binary_tree_ii",
-        "lcTitleSlug": "cousins-in-binary-tree-ii"
-    },
-    {
-        "id": 2656,
-        "myTitle": "max sum with exactly k elements",
-        "lcTitle": "Maximum Sum With Exactly K Elements ",
-        "newTitle": "maximum_sum_with_exactly_k_elements",
-        "lcTitleSlug": "maximum-sum-with-exactly-k-elements"
-    },
-    {
-        "id": 2707,
-        "myTitle": "extra characters in string",
-        "lcTitle": "Extra Characters in a String",
-        "newTitle": "extra_characters_in_a_string",
-        "lcTitleSlug": "extra-characters-in-a-string"
-    },
-    {
-        "id": 2715,
-        "myTitle": "execute cancellable function with delay",
-        "lcTitle": "Timeout Cancellation",
-        "newTitle": "timeout_cancellation",
-        "lcTitleSlug": "timeout-cancellation"
-    },
-    {
-        "id": 3024,
-        "myTitle": "type of triangle ii",
-        "lcTitle": "Type of Triangle",
-        "newTitle": "type_of_triangle",
-        "lcTitleSlug": "type-of-triangle"
-    },
-    {
-        "id": 3171,
-        "myTitle": "find subarray with bitwise and closest to k",
-        "lcTitle": "Find Subarray With Bitwise OR Closest to K",
-        "newTitle": "find_subarray_with_bitwise_or_closest_to_k",
-        "lcTitleSlug": "find-subarray-with-bitwise-or-closest-to-k"
+        "lcTitleSlug": "count-pairs-of-similar-strings",
+        "langs": "cpp"
     },
     {
         "id": 3179,
         "myTitle": "find the nth value after k seconds",
         "lcTitle": "Find the N-th Value After K Seconds",
         "newTitle": "find_the_n_th_value_after_k_seconds",
-        "lcTitleSlug": "find-the-n-th-value-after-k-seconds"
+        "lcTitleSlug": "find-the-n-th-value-after-k-seconds",
+        "langs": "cpp"
     },
     {
         "id": 3275,
         "myTitle": "kth nearest obstacle queries",
         "lcTitle": "K-th Nearest Obstacle Queries",
         "newTitle": "k_th_nearest_obstacle_queries",
-        "lcTitleSlug": "k-th-nearest-obstacle-queries"
+        "lcTitleSlug": "k-th-nearest-obstacle-queries",
+        "langs": "cpp"
     },
     {
         "id": 3304,
         "myTitle": "find the kth character in string game i",
         "lcTitle": "Find the K-th Character in String Game I",
         "newTitle": "find_the_k_th_character_in_string_game_i",
-        "lcTitleSlug": "find-the-k-th-character-in-string-game-i"
+        "lcTitleSlug": "find-the-k-th-character-in-string-game-i",
+        "langs": "cpp"
     },
     {
         "id": 3307,
         "myTitle": "find the kth character in string game ii",
         "lcTitle": "Find the K-th Character in String Game II",
         "newTitle": "find_the_k_th_character_in_string_game_ii",
-        "lcTitleSlug": "find-the-k-th-character-in-string-game-ii"
+        "lcTitleSlug": "find-the-k-th-character-in-string-game-ii",
+        "langs": "cpp"
     },
     {
         "id": 3457,
         "myTitle": "eat pizzas",
         "lcTitle": "Eat Pizzas!",
         "newTitle": "eat_pizzas!",
-        "lcTitleSlug": "eat-pizzas"
+        "lcTitleSlug": "eat-pizzas",
+        "langs": "cpp"
     },
     {
         "id": 3572,
         "myTitle": "maximize y-sum by picking a triplet of distinct x-values",
         "lcTitle": "Maximize Y‑Sum by Picking a Triplet of Distinct X‑Values",
         "newTitle": "maximize_y‑sum_by_picking_a_triplet_of_distinct_x‑values",
-        "lcTitleSlug": "maximize-ysum-by-picking-a-triplet-of-distinct-xvalues"
+        "lcTitleSlug": "maximize-ysum-by-picking-a-triplet-of-distinct-xvalues",
+        "langs": "cpp"
     }
 ]

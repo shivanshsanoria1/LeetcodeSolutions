@@ -10,7 +10,6 @@ async function compareLists() {
 		const lcFilePath = path.join(__dirname, '..', 'LC-API', 'generated', 'leetcode-problem-list.json')
 		const lcData = await fs.readFile(lcFilePath, { encoding: "utf8" })
 		const lcProblems = JSON.parse(lcData)
-		// console.log(lcProblems[0])
 		
 		const mismatchedProblems = []
 		for(const myProblem of myProblems){
@@ -18,6 +17,10 @@ async function compareLists() {
 			const mySlug = myProblem.title.replace(/ /g, '-').toLowerCase()
 
 			const lcProblem = lcProblems.find((lcProblem) => Number(lcProblem.questionFrontendId) === myProblem.quesId)
+			if(!lcProblem){
+				console.log(`id ${myProblem.quesId} not found in official LC json`)
+				continue
+			}
 			const lcTitle = lcProblem.title.trim().replace(/-/g, ' ').toLowerCase()
 
 			const titleMatch = myTitle === lcTitle
@@ -32,6 +35,7 @@ async function compareLists() {
 					newTitle: lcTitle.replace(/ /g, '_'),
 					lcTitleSlug: lcProblem.titleSlug,
 					// slugMatch,
+					langs: Object.keys(myProblem.counter).join(',')
 				})
 			}
 		}

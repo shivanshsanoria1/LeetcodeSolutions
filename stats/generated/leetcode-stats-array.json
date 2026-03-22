@@ -745,7 +745,7 @@
 },
 {
 	"quesId": 73,
-	"title": "set matrix zeros",
+	"title": "set matrix zeroes",
 	"counter": {
 		"cpp": {
 			"accepted": 1,
@@ -985,7 +985,7 @@
 },
 {
 	"quesId": 97,
-	"title": "interleaving strings",
+	"title": "interleaving string",
 	"counter": {
 		"cpp": {
 			"accepted": 3,
@@ -1117,7 +1117,7 @@
 },
 {
 	"quesId": 108,
-	"title": "convert sorted array to BST",
+	"title": "convert sorted array to binary search tree",
 	"counter": {
 		"cpp": {
 			"accepted": 1,
@@ -1741,7 +1741,7 @@
 },
 {
 	"quesId": 172,
-	"title": "factorial trailing zeros",
+	"title": "factorial trailing zeroes",
 	"counter": {
 		"cpp": {
 			"accepted": 1,
@@ -2598,7 +2598,7 @@
 },
 {
 	"quesId": 283,
-	"title": "move zeros",
+	"title": "move zeroes",
 	"counter": {
 		"cpp": {
 			"accepted": 3,
@@ -2994,7 +2994,7 @@
 },
 {
 	"quesId": 347,
-	"title": "top k frequency elements",
+	"title": "top k frequent elements",
 	"counter": {
 		"cpp": {
 			"accepted": 2,
@@ -3858,7 +3858,7 @@
 },
 {
 	"quesId": 474,
-	"title": "ones and zeros",
+	"title": "ones and zeroes",
 	"counter": {
 		"cpp": {
 			"accepted": 1,
@@ -4157,7 +4157,7 @@
 },
 {
 	"quesId": 513,
-	"title": "bottom left tree value",
+	"title": "find bottom left tree value",
 	"counter": {
 		"cpp": {
 			"accepted": 2,
@@ -4241,7 +4241,7 @@
 },
 {
 	"quesId": 523,
-	"title": "continous subarray sum",
+	"title": "continuous subarray sum",
 	"counter": {
 		"cpp": {
 			"accepted": 1,
@@ -4341,7 +4341,7 @@
 },
 {
 	"quesId": 540,
-	"title": "single element in sorted array",
+	"title": "single element in a sorted array",
 	"counter": {
 		"cpp": {
 			"accepted": 4,
@@ -4695,7 +4695,7 @@
 },
 {
 	"quesId": 596,
-	"title": "classes more than 5 students",
+	"title": "classes with at least 5 students",
 	"counter": {
 		"mysql": {
 			"accepted": 1
@@ -4915,7 +4915,7 @@
 },
 {
 	"quesId": 627,
-	"title": "swap salary",
+	"title": "swap sex of employees",
 	"counter": {
 		"mysql": {
 			"accepted": 2
@@ -4926,7 +4926,7 @@
 },
 {
 	"quesId": 628,
-	"title": "maximum product of 3 numbers",
+	"title": "maximum product of three numbers",
 	"counter": {
 		"cpp": {
 			"accepted": 2,
@@ -4974,7 +4974,7 @@
 },
 {
 	"quesId": 637,
-	"title": "average of levels in a binary tree",
+	"title": "average of levels in binary tree",
 	"counter": {
 		"cpp": {
 			"accepted": 1,
@@ -5130,7 +5130,7 @@
 },
 {
 	"quesId": 657,
-	"title": "return robot to origin",
+	"title": "robot return to origin",
 	"counter": {
 		"cpp": {
 			"accepted": 2,
@@ -5250,7 +5250,7 @@
 },
 {
 	"quesId": 674,
-	"title": "longest continous increasing subsequence",
+	"title": "longest continuous increasing subsequence",
 	"counter": {
 		"cpp": {
 			"accepted": 2,
@@ -5694,7 +5694,7 @@
 },
 {
 	"quesId": 729,
-	"title": "my calender I",
+	"title": "my calendar I",
 	"counter": {
 		"cpp": {
 			"accepted": 4,
@@ -5706,7 +5706,7 @@
 },
 {
 	"quesId": 731,
-	"title": "my calender II",
+	"title": "my calendar II",
 	"counter": {
 		"cpp": {
 			"accepted": 2,
@@ -5718,7 +5718,7 @@
 },
 {
 	"quesId": 732,
-	"title": "my calender III",
+	"title": "my calendar III",
 	"counter": {
 		"cpp": {
 			"accepted": 1,
@@ -5778,7 +5778,7 @@
 },
 {
 	"quesId": 740,
-	"title": "earn and delete",
+	"title": "delete and earn",
 	"counter": {
 		"cpp": {
 			"accepted": 3,
@@ -5802,7 +5802,7 @@
 },
 {
 	"quesId": 744,
-	"title": "find the smallest letter greater than target",
+	"title": "find smallest letter greater than target",
 	"counter": {
 		"cpp": {
 			"accepted": 2,
@@ -6922,7 +6922,7 @@
 },
 {
 	"quesId": 901,
-	"title": "online stock span problem",
+	"title": "online stock span",
 	"counter": {
 		"cpp": {
 			"accepted": 2,
@@ -7570,7 +7570,7 @@
 },
 {
 	"quesId": 983,
-	"title": "minimum costs of tickets",
+	"title": "minimum cost for tickets",
 	"counter": {
 		"cpp": {
 			"accepted": 1,
@@ -7678,7 +7678,7 @@
 },
 {
 	"quesId": 993,
-	"title": "cousins in a binary tree",
+	"title": "cousins in binary tree",
 	"counter": {
 		"cpp": {
 			"accepted": 2,
@@ -7774,7 +7774,7 @@
 },
 {
 	"quesId": 1005,
-	"title": "maximum sum of array after k negations",
+	"title": "maximize sum of array after k negations",
 	"counter": {
 		"cpp": {
 			"accepted": 2,
@@ -7954,7 +7954,7 @@
 },
 {
 	"quesId": 1024,
-	"title": "video stiching",
+	"title": "video stitching",
 	"counter": {
 		"cpp": {
 			"accepted": 2,
@@ -16144,7 +16144,7 @@
 },
 {
 	"quesId": 2553,
-	"title": "seperate the digits in an array",
+	"title": "separate the digits in an array",
 	"counter": {
 		"cpp": {
 			"accepted": 2,
@@ -16648,7 +16648,7 @@
 },
 {
 	"quesId": 2641,
-	"title": "cousins in a binary tree II",
+	"title": "cousins in binary tree II",
 	"counter": {
 		"cpp": {
 			"accepted": 1,
@@ -16748,7 +16748,7 @@
 },
 {
 	"quesId": 2656,
-	"title": "max sum with exactly k elements",
+	"title": "maximum sum with exactly k elements",
 	"counter": {
 		"cpp": {
 			"accepted": 1,
@@ -17052,7 +17052,7 @@
 },
 {
 	"quesId": 2707,
-	"title": "extra characters in string",
+	"title": "extra characters in a string",
 	"counter": {
 		"cpp": {
 			"accepted": 1,
@@ -17100,7 +17100,7 @@
 },
 {
 	"quesId": 2715,
-	"title": "execute cancellable function with delay",
+	"title": "timeout cancellation",
 	"counter": {
 		"js": {
 			"accepted": 1,
@@ -18292,7 +18292,7 @@
 },
 {
 	"quesId": 3024,
-	"title": "type of triangle II",
+	"title": "type of triangle",
 	"counter": {
 		"cpp": {
 			"accepted": 1,
@@ -19016,7 +19016,7 @@
 },
 {
 	"quesId": 3171,
-	"title": "find subarray with bitwise AND closest to K",
+	"title": "find subarray with bitwise OR closest to K",
 	"counter": {
 		"cpp": {
 			"accepted": 0,
@@ -22569,6 +22569,30 @@
 {
 	"quesId": 3871,
 	"title": "count commas in range II",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3875,
+	"title": "construct uniform parity array I",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3876,
+	"title": "construct uniform parity array II",
 	"counter": {
 		"cpp": {
 			"accepted": 1,
