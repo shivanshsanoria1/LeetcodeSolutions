@@ -81,6 +81,7 @@ function writeToHTML(id, slug, data) {
 	}
 }
 
+// process file writes in small batches instead of concurrently prcoessing in bulk
 async function batchWrite(problems) {
 	try {
 		for(let i=0; i < problems.length; i += config.BATCH_SIZE){
