@@ -68,6 +68,35 @@ async function createBackupJSON(sourceFilePath) {
 	}
 }
 
+function writeToHTML(id, slug, data) {
+	try {
+		const filename = `${id}.${slug}.html`
+		const filePath = path.join(__dirname, '..', 'generated', 'html', filename)
+
+		// await fs.mkdir(path.dirname(filePath), { recursive: true });
+		return fs.writeFile(filePath, data, "utf-8");
+	} catch (err) {
+		console.log(err)
+		throw err
+	}
+}
+
+async function batchWrite(problems) {
+	try {
+		for(let i=0; i < problems.length; i += config.BATCH_SIZE){
+			const batch = []
+			for(let j=i; j < Math.min(problems.length, i + config.BATCH_SIZE); j++){
+				const {id, slug, description} = problems[j]
+				batch.push(writeToHTML(id, slug, description))
+			}
+
+			await Promise.all(batch)
+		}
+	} catch (err) {
+		console.log(err)
+		throw err
+	}
+}
 
 async function updateConfig() {
     try {
@@ -187,7 +216,7 @@ function parseDetailedProblem(problem){
 				submissionsDisplayed: stats.totalSubmission,
 				acceptanceRate: stats.acRate,
 			},
-			description: problem.content,
+			description: problem.content ?? '',
 			tags: problem.topicTags.map(tag => tag.name),
 		};
 	} catch (err) {
@@ -276,27 +305,34 @@ async function fetchProblemsDetailed(problems) {
 		if(config.FORCE_REFRESH_PROBLEM_LIST_DETAILED){
 			// create a backup of the old json
 			await createBackupJSON(filePath)
-			// clear the main json
-			await writeToJSON(filePath, [])
 		}else{
 			problemsDetailed = await readFromJSON(filePath)
 		}
 		
 		if(problems.length === problemsDetailed.length)return problemsDetailed
 		else if(problems.length < problemsDetailed.length)throw new Error('Problems length mismatch')
-
+		
+		const promisesHTML = []
 		for(let i = problemsDetailed.length, limit = config.FETCH_NEXT_COUNT; 
 			i < problems.length && limit > 0; 
 			i++, limit--){
 			const {questionFrontendId, title, titleSlug} = problems[i]
 			console.log(`Fetching... ${questionFrontendId}.${title}`)
+			
+			const problem = await fetchProblemDetailed(titleSlug)
 
-			problemsDetailed.push(await fetchProblemDetailed(titleSlug))
+			const {id, slug, description} = problem
+			promisesHTML.push({id, slug, description})
+			delete problem.description
+
+			problemsDetailed.push(problem)
 
 			await sleep(250) // prevent overwhelming the API
 		}
 
 		await writeToJSON(filePath, problemsDetailed)
+
+		await batchWrite(promisesHTML)
 
 		if(config.FORCE_REFRESH_PROBLEM_LIST_DETAILED){
 			config.FORCE_REFRESH_PROBLEM_LIST_DETAILED = false
@@ -330,7 +366,4 @@ async function fetchStatsFromLC(){
 	}
 }
 
-
-// don't forget to use await when calling 
-// readFromJSON(), writeToJSON(), createBackupJSON(), updateConfig
 fetchStatsFromLC()
