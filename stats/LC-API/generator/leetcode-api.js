@@ -3,8 +3,6 @@ const fs = require('node:fs/promises');
 
 const config = require('./config.json')
 
-// don't forget to use await when calling readFromJSON(), writeToJSON(), createBackupJSON()
-
 // reads JSON data from the mentioned path; 
 // creates a JSON file with default-value if file not found
 async function readFromJSON(filePath, defaultValue = []) {
@@ -68,6 +66,17 @@ async function createBackupJSON(sourceFilePath) {
 		console.log(err)
 		throw err
 	}
+}
+
+
+async function updateConfig() {
+    try {
+    	const filePathConfig = path.join(__dirname, 'config.json');
+		await writeToJSON(filePathConfig, config)
+    } catch (err) {
+		console.log(err)
+		throw err;
+    }
 }
 
 // fetch a list of all problems from LC-API, moves old data to backup;
@@ -143,11 +152,10 @@ async function fetchAllProblems() {
 		await createBackupJSON(filePath)
 		// create the json with fresh data
 		await writeToJSON(filePath, problems)
-
-		config.LAST_UPDATED = new Date().toISOString()
 		
-		const filePathConfig = path.join(__dirname, 'config.json');
-		await writeToJSON(filePathConfig, config)
+		config.FORCE_REFRESH_PROBLEM_LIST = false
+		config.LAST_UPDATED = new Date().toISOString()
+		await updateConfig()
 
 		console.log('Fetched problem list length = ' + problems.length)
 
@@ -290,6 +298,11 @@ async function fetchProblemsDetailed(problems) {
 
 		await writeToJSON(filePath, problemsDetailed)
 
+		if(config.FORCE_REFRESH_PROBLEM_LIST_DETAILED){
+			config.FORCE_REFRESH_PROBLEM_LIST_DETAILED = false
+			await updateConfig()
+		}
+		
 		return problemsDetailed
 	}catch(err){
 		console.log(err);
@@ -317,4 +330,7 @@ async function fetchStatsFromLC(){
 	}
 }
 
+
+// don't forget to use await when calling 
+// readFromJSON(), writeToJSON(), createBackupJSON(), updateConfig
 fetchStatsFromLC()

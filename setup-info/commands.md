@@ -72,24 +72,31 @@ node ./stats/LC-API/generator/leetcode-api.js
 
 ---
 
-### 6. Push code to github repo
-#### 6.1
+### 6. Run 'lc-data-comparator.js'
+```
+node ./stats/comparator/lc-data-comparator.js
+```
+
+---
+
+### 0. Push code to github repo
+#### 0.1
 ```
 git add .
 ```
 
-#### 6.2
+#### 0.2
 ```
 git commit -m "message goes here"
 ```
 
-#### 6.3
-##### 6.3.1 First Time
+#### 0.3
+##### 0.3.1 First Time
 ```
 git push -u origin main
 ```
 
-##### 6.3.2 Subsequent
+##### 0.3.2 Subsequent
 ```
 git push
 ```

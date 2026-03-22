@@ -23,11 +23,11 @@ This repo contains solutions to over **1700** problems from [leetcode.com](https
 ## Stats
 
 <!-- UPDATE STATS HERE -->
-Last updated on _Sun, 22 Mar 2026 06:21:19 GMT_
+Last updated on _Sun, 22 Mar 2026 07:43:55 GMT_
 ### Total problems:
 | Accepted | Partially accepted | Total | Link |
 | --- | --- | --- | --- |
-| 1776 | 103 | 3873 | [csv](./stats/generated/leetcode-stats.csv)|
+| 1776 | 103 | 3878 | [csv](./stats/generated/leetcode-stats.csv)|
 ### Total problems solved per language:
 | Language  | Accepted | Partially accepted | Links Table |
 | --- | --- | --- | --- |

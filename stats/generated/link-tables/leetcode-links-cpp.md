@@ -25,7 +25,7 @@
 |25 | reverse nodes in K group |[L1](<../../../CPP [0001-0500]/25.reverse_nodes_in_K_group [1].cpp>) [L2](<../../../CPP [0001-0500]/25.reverse_nodes_in_K_group [2].cpp>) |general|
 |26 | remove duplicates from sorted array |[L1](<../../../CPP [0001-0500]/26.remove_duplicates_from_sorted_array [1].cpp>) |general|
 |27 | remove element |[L1](<../../../CPP [0001-0500]/27.remove_element [1].cpp>) |general|
-|28 | find the index of the first occurence in a string |[L1](<../../../CPP [0001-0500]/28.find_the_index_of_the_first_occurence_in_a_string [1].cpp>) [L2](<../../../CPP [0001-0500]/28.find_the_index_of_the_first_occurence_in_a_string [2].cpp>) [L3](<../../../CPP [0001-0500]/28.find_the_index_of_the_first_occurence_in_a_string [3].cpp>) |general|
+|28 | find the index of the first occurrence in a string |[L1](<../../../CPP [0001-0500]/28.find_the_index_of_the_first_occurrence_in_a_string [1].cpp>) [L2](<../../../CPP [0001-0500]/28.find_the_index_of_the_first_occurrence_in_a_string [2].cpp>) [L3](<../../../CPP [0001-0500]/28.find_the_index_of_the_first_occurrence_in_a_string [3].cpp>) |general|
 |29 | divide two integers |[L1](<../../../CPP [0001-0500]/29.divide_two_integers [1].cpp>) |general|
 |31 | next permutation |[L1](<../../../CPP [0001-0500]/31.next_permutation [1].cpp>) [L2](<../../../CPP [0001-0500]/31.next_permutation [2].cpp>) |general|
 |33 | search in rotated sorted array |[L1](<../../../CPP [0001-0500]/33.search_in_rotated_sorted_array [1].cpp>) |general|
@@ -701,7 +701,7 @@
 |1291 | sequential digits |[L1](<../../../CPP [1001-1500]/1291.sequential_digits [1].cpp>) [L2](<../../../CPP [1001-1500]/1291.sequential_digits [2].cpp>) [L3](<../../../CPP [1001-1500]/1291.sequential_digits [3].cpp>) |general|
 |1295 | find numbers with even number of digits |[L1](<../../../CPP [1001-1500]/1295.find_numbers_with_even_number_of_digits [1].cpp>) [L2](<../../../CPP [1001-1500]/1295.find_numbers_with_even_number_of_digits [2].cpp>) [L3](<../../../CPP [1001-1500]/1295.find_numbers_with_even_number_of_digits [3].cpp>) |general|
 |1296 | divide array in sets of k consecutive numbers |[L1](<../../../CPP [1001-1500]/1296.divide_array_in_sets_of_k_consecutive_numbers [1].cpp>) [L2](<../../../CPP [1001-1500]/1296.divide_array_in_sets_of_k_consecutive_numbers [2].cpp>) |general|
-|1299 | replace elements with greatest elements on right side |[L1](<../../../CPP [1001-1500]/1299.replace_elements_with_greatest_elements_on_right_side [1].cpp>) [L2](<../../../CPP [1001-1500]/1299.replace_elements_with_greatest_elements_on_right_side [2].cpp>) |general|
+|1299 | replace elements with greatest element on right side |[L1](<../../../CPP [1001-1500]/1299.replace_elements_with_greatest_element_on_right_side [1].cpp>) [L2](<../../../CPP [1001-1500]/1299.replace_elements_with_greatest_element_on_right_side [2].cpp>) |general|
 |1302 | deepest leaves sum |[L1](<../../../CPP [1001-1500]/1302.deepest_leaves_sum [1].cpp>) [L2](<../../../CPP [1001-1500]/1302.deepest_leaves_sum [2].cpp>) |general|
 |1304 | find n unique integers sum up to zero |[L1](<../../../CPP [1001-1500]/1304.find_n_unique_integers_sum_up_to_zero [1].cpp>) |general|
 |1305 | all elements in two binary search trees |[L1](<../../../CPP [1001-1500]/1305.all_elements_in_two_binary_search_trees [1].cpp>) |general|
@@ -719,7 +719,7 @@
 |1329 | sort the matrix diagonally |[L1](<../../../CPP [1001-1500]/1329.sort_the_matrix_diagonally [1].cpp>) |general|
 |1331 | rank transform of an array |[L1](<../../../CPP [1001-1500]/1331.rank_transform_of_an_array [1].cpp>) [L2](<../../../CPP [1001-1500]/1331.rank_transform_of_an_array [2].cpp>) |general|
 |1333 | filter restaurants by vegan friendly price and distance |[L1](<../../../CPP [1001-1500]/1333.filter_restaurants_by_vegan_friendly_price_and_distance [1].cpp>) |general|
-|1334 | find the city with the smallest number of neighbours at a threshold distance |[L1](<../../../CPP [1001-1500]/1334.find_the_city_with_the_smallest_number_of_neighbours_at_a_threshold_distance [1].cpp>) |general|
+|1334 | find the city with the smallest number of neighbors at a threshold distance |[L1](<../../../CPP [1001-1500]/1334.find_the_city_with_the_smallest_number_of_neighbors_at_a_threshold_distance [1].cpp>) |general|
 |1337 | the k weakest rows in a matrix |[L1](<../../../CPP [1001-1500]/1337.the_k_weakest_rows_in_a_matrix [1].cpp>) [L2](<../../../CPP [1001-1500]/1337.the_k_weakest_rows_in_a_matrix [2].cpp>) [L3](<../../../CPP [1001-1500]/1337.the_k_weakest_rows_in_a_matrix [3].cpp>) [L4](<../../../CPP [1001-1500]/1337.the_k_weakest_rows_in_a_matrix [4].cpp>) [L5](<../../../CPP [1001-1500]/1337.the_k_weakest_rows_in_a_matrix [5].cpp>) |general|
 |1338 | reduce array size to the half |[L1](<../../../CPP [1001-1500]/1338.reduce_array_size_to_the_half [1].cpp>) |general|
 |1342 | number of steps to reduce a number to zero |[L1](<../../../CPP [1001-1500]/1342.number_of_steps_to_reduce_a_number_to_zero [1].cpp>) |general|
@@ -767,7 +767,7 @@
 |1417 | reformat the string |[L1](<../../../CPP [1001-1500]/1417.reformat_the_string [1].cpp>) |general|
 |1422 | maximum score after splitting a string |[L1](<../../../CPP [1001-1500]/1422.maximum_score_after_splitting_a_string [1].cpp>) |general|
 |1424 | diagonal traverse II |[L1](<../../../CPP [1001-1500]/1424.diagonal_traverse_II [1].cpp>) [L2](<../../../CPP [1001-1500]/1424.diagonal_traverse_II [2].cpp>) [L3](<../../../CPP [1001-1500]/1424.diagonal_traverse_II [3].cpp>) [L4](<../../../CPP [1001-1500]/1424.diagonal_traverse_II [4].cpp>) |general|
-|1431 | kid with the greatest number of candies |[L1](<../../../CPP [1001-1500]/1431.kid_with_the_greatest_number_of_candies [1].cpp>) |general|
+|1431 | kids with the greatest number of candies |[L1](<../../../CPP [1001-1500]/1431.kids_with_the_greatest_number_of_candies [1].cpp>) |general|
 |1432 | max difference you can get from changing an integer |[L1](<../../../CPP [1001-1500]/1432.max_difference_you_can_get_from_changing_an_integer [1].cpp>) [L2](<../../../CPP [1001-1500]/1432.max_difference_you_can_get_from_changing_an_integer [2].cpp>) |general|
 |1433 | check if a string can break another string |[L1](<../../../CPP [1001-1500]/1433.check_if_a_string_can_break_another_string [1].cpp>) |general|
 |1436 | destination city |[L1](<../../../CPP [1001-1500]/1436.destination_city [1].cpp>) [L2](<../../../CPP [1001-1500]/1436.destination_city [2].cpp>) [L3](<../../../CPP [1001-1500]/1436.destination_city [3].cpp>) |general|
@@ -788,7 +788,7 @@
 |1461 | check if a string contains all binary codes of size k |[L1](<../../../CPP [1001-1500]/1461.check_if_a_string_contains_all_binary_codes_of_size_k [1].cpp>) |general|
 |1462 | course schedule IV |[L1](<../../../CPP [1001-1500]/1462.course_schedule_IV [1].cpp>) [L2](<../../../CPP [1001-1500]/1462.course_schedule_IV [2].cpp>) |general|
 |1463 | cherry pickup II |[L1](<../../../CPP [1001-1500]/1463.cherry_pickup_II [1].cpp>) |general|
-|1464 | maximun product of two elements in an array |[L1](<../../../CPP [1001-1500]/1464.maximun_product_of_two_elements_in_an_array [1].cpp>) |general|
+|1464 | maximum product of two elements in an array |[L1](<../../../CPP [1001-1500]/1464.maximum_product_of_two_elements_in_an_array [1].cpp>) |general|
 |1466 | reorder routes to make all paths lead to the city zero |[L1](<../../../CPP [1001-1500]/1466.reorder_routes_to_make_all_paths_lead_to_the_city_zero [1].cpp>) |general|
 |1470 | shuffle the array |[L1](<../../../CPP [1001-1500]/1470.shuffle_the_array [1].cpp>) [L2](<../../../CPP [1001-1500]/1470.shuffle_the_array [2].cpp>) [L3](<../../../CPP [1001-1500]/1470.shuffle_the_array [3].cpp>) [L4](<../../../CPP [1001-1500]/1470.shuffle_the_array [4].cpp>) [L5](<../../../CPP [1001-1500]/1470.shuffle_the_array [5].cpp>) |general|
 |1472 | design browser history |[L1](<../../../CPP [1001-1500]/1472.design_browser_history [1].cpp>) |general|
@@ -813,7 +813,7 @@
 |1514 | path with maximum probability |[L1](<../../../CPP [1501-2000]/1514.path_with_maximum_probability [1].cpp>) [L2](<../../../CPP [1501-2000]/1514.path_with_maximum_probability [2].cpp>) [L3](<../../../CPP [1501-2000]/1514.path_with_maximum_probability [3].cpp>) |general|
 |1518 | water bottles |[L1](<../../../CPP [1501-2000]/1518.water_bottles [1].cpp>) |general|
 |1523 | count odd numbers in an interval range |[L1](<../../../CPP [1501-2000]/1523.count_odd_numbers_in_an_interval_range [1].cpp>) |general|
-|1524 | number of subarrays with odd sum |[L1](<../../../CPP [1501-2000]/1524.number_of_subarrays_with_odd_sum [1].cpp>) |general|
+|1524 | number of sub arrays with odd sum |[L1](<../../../CPP [1501-2000]/1524.number_of_sub_arrays_with_odd_sum [1].cpp>) |general|
 |1528 | shuffle string |[L1](<../../../CPP [1501-2000]/1528.shuffle_string [1].cpp>) |general|
 |1530 | number of good leaf nodes pairs |[L1](<../../../CPP [1501-2000]/1530.number_of_good_leaf_nodes_pairs [1].cpp>) [L2](<../../../CPP [1501-2000]/1530.number_of_good_leaf_nodes_pairs [2].cpp>) |general|
 |1534 | count good triplets |[L1](<../../../CPP [1501-2000]/1534.count_good_triplets [1].cpp>) |general|
@@ -837,7 +837,7 @@
 |1578 | minimum time to make rope colorful |[L1](<../../../CPP [1501-2000]/1578.minimum_time_to_make_rope_colorful [1].cpp>) |general|
 |1579 | remove max number of edges to keep graph fully traversable |[L1](<../../../CPP [1501-2000]/1579.remove_max_number_of_edges_to_keep_graph_fully_traversable [1].cpp>) |general|
 |1582 | special positions in a binary matrix |[L1](<../../../CPP [1501-2000]/1582.special_positions_in_a_binary_matrix [1].cpp>) [L2](<../../../CPP [1501-2000]/1582.special_positions_in_a_binary_matrix [2].cpp>) [L3](<../../../CPP [1501-2000]/1582.special_positions_in_a_binary_matrix [3].cpp>) |general|
-|1584 | minimum cost to connect all points |[L1](<../../../CPP [1501-2000]/1584.minimum_cost_to_connect_all_points [1].cpp>) |general|
+|1584 | min cost to connect all points |[L1](<../../../CPP [1501-2000]/1584.min_cost_to_connect_all_points [1].cpp>) |general|
 |1588 | sum of all odd length subarrays |[L1](<../../../CPP [1501-2000]/1588.sum_of_all_odd_length_subarrays [1].cpp>) [L2](<../../../CPP [1501-2000]/1588.sum_of_all_odd_length_subarrays [2].cpp>) [L3](<../../../CPP [1501-2000]/1588.sum_of_all_odd_length_subarrays [3].cpp>) |general|
 |1590 | make sum divisible by P |[L1](<../../../CPP [1501-2000]/1590.make_sum_divisible_by_P [1].cpp>) |general|
 |1592 | rearrange spaces between words |[L1](<../../../CPP [1501-2000]/1592.rearrange_spaces_between_words [1].cpp>) |general|
@@ -942,7 +942,7 @@
 |1859 | sorting the sentence |[L1](<../../../CPP [1501-2000]/1859.sorting_the_sentence [1].cpp>) |general|
 |1863 | sum of all subset xor totals |[L1](<../../../CPP [1501-2000]/1863.sum_of_all_subset_xor_totals [1].cpp>) [L2](<../../../CPP [1501-2000]/1863.sum_of_all_subset_xor_totals [2].cpp>) [L3](<../../../CPP [1501-2000]/1863.sum_of_all_subset_xor_totals [3].cpp>) |general|
 |1865 | finding pairs with a certain sum |[L1](<../../../CPP [1501-2000]/1865.finding_pairs_with_a_certain_sum [1].cpp>) |general|
-|1869 | longest contiguous segments of ones than zeros |[L1](<../../../CPP [1501-2000]/1869.longest_contiguous_segments_of_ones_than_zeros [1].cpp>) |general|
+|1869 | longer contiguous segments of ones than zeros |[L1](<../../../CPP [1501-2000]/1869.longer_contiguous_segments_of_ones_than_zeros [1].cpp>) |general|
 |1870 | minimum speed to arrive on time |[L1](<../../../CPP [1501-2000]/1870.minimum_speed_to_arrive_on_time [1].cpp>) |general|
 |1876 | substrings of size three with distinct characters |[L1](<../../../CPP [1501-2000]/1876.substrings_of_size_three_with_distinct_characters [1].cpp>) [L2](<../../../CPP [1501-2000]/1876.substrings_of_size_three_with_distinct_characters [2].cpp>) |general|
 |1877 | minimize maximum pair sum in array |[L1](<../../../CPP [1501-2000]/1877.minimize_maximum_pair_sum_in_array [1].cpp>) |general|
@@ -961,7 +961,7 @@
 |1912 | design movie rental system |[L1](<../../../CPP [1501-2000]/1912.design_movie_rental_system [1].cpp>) |general|
 |1913 | maximum product difference between two pairs |[L1](<../../../CPP [1501-2000]/1913.maximum_product_difference_between_two_pairs [1].cpp>) [L2](<../../../CPP [1501-2000]/1913.maximum_product_difference_between_two_pairs [2].cpp>) [L3](<../../../CPP [1501-2000]/1913.maximum_product_difference_between_two_pairs [3].cpp>) |general|
 |1915 | number of wonderful substrings |[L1](<../../../CPP [1501-2000]/1915.number_of_wonderful_substrings [1].cpp>) [L2](<../../../CPP [1501-2000]/1915.number_of_wonderful_substrings [2].cpp>) |general|
-|1916 | mean of array after removing some elements |[L1](<../../../CPP [1501-2000]/1916.mean_of_array_after_removing_some_elements [1].cpp>) |general|
+|1916 | count ways to build rooms in an ant colony |[L1](<../../../CPP [1501-2000]/1916.count_ways_to_build_rooms_in_an_ant_colony [1].cpp>) |general|
 |1920 | build array from permutation |[L1](<../../../CPP [1501-2000]/1920.build_array_from_permutation [1].cpp>) [L2](<../../../CPP [1501-2000]/1920.build_array_from_permutation [2].cpp>) [L3](<../../../CPP [1501-2000]/1920.build_array_from_permutation [3].cpp>) |general|
 |1925 | count square sum triples |[L1](<../../../CPP [1501-2000]/1925.count_square_sum_triples [1].cpp>) [L2](<../../../CPP [1501-2000]/1925.count_square_sum_triples [2].cpp>) |general|
 |1926 | nearest exit from entrance in maze |[L1](<../../../CPP [1501-2000]/1926.nearest_exit_from_entrance_in_maze [1].cpp>) [L2](<../../../CPP [1501-2000]/1926.nearest_exit_from_entrance_in_maze [2].cpp>) |general|
@@ -969,7 +969,7 @@
 |1930 | unique length 3 palindromic subsequences |[L1](<../../../CPP [1501-2000]/1930.unique_length_3_palindromic_subsequences [1].cpp>) |general|
 |1935 | maximum number of words you can type |[L1](<../../../CPP [1501-2000]/1935.maximum_number_of_words_you_can_type [1].cpp>) [L2](<../../../CPP [1501-2000]/1935.maximum_number_of_words_you_can_type [2].cpp>) |general|
 |1937 | maximum number of points with cost |[L1](<../../../CPP [1501-2000]/1937.maximum_number_of_points_with_cost [1].cpp>) |general|
-|1941 | check if all characters have equal number of occurences |[L1](<../../../CPP [1501-2000]/1941.check_if_all_characters_have_equal_number_of_occurences [1].cpp>) [L2](<../../../CPP [1501-2000]/1941.check_if_all_characters_have_equal_number_of_occurences [2].cpp>) |general|
+|1941 | check if all characters have equal number of occurrences |[L1](<../../../CPP [1501-2000]/1941.check_if_all_characters_have_equal_number_of_occurrences [1].cpp>) [L2](<../../../CPP [1501-2000]/1941.check_if_all_characters_have_equal_number_of_occurrences [2].cpp>) |general|
 |1942 | the number of the smallest unoccupied chair |[L1](<../../../CPP [1501-2000]/1942.the_number_of_the_smallest_unoccupied_chair [1].cpp>) |general|
 |1945 | sum of digits of string after convert |[L1](<../../../CPP [1501-2000]/1945.sum_of_digits_of_string_after_convert [1].cpp>) |general|
 |1952 | three divisors |[L1](<../../../CPP [1501-2000]/1952.three_divisors [1].cpp>) [L2](<../../../CPP [1501-2000]/1952.three_divisors [2].cpp>) |general|
@@ -978,7 +978,7 @@
 |1962 | remove stones to minimize the total |[L1](<../../../CPP [1501-2000]/1962.remove_stones_to_minimize_the_total [1].cpp>) |general|
 |1963 | minimum number of swaps to make the string balanced |[L1](<../../../CPP [1501-2000]/1963.minimum_number_of_swaps_to_make_the_string_balanced [1].cpp>) |general|
 |1967 | number of strings that appear as substrings in word |[L1](<../../../CPP [1501-2000]/1967.number_of_strings_that_appear_as_substrings_in_word [1].cpp>) [L2](<../../../CPP [1501-2000]/1967.number_of_strings_that_appear_as_substrings_in_word [2].cpp>) [L3](<../../../CPP [1501-2000]/1967.number_of_strings_that_appear_as_substrings_in_word [3].cpp>) |general|
-|1968 | array with elements not equal to average of neighbours |[L1](<../../../CPP [1501-2000]/1968.array_with_elements_not_equal_to_average_of_neighbours [1].cpp>) [L2](<../../../CPP [1501-2000]/1968.array_with_elements_not_equal_to_average_of_neighbours [2].cpp>) [L3](<../../../CPP [1501-2000]/1968.array_with_elements_not_equal_to_average_of_neighbours [3].cpp>) |general|
+|1968 | array with elements not equal to average of neighbors |[L1](<../../../CPP [1501-2000]/1968.array_with_elements_not_equal_to_average_of_neighbors [1].cpp>) [L2](<../../../CPP [1501-2000]/1968.array_with_elements_not_equal_to_average_of_neighbors [2].cpp>) [L3](<../../../CPP [1501-2000]/1968.array_with_elements_not_equal_to_average_of_neighbors [3].cpp>) |general|
 |1971 | find if path exists in graph |[L1](<../../../CPP [1501-2000]/1971.find_if_path_exists_in_graph [1].cpp>) [L2](<../../../CPP [1501-2000]/1971.find_if_path_exists_in_graph [2].cpp>) [L3](<../../../CPP [1501-2000]/1971.find_if_path_exists_in_graph [3].cpp>) [L4](<../../../CPP [1501-2000]/1971.find_if_path_exists_in_graph [4].cpp>) |general|
 |1974 | minimum time to type word using special typewriter |[L1](<../../../CPP [1501-2000]/1974.minimum_time_to_type_word_using_special_typewriter [1].cpp>) |general|
 |1976 | number of ways to arrive at destination |[L1](<../../../CPP [1501-2000]/1976.number_of_ways_to_arrive_at_destination [1].cpp>) |general|
@@ -1028,14 +1028,14 @@
 |2078 | two furthest houses with different colors |[L1](<../../../CPP [2001-2500]/2078.two_furthest_houses_with_different_colors [1].cpp>) [L2](<../../../CPP [2001-2500]/2078.two_furthest_houses_with_different_colors [2].cpp>) |general|
 |2079 | watering plants |[L1](<../../../CPP [2001-2500]/2079.watering_plants [1].cpp>) |general|
 |2080 | range frequency queries |[L1](<../../../CPP [2001-2500]/2080.range_frequency_queries [1].cpp>) |general|
-|2085 | count common words with one occurence |[L1](<../../../CPP [2001-2500]/2085.count_common_words_with_one_occurence [1].cpp>) [L2](<../../../CPP [2001-2500]/2085.count_common_words_with_one_occurence [2].cpp>) |general|
+|2085 | count common words with one occurrence |[L1](<../../../CPP [2001-2500]/2085.count_common_words_with_one_occurrence [1].cpp>) [L2](<../../../CPP [2001-2500]/2085.count_common_words_with_one_occurrence [2].cpp>) |general|
 |2089 | find target indices after sorting array |[L1](<../../../CPP [2001-2500]/2089.find_target_indices_after_sorting_array [1].cpp>) [L2](<../../../CPP [2001-2500]/2089.find_target_indices_after_sorting_array [2].cpp>) |general|
 |2090 | k radius subarray averages |[L1](<../../../CPP [2001-2500]/2090.k_radius_subarray_averages [1].cpp>) |general|
 |2092 | find all people with secret |[L1](<../../../CPP [2001-2500]/2092.find_all_people_with_secret [1].cpp>) [L2](<../../../CPP [2001-2500]/2092.find_all_people_with_secret [2].cpp>) |general|
 |2094 | finding 3 digit even numbers |[L1](<../../../CPP [2001-2500]/2094.finding_3_digit_even_numbers [1].cpp>) [L2](<../../../CPP [2001-2500]/2094.finding_3_digit_even_numbers [2].cpp>) |general|
 |2095 | delete the middle node of a linked list |[L1](<../../../CPP [2001-2500]/2095.delete_the_middle_node_of_a_linked_list [1].cpp>) [L2](<../../../CPP [2001-2500]/2095.delete_the_middle_node_of_a_linked_list [2].cpp>) |general|
 |2096 | step by step directions from a binary tree node to another |[L1](<../../../CPP [2001-2500]/2096.step_by_step_directions_from_a_binary_tree_node_to_another [1].cpp>) |general|
-|2099 | find the subsequence of length k with the largest sum |[L1](<../../../CPP [2001-2500]/2099.find_the_subsequence_of_length_k_with_the_largest_sum [1].cpp>) [L2](<../../../CPP [2001-2500]/2099.find_the_subsequence_of_length_k_with_the_largest_sum [2].cpp>) |general|
+|2099 | find subsequence of length k with the largest sum |[L1](<../../../CPP [2001-2500]/2099.find_subsequence_of_length_k_with_the_largest_sum [1].cpp>) [L2](<../../../CPP [2001-2500]/2099.find_subsequence_of_length_k_with_the_largest_sum [2].cpp>) |general|
 |2100 | find good days to rob the bank |[L1](<../../../CPP [2001-2500]/2100.find_good_days_to_rob_the_bank [1].cpp>) [L2](<../../../CPP [2001-2500]/2100.find_good_days_to_rob_the_bank [2].cpp>) |general|
 |2101 | detonate the maximum bombs |[L1](<../../../CPP [2001-2500]/2101.detonate_the_maximum_bombs [1].cpp>) [L2](<../../../CPP [2001-2500]/2101.detonate_the_maximum_bombs [2].cpp>) |general|
 |2103 | rings and rods |[L1](<../../../CPP [2001-2500]/2103.rings_and_rods [1].cpp>) |general|
@@ -1118,7 +1118,7 @@
 |2303 | calculate amount paid in taxes |[L1](<../../../CPP [2001-2500]/2303.calculate_amount_paid_in_taxes [1].cpp>) |general|
 |2309 | greatest english letter in upper and lower case |[L1](<../../../CPP [2001-2500]/2309.greatest_english_letter_in_upper_and_lower_case [1].cpp>) |general|
 |2315 | count asterisks |[L1](<../../../CPP [2001-2500]/2315.count_asterisks [1].cpp>) |general|
-|2316 | count unreachable pair of nodes in an undirected graph |[L1](<../../../CPP [2001-2500]/2316.count_unreachable_pair_of_nodes_in_an_undirected_graph [1].cpp>) [L2](<../../../CPP [2001-2500]/2316.count_unreachable_pair_of_nodes_in_an_undirected_graph [2].cpp>) |general|
+|2316 | count unreachable pairs of nodes in an undirected graph |[L1](<../../../CPP [2001-2500]/2316.count_unreachable_pairs_of_nodes_in_an_undirected_graph [1].cpp>) [L2](<../../../CPP [2001-2500]/2316.count_unreachable_pairs_of_nodes_in_an_undirected_graph [2].cpp>) |general|
 |2319 | check if matrix is x matrix |[L1](<../../../CPP [2001-2500]/2319.check_if_matrix_is_x_matrix [1].cpp>) |general|
 |2325 | decode the message |[L1](<../../../CPP [2001-2500]/2325.decode_the_message [1].cpp>) |general|
 |2326 | spiral matrix IV |[L1](<../../../CPP [2001-2500]/2326.spiral_matrix_IV [1].cpp>) |general|
@@ -1203,7 +1203,7 @@
 |2500 | delete greatest value in each row |[L1](<../../../CPP [2001-2500]/2500.delete_greatest_value_in_each_row [1].cpp>) |general|
 |2501 | longest square streak in an array |[L1](<../../../CPP [2501-3000]/2501.longest_square_streak_in_an_array [1].cpp>) |general|
 |2502 | design memory allocator |[L1](<../../../CPP [2501-3000]/2502.design_memory_allocator [1].cpp>) |general|
-|2506 | count pair of similar strings |[L1](<../../../CPP [2501-3000]/2506.count_pair_of_similar_strings [1].cpp>) [L2](<../../../CPP [2501-3000]/2506.count_pair_of_similar_strings [2].cpp>) |general|
+|2506 | count pairs of similar strings |[L1](<../../../CPP [2501-3000]/2506.count_pairs_of_similar_strings [1].cpp>) [L2](<../../../CPP [2501-3000]/2506.count_pairs_of_similar_strings [2].cpp>) |general|
 |2515 | shortest distance to target string in a circular array |[L1](<../../../CPP [2501-3000]/2515.shortest_distance_to_target_string_in_a_circular_array [1].cpp>) [L2](<../../../CPP [2501-3000]/2515.shortest_distance_to_target_string_in_a_circular_array [2].cpp>) |general|
 |2520 | count the digits that divide a number |[L1](<../../../CPP [2501-3000]/2520.count_the_digits_that_divide_a_number [1].cpp>) |general|
 |2521 | distinct prime factors of product of array |[L1](<../../../CPP [2501-3000]/2521.distinct_prime_factors_of_product_of_array [1].cpp>) |general|

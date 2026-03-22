@@ -28,9 +28,9 @@
 |626 | exchange seats |[L1](<../../../MySQL/626.exchange_seats [1].sql>) [L2](<../../../MySQL/626.exchange_seats [2].sql>) |database|
 |627 | swap sex of employees |[L1](<../../../MySQL/627.swap_sex_of_employees [1].sql>) [L2](<../../../MySQL/627.swap_sex_of_employees [2].sql>) |database|
 |1045 | customers who bought all products |[L1](<../../../MySQL/1045.customers_who_bought_all_products [1].sql>) |database|
-|1050 | actors and directors who cooperated atleast three times |[L1](<../../../MySQL/1050.actors_and_directors_who_cooperated_atleast_three_times [1].sql>) |database|
+|1050 | actors and directors who cooperated at least three times |[L1](<../../../MySQL/1050.actors_and_directors_who_cooperated_at_least_three_times [1].sql>) |database|
 |1068 | product sales analysis I |[L1](<../../../MySQL/1068.product_sales_analysis_I [1].sql>) |database|
-|1070 | product sale analysis III |[L1](<../../../MySQL/1070.product_sale_analysis_III [1].sql>) [L2](<../../../MySQL/1070.product_sale_analysis_III [2].sql>) |database|
+|1070 | product sales analysis III |[L1](<../../../MySQL/1070.product_sales_analysis_III [1].sql>) [L2](<../../../MySQL/1070.product_sales_analysis_III [2].sql>) |database|
 |1075 | project employees I |[L1](<../../../MySQL/1075.project_employees_I [1].sql>) |database|
 |1084 | sales analysis III |[L1](<../../../MySQL/1084.sales_analysis_III [1].sql>) [L2](<../../../MySQL/1084.sales_analysis_III [2].sql>) [L3](<../../../MySQL/1084.sales_analysis_III [3].sql>) |database|
 |1141 | user activity for the past 30 days I |[L1](<../../../MySQL/1141.user_activity_for_the_past_30_days_I [1].sql>) |database|
@@ -52,9 +52,9 @@
 |1484 | group sold products by the date |[L1](<../../../MySQL/1484.group_sold_products_by_the_date [1].sql>) |database|
 |1517 | find users with valid emails |[L1](<../../../MySQL/1517.find_users_with_valid_emails [1].sql>) |database|
 |1527 | patients with a condition |[L1](<../../../MySQL/1527.patients_with_a_condition [1].sql>) |database|
-|1581 | customers who visited but did not make any transactions |[L1](<../../../MySQL/1581.customers_who_visited_but_did_not_make_any_transactions [1].sql>) |database|
+|1581 | customer who visited but did not make any transactions |[L1](<../../../MySQL/1581.customer_who_visited_but_did_not_make_any_transactions [1].sql>) |database|
 |1587 | bank account summary II |[L1](<../../../MySQL/1587.bank_account_summary_II [1].sql>) [L2](<../../../MySQL/1587.bank_account_summary_II [2].sql>) |database|
-|1633 | percentge of users attended a contest |[L1](<../../../MySQL/1633.percentge_of_users_attended_a_contest [1].sql>) [L2](<../../../MySQL/1633.percentge_of_users_attended_a_contest [2].sql>) |database|
+|1633 | percentage of users attended a contest |[L1](<../../../MySQL/1633.percentage_of_users_attended_a_contest [1].sql>) [L2](<../../../MySQL/1633.percentage_of_users_attended_a_contest [2].sql>) |database|
 |1661 | average time of process per machine |[L1](<../../../MySQL/1661.average_time_of_process_per_machine [1].sql>) [L2](<../../../MySQL/1661.average_time_of_process_per_machine [2].sql>) [L3](<../../../MySQL/1661.average_time_of_process_per_machine [3].sql>) |database|
 |1667 | fix names in a table |[L1](<../../../MySQL/1667.fix_names_in_a_table [1].sql>) |database|
 |1683 | invalid tweets |[L1](<../../../MySQL/1683.invalid_tweets [1].sql>) |database|

@@ -301,7 +301,7 @@
 },
 {
 	"quesId": 28,
-	"title": "find the index of the first occurence in a string",
+	"title": "find the index of the first occurrence in a string",
 	"counter": {
 		"cpp": {
 			"accepted": 3,
@@ -8145,7 +8145,7 @@
 },
 {
 	"quesId": 1050,
-	"title": "actors and directors who cooperated atleast three times",
+	"title": "actors and directors who cooperated at least three times",
 	"counter": {
 		"mysql": {
 			"accepted": 1
@@ -8215,7 +8215,7 @@
 },
 {
 	"quesId": 1070,
-	"title": "product sale analysis III",
+	"title": "product sales analysis III",
 	"counter": {
 		"mysql": {
 			"accepted": 2
@@ -9361,7 +9361,7 @@
 },
 {
 	"quesId": 1299,
-	"title": "replace elements with greatest elements on right side",
+	"title": "replace elements with greatest element on right side",
 	"counter": {
 		"cpp": {
 			"accepted": 2,
@@ -9600,7 +9600,7 @@
 },
 {
 	"quesId": 1334,
-	"title": "find the city with the smallest number of neighbours at a threshold distance",
+	"title": "find the city with the smallest number of neighbors at a threshold distance",
 	"counter": {
 		"cpp": {
 			"accepted": 1,
@@ -10244,7 +10244,7 @@
 },
 {
 	"quesId": 1431,
-	"title": "kid with the greatest number of candies",
+	"title": "kids with the greatest number of candies",
 	"counter": {
 		"cpp": {
 			"accepted": 1,
@@ -10500,7 +10500,7 @@
 },
 {
 	"quesId": 1464,
-	"title": "maximun product of two elements in an array",
+	"title": "maximum product of two elements in an array",
 	"counter": {
 		"cpp": {
 			"accepted": 1,
@@ -10826,7 +10826,7 @@
 },
 {
 	"quesId": 1524,
-	"title": "number of subarrays with odd sum",
+	"title": "number of sub arrays with odd sum",
 	"counter": {
 		"cpp": {
 			"accepted": 1,
@@ -11137,7 +11137,7 @@
 },
 {
 	"quesId": 1581,
-	"title": "customers who visited but did not make any transactions",
+	"title": "customer who visited but did not make any transactions",
 	"counter": {
 		"mysql": {
 			"accepted": 1
@@ -11160,7 +11160,7 @@
 },
 {
 	"quesId": 1584,
-	"title": "minimum cost to connect all points",
+	"title": "min cost to connect all points",
 	"counter": {
 		"cpp": {
 			"accepted": 1,
@@ -11399,7 +11399,7 @@
 },
 {
 	"quesId": 1633,
-	"title": "percentge of users attended a contest",
+	"title": "percentage of users attended a contest",
 	"counter": {
 		"mysql": {
 			"accepted": 2
@@ -12592,7 +12592,7 @@
 },
 {
 	"quesId": 1869,
-	"title": "longest contiguous segments of ones than zeros",
+	"title": "longer contiguous segments of ones than zeros",
 	"counter": {
 		"cpp": {
 			"accepted": 1,
@@ -12853,7 +12853,7 @@
 },
 {
 	"quesId": 1916,
-	"title": "mean of array after removing some elements",
+	"title": "count ways to build rooms in an ant colony",
 	"counter": {
 		"cpp": {
 			"accepted": 1,
@@ -12964,7 +12964,7 @@
 },
 {
 	"quesId": 1941,
-	"title": "check if all characters have equal number of occurences",
+	"title": "check if all characters have equal number of occurrences",
 	"counter": {
 		"cpp": {
 			"accepted": 2,
@@ -13087,7 +13087,7 @@
 },
 {
 	"quesId": 1968,
-	"title": "array with elements not equal to average of neighbours",
+	"title": "array with elements not equal to average of neighbors",
 	"counter": {
 		"cpp": {
 			"accepted": 3,
@@ -13721,7 +13721,7 @@
 },
 {
 	"quesId": 2085,
-	"title": "count common words with one occurence",
+	"title": "count common words with one occurrence",
 	"counter": {
 		"cpp": {
 			"accepted": 2,
@@ -13805,7 +13805,7 @@
 },
 {
 	"quesId": 2099,
-	"title": "find the subsequence of length k with the largest sum",
+	"title": "find subsequence of length k with the largest sum",
 	"counter": {
 		"cpp": {
 			"accepted": 2,
@@ -14881,7 +14881,7 @@
 },
 {
 	"quesId": 2316,
-	"title": "count unreachable pair of nodes in an undirected graph",
+	"title": "count unreachable pairs of nodes in an undirected graph",
 	"counter": {
 		"cpp": {
 			"accepted": 2,
@@ -15964,7 +15964,7 @@
 },
 {
 	"quesId": 2506,
-	"title": "count pair of similar strings",
+	"title": "count pairs of similar strings",
 	"counter": {
 		"cpp": {
 			"accepted": 2,

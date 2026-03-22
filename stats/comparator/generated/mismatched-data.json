@@ -1,13 +1,5 @@
 [
     {
-        "id": 28,
-        "myTitle": "find the index of the first occurence in a string",
-        "lcTitle": "Find the Index of the First Occurrence in a String",
-        "newTitle": "find_the_index_of_the_first_occurrence_in_a_string",
-        "lcTitleSlug": "find-the-index-of-the-first-occurrence-in-a-string",
-        "langs": "cpp"
-    },
-    {
         "id": 167,
         "myTitle": "two sum ii input array is sorted",
         "lcTitle": "Two Sum II - Input Array Is Sorted",
@@ -112,38 +104,6 @@
         "langs": "cpp"
     },
     {
-        "id": 1005,
-        "myTitle": "maximum sum of array after k negations",
-        "lcTitle": "Maximize Sum Of Array After K Negations",
-        "newTitle": "maximize_sum_of_array_after_k_negations",
-        "lcTitleSlug": "maximize-sum-of-array-after-k-negations",
-        "langs": "cpp"
-    },
-    {
-        "id": 1024,
-        "myTitle": "video stiching",
-        "lcTitle": "Video Stitching",
-        "newTitle": "video_stitching",
-        "lcTitleSlug": "video-stitching",
-        "langs": "cpp"
-    },
-    {
-        "id": 1050,
-        "myTitle": "actors and directors who cooperated atleast three times",
-        "lcTitle": "Actors and Directors Who Cooperated At Least Three Times",
-        "newTitle": "actors_and_directors_who_cooperated_at_least_three_times",
-        "lcTitleSlug": "actors-and-directors-who-cooperated-at-least-three-times",
-        "langs": "mysql"
-    },
-    {
-        "id": 1070,
-        "myTitle": "product sale analysis iii",
-        "lcTitle": "Product Sales Analysis III",
-        "newTitle": "product_sales_analysis_iii",
-        "lcTitleSlug": "product-sales-analysis-iii",
-        "langs": "mysql"
-    },
-    {
         "id": 1137,
         "myTitle": "nth tribonacci number",
         "lcTitle": "N-th Tribonacci Number",
@@ -160,27 +120,11 @@
         "langs": "cpp"
     },
     {
-        "id": 1299,
-        "myTitle": "replace elements with greatest elements on right side",
-        "lcTitle": "Replace Elements with Greatest Element on Right Side",
-        "newTitle": "replace_elements_with_greatest_element_on_right_side",
-        "lcTitleSlug": "replace-elements-with-greatest-element-on-right-side",
-        "langs": "cpp"
-    },
-    {
         "id": 1333,
         "myTitle": "filter restaurants by vegan friendly price and distance",
         "lcTitle": "Filter Restaurants by Vegan-Friendly, Price and Distance",
         "newTitle": "filter_restaurants_by_vegan_friendly,_price_and_distance",
         "lcTitleSlug": "filter-restaurants-by-vegan-friendly-price-and-distance",
-        "langs": "cpp"
-    },
-    {
-        "id": 1334,
-        "myTitle": "find the city with the smallest number of neighbours at a threshold distance",
-        "lcTitle": "Find the City With the Smallest Number of Neighbors at a Threshold Distance",
-        "newTitle": "find_the_city_with_the_smallest_number_of_neighbors_at_a_threshold_distance",
-        "lcTitleSlug": "find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance",
         "langs": "cpp"
     },
     {
@@ -192,27 +136,11 @@
         "langs": "mysql"
     },
     {
-        "id": 1431,
-        "myTitle": "kid with the greatest number of candies",
-        "lcTitle": "Kids With the Greatest Number of Candies",
-        "newTitle": "kids_with_the_greatest_number_of_candies",
-        "lcTitleSlug": "kids-with-the-greatest-number-of-candies",
-        "langs": "cpp"
-    },
-    {
         "id": 1437,
         "myTitle": "check if all 1s are at least length k places away",
         "lcTitle": "Check If All 1's Are at Least Length K Places Away",
         "newTitle": "check_if_all_1's_are_at_least_length_k_places_away",
         "lcTitleSlug": "check-if-all-1s-are-at-least-length-k-places-away",
-        "langs": "cpp"
-    },
-    {
-        "id": 1464,
-        "myTitle": "maximun product of two elements in an array",
-        "lcTitle": "Maximum Product of Two Elements in an Array",
-        "newTitle": "maximum_product_of_two_elements_in_an_array",
-        "lcTitleSlug": "maximum-product-of-two-elements-in-an-array",
         "langs": "cpp"
     },
     {
@@ -232,14 +160,6 @@
         "langs": "mysql"
     },
     {
-        "id": 1524,
-        "myTitle": "number of subarrays with odd sum",
-        "lcTitle": "Number of Sub-arrays With Odd Sum",
-        "newTitle": "number_of_sub_arrays_with_odd_sum",
-        "lcTitleSlug": "number-of-sub-arrays-with-odd-sum",
-        "langs": "cpp"
-    },
-    {
         "id": 1560,
         "myTitle": "most visited sector in a circular track",
         "lcTitle": "Most Visited Sector in  a Circular Track",
@@ -256,99 +176,11 @@
         "langs": "cpp"
     },
     {
-        "id": 1581,
-        "myTitle": "customers who visited but did not make any transactions",
-        "lcTitle": "Customer Who Visited but Did Not Make Any Transactions",
-        "newTitle": "customer_who_visited_but_did_not_make_any_transactions",
-        "lcTitleSlug": "customer-who-visited-but-did-not-make-any-transactions",
-        "langs": "mysql"
-    },
-    {
-        "id": 1584,
-        "myTitle": "minimum cost to connect all points",
-        "lcTitle": "Min Cost to Connect All Points",
-        "newTitle": "min_cost_to_connect_all_points",
-        "lcTitleSlug": "min-cost-to-connect-all-points",
-        "langs": "cpp"
-    },
-    {
-        "id": 1633,
-        "myTitle": "percentge of users attended a contest",
-        "lcTitle": "Percentage of Users Attended a Contest",
-        "newTitle": "percentage_of_users_attended_a_contest",
-        "lcTitleSlug": "percentage-of-users-attended-a-contest",
-        "langs": "mysql"
-    },
-    {
-        "id": 1869,
-        "myTitle": "longest contiguous segments of ones than zeros",
-        "lcTitle": "Longer Contiguous Segments of Ones than Zeros",
-        "newTitle": "longer_contiguous_segments_of_ones_than_zeros",
-        "lcTitleSlug": "longer-contiguous-segments-of-ones-than-zeros",
-        "langs": "cpp"
-    },
-    {
-        "id": 1916,
-        "myTitle": "mean of array after removing some elements",
-        "lcTitle": "Count Ways to Build Rooms in an Ant Colony",
-        "newTitle": "count_ways_to_build_rooms_in_an_ant_colony",
-        "lcTitleSlug": "count-ways-to-build-rooms-in-an-ant-colony",
-        "langs": "cpp"
-    },
-    {
-        "id": 1941,
-        "myTitle": "check if all characters have equal number of occurences",
-        "lcTitle": "Check if All Characters Have Equal Number of Occurrences",
-        "newTitle": "check_if_all_characters_have_equal_number_of_occurrences",
-        "lcTitleSlug": "check-if-all-characters-have-equal-number-of-occurrences",
-        "langs": "cpp"
-    },
-    {
-        "id": 1968,
-        "myTitle": "array with elements not equal to average of neighbours",
-        "lcTitle": "Array With Elements Not Equal to Average of Neighbors",
-        "newTitle": "array_with_elements_not_equal_to_average_of_neighbors",
-        "lcTitleSlug": "array-with-elements-not-equal-to-average-of-neighbors",
-        "langs": "cpp"
-    },
-    {
-        "id": 2085,
-        "myTitle": "count common words with one occurence",
-        "lcTitle": "Count Common Words With One Occurrence",
-        "newTitle": "count_common_words_with_one_occurrence",
-        "lcTitleSlug": "count-common-words-with-one-occurrence",
-        "langs": "cpp"
-    },
-    {
-        "id": 2099,
-        "myTitle": "find the subsequence of length k with the largest sum",
-        "lcTitle": "Find Subsequence of Length K With the Largest Sum",
-        "newTitle": "find_subsequence_of_length_k_with_the_largest_sum",
-        "lcTitleSlug": "find-subsequence-of-length-k-with-the-largest-sum",
-        "langs": "cpp"
-    },
-    {
         "id": 2134,
         "myTitle": "minimum swaps to group all 1s together ii",
         "lcTitle": "Minimum Swaps to Group All 1's Together II",
         "newTitle": "minimum_swaps_to_group_all_1's_together_ii",
         "lcTitleSlug": "minimum-swaps-to-group-all-1s-together-ii",
-        "langs": "cpp"
-    },
-    {
-        "id": 2316,
-        "myTitle": "count unreachable pair of nodes in an undirected graph",
-        "lcTitle": "Count Unreachable Pairs of Nodes in an Undirected Graph",
-        "newTitle": "count_unreachable_pairs_of_nodes_in_an_undirected_graph",
-        "lcTitleSlug": "count-unreachable-pairs-of-nodes-in-an-undirected-graph",
-        "langs": "cpp"
-    },
-    {
-        "id": 2506,
-        "myTitle": "count pair of similar strings",
-        "lcTitle": "Count Pairs Of Similar Strings",
-        "newTitle": "count_pairs_of_similar_strings",
-        "lcTitleSlug": "count-pairs-of-similar-strings",
         "langs": "cpp"
     },
     {

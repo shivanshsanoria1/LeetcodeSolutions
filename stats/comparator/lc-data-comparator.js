@@ -10,6 +10,8 @@ async function compareLists() {
 		const lcFilePath = path.join(__dirname, '..', 'LC-API', 'generated', 'leetcode-problem-list.json')
 		const lcData = await fs.readFile(lcFilePath, { encoding: "utf8" })
 		const lcProblems = JSON.parse(lcData)
+
+		console.log('Comparing mine and the official LC problem lists...')
 		
 		const mismatchedProblems = []
 		for(const myProblem of myProblems){

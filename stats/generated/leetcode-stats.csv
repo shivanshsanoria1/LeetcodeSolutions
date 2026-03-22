@@ -24,7 +24,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 25,reverse nodes in K group,general,cpp,2,0
 26,remove duplicates from sorted array,general,cpp,1,0
 27,remove element,general,cpp,1,0
-28,find the index of the first occurence in a string,general,cpp,3,0
+28,find the index of the first occurrence in a string,general,cpp,3,0
 29,divide two integers,general,cpp,1,2
 31,next permutation,general,cpp,2,0
 33,search in rotated sorted array,general,cpp,1,0
@@ -679,13 +679,13 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 1047,remove all adjacent duplicates in string,general,cpp,1,0
 1048,longest string chain,general,cpp,1,1
 1049,last stone weight II,general,cpp,1,1
-1050,actors and directors who cooperated atleast three times,database,mysql,1,0
+1050,actors and directors who cooperated at least three times,database,mysql,1,0
 1051,height checker,general,cpp,2,0
 1052,grumpy bookstore owner,general,cpp,1,0
 1054,distant barcodes,general,cpp,1,0
 1061,lexicographically smallest equivalent string,general,cpp,1,0
 1068,product sales analysis I,database,mysql,1,0
-1070,product sale analysis III,database,mysql,2,0
+1070,product sales analysis III,database,mysql,2,0
 1071,greatest common divisor of strings,general,cpp,1,0
 1074,number of submatrices that sum to target,general,cpp,1,1
 1075,project employees I,database,mysql,1,0
@@ -781,7 +781,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 1291,sequential digits,general,cpp,3,1
 1295,find numbers with even number of digits,general,cpp+js,3+1,0+0
 1296,divide array in sets of k consecutive numbers,general,cpp,2,0
-1299,replace elements with greatest elements on right side,general,cpp,2,0
+1299,replace elements with greatest element on right side,general,cpp,2,0
 1302,deepest leaves sum,general,cpp,2,0
 1304,find n unique integers sum up to zero,general,cpp,1,0
 1305,all elements in two binary search trees,general,cpp,1,0
@@ -801,7 +801,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 1329,sort the matrix diagonally,general,cpp,1,0
 1331,rank transform of an array,general,cpp,2,0
 1333,filter restaurants by vegan friendly price and distance,general,cpp,1,0
-1334,find the city with the smallest number of neighbours at a threshold distance,general,cpp,1,0
+1334,find the city with the smallest number of neighbors at a threshold distance,general,cpp,1,0
 1337,the k weakest rows in a matrix,general,cpp,5,0
 1338,reduce array size to the half,general,cpp,1,0
 1341,movie rating,database,mysql,2,0
@@ -855,7 +855,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 1417,reformat the string,general,cpp,1,0
 1422,maximum score after splitting a string,general,cpp,1,0
 1424,diagonal traverse II,general,cpp,4,0
-1431,kid with the greatest number of candies,general,cpp,1,0
+1431,kids with the greatest number of candies,general,cpp,1,0
 1432,max difference you can get from changing an integer,general,cpp,2,0
 1433,check if a string can break another string,general,cpp,1,0
 1436,destination city,general,cpp,3,0
@@ -876,7 +876,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 1461,check if a string contains all binary codes of size k,general,cpp,1,0
 1462,course schedule IV,general,cpp,2,0
 1463,cherry pickup II,general,cpp,1,1
-1464,maximun product of two elements in an array,general,cpp,1,0
+1464,maximum product of two elements in an array,general,cpp,1,0
 1466,reorder routes to make all paths lead to the city zero,general,cpp,1,0
 1470,shuffle the array,general,cpp,5,0
 1472,design browser history,general,cpp,1,0
@@ -903,7 +903,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 1517,find users with valid emails,database,mysql,1,0
 1518,water bottles,general,cpp,1,0
 1523,count odd numbers in an interval range,general,cpp,1,0
-1524,number of subarrays with odd sum,general,cpp,1,1
+1524,number of sub arrays with odd sum,general,cpp,1,1
 1527,patients with a condition,database,mysql,1,0
 1528,shuffle string,general,cpp+js,1+1,0+0
 1530,number of good leaf nodes pairs,general,cpp,2,0
@@ -928,9 +928,9 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 1576,replace all s to avoid consecutive repeating characters,general,cpp,1,0
 1578,minimum time to make rope colorful,general,cpp,1,0
 1579,remove max number of edges to keep graph fully traversable,general,cpp,1,0
-1581,customers who visited but did not make any transactions,database,mysql,1,0
+1581,customer who visited but did not make any transactions,database,mysql,1,0
 1582,special positions in a binary matrix,general,cpp,3,0
-1584,minimum cost to connect all points,general,cpp,1,0
+1584,min cost to connect all points,general,cpp,1,0
 1587,bank account summary II,database,mysql,2,0
 1588,sum of all odd length subarrays,general,cpp,3,0
 1590,make sum divisible by P,general,cpp,1,1
@@ -950,7 +950,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 1629,slowest key,general,cpp,1,0
 1630,arithmetic subarrays,general,cpp,2,0
 1631,path with minimum effort,general,cpp,1,0
-1633,percentge of users attended a contest,database,mysql,2,0
+1633,percentage of users attended a contest,database,mysql,2,0
 1636,sort array by increasing frequency,general,cpp,4,0
 1637,widest vertical area between two points containing no points,general,cpp,1,0
 1640,check array formation through concatenation,general,cpp,2,0
@@ -1050,7 +1050,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 1859,sorting the sentence,general,cpp,1,0
 1863,sum of all subset xor totals,general,cpp,3,0
 1865,finding pairs with a certain sum,general,cpp,1,0
-1869,longest contiguous segments of ones than zeros,general,cpp,1,0
+1869,longer contiguous segments of ones than zeros,general,cpp,1,0
 1870,minimum speed to arrive on time,general,cpp,1,1
 1873,calculate special bonus,database,mysql,2,0
 1876,substrings of size three with distinct characters,general,cpp,2,0
@@ -1072,7 +1072,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 1912,design movie rental system,general,cpp,1,0
 1913,maximum product difference between two pairs,general,cpp,3,0
 1915,number of wonderful substrings,general,cpp,2,3
-1916,mean of array after removing some elements,general,cpp,1,0
+1916,count ways to build rooms in an ant colony,general,cpp,1,0
 1920,build array from permutation,general,cpp+js,3+1,0+0
 1925,count square sum triples,general,cpp,2,0
 1926,nearest exit from entrance in maze,general,cpp,2,0
@@ -1081,7 +1081,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 1934,confirmation rate,database,mysql,1,0
 1935,maximum number of words you can type,general,cpp,2,0
 1937,maximum number of points with cost,general,cpp,1,2
-1941,check if all characters have equal number of occurences,general,cpp,2,0
+1941,check if all characters have equal number of occurrences,general,cpp,2,0
 1942,the number of the smallest unoccupied chair,general,cpp,1,0
 1945,sum of digits of string after convert,general,cpp,1,0
 1952,three divisors,general,cpp,2,0
@@ -1091,7 +1091,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 1963,minimum number of swaps to make the string balanced,general,cpp,1,0
 1965,employees with missing information,database,mysql,2,0
 1967,number of strings that appear as substrings in word,general,cpp,3,0
-1968,array with elements not equal to average of neighbours,general,cpp,3,0
+1968,array with elements not equal to average of neighbors,general,cpp,3,0
 1971,find if path exists in graph,general,cpp,4,0
 1974,minimum time to type word using special typewriter,general,cpp,1,0
 1976,number of ways to arrive at destination,general,cpp,1,0
@@ -1144,14 +1144,14 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 2079,watering plants,general,cpp,1,0
 2080,range frequency queries,general,cpp,1,2
 2082,the number of rich customers,database,mysql,2,0
-2085,count common words with one occurence,general,cpp,2,0
+2085,count common words with one occurrence,general,cpp,2,0
 2089,find target indices after sorting array,general,cpp,2,0
 2090,k radius subarray averages,general,cpp,1,1
 2092,find all people with secret,general,cpp,2,0
 2094,finding 3 digit even numbers,general,cpp,2,0
 2095,delete the middle node of a linked list,general,cpp,2,0
 2096,step by step directions from a binary tree node to another,general,cpp,1,2
-2099,find the subsequence of length k with the largest sum,general,cpp,2,0
+2099,find subsequence of length k with the largest sum,general,cpp,2,0
 2100,find good days to rob the bank,general,cpp,2,1
 2101,detonate the maximum bombs,general,cpp,2,0
 2102,sequentially ordinal rank tracker,general,cpp,0,1
@@ -1240,7 +1240,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 2306,naming a company,general,cpp,0,1
 2309,greatest english letter in upper and lower case,general,cpp,1,0
 2315,count asterisks,general,cpp,1,0
-2316,count unreachable pair of nodes in an undirected graph,general,cpp,2,0
+2316,count unreachable pairs of nodes in an undirected graph,general,cpp,2,0
 2319,check if matrix is x matrix,general,cpp,1,0
 2325,decode the message,general,cpp,1,0
 2326,spiral matrix IV,general,cpp,1,0
@@ -1330,7 +1330,7 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 2500,delete greatest value in each row,general,cpp,1,0
 2501,longest square streak in an array,general,cpp,1,0
 2502,design memory allocator,general,cpp,1,0
-2506,count pair of similar strings,general,cpp,2,0
+2506,count pairs of similar strings,general,cpp,2,0
 2515,shortest distance to target string in a circular array,general,cpp,2,0
 2520,count the digits that divide a number,general,cpp,1,0
 2521,distinct prime factors of product of array,general,cpp,1,0
