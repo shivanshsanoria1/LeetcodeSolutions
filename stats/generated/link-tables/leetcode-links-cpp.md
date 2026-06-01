@@ -1653,3 +1653,4 @@
 |3871 | count commas in range II |[L1](<../../../CPP [3501-4000]/3871.count_commas_in_range_II [1].cpp>) |general|
 |3875 | construct uniform parity array I |[L1](<../../../CPP [3501-4000]/3875.construct_uniform_parity_array_I [1].cpp>) |general|
 |3876 | construct uniform parity array II |[L1](<../../../CPP [3501-4000]/3876.construct_uniform_parity_array_II [1].cpp>) |general|
+|3880 | minimum absolute difference between two values |[L1](<../../../CPP [3501-4000]/3880.minimum_absolute_difference_between_two_values [1].cpp>) [L2](<../../../CPP [3501-4000]/3880.minimum_absolute_difference_between_two_values [2].cpp>) |general|

@@ -22601,5 +22601,17 @@
 	},
 	"isAccepted": true,
 	"type": "general"
+},
+{
+	"quesId": 3880,
+	"title": "minimum absolute difference between two values",
+	"counter": {
+		"cpp": {
+			"accepted": 2,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
 }
 ]
