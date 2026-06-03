@@ -1879,3 +1879,4 @@ Id,Title,Type,Language(s),accepted,partially-accepted
 3875,construct uniform parity array I,general,cpp,1,0
 3876,construct uniform parity array II,general,cpp,1,0
 3880,minimum absolute difference between two values,general,cpp,2,0
+3884,first matching character from both ends,general,cpp,1,0

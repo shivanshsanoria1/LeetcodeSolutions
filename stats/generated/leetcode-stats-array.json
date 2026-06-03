@@ -22613,5 +22613,17 @@
 	},
 	"isAccepted": true,
 	"type": "general"
+},
+{
+	"quesId": 3884,
+	"title": "first matching character from both ends",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
 }
 ]
