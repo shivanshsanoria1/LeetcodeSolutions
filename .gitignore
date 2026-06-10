@@ -4,6 +4,8 @@ algorithms/stats/generated
 
 misc/cpp/compiled
 
+util/web/generated
+
 # python virtual-environment
 .venv
 __pycache__
