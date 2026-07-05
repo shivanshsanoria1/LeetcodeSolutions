@@ -61,7 +61,7 @@ def chartShowSave(plt, chartName: str) -> None:
 # ------------------------------ #
 
 def loadArr() -> List[Dict]:
-	filePathJSON = './stats/lc-problems-list.json'
+	filePathJSON = './stats/lc-solved-problems-list.json'
 
 	with open(filePathJSON, 'r') as file:
 		arrayJSON = file.read()

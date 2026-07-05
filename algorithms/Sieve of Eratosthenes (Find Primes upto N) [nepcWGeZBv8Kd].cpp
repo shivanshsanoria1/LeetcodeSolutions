@@ -9,7 +9,7 @@ vector<int> sieveOfEratosthenes(int n){
         return {};
     
     // initially assume all nums are prime
-    vector<int> isPrime(n + 1, true);
+    vector<bool> isPrime(n + 1, true);
     // 0 and 1 are not prime
     isPrime[0] = false;
     isPrime[1] = false;

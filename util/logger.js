@@ -2,9 +2,10 @@ const fs = require('fs');
 const path = require('path');
 const util = require('util');
 
+const helper = require('./helper.js')
 const timer = require('./timer.js')
 
-const LOG_DIR = path.resolve(__dirname, 'logs');
+const LOG_DIR = helper.getDirPath('logs')
 
 const STATE = {
 	errorFound: false
@@ -19,20 +20,15 @@ function ensureLogDir() {
 }
 
 function getLogFilePath() {
-	const now = new Date();
-	const year = now.getFullYear();
-	const month = String(now.getMonth() + 1).padStart(2, '0');
-	const day = String(now.getDate()).padStart(2, '0');
-
-	const fileName = `logs_${year}-${month}-${day}.log`;
+	const fileName = `logs_${timer.getYYYYMMDD()}.log`;
 
 	return path.join(LOG_DIR, fileName);
 }
 
 function writeLine(line) {
-	const filePath = getLogFilePath();
-
 	try {
+		const filePath = getLogFilePath();
+
 		fs.appendFileSync(filePath, line + '\n', { encoding: 'utf8' });
 	} catch (err) {
 		console.error(`Failed to write to log file (${filePath}): ${err.message}`);

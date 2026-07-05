@@ -24656,5 +24656,18 @@
 	},
 	"isAccepted": true,
 	"type": "general"
+},
+{
+	"quesId": 3918,
+	"titleSlug": "sum-of-primes-between-number-and-its-reverse",
+	"title": "sum of primes between number and its reverse",
+	"counter": {
+		"cpp": {
+			"accepted": 2,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
 }
 ]

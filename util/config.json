@@ -2,6 +2,7 @@
 	"dirPaths": {
 		"local": "util/local",
 		"web": "util/web",
+		"logs": "util/logs",
 		"linkTables": "stats/link-tables"
 	},
 	"filePaths": {

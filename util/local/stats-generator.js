@@ -18,7 +18,7 @@ function getLangFormalName(langName) {
 	return null;
 }
 
-function getLanguageNameFromDirPath(dirPath) {
+function getLangNameFromDirPath(dirPath) {
 	for (const lang in langModel) {
 		for (const dirName of langModel[lang].dirNames) {
 			if (dirName === path.basename(path.normalize(dirPath))) {
@@ -81,17 +81,26 @@ async function generateStatsMap() {
 
 				const filePath = path.join(dirPath, fileName);
 
-				const quesId = parseInt(fileName.split('.')[0]);
+				const quesId = Number(fileName.split('.')[0]);
 				const titleSlug = fileName.split('.')[1].split(' ')[0]
 				const title = titleSlug.split('-').join(' ')
 				const fileExtension = path.extname(filePath).substring(1);
-				const language = getLanguageNameFromDirPath(dirPath);
+				const language = getLangNameFromDirPath(dirPath);
 				const isAccepted = !(fileName.includes('TLE') || fileName.includes('MLE'));
+
+				if (!isAccepted) {
+					logger.info(fileName)
+				}
 
 				let statObj = null;
 
 				if (statsMap.has(quesId)) {
 					statObj = statsMap.get(quesId);
+
+					if (titleSlug !== statObj.titleSlug) {
+						logger.error(`Title mismatch found: "${fileName}"`)
+						continue
+					}
 				} else {
 					statObj = { quesId, titleSlug, title, counter: {} };
 				}
@@ -243,7 +252,7 @@ async function updateDatabaseQuesIds(problems) {
 
 		const filePathJSON = helper.getFilePath('specialQuesIds')
 
-		specialQuesIds['db'] = quesIdsDB
+		specialQuesIds['DB'] = quesIdsDB
 
 		await fs.writeFile(filePathJSON, JSON.stringify(specialQuesIds, null, 4), "utf8");
 
@@ -265,7 +274,7 @@ async function updateStatsinReadmeFile(totalProblemCounter, problemCounterPerLan
 		statData += `_${new Date().toString()}_\n`;
 
 		statData += '### Total problems:\n';
-		statData += '| Accepted | Partially accepted | Total |\n';
+		statData += '| Accepted | Partially accepted | Out of |\n';
 		statData += '| --- | --- | --- |\n';
 		statData += `| ${totalProblemCounter.accepted} | ${totalProblemCounter.unaccepted} | ${config.MAX_QUES_ID} |\n`;
 
@@ -325,7 +334,7 @@ async function generateStats() {
 		await updateStatsinReadmeFile(totalProblemCounter, problemCounterPerLang);
 
 		if (logger.STATE.errorFound) {
-			console.log('Error found during execution: check logs')
+			console.log('Issue(s) found during execution: check logs')
 		}
 		logger.time('Problem Stat Generation Completed.');
 

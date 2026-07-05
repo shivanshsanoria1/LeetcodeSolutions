@@ -1660,3 +1660,4 @@
 |3908 | valid digit number |[L1](<../../CPP [3501-4000]/3908.valid-digit-number [1].cpp>) |general|
 |3912 | valid elements in an array |[L1](<../../CPP [3501-4000]/3912.valid-elements-in-an-array [1].cpp>) [L2](<../../CPP [3501-4000]/3912.valid-elements-in-an-array [2].cpp>) |general|
 |3913 | sort vowels by frequency |[L1](<../../CPP [3501-4000]/3913.sort-vowels-by-frequency [1].cpp>) |general|
+|3918 | sum of primes between number and its reverse |[L1](<../../CPP [3501-4000]/3918.sum-of-primes-between-number-and-its-reverse [1].cpp>) [L2](<../../CPP [3501-4000]/3918.sum-of-primes-between-number-and-its-reverse [2].cpp>) |general|
