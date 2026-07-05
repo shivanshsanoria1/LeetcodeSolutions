@@ -5,7 +5,7 @@
 		"linkTables": "stats/link-tables"
 	},
 	"filePaths": {
-		"LCProblemsList": "stats/lc-problems-list.json",
+		"LCProblemsList": "stats/lc-solved-problems-list.json",
 		"specialQuesIds": "util/local/special-ques-ids.json"
 	}
 }

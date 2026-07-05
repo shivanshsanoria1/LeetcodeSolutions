@@ -1,6 +1,7 @@
 {
 	quesId: <integer>,
 	title: <string>,
+	titleSlug: <string>,
 	counter: {
 		<language>: {
 			accepted: <integer>,

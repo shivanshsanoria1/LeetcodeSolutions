@@ -2,7 +2,13 @@ const fs = require('fs');
 const path = require('path');
 const util = require('util');
 
+const timer = require('./timer.js')
+
 const LOG_DIR = path.resolve(__dirname, 'logs');
+
+const STATE = {
+	errorFound: false
+}
 
 function ensureLogDir() {
 	try {
@@ -21,28 +27,6 @@ function getLogFilePath() {
 	const fileName = `logs_${year}-${month}-${day}.log`;
 
 	return path.join(LOG_DIR, fileName);
-}
-
-// gives the local timestamp by default, use 'ISO' to get the ISOString
-function getTimestamp(zone = 'local') {
-	const now = new Date();
-
-	if (String(zone).toUpperCase() === 'ISO') {
-		return now.toISOString();
-	}
-
-	// Local system time
-	const pad = (n) => String(n).padStart(2, "0");
-
-	return (
-		`${now.getFullYear()}-` +
-		`${pad(now.getMonth() + 1)}-` +
-		`${pad(now.getDate())}T` +
-		`${pad(now.getHours())}:` +
-		`${pad(now.getMinutes())}:` +
-		`${pad(now.getSeconds())}.` +
-		`${String(now.getMilliseconds()).padStart(3, "0")}`
-	);
 }
 
 function writeLine(line) {
@@ -74,7 +58,7 @@ function write(level, data) {
 	ensureLogDir();
 
 	const message = serialize(data);
-	const line = `[${getTimestamp()}] [${level}] ${message}`;
+	const line = `[${timer.getTimestamp()}] [${level}] ${message}`;
 
 	writeLine(line);
 }
@@ -85,11 +69,17 @@ function info(data) {
 
 function error(data) {
 	write('ERROR', data);
+	STATE.errorFound = true
 }
 
 function time(msg) {
-	console.log(`[${getTimestamp()}]: ${msg}`);
+	console.log(`[${timer.getTimestamp()}]: ${msg}`);
 	write('INFO', msg);
 }
 
-module.exports = { info, error, time };
+module.exports = {
+	info,
+	error,
+	time,
+	STATE
+};
