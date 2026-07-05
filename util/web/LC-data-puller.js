@@ -14,13 +14,13 @@ async function readFromJSON(filePath, defaultValue = []) {
 		return JSON.parse(problemsJSON)
 	} catch (err) {
 		if (err.code === 'ENOENT') {
-			// logger.log(`JSON file not found. Creating new file at: ${filePath}`);
+			// logger.info(`JSON file not found. Creating new file at: ${filePath}`);
 			await fs.writeFile(filePath, JSON.stringify(defaultValue, null, 4));
 
 			return defaultValue;
 		}
 
-		logger.log(err)
+		logger.info(err)
 		throw err
 	}
 }
@@ -31,7 +31,7 @@ async function writeToJSON(filePath, data) {
 		await fs.mkdir(path.dirname(filePath), { recursive: true });
 		await fs.writeFile(filePath, JSON.stringify(data, null, 4));
 	} catch (err) {
-		logger.log(err)
+		logger.info(err)
 		throw err
 	}
 }
@@ -43,10 +43,10 @@ async function createBackupJSON(sourceFilePath) {
 		await fs.access(sourceFilePath);
 	} catch (err) {
 		if (err.code === "ENOENT") {
-			logger.log("Source file does not exist. No backup created");
+			logger.info("Source file does not exist. No backup created");
 			return null
 		}
-		logger.log(err)
+		logger.info(err)
 		throw err;
 	}
 
@@ -64,7 +64,7 @@ async function createBackupJSON(sourceFilePath) {
 		// create the backup file and delete the source file
 		await fs.rename(sourceFilePath, backupFilePath);
 	} catch (err) {
-		logger.log(err)
+		logger.info(err)
 		throw err
 	}
 }
@@ -77,7 +77,7 @@ function writeToHTML(id, slug, data) {
 		// await fs.mkdir(path.dirname(filePath), { recursive: true });
 		return fs.writeFile(filePath, data, "utf-8");
 	} catch (err) {
-		logger.log(err)
+		logger.info(err)
 		throw err
 	}
 }
@@ -95,7 +95,7 @@ async function batchWrite(problems) {
 			await Promise.all(batch)
 		}
 	} catch (err) {
-		logger.log(err)
+		logger.info(err)
 		throw err
 	}
 }
@@ -105,7 +105,7 @@ async function updateConfig() {
 		const filePathConfig = path.join(__dirname, 'config.json');
 		await writeToJSON(filePathConfig, config)
 	} catch (err) {
-		logger.log(err)
+		logger.info(err)
 		throw err;
 	}
 }
@@ -123,7 +123,7 @@ async function fetchAllProblems() {
 		if (!config.FORCE_REFRESH_PROBLEM_LIST &&
 			lastUpdatedTimestamp.toString() !== "Invalid Date" &&
 			Date.now() - lastUpdatedTimestamp.getTime() < 7 * 24 * 60 * 60 * 1000) {
-			logger.log('Using the local version of problem-list')
+			logger.info('Using the local version of problem-list')
 
 			return await readFromJSON(filePath)
 		}
@@ -145,7 +145,7 @@ async function fetchAllProblems() {
 			}
 		`;
 
-		logger.log('Fetching new problem list from Leetcode API...')
+		logger.info('Fetching new problem list from Leetcode API...')
 
 		const res = await fetch(config.API_URL, {
 			method: "POST",
@@ -160,14 +160,14 @@ async function fetchAllProblems() {
 
 		if (!res.ok) {
 			const text = await res.text();
-			logger.log("Response body:", text);
+			logger.info("Response body:", text);
 			throw new Error(`HTTP ${res.status}`);
 		}
 
 		const { data, errors } = await res.json();
 
 		if (errors) {
-			logger.log(errors);
+			logger.info(errors);
 			throw new Error("GraphQL error");
 		}
 
@@ -188,11 +188,11 @@ async function fetchAllProblems() {
 		config.LAST_UPDATED = new Date().toISOString()
 		await updateConfig()
 
-		logger.log('Fetched problem list length = ' + problems.length)
+		logger.info('Fetched problem list length = ' + problems.length)
 
 		return problems
 	} catch (err) {
-		logger.log(err)
+		logger.info(err)
 		throw err;
 	}
 }
@@ -222,7 +222,7 @@ function parseDetailedProblem(problem) {
 			tags: problem.topicTags.map(tag => tag.name),
 		};
 	} catch (err) {
-		logger.log(err)
+		logger.info(err)
 		throw err;
 	}
 }
@@ -276,7 +276,7 @@ async function fetchProblemDetailed(titleSlug) {
 		const { data, errors } = await res.json();
 
 		if (errors) {
-			logger.log(errors);
+			logger.info(errors);
 			throw new Error("GraphQL error");
 		}
 
@@ -287,7 +287,7 @@ async function fetchProblemDetailed(titleSlug) {
 		return parseDetailedProblem(data.question);
 
 	} catch (err) {
-		logger.log(err);
+		logger.info(err);
 		throw err;
 	}
 }
@@ -319,7 +319,7 @@ async function fetchProblemsDetailed(problems) {
 			i < problems.length && limit > 0;
 			i++, limit--) {
 			const { questionFrontendId, title, titleSlug } = problems[i]
-			logger.log(`Fetching... ${questionFrontendId}.${title}`)
+			logger.info(`Fetching... ${questionFrontendId}.${title}`)
 
 			const problem = await fetchProblemDetailed(titleSlug)
 
@@ -343,7 +343,7 @@ async function fetchProblemsDetailed(problems) {
 
 		return problemsDetailed
 	} catch (err) {
-		logger.log(err);
+		logger.info(err);
 		throw err;
 	}
 }
@@ -356,10 +356,10 @@ async function fetchStatsFromLC() {
 		logger.time(`${scriptName} started.`)
 
 		// const problems = await fetchAllProblems();
-		// logger.log('Problem list length = ' + problems.length)
+		// logger.info('Problem list length = ' + problems.length)
 
 		// const problemsDetailed = await fetchProblemsDetailed(problems)
-		// logger.log('Detailed Problem list length = ' + problemsDetailed.length)
+		// logger.info('Detailed Problem list length = ' + problemsDetailed.length)
 
 		const endTime = Date.now();
 		// console.log(`[${new Date(endTime).toISOString()}]: ${scriptName} Completed.`);

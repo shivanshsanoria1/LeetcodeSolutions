@@ -37,7 +37,7 @@ async function updateFileTitles(problemList) {
 
 			const newTitle = problemObj.titleSlug
 			if (title === newTitle) {
-				logger.log(`${fileName} -> already upto date`)
+				logger.info(`${fileName} -> already upto date`)
 				continue
 			}
 
@@ -47,7 +47,7 @@ async function updateFileTitles(problemList) {
 			const newFilePath = path.join(dirPath, newFileName)
 			await fs.rename(filePath, newFilePath)
 
-			logger.log(fileName + ' -> ' + newFileName)
+			logger.info(fileName + ' -> ' + newFileName)
 		}
 	} catch (err) {
 		throw err

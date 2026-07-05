@@ -23,26 +23,26 @@ This repo contains solutions to over **1700** problems from [leetcode.com](https
 ## Stats
 
 <!-- UPDATE STATS HERE -->
-Last updated on _Wed, 03 Jun 2026 18:06:29 GMT_
+Last updated on _Sun, 05 Jul 2026 12:14:56 GMT_
 ### Total problems:
 | Accepted | Partially accepted | Total | Link |
 | --- | --- | --- | --- |
-| 1778 | 103 | 3949 | [csv](./stats/generated/leetcode-stats.csv)|
+| 1783 | 103 | 3949 | [csv](./stats/generated/leetcode-stats.csv)|
 ### Total problems solved per language:
 | Language  | Accepted | Partially accepted | Links Table |
 | --- | --- | --- | --- |
-| C++ | 1655 | 103 | [click](./stats/generated/link-tables/leetcode-links-cpp.md)
-| Javascript | 73 | 0 | [click](./stats/generated/link-tables/leetcode-links-js.md)
-| MySQL | 85 | 0 | [click](./stats/generated/link-tables/leetcode-links-mysql.md)
+| C++ | 1660 | 103 | [click](stats/link-tables/leetcode-links-cpp.md)
+| Javascript | 73 | 0 | [click](stats/link-tables/leetcode-links-js.md)
+| MySQL | 85 | 0 | [click](stats/link-tables/leetcode-links-mysql.md)
 <!-- UPDATE STATS HERE -->
 
 use ctrl + click to open the links in a new tab for the best experience.
 
 ---
 
-![pie-chart-total-count](./stats/generated/img/pie-chart-total-count.png)
-![pie-chart-type-count](./stats/generated/img/pie-chart-type-count.png)
-![bar-chart-language-count](./stats/generated/img/bar-chart-language-count.png)
-![histogram-chart-ques-id](./stats/generated/img/histogram-chart-ques-id.png)
+![pie-chart-total-count](./stats/img/pie-chart-total-count.png)
+![pie-chart-type-count](./stats/img/pie-chart-type-count.png)
+![bar-chart-language-count](./stats/img/bar-chart-language-count.png)
+![histogram-chart-ques-id](./stats/img/histogram-chart-ques-id.png)
 
 ---

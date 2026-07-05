@@ -4,6 +4,7 @@ algorithms/stats/generated
 
 misc/cpp/compiled
 
+util/logs
 util/web/generated
 
 # python virtual-environment

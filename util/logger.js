@@ -18,9 +18,31 @@ function getLogFilePath() {
 	const month = String(now.getMonth() + 1).padStart(2, '0');
 	const day = String(now.getDate()).padStart(2, '0');
 
-	const fileName = `log_${year}-${month}-${day}.txt`;
+	const fileName = `logs_${year}-${month}-${day}.log`;
 
 	return path.join(LOG_DIR, fileName);
+}
+
+// gives the local timestamp by default, use 'ISO' to get the ISOString
+function getTimestamp(zone = 'local') {
+	const now = new Date();
+
+	if (String(zone).toUpperCase() === 'ISO') {
+		return now.toISOString();
+	}
+
+	// Local system time
+	const pad = (n) => String(n).padStart(2, "0");
+
+	return (
+		`${now.getFullYear()}-` +
+		`${pad(now.getMonth() + 1)}-` +
+		`${pad(now.getDate())}T` +
+		`${pad(now.getHours())}:` +
+		`${pad(now.getMinutes())}:` +
+		`${pad(now.getSeconds())}.` +
+		`${String(now.getMilliseconds()).padStart(3, "0")}`
+	);
 }
 
 function writeLine(line) {
@@ -51,14 +73,13 @@ function serialize(payload) {
 function write(level, data) {
 	ensureLogDir();
 
-	const timestamp = new Date().toISOString();
 	const message = serialize(data);
-	const line = `[${timestamp}] [${level}] ${message}`;
+	const line = `[${getTimestamp()}] [${level}] ${message}`;
 
 	writeLine(line);
 }
 
-function log(data) {
+function info(data) {
 	write('INFO', data);
 }
 
@@ -67,7 +88,8 @@ function error(data) {
 }
 
 function time(msg) {
-	console.log(`[${new Date().toISOString()}]: ${msg}`);
+	console.log(`[${getTimestamp()}]: ${msg}`);
+	write('INFO', msg);
 }
 
-module.exports = { log, error, time };
+module.exports = { info, error, time };

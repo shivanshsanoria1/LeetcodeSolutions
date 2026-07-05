@@ -1,0 +1,11 @@
+{
+	"dirPaths": {
+		"local": "util/local",
+		"web": "util/web",
+		"linkTables": "stats/link-tables"
+	},
+	"filePaths": {
+		"LCProblemsList": "stats/lc-problems-list.json",
+		"specialQuesIds": "util/local/special-ques-ids.json"
+	}
+}
