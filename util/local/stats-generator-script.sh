@@ -7,12 +7,12 @@ echo "[$START_TIME] Started stat-generator script..."
 echo "--------------------"
 
 echo "Running node commands..."
-node ./stats/generator/stats-generator.js
+node ./util/local/stats-generator.js
 echo "--------------------"
 
 echo "Running python commands..."
-source ./stats/generator/.venv/bin/activate
-python3 ./stats/generator/chart-generator.py
+source ./util/local/.venv/bin/activate
+python3 ./util/local/chart-generator.py
 deactivate
 echo "--------------------"
 

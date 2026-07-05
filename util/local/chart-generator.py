@@ -5,7 +5,7 @@ from collections import defaultdict
 from typing import List, Dict
 # ------------------------------ #
 
-with open('./stats/generator/config.json', 'r') as file:
+with open('./util/local/config.json', 'r') as file:
     config_data = json.load(file)
 
 MAX_QUES_ID = config_data.get("MAX_QUES_ID", 0)
@@ -53,7 +53,7 @@ def logMsg(msg) -> None:
 
 def chartShowSave(plt, chartName: str) -> None:
 	if SAVE_CHART:
-		filePath = f'./stats/generated/img/{chartName}.png'
+		filePath = f'./stats/img/{chartName}.png'
 		plt.savefig(filePath, format = 'png') 
 
 	if SHOW_CHART: 
@@ -61,7 +61,7 @@ def chartShowSave(plt, chartName: str) -> None:
 # ------------------------------ #
 
 def loadArr() -> List[Dict]:
-	filePathJSON = './stats/generated/leetcode-stats-array.json'
+	filePathJSON = './stats/lc-problems-list.json'
 
 	with open(filePathJSON, 'r') as file:
 		arrayJSON = file.read()
@@ -311,6 +311,7 @@ if __name__ == '__main__':
 	logMsg(counterLang)
 
 	buckets = generateHistogramBuckets(stats, 100)
+	logMsg('Histogram buckets:')
 	logMsg(buckets)
 
 	plotPieChartTotalCount(counterTotal)

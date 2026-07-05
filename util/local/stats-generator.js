@@ -308,10 +308,9 @@ async function updateStatsinReadmeFile(totalProblemCounter, problemCounterPerLan
 		statData += `Last updated on _${new Date().toUTCString()}_\n`;
 
 		statData += '### Total problems:\n';
-		statData += '| Accepted | Partially accepted | Total | Link |\n';
-		statData += '| --- | --- | --- | --- |\n';
-		const csvUrl = `./stats/generated/leetcode-stats.csv`;
-		statData += `| ${totalProblemCounter.accepted} | ${totalProblemCounter.unaccepted} | ${config.MAX_QUES_ID} | [csv](${csvUrl})|\n`;
+		statData += '| Accepted | Partially accepted | Total |\n';
+		statData += '| --- | --- | --- |\n';
+		statData += `| ${totalProblemCounter.accepted} | ${totalProblemCounter.unaccepted} | ${config.MAX_QUES_ID} |\n`;
 
 		statData += '### Total problems solved per language:\n';
 		statData += '| Language  | Accepted | Partially accepted | Links Table |\n';

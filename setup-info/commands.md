@@ -2,7 +2,7 @@
 
 ### 1. Run 'stats-generator-script.sh'
 ```
-./stats/generator/stats-generator-script.sh
+./util/local/stats-generator-script.sh
 ```
 
 #### 1.1 Give permissions (before running)
@@ -14,18 +14,18 @@ chmod +x ./stats/generator/stats-generator-script.sh
 
 ### 2. Run 'stats-generator.js'
 ```
-node ./stats/generator/stats-generator.js
+node ./util/local/stats-generator.js
 ```
 
 ---
 
 ### 3. Run 'chart-generator.py'
 ```
-source ./stats/generator/.venv/bin/activate
+source ./util/local/.venv/bin/activate
 ```
 
 ```
-python3 ./stats/generator/chart-generator.py
+python3 ./util/local/chart-generator.py
 ```
 
 ```
@@ -34,7 +34,7 @@ deactivate
 
 #### 3.1 Setup the virtual environment (before step-1)
 ```
-python3 -m venv ./stats/generator/.venv
+python3 -m venv ./util/local/.venv
 ```
 
 #### 3.2 Needs the following dependencies installed (before step-2)
@@ -68,13 +68,6 @@ node ./algorithms/stats/algo-stats-generator.js
 ### 5. Run 'leetcode-api.js'
 ```
 node ./stats/LC-API/generator/leetcode-api.js
-```
-
----
-
-### 6. Run 'lc-data-comparator.js'
-```
-node ./stats/comparator/lc-data-comparator.js
 ```
 
 ---
