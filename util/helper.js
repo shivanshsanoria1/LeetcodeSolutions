@@ -15,6 +15,8 @@ function getPath(section, key) {
 	return path.resolve(ROOT, relPath);
 }
 
+const getRootRelativePath = (filePath) => path.relative(ROOT, filePath);
+
 const getDirPath = (key) => getPath("dirPaths", key);
 const getFilePath = (key) => getPath("filePaths", key);
 
@@ -35,5 +37,6 @@ module.exports = {
 	getDirPath,
 	getFilePath,
 	ensureDir,
-	ensureFileDir
+	ensureFileDir,
+	getRootRelativePath
 };

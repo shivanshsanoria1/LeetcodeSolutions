@@ -30,7 +30,12 @@ function getYYYYMMDD() {
 	return `${year}-${month}-${day}`;
 }
 
+function getFileSafeISOTimestamp() {
+	return new Date().toISOString().replace(/[:.]/g, '-');
+}
+
 module.exports = {
 	getTimestamp,
-	getYYYYMMDD
+	getYYYYMMDD,
+	getFileSafeISOTimestamp
 }

@@ -192,8 +192,8 @@ async function generateProblemsJSON(problems) {
 				.join(',\n');
 		problemsStringified += '\n]\n';
 
-		await helper.ensureFileDir('LCProblemsList')
-		const filePathJSON = helper.getFilePath('LCProblemsList')
+		await helper.ensureFileDir('LCSolvedProblemList')
+		const filePathJSON = helper.getFilePath('LCSolvedProblemList')
 
 		await fs.writeFile(filePathJSON, problemsStringified);
 
@@ -333,7 +333,7 @@ async function generateStats() {
 
 		await updateStatsinReadmeFile(totalProblemCounter, problemCounterPerLang);
 
-		if (logger.STATE.errorFound) {
+		if (logger.hasError()) {
 			console.log('Issue(s) found during execution: check logs')
 		}
 		logger.time('Problem Stat Generation Completed.');

@@ -3,11 +3,10 @@
     "ORIGIN": "https://leetcode.com",
     "REFERER": "https://leetcode.com/problems/",
     "API_DELAY_MS": 250,
-    "PROBLEM_LIST_FILE": "leetcode-problem-list.json",
-    "PROBLEM_LIST_DETAILED_FILE": "leetcode-problem-list-detailed.json",
-    "FORCE_REFRESH_PROBLEM_LIST": false,
+    "FORCE_REFRESH_PROBLEM_LIST": true,
     "FORCE_REFRESH_PROBLEM_LIST_DETAILED": false,
     "FETCH_NEXT_COUNT": 5,
     "BATCH_SIZE": 10,
-    "LAST_UPDATED": "2026-06-05T19:25:31.785Z"
+    "LAST_UPDATED_ISO": "2026-07-06T18:52:25.991Z",
+    "LAST_UPDATED": "2026-07-06T18:08:44.415Z"
 }

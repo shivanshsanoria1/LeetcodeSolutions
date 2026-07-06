@@ -1,8 +1,10 @@
 const path = require('node:path');
 const fs = require('node:fs/promises');
 
-const config = require('./config.json');
-const logger = require('../logger');
+const webConfig = require('./web-config.json');
+const helper = require('../helper.js')
+const logger = require('../logger.js');
+const timer = require('../timer.js')
 
 // reads JSON data from the mentioned path; 
 // creates a JSON file with default-value if file not found
@@ -19,8 +21,6 @@ async function readFromJSON(filePath, defaultValue = []) {
 
 			return defaultValue;
 		}
-
-		logger.info(err)
 		throw err
 	}
 }
@@ -31,7 +31,6 @@ async function writeToJSON(filePath, data) {
 		await fs.mkdir(path.dirname(filePath), { recursive: true });
 		await fs.writeFile(filePath, JSON.stringify(data, null, 4));
 	} catch (err) {
-		logger.info(err)
 		throw err
 	}
 }
@@ -46,26 +45,34 @@ async function createBackupJSON(sourceFilePath) {
 			logger.info("Source file does not exist. No backup created");
 			return null
 		}
-		logger.info(err)
 		throw err;
 	}
 
 	try {
-		const backupDirPath = path.join(__dirname, '..', 'generated', 'backup');
-		// ensure backup directory exists
-		await fs.mkdir(backupDirPath, { recursive: true });
+		await helper.ensureDir('webBackup')
+		const backupDirPath = helper.getDirPath('webBackup')
 
 		const ext = path.extname(sourceFilePath); // file-extension
 		const sourceFileName = path.basename(sourceFilePath, ext); // filename without extension
-		const timestamp = new Date().toISOString().replace(/[:.]/g, "-"); // filename safe timestamp
+		const timestamp = timer.getFileSafeISOTimestamp();
 		const backupFileName = `${sourceFileName} [${timestamp}]${ext}`; // timestamped backup filename
 		const backupFilePath = path.join(backupDirPath, backupFileName)
 
 		// create the backup file and delete the source file
-		await fs.rename(sourceFilePath, backupFilePath);
+		await fs.copyFile(sourceFilePath, backupFilePath);
+
+		logger.info(`Backup created: ${helper.getRootRelativePath(backupFilePath)}`)
 	} catch (err) {
-		logger.info(err)
 		throw err
+	}
+}
+
+async function updateConfig() {
+	try {
+		const filePathConfig = path.join(__dirname, 'web-config.json');
+		await writeToJSON(filePathConfig, webConfig)
+	} catch (err) {
+		throw err;
 	}
 }
 
@@ -100,32 +107,21 @@ async function batchWrite(problems) {
 	}
 }
 
-async function updateConfig() {
-	try {
-		const filePathConfig = path.join(__dirname, 'config.json');
-		await writeToJSON(filePathConfig, config)
-	} catch (err) {
-		logger.info(err)
-		throw err;
-	}
-}
-
 // fetch a list of all problems from LC-API, moves old data to backup;
 // use the local version if last fetch was less than 7 days ago;
 // use manual override to force refresh the list
 async function fetchAllProblems() {
 	try {
-		const filePath = path.join(__dirname, '..', 'generated', config.PROBLEM_LIST_FILE);
-
-		const lastUpdatedTimestamp = new Date(config.LAST_UPDATED)
+		const filePathJSON = helper.getFilePath('LCProblemList')
+		const lastUpdatedTimestamp = new Date(webConfig.LAST_UPDATED_ISO)
 
 		// last update was less than 7 days ago; don't fetch new data from API
-		if (!config.FORCE_REFRESH_PROBLEM_LIST &&
+		if (!webConfig.FORCE_REFRESH_PROBLEM_LIST &&
 			lastUpdatedTimestamp.toString() !== "Invalid Date" &&
 			Date.now() - lastUpdatedTimestamp.getTime() < 7 * 24 * 60 * 60 * 1000) {
-			logger.info('Using the local version of problem-list')
+			logger.info('Using the local version of LC-problem-list')
 
-			return await readFromJSON(filePath)
+			return await readFromJSON(filePathJSON)
 		}
 
 		const query = `
@@ -147,16 +143,25 @@ async function fetchAllProblems() {
 
 		logger.info('Fetching new problem list from Leetcode API...')
 
-		const res = await fetch(config.API_URL, {
+		const start = Date.now();
+
+		const interval = setInterval(() => {
+			const elapsed = Math.floor((Date.now() - start) / 1000);
+			logger.info(`Still waiting for LeetCode API response... (${elapsed}s elapsed)`);
+		}, 3000);
+
+		const res = await fetch(webConfig.API_URL, {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
-				"Origin": config.ORIGIN,
-				"Referer": config.REFERER,
+				"Origin": webConfig.ORIGIN,
+				"Referer": webConfig.REFERER,
 				"User-Agent": "Mozilla/5.0"
 			},
 			body: JSON.stringify({ query })
 		});
+
+		clearInterval(interval);
 
 		if (!res.ok) {
 			const text = await res.text();
@@ -180,19 +185,17 @@ async function fetchAllProblems() {
 		problems.sort((a, b) => Number(a.questionFrontendId) - Number(b.questionFrontendId));
 
 		// create a backup of the old json
-		await createBackupJSON(filePath)
+		await createBackupJSON(filePathJSON)
 		// create the json with fresh data
-		await writeToJSON(filePath, problems)
+		await writeToJSON(filePathJSON, problems)
 
-		config.FORCE_REFRESH_PROBLEM_LIST = false
-		config.LAST_UPDATED = new Date().toISOString()
+		webConfig.LAST_UPDATED_ISO = new Date().toISOString()
 		await updateConfig()
 
 		logger.info('Fetched problem list length = ' + problems.length)
 
 		return problems
 	} catch (err) {
-		logger.info(err)
 		throw err;
 	}
 }
@@ -350,26 +353,30 @@ async function fetchProblemsDetailed(problems) {
 
 async function fetchStatsFromLC() {
 	try {
-		const scriptName = path.basename(__filename)
 		const startTime = Date.now();
-		// console.log(`[${new Date(startTime).toISOString()}]: ${scriptName} Started.`);
-		logger.time(`${scriptName} started.`)
+		const scriptName = path.basename(__filename)
+		logger.info('')
+		logger.time(`${scriptName} started...`)
 
-		// const problems = await fetchAllProblems();
-		// logger.info('Problem list length = ' + problems.length)
+		const problems = await fetchAllProblems();
+		logger.info('Problem list length = ' + problems.length)
+		logger.info('Problem at index 0 = ' + JSON.stringify(problems[0]))
 
 		// const problemsDetailed = await fetchProblemsDetailed(problems)
 		// logger.info('Detailed Problem list length = ' + problemsDetailed.length)
 
+		if (logger.hasError()) {
+			console.log('Issue(s) found during execution: check logs')
+		}
+
 		const endTime = Date.now();
-		// console.log(`[${new Date(endTime).toISOString()}]: ${scriptName} Completed.`);
-		logger.time(`${scriptName} ended.`)
-		console.log(`Time Taken to run ${scriptName} = ${endTime - startTime} ms`);
+		logger.time(`${scriptName} completed.`)
+		logger.time(`Time Taken to run ${scriptName} = ${endTime - startTime} ms`);
 
 	} catch (err) {
 		console.error(err)
+		logger.error(err)
 	}
 }
 
 fetchStatsFromLC()
-

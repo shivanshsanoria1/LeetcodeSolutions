@@ -7,9 +7,8 @@ const timer = require('./timer.js')
 
 const LOG_DIR = helper.getDirPath('logs')
 
-const STATE = {
-	errorFound: false
-}
+let ERROR_FOUND = false;
+const hasError = () => ERROR_FOUND
 
 function ensureLogDir() {
 	try {
@@ -26,9 +25,9 @@ function getLogFilePath() {
 }
 
 function writeLine(line) {
-	try {
-		const filePath = getLogFilePath();
+	const filePath = getLogFilePath();
 
+	try {
 		fs.appendFileSync(filePath, line + '\n', { encoding: 'utf8' });
 	} catch (err) {
 		console.error(`Failed to write to log file (${filePath}): ${err.message}`);
@@ -36,6 +35,10 @@ function writeLine(line) {
 }
 
 function serialize(payload) {
+	if (payload instanceof Error) {
+		return payload.stack ?? payload.message;
+	}
+
 	if (typeof payload === 'string') {
 		return payload;
 	}
@@ -51,8 +54,6 @@ function serialize(payload) {
 }
 
 function write(level, data) {
-	ensureLogDir();
-
 	const message = serialize(data);
 	const line = `[${timer.getTimestamp()}] [${level}] ${message}`;
 
@@ -65,7 +66,7 @@ function info(data) {
 
 function error(data) {
 	write('ERROR', data);
-	STATE.errorFound = true
+	ERROR_FOUND = true
 }
 
 function time(msg) {
@@ -73,9 +74,11 @@ function time(msg) {
 	write('INFO', msg);
 }
 
+ensureLogDir();
+
 module.exports = {
 	info,
 	error,
 	time,
-	STATE
+	hasError
 };
