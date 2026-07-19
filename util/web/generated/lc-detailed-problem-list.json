@@ -1,0 +1,1205 @@
+[
+    {
+        "questionId": 1,
+        "questionFrontendId": 1,
+        "title": "Two Sum",
+        "titleSlug": "two-sum",
+        "difficulty": "Easy",
+        "likes": 69316,
+        "dislikes": 2581,
+        "acRate": 57.832353343878296,
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "companyTagStats": null,
+        "hasSolution": true,
+        "hasVideoSolution": true,
+        "stats": {
+            "totalAccepted": "22.6M",
+            "totalSubmission": "39.1M",
+            "totalAcceptedRaw": 22631365,
+            "totalSubmissionRaw": 39132709,
+            "acRate": "57.8%"
+        },
+        "similarQuestions": [
+            {
+                "title": "3Sum",
+                "titleSlug": "3sum",
+                "difficulty": "Medium",
+                "translatedTitle": null
+            },
+            {
+                "title": "4Sum",
+                "titleSlug": "4sum",
+                "difficulty": "Medium",
+                "translatedTitle": null
+            },
+            {
+                "title": "Two Sum II - Input Array Is Sorted",
+                "titleSlug": "two-sum-ii-input-array-is-sorted",
+                "difficulty": "Medium",
+                "translatedTitle": null
+            },
+            {
+                "title": "Two Sum III - Data structure design",
+                "titleSlug": "two-sum-iii-data-structure-design",
+                "difficulty": "Easy",
+                "translatedTitle": null
+            },
+            {
+                "title": "Subarray Sum Equals K",
+                "titleSlug": "subarray-sum-equals-k",
+                "difficulty": "Medium",
+                "translatedTitle": null
+            },
+            {
+                "title": "Two Sum IV - Input is a BST",
+                "titleSlug": "two-sum-iv-input-is-a-bst",
+                "difficulty": "Easy",
+                "translatedTitle": null
+            },
+            {
+                "title": "Two Sum Less Than K",
+                "titleSlug": "two-sum-less-than-k",
+                "difficulty": "Easy",
+                "translatedTitle": null
+            },
+            {
+                "title": "Max Number of K-Sum Pairs",
+                "titleSlug": "max-number-of-k-sum-pairs",
+                "difficulty": "Medium",
+                "translatedTitle": null
+            },
+            {
+                "title": "Count Good Meals",
+                "titleSlug": "count-good-meals",
+                "difficulty": "Medium",
+                "translatedTitle": null
+            },
+            {
+                "title": "Count Number of Pairs With Absolute Difference K",
+                "titleSlug": "count-number-of-pairs-with-absolute-difference-k",
+                "difficulty": "Easy",
+                "translatedTitle": null
+            },
+            {
+                "title": "Number of Pairs of Strings With Concatenation Equal to Target",
+                "titleSlug": "number-of-pairs-of-strings-with-concatenation-equal-to-target",
+                "difficulty": "Medium",
+                "translatedTitle": null
+            },
+            {
+                "title": "Find All K-Distant Indices in an Array",
+                "titleSlug": "find-all-k-distant-indices-in-an-array",
+                "difficulty": "Easy",
+                "translatedTitle": null
+            },
+            {
+                "title": "First Letter to Appear Twice",
+                "titleSlug": "first-letter-to-appear-twice",
+                "difficulty": "Easy",
+                "translatedTitle": null
+            },
+            {
+                "title": "Number of Excellent Pairs",
+                "titleSlug": "number-of-excellent-pairs",
+                "difficulty": "Hard",
+                "translatedTitle": null
+            },
+            {
+                "title": "Number of Arithmetic Triplets",
+                "titleSlug": "number-of-arithmetic-triplets",
+                "difficulty": "Easy",
+                "translatedTitle": null
+            },
+            {
+                "title": "Node With Highest Edge Score",
+                "titleSlug": "node-with-highest-edge-score",
+                "difficulty": "Medium",
+                "translatedTitle": null
+            },
+            {
+                "title": "Check Distances Between Same Letters",
+                "titleSlug": "check-distances-between-same-letters",
+                "difficulty": "Easy",
+                "translatedTitle": null
+            },
+            {
+                "title": "Find Subarrays With Equal Sum",
+                "titleSlug": "find-subarrays-with-equal-sum",
+                "difficulty": "Easy",
+                "translatedTitle": null
+            },
+            {
+                "title": "Largest Positive Integer That Exists With Its Negative",
+                "titleSlug": "largest-positive-integer-that-exists-with-its-negative",
+                "difficulty": "Easy",
+                "translatedTitle": null
+            },
+            {
+                "title": "Number of Distinct Averages",
+                "titleSlug": "number-of-distinct-averages",
+                "difficulty": "Easy",
+                "translatedTitle": null
+            },
+            {
+                "title": "Count Pairs Whose Sum is Less than Target",
+                "titleSlug": "count-pairs-whose-sum-is-less-than-target",
+                "difficulty": "Easy",
+                "translatedTitle": null
+            }
+        ],
+        "hints": [
+            "A really brute force way would be to search for all possible pairs of numbers but that would be too slow. Again, it's best to try out brute force solutions just for completeness. It is from these brute force solutions that you can come up with optimizations.",
+            "So, if we fix one of the numbers, say <code>x</code>, we have to scan the entire array to find the next number <code>y</code> which is <code>value - x</code> where value is the input parameter. Can we change our array somehow so that this search becomes faster?",
+            "The second train of thought is, without changing the array, can we use additional space somehow? Like maybe a hash map to speed up the search?"
+        ],
+        "solution": {
+            "canSeeDetail": true
+        },
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Hash Table",
+                "slug": "hash-table"
+            }
+        ],
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    vector<int> twoSum(vector<int>& nums, int target) {\n        \n    }\n};"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        \n    }\n}"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def twoSum(self, nums: List[int], target: int) -> List[int]:\n        "
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number[]} nums\n * @param {number} target\n * @return {number[]}\n */\nvar twoSum = function(nums, target) {\n    \n};"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function twoSum(nums: number[], target: number): number[] {\n    \n};"
+            }
+        ]
+    },
+    {
+        "questionId": 2,
+        "questionFrontendId": 2,
+        "title": "Add Two Numbers",
+        "titleSlug": "add-two-numbers",
+        "difficulty": "Medium",
+        "likes": 37065,
+        "dislikes": 7276,
+        "acRate": 48.89574873691856,
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "companyTagStats": null,
+        "hasSolution": true,
+        "hasVideoSolution": true,
+        "stats": {
+            "totalAccepted": "7.3M",
+            "totalSubmission": "14.9M",
+            "totalAcceptedRaw": 7279354,
+            "totalSubmissionRaw": 14887516,
+            "acRate": "48.9%"
+        },
+        "similarQuestions": [
+            {
+                "title": "Multiply Strings",
+                "titleSlug": "multiply-strings",
+                "difficulty": "Medium",
+                "translatedTitle": null
+            },
+            {
+                "title": "Add Binary",
+                "titleSlug": "add-binary",
+                "difficulty": "Easy",
+                "translatedTitle": null
+            },
+            {
+                "title": "Sum of Two Integers",
+                "titleSlug": "sum-of-two-integers",
+                "difficulty": "Medium",
+                "translatedTitle": null
+            },
+            {
+                "title": "Add Strings",
+                "titleSlug": "add-strings",
+                "difficulty": "Easy",
+                "translatedTitle": null
+            },
+            {
+                "title": "Add Two Numbers II",
+                "titleSlug": "add-two-numbers-ii",
+                "difficulty": "Medium",
+                "translatedTitle": null
+            },
+            {
+                "title": "Add to Array-Form of Integer",
+                "titleSlug": "add-to-array-form-of-integer",
+                "difficulty": "Easy",
+                "translatedTitle": null
+            },
+            {
+                "title": "Add Two Polynomials Represented as Linked Lists",
+                "titleSlug": "add-two-polynomials-represented-as-linked-lists",
+                "difficulty": "Medium",
+                "translatedTitle": null
+            },
+            {
+                "title": "Double a Number Represented as a Linked List",
+                "titleSlug": "double-a-number-represented-as-a-linked-list",
+                "difficulty": "Medium",
+                "translatedTitle": null
+            }
+        ],
+        "hints": [],
+        "solution": {
+            "canSeeDetail": true
+        },
+        "topicTags": [
+            {
+                "name": "Linked List",
+                "slug": "linked-list"
+            },
+            {
+                "name": "Math",
+                "slug": "math"
+            },
+            {
+                "name": "Recursion",
+                "slug": "recursion"
+            }
+        ],
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "/**\n * Definition for singly-linked list.\n * struct ListNode {\n *     int val;\n *     ListNode *next;\n *     ListNode() : val(0), next(nullptr) {}\n *     ListNode(int x) : val(x), next(nullptr) {}\n *     ListNode(int x, ListNode *next) : val(x), next(next) {}\n * };\n */\nclass Solution {\npublic:\n    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {\n        \n    }\n};"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     int val;\n *     ListNode next;\n *     ListNode() {}\n *     ListNode(int val) { this.val = val; }\n *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }\n * }\n */\nclass Solution {\n    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {\n        \n    }\n}"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:\n        "
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * Definition for singly-linked list.\n * function ListNode(val, next) {\n *     this.val = (val===undefined ? 0 : val)\n *     this.next = (next===undefined ? null : next)\n * }\n */\n/**\n * @param {ListNode} l1\n * @param {ListNode} l2\n * @return {ListNode}\n */\nvar addTwoNumbers = function(l1, l2) {\n    \n};"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "/**\n * Definition for singly-linked list.\n * class ListNode {\n *     val: number\n *     next: ListNode | null\n *     constructor(val?: number, next?: ListNode | null) {\n *         this.val = (val===undefined ? 0 : val)\n *         this.next = (next===undefined ? null : next)\n *     }\n * }\n */\n\nfunction addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | null {\n    \n};"
+            }
+        ]
+    },
+    {
+        "questionId": 3,
+        "questionFrontendId": 3,
+        "title": "Longest Substring Without Repeating Characters",
+        "titleSlug": "longest-substring-without-repeating-characters",
+        "difficulty": "Medium",
+        "likes": 45356,
+        "dislikes": 2224,
+        "acRate": 39.500972213811494,
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "companyTagStats": null,
+        "hasSolution": true,
+        "hasVideoSolution": true,
+        "stats": {
+            "totalAccepted": "9.9M",
+            "totalSubmission": "25M",
+            "totalAcceptedRaw": 9882113,
+            "totalSubmissionRaw": 25017473,
+            "acRate": "39.5%"
+        },
+        "similarQuestions": [
+            {
+                "title": "Longest Substring with At Most Two Distinct Characters",
+                "titleSlug": "longest-substring-with-at-most-two-distinct-characters",
+                "difficulty": "Medium",
+                "translatedTitle": null
+            },
+            {
+                "title": "Longest Substring with At Most K Distinct Characters",
+                "titleSlug": "longest-substring-with-at-most-k-distinct-characters",
+                "difficulty": "Medium",
+                "translatedTitle": null
+            },
+            {
+                "title": "Subarrays with K Different Integers",
+                "titleSlug": "subarrays-with-k-different-integers",
+                "difficulty": "Hard",
+                "translatedTitle": null
+            },
+            {
+                "title": "Maximum Erasure Value",
+                "titleSlug": "maximum-erasure-value",
+                "difficulty": "Medium",
+                "translatedTitle": null
+            },
+            {
+                "title": "Number of Equal Count Substrings",
+                "titleSlug": "number-of-equal-count-substrings",
+                "difficulty": "Medium",
+                "translatedTitle": null
+            },
+            {
+                "title": "Minimum Consecutive Cards to Pick Up",
+                "titleSlug": "minimum-consecutive-cards-to-pick-up",
+                "difficulty": "Medium",
+                "translatedTitle": null
+            },
+            {
+                "title": "Longest Nice Subarray",
+                "titleSlug": "longest-nice-subarray",
+                "difficulty": "Medium",
+                "translatedTitle": null
+            },
+            {
+                "title": "Optimal Partition of String",
+                "titleSlug": "optimal-partition-of-string",
+                "difficulty": "Medium",
+                "translatedTitle": null
+            },
+            {
+                "title": "Count Complete Subarrays in an Array",
+                "titleSlug": "count-complete-subarrays-in-an-array",
+                "difficulty": "Medium",
+                "translatedTitle": null
+            },
+            {
+                "title": "Find Longest Special Substring That Occurs Thrice II",
+                "titleSlug": "find-longest-special-substring-that-occurs-thrice-ii",
+                "difficulty": "Medium",
+                "translatedTitle": null
+            },
+            {
+                "title": "Find Longest Special Substring That Occurs Thrice I",
+                "titleSlug": "find-longest-special-substring-that-occurs-thrice-i",
+                "difficulty": "Medium",
+                "translatedTitle": null
+            }
+        ],
+        "hints": [
+            "There are less than 100 unique characters. We can check all substrings with length at most 100 for example. This is a good enough approximation."
+        ],
+        "solution": {
+            "canSeeDetail": false
+        },
+        "topicTags": [
+            {
+                "name": "Hash Table",
+                "slug": "hash-table"
+            },
+            {
+                "name": "String",
+                "slug": "string"
+            },
+            {
+                "name": "Sliding Window",
+                "slug": "sliding-window"
+            }
+        ],
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int lengthOfLongestSubstring(string s) {\n        \n    }\n};"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int lengthOfLongestSubstring(String s) {\n        \n    }\n}"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def lengthOfLongestSubstring(self, s: str) -> int:\n        "
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar lengthOfLongestSubstring = function(s) {\n    \n};"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function lengthOfLongestSubstring(s: string): number {\n    \n};"
+            }
+        ]
+    },
+    {
+        "questionId": 4,
+        "questionFrontendId": 4,
+        "title": "Median of Two Sorted Arrays",
+        "titleSlug": "median-of-two-sorted-arrays",
+        "difficulty": "Hard",
+        "likes": 32470,
+        "dislikes": 3594,
+        "acRate": 47.08199664622709,
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "companyTagStats": null,
+        "hasSolution": true,
+        "hasVideoSolution": true,
+        "stats": {
+            "totalAccepted": "4.4M",
+            "totalSubmission": "9.4M",
+            "totalAcceptedRaw": 4432769,
+            "totalSubmissionRaw": 9415011,
+            "acRate": "47.1%"
+        },
+        "similarQuestions": [
+            {
+                "title": "Median of a Row Wise Sorted Matrix",
+                "titleSlug": "median-of-a-row-wise-sorted-matrix",
+                "difficulty": "Medium",
+                "translatedTitle": null
+            }
+        ],
+        "hints": [],
+        "solution": {
+            "canSeeDetail": true
+        },
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Binary Search",
+                "slug": "binary-search"
+            },
+            {
+                "name": "Divide and Conquer",
+                "slug": "divide-and-conquer"
+            }
+        ],
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {\n        \n    }\n};"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public double findMedianSortedArrays(int[] nums1, int[] nums2) {\n        \n    }\n}"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:\n        "
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number[]} nums1\n * @param {number[]} nums2\n * @return {number}\n */\nvar findMedianSortedArrays = function(nums1, nums2) {\n    \n};"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function findMedianSortedArrays(nums1: number[], nums2: number[]): number {\n    \n};"
+            }
+        ]
+    },
+    {
+        "questionId": 5,
+        "questionFrontendId": 5,
+        "title": "Longest Palindromic Substring",
+        "titleSlug": "longest-palindromic-substring",
+        "difficulty": "Medium",
+        "likes": 32882,
+        "dislikes": 2023,
+        "acRate": 38.24314473002043,
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "companyTagStats": null,
+        "hasSolution": true,
+        "hasVideoSolution": true,
+        "stats": {
+            "totalAccepted": "4.9M",
+            "totalSubmission": "12.9M",
+            "totalAcceptedRaw": 4918615,
+            "totalSubmissionRaw": 12861448,
+            "acRate": "38.2%"
+        },
+        "similarQuestions": [
+            {
+                "title": "Shortest Palindrome",
+                "titleSlug": "shortest-palindrome",
+                "difficulty": "Hard",
+                "translatedTitle": null
+            },
+            {
+                "title": "Palindrome Permutation",
+                "titleSlug": "palindrome-permutation",
+                "difficulty": "Easy",
+                "translatedTitle": null
+            },
+            {
+                "title": "Palindrome Pairs",
+                "titleSlug": "palindrome-pairs",
+                "difficulty": "Hard",
+                "translatedTitle": null
+            },
+            {
+                "title": "Longest Palindromic Subsequence",
+                "titleSlug": "longest-palindromic-subsequence",
+                "difficulty": "Medium",
+                "translatedTitle": null
+            },
+            {
+                "title": "Palindromic Substrings",
+                "titleSlug": "palindromic-substrings",
+                "difficulty": "Medium",
+                "translatedTitle": null
+            },
+            {
+                "title": "Maximum Number of Non-overlapping Palindrome Substrings",
+                "titleSlug": "maximum-number-of-non-overlapping-palindrome-substrings",
+                "difficulty": "Hard",
+                "translatedTitle": null
+            }
+        ],
+        "hints": [
+            "How can we reuse a previously computed palindrome to compute a larger palindrome?",
+            "If “aba” is a palindrome, is “xabax” a palindrome? Similarly is “xabay” a palindrome?",
+            "Complexity based hint:</br>\r\nIf we use brute-force and check whether for every start and end position a substring is a palindrome we have O(n^2) start - end pairs and O(n) palindromic checks. Can we reduce the time for palindromic checks to O(1) by reusing some previous computation."
+        ],
+        "solution": {
+            "canSeeDetail": true
+        },
+        "topicTags": [
+            {
+                "name": "Two Pointers",
+                "slug": "two-pointers"
+            },
+            {
+                "name": "String",
+                "slug": "string"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming"
+            }
+        ],
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    string longestPalindrome(string s) {\n        \n    }\n};"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public String longestPalindrome(String s) {\n        \n    }\n}"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def longestPalindrome(self, s: str) -> str:\n        "
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {string} s\n * @return {string}\n */\nvar longestPalindrome = function(s) {\n    \n};"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function longestPalindrome(s: string): string {\n    \n};"
+            }
+        ]
+    },
+    {
+        "questionId": 6,
+        "questionFrontendId": 6,
+        "title": "Zigzag Conversion",
+        "titleSlug": "zigzag-conversion",
+        "difficulty": "Medium",
+        "likes": 9467,
+        "dislikes": 15984,
+        "acRate": 54.60639214461855,
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "companyTagStats": null,
+        "hasSolution": true,
+        "hasVideoSolution": true,
+        "stats": {
+            "totalAccepted": "2.3M",
+            "totalSubmission": "4.2M",
+            "totalAcceptedRaw": 2298083,
+            "totalSubmissionRaw": 4208456,
+            "acRate": "54.6%"
+        },
+        "similarQuestions": [],
+        "hints": [],
+        "solution": {
+            "canSeeDetail": false
+        },
+        "topicTags": [
+            {
+                "name": "String",
+                "slug": "string"
+            }
+        ],
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    string convert(string s, int numRows) {\n        \n    }\n};"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public String convert(String s, int numRows) {\n        \n    }\n}"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def convert(self, s: str, numRows: int) -> str:\n        "
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {string} s\n * @param {number} numRows\n * @return {string}\n */\nvar convert = function(s, numRows) {\n    \n};"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function convert(s: string, numRows: number): string {\n    \n};"
+            }
+        ]
+    },
+    {
+        "questionId": 7,
+        "questionFrontendId": 7,
+        "title": "Reverse Integer",
+        "titleSlug": "reverse-integer",
+        "difficulty": "Medium",
+        "likes": 15693,
+        "dislikes": 14022,
+        "acRate": 32.18504440676029,
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "companyTagStats": null,
+        "hasSolution": true,
+        "hasVideoSolution": true,
+        "stats": {
+            "totalAccepted": "5.2M",
+            "totalSubmission": "16.1M",
+            "totalAcceptedRaw": 5176243,
+            "totalSubmissionRaw": 16082771,
+            "acRate": "32.2%"
+        },
+        "similarQuestions": [
+            {
+                "title": "String to Integer (atoi)",
+                "titleSlug": "string-to-integer-atoi",
+                "difficulty": "Medium",
+                "translatedTitle": null
+            },
+            {
+                "title": "Reverse Bits",
+                "titleSlug": "reverse-bits",
+                "difficulty": "Easy",
+                "translatedTitle": null
+            },
+            {
+                "title": "A Number After a Double Reversal",
+                "titleSlug": "a-number-after-a-double-reversal",
+                "difficulty": "Easy",
+                "translatedTitle": null
+            },
+            {
+                "title": "Count Number of Distinct Integers After Reverse Operations",
+                "titleSlug": "count-number-of-distinct-integers-after-reverse-operations",
+                "difficulty": "Medium",
+                "translatedTitle": null
+            }
+        ],
+        "hints": [],
+        "solution": {
+            "canSeeDetail": true
+        },
+        "topicTags": [
+            {
+                "name": "Math",
+                "slug": "math"
+            }
+        ],
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int reverse(int x) {\n        \n    }\n};"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int reverse(int x) {\n        \n    }\n}"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def reverse(self, x: int) -> int:\n        "
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number} x\n * @return {number}\n */\nvar reverse = function(x) {\n    \n};"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function reverse(x: number): number {\n\n};"
+            }
+        ]
+    },
+    {
+        "questionId": 8,
+        "questionFrontendId": 8,
+        "title": "String to Integer (atoi)",
+        "titleSlug": "string-to-integer-atoi",
+        "difficulty": "Medium",
+        "likes": 6357,
+        "dislikes": 15752,
+        "acRate": 21.360419805928498,
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "companyTagStats": null,
+        "hasSolution": true,
+        "hasVideoSolution": false,
+        "stats": {
+            "totalAccepted": "2.5M",
+            "totalSubmission": "11.9M",
+            "totalAcceptedRaw": 2541944,
+            "totalSubmissionRaw": 11900290,
+            "acRate": "21.4%"
+        },
+        "similarQuestions": [
+            {
+                "title": "Reverse Integer",
+                "titleSlug": "reverse-integer",
+                "difficulty": "Medium",
+                "translatedTitle": null
+            },
+            {
+                "title": "Valid Number",
+                "titleSlug": "valid-number",
+                "difficulty": "Hard",
+                "translatedTitle": null
+            },
+            {
+                "title": "Check if Numbers Are Ascending in a Sentence",
+                "titleSlug": "check-if-numbers-are-ascending-in-a-sentence",
+                "difficulty": "Easy",
+                "translatedTitle": null
+            }
+        ],
+        "hints": [],
+        "solution": {
+            "canSeeDetail": false
+        },
+        "topicTags": [
+            {
+                "name": "String",
+                "slug": "string"
+            }
+        ],
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int myAtoi(string s) {\n        \n    }\n};"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int myAtoi(String s) {\n        \n    }\n}"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def myAtoi(self, s: str) -> int:\n        "
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar myAtoi = function(s) {\n    \n};"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function myAtoi(s: string): number {\n    \n};"
+            }
+        ]
+    },
+    {
+        "questionId": 9,
+        "questionFrontendId": 9,
+        "title": "Palindrome Number",
+        "titleSlug": "palindrome-number",
+        "difficulty": "Easy",
+        "likes": 16104,
+        "dislikes": 2941,
+        "acRate": 60.73736720717313,
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "companyTagStats": null,
+        "hasSolution": true,
+        "hasVideoSolution": true,
+        "stats": {
+            "totalAccepted": "8.5M",
+            "totalSubmission": "13.9M",
+            "totalAcceptedRaw": 8465744,
+            "totalSubmissionRaw": 13938297,
+            "acRate": "60.7%"
+        },
+        "similarQuestions": [
+            {
+                "title": "Palindrome Linked List",
+                "titleSlug": "palindrome-linked-list",
+                "difficulty": "Easy",
+                "translatedTitle": null
+            },
+            {
+                "title": "Find Palindrome With Fixed Length",
+                "titleSlug": "find-palindrome-with-fixed-length",
+                "difficulty": "Medium",
+                "translatedTitle": null
+            },
+            {
+                "title": "Strictly Palindromic Number",
+                "titleSlug": "strictly-palindromic-number",
+                "difficulty": "Medium",
+                "translatedTitle": null
+            },
+            {
+                "title": "  Count Symmetric Integers",
+                "titleSlug": "count-symmetric-integers",
+                "difficulty": "Easy",
+                "translatedTitle": null
+            },
+            {
+                "title": "Find the Count of Good Integers",
+                "titleSlug": "find-the-count-of-good-integers",
+                "difficulty": "Hard",
+                "translatedTitle": null
+            },
+            {
+                "title": "Find the Largest Palindrome Divisible by K",
+                "titleSlug": "find-the-largest-palindrome-divisible-by-k",
+                "difficulty": "Hard",
+                "translatedTitle": null
+            }
+        ],
+        "hints": [
+            "Beware of overflow when you reverse the integer."
+        ],
+        "solution": {
+            "canSeeDetail": false
+        },
+        "topicTags": [
+            {
+                "name": "Math",
+                "slug": "math"
+            }
+        ],
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    bool isPalindrome(int x) {\n        \n    }\n};"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public boolean isPalindrome(int x) {\n        \n    }\n}"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def isPalindrome(self, x: int) -> bool:\n        "
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number} x\n * @return {boolean}\n */\nvar isPalindrome = function(x) {\n    \n};"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function isPalindrome(x: number): boolean {\n    \n};"
+            }
+        ]
+    },
+    {
+        "questionId": 10,
+        "questionFrontendId": 10,
+        "title": "Regular Expression Matching",
+        "titleSlug": "regular-expression-matching",
+        "difficulty": "Hard",
+        "likes": 13423,
+        "dislikes": 2411,
+        "acRate": 31.32498646644601,
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "companyTagStats": null,
+        "hasSolution": true,
+        "hasVideoSolution": false,
+        "stats": {
+            "totalAccepted": "1.4M",
+            "totalSubmission": "4.6M",
+            "totalAcceptedRaw": 1443741,
+            "totalSubmissionRaw": 4608912,
+            "acRate": "31.3%"
+        },
+        "similarQuestions": [
+            {
+                "title": "Wildcard Matching",
+                "titleSlug": "wildcard-matching",
+                "difficulty": "Hard",
+                "translatedTitle": null
+            }
+        ],
+        "hints": [],
+        "solution": {
+            "canSeeDetail": true
+        },
+        "topicTags": [
+            {
+                "name": "String",
+                "slug": "string"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming"
+            },
+            {
+                "name": "Recursion",
+                "slug": "recursion"
+            }
+        ],
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    bool isMatch(string s, string p) {\n        \n    }\n};"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public boolean isMatch(String s, String p) {\n        \n    }\n}"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def isMatch(self, s: str, p: str) -> bool:\n        "
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {string} s\n * @param {string} p\n * @return {boolean}\n */\nvar isMatch = function(s, p) {\n    \n};"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function isMatch(s: string, p: string): boolean {\n    \n};"
+            }
+        ]
+    },
+    {
+        "questionId": 11,
+        "questionFrontendId": 11,
+        "title": "Container With Most Water",
+        "titleSlug": "container-with-most-water",
+        "difficulty": "Medium",
+        "likes": 34639,
+        "dislikes": 2226,
+        "acRate": 60.421635337465894,
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "companyTagStats": null,
+        "hasSolution": true,
+        "hasVideoSolution": true,
+        "stats": {
+            "totalAccepted": "5.6M",
+            "totalSubmission": "9.3M",
+            "totalAcceptedRaw": 5627251,
+            "totalSubmissionRaw": 9313311,
+            "acRate": "60.4%"
+        },
+        "similarQuestions": [
+            {
+                "title": "Trapping Rain Water",
+                "titleSlug": "trapping-rain-water",
+                "difficulty": "Hard",
+                "translatedTitle": null
+            },
+            {
+                "title": "Maximum Tastiness of Candy Basket",
+                "titleSlug": "maximum-tastiness-of-candy-basket",
+                "difficulty": "Medium",
+                "translatedTitle": null
+            },
+            {
+                "title": "House Robber IV",
+                "titleSlug": "house-robber-iv",
+                "difficulty": "Medium",
+                "translatedTitle": null
+            }
+        ],
+        "hints": [
+            "If you simulate the problem, it will be O(n^2) which is not efficient.",
+            "Try to use two-pointers. Set one pointer to the left and one to the right of the array. Always move the pointer that points to the lower line.",
+            "How can you calculate the amount of water at each step?"
+        ],
+        "solution": {
+            "canSeeDetail": false
+        },
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Two Pointers",
+                "slug": "two-pointers"
+            },
+            {
+                "name": "Greedy",
+                "slug": "greedy"
+            }
+        ],
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    int maxArea(vector<int>& height) {\n        \n    }\n};"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public int maxArea(int[] height) {\n        \n    }\n}"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def maxArea(self, height: List[int]) -> int:\n        "
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number[]} height\n * @return {number}\n */\nvar maxArea = function(height) {\n    \n};"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function maxArea(height: number[]): number {\n    \n};"
+            }
+        ]
+    },
+    {
+        "questionId": 12,
+        "questionFrontendId": 12,
+        "title": "Integer to Roman",
+        "titleSlug": "integer-to-roman",
+        "difficulty": "Medium",
+        "likes": 8645,
+        "dislikes": 5732,
+        "acRate": 71.28876536548417,
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "companyTagStats": null,
+        "hasSolution": true,
+        "hasVideoSolution": true,
+        "stats": {
+            "totalAccepted": "2.2M",
+            "totalSubmission": "3.1M",
+            "totalAcceptedRaw": 2224859,
+            "totalSubmissionRaw": 3120916,
+            "acRate": "71.3%"
+        },
+        "similarQuestions": [
+            {
+                "title": "Roman to Integer",
+                "titleSlug": "roman-to-integer",
+                "difficulty": "Easy",
+                "translatedTitle": null
+            },
+            {
+                "title": "Integer to English Words",
+                "titleSlug": "integer-to-english-words",
+                "difficulty": "Hard",
+                "translatedTitle": null
+            }
+        ],
+        "hints": [],
+        "solution": {
+            "canSeeDetail": false
+        },
+        "topicTags": [
+            {
+                "name": "Hash Table",
+                "slug": "hash-table"
+            },
+            {
+                "name": "Math",
+                "slug": "math"
+            },
+            {
+                "name": "String",
+                "slug": "string"
+            }
+        ],
+        "codeSnippets": [
+            {
+                "lang": "C++",
+                "langSlug": "cpp",
+                "code": "class Solution {\npublic:\n    string intToRoman(int num) {\n        \n    }\n};"
+            },
+            {
+                "lang": "Java",
+                "langSlug": "java",
+                "code": "class Solution {\n    public String intToRoman(int num) {\n        \n    }\n}"
+            },
+            {
+                "lang": "Python3",
+                "langSlug": "python3",
+                "code": "class Solution:\n    def intToRoman(self, num: int) -> str:\n        "
+            },
+            {
+                "lang": "JavaScript",
+                "langSlug": "javascript",
+                "code": "/**\n * @param {number} num\n * @return {string}\n */\nvar intToRoman = function(num) {\n    \n};"
+            },
+            {
+                "lang": "TypeScript",
+                "langSlug": "typescript",
+                "code": "function intToRoman(num: number): string {\n    \n};"
+            }
+        ]
+    }
+]

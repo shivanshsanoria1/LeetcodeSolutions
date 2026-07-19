@@ -5,7 +5,7 @@ algorithms/stats/generated
 misc/cpp/compiled
 
 util/logs
-util/web/generated
+util/web/generated/backup
 
 # python virtual-environment
 .venv

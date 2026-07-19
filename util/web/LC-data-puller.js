@@ -79,9 +79,20 @@ async function updateConfig() {
 function writeToHTML(id, slug, data) {
 	try {
 		const filename = `${id}.${slug}.html`
-		const filePath = path.join(__dirname, '..', 'generated', 'html', filename)
+		const filePath = path.join(helper.getDirPath('LCProblemsHTML'), filename)
 
-		// await fs.mkdir(path.dirname(filePath), { recursive: true });
+		return fs.writeFile(filePath, data, "utf-8");
+	} catch (err) {
+		logger.info(err)
+		throw err
+	}
+}
+
+function writeToMD(id, slug, data) {
+	try {
+		const filename = `${id}.${slug}.md`
+		const filePath = path.join(helper.getDirPath('LCProblemsMD'), filename)
+
 		return fs.writeFile(filePath, data, "utf-8");
 	} catch (err) {
 		logger.info(err)
@@ -90,13 +101,23 @@ function writeToHTML(id, slug, data) {
 }
 
 // process file writes in small batches instead of concurrently prcoessing in bulk
-async function batchWrite(problems) {
+async function batchWrite(problems, version) {
 	try {
-		for (let i = 0; i < problems.length; i += config.BATCH_SIZE) {
+		const batchSize = webConfig.BATCH_SIZE ?? 10
+		for (let i = 0; i < problems.length; i += batchSize) {
 			const batch = []
-			for (let j = i; j < Math.min(problems.length, i + config.BATCH_SIZE); j++) {
-				const { id, slug, description } = problems[j]
-				batch.push(writeToHTML(id, slug, description))
+			for (let j = i; j < Math.min(problems.length, i + batchSize); j++) {
+				const { id, slug } = problems[j]
+
+				if (version === 'html') {
+					const { description } = problems[j]
+					batch.push(writeToHTML(id, slug, description))
+				} else if (version === 'md') {
+					const { solutionContent } = problems[j]
+					batch.push(writeToMD(id, slug, solutionContent))
+				} else {
+					throw new Error('Invalid batch write version ' + version)
+				}
 			}
 
 			await Promise.all(batch)
@@ -143,11 +164,11 @@ async function fetchAllProblems() {
 
 		logger.info('Fetching new problem list from Leetcode API...')
 
-		const start = Date.now();
+		const apiFetchStartTime = Date.now();
 
-		const interval = setInterval(() => {
-			const elapsed = Math.floor((Date.now() - start) / 1000);
-			logger.info(`Still waiting for LeetCode API response... (${elapsed}s elapsed)`);
+		const apiInProgressInterval = setInterval(() => {
+			const elapsed = Math.floor((Date.now() - apiFetchStartTime) / 1000);
+			console.log(`Waiting for LeetCode Full Problem list API response... (${elapsed}s elapsed)`);
 		}, 3000);
 
 		const res = await fetch(webConfig.API_URL, {
@@ -161,7 +182,7 @@ async function fetchAllProblems() {
 			body: JSON.stringify({ query })
 		});
 
-		clearInterval(interval);
+		clearInterval(apiInProgressInterval);
 
 		if (!res.ok) {
 			const text = await res.text();
@@ -172,7 +193,7 @@ async function fetchAllProblems() {
 		const { data, errors } = await res.json();
 
 		if (errors) {
-			logger.info(errors);
+			logger.error(errors);
 			throw new Error("GraphQL error");
 		}
 
@@ -192,8 +213,6 @@ async function fetchAllProblems() {
 		webConfig.LAST_UPDATED_ISO = new Date().toISOString()
 		await updateConfig()
 
-		logger.info('Fetched problem list length = ' + problems.length)
-
 		return problems
 	} catch (err) {
 		throw err;
@@ -202,27 +221,52 @@ async function fetchAllProblems() {
 
 function parseDetailedProblem(problem) {
 	try {
-		const stats = JSON.parse(problem.stats)
+		const parseJSON = (value, fallback) => {
+			try {
+				return typeof value === "string" ? JSON.parse(value) : value;
+			} catch {
+				return fallback;
+			}
+		};
 
 		return {
-			id: parseInt(problem.questionFrontendId),
-			questionIdInternal: parseInt(problem.questionId),
+			questionId: Number(problem.questionId),
+			questionFrontendId: Number(problem.questionFrontendId),
 			title: problem.title,
-			slug: problem.titleSlug,
+			titleSlug: problem.titleSlug,
 			difficulty: problem.difficulty,
 			likes: problem.likes,
 			dislikes: problem.dislikes,
-			acceptanceRate: Number(problem.acRate.toFixed(2)),
-			isPaid: problem.isPaidOnly,
-			stats: {
-				accepted: stats.totalAcceptedRaw,
-				submissions: stats.totalSubmissionRaw,
-				acceptedDisplayed: stats.totalAccepted,
-				submissionsDisplayed: stats.totalSubmission,
-				acceptanceRate: stats.acRate,
+			acRate: problem.acRate,
+			isPaidOnly: problem.isPaidOnly,
+			categoryTitle: problem.categoryTitle,
+			companyTagStats: problem.companyTagStats,
+			hasSolution: problem.hasSolution,
+			hasVideoSolution: problem.hasVideoSolution,
+			stats: JSON.parse(problem.stats),
+			similarQuestions: parseJSON(problem.similarQuestions, []),
+			content: problem.content ?? '',
+			hints: problem.hints ?? [],
+			solution: {
+				canSeeDetail: problem.solution?.canSeeDetail ?? false,
+				content: problem.solution?.content ?? ''
 			},
-			description: problem.content ?? '',
-			tags: problem.topicTags.map(tag => tag.name),
+			topicTags: problem.topicTags ?? [],
+			codeSnippets: problem.codeSnippets
+				?.filter(snippet =>
+					[
+						"cpp",
+						"java",
+						"python3",
+						"javascript",
+						"typescript"
+					].includes(snippet.langSlug)
+				)
+				.map(snippet => ({
+					lang: snippet.lang,
+					langSlug: snippet.langSlug,
+					code: snippet.code
+				})) ?? []
 		};
 	} catch (err) {
 		logger.info(err)
@@ -247,22 +291,36 @@ async function fetchProblemDetailed(titleSlug) {
 					acRate
 					isPaidOnly
 					categoryTitle
+					companyTagStats
+					hasSolution
+					hasVideoSolution
 					stats
+					similarQuestions
 					content
+					hints
+					solution {
+						canSeeDetail
+						content
+					}
 					topicTags {
 						name
 						slug
+					}
+					codeSnippets {
+						lang
+						langSlug
+						code
 					}
 				}
 			}
 		`;
 
-		const res = await fetch(config.API_URL, {
+		const res = await fetch(webConfig.API_URL, {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
-				"Origin": config.ORIGIN,
-				"Referer": config.REFERER,
+				"Origin": webConfig.ORIGIN,
+				"Referer": webConfig.REFERER,
 				"User-Agent": "Mozilla/5.0"
 			},
 			body: JSON.stringify({
@@ -279,7 +337,7 @@ async function fetchProblemDetailed(titleSlug) {
 		const { data, errors } = await res.json();
 
 		if (errors) {
-			logger.info(errors);
+			logger.error(errors);
 			throw new Error("GraphQL error");
 		}
 
@@ -296,29 +354,35 @@ async function fetchProblemDetailed(titleSlug) {
 }
 
 // provide delay in ms
-const sleep = (time_ms = config.API_DELAY_MS ?? 250) => new Promise((resolve) => setTimeout(resolve, time_ms));
+const sleep = (time_ms = webConfig.API_DELAY_MS ?? 250) => new Promise((resolve) => setTimeout(resolve, time_ms));
 
 // uses the base problem list to fetch the details for each missing problem sequentially (with limiter);
 // append the new items to the old data list;
 // use manual override to force refresh the list (use with CAUTION, full refresh too slow)
 // takes backup before full refresh
-async function fetchProblemsDetailed(problems) {
+async function fetchdetailedProblems(problems) {
 	try {
-		const filePath = path.join(__dirname, '..', 'generated', config.PROBLEM_LIST_DETAILED_FILE);
-		let problemsDetailed = []
+		// const filePath = path.join(__dirname, '..', 'generated', config.PROBLEM_LIST_DETAILED_FILE);
+		const filePath = helper.getFilePath('LCDetailedProblemList')
+		let detailedProblems = []
 
-		if (config.FORCE_REFRESH_PROBLEM_LIST_DETAILED) {
+		if (webConfig.FORCE_REFRESH_PROBLEM_LIST_DETAILED) {
 			// create a backup of the old json
 			await createBackupJSON(filePath)
 		} else {
-			problemsDetailed = await readFromJSON(filePath)
+			detailedProblems = await readFromJSON(filePath)
 		}
 
-		if (problems.length === problemsDetailed.length) return problemsDetailed
-		else if (problems.length < problemsDetailed.length) throw new Error('Problems length mismatch')
+		if (problems.length === detailedProblems.length) {
+			return detailedProblems
+		}
+		else if (problems.length < detailedProblems.length) {
+			throw new Error('Problems length mismatch')
+		}
 
 		const promisesHTML = []
-		for (let i = problemsDetailed.length, limit = config.FETCH_NEXT_COUNT;
+		const promisesMD = []
+		for (let i = detailedProblems.length, limit = webConfig.FETCH_NEXT_COUNT ?? 5;
 			i < problems.length && limit > 0;
 			i++, limit--) {
 			const { questionFrontendId, title, titleSlug } = problems[i]
@@ -326,28 +390,47 @@ async function fetchProblemsDetailed(problems) {
 
 			const problem = await fetchProblemDetailed(titleSlug)
 
-			const { id, slug, description } = problem
-			promisesHTML.push({ id, slug, description })
-			delete problem.description
+			const id = problem.questionFrontendId
+			const slug = problem.titleSlug
+			const description = problem.content
+			const solutionContent = problem.solution.content
 
-			problemsDetailed.push(problem)
+			promisesHTML.push({ id, slug, description })
+			delete problem.content
+
+			promisesMD.push({ id, slug, solutionContent })
+			delete problem.solution.content
+
+			detailedProblems.push(problem)
 
 			await sleep(250) // prevent overwhelming the API
 		}
 
-		await writeToJSON(filePath, problemsDetailed)
+		await writeToJSON(filePath, detailedProblems)
 
-		await batchWrite(promisesHTML)
+		await batchWrite(promisesHTML, 'html')
+		await batchWrite(promisesMD, 'md')
 
-		if (config.FORCE_REFRESH_PROBLEM_LIST_DETAILED) {
-			config.FORCE_REFRESH_PROBLEM_LIST_DETAILED = false
+		// switch OFF the FORCE REFRESH flag
+		if (webConfig.FORCE_REFRESH_PROBLEM_LIST_DETAILED) {
+			webConfig.FORCE_REFRESH_PROBLEM_LIST_DETAILED = false
 			await updateConfig()
+			logger.info('FORCE_REFRESH_PROBLEM_LIST_DETAILED flag reset to : false')
 		}
 
-		return problemsDetailed
+		return detailedProblems
 	} catch (err) {
-		logger.info(err);
+		logger.error(err);
 		throw err;
+	}
+}
+
+function initDirs() {
+	try {
+		helper.ensureDir('LCProblemsHTML')
+		helper.ensureDir('LCProblemsMD')
+	} catch (err) {
+		throw err
 	}
 }
 
@@ -358,12 +441,14 @@ async function fetchStatsFromLC() {
 		logger.info('')
 		logger.time(`${scriptName} started...`)
 
+		initDirs()
+
 		const problems = await fetchAllProblems();
 		logger.info('Problem list length = ' + problems.length)
 		logger.info('Problem at index 0 = ' + JSON.stringify(problems[0]))
 
-		// const problemsDetailed = await fetchProblemsDetailed(problems)
-		// logger.info('Detailed Problem list length = ' + problemsDetailed.length)
+		const detailedProblems = await fetchdetailedProblems(problems)
+		logger.info('Detailed Problem list length = ' + detailedProblems.length)
 
 		if (logger.hasError()) {
 			console.log('Issue(s) found during execution: check logs')

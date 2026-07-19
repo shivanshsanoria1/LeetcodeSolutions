@@ -4,12 +4,14 @@
 		"web": "util/web",
 		"logs": "util/logs",
 		"linkTables": "stats/link-tables",
-		"webBackup": "util/web/generated/backup"
+		"webBackup": "util/web/generated/backup",
+		"LCProblemsHTML": "util/web/generated/html",
+		"LCProblemsMD": "util/web/generated/md"
 	},
 	"filePaths": {
 		"LCSolvedProblemList": "stats/lc-solved-problems-list.json",
 		"specialQuesIds": "util/local/special-ques-ids.json",
 		"LCProblemList": "util/web/generated/lc-problem-list.json",
-		"LCDetailedProblemList": "util/web/generated/lc-problem-list.json"
+		"LCDetailedProblemList": "util/web/generated/lc-detailed-problem-list.json"
 	}
 }

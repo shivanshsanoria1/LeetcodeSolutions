@@ -3,10 +3,9 @@
     "ORIGIN": "https://leetcode.com",
     "REFERER": "https://leetcode.com/problems/",
     "API_DELAY_MS": 250,
-    "FORCE_REFRESH_PROBLEM_LIST": true,
+    "FORCE_REFRESH_PROBLEM_LIST": false,
     "FORCE_REFRESH_PROBLEM_LIST_DETAILED": false,
-    "FETCH_NEXT_COUNT": 5,
-    "BATCH_SIZE": 10,
-    "LAST_UPDATED_ISO": "2026-07-06T18:52:25.991Z",
-    "LAST_UPDATED": "2026-07-06T18:08:44.415Z"
+    "FETCH_NEXT_COUNT": 12,
+    "BATCH_SIZE": 8,
+    "LAST_UPDATED_ISO": "2026-07-19T16:03:09.419Z"
 }
