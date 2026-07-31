@@ -6,6 +6,7 @@ misc/cpp/compiled
 
 util/logs
 util/web/generated/backup
+util/web/generated/json
 
 # python virtual-environment
 .venv
