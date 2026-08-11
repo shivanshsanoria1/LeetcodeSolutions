@@ -15,7 +15,7 @@ const queries = {
 			}
 		}
 	`,
-	'LC_Problem_Detail': `
+	'LC_Problem_Detailed': `
 		query getQuestionPublicData($titleSlug: String!) {
 			question(titleSlug: $titleSlug) {
 				questionId

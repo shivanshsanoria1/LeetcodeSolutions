@@ -17,7 +17,7 @@ async function readFromJSON(filePath, defaultValue = []) {
 		return JSON.parse(problemsJSON)
 	} catch (err) {
 		if (err.code === 'ENOENT') {
-			// logger.info(`JSON file not found. Creating new file at: ${filePath}`);
+			logger.info(`JSON file not found. Creating new file at: ${filePath}`);
 			await fs.writeFile(filePath, JSON.stringify(defaultValue, null, 4));
 
 			return defaultValue;
@@ -126,7 +126,10 @@ async function fetchBaseProblemList() {
 			Date.now() - lastUpdatedTimestamp.getTime() < 7 * 24 * 60 * 60 * 1000) {
 			logger.info('Using the local version of LC-problem-list')
 
-			return await readFromJSON(filePathJSON)
+			const baseProblemsLocal = await readFromJSON(filePathJSON)
+			if (baseProblemsLocal.length > 0) {
+				return baseProblemsLocal
+			}
 		}
 
 		const query = queries.LC_Base_Problem_List;
@@ -137,7 +140,7 @@ async function fetchBaseProblemList() {
 		const apiFetchStartTime = Date.now();
 		const apiInProgressInterval = setInterval(() => {
 			const elapsed = Math.floor((Date.now() - apiFetchStartTime) / 1000);
-			console.log(`Waiting for LeetCode Full Problem list API response... (${elapsed}s elapsed)`);
+			logger.info(`Waiting for LeetCode Full Problem list API response... (${elapsed}s elapsed)`);
 		}, 3000);
 
 		const res = await fetch(webConfig.API_URL, {
@@ -170,27 +173,28 @@ async function fetchBaseProblemList() {
 			throw new Error("Problem list not found");
 		}
 
-		const problems = data.allQuestions
+		const baseProblems = data.allQuestions
 
-		problems.sort((a, b) => Number(a.questionFrontendId) - Number(b.questionFrontendId));
+		baseProblems.sort((a, b) => Number(a.questionFrontendId) - Number(b.questionFrontendId));
 
 		// create a backup of the old json
 		await createBackupJSON(filePathJSON)
 		// create the json with fresh data
-		await writeToJSON(filePathJSON, problems)
+		await writeToJSON(filePathJSON, baseProblems)
 
 		webConfig.LAST_UPDATED_ISO = new Date().toISOString()
 		await updateConfig()
 
-		return problems
+		return baseProblems
 	} catch (err) {
 		throw err;
 	}
 }
 
+// parse the problem stats in a custom format
 function parseProblem(problem) {
 	try {
-		const parseJSON = (value, fallback) => {
+		const parseJSONString = (value, fallback = []) => {
 			try {
 				return typeof value === "string" ? JSON.parse(value) : value;
 			} catch {
@@ -198,27 +202,48 @@ function parseProblem(problem) {
 			}
 		};
 
-		return {
+		const parsedProblemObj = {
 			quesId: Number(problem.questionFrontendId),
 			quesIdLCBackend: Number(problem.questionId),
 			title: problem.title,
 			titleSlug: problem.titleSlug,
 			difficulty: problem.difficulty,
-			likes: problem.likes,
-			dislikes: problem.dislikes,
-			acRate: problem.acRate,
 			isPaidOnly: problem.isPaidOnly,
-			categoryTitle: problem.categoryTitle,
-			hasSolution: problem.hasSolution,
-			hasVideoSolution: problem.hasVideoSolution,
 			stats: JSON.parse(problem.stats),
-			similarQuestions: parseJSON(problem.similarQuestions, []),
-			solution: {
-				canSeeDetail: problem.solution?.canSeeDetail ?? false
-			},
+			similarQuestions: parseJSONString(problem.similarQuestions, []).map(q => q.titleSlug),
 			topicTags: problem.topicTags ?? [],
-			companyTagStats: problem.companyTagStats,
+			meta: {
+				categoryTitle: problem.categoryTitle,
+				hasSolution: problem.hasSolution,
+				hasVideoSolution: problem.hasVideoSolution,
+			},
+			solution: {
+				canSeeDetail: problem.solution?.canSeeDetail ?? false,
+			}
 		};
+
+		parsedProblemObj.stats.acRateRaw = problem.acRate
+		parsedProblemObj.stats.likes = problem.likes
+		parsedProblemObj.stats.dislikes = problem.dislikes
+
+		return parsedProblemObj
+	} catch (err) {
+		logger.info(err)
+		throw err;
+	}
+}
+
+// parse the full problem stats in a custom format to store into a JSON file
+function parseProblemJSON(problem) {
+	try {
+		const parsedProblemObj = parseProblem(problem)
+
+		parsedProblemObj.solution.content = problem.solution?.content
+		parsedProblemObj.content = problem.content
+		parsedProblemObj.hints = problem.hints
+		parsedProblemObj.codeSnippets = problem.codeSnippets
+
+		return parsedProblemObj
 	} catch (err) {
 		logger.info(err)
 		throw err;
@@ -229,7 +254,7 @@ function parseProblem(problem) {
 // parse in a custom format
 async function fetchProblem(titleSlug) {
 	try {
-		const query = queries.LC_Problem_Detail
+		const query = queries.LC_Problem_Detailed
 
 		const res = await fetch(webConfig.API_URL, {
 			method: "POST",
@@ -265,7 +290,7 @@ async function fetchProblem(titleSlug) {
 
 		const filenameJSON = `${problem.quesId}.${problem.titleSlug}.json`
 		const filePathJSON = path.join(helper.getDirPath('LCProblemsJSON'), filenameJSON)
-		await writeToJSON(filePathJSON, data.question)
+		await writeToJSON(filePathJSON, parseProblemJSON(data.question))
 
 		return problem
 
@@ -290,9 +315,11 @@ async function fetchProblems(baseProblems) {
 		} else {
 			problems = await readFromJSON(filePath)
 		}
+		logger.info(`Base Problems length = ${baseProblems.length}`)
+		logger.info(`Problems length = ${problems.length}`)
 
 		if (baseProblems.length === problems.length) {
-			return detailedProblems
+			return problems
 		}
 		else if (baseProblems.length < problems.length) {
 			throw new Error('Problems length mismatch')
