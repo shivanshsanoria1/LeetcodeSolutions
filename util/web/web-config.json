@@ -2,10 +2,10 @@
     "API_URL": "https://leetcode.com/graphql",
     "ORIGIN": "https://leetcode.com",
     "REFERER": "https://leetcode.com/problems/",
-    "API_DELAY_MS": 225,
+    "API_DELAY_MS": 200,
     "FORCE_REFRESH_BASE_PROBLEM_LIST": false,
     "FORCE_REFRESH_PROBLEM_LIST": false,
-    "FETCH_NEXT_COUNT": 100,
+    "FETCH_NEXT_COUNT": 30,
     "BATCH_SIZE": 8,
     "LAST_UPDATED_ISO": "2026-08-11T17:43:08.595Z"
 }

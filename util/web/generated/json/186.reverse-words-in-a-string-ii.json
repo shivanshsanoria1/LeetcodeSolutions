@@ -1,0 +1,44 @@
+{
+    "quesId": 186,
+    "quesIdLCBackend": 186,
+    "title": "Reverse Words in a String II",
+    "titleSlug": "reverse-words-in-a-string-ii",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "stats": {
+        "totalAccepted": "182.4K",
+        "totalSubmission": "321.1K",
+        "totalAcceptedRaw": 182400,
+        "totalSubmissionRaw": 321089,
+        "acRate": "56.8%",
+        "acRateRaw": 56.806679767914815,
+        "likes": 1118,
+        "dislikes": 146
+    },
+    "similarQuestions": [
+        "reverse-words-in-a-string",
+        "rotate-array"
+    ],
+    "topicTags": [
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "meta": {
+        "categoryTitle": "Algorithms",
+        "hasSolution": true,
+        "hasVideoSolution": true
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}

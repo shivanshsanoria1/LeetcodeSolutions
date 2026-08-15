@@ -77,34 +77,6 @@ async function updateConfig() {
 	}
 }
 
-// process file writes in small batches instead of concurrently prcoessing in bulk
-async function batchWrite(problems, version) {
-	try {
-		const batchSize = webConfig.BATCH_SIZE ?? 10
-		for (let i = 0; i < problems.length; i += batchSize) {
-			const batch = []
-			for (let j = i; j < Math.min(problems.length, i + batchSize); j++) {
-				const { id, slug } = problems[j]
-
-				if (version === 'html') {
-					const { description } = problems[j]
-					batch.push(writeToHTML(id, slug, description))
-				} else if (version === 'md') {
-					const { solutionContent } = problems[j]
-					batch.push(writeToMD(id, slug, solutionContent))
-				} else {
-					throw new Error('Invalid batch write version ' + version)
-				}
-			}
-
-			await Promise.all(batch)
-		}
-	} catch (err) {
-		logger.info(err)
-		throw err
-	}
-}
-
 // provide delay in ms
 const sleep = (time_ms = webConfig.API_DELAY_MS ?? 250) => new Promise((resolve) => setTimeout(resolve, time_ms));
 
@@ -250,6 +222,40 @@ function parseProblemJSON(problem) {
 	}
 }
 
+// verifies each problem in problems[] has its JSON file
+async function verifyProblemJSON(problems) {
+	try {
+		const dirPathJSON = helper.getDirPath('LCProblemsJSON')
+		const files = await fs.readdir(dirPathJSON);
+
+		if (files.length !== problems.length) {
+			logger.error('JSON files mismatch found.')
+		}
+
+		const fileMap = {};
+		for (const file of files) {
+			if (!file.endsWith('.json')) {
+				throw new Error(`Invalid filename = ${file}`)
+			}
+
+			const quesId = Number(file.split('.')[0])
+			const titleSlug = file.split('.')[1]
+
+			fileMap[quesId] = titleSlug;
+		}
+
+		for (const { quesId, titleSlug } of problems) {
+			if (!fileMap[quesId]) {
+				throw new Error(`quesId = ${quesId} JSON file not found.`)
+			} else if (fileMap[quesId] !== titleSlug) {
+				throw new Error(`quesId = ${quesId} title slug mismatch. Title slug = ${titleSlug}, filename = ${fileMap[quesId]}`)
+			}
+		}
+	} catch (err) {
+		throw err
+	}
+}
+
 // fetch details for a specific problem by its title-slug,
 // parse in a custom format
 async function fetchProblem(titleSlug) {
@@ -325,6 +331,8 @@ async function fetchProblems(baseProblems) {
 			throw new Error('Problems length mismatch')
 		}
 
+		await verifyProblemJSON(problems)
+
 		for (let i = problems.length, limit = webConfig.FETCH_NEXT_COUNT ?? 5;
 			i < baseProblems.length && limit > 0;
 			i++, limit--) {
@@ -348,7 +356,6 @@ async function fetchProblems(baseProblems) {
 
 		return problems
 	} catch (err) {
-		logger.error(err);
 		throw err;
 	}
 }
@@ -366,16 +373,17 @@ async function fetchStatsFromLC() {
 		const startTime = Date.now();
 		const scriptName = path.basename(__filename)
 		logger.info('')
-		logger.time(`${scriptName} started...`)
+		logger.time(`${scriptName} running...`)
 
 		initDirs()
 
 		const baseProblems = await fetchBaseProblemList();
-		logger.info('Problem list length = ' + baseProblems.length)
-		logger.info('Problem at index 0 = ' + JSON.stringify(baseProblems[0]))
+		logger.info('Base Problem list length = ' + baseProblems.length)
+		logger.info('Base Problem at index 0 = ' + JSON.stringify(baseProblems[0]))
 
 		const problems = await fetchProblems(baseProblems)
-		logger.info('Detailed Problem list length = ' + problems.length)
+		logger.info('Main Problem list length = ' + problems.length)
+		logger.info('Main Problem at index 0 = ' + JSON.stringify(problems[0]))
 
 		if (logger.hasError()) {
 			console.log('Issue(s) found during execution: check logs')
@@ -392,3 +400,32 @@ async function fetchStatsFromLC() {
 }
 
 fetchStatsFromLC()
+
+// DEPRICIATED
+// process file writes in small batches instead of concurrently prcoessing in bulk
+/*async function batchWrite(problems, version) {
+	try {
+		const batchSize = webConfig.BATCH_SIZE ?? 10
+		for (let i = 0; i < problems.length; i += batchSize) {
+			const batch = []
+			for (let j = i; j < Math.min(problems.length, i + batchSize); j++) {
+				const { id, slug } = problems[j]
+
+				if (version === 'html') {
+					const { description } = problems[j]
+					batch.push(writeToHTML(id, slug, description))
+				} else if (version === 'md') {
+					const { solutionContent } = problems[j]
+					batch.push(writeToMD(id, slug, solutionContent))
+				} else {
+					throw new Error('Invalid batch write version ' + version)
+				}
+			}
+
+			await Promise.all(batch)
+		}
+	} catch (err) {
+		logger.info(err)
+		throw err
+	}
+}*/
