@@ -1,19 +1,19 @@
 {
     "quesId": 68,
-    "quesIdLCBackend": 68,
     "title": "Text Justification",
     "titleSlug": "text-justification",
     "difficulty": "Hard",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
-        "totalAccepted": "683.5K",
+        "totalAccepted": "687.5K",
         "totalSubmission": "1.3M",
-        "totalAcceptedRaw": 683532,
-        "totalSubmissionRaw": 1318296,
-        "acRate": "51.8%",
-        "acRateRaw": 51.84973352003872,
-        "likes": 4635,
-        "dislikes": 5447
+        "totalAcceptedRaw": 687485,
+        "totalSubmissionRaw": 1323315,
+        "acRate": "52.0%",
+        "acRateRaw": 51.95179990886537,
+        "likes": 4643,
+        "dislikes": 5452
     },
     "similarQuestions": [
         "rearrange-spaces-between-words",
@@ -35,7 +35,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 68,
         "hasSolution": true,
         "hasVideoSolution": false
     },

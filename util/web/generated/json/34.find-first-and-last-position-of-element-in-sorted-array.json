@@ -1,18 +1,18 @@
 {
     "quesId": 34,
-    "quesIdLCBackend": 34,
     "title": "Find First and Last Position of Element in Sorted Array",
     "titleSlug": "find-first-and-last-position-of-element-in-sorted-array",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "3.5M",
-        "totalSubmission": "7.1M",
-        "totalAcceptedRaw": 3523844,
-        "totalSubmissionRaw": 7121538,
+        "totalSubmission": "7.2M",
+        "totalAcceptedRaw": 3549015,
+        "totalSubmissionRaw": 7164449,
         "acRate": "49.5%",
-        "acRateRaw": 49.48155283501988,
-        "likes": 23597,
+        "acRateRaw": 49.53658218280867,
+        "likes": 23646,
         "dislikes": 656
     },
     "similarQuestions": [
@@ -31,7 +31,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 34,
         "hasSolution": true,
         "hasVideoSolution": false
     },

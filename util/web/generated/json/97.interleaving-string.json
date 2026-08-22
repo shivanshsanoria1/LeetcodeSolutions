@@ -1,18 +1,18 @@
 {
     "quesId": 97,
-    "quesIdLCBackend": 97,
     "title": "Interleaving String",
     "titleSlug": "interleaving-string",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
-        "totalAccepted": "825.4K",
+        "totalAccepted": "830.3K",
         "totalSubmission": "1.9M",
-        "totalAcceptedRaw": 825438,
-        "totalSubmissionRaw": 1853316,
-        "acRate": "44.5%",
-        "acRateRaw": 44.53853334268587,
-        "likes": 8927,
+        "totalAcceptedRaw": 830338,
+        "totalSubmissionRaw": 1861253,
+        "acRate": "44.6%",
+        "acRateRaw": 44.6119353427943,
+        "likes": 8937,
         "dislikes": 558
     },
     "similarQuestions": [],
@@ -27,7 +27,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 97,
         "hasSolution": true,
         "hasVideoSolution": false
     },

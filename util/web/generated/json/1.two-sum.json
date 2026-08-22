@@ -1,19 +1,19 @@
 {
     "quesId": 1,
-    "quesIdLCBackend": 1,
     "title": "Two Sum",
     "titleSlug": "two-sum",
     "difficulty": "Easy",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
-        "totalAccepted": "23M",
-        "totalSubmission": "39.7M",
-        "totalAcceptedRaw": 23018087,
-        "totalSubmissionRaw": 39699686,
+        "totalAccepted": "23.2M",
+        "totalSubmission": "40M",
+        "totalAcceptedRaw": 23190466,
+        "totalSubmissionRaw": 39953324,
         "acRate": "58.0%",
-        "acRateRaw": 57.98066072018799,
-        "likes": 69546,
-        "dislikes": 2591
+        "acRateRaw": 58.04390783226238,
+        "likes": 69694,
+        "dislikes": 2596
     },
     "similarQuestions": [
         "3sum",
@@ -49,7 +49,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 1,
         "hasSolution": true,
         "hasVideoSolution": true
     },

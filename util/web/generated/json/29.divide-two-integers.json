@@ -1,19 +1,19 @@
 {
     "quesId": 29,
-    "quesIdLCBackend": 29,
     "title": "Divide Two Integers",
     "titleSlug": "divide-two-integers",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
-        "totalAccepted": "1.2M",
-        "totalSubmission": "6.1M",
-        "totalAcceptedRaw": 1242089,
-        "totalSubmissionRaw": 6145638,
+        "totalAccepted": "1.3M",
+        "totalSubmission": "6.2M",
+        "totalAcceptedRaw": 1250003,
+        "totalSubmissionRaw": 6174587,
         "acRate": "20.2%",
-        "acRateRaw": 20.21090302958116,
-        "likes": 6230,
-        "dislikes": 15300
+        "acRateRaw": 20.244320240287593,
+        "likes": 6242,
+        "dislikes": 15304
     },
     "similarQuestions": [],
     "topicTags": [
@@ -27,7 +27,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 29,
         "hasSolution": true,
         "hasVideoSolution": false
     },

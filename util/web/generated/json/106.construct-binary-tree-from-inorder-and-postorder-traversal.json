@@ -1,18 +1,18 @@
 {
     "quesId": 106,
-    "quesIdLCBackend": 106,
     "title": "Construct Binary Tree from Inorder and Postorder Traversal",
     "titleSlug": "construct-binary-tree-from-inorder-and-postorder-traversal",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "1M",
         "totalSubmission": "1.5M",
-        "totalAcceptedRaw": 1009226,
-        "totalSubmissionRaw": 1454658,
+        "totalAcceptedRaw": 1013370,
+        "totalSubmissionRaw": 1459342,
         "acRate": "69.4%",
-        "acRateRaw": 69.37856866899388,
-        "likes": 8778,
+        "acRateRaw": 69.44019976126226,
+        "likes": 8783,
         "dislikes": 161
     },
     "similarQuestions": [
@@ -41,7 +41,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 106,
         "hasSolution": true,
         "hasVideoSolution": false
     },

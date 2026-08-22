@@ -1,19 +1,19 @@
 {
     "quesId": 53,
-    "quesIdLCBackend": 53,
     "title": "Maximum Subarray",
     "titleSlug": "maximum-subarray",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "6.5M",
-        "totalSubmission": "12M",
-        "totalAcceptedRaw": 6472150,
-        "totalSubmissionRaw": 12049692,
-        "acRate": "53.7%",
-        "acRateRaw": 53.71222483527088,
-        "likes": 38198,
-        "dislikes": 1621
+        "totalSubmission": "12.1M",
+        "totalAcceptedRaw": 6518868,
+        "totalSubmissionRaw": 12124939,
+        "acRate": "53.8%",
+        "acRateRaw": 53.764245114694106,
+        "likes": 38270,
+        "dislikes": 1622
     },
     "similarQuestions": [
         "best-time-to-buy-and-sell-stock",
@@ -46,7 +46,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 53,
         "hasSolution": true,
         "hasVideoSolution": true
     },

@@ -1,18 +1,18 @@
 {
     "quesId": 96,
-    "quesIdLCBackend": 96,
     "title": "Unique Binary Search Trees",
     "titleSlug": "unique-binary-search-trees",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
-        "totalAccepted": "900.1K",
+        "totalAccepted": "904.3K",
         "totalSubmission": "1.4M",
-        "totalAcceptedRaw": 900116,
-        "totalSubmissionRaw": 1405100,
+        "totalAcceptedRaw": 904279,
+        "totalSubmissionRaw": 1410492,
         "acRate": "64.1%",
-        "acRateRaw": 64.06068740917028,
-        "likes": 11102,
+        "acRateRaw": 64.11091724666483,
+        "likes": 11113,
         "dislikes": 449
     },
     "similarQuestions": [
@@ -41,7 +41,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 96,
         "hasSolution": true,
         "hasVideoSolution": false
     },

@@ -1,19 +1,19 @@
 {
     "quesId": 107,
-    "quesIdLCBackend": 107,
     "title": "Binary Tree Level Order Traversal II",
     "titleSlug": "binary-tree-level-order-traversal-ii",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
-        "totalAccepted": "869.4K",
+        "totalAccepted": "872.2K",
         "totalSubmission": "1.3M",
-        "totalAcceptedRaw": 869425,
-        "totalSubmissionRaw": 1262821,
-        "acRate": "68.8%",
-        "acRateRaw": 68.84791546565475,
-        "likes": 5221,
-        "dislikes": 335
+        "totalAcceptedRaw": 872228,
+        "totalSubmissionRaw": 1265865,
+        "acRate": "68.9%",
+        "acRateRaw": 68.90373862636329,
+        "likes": 5223,
+        "dislikes": 336
     },
     "similarQuestions": [
         "binary-tree-level-order-traversal",
@@ -34,7 +34,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 107,
         "hasSolution": true,
         "hasVideoSolution": false
     },

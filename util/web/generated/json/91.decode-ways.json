@@ -1,18 +1,18 @@
 {
     "quesId": 91,
-    "quesIdLCBackend": 91,
     "title": "Decode Ways",
     "titleSlug": "decode-ways",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "1.7M",
         "totalSubmission": "4.5M",
-        "totalAcceptedRaw": 1722588,
-        "totalSubmissionRaw": 4483922,
-        "acRate": "38.4%",
-        "acRateRaw": 38.417047917383115,
-        "likes": 13044,
+        "totalAcceptedRaw": 1731379,
+        "totalSubmissionRaw": 4499268,
+        "acRate": "38.5%",
+        "acRateRaw": 38.48140490127636,
+        "likes": 13067,
         "dislikes": 4618
     },
     "similarQuestions": [
@@ -31,7 +31,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 91,
         "hasSolution": true,
         "hasVideoSolution": true
     },

@@ -1,18 +1,18 @@
 {
     "quesId": 100,
-    "quesIdLCBackend": 100,
     "title": "Same Tree",
     "titleSlug": "same-tree",
     "difficulty": "Easy",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "3.6M",
-        "totalSubmission": "5.3M",
-        "totalAcceptedRaw": 3621446,
-        "totalSubmissionRaw": 5345340,
-        "acRate": "67.7%",
-        "acRateRaw": 67.749671400077,
-        "likes": 13067,
+        "totalSubmission": "5.4M",
+        "totalAcceptedRaw": 3644523,
+        "totalSubmissionRaw": 5373358,
+        "acRate": "67.8%",
+        "acRateRaw": 67.82586298600248,
+        "likes": 13077,
         "dislikes": 306
     },
     "similarQuestions": [],
@@ -35,7 +35,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 100,
         "hasSolution": true,
         "hasVideoSolution": true
     },

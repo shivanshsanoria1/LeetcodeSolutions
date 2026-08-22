@@ -1,19 +1,19 @@
 {
     "quesId": 18,
-    "quesIdLCBackend": 18,
     "title": "4Sum",
     "titleSlug": "4sum",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
-        "totalAccepted": "1.8M",
-        "totalSubmission": "4.4M",
-        "totalAcceptedRaw": 1840127,
-        "totalSubmissionRaw": 4443037,
-        "acRate": "41.4%",
-        "acRateRaw": 41.41611587016394,
-        "likes": 13073,
-        "dislikes": 1549
+        "totalAccepted": "1.9M",
+        "totalSubmission": "4.5M",
+        "totalAcceptedRaw": 1857946,
+        "totalSubmissionRaw": 4476483,
+        "acRate": "41.5%",
+        "acRateRaw": 41.50476262811291,
+        "likes": 13087,
+        "dislikes": 1551
     },
     "similarQuestions": [
         "two-sum",
@@ -36,7 +36,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 18,
         "hasSolution": true,
         "hasVideoSolution": false
     },

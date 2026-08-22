@@ -1,19 +1,19 @@
 {
     "quesId": 42,
-    "quesIdLCBackend": 42,
     "title": "Trapping Rain Water",
     "titleSlug": "trapping-rain-water",
     "difficulty": "Hard",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "3.8M",
         "totalSubmission": "5.6M",
-        "totalAcceptedRaw": 3792168,
-        "totalSubmissionRaw": 5577578,
-        "acRate": "68.0%",
-        "acRateRaw": 67.98954391796494,
-        "likes": 36900,
-        "dislikes": 711
+        "totalAcceptedRaw": 3822153,
+        "totalSubmissionRaw": 5614868,
+        "acRate": "68.1%",
+        "acRateRaw": 68.0721606263885,
+        "likes": 36957,
+        "dislikes": 713
     },
     "similarQuestions": [
         "container-with-most-water",
@@ -45,7 +45,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 42,
         "hasSolution": true,
         "hasVideoSolution": false
     },

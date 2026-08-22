@@ -1,18 +1,18 @@
 {
     "quesId": 23,
-    "quesIdLCBackend": 23,
     "title": "Merge k Sorted Lists",
     "titleSlug": "merge-k-sorted-lists",
     "difficulty": "Hard",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
-        "totalAccepted": "3.1M",
+        "totalAccepted": "3.2M",
         "totalSubmission": "5.2M",
-        "totalAcceptedRaw": 3137091,
-        "totalSubmissionRaw": 5206571,
+        "totalAcceptedRaw": 3154677,
+        "totalSubmissionRaw": 5227933,
         "acRate": "60.3%",
-        "acRateRaw": 60.252732487076045,
-        "likes": 21505,
+        "acRateRaw": 60.342753524083506,
+        "likes": 21528,
         "dislikes": 797
     },
     "similarQuestions": [
@@ -43,7 +43,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 23,
         "hasSolution": true,
         "hasVideoSolution": true
     },

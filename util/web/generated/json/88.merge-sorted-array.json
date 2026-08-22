@@ -1,19 +1,19 @@
 {
     "quesId": 88,
-    "quesIdLCBackend": 88,
     "title": "Merge Sorted Array",
     "titleSlug": "merge-sorted-array",
     "difficulty": "Easy",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
-        "totalAccepted": "6M",
-        "totalSubmission": "10.8M",
-        "totalAcceptedRaw": 6015686,
-        "totalSubmissionRaw": 10840560,
-        "acRate": "55.5%",
-        "acRateRaw": 55.49259180440544,
-        "likes": 19385,
-        "dislikes": 2675
+        "totalAccepted": "6.1M",
+        "totalSubmission": "10.9M",
+        "totalAcceptedRaw": 6056041,
+        "totalSubmissionRaw": 10898070,
+        "acRate": "55.6%",
+        "acRateRaw": 55.56985155467614,
+        "likes": 19435,
+        "dislikes": 2679
     },
     "similarQuestions": [
         "merge-two-sorted-lists",
@@ -36,7 +36,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 88,
         "hasSolution": true,
         "hasVideoSolution": true
     },

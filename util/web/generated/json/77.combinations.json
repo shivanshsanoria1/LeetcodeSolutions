@@ -1,18 +1,18 @@
 {
     "quesId": 77,
-    "quesIdLCBackend": 77,
     "title": "Combinations",
     "titleSlug": "combinations",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "1.4M",
         "totalSubmission": "1.9M",
-        "totalAcceptedRaw": 1399830,
-        "totalSubmissionRaw": 1866474,
-        "acRate": "75.0%",
-        "acRateRaw": 74.99863378755879,
-        "likes": 9006,
+        "totalAcceptedRaw": 1408500,
+        "totalSubmissionRaw": 1876527,
+        "acRate": "75.1%",
+        "acRateRaw": 75.05888534570228,
+        "likes": 9019,
         "dislikes": 256
     },
     "similarQuestions": [
@@ -26,7 +26,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 77,
         "hasSolution": true,
         "hasVideoSolution": false
     },

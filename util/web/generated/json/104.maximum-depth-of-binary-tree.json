@@ -1,18 +1,18 @@
 {
     "quesId": 104,
-    "quesIdLCBackend": 104,
     "title": "Maximum Depth of Binary Tree",
     "titleSlug": "maximum-depth-of-binary-tree",
     "difficulty": "Easy",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
-        "totalAccepted": "5M",
+        "totalAccepted": "5.1M",
         "totalSubmission": "6.4M",
-        "totalAcceptedRaw": 5034071,
-        "totalSubmissionRaw": 6411381,
+        "totalAcceptedRaw": 5053880,
+        "totalSubmissionRaw": 6434455,
         "acRate": "78.5%",
-        "acRateRaw": 78.51785904793752,
-        "likes": 14490,
+        "acRateRaw": 78.54408488248342,
+        "likes": 14505,
         "dislikes": 298
     },
     "similarQuestions": [
@@ -42,7 +42,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 104,
         "hasSolution": true,
         "hasVideoSolution": true
     },

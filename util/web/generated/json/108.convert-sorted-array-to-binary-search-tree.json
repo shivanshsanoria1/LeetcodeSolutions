@@ -1,18 +1,18 @@
 {
     "quesId": 108,
-    "quesIdLCBackend": 108,
     "title": "Convert Sorted Array to Binary Search Tree",
     "titleSlug": "convert-sorted-array-to-binary-search-tree",
     "difficulty": "Easy",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "1.8M",
         "totalSubmission": "2.4M",
-        "totalAcceptedRaw": 1812487,
-        "totalSubmissionRaw": 2385527,
+        "totalAcceptedRaw": 1818580,
+        "totalSubmissionRaw": 2392460,
         "acRate": "76.0%",
-        "acRateRaw": 75.97854400733756,
-        "likes": 12039,
+        "acRateRaw": 76.01298411969934,
+        "likes": 12045,
         "dislikes": 655
     },
     "similarQuestions": [
@@ -41,7 +41,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 108,
         "hasSolution": true,
         "hasVideoSolution": true
     },

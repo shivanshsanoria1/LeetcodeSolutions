@@ -1,18 +1,18 @@
 {
     "quesId": 94,
-    "quesIdLCBackend": 94,
     "title": "Binary Tree Inorder Traversal",
     "titleSlug": "binary-tree-inorder-traversal",
     "difficulty": "Easy",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "3.9M",
         "totalSubmission": "4.9M",
-        "totalAcceptedRaw": 3906316,
-        "totalSubmissionRaw": 4853242,
+        "totalAcceptedRaw": 3927336,
+        "totalSubmissionRaw": 4876591,
         "acRate": "80.5%",
-        "acRateRaw": 80.48882354941036,
-        "likes": 15068,
+        "acRateRaw": 80.53447128580495,
+        "likes": 15080,
         "dislikes": 907
     },
     "similarQuestions": [
@@ -45,7 +45,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 94,
         "hasSolution": true,
         "hasVideoSolution": false
     },

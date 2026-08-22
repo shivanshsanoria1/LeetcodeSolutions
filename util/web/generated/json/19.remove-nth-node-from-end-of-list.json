@@ -1,19 +1,19 @@
 {
     "quesId": 19,
-    "quesIdLCBackend": 19,
     "title": "Remove Nth Node From End of List",
     "titleSlug": "remove-nth-node-from-end-of-list",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
-        "totalAccepted": "4.4M",
+        "totalAccepted": "4.5M",
         "totalSubmission": "8.5M",
-        "totalAcceptedRaw": 4436529,
-        "totalSubmissionRaw": 8475415,
-        "acRate": "52.3%",
-        "acRateRaw": 52.34586659914591,
-        "likes": 21515,
-        "dislikes": 918
+        "totalAcceptedRaw": 4464787,
+        "totalSubmissionRaw": 8513652,
+        "acRate": "52.4%",
+        "acRateRaw": 52.4427614064617,
+        "likes": 21548,
+        "dislikes": 919
     },
     "similarQuestions": [
         "swapping-nodes-in-a-linked-list",
@@ -31,7 +31,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 19,
         "hasSolution": true,
         "hasVideoSolution": true
     },

@@ -1,18 +1,18 @@
 {
     "quesId": 12,
-    "quesIdLCBackend": 12,
     "title": "Integer to Roman",
     "titleSlug": "integer-to-roman",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "2.3M",
         "totalSubmission": "3.2M",
-        "totalAcceptedRaw": 2260178,
-        "totalSubmissionRaw": 3162332,
+        "totalAcceptedRaw": 2274868,
+        "totalSubmissionRaw": 3180993,
         "acRate": "71.5%",
-        "acRateRaw": 71.47194789186639,
-        "likes": 8678,
+        "acRateRaw": 71.51424061625768,
+        "likes": 8694,
         "dislikes": 5735
     },
     "similarQuestions": [
@@ -34,7 +34,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 12,
         "hasSolution": true,
         "hasVideoSolution": true
     },

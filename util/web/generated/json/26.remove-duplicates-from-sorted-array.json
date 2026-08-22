@@ -1,19 +1,19 @@
 {
     "quesId": 26,
-    "quesIdLCBackend": 26,
     "title": "Remove Duplicates from Sorted Array",
     "titleSlug": "remove-duplicates-from-sorted-array",
     "difficulty": "Easy",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "8.4M",
         "totalSubmission": "13.2M",
-        "totalAcceptedRaw": 8356417,
-        "totalSubmissionRaw": 13155042,
-        "acRate": "63.5%",
-        "acRateRaw": 63.52265225893178,
-        "likes": 19561,
-        "dislikes": 20593
+        "totalAcceptedRaw": 8419481,
+        "totalSubmissionRaw": 13235550,
+        "acRate": "63.6%",
+        "acRateRaw": 63.61262179413612,
+        "likes": 19620,
+        "dislikes": 20604
     },
     "similarQuestions": [
         "remove-element",
@@ -32,7 +32,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 26,
         "hasSolution": true,
         "hasVideoSolution": true
     },

@@ -1,19 +1,19 @@
 {
     "quesId": 92,
-    "quesIdLCBackend": 92,
     "title": "Reverse Linked List II",
     "titleSlug": "reverse-linked-list-ii",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "1.4M",
         "totalSubmission": "2.7M",
-        "totalAcceptedRaw": 1390044,
-        "totalSubmissionRaw": 2666065,
-        "acRate": "52.1%",
-        "acRateRaw": 52.13850349015592,
-        "likes": 13113,
-        "dislikes": 796
+        "totalAcceptedRaw": 1399212,
+        "totalSubmissionRaw": 2679423,
+        "acRate": "52.2%",
+        "acRateRaw": 52.220660529038284,
+        "likes": 13134,
+        "dislikes": 797
     },
     "similarQuestions": [
         "reverse-linked-list"
@@ -25,7 +25,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 92,
         "hasSolution": true,
         "hasVideoSolution": true
     },

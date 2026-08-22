@@ -1,19 +1,19 @@
 {
     "quesId": 74,
-    "quesIdLCBackend": 74,
     "title": "Search a 2D Matrix",
     "titleSlug": "search-a-2d-matrix",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "3.1M",
-        "totalSubmission": "5.6M",
-        "totalAcceptedRaw": 3060004,
-        "totalSubmissionRaw": 5626082,
+        "totalSubmission": "5.7M",
+        "totalAcceptedRaw": 3078942,
+        "totalSubmissionRaw": 5662927,
         "acRate": "54.4%",
-        "acRateRaw": 54.38963854196771,
-        "likes": 18177,
-        "dislikes": 490
+        "acRateRaw": 54.37016385609144,
+        "likes": 18194,
+        "dislikes": 494
     },
     "similarQuestions": [
         "search-a-2d-matrix-ii",
@@ -34,7 +34,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 74,
         "hasSolution": true,
         "hasVideoSolution": false
     },

@@ -1,18 +1,18 @@
 {
     "quesId": 58,
-    "quesIdLCBackend": 58,
     "title": "Length of Last Word",
     "titleSlug": "length-of-last-word",
     "difficulty": "Easy",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "3.6M",
         "totalSubmission": "6.1M",
-        "totalAcceptedRaw": 3615541,
-        "totalSubmissionRaw": 6078995,
-        "acRate": "59.5%",
-        "acRateRaw": 59.47615170133491,
-        "likes": 6552,
+        "totalAcceptedRaw": 3639784,
+        "totalSubmissionRaw": 6111505,
+        "acRate": "59.6%",
+        "acRateRaw": 59.55628023493357,
+        "likes": 6568,
         "dislikes": 365
     },
     "similarQuestions": [],
@@ -23,7 +23,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 58,
         "hasSolution": true,
         "hasVideoSolution": false
     },

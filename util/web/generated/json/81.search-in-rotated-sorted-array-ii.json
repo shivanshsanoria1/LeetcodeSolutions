@@ -1,18 +1,18 @@
 {
     "quesId": 81,
-    "quesIdLCBackend": 81,
     "title": "Search in Rotated Sorted Array II",
     "titleSlug": "search-in-rotated-sorted-array-ii",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "1.3M",
         "totalSubmission": "3.3M",
-        "totalAcceptedRaw": 1336535,
-        "totalSubmissionRaw": 3306390,
-        "acRate": "40.4%",
-        "acRateRaw": 40.4228054092816,
-        "likes": 9817,
+        "totalAcceptedRaw": 1348934,
+        "totalSubmissionRaw": 3332880,
+        "acRate": "40.5%",
+        "acRateRaw": 40.473555147037864,
+        "likes": 9834,
         "dislikes": 1132
     },
     "similarQuestions": [
@@ -29,7 +29,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 81,
         "hasSolution": true,
         "hasVideoSolution": false
     },

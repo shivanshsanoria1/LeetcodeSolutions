@@ -1,18 +1,18 @@
 {
     "quesId": 85,
-    "quesIdLCBackend": 85,
     "title": "Maximal Rectangle",
     "titleSlug": "maximal-rectangle",
     "difficulty": "Hard",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
-        "totalAccepted": "853K",
+        "totalAccepted": "858.6K",
         "totalSubmission": "1.4M",
-        "totalAcceptedRaw": 852959,
-        "totalSubmissionRaw": 1432458,
-        "acRate": "59.5%",
-        "acRateRaw": 59.54524448117996,
-        "likes": 12234,
+        "totalAcceptedRaw": 858600,
+        "totalSubmissionRaw": 1439442,
+        "acRate": "59.6%",
+        "acRateRaw": 59.64819774288007,
+        "likes": 12251,
         "dislikes": 228
     },
     "similarQuestions": [
@@ -43,7 +43,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 85,
         "hasSolution": true,
         "hasVideoSolution": false
     },

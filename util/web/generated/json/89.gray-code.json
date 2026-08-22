@@ -1,19 +1,19 @@
 {
     "quesId": 89,
-    "quesIdLCBackend": 89,
     "title": "Gray Code",
     "titleSlug": "gray-code",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
-        "totalAccepted": "450.2K",
-        "totalSubmission": "684.9K",
-        "totalAcceptedRaw": 450243,
-        "totalSubmissionRaw": 684870,
-        "acRate": "65.7%",
-        "acRateRaw": 65.7412855851686,
-        "likes": 2575,
-        "dislikes": 2846
+        "totalAccepted": "453.3K",
+        "totalSubmission": "688.4K",
+        "totalAcceptedRaw": 453308,
+        "totalSubmissionRaw": 688390,
+        "acRate": "65.9%",
+        "acRateRaw": 65.85051228153768,
+        "likes": 2577,
+        "dislikes": 2847
     },
     "similarQuestions": [
         "1-bit-and-2-bit-characters"
@@ -33,7 +33,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 89,
         "hasSolution": true,
         "hasVideoSolution": false
     },

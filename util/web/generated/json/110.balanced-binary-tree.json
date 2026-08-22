@@ -1,19 +1,19 @@
 {
     "quesId": 110,
-    "quesIdLCBackend": 110,
     "title": "Balanced Binary Tree",
     "titleSlug": "balanced-binary-tree",
     "difficulty": "Easy",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "2.6M",
-        "totalSubmission": "4.4M",
-        "totalAcceptedRaw": 2624459,
-        "totalSubmissionRaw": 4448431,
+        "totalSubmission": "4.5M",
+        "totalAcceptedRaw": 2635848,
+        "totalSubmissionRaw": 4463757,
         "acRate": "59.0%",
-        "acRateRaw": 58.997460482595976,
-        "likes": 12364,
-        "dislikes": 848
+        "acRateRaw": 59.05008652989901,
+        "likes": 12374,
+        "dislikes": 850
     },
     "similarQuestions": [
         "maximum-depth-of-binary-tree",
@@ -35,7 +35,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 110,
         "hasSolution": true,
         "hasVideoSolution": false
     },

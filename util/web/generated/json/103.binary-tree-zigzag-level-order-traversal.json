@@ -1,18 +1,18 @@
 {
     "quesId": 103,
-    "quesIdLCBackend": 103,
     "title": "Binary Tree Zigzag Level Order Traversal",
     "titleSlug": "binary-tree-zigzag-level-order-traversal",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "1.9M",
         "totalSubmission": "2.9M",
-        "totalAcceptedRaw": 1883743,
-        "totalSubmissionRaw": 2928764,
-        "acRate": "64.3%",
-        "acRateRaw": 64.3187998246364,
-        "likes": 12242,
+        "totalAcceptedRaw": 1891430,
+        "totalSubmissionRaw": 2938469,
+        "acRate": "64.4%",
+        "acRateRaw": 64.3678853280789,
+        "likes": 12249,
         "dislikes": 363
     },
     "similarQuestions": [
@@ -34,7 +34,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 103,
         "hasSolution": true,
         "hasVideoSolution": false
     },

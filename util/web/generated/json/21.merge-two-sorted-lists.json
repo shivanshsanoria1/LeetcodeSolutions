@@ -1,19 +1,19 @@
 {
     "quesId": 21,
-    "quesIdLCBackend": 21,
     "title": "Merge Two Sorted Lists",
     "titleSlug": "merge-two-sorted-lists",
     "difficulty": "Easy",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "6.6M",
-        "totalSubmission": "9.5M",
-        "totalAcceptedRaw": 6554868,
-        "totalSubmissionRaw": 9538245,
-        "acRate": "68.7%",
-        "acRateRaw": 68.72204690563308,
-        "likes": 25260,
-        "dislikes": 2457
+        "totalSubmission": "9.6M",
+        "totalAcceptedRaw": 6591308,
+        "totalSubmissionRaw": 9583459,
+        "acRate": "68.8%",
+        "acRateRaw": 68.7779489974882,
+        "likes": 25305,
+        "dislikes": 2458
     },
     "similarQuestions": [
         "merge-k-sorted-lists",
@@ -35,7 +35,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 21,
         "hasSolution": true,
         "hasVideoSolution": true
     },

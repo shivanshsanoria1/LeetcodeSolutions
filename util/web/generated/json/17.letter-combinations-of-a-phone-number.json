@@ -1,19 +1,19 @@
 {
     "quesId": 17,
-    "quesIdLCBackend": 17,
     "title": "Letter Combinations of a Phone Number",
     "titleSlug": "letter-combinations-of-a-phone-number",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "3.2M",
-        "totalSubmission": "4.7M",
-        "totalAcceptedRaw": 3162875,
-        "totalSubmissionRaw": 4746364,
-        "acRate": "66.6%",
-        "acRateRaw": 66.6380625677618,
-        "likes": 21243,
-        "dislikes": 1141
+        "totalSubmission": "4.8M",
+        "totalAcceptedRaw": 3179695,
+        "totalSubmissionRaw": 4767401,
+        "acRate": "66.7%",
+        "acRateRaw": 66.69670391537214,
+        "likes": 21279,
+        "dislikes": 1142
     },
     "similarQuestions": [
         "generate-parentheses",
@@ -38,7 +38,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 17,
         "hasSolution": true,
         "hasVideoSolution": false
     },

@@ -1,19 +1,19 @@
 {
     "quesId": 20,
-    "quesIdLCBackend": 20,
     "title": "Valid Parentheses",
     "titleSlug": "valid-parentheses",
     "difficulty": "Easy",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "8M",
-        "totalSubmission": "17.9M",
-        "totalAcceptedRaw": 7981519,
-        "totalSubmissionRaw": 17856814,
-        "acRate": "44.7%",
-        "acRateRaw": 44.697441927132,
-        "likes": 28300,
-        "dislikes": 2023
+        "totalSubmission": "18M",
+        "totalAcceptedRaw": 8035421,
+        "totalSubmissionRaw": 17950383,
+        "acRate": "44.8%",
+        "acRateRaw": 44.764623206772846,
+        "likes": 28347,
+        "dislikes": 2025
     },
     "similarQuestions": [
         "generate-parentheses",
@@ -38,7 +38,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 20,
         "hasSolution": true,
         "hasVideoSolution": true
     },

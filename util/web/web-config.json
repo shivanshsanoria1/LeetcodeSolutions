@@ -4,8 +4,8 @@
     "REFERER": "https://leetcode.com/problems/",
     "API_DELAY_MS": 200,
     "FORCE_REFRESH_BASE_PROBLEM_LIST": false,
-    "FORCE_REFRESH_PROBLEM_LIST": true,
-    "FETCH_NEXT_COUNT": 5,
-    "BATCH_SIZE": 8,
-    "LAST_UPDATED_ISO": "2026-08-11T17:43:08.595Z"
+    "FORCE_REFRESH_PROBLEM_LIST": false,
+    "FETCH_NEXT_COUNT": 100,
+    "BATCH_SIZE": 5,
+    "LAST_UPDATED_ISO": "2026-08-22T14:01:09.914Z"
 }

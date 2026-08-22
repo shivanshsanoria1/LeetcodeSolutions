@@ -1,19 +1,19 @@
 {
     "quesId": 50,
-    "quesIdLCBackend": 50,
     "title": "Pow(x, n)",
     "titleSlug": "powx-n",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "2.9M",
-        "totalSubmission": "7.3M",
-        "totalAcceptedRaw": 2866793,
-        "totalSubmissionRaw": 7324069,
-        "acRate": "39.1%",
-        "acRateRaw": 39.142354851376574,
-        "likes": 11883,
-        "dislikes": 10608
+        "totalSubmission": "7.4M",
+        "totalAcceptedRaw": 2885265,
+        "totalSubmissionRaw": 7359471,
+        "acRate": "39.2%",
+        "acRateRaw": 39.204763478368626,
+        "likes": 11913,
+        "dislikes": 10615
     },
     "similarQuestions": [
         "sqrtx",
@@ -31,7 +31,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 50,
         "hasSolution": true,
         "hasVideoSolution": false
     },

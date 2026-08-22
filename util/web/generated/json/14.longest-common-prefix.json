@@ -1,19 +1,19 @@
 {
     "quesId": 14,
-    "quesIdLCBackend": 14,
     "title": "Longest Common Prefix",
     "titleSlug": "longest-common-prefix",
     "difficulty": "Easy",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
-        "totalAccepted": "6.1M",
-        "totalSubmission": "12.7M",
-        "totalAcceptedRaw": 6115812,
-        "totalSubmissionRaw": 12700196,
+        "totalAccepted": "6.2M",
+        "totalSubmission": "12.8M",
+        "totalAcceptedRaw": 6158134,
+        "totalSubmissionRaw": 12769070,
         "acRate": "48.2%",
-        "acRateRaw": 48.155365262063434,
-        "likes": 21698,
-        "dislikes": 4954
+        "acRateRaw": 48.22693752454146,
+        "likes": 21746,
+        "dislikes": 4957
     },
     "similarQuestions": [
         "smallest-missing-integer-greater-than-sequential-prefix-sum",
@@ -36,7 +36,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 14,
         "hasSolution": true,
         "hasVideoSolution": true
     },

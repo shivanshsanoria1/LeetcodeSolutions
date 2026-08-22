@@ -1,19 +1,19 @@
 {
     "quesId": 22,
-    "quesIdLCBackend": 22,
     "title": "Generate Parentheses",
     "titleSlug": "generate-parentheses",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
-        "totalAccepted": "3M",
+        "totalAccepted": "3.1M",
         "totalSubmission": "3.9M",
-        "totalAcceptedRaw": 3045014,
-        "totalSubmissionRaw": 3852228,
-        "acRate": "79.0%",
-        "acRateRaw": 79.04569291656219,
-        "likes": 23492,
-        "dislikes": 1093
+        "totalAcceptedRaw": 3063486,
+        "totalSubmissionRaw": 3873382,
+        "acRate": "79.1%",
+        "acRateRaw": 79.0907663924713,
+        "likes": 23532,
+        "dislikes": 1094
     },
     "similarQuestions": [
         "letter-combinations-of-a-phone-number",
@@ -39,7 +39,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 22,
         "hasSolution": true,
         "hasVideoSolution": true
     },

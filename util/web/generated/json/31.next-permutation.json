@@ -1,19 +1,19 @@
 {
     "quesId": 31,
-    "quesIdLCBackend": 31,
     "title": "Next Permutation",
     "titleSlug": "next-permutation",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "2.4M",
         "totalSubmission": "5.3M",
-        "totalAcceptedRaw": 2412709,
-        "totalSubmissionRaw": 5254223,
-        "acRate": "45.9%",
-        "acRateRaw": 45.91971104792896,
-        "likes": 21708,
-        "dislikes": 5139
+        "totalAcceptedRaw": 2430482,
+        "totalSubmissionRaw": 5283028,
+        "acRate": "46.0%",
+        "acRateRaw": 46.00559109165601,
+        "likes": 21739,
+        "dislikes": 5144
     },
     "similarQuestions": [
         "permutations",
@@ -33,7 +33,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 31,
         "hasSolution": true,
         "hasVideoSolution": true
     },

@@ -1,19 +1,19 @@
 {
     "quesId": 70,
-    "quesIdLCBackend": 70,
     "title": "Climbing Stairs",
     "titleSlug": "climbing-stairs",
     "difficulty": "Easy",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "5.4M",
         "totalSubmission": "10M",
-        "totalAcceptedRaw": 5406320,
-        "totalSubmissionRaw": 9961502,
+        "totalAcceptedRaw": 5441327,
+        "totalSubmissionRaw": 10022672,
         "acRate": "54.3%",
-        "acRateRaw": 54.2721518510826,
-        "likes": 24777,
-        "dislikes": 1053
+        "acRateRaw": 54.290138795365465,
+        "likes": 24810,
+        "dislikes": 1055
     },
     "similarQuestions": [
         "min-cost-climbing-stairs",
@@ -42,7 +42,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 70,
         "hasSolution": true,
         "hasVideoSolution": false
     },

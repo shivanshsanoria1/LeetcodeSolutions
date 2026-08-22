@@ -1,19 +1,19 @@
 {
     "quesId": 38,
-    "quesIdLCBackend": 38,
     "title": "Count and Say",
     "titleSlug": "count-and-say",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "1.5M",
         "totalSubmission": "2.3M",
-        "totalAcceptedRaw": 1480564,
-        "totalSubmissionRaw": 2328638,
-        "acRate": "63.6%",
-        "acRateRaw": 63.5807675361562,
-        "likes": 5203,
-        "dislikes": 9138
+        "totalAcceptedRaw": 1488049,
+        "totalSubmissionRaw": 2337224,
+        "acRate": "63.7%",
+        "acRateRaw": 63.66738717831551,
+        "likes": 5205,
+        "dislikes": 9147
     },
     "similarQuestions": [
         "encode-and-decode-strings",
@@ -26,7 +26,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 38,
         "hasSolution": true,
         "hasVideoSolution": false
     },

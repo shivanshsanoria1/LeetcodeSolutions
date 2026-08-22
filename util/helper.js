@@ -23,7 +23,7 @@ function getRootRelativePath(filePath) {
 	try {
 		return path.relative(ROOT, filePath);
 	} catch (err) {
-		throw err;
+		throw err
 	}
 }
 

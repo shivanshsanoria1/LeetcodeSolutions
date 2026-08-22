@@ -1,19 +1,19 @@
 {
     "quesId": 98,
-    "quesIdLCBackend": 98,
     "title": "Validate Binary Search Tree",
     "titleSlug": "validate-binary-search-tree",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "3.5M",
         "totalSubmission": "9.7M",
-        "totalAcceptedRaw": 3498438,
-        "totalSubmissionRaw": 9668560,
+        "totalAcceptedRaw": 3516720,
+        "totalSubmissionRaw": 9704691,
         "acRate": "36.2%",
-        "acRateRaw": 36.18383369722494,
-        "likes": 18584,
-        "dislikes": 1466
+        "acRateRaw": 36.23735874937763,
+        "likes": 18603,
+        "dislikes": 1467
     },
     "similarQuestions": [
         "binary-tree-inorder-traversal",
@@ -38,7 +38,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 98,
         "hasSolution": true,
         "hasVideoSolution": true
     },

@@ -1,19 +1,19 @@
 {
     "quesId": 11,
-    "quesIdLCBackend": 11,
     "title": "Container With Most Water",
     "titleSlug": "container-with-most-water",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
-        "totalAccepted": "5.7M",
+        "totalAccepted": "5.8M",
         "totalSubmission": "9.5M",
-        "totalAcceptedRaw": 5741579,
-        "totalSubmissionRaw": 9472481,
-        "acRate": "60.6%",
-        "acRateRaw": 60.61338255623747,
-        "likes": 34761,
-        "dislikes": 2237
+        "totalAcceptedRaw": 5791356,
+        "totalSubmissionRaw": 9542762,
+        "acRate": "60.7%",
+        "acRateRaw": 60.688577277369006,
+        "likes": 34818,
+        "dislikes": 2241
     },
     "similarQuestions": [
         "trapping-rain-water",
@@ -35,7 +35,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 11,
         "hasSolution": true,
         "hasVideoSolution": true
     },

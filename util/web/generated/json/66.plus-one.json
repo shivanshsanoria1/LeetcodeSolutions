@@ -1,18 +1,18 @@
 {
     "quesId": 66,
-    "quesIdLCBackend": 66,
     "title": "Plus One",
     "titleSlug": "plus-one",
     "difficulty": "Easy",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "3.9M",
         "totalSubmission": "7.8M",
-        "totalAcceptedRaw": 3926361,
-        "totalSubmissionRaw": 7786559,
-        "acRate": "50.4%",
-        "acRateRaw": 50.42504701625907,
-        "likes": 12015,
+        "totalAcceptedRaw": 3949207,
+        "totalSubmissionRaw": 7823404,
+        "acRate": "50.5%",
+        "acRateRaw": 50.479405969145,
+        "likes": 12030,
         "dislikes": 5619
     },
     "similarQuestions": [
@@ -33,7 +33,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 66,
         "hasSolution": true,
         "hasVideoSolution": false
     },

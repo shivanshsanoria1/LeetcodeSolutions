@@ -1,19 +1,19 @@
 {
     "quesId": 84,
-    "quesIdLCBackend": 84,
     "title": "Largest Rectangle in Histogram",
     "titleSlug": "largest-rectangle-in-histogram",
     "difficulty": "Hard",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "1.7M",
-        "totalSubmission": "3.3M",
-        "totalAcceptedRaw": 1686577,
-        "totalSubmissionRaw": 3331514,
-        "acRate": "50.6%",
-        "acRateRaw": 50.62536300289502,
-        "likes": 19960,
-        "dislikes": 396
+        "totalSubmission": "3.4M",
+        "totalAcceptedRaw": 1701478,
+        "totalSubmissionRaw": 3355392,
+        "acRate": "50.7%",
+        "acRateRaw": 50.708792689090856,
+        "likes": 20002,
+        "dislikes": 397
     },
     "similarQuestions": [
         "maximal-rectangle",
@@ -38,7 +38,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 84,
         "hasSolution": true,
         "hasVideoSolution": true
     },

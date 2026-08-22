@@ -1,19 +1,19 @@
 {
     "quesId": 8,
-    "quesIdLCBackend": 8,
     "title": "String to Integer (atoi)",
     "titleSlug": "string-to-integer-atoi",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "2.6M",
         "totalSubmission": "12M",
-        "totalAcceptedRaw": 2583170,
-        "totalSubmissionRaw": 11993478,
-        "acRate": "21.5%",
-        "acRateRaw": 21.53835135094798,
-        "likes": 6392,
-        "dislikes": 15783
+        "totalAcceptedRaw": 2599967,
+        "totalSubmissionRaw": 12034425,
+        "acRate": "21.6%",
+        "acRateRaw": 21.60446278511255,
+        "likes": 6408,
+        "dislikes": 15802
     },
     "similarQuestions": [
         "reverse-integer",
@@ -27,7 +27,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 8,
         "hasSolution": true,
         "hasVideoSolution": false
     },

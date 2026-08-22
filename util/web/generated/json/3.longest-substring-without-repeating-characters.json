@@ -1,19 +1,19 @@
 {
     "quesId": 3,
-    "quesIdLCBackend": 3,
     "title": "Longest Substring Without Repeating Characters",
     "titleSlug": "longest-substring-without-repeating-characters",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
-        "totalAccepted": "10.1M",
-        "totalSubmission": "25.3M",
-        "totalAcceptedRaw": 10066656,
-        "totalSubmissionRaw": 25336877,
-        "acRate": "39.7%",
-        "acRateRaw": 39.731459555359514,
-        "likes": 45489,
-        "dislikes": 2231
+        "totalAccepted": "10.2M",
+        "totalSubmission": "25.5M",
+        "totalAcceptedRaw": 10151318,
+        "totalSubmissionRaw": 25486071,
+        "acRate": "39.8%",
+        "acRateRaw": 39.83084731017544,
+        "likes": 45570,
+        "dislikes": 2234
     },
     "similarQuestions": [
         "longest-substring-with-at-most-two-distinct-characters",
@@ -43,7 +43,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 3,
         "hasSolution": true,
         "hasVideoSolution": true
     },

@@ -1,19 +1,19 @@
 {
     "quesId": 79,
-    "quesIdLCBackend": 79,
     "title": "Word Search",
     "titleSlug": "word-search",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "2.6M",
         "totalSubmission": "5.5M",
-        "totalAcceptedRaw": 2617704,
-        "totalSubmissionRaw": 5463193,
-        "acRate": "47.9%",
-        "acRateRaw": 47.915222546307184,
-        "likes": 17911,
-        "dislikes": 759
+        "totalAcceptedRaw": 2631522,
+        "totalSubmissionRaw": 5483792,
+        "acRate": "48.0%",
+        "acRateRaw": 47.987311007241686,
+        "likes": 17931,
+        "dislikes": 760
     },
     "similarQuestions": [
         "word-search-ii"
@@ -41,7 +41,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 79,
         "hasSolution": true,
         "hasVideoSolution": false
     },

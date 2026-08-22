@@ -1,19 +1,19 @@
 {
     "quesId": 28,
-    "quesIdLCBackend": 28,
     "title": "Find the Index of the First Occurrence in a String",
     "titleSlug": "find-the-index-of-the-first-occurrence-in-a-string",
     "difficulty": "Easy",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "4.3M",
         "totalSubmission": "9.1M",
-        "totalAcceptedRaw": 4281519,
-        "totalSubmissionRaw": 9082517,
-        "acRate": "47.1%",
-        "acRateRaw": 47.14043194397912,
-        "likes": 7787,
-        "dislikes": 592
+        "totalAcceptedRaw": 4307630,
+        "totalSubmissionRaw": 9125928,
+        "acRate": "47.2%",
+        "acRateRaw": 47.20218540912866,
+        "likes": 7807,
+        "dislikes": 594
     },
     "similarQuestions": [
         "shortest-palindrome",
@@ -46,7 +46,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 28,
         "hasSolution": true,
         "hasVideoSolution": true
     },

@@ -1,18 +1,18 @@
 {
     "quesId": 60,
-    "quesIdLCBackend": 60,
     "title": "Permutation Sequence",
     "titleSlug": "permutation-sequence",
     "difficulty": "Hard",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
-        "totalAccepted": "613.2K",
+        "totalAccepted": "617.1K",
         "totalSubmission": "1.1M",
-        "totalAcceptedRaw": 613247,
-        "totalSubmissionRaw": 1136638,
-        "acRate": "54.0%",
-        "acRateRaw": 53.952790681306304,
-        "likes": 7347,
+        "totalAcceptedRaw": 617147,
+        "totalSubmissionRaw": 1141494,
+        "acRate": "54.1%",
+        "acRateRaw": 54.064888589087126,
+        "likes": 7352,
         "dislikes": 512
     },
     "similarQuestions": [
@@ -30,7 +30,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 60,
         "hasSolution": true,
         "hasVideoSolution": false
     },

@@ -1,19 +1,19 @@
 {
     "quesId": 54,
-    "quesIdLCBackend": 54,
     "title": "Spiral Matrix",
     "titleSlug": "spiral-matrix",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
-        "totalAccepted": "2.5M",
+        "totalAccepted": "2.6M",
         "totalSubmission": "4.4M",
-        "totalAcceptedRaw": 2540767,
-        "totalSubmissionRaw": 4412669,
-        "acRate": "57.6%",
-        "acRateRaw": 57.57890965408041,
-        "likes": 17736,
-        "dislikes": 1592
+        "totalAcceptedRaw": 2559856,
+        "totalSubmissionRaw": 4437824,
+        "acRate": "57.7%",
+        "acRateRaw": 57.68275263455692,
+        "likes": 17773,
+        "dislikes": 1595
     },
     "similarQuestions": [
         "spiral-matrix-ii",
@@ -35,7 +35,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 54,
         "hasSolution": true,
         "hasVideoSolution": false
     },

@@ -1,19 +1,19 @@
 {
     "quesId": 57,
-    "quesIdLCBackend": 57,
     "title": "Insert Interval",
     "titleSlug": "insert-interval",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "1.9M",
         "totalSubmission": "4.1M",
-        "totalAcceptedRaw": 1884212,
-        "totalSubmissionRaw": 4115863,
-        "acRate": "45.8%",
-        "acRateRaw": 45.77935874582078,
-        "likes": 12029,
-        "dislikes": 926
+        "totalAcceptedRaw": 1897375,
+        "totalSubmissionRaw": 4137977,
+        "acRate": "45.9%",
+        "acRateRaw": 45.85276002158534,
+        "likes": 12064,
+        "dislikes": 927
     },
     "similarQuestions": [
         "merge-intervals",
@@ -27,7 +27,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 57,
         "hasSolution": true,
         "hasVideoSolution": false
     },

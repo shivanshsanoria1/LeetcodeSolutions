@@ -1,19 +1,19 @@
 {
     "quesId": 7,
-    "quesIdLCBackend": 7,
     "title": "Reverse Integer",
     "titleSlug": "reverse-integer",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "5.3M",
         "totalSubmission": "16.3M",
-        "totalAcceptedRaw": 5260214,
-        "totalSubmissionRaw": 16264698,
-        "acRate": "32.3%",
-        "acRateRaw": 32.34134083914037,
-        "likes": 15748,
-        "dislikes": 14026
+        "totalAcceptedRaw": 5295303,
+        "totalSubmissionRaw": 16345319,
+        "acRate": "32.4%",
+        "acRateRaw": 32.39648437535847,
+        "likes": 15771,
+        "dislikes": 14029
     },
     "similarQuestions": [
         "string-to-integer-atoi",
@@ -28,7 +28,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 7,
         "hasSolution": true,
         "hasVideoSolution": true
     },

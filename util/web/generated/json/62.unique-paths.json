@@ -1,19 +1,19 @@
 {
     "quesId": 62,
-    "quesIdLCBackend": 62,
     "title": "Unique Paths",
     "titleSlug": "unique-paths",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "3M",
         "totalSubmission": "4.5M",
-        "totalAcceptedRaw": 2993790,
-        "totalSubmissionRaw": 4457866,
+        "totalAcceptedRaw": 3013105,
+        "totalSubmissionRaw": 4484125,
         "acRate": "67.2%",
-        "acRateRaw": 67.15756770246247,
-        "likes": 18577,
-        "dislikes": 499
+        "acRateRaw": 67.19497911756783,
+        "likes": 18597,
+        "dislikes": 500
     },
     "similarQuestions": [
         "unique-paths-ii",
@@ -39,7 +39,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 62,
         "hasSolution": true,
         "hasVideoSolution": false
     },

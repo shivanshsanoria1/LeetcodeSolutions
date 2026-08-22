@@ -1,18 +1,18 @@
 {
     "quesId": 49,
-    "quesIdLCBackend": 49,
     "title": "Group Anagrams",
     "titleSlug": "group-anagrams",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
-        "totalAccepted": "5M",
-        "totalSubmission": "6.9M",
-        "totalAcceptedRaw": 5048600,
-        "totalSubmissionRaw": 6906493,
-        "acRate": "73.1%",
-        "acRateRaw": 73.09934052333318,
-        "likes": 22392,
+        "totalAccepted": "5.1M",
+        "totalSubmission": "7M",
+        "totalAcceptedRaw": 5088841,
+        "totalSubmissionRaw": 6955504,
+        "acRate": "73.2%",
+        "acRateRaw": 73.16285698553202,
+        "likes": 22437,
         "dislikes": 770
     },
     "similarQuestions": [
@@ -40,7 +40,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 49,
         "hasSolution": true,
         "hasVideoSolution": true
     },

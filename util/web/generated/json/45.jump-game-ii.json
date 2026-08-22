@@ -1,19 +1,19 @@
 {
     "quesId": 45,
-    "quesIdLCBackend": 45,
     "title": "Jump Game II",
     "titleSlug": "jump-game-ii",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "2.3M",
-        "totalSubmission": "5.2M",
-        "totalAcceptedRaw": 2274230,
-        "totalSubmissionRaw": 5248509,
-        "acRate": "43.3%",
-        "acRateRaw": 43.33114225616169,
-        "likes": 16726,
-        "dislikes": 710
+        "totalSubmission": "5.3M",
+        "totalAcceptedRaw": 2290387,
+        "totalSubmissionRaw": 5278714,
+        "acRate": "43.4%",
+        "acRateRaw": 43.38919823208045,
+        "likes": 16756,
+        "dislikes": 711
     },
     "similarQuestions": [
         "jump-game",
@@ -39,7 +39,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 45,
         "hasSolution": true,
         "hasVideoSolution": false
     },

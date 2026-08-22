@@ -1,19 +1,19 @@
 {
     "quesId": 51,
-    "quesIdLCBackend": 51,
     "title": "N-Queens",
     "titleSlug": "n-queens",
     "difficulty": "Hard",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "1.4M",
         "totalSubmission": "1.8M",
-        "totalAcceptedRaw": 1375554,
-        "totalSubmissionRaw": 1804500,
-        "acRate": "76.2%",
-        "acRateRaw": 76.22927017953745,
-        "likes": 14629,
-        "dislikes": 356
+        "totalAcceptedRaw": 1386990,
+        "totalSubmissionRaw": 1817487,
+        "acRate": "76.3%",
+        "acRateRaw": 76.3136784095886,
+        "likes": 14654,
+        "dislikes": 358
     },
     "similarQuestions": [
         "n-queens-ii",
@@ -34,7 +34,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 51,
         "hasSolution": true,
         "hasVideoSolution": false
     },

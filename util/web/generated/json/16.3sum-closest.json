@@ -1,19 +1,19 @@
 {
     "quesId": 16,
-    "quesIdLCBackend": 16,
     "title": "3Sum Closest",
     "titleSlug": "3sum-closest",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "2M",
         "totalSubmission": "4M",
-        "totalAcceptedRaw": 1961631,
-        "totalSubmissionRaw": 3989161,
+        "totalAcceptedRaw": 1977251,
+        "totalSubmissionRaw": 4015016,
         "acRate": "49.2%",
-        "acRateRaw": 49.17402565107835,
-        "likes": 11810,
-        "dislikes": 627
+        "acRateRaw": 49.246430407389845,
+        "likes": 11828,
+        "dislikes": 631
     },
     "similarQuestions": [
         "3sum",
@@ -34,7 +34,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 16,
         "hasSolution": true,
         "hasVideoSolution": true
     },

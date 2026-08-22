@@ -1,18 +1,18 @@
 {
     "quesId": 99,
-    "quesIdLCBackend": 99,
     "title": "Recover Binary Search Tree",
     "titleSlug": "recover-binary-search-tree",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
-        "totalAccepted": "711.6K",
+        "totalAccepted": "716.8K",
         "totalSubmission": "1.2M",
-        "totalAcceptedRaw": 711562,
-        "totalSubmissionRaw": 1173922,
-        "acRate": "60.6%",
-        "acRateRaw": 60.61464863165803,
-        "likes": 8725,
+        "totalAcceptedRaw": 716843,
+        "totalSubmissionRaw": 1180119,
+        "acRate": "60.7%",
+        "acRateRaw": 60.74341403396086,
+        "likes": 8736,
         "dislikes": 293
     },
     "similarQuestions": [],
@@ -35,7 +35,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 99,
         "hasSolution": true,
         "hasVideoSolution": false
     },

@@ -1,19 +1,19 @@
 {
     "quesId": 6,
-    "quesIdLCBackend": 6,
     "title": "Zigzag Conversion",
     "titleSlug": "zigzag-conversion",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
-        "totalAccepted": "2.3M",
+        "totalAccepted": "2.4M",
         "totalSubmission": "4.3M",
-        "totalAcceptedRaw": 2337705,
-        "totalSubmissionRaw": 4261389,
+        "totalAcceptedRaw": 2353433,
+        "totalSubmissionRaw": 4283568,
         "acRate": "54.9%",
-        "acRateRaw": 54.85781748627032,
-        "likes": 9494,
-        "dislikes": 16001
+        "acRateRaw": 54.940873123797004,
+        "likes": 9510,
+        "dislikes": 16009
     },
     "similarQuestions": [],
     "topicTags": [
@@ -23,7 +23,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 6,
         "hasSolution": true,
         "hasVideoSolution": true
     },

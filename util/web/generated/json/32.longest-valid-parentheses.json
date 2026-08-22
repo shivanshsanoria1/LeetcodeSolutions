@@ -1,19 +1,19 @@
 {
     "quesId": 32,
-    "quesIdLCBackend": 32,
     "title": "Longest Valid Parentheses",
     "titleSlug": "longest-valid-parentheses",
     "difficulty": "Hard",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "1.2M",
         "totalSubmission": "3M",
-        "totalAcceptedRaw": 1166319,
-        "totalSubmissionRaw": 2955165,
-        "acRate": "39.5%",
-        "acRateRaw": 39.467154215855565,
-        "likes": 13427,
-        "dislikes": 469
+        "totalAcceptedRaw": 1173330,
+        "totalSubmissionRaw": 2966673,
+        "acRate": "39.6%",
+        "acRateRaw": 39.55036500483875,
+        "likes": 13443,
+        "dislikes": 470
     },
     "similarQuestions": [
         "valid-parentheses"
@@ -37,7 +37,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 32,
         "hasSolution": true,
         "hasVideoSolution": false
     },

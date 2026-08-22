@@ -1,19 +1,19 @@
 {
     "quesId": 44,
-    "quesIdLCBackend": 44,
     "title": "Wildcard Matching",
     "titleSlug": "wildcard-matching",
     "difficulty": "Hard",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
-        "totalAccepted": "928.9K",
+        "totalAccepted": "935.7K",
         "totalSubmission": "2.9M",
-        "totalAcceptedRaw": 928927,
-        "totalSubmissionRaw": 2850784,
-        "acRate": "32.6%",
-        "acRateRaw": 32.58494324021515,
-        "likes": 9228,
-        "dislikes": 424
+        "totalAcceptedRaw": 935739,
+        "totalSubmissionRaw": 2864174,
+        "acRate": "32.7%",
+        "acRateRaw": 32.670607988386216,
+        "likes": 9239,
+        "dislikes": 425
     },
     "similarQuestions": [
         "regular-expression-matching",
@@ -38,7 +38,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 44,
         "hasSolution": true,
         "hasVideoSolution": false
     },

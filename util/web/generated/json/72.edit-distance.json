@@ -1,19 +1,19 @@
 {
     "quesId": 72,
-    "quesIdLCBackend": 72,
     "title": "Edit Distance",
     "titleSlug": "edit-distance",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "1.6M",
-        "totalSubmission": "2.5M",
-        "totalAcceptedRaw": 1554950,
-        "totalSubmissionRaw": 2545323,
-        "acRate": "61.1%",
-        "acRateRaw": 61.09050921624315,
-        "likes": 16653,
-        "dislikes": 334
+        "totalSubmission": "2.6M",
+        "totalAcceptedRaw": 1566798,
+        "totalSubmissionRaw": 2562006,
+        "acRate": "61.2%",
+        "acRateRaw": 61.155154169787586,
+        "likes": 16682,
+        "dislikes": 336
     },
     "similarQuestions": [
         "one-edit-distance",
@@ -35,7 +35,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 72,
         "hasSolution": true,
         "hasVideoSolution": false
     },

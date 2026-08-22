@@ -1,19 +1,19 @@
 {
     "quesId": 56,
-    "quesIdLCBackend": 56,
     "title": "Merge Intervals",
     "titleSlug": "merge-intervals",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
-        "totalAccepted": "4.2M",
+        "totalAccepted": "4.3M",
         "totalSubmission": "8.1M",
-        "totalAcceptedRaw": 4245644,
-        "totalSubmissionRaw": 8081926,
-        "acRate": "52.5%",
-        "acRateRaw": 52.5326470970714,
-        "likes": 24957,
-        "dislikes": 916
+        "totalAcceptedRaw": 4277386,
+        "totalSubmissionRaw": 8127388,
+        "acRate": "52.6%",
+        "acRateRaw": 52.62942315964372,
+        "likes": 24993,
+        "dislikes": 917
     },
     "similarQuestions": [
         "insert-interval",
@@ -50,7 +50,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 56,
         "hasSolution": true,
         "hasVideoSolution": true
     },

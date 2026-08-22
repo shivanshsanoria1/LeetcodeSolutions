@@ -1,18 +1,18 @@
 {
     "quesId": 101,
-    "quesIdLCBackend": 101,
     "title": "Symmetric Tree",
     "titleSlug": "symmetric-tree",
     "difficulty": "Easy",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "3M",
         "totalSubmission": "4.9M",
-        "totalAcceptedRaw": 3015667,
-        "totalSubmissionRaw": 4880137,
-        "acRate": "61.8%",
-        "acRateRaw": 61.794770547811176,
-        "likes": 17019,
+        "totalAcceptedRaw": 3030886,
+        "totalSubmissionRaw": 4899375,
+        "acRate": "61.9%",
+        "acRateRaw": 61.86273811436103,
+        "likes": 17041,
         "dislikes": 465
     },
     "similarQuestions": [],
@@ -35,7 +35,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 101,
         "hasSolution": true,
         "hasVideoSolution": true
     },

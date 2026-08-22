@@ -1,19 +1,19 @@
 {
     "quesId": 71,
-    "quesIdLCBackend": 71,
     "title": "Simplify Path",
     "titleSlug": "simplify-path",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "1.4M",
         "totalSubmission": "2.7M",
-        "totalAcceptedRaw": 1388258,
-        "totalSubmissionRaw": 2712134,
-        "acRate": "51.2%",
-        "acRateRaw": 51.187136728123306,
-        "likes": 6668,
-        "dislikes": 1424
+        "totalAcceptedRaw": 1395582,
+        "totalSubmissionRaw": 2722290,
+        "acRate": "51.3%",
+        "acRateRaw": 51.26572955722332,
+        "likes": 6677,
+        "dislikes": 1426
     },
     "similarQuestions": [],
     "topicTags": [
@@ -27,7 +27,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 71,
         "hasSolution": true,
         "hasVideoSolution": true
     },

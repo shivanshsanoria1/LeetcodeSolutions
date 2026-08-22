@@ -1,19 +1,19 @@
 {
     "quesId": 87,
-    "quesIdLCBackend": 87,
     "title": "Scramble String",
     "titleSlug": "scramble-string",
     "difficulty": "Hard",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
-        "totalAccepted": "333.9K",
-        "totalSubmission": "736.7K",
-        "totalAcceptedRaw": 333881,
-        "totalSubmissionRaw": 736699,
-        "acRate": "45.3%",
-        "acRateRaw": 45.32137189986168,
-        "likes": 3676,
-        "dislikes": 1321
+        "totalAccepted": "335.9K",
+        "totalSubmission": "739.6K",
+        "totalAcceptedRaw": 335897,
+        "totalSubmissionRaw": 739647,
+        "acRate": "45.4%",
+        "acRateRaw": 45.413248392487276,
+        "likes": 3683,
+        "dislikes": 1323
     },
     "similarQuestions": [],
     "topicTags": [
@@ -27,7 +27,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 87,
         "hasSolution": true,
         "hasVideoSolution": false
     },

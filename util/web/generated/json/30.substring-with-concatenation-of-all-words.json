@@ -1,18 +1,18 @@
 {
     "quesId": 30,
-    "quesIdLCBackend": 30,
     "title": "Substring with Concatenation of All Words",
     "titleSlug": "substring-with-concatenation-of-all-words",
     "difficulty": "Hard",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
-        "totalAccepted": "757.3K",
+        "totalAccepted": "762.7K",
         "totalSubmission": "2.2M",
-        "totalAcceptedRaw": 757297,
-        "totalSubmissionRaw": 2165793,
+        "totalAcceptedRaw": 762719,
+        "totalSubmissionRaw": 2176143,
         "acRate": "35.0%",
-        "acRateRaw": 34.96657607717006,
-        "likes": 2739,
+        "acRateRaw": 35.04931841105798,
+        "likes": 2742,
         "dislikes": 445
     },
     "similarQuestions": [
@@ -33,7 +33,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 30,
         "hasSolution": true,
         "hasVideoSolution": true
     },

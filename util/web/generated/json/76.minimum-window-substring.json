@@ -1,18 +1,18 @@
 {
     "quesId": 76,
-    "quesIdLCBackend": 76,
     "title": "Minimum Window Substring",
     "titleSlug": "minimum-window-substring",
     "difficulty": "Hard",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "2.3M",
         "totalSubmission": "4.8M",
-        "totalAcceptedRaw": 2301626,
-        "totalSubmissionRaw": 4773861,
-        "acRate": "48.2%",
-        "acRateRaw": 48.21312987051617,
-        "likes": 20553,
+        "totalAcceptedRaw": 2319233,
+        "totalSubmissionRaw": 4801492,
+        "acRate": "48.3%",
+        "acRateRaw": 48.302253734321184,
+        "likes": 20590,
         "dislikes": 862
     },
     "similarQuestions": [
@@ -40,7 +40,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 76,
         "hasSolution": true,
         "hasVideoSolution": false
     },

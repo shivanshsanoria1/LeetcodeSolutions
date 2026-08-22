@@ -1,19 +1,19 @@
 {
     "quesId": 2,
-    "quesIdLCBackend": 2,
     "title": "Add Two Numbers",
     "titleSlug": "add-two-numbers",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "7.4M",
-        "totalSubmission": "15M",
-        "totalAcceptedRaw": 7386088,
-        "totalSubmissionRaw": 15043771,
-        "acRate": "49.1%",
-        "acRateRaw": 49.09742941724085,
-        "likes": 37181,
-        "dislikes": 7285
+        "totalSubmission": "15.1M",
+        "totalAcceptedRaw": 7432145,
+        "totalSubmissionRaw": 15112972,
+        "acRate": "49.2%",
+        "acRateRaw": 49.177263300093905,
+        "likes": 37251,
+        "dislikes": 7291
     },
     "similarQuestions": [
         "multiply-strings",
@@ -40,7 +40,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 2,
         "hasSolution": true,
         "hasVideoSolution": true
     },

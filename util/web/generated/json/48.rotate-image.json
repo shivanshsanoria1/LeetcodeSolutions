@@ -1,19 +1,19 @@
 {
     "quesId": 48,
-    "quesIdLCBackend": 48,
     "title": "Rotate Image",
     "titleSlug": "rotate-image",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "3.1M",
-        "totalSubmission": "3.8M",
-        "totalAcceptedRaw": 3084391,
-        "totalSubmissionRaw": 3829269,
-        "acRate": "80.5%",
-        "acRateRaw": 80.54786786491925,
-        "likes": 20297,
-        "dislikes": 979
+        "totalSubmission": "3.9M",
+        "totalAcceptedRaw": 3104676,
+        "totalSubmissionRaw": 3851984,
+        "acRate": "80.6%",
+        "acRateRaw": 80.59947923291996,
+        "likes": 20315,
+        "dislikes": 982
     },
     "similarQuestions": [
         "determine-whether-matrix-can-be-obtained-by-rotation"
@@ -33,7 +33,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 48,
         "hasSolution": true,
         "hasVideoSolution": false
     },

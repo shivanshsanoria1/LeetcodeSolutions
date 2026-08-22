@@ -1,19 +1,19 @@
 {
     "quesId": 83,
-    "quesIdLCBackend": 83,
     "title": "Remove Duplicates from Sorted List",
     "titleSlug": "remove-duplicates-from-sorted-list",
     "difficulty": "Easy",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "2.5M",
         "totalSubmission": "4.4M",
-        "totalAcceptedRaw": 2515346,
-        "totalSubmissionRaw": 4389326,
-        "acRate": "57.3%",
-        "acRateRaw": 57.3059859031391,
-        "likes": 10011,
-        "dislikes": 380
+        "totalAcceptedRaw": 2532030,
+        "totalSubmissionRaw": 4412817,
+        "acRate": "57.4%",
+        "acRateRaw": 57.37902590744024,
+        "likes": 10033,
+        "dislikes": 381
     },
     "similarQuestions": [
         "remove-duplicates-from-sorted-list-ii",
@@ -26,7 +26,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 83,
         "hasSolution": true,
         "hasVideoSolution": true
     },

@@ -1,19 +1,19 @@
 {
     "quesId": 9,
-    "quesIdLCBackend": 9,
     "title": "Palindrome Number",
     "titleSlug": "palindrome-number",
     "difficulty": "Easy",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
-        "totalAccepted": "8.6M",
-        "totalSubmission": "14.2M",
-        "totalAcceptedRaw": 8619013,
-        "totalSubmissionRaw": 14161993,
+        "totalAccepted": "8.7M",
+        "totalSubmission": "14.3M",
+        "totalAcceptedRaw": 8680827,
+        "totalSubmissionRaw": 14255750,
         "acRate": "60.9%",
-        "acRateRaw": 60.860138641975766,
-        "likes": 16168,
-        "dislikes": 2942
+        "acRateRaw": 60.89358709402445,
+        "likes": 16200,
+        "dislikes": 2945
     },
     "similarQuestions": [
         "palindrome-linked-list",
@@ -30,7 +30,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 9,
         "hasSolution": true,
         "hasVideoSolution": true
     },

@@ -1,18 +1,18 @@
 {
     "quesId": 95,
-    "quesIdLCBackend": 95,
     "title": "Unique Binary Search Trees II",
     "titleSlug": "unique-binary-search-trees-ii",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
-        "totalAccepted": "604.9K",
-        "totalSubmission": "958.9K",
-        "totalAcceptedRaw": 604946,
-        "totalSubmissionRaw": 958911,
-        "acRate": "63.1%",
-        "acRateRaw": 63.08682208537775,
-        "likes": 7996,
+        "totalAccepted": "607.8K",
+        "totalSubmission": "962.1K",
+        "totalAcceptedRaw": 607816,
+        "totalSubmissionRaw": 962086,
+        "acRate": "63.2%",
+        "acRateRaw": 63.176926826783856,
+        "likes": 7999,
         "dislikes": 584
     },
     "similarQuestions": [
@@ -42,7 +42,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 95,
         "hasSolution": true,
         "hasVideoSolution": false
     },

@@ -1,19 +1,19 @@
 {
     "quesId": 36,
-    "quesIdLCBackend": 36,
     "title": "Valid Sudoku",
     "titleSlug": "valid-sudoku",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "2.6M",
         "totalSubmission": "4M",
-        "totalAcceptedRaw": 2604464,
-        "totalSubmissionRaw": 4011567,
-        "acRate": "64.9%",
-        "acRateRaw": 64.92388695879124,
-        "likes": 12649,
-        "dislikes": 1273
+        "totalAcceptedRaw": 2618836,
+        "totalSubmissionRaw": 4030065,
+        "acRate": "65.0%",
+        "acRateRaw": 64.98254999584377,
+        "likes": 12668,
+        "dislikes": 1276
     },
     "similarQuestions": [
         "sudoku-solver",
@@ -34,7 +34,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 36,
         "hasSolution": true,
         "hasVideoSolution": false
     },

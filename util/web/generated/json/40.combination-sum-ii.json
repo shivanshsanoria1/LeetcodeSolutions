@@ -1,18 +1,18 @@
 {
     "quesId": 40,
-    "quesIdLCBackend": 40,
     "title": "Combination Sum II",
     "titleSlug": "combination-sum-ii",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "1.8M",
         "totalSubmission": "3M",
-        "totalAcceptedRaw": 1812658,
-        "totalSubmissionRaw": 3023973,
-        "acRate": "59.9%",
-        "acRateRaw": 59.942922902929254,
-        "likes": 12420,
+        "totalAcceptedRaw": 1825742,
+        "totalSubmissionRaw": 3042391,
+        "acRate": "60.0%",
+        "acRateRaw": 60.01018932421772,
+        "likes": 12435,
         "dislikes": 393
     },
     "similarQuestions": [
@@ -29,7 +29,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 40,
         "hasSolution": true,
         "hasVideoSolution": false
     },

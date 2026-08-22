@@ -1,18 +1,18 @@
 {
     "quesId": 93,
-    "quesIdLCBackend": 93,
     "title": "Restore IP Addresses",
     "titleSlug": "restore-ip-addresses",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
-        "totalAccepted": "656.1K",
+        "totalAccepted": "659.6K",
         "totalSubmission": "1.2M",
-        "totalAcceptedRaw": 656054,
-        "totalSubmissionRaw": 1156072,
-        "acRate": "56.7%",
-        "acRateRaw": 56.74861643804808,
-        "likes": 5729,
+        "totalAcceptedRaw": 659622,
+        "totalSubmissionRaw": 1160359,
+        "acRate": "56.8%",
+        "acRateRaw": 56.84637254504856,
+        "likes": 5737,
         "dislikes": 824
     },
     "similarQuestions": [
@@ -29,7 +29,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 93,
         "hasSolution": true,
         "hasVideoSolution": false
     },

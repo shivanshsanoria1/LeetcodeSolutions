@@ -1,19 +1,19 @@
 {
     "quesId": 27,
-    "quesIdLCBackend": 27,
     "title": "Remove Element",
     "titleSlug": "remove-element",
     "difficulty": "Easy",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
-        "totalAccepted": "5.5M",
+        "totalAccepted": "5.6M",
         "totalSubmission": "8.9M",
-        "totalAcceptedRaw": 5539794,
-        "totalSubmissionRaw": 8886317,
-        "acRate": "62.3%",
-        "acRateRaw": 62.340778594809485,
-        "likes": 5333,
-        "dislikes": 5408
+        "totalAcceptedRaw": 5576605,
+        "totalSubmissionRaw": 8935577,
+        "acRate": "62.4%",
+        "acRateRaw": 62.408865235369085,
+        "likes": 5355,
+        "dislikes": 5414
     },
     "similarQuestions": [
         "remove-duplicates-from-sorted-array",
@@ -31,7 +31,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 27,
         "hasSolution": true,
         "hasVideoSolution": true
     },

@@ -1,19 +1,19 @@
 {
     "quesId": 43,
-    "quesIdLCBackend": 43,
     "title": "Multiply Strings",
     "titleSlug": "multiply-strings",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "1.2M",
         "totalSubmission": "2.7M",
-        "totalAcceptedRaw": 1220440,
-        "totalSubmissionRaw": 2736052,
+        "totalAcceptedRaw": 1226839,
+        "totalSubmissionRaw": 2748075,
         "acRate": "44.6%",
-        "acRateRaw": 44.60596230050678,
-        "likes": 7820,
-        "dislikes": 3703
+        "acRateRaw": 44.643621962832945,
+        "likes": 7828,
+        "dislikes": 3706
     },
     "similarQuestions": [
         "add-two-numbers",
@@ -37,7 +37,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 43,
         "hasSolution": true,
         "hasVideoSolution": false
     },

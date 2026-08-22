@@ -1,18 +1,18 @@
 {
     "quesId": 78,
-    "quesIdLCBackend": 78,
     "title": "Subsets",
     "titleSlug": "subsets",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "3.2M",
         "totalSubmission": "3.9M",
-        "totalAcceptedRaw": 3202896,
-        "totalSubmissionRaw": 3873113,
+        "totalAcceptedRaw": 3223143,
+        "totalSubmissionRaw": 3895499,
         "acRate": "82.7%",
-        "acRateRaw": 82.69563133943237,
-        "likes": 19437,
+        "acRateRaw": 82.74019899782314,
+        "likes": 19456,
         "dislikes": 344
     },
     "similarQuestions": [
@@ -37,7 +37,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 78,
         "hasSolution": true,
         "hasVideoSolution": true
     },

@@ -1,19 +1,19 @@
 {
     "quesId": 65,
-    "quesIdLCBackend": 65,
     "title": "Valid Number",
     "titleSlug": "valid-number",
     "difficulty": "Hard",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
-        "totalAccepted": "541.5K",
+        "totalAccepted": "544.1K",
         "totalSubmission": "2.3M",
-        "totalAcceptedRaw": 541527,
-        "totalSubmissionRaw": 2312935,
-        "acRate": "23.4%",
-        "acRateRaw": 23.413097305647465,
-        "likes": 1524,
-        "dislikes": 2221
+        "totalAcceptedRaw": 544084,
+        "totalSubmissionRaw": 2318016,
+        "acRate": "23.5%",
+        "acRateRaw": 23.47206817545499,
+        "likes": 1525,
+        "dislikes": 2223
     },
     "similarQuestions": [
         "string-to-integer-atoi"
@@ -25,7 +25,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 65,
         "hasSolution": true,
         "hasVideoSolution": false
     },

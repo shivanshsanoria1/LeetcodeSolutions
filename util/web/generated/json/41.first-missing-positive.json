@@ -1,18 +1,18 @@
 {
     "quesId": 41,
-    "quesIdLCBackend": 41,
     "title": "First Missing Positive",
     "titleSlug": "first-missing-positive",
     "difficulty": "Hard",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "1.9M",
         "totalSubmission": "4.3M",
-        "totalAcceptedRaw": 1852899,
-        "totalSubmissionRaw": 4258863,
-        "acRate": "43.5%",
-        "acRateRaw": 43.50705992986444,
-        "likes": 18622,
+        "totalAcceptedRaw": 1864848,
+        "totalSubmissionRaw": 4278897,
+        "acRate": "43.6%",
+        "acRateRaw": 43.5824717813385,
+        "likes": 18644,
         "dislikes": 1987
     },
     "similarQuestions": [
@@ -37,7 +37,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 41,
         "hasSolution": true,
         "hasVideoSolution": false
     },

@@ -1,18 +1,18 @@
 {
     "quesId": 69,
-    "quesIdLCBackend": 69,
     "title": "Sqrt(x)",
     "titleSlug": "sqrtx",
     "difficulty": "Easy",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "3.4M",
-        "totalSubmission": "8M",
-        "totalAcceptedRaw": 3378271,
-        "totalSubmissionRaw": 8001740,
+        "totalSubmission": "8.1M",
+        "totalAcceptedRaw": 3401552,
+        "totalSubmissionRaw": 8052544,
         "acRate": "42.2%",
-        "acRateRaw": 42.2193017897466,
-        "likes": 9867,
+        "acRateRaw": 42.24196821822708,
+        "likes": 9891,
         "dislikes": 4650
     },
     "similarQuestions": [
@@ -34,7 +34,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 69,
         "hasSolution": true,
         "hasVideoSolution": true
     },

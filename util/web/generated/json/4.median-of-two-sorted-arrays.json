@@ -1,19 +1,19 @@
 {
     "quesId": 4,
-    "quesIdLCBackend": 4,
     "title": "Median of Two Sorted Arrays",
     "titleSlug": "median-of-two-sorted-arrays",
     "difficulty": "Hard",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "4.5M",
-        "totalSubmission": "9.5M",
-        "totalAcceptedRaw": 4508520,
-        "totalSubmissionRaw": 9526037,
-        "acRate": "47.3%",
-        "acRateRaw": 47.328421209541375,
-        "likes": 32570,
-        "dislikes": 3599
+        "totalSubmission": "9.6M",
+        "totalAcceptedRaw": 4540318,
+        "totalSubmissionRaw": 9574484,
+        "acRate": "47.4%",
+        "acRateRaw": 47.42110396277135,
+        "likes": 32620,
+        "dislikes": 3605
     },
     "similarQuestions": [
         "median-of-a-row-wise-sorted-matrix"
@@ -33,7 +33,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 4,
         "hasSolution": true,
         "hasVideoSolution": true
     },

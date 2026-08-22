@@ -1,18 +1,18 @@
 {
     "quesId": 37,
-    "quesIdLCBackend": 37,
     "title": "Sudoku Solver",
     "titleSlug": "sudoku-solver",
     "difficulty": "Hard",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "1.1M",
         "totalSubmission": "1.7M",
-        "totalAcceptedRaw": 1099792,
-        "totalSubmissionRaw": 1676877,
+        "totalAcceptedRaw": 1106986,
+        "totalSubmissionRaw": 1687831,
         "acRate": "65.6%",
-        "acRateRaw": 65.58593586937724,
-        "likes": 11265,
+        "acRateRaw": 65.58643191339479,
+        "likes": 11282,
         "dislikes": 349
     },
     "similarQuestions": [
@@ -46,7 +46,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 37,
         "hasSolution": true,
         "hasVideoSolution": false
     },

@@ -1,19 +1,19 @@
 {
     "quesId": 73,
-    "quesIdLCBackend": 73,
     "title": "Set Matrix Zeroes",
     "titleSlug": "set-matrix-zeroes",
     "difficulty": "Medium",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "2.8M",
-        "totalSubmission": "4.3M",
-        "totalAcceptedRaw": 2750612,
-        "totalSubmissionRaw": 4334279,
+        "totalSubmission": "4.4M",
+        "totalAcceptedRaw": 2769751,
+        "totalSubmissionRaw": 4361494,
         "acRate": "63.5%",
-        "acRateRaw": 63.462055797217474,
-        "likes": 17386,
-        "dislikes": 871
+        "acRateRaw": 63.5046141098284,
+        "likes": 17412,
+        "dislikes": 870
     },
     "similarQuestions": [
         "game-of-life",
@@ -36,7 +36,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 73,
         "hasSolution": true,
         "hasVideoSolution": false
     },

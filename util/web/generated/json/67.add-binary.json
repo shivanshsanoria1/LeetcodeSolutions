@@ -1,19 +1,19 @@
 {
     "quesId": 67,
-    "quesIdLCBackend": 67,
     "title": "Add Binary",
     "titleSlug": "add-binary",
     "difficulty": "Easy",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
-        "totalAccepted": "2.4M",
+        "totalAccepted": "2.5M",
         "totalSubmission": "4.2M",
-        "totalAcceptedRaw": 2445144,
-        "totalSubmissionRaw": 4182534,
+        "totalAcceptedRaw": 2457648,
+        "totalSubmissionRaw": 4200007,
         "acRate": "58.5%",
-        "acRateRaw": 58.46088335753712,
-        "likes": 10885,
-        "dislikes": 1121
+        "acRateRaw": 58.51534445804756,
+        "likes": 10900,
+        "dislikes": 1123
     },
     "similarQuestions": [
         "add-two-numbers",
@@ -40,7 +40,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 67,
         "hasSolution": true,
         "hasVideoSolution": false
     },

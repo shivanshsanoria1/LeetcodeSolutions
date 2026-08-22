@@ -1,18 +1,18 @@
 {
     "quesId": 10,
-    "quesIdLCBackend": 10,
     "title": "Regular Expression Matching",
     "titleSlug": "regular-expression-matching",
     "difficulty": "Hard",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "1.5M",
         "totalSubmission": "4.7M",
-        "totalAcceptedRaw": 1467565,
-        "totalSubmissionRaw": 4651894,
-        "acRate": "31.5%",
-        "acRateRaw": 31.547787565153328,
-        "likes": 13458,
+        "totalAcceptedRaw": 1476644,
+        "totalSubmissionRaw": 4670358,
+        "acRate": "31.6%",
+        "acRateRaw": 31.617366504152777,
+        "likes": 13484,
         "dislikes": 2413
     },
     "similarQuestions": [
@@ -33,7 +33,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 10,
         "hasSolution": true,
         "hasVideoSolution": false
     },

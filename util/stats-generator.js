@@ -87,9 +87,9 @@ async function generateStatsMap() {
 				const language = getLangNameFromDirPath(dirPath);
 				const isAccepted = !(fileName.includes('TLE') || fileName.includes('MLE'));
 
-				if (!isAccepted) {
-					logger.info(fileName)
-				}
+				// if (!isAccepted) {
+				// 	logger.info(fileName)
+				// }
 
 				let statObj = null;
 

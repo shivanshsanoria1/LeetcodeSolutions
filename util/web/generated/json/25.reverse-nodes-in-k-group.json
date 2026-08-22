@@ -1,19 +1,19 @@
 {
     "quesId": 25,
-    "quesIdLCBackend": 25,
     "title": "Reverse Nodes in k-Group",
     "titleSlug": "reverse-nodes-in-k-group",
     "difficulty": "Hard",
     "isPaidOnly": false,
+    "categoryTitle": "Algorithms",
     "stats": {
-        "totalAccepted": "1.6M",
+        "totalAccepted": "1.7M",
         "totalSubmission": "2.5M",
-        "totalAcceptedRaw": 1646341,
-        "totalSubmissionRaw": 2460283,
-        "acRate": "66.9%",
-        "acRateRaw": 66.91696134617729,
-        "likes": 15890,
-        "dislikes": 812
+        "totalAcceptedRaw": 1659316,
+        "totalSubmissionRaw": 2475777,
+        "acRate": "67.0%",
+        "acRateRaw": 67.02198687694256,
+        "likes": 15923,
+        "dislikes": 815
     },
     "similarQuestions": [
         "swap-nodes-in-pairs",
@@ -31,7 +31,7 @@
         }
     ],
     "meta": {
-        "categoryTitle": "Algorithms",
+        "quesIdLCBackend": 25,
         "hasSolution": true,
         "hasVideoSolution": false
     },
