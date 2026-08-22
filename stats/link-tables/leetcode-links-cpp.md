@@ -1661,3 +1661,11 @@
 |3912 | valid elements in an array |[L1](<../../CPP [3501-4000]/3912.valid-elements-in-an-array [1].cpp>) [L2](<../../CPP [3501-4000]/3912.valid-elements-in-an-array [2].cpp>) |general|
 |3913 | sort vowels by frequency |[L1](<../../CPP [3501-4000]/3913.sort-vowels-by-frequency [1].cpp>) |general|
 |3918 | sum of primes between number and its reverse |[L1](<../../CPP [3501-4000]/3918.sum-of-primes-between-number-and-its-reverse [1].cpp>) [L2](<../../CPP [3501-4000]/3918.sum-of-primes-between-number-and-its-reverse [2].cpp>) |general|
+|3921 | score validator |[L1](<../../CPP [3501-4000]/3921.score-validator [1].cpp>) |general|
+|3925 | concatenate array with reverse |[L1](<../../CPP [3501-4000]/3925.concatenate-array-with-reverse [1].cpp>) |general|
+|3978 | unique middle element |[L1](<../../CPP [3501-4000]/3978.unique-middle-element [1].cpp>) |general|
+|3992 | rearrange string to avoid character pair |[L1](<../../CPP [3501-4000]/3992.rearrange-string-to-avoid-character-pair [1].cpp>) [L2](<../../CPP [3501-4000]/3992.rearrange-string-to-avoid-character-pair [2].cpp>) |general|
+|4006 | count valid prefixes |[L1](<../../CPP [4001-4500]/4006.count-valid-prefixes [1].cpp>) |general|
+|4010 | maximize pair strength using gcd |[L1](<../../CPP [4001-4500]/4010.maximize-pair-strength-using-gcd [1].cpp>) |general|
+|4020 | elevator requests i |[L1](<../../CPP [4001-4500]/4020.elevator-requests-i [1].cpp>) |general|
+|4024 | nearest available drone |[L1](<../../CPP [4001-4500]/4024.nearest-available-drone [1].cpp>) |general|

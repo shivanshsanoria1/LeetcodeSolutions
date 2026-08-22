@@ -16,24 +16,24 @@ This repo contains solutions to over **1700** problems from [leetcode.com](https
 -   A list of all algorithms can be found [here](./algorithms/stats/algo-links.md).
 -   Sorting algorithms cheatsheet can be found [here](./algorithms/stats/sorting-algos-cheatsheet.csv).
 -   There are some problems with solutions in multiple languages (like C++ and Javascript).
--   The C++ directory is split into 8 parts (with a range of 500 each): [0001-0500], [0501-1000], ..., [3501-4000]. This is done to overcome the limitation of github webview only allowing a max of 1000 files to be displayed in a directory.
+-   The C++ directory is split into 9 parts (with a range of 500 each): [0001-0500], [0501-1000], ..., [4001-4500]. This is done to overcome the limitation of github webview only allowing a max of 1000 files to be displayed in a directory.
 
 ---
 
 ## Stats
 
 <!-- UPDATE STATS HERE -->
-Last updated at _Sun, 05 Jul 2026 18:11:53 GMT_
+Last updated at _Sat, 22 Aug 2026 12:07:32 GMT_
 
-_Sun Jul 05 2026 23:41:53 GMT+0530 (India Standard Time)_
+_Sat Aug 22 2026 17:37:32 GMT+0530 (India Standard Time)_
 ### Total problems:
 | Accepted | Partially accepted | Out of |
 | --- | --- | --- |
-| 1784 | 103 | 3985 |
+| 1792 | 103 | 3985 |
 ### Total problems solved per language:
 | Language  | Accepted | Partially accepted | Links Table |
 | --- | --- | --- | --- |
-| C++ | 1661 | 103 | [click](stats/link-tables/leetcode-links-cpp.md)
+| C++ | 1669 | 103 | [click](stats/link-tables/leetcode-links-cpp.md)
 | Javascript | 73 | 0 | [click](stats/link-tables/leetcode-links-js.md)
 | MySQL | 85 | 0 | [click](stats/link-tables/leetcode-links-mysql.md)
 <!-- UPDATE STATS HERE -->

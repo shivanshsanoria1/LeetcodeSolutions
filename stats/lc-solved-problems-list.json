@@ -24669,5 +24669,109 @@
 	},
 	"isAccepted": true,
 	"type": "general"
+},
+{
+	"quesId": 3921,
+	"titleSlug": "score-validator",
+	"title": "score validator",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3925,
+	"titleSlug": "concatenate-array-with-reverse",
+	"title": "concatenate array with reverse",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3978,
+	"titleSlug": "unique-middle-element",
+	"title": "unique middle element",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 3992,
+	"titleSlug": "rearrange-string-to-avoid-character-pair",
+	"title": "rearrange string to avoid character pair",
+	"counter": {
+		"cpp": {
+			"accepted": 2,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 4006,
+	"titleSlug": "count-valid-prefixes",
+	"title": "count valid prefixes",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 4010,
+	"titleSlug": "maximize-pair-strength-using-gcd",
+	"title": "maximize pair strength using gcd",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 4020,
+	"titleSlug": "elevator-requests-i",
+	"title": "elevator requests i",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
+},
+{
+	"quesId": 4024,
+	"titleSlug": "nearest-available-drone",
+	"title": "nearest available drone",
+	"counter": {
+		"cpp": {
+			"accepted": 1,
+			"unaccepted": 0
+		}
+	},
+	"isAccepted": true,
+	"type": "general"
 }
 ]
