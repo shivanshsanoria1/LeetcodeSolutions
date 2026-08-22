@@ -1,6 +1,9 @@
 {
+	"MAX_QUES_ID": 4029,
+	"ENABLE_LOGGER": true,
+	"SAVE_CHART": true,
+	"SHOW_CHART": false,
 	"dirPaths": {
-		"local": "util/local",
 		"web": "util/web",
 		"logs": "util/logs",
 		"linkTables": "stats/link-tables",
@@ -9,8 +12,9 @@
 	},
 	"filePaths": {
 		"LCSolvedProblemList": "stats/lc-solved-problems-list.json",
-		"specialQuesIds": "util/local/special-ques-ids.json",
+		"specialQuesIds": "util/special-ques-ids.json",
 		"LCBaseProblemList": "util/web/generated/lc-base-problem-list.json",
-		"LCProblemList": "util/web/generated/lc-problem-list.json"
+		"LCProblemList": "util/web/generated/lc-problem-list.json",
+		"LCTopicTag": "util/web/generated/lc-topic-tag.json"
 	}
 }

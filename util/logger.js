@@ -7,16 +7,8 @@ const timer = require('./timer.js')
 
 const LOG_DIR = helper.getDirPath('logs')
 
-let ERROR_FOUND = false;
-const hasError = () => ERROR_FOUND
-
-function ensureLogDir() {
-	try {
-		fs.mkdirSync(LOG_DIR, { recursive: true });
-	} catch (err) {
-		throw new Error(`Failed to create log directory: ${err.message}`);
-	}
-}
+let ERROR_FOUND_COUNT = 0;
+const getErrorCount = () => ERROR_FOUND_COUNT
 
 function getLogFilePath() {
 	const fileName = `logs_${timer.getYYYYMMDD()}.log`;
@@ -66,7 +58,7 @@ function info(data) {
 
 function error(data) {
 	write('ERROR', data);
-	ERROR_FOUND = true
+	ERROR_FOUND_COUNT++
 }
 
 function time(msg) {
@@ -74,11 +66,17 @@ function time(msg) {
 	write('INFO', msg);
 }
 
-ensureLogDir();
-
 module.exports = {
 	info,
 	error,
 	time,
-	hasError
+	getErrorCount
 };
+
+// function ensureLogDir() {
+// 	try {
+// 		fs.mkdirSync(LOG_DIR, { recursive: true });
+// 	} catch (err) {
+// 		throw new Error(`Failed to create log directory: ${err.message}`);
+// 	}
+// }

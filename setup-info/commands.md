@@ -14,18 +14,18 @@ chmod +x ./stats/generator/stats-generator-script.sh
 
 ### 2. Run 'stats-generator.js'
 ```
-node ./util/local/stats-generator.js
+node ./util/stats-generator.js
 ```
 
 ---
 
 ### 3. Run 'chart-generator.py'
 ```
-source ./util/local/.venv/bin/activate
+source ./util/.venv/bin/activate
 ```
 
 ```
-python3 ./util/local/chart-generator.py
+python3 ./util/chart-generator.py
 ```
 
 ```
@@ -34,7 +34,7 @@ deactivate
 
 #### 3.1 Setup the virtual environment (before step-1)
 ```
-python3 -m venv ./util/local/.venv
+python3 -m venv ./util/.venv
 ```
 
 #### 3.2 Needs the following dependencies installed (before step-2)

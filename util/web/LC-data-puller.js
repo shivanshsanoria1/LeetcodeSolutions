@@ -1,81 +1,10 @@
 const path = require('node:path');
-const fs = require('node:fs/promises');
 
 const webConfig = require('./web-config.json');
 const helper = require('../helper.js')
 const logger = require('../logger.js');
 const timer = require('../timer.js')
 const queries = require('./queries.js')
-
-// reads JSON data from the mentioned path; 
-// creates a JSON file with default-value if file not found
-async function readFromJSON(filePath, defaultValue = []) {
-	try {
-		await fs.mkdir(path.dirname(filePath), { recursive: true });
-		const problemsJSON = await fs.readFile(filePath, { encoding: "utf8" })
-
-		return JSON.parse(problemsJSON)
-	} catch (err) {
-		if (err.code === 'ENOENT') {
-			logger.info(`JSON file not found. Creating new file at: ${filePath}`);
-			await fs.writeFile(filePath, JSON.stringify(defaultValue, null, 4));
-
-			return defaultValue;
-		}
-		throw err
-	}
-}
-
-// writes JSON data into the file at path
-async function writeToJSON(filePath, data) {
-	try {
-		await fs.mkdir(path.dirname(filePath), { recursive: true });
-		await fs.writeFile(filePath, JSON.stringify(data, null, 4));
-	} catch (err) {
-		throw err
-	}
-}
-
-// moves the source file (if exists) to a timestamped backup
-async function createBackupJSON(sourceFilePath) {
-	// ensure source file exists, create if missing
-	try {
-		await fs.access(sourceFilePath);
-	} catch (err) {
-		if (err.code === "ENOENT") {
-			logger.info("Source file does not exist. No backup created");
-			return null
-		}
-		throw err;
-	}
-
-	try {
-		await helper.ensureDir('webBackup')
-		const backupDirPath = helper.getDirPath('webBackup')
-
-		const ext = path.extname(sourceFilePath); // file-extension
-		const sourceFileName = path.basename(sourceFilePath, ext); // filename without extension
-		const timestamp = timer.getFileSafeISOTimestamp();
-		const backupFileName = `${sourceFileName} [${timestamp}]${ext}`; // timestamped backup filename
-		const backupFilePath = path.join(backupDirPath, backupFileName)
-
-		// create the backup file and delete the source file
-		await fs.copyFile(sourceFilePath, backupFilePath);
-
-		logger.info(`Backup created: ${helper.getRootRelativePath(backupFilePath)}`)
-	} catch (err) {
-		throw err
-	}
-}
-
-async function updateConfig() {
-	try {
-		const filePathConfig = path.join(__dirname, 'web-config.json');
-		await writeToJSON(filePathConfig, webConfig)
-	} catch (err) {
-		throw err;
-	}
-}
 
 // provide delay in ms
 const sleep = (time_ms = webConfig.API_DELAY_MS ?? 250) => new Promise((resolve) => setTimeout(resolve, time_ms));
@@ -163,8 +92,22 @@ async function fetchBaseProblemList() {
 	}
 }
 
+function findQuesIdFromSlug(baseProblems, titleSlug) {
+	try {
+		for (const baseProblem of baseProblems) {
+			if (baseProblem.titleSlug === titleSlug) {
+				return Number(baseProblem.questionFrontendId)
+			}
+		}
+
+		return -1
+	} catch (err) {
+		throw err
+	}
+}
+
 // parse the problem stats in a custom format
-function parseProblem(problem) {
+function parseProblem(problem, baseProblems) {
 	try {
 		const parseJSONString = (value, fallback = []) => {
 			try {
@@ -176,16 +119,18 @@ function parseProblem(problem) {
 
 		const parsedProblemObj = {
 			quesId: Number(problem.questionFrontendId),
-			quesIdLCBackend: Number(problem.questionId),
 			title: problem.title,
 			titleSlug: problem.titleSlug,
 			difficulty: problem.difficulty,
 			isPaidOnly: problem.isPaidOnly,
+			categoryTitle: problem.categoryTitle,
 			stats: JSON.parse(problem.stats),
-			similarQuestions: parseJSONString(problem.similarQuestions, []).map(q => q.titleSlug),
+			similarQuestions: parseJSONString(problem.similarQuestions).map(q => q.titleSlug),
+			similarQuesIds: parseJSONString(problem.similarQuestions)
+				.map(({ titleSlug }) => findQuesIdFromSlug(baseProblems, titleSlug)),
 			topicTags: problem.topicTags ?? [],
 			meta: {
-				categoryTitle: problem.categoryTitle,
+				quesIdLCBackend: Number(problem.questionId),
 				hasSolution: problem.hasSolution,
 				hasVideoSolution: problem.hasVideoSolution,
 			},
@@ -206,9 +151,9 @@ function parseProblem(problem) {
 }
 
 // parse the full problem stats in a custom format to store into a JSON file
-function parseProblemJSON(problem) {
+function parseProblemJSON(problem, baseProblems) {
 	try {
-		const parsedProblemObj = parseProblem(problem)
+		const parsedProblemObj = parseProblem(problem, baseProblems)
 
 		parsedProblemObj.solution.content = problem.solution?.content
 		parsedProblemObj.content = problem.content
@@ -226,7 +171,7 @@ function parseProblemJSON(problem) {
 async function verifyProblemJSON(problems) {
 	try {
 		const dirPathJSON = helper.getDirPath('LCProblemsJSON')
-		const files = await fs.readdir(dirPathJSON);
+		const files = await readFromJSON(dirPathJSON);
 
 		if (files.length !== problems.length) {
 			logger.error('JSON files mismatch found.')
@@ -258,7 +203,7 @@ async function verifyProblemJSON(problems) {
 
 // fetch details for a specific problem by its title-slug,
 // parse in a custom format
-async function fetchProblem(titleSlug) {
+async function fetchProblem(titleSlug, baseProblems) {
 	try {
 		const query = queries.LC_Problem_Detailed
 
@@ -292,11 +237,11 @@ async function fetchProblem(titleSlug) {
 			throw new Error("Problem not found");
 		}
 
-		const problem = parseProblem(data.question);
+		const problem = parseProblem(data.question, baseProblems);
 
 		const filenameJSON = `${problem.quesId}.${problem.titleSlug}.json`
 		const filePathJSON = path.join(helper.getDirPath('LCProblemsJSON'), filenameJSON)
-		await writeToJSON(filePathJSON, parseProblemJSON(data.question))
+		await writeToJSON(filePathJSON, parseProblemJSON(data.question, baseProblems))
 
 		return problem
 
@@ -318,6 +263,8 @@ async function fetchProblems(baseProblems) {
 		if (webConfig.FORCE_REFRESH_PROBLEM_LIST) {
 			// create a backup of the old json
 			await createBackupJSON(filePath)
+
+			await createBackupDir(helper.getDirPath('LCProblemsJSON'))
 		} else {
 			problems = await readFromJSON(filePath)
 		}
@@ -339,7 +286,7 @@ async function fetchProblems(baseProblems) {
 			const { questionFrontendId, title, titleSlug } = baseProblems[i]
 			logger.info(`Fetching... ${questionFrontendId}.${title}`)
 
-			const problem = await fetchProblem(titleSlug)
+			const problem = await fetchProblem(titleSlug, baseProblems)
 			problems.push(problem)
 
 			await sleep() // prevent overwhelming the API
@@ -360,9 +307,19 @@ async function fetchProblems(baseProblems) {
 	}
 }
 
-function initDirs() {
+async function generateTopicTagMap(problems) {
 	try {
-		helper.ensureDir('LCProblemsJSON')
+		const topicTagMap = {}
+		for (const { topicTags } of problems) {
+			for (const { name, slug } of topicTags) {
+				topicTagMap[slug] = name
+			}
+		}
+
+		const filePath = helper.getFilePath('LCTopicTag')
+		await writeToJSON(filePath, topicTagMap)
+
+		return topicTagMap
 	} catch (err) {
 		throw err
 	}
@@ -375,8 +332,6 @@ async function fetchStatsFromLC() {
 		logger.info('')
 		logger.time(`${scriptName} running...`)
 
-		initDirs()
-
 		const baseProblems = await fetchBaseProblemList();
 		logger.info('Base Problem list length = ' + baseProblems.length)
 		logger.info('Base Problem at index 0 = ' + JSON.stringify(baseProblems[0]))
@@ -385,9 +340,12 @@ async function fetchStatsFromLC() {
 		logger.info('Main Problem list length = ' + problems.length)
 		logger.info('Main Problem at index 0 = ' + JSON.stringify(problems[0]))
 
-		if (logger.hasError()) {
+		if (logger.getErrorCount() > 0) {
 			console.log('Issue(s) found during execution: check logs')
 		}
+
+		const topicTagMap = await generateTopicTagMap(problems)
+		logger.info('Topic tag map size = ' + Object.keys(topicTagMap).length)
 
 		const endTime = Date.now();
 		logger.time(`${scriptName} completed.`)
@@ -429,3 +387,12 @@ fetchStatsFromLC()
 		throw err
 	}
 }*/
+
+/*function initDirs() {
+	try {
+		helper.ensureDir('LCProblemsJSON')
+	} catch (err) {
+		throw err
+	}
+}*/
+

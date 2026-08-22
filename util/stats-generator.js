@@ -1,10 +1,9 @@
 const path = require('node:path');
 const fs = require('node:fs/promises');
 
-const logger = require('../logger.js')
-const helper = require('../helper.js')
+const logger = require('./logger.js')
+const helper = require('./helper.js')
 const config = require('./config.json')
-const configExt = require('../config.json')
 const langModel = require('./language-model.json');
 const specialQuesIds = require('./special-ques-ids.json');
 
@@ -192,7 +191,7 @@ async function generateProblemsJSON(problems) {
 				.join(',\n');
 		problemsStringified += '\n]\n';
 
-		await helper.ensureFileDir('LCSolvedProblemList')
+		// await helper.ensureFileDir('LCSolvedProblemList')
 		const filePathJSON = helper.getFilePath('LCSolvedProblemList')
 
 		await fs.writeFile(filePathJSON, problemsStringified);
@@ -233,7 +232,7 @@ async function generateMDlinksFile(problems) {
 				fileDataStringified += `|${type}|\n`;
 			}
 
-			await helper.ensureDir('linkTables')
+			// await helper.ensureDir('linkTables')
 			const filePathMD = path.join(helper.getDirPath('linkTables'), `leetcode-links-${lang}.md`);
 
 			await fs.writeFile(filePathMD, fileDataStringified);
@@ -286,7 +285,7 @@ async function updateStatsinReadmeFile(totalProblemCounter, problemCounterPerLan
 			const acceptedCount = problemCounterPerLang[language].accepted;
 			const unacceptedCount = problemCounterPerLang[language].unaccepted;
 
-			const url = `${configExt.dirPaths.linkTables}/leetcode-links-${language}.md`;
+			const url = `${config.dirPaths.linkTables}/leetcode-links-${language}.md`;
 
 			statData += `| ${getLangFormalName(language)} | ${acceptedCount} | ${unacceptedCount} | [click](${url})\n`;
 		}
@@ -333,7 +332,7 @@ async function generateStats() {
 
 		await updateStatsinReadmeFile(totalProblemCounter, problemCounterPerLang);
 
-		if (logger.hasError()) {
+		if (logger.getErrorCount() > 0) {
 			console.log('Issue(s) found during execution: check logs')
 		}
 		logger.time('Problem Stat Generation Completed.');

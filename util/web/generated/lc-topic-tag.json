@@ -1,0 +1,14 @@
+{
+    "array": "Array",
+    "hash-table": "Hash Table",
+    "linked-list": "Linked List",
+    "math": "Math",
+    "recursion": "Recursion",
+    "string": "String",
+    "sliding-window": "Sliding Window",
+    "binary-search": "Binary Search",
+    "divide-and-conquer": "Divide and Conquer",
+    "two-pointers": "Two Pointers",
+    "dynamic-programming": "Dynamic Programming",
+    "manacher": "Manacher"
+}

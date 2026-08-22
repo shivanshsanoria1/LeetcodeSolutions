@@ -5,7 +5,7 @@ from collections import defaultdict
 from typing import List, Dict
 # ------------------------------ #
 
-with open('./util/local/config.json', 'r') as file:
+with open('./util/config.json', 'r') as file:
     config_data = json.load(file)
 
 MAX_QUES_ID = config_data.get("MAX_QUES_ID", 0)
