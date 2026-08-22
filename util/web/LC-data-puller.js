@@ -1,6 +1,7 @@
 const path = require('node:path');
 const fs = require('node:fs/promises')
 
+const config = require('../config.json')
 const webConfig = require('./web-config.json');
 const helper = require('../helper.js')
 const timer = require('../timer.js')
@@ -90,7 +91,10 @@ async function fetchBaseProblemList() {
 		await writeToJSON(filePathJSON, baseProblems)
 
 		webConfig.LAST_UPDATED_ISO = new Date().toISOString()
-		await updateConfig()
+		await updateConfig('web')
+
+		config.MAX_QUES_ID = Number(baseProblems[baseProblems.length - 1].questionFrontendId)
+		await updateConfig('local')
 
 		return baseProblems
 	} catch (err) {
@@ -344,8 +348,8 @@ async function fetchProblems(baseProblems) {
 		//switch OFF the FORCE REFRESH flag
 		if (webConfig.FORCE_REFRESH_PROBLEM_LIST) {
 			webConfig.FORCE_REFRESH_PROBLEM_LIST = false
-			await updateConfig()
-			logger.info('FORCE_REFRESH_PROBLEM_LIST flag reset to: false')
+			await updateConfig('web')
+			logger.info('FORCE_REFRESH_PROBLEM_LIST flag Reset to: false')
 		}
 
 		return problems
@@ -520,11 +524,20 @@ async function createBackupDir(sourceDirPath) {
 	}
 }
 
-async function updateConfig() {
+async function updateConfig(mode = 'local') {
 	try {
-		const filePath = helper.getFilePath('webConfig');
+		if (mode === 'web') {
+			const filePath = helper.getFilePath('webConfig');
+			await writeToJSON(filePath, webConfig);
+			logger.info('Updated web-config.json')
 
-		await writeToJSON(filePath, webConfig);
+			return
+		}
+
+		const filePath = helper.getFilePath('config')
+		await writeToJSON(filePath, config);
+
+		logger.info('Updated config.json')
 	} catch (err) {
 		throw err;
 	}
@@ -555,14 +568,6 @@ async function updateConfig() {
 		}
 	} catch (err) {
 		logger.info(err)
-		throw err
-	}
-}*/
-
-/*function initDirs() {
-	try {
-		helper.ensureDir('LCProblemsJSON')
-	} catch (err) {
 		throw err
 	}
 }*/

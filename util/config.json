@@ -1,22 +1,23 @@
 {
-	"MAX_QUES_ID": 4029,
-	"ENABLE_LOGGER": true,
-	"SAVE_CHART": true,
-	"SHOW_CHART": false,
-	"dirPaths": {
-		"web": "util/web",
-		"logs": "util/logs",
-		"linkTables": "stats/link-tables",
-		"webBackup": "util/web/generated/backup",
-		"LCProblemsJSON": "util/web/generated/json",
-		"LCProblemsJSONRaw": "util/web/generated/json-raw"
-	},
-	"filePaths": {
-		"LCSolvedProblemList": "stats/lc-solved-problems-list.json",
-		"specialQuesIds": "util/special-ques-ids.json",
-		"LCBaseProblemList": "util/web/generated/lc-base-problem-list.json",
-		"LCProblemList": "util/web/generated/lc-problem-list.json",
-		"LCTopicTag": "util/web/generated/lc-topic-tag.json",
-		"webConfig": "util/web/web-config.json"
-	}
+    "MAX_QUES_ID": 4029,
+    "ENABLE_LOGGER_PY": true,
+    "SAVE_CHART": true,
+    "SHOW_CHART": false,
+    "dirPaths": {
+        "web": "util/web",
+        "logs": "util/logs",
+        "linkTables": "stats/link-tables",
+        "webBackup": "util/web/generated/backup",
+        "LCProblemsJSON": "util/web/generated/json",
+        "LCProblemsJSONRaw": "util/web/generated/json-raw"
+    },
+    "filePaths": {
+        "LCSolvedProblemList": "stats/lc-solved-problems-list.json",
+        "specialQuesIds": "util/special-ques-ids.json",
+        "LCBaseProblemList": "util/web/generated/lc-base-problem-list.json",
+        "LCProblemList": "util/web/generated/lc-problem-list.json",
+        "LCTopicTag": "util/web/generated/lc-topic-tag.json",
+        "config": "util/config.json",
+        "webConfig": "util/web/web-config.json"
+    }
 }

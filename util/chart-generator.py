@@ -9,7 +9,7 @@ with open('./util/config.json', 'r') as file:
     config_data = json.load(file)
 
 MAX_QUES_ID = config_data.get("MAX_QUES_ID", 0)
-ENABLE_LOGGER = config_data.get("ENABLE_LOGGER", True)
+ENABLE_LOGGER = config_data.get("ENABLE_LOGGER_PY", True)
 SAVE_CHART = config_data.get("SAVE_CHART", True)
 SHOW_CHART = config_data.get("SHOW_CHART", False)
 # ------------------------------ #

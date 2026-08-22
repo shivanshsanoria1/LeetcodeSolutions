@@ -1,7 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 
-const config = Object.freeze(require("./config.json"));
+const config = require("./config.json");
 
 const ROOT = path.resolve(__dirname, "..");
 
