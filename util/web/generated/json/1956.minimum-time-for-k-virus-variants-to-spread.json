@@ -1,0 +1,62 @@
+{
+    "quesId": 1956,
+    "title": "Minimum Time For K Virus Variants to Spread",
+    "titleSlug": "minimum-time-for-k-virus-variants-to-spread",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "1.4K",
+        "totalSubmission": "2.8K",
+        "totalAcceptedRaw": 1411,
+        "totalSubmissionRaw": 2849,
+        "acRate": "49.5%",
+        "acRateRaw": 49.526149526149524,
+        "likes": 32,
+        "dislikes": 7
+    },
+    "similarQuestions": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Geometry",
+            "slug": "geometry"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        },
+        {
+            "name": "Enumeration",
+            "slug": "enumeration"
+        },
+        {
+            "name": "Ordered Set",
+            "slug": "ordered-set"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2073,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "n is very small, how can we use that?",
+        "What shape is the region when two viruses intersect?"
+    ]
+}

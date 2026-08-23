@@ -1,0 +1,38 @@
+{
+    "quesId": 2010,
+    "title": "The Number of Seniors and Juniors to Join the Company II",
+    "titleSlug": "the-number-of-seniors-and-juniors-to-join-the-company-ii",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "7.6K",
+        "totalSubmission": "11.5K",
+        "totalAcceptedRaw": 7618,
+        "totalSubmissionRaw": 11527,
+        "acRate": "66.1%",
+        "acRateRaw": 66.08831439229634,
+        "likes": 42,
+        "dislikes": 10
+    },
+    "similarQuestions": [
+        "last-person-to-fit-in-the-bus",
+        "the-number-of-seniors-and-juniors-to-join-the-company"
+    ],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2158,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": []
+}

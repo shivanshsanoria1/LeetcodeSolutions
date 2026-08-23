@@ -1,0 +1,27 @@
+{
+    "questionId": "2092",
+    "questionFrontendId": "1939",
+    "title": "Users That Actively Request Confirmation Messages",
+    "titleSlug": "users-that-actively-request-confirmation-messages",
+    "difficulty": "Easy",
+    "likes": 67,
+    "dislikes": 49,
+    "acRate": 56.750257643421506,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"14.9K\", \"totalSubmission\": \"26.2K\", \"totalAcceptedRaw\": 14868, \"totalSubmissionRaw\": 26199, \"acRate\": \"56.8%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null
+}

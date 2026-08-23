@@ -168,5 +168,7 @@
     "articulation-point": "Articulation Point",
     "fermats-little-theorem": "Fermat's Little Theorem",
     "splay-tree": "Splay Tree",
-    "mixed-knapsack": "Mixed Knapsack"
+    "mixed-knapsack": "Mixed Knapsack",
+    "minimum-enclosing-circle": "Minimum Enclosing Circle",
+    "palindromic-tree": "Palindromic Tree"
 }

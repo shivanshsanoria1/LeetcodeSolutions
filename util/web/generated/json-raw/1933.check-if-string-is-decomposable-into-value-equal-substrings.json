@@ -1,0 +1,31 @@
+{
+    "questionId": "2070",
+    "questionFrontendId": "1933",
+    "title": "Check if String Is Decomposable Into Value-Equal Substrings",
+    "titleSlug": "check-if-string-is-decomposable-into-value-equal-substrings",
+    "difficulty": "Easy",
+    "likes": 61,
+    "dislikes": 15,
+    "acRate": 51.04264906213979,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"4.9K\", \"totalSubmission\": \"9.5K\", \"totalAcceptedRaw\": 4871, \"totalSubmissionRaw\": 9543, \"acRate\": \"51.0%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Keep looking for 3-equals, if you find a 3-equal, keep going. If you don't find a 3-equal, check if it is a 2-equal.",
+        "Make sure that it is the only 2-equal.",
+        "If it is neither a 3-equal nor a 2-equal, then it is impossible."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "codeSnippets": null
+}
