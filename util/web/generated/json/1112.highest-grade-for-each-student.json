@@ -1,0 +1,38 @@
+{
+    "quesId": 1112,
+    "title": "Highest Grade For Each Student",
+    "titleSlug": "highest-grade-for-each-student",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "80.1K",
+        "totalSubmission": "112.5K",
+        "totalAcceptedRaw": 80087,
+        "totalSubmissionRaw": 112484,
+        "acRate": "71.2%",
+        "acRateRaw": 71.1985704633548,
+        "likes": 316,
+        "dislikes": 15
+    },
+    "similarQuestions": [
+        "department-highest-salary"
+    ],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1214,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": []
+}

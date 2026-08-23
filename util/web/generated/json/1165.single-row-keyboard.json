@@ -1,0 +1,47 @@
+{
+    "quesId": 1165,
+    "title": "Single-Row Keyboard",
+    "titleSlug": "single-row-keyboard",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "95K",
+        "totalSubmission": "108.2K",
+        "totalAcceptedRaw": 95018,
+        "totalSubmissionRaw": 108190,
+        "acRate": "87.8%",
+        "acRateRaw": 87.82512246972918,
+        "likes": 546,
+        "dislikes": 23
+    },
+    "similarQuestions": [
+        "total-distance-to-type-a-string-using-one-finger"
+    ],
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1123,
+        "hasSolution": true,
+        "hasVideoSolution": true
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Can be the problem divided in parts, so solving each part and sum their solutions it should return the answer? Yes, you only need to divide the problem in finger jumps.",
+        "In each finger jump you need to move your finger from one character to another, you need to know its index.",
+        "Map each character to it's index.",
+        "Use a hash table to do that."
+    ]
+}

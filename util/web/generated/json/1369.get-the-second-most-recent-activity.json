@@ -1,0 +1,35 @@
+{
+    "quesId": 1369,
+    "title": "Get the Second Most Recent Activity",
+    "titleSlug": "get-the-second-most-recent-activity",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "26.9K",
+        "totalSubmission": "40K",
+        "totalAcceptedRaw": 26949,
+        "totalSubmissionRaw": 40009,
+        "acRate": "67.4%",
+        "acRateRaw": 67.35734459746557,
+        "likes": 169,
+        "dislikes": 13
+    },
+    "similarQuestions": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1504,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": []
+}

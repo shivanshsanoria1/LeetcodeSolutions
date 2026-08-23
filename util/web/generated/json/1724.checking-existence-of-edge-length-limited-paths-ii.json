@@ -1,0 +1,67 @@
+{
+    "quesId": 1724,
+    "title": "Checking Existence of Edge Length Limited Paths II",
+    "titleSlug": "checking-existence-of-edge-length-limited-paths-ii",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "4.4K",
+        "totalSubmission": "8.5K",
+        "totalAcceptedRaw": 4362,
+        "totalSubmissionRaw": 8525,
+        "acRate": "51.2%",
+        "acRateRaw": 51.167155425219946,
+        "likes": 126,
+        "dislikes": 10
+    },
+    "similarQuestions": [
+        "checking-existence-of-edge-length-limited-paths",
+        "number-of-good-paths",
+        "minimum-score-of-a-path-between-two-cities"
+    ],
+    "topicTags": [
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Union-Find",
+            "slug": "union-find"
+        },
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        },
+        {
+            "name": "Minimum Spanning Tree",
+            "slug": "minimum-spanning-tree"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1865,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Find the minimum spanning tree of the given graph.",
+        "Root the tree in an arbitrary node and calculate the maximum weight of the edge from each node to the chosen root.",
+        "To answer a query, find the lca between the two nodes, and find the maximum weight from each of the query nodes to their lca and compare it to the given limit."
+    ]
+}

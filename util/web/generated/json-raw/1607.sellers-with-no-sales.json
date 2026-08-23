@@ -1,0 +1,30 @@
+{
+    "questionId": "1749",
+    "questionFrontendId": "1607",
+    "title": "Sellers With No Sales",
+    "titleSlug": "sellers-with-no-sales",
+    "difficulty": "Easy",
+    "likes": 147,
+    "dislikes": 14,
+    "acRate": 54.31577723520521,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"46.7K\", \"totalSubmission\": \"86K\", \"totalAcceptedRaw\": 46717, \"totalSubmissionRaw\": 86010, \"acRate\": \"54.3%\"}",
+    "similarQuestions": "[{\"title\": \"Customer Who Visited but Did Not Make Any Transactions\", \"titleSlug\": \"customer-who-visited-but-did-not-make-any-transactions\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null
+}

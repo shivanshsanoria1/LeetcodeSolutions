@@ -1,0 +1,39 @@
+{
+    "quesId": 1083,
+    "title": "Sales Analysis II",
+    "titleSlug": "sales-analysis-ii",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "67.9K",
+        "totalSubmission": "135.4K",
+        "totalAcceptedRaw": 67938,
+        "totalSubmissionRaw": 135416,
+        "acRate": "50.2%",
+        "acRateRaw": 50.169846990015955,
+        "likes": 282,
+        "dislikes": 49
+    },
+    "similarQuestions": [
+        "sales-analysis-i",
+        "sales-analysis-iii"
+    ],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1173,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": []
+}

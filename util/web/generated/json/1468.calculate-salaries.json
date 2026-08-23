@@ -1,0 +1,35 @@
+{
+    "quesId": 1468,
+    "title": "Calculate Salaries",
+    "titleSlug": "calculate-salaries",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "29.6K",
+        "totalSubmission": "38.4K",
+        "totalAcceptedRaw": 29636,
+        "totalSubmissionRaw": 38397,
+        "acRate": "77.2%",
+        "acRateRaw": 77.18311326405708,
+        "likes": 134,
+        "dislikes": 26
+    },
+    "similarQuestions": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1608,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": []
+}

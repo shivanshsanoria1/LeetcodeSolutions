@@ -1,0 +1,35 @@
+{
+    "quesId": 1565,
+    "title": "Unique Orders and Customers Per Month",
+    "titleSlug": "unique-orders-and-customers-per-month",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "26.4K",
+        "totalSubmission": "32.3K",
+        "totalAcceptedRaw": 26436,
+        "totalSubmissionRaw": 32292,
+        "acRate": "81.9%",
+        "acRateRaw": 81.86547751765143,
+        "likes": 82,
+        "dislikes": 47
+    },
+    "similarQuestions": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1712,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": []
+}

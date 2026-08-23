@@ -1,0 +1,55 @@
+{
+    "quesId": 1273,
+    "title": "Delete Tree Nodes",
+    "titleSlug": "delete-tree-nodes",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "11.7K",
+        "totalSubmission": "19K",
+        "totalAcceptedRaw": 11711,
+        "totalSubmissionRaw": 19024,
+        "acRate": "61.6%",
+        "acRateRaw": 61.55908326324643,
+        "likes": 235,
+        "dislikes": 66
+    },
+    "similarQuestions": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "DP on Trees",
+            "slug": "dp-on-trees"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1201,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Traverse the tree using depth first search.",
+        "Find for every node the sum of values of its sub-tree.",
+        "Traverse the tree again from the root and return once you reach a node with zero sum of values in its sub-tree."
+    ]
+}

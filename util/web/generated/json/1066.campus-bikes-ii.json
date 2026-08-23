@@ -1,0 +1,80 @@
+{
+    "quesId": 1066,
+    "title": "Campus Bikes II",
+    "titleSlug": "campus-bikes-ii",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "57.8K",
+        "totalSubmission": "103.5K",
+        "totalAcceptedRaw": 57801,
+        "totalSubmissionRaw": 103511,
+        "acRate": "55.8%",
+        "acRateRaw": 55.84032923400925,
+        "likes": 969,
+        "dislikes": 90
+    },
+    "similarQuestions": [
+        "campus-bikes"
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Backtracking",
+            "slug": "backtracking"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        },
+        {
+            "name": "Bitmask",
+            "slug": "bitmask"
+        },
+        {
+            "name": "Hungarian Algorithm",
+            "slug": "hungarian-algorithm"
+        },
+        {
+            "name": "Bipartite Graph",
+            "slug": "bipartite-graph"
+        },
+        {
+            "name": "Successive Shortest Path Algorithm",
+            "slug": "successive-shortest-path-algorithm"
+        },
+        {
+            "name": "Matching (Graph)",
+            "slug": "matching-graph"
+        },
+        {
+            "name": "Minimum-Cost Flow",
+            "slug": "minimum-cost-flow"
+        },
+        {
+            "name": "Flow Network",
+            "slug": "flow-network"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1067,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Model the problem with a dp(pos, mask) where pos represents the current bike to be assigned and mask the set of available workers."
+    ]
+}

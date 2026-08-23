@@ -1,0 +1,43 @@
+{
+    "quesId": 1826,
+    "title": "Faulty Sensor",
+    "titleSlug": "faulty-sensor",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "7.1K",
+        "totalSubmission": "14.1K",
+        "totalAcceptedRaw": 7140,
+        "totalSubmissionRaw": 14126,
+        "acRate": "50.5%",
+        "acRateRaw": 50.545094152626355,
+        "likes": 72,
+        "dislikes": 85
+    },
+    "similarQuestions": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1980,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Check for a common prefix of the two arrays.",
+        "After this common prefix, there should be one array similar to the other but shifted by one.",
+        "If both arrays can be shifted, return -1."
+    ]
+}

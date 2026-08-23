@@ -1,0 +1,36 @@
+{
+    "quesId": 1159,
+    "title": "Market Analysis II",
+    "titleSlug": "market-analysis-ii",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "24.7K",
+        "totalSubmission": "42.8K",
+        "totalAcceptedRaw": 24723,
+        "totalSubmissionRaw": 42760,
+        "acRate": "57.8%",
+        "acRateRaw": 57.81805425631431,
+        "likes": 124,
+        "dislikes": 81
+    },
+    "similarQuestions": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1269,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": []
+}

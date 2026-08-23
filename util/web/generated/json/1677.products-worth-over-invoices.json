@@ -1,0 +1,35 @@
+{
+    "quesId": 1677,
+    "title": "Product's Worth Over Invoices",
+    "titleSlug": "products-worth-over-invoices",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "20.8K",
+        "totalSubmission": "53.8K",
+        "totalAcceptedRaw": 20798,
+        "totalSubmissionRaw": 53809,
+        "acRate": "38.7%",
+        "acRateRaw": 38.65152669627757,
+        "likes": 40,
+        "dislikes": 136
+    },
+    "similarQuestions": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1821,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": []
+}

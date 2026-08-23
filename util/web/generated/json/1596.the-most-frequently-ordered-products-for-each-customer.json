@@ -1,0 +1,37 @@
+{
+    "quesId": 1596,
+    "title": "The Most Frequently Ordered Products for Each Customer",
+    "titleSlug": "the-most-frequently-ordered-products-for-each-customer",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "46.8K",
+        "totalSubmission": "60.2K",
+        "totalAcceptedRaw": 46806,
+        "totalSubmissionRaw": 60243,
+        "acRate": "77.7%",
+        "acRateRaw": 77.69533389771426,
+        "likes": 262,
+        "dislikes": 17
+    },
+    "similarQuestions": [
+        "the-most-recent-orders-for-each-product"
+    ],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1735,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": []
+}

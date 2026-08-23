@@ -1,0 +1,38 @@
+{
+    "quesId": 1076,
+    "title": "Project Employees II",
+    "titleSlug": "project-employees-ii",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "67.6K",
+        "totalSubmission": "134K",
+        "totalAcceptedRaw": 67640,
+        "totalSubmissionRaw": 133984,
+        "acRate": "50.5%",
+        "acRateRaw": 50.483639837592555,
+        "likes": 207,
+        "dislikes": 63
+    },
+    "similarQuestions": [
+        "project-employees-i",
+        "project-employees-iii"
+    ],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1162,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": []
+}

@@ -1,0 +1,38 @@
+{
+    "quesId": 1892,
+    "title": "Page Recommendations II",
+    "titleSlug": "page-recommendations-ii",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "10.9K",
+        "totalSubmission": "23.6K",
+        "totalAcceptedRaw": 10860,
+        "totalSubmissionRaw": 23628,
+        "acRate": "46.0%",
+        "acRateRaw": 45.962417470797355,
+        "likes": 93,
+        "dislikes": 24
+    },
+    "similarQuestions": [
+        "page-recommendations",
+        "strong-friendship"
+    ],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2046,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": []
+}

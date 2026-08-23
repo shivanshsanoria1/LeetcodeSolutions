@@ -1,0 +1,35 @@
+{
+    "quesId": 1543,
+    "title": "Fix Product Name Format",
+    "titleSlug": "fix-product-name-format",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "24.3K",
+        "totalSubmission": "41.4K",
+        "totalAcceptedRaw": 24324,
+        "totalSubmissionRaw": 41383,
+        "acRate": "58.8%",
+        "acRateRaw": 58.77733478313398,
+        "likes": 93,
+        "dislikes": 45
+    },
+    "similarQuestions": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1686,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": []
+}

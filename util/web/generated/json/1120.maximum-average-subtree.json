@@ -1,0 +1,51 @@
+{
+    "quesId": 1120,
+    "title": "Maximum Average Subtree",
+    "titleSlug": "maximum-average-subtree",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "74.6K",
+        "totalSubmission": "111.4K",
+        "totalAcceptedRaw": 74599,
+        "totalSubmissionRaw": 111380,
+        "acRate": "67.0%",
+        "acRateRaw": 66.97701562219429,
+        "likes": 859,
+        "dislikes": 36
+    },
+    "similarQuestions": [
+        "count-nodes-equal-to-sum-of-descendants",
+        "count-nodes-equal-to-average-of-subtree"
+    ],
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1091,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Can you find the sum of values and the number of nodes for every sub-tree ?",
+        "Can you find the sum of values and the number of nodes for a sub-tree given the sum of values and the number of nodes of it's left and right sub-trees ?",
+        "Use depth first search to recursively find the solution for the children of a node then use their solutions to compute the current node's solution."
+    ]
+}

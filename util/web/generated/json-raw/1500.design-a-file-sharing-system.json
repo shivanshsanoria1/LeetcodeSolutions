@@ -1,0 +1,46 @@
+{
+    "questionId": "1640",
+    "questionFrontendId": "1500",
+    "title": "Design a File Sharing System",
+    "titleSlug": "design-a-file-sharing-system",
+    "difficulty": "Medium",
+    "likes": 56,
+    "dislikes": 132,
+    "acRate": 41.79323286225298,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"7.1K\", \"totalSubmission\": \"17.1K\", \"totalAcceptedRaw\": 7127, \"totalSubmissionRaw\": 17053, \"acRate\": \"41.8%\"}",
+    "similarQuestions": "[{\"title\": \"Design Twitter\", \"titleSlug\": \"design-twitter\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Try to solve it by keeping for each file chunk, the users who have this chunk.",
+        "Try to solve it by keeping all the users in the system with their owned chunks, and when you request a chunk, check all users for it."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        },
+        {
+            "name": "Data Stream",
+            "slug": "data-stream"
+        }
+    ],
+    "codeSnippets": null
+}

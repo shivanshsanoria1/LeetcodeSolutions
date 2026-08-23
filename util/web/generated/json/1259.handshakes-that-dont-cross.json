@@ -1,0 +1,44 @@
+{
+    "quesId": 1259,
+    "title": "Handshakes That Don't Cross",
+    "titleSlug": "handshakes-that-dont-cross",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "15.6K",
+        "totalSubmission": "25.5K",
+        "totalAcceptedRaw": 15637,
+        "totalSubmissionRaw": 25488,
+        "acRate": "61.4%",
+        "acRateRaw": 61.35043942247332,
+        "likes": 259,
+        "dislikes": 17
+    },
+    "similarQuestions": [],
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1213,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Use dynamic programming.",
+        "Let dp[n] be the number of ways that n people can handshake.",
+        "Then fix a person as a pivot and turn for every other person who will have a handshake, the answer is the sum of the products of the new two subproblems."
+    ]
+}

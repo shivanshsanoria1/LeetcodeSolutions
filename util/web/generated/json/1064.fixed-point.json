@@ -1,0 +1,42 @@
+{
+    "quesId": 1064,
+    "title": "Fixed Point",
+    "titleSlug": "fixed-point",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "52.3K",
+        "totalSubmission": "81.4K",
+        "totalAcceptedRaw": 52321,
+        "totalSubmissionRaw": 81393,
+        "acRate": "64.3%",
+        "acRateRaw": 64.28194070743184,
+        "likes": 450,
+        "dislikes": 67
+    },
+    "similarQuestions": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1066,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Loop over the array and check the first index i such A[i] == i"
+    ]
+}

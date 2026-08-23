@@ -1,0 +1,63 @@
+{
+    "quesId": 1650,
+    "title": "Lowest Common Ancestor of a Binary Tree III",
+    "titleSlug": "lowest-common-ancestor-of-a-binary-tree-iii",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "409.9K",
+        "totalSubmission": "493.7K",
+        "totalAcceptedRaw": 409892,
+        "totalSubmissionRaw": 493742,
+        "acRate": "83.0%",
+        "acRateRaw": 83.01744635862455,
+        "likes": 1540,
+        "dislikes": 61
+    },
+    "similarQuestions": [
+        "lowest-common-ancestor-of-a-binary-search-tree",
+        "lowest-common-ancestor-of-a-binary-tree",
+        "lowest-common-ancestor-of-a-binary-tree-ii",
+        "lowest-common-ancestor-of-a-binary-tree-iv"
+    ],
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        },
+        {
+            "name": "Binary Lifting",
+            "slug": "binary-lifting"
+        },
+        {
+            "name": "Lowest Common Ancestor",
+            "slug": "lowest-common-ancestor"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1790,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Store the path from p to the root.",
+        "Traverse the path from q to the root, the first common point of the two paths is the LCA."
+    ]
+}

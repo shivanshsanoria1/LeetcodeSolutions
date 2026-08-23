@@ -1,0 +1,42 @@
+{
+    "quesId": 1243,
+    "title": "Array Transformation",
+    "titleSlug": "array-transformation",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "16.9K",
+        "totalSubmission": "31.3K",
+        "totalAcceptedRaw": 16855,
+        "totalSubmissionRaw": 31288,
+        "acRate": "53.9%",
+        "acRateRaw": 53.870493479928406,
+        "likes": 155,
+        "dislikes": 74
+    },
+    "similarQuestions": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1175,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Try to simulate the process.",
+        "For every iteration, find the new array using the old one and the given rules."
+    ]
+}

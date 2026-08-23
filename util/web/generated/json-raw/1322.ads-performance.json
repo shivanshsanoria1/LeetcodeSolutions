@@ -1,0 +1,30 @@
+{
+    "questionId": "1453",
+    "questionFrontendId": "1322",
+    "title": "Ads Performance",
+    "titleSlug": "ads-performance",
+    "difficulty": "Easy",
+    "likes": 273,
+    "dislikes": 68,
+    "acRate": 58.38958847202389,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"54K\", \"totalSubmission\": \"92.4K\", \"totalAcceptedRaw\": 53972, \"totalSubmissionRaw\": 92434, \"acRate\": \"58.4%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null
+}

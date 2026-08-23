@@ -1,0 +1,27 @@
+{
+    "questionId": "1932",
+    "questionFrontendId": "1783",
+    "title": "Grand Slam Titles",
+    "titleSlug": "grand-slam-titles",
+    "difficulty": "Medium",
+    "likes": 246,
+    "dislikes": 10,
+    "acRate": 82.97706865263605,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"35.2K\", \"totalSubmission\": \"42.4K\", \"totalAcceptedRaw\": 35208, \"totalSubmissionRaw\": 42431, \"acRate\": \"83.0%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null
+}

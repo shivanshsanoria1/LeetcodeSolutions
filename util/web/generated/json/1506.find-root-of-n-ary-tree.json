@@ -1,0 +1,52 @@
+{
+    "quesId": 1506,
+    "title": "Find Root of N-Ary Tree",
+    "titleSlug": "find-root-of-n-ary-tree",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "42.3K",
+        "totalSubmission": "53.8K",
+        "totalAcceptedRaw": 42263,
+        "totalSubmissionRaw": 53800,
+        "acRate": "78.6%",
+        "acRateRaw": 78.55576208178438,
+        "likes": 493,
+        "dislikes": 212
+    },
+    "similarQuestions": [
+        "move-sub-tree-of-n-ary-tree"
+    ],
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1650,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Node with indegree 0 is the root"
+    ]
+}

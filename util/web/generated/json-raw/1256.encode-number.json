@@ -1,0 +1,38 @@
+{
+    "questionId": "1189",
+    "questionFrontendId": "1256",
+    "title": "Encode Number",
+    "titleSlug": "encode-number",
+    "difficulty": "Medium",
+    "likes": 82,
+    "dislikes": 259,
+    "acRate": 70.35848905285107,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"8.8K\", \"totalSubmission\": \"12.5K\", \"totalAcceptedRaw\": 8773, \"totalSubmissionRaw\": 12469, \"acRate\": \"70.4%\"}",
+    "similarQuestions": "[{\"title\": \"Convert to Base -2\", \"titleSlug\": \"convert-to-base-2\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Try to find the number of binary digits returned by the function.",
+        "The pattern is to start counting from zero after determining the number of binary digits."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        }
+    ],
+    "codeSnippets": null
+}

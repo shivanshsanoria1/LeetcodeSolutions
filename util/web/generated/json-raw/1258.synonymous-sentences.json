@@ -1,0 +1,51 @@
+{
+    "questionId": "1191",
+    "questionFrontendId": "1258",
+    "title": "Synonymous Sentences",
+    "titleSlug": "synonymous-sentences",
+    "difficulty": "Medium",
+    "likes": 377,
+    "dislikes": 171,
+    "acRate": 57.491190713976145,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"30.5K\", \"totalSubmission\": \"53.1K\", \"totalAcceptedRaw\": 30510, \"totalSubmissionRaw\": 53069, \"acRate\": \"57.5%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Find all synonymous groups of words.",
+        "Use union-find data structure.",
+        "By backtracking, generate all possible statements."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Backtracking",
+            "slug": "backtracking"
+        },
+        {
+            "name": "Sort",
+            "slug": "sort"
+        },
+        {
+            "name": "Union-Find",
+            "slug": "union-find"
+        }
+    ],
+    "codeSnippets": null
+}

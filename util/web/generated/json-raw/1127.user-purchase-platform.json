@@ -1,0 +1,27 @@
+{
+    "questionId": "1226",
+    "questionFrontendId": "1127",
+    "title": "User Purchase Platform",
+    "titleSlug": "user-purchase-platform",
+    "difficulty": "Hard",
+    "likes": 188,
+    "dislikes": 138,
+    "acRate": 46.25868883739948,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"20.4K\", \"totalSubmission\": \"44K\", \"totalAcceptedRaw\": 20364, \"totalSubmissionRaw\": 44022, \"acRate\": \"46.3%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null
+}

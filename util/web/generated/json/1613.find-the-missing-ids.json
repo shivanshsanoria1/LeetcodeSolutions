@@ -1,0 +1,39 @@
+{
+    "quesId": 1613,
+    "title": "Find the Missing IDs",
+    "titleSlug": "find-the-missing-ids",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "23.8K",
+        "totalSubmission": "32.6K",
+        "totalAcceptedRaw": 23764,
+        "totalSubmissionRaw": 32620,
+        "acRate": "72.9%",
+        "acRateRaw": 72.8510116492949,
+        "likes": 238,
+        "dislikes": 31
+    },
+    "similarQuestions": [
+        "report-contiguous-dates",
+        "find-the-start-and-end-number-of-continuous-ranges",
+        "number-of-transactions-per-visit"
+    ],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1759,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": []
+}

@@ -1,0 +1,32 @@
+{
+    "questionId": "1069",
+    "questionFrontendId": "1056",
+    "title": "Confusing Number",
+    "titleSlug": "confusing-number",
+    "difficulty": "Easy",
+    "likes": 333,
+    "dislikes": 186,
+    "acRate": 49.86001331580655,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": true,
+    "stats": "{\"totalAccepted\": \"58.4K\", \"totalSubmission\": \"117.2K\", \"totalAcceptedRaw\": 58411, \"totalSubmissionRaw\": 117150, \"acRate\": \"49.9%\"}",
+    "similarQuestions": "[{\"title\": \"Strobogrammatic Number\", \"titleSlug\": \"strobogrammatic-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Confusing Number II\", \"titleSlug\": \"confusing-number-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Reverse each digit with their corresponding new digit if an invalid digit is found the return -1. After reversing the digits just compare the reversed number with the original number."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        }
+    ],
+    "codeSnippets": null
+}

@@ -1,0 +1,38 @@
+{
+    "quesId": 1607,
+    "title": "Sellers With No Sales",
+    "titleSlug": "sellers-with-no-sales",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "46.7K",
+        "totalSubmission": "86K",
+        "totalAcceptedRaw": 46717,
+        "totalSubmissionRaw": 86010,
+        "acRate": "54.3%",
+        "acRateRaw": 54.31577723520521,
+        "likes": 147,
+        "dislikes": 14
+    },
+    "similarQuestions": [
+        "customer-who-visited-but-did-not-make-any-transactions"
+    ],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1749,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": []
+}

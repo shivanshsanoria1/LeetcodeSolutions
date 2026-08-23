@@ -12,7 +12,7 @@ const API_DELAY_MS = webConfig.API_DELAY_MS ?? 250 // Default: 250ms
 const FORCE_REFRESH_BASE_PROBLEM_LIST = webConfig.FORCE_REFRESH_BASE_PROBLEM_LIST ?? false
 const FORCE_REFRESH_PROBLEM_LIST = webConfig.FORCE_REFRESH_PROBLEM_LIST ?? false
 const FETCH_NEXT_COUNT = webConfig.FETCH_NEXT_COUNT ?? 5
-const API_TIMEOUT_MS = webConfig.API_TIMEOUT_MS ?? 8000 // Default: 8 sec 
+const API_TIMEOUT_MS = webConfig.API_TIMEOUT_MS ?? 10000 // Default: 10 sec 
 
 // provide delay in ms
 const sleep = (time_ms = API_DELAY_MS) => new Promise((resolve) => setTimeout(resolve, time_ms));
@@ -178,7 +178,7 @@ function parseProblemJSON(problem, baseProblems) {
 		parsedProblemObj.solution.content = problem.solution?.content
 		parsedProblemObj.content = problem.content
 		parsedProblemObj.hints = problem.hints
-		parsedProblemObj.codeSnippets = problem.codeSnippets
+		// parsedProblemObj.codeSnippets = problem.codeSnippets
 
 		return parsedProblemObj
 	} catch (err) {
@@ -316,13 +316,8 @@ async function fetchProblem(titleSlug, baseProblems) {
 
 	} catch (err) {
 		if (err.name === "AbortError") {
-			const timeoutError = new Error(`API timeout: LeetCode API did not respond within ${API_TIMEOUT_MS} ms for "${titleSlug}"`)
-			timeoutError.code = "API_TIMEOUT"
-
-			logger.error(timeoutError)
-			throw timeoutError
+			logger.error(`API timeout: LeetCode API did not respond within ${API_TIMEOUT_MS} ms for "${titleSlug}"`)
 		}
-
 
 		logger.info(err);
 		if (fetchAPISuccess === false) {
@@ -384,6 +379,9 @@ async function fetchProblems(baseProblems) {
 
 		await writeToJSON(filePath, problems)
 
+		const filePathJSONMin = helper.getFilePath('LCProblemListMin')
+		await writeToJSON(filePathJSONMin, problems, true)
+
 		//switch OFF the FORCE REFRESH flag
 		if (webConfig.FORCE_REFRESH_PROBLEM_LIST) {
 			webConfig.FORCE_REFRESH_PROBLEM_LIST = false
@@ -443,7 +441,7 @@ async function fetchStatsFromLC() {
 
 		const endTime = Date.now();
 		logger.time(`${scriptName} completed.`)
-		logger.time(`Time Taken to run ${scriptName} = ${endTime - startTime} ms`);
+		logger.time(`Time Taken to run ${scriptName} = ${((endTime - startTime) / 1000).toFixed(2)} s`);
 
 	} catch (err) {
 		console.error(err)
@@ -477,7 +475,7 @@ async function readFromJSON(filePath, defaultValue = []) {
 	}
 }
 
-async function writeToJSON(filePath, data = {}) {
+async function writeToJSON(filePath, data = {}, minifiedFlag = false) {
 	// try {
 	// 	await fs.access(filePath);
 	// } catch (err) {
@@ -492,7 +490,11 @@ async function writeToJSON(filePath, data = {}) {
 	// }
 
 	try {
-		await fs.writeFile(filePath, JSON.stringify(data, null, 4), 'utf8');
+		if (minifiedFlag) {
+			await fs.writeFile(filePath, JSON.stringify(data), 'utf8');
+		} else {
+			await fs.writeFile(filePath, JSON.stringify(data, null, 4), 'utf8');
+		}
 	} catch (err) {
 		throw err;
 	}

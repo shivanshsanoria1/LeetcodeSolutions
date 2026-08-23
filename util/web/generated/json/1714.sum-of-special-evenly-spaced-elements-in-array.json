@@ -1,0 +1,47 @@
+{
+    "quesId": 1714,
+    "title": "Sum Of Special Evenly-Spaced Elements In Array",
+    "titleSlug": "sum-of-special-evenly-spaced-elements-in-array",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "1.8K",
+        "totalSubmission": "3.6K",
+        "totalAcceptedRaw": 1769,
+        "totalSubmissionRaw": 3557,
+        "acRate": "49.7%",
+        "acRateRaw": 49.732921000843405,
+        "likes": 34,
+        "dislikes": 27
+    },
+    "similarQuestions": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Sqrt Decomposition",
+            "slug": "sqrt-decomposition"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1809,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Think if y cannot be small. You can solve a query in O(n/y), so if y is large enough, it won't be a problem.",
+        "If y is small, like less than B, you can preprocess the answers for all such ys in O(n * B), then answer each such query in O(1).",
+        "As you might have already guessed, the optimal value for B is ~sqrt(n)."
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "questionId": "1672",
+    "questionFrontendId": "1533",
+    "title": "Find the Index of the Large Integer",
+    "titleSlug": "find-the-index-of-the-large-integer",
+    "difficulty": "Medium",
+    "likes": 265,
+    "dislikes": 36,
+    "acRate": 56.642508414955884,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"18.7K\", \"totalSubmission\": \"33K\", \"totalAcceptedRaw\": 18679, \"totalSubmissionRaw\": 32977, \"acRate\": \"56.6%\"}",
+    "similarQuestions": "[{\"title\": \"Search in a Sorted Array of Unknown Size\", \"titleSlug\": \"search-in-a-sorted-array-of-unknown-size\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Do a binary search over the array, exclude the half of the array that doesn't contain the largest number.",
+        "Keep shrinking the search space till it reaches the size of 2 where you can easily determine which one has the largest integer."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Interactive",
+            "slug": "interactive"
+        }
+    ],
+    "codeSnippets": null
+}

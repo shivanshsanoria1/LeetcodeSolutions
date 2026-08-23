@@ -1,0 +1,48 @@
+{
+    "questionId": "1075",
+    "questionFrontendId": "1065",
+    "title": "Index Pairs of a String",
+    "titleSlug": "index-pairs-of-a-string",
+    "difficulty": "Easy",
+    "likes": 385,
+    "dislikes": 109,
+    "acRate": 68.64559183585033,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"31.7K\", \"totalSubmission\": \"46.2K\", \"totalAcceptedRaw\": 31682, \"totalSubmissionRaw\": 46153, \"acRate\": \"68.6%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "For each string of the set, look for matches and store those matches indices."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Trie",
+            "slug": "trie"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Aho–Corasick Algorithm",
+            "slug": "aho-corasick-algorithm"
+        }
+    ],
+    "codeSnippets": null
+}

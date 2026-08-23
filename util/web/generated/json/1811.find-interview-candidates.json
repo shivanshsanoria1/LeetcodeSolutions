@@ -1,0 +1,35 @@
+{
+    "quesId": 1811,
+    "title": "Find Interview Candidates",
+    "titleSlug": "find-interview-candidates",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "20K",
+        "totalSubmission": "33K",
+        "totalAcceptedRaw": 20034,
+        "totalSubmissionRaw": 32963,
+        "acRate": "60.8%",
+        "acRateRaw": 60.77723508175833,
+        "likes": 212,
+        "dislikes": 30
+    },
+    "similarQuestions": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1964,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": []
+}

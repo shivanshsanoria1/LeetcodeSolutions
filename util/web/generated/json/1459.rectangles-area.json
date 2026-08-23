@@ -1,0 +1,35 @@
+{
+    "quesId": 1459,
+    "title": "Rectangles Area",
+    "titleSlug": "rectangles-area",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "20.4K",
+        "totalSubmission": "29.7K",
+        "totalAcceptedRaw": 20434,
+        "totalSubmissionRaw": 29712,
+        "acRate": "68.8%",
+        "acRateRaw": 68.77355950457728,
+        "likes": 100,
+        "dislikes": 162
+    },
+    "similarQuestions": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1607,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": []
+}

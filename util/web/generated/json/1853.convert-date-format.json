@@ -1,0 +1,35 @@
+{
+    "quesId": 1853,
+    "title": "Convert Date Format",
+    "titleSlug": "convert-date-format",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "16.4K",
+        "totalSubmission": "19.4K",
+        "totalAcceptedRaw": 16379,
+        "totalSubmissionRaw": 19363,
+        "acRate": "84.6%",
+        "acRateRaw": 84.58916490213294,
+        "likes": 69,
+        "dislikes": 42
+    },
+    "similarQuestions": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 2004,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": []
+}

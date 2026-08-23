@@ -1,0 +1,48 @@
+{
+    "quesId": 1244,
+    "title": "Design A Leaderboard",
+    "titleSlug": "design-a-leaderboard",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "102.2K",
+        "totalSubmission": "150.3K",
+        "totalAcceptedRaw": 102237,
+        "totalSubmissionRaw": 150267,
+        "acRate": "68.0%",
+        "acRateRaw": 68.03689432809598,
+        "likes": 825,
+        "dislikes": 99
+    },
+    "similarQuestions": [],
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1176,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "What data structure can we use to keep the players' data?",
+        "Keep a map (dictionary) of player scores.",
+        "For each top(K) function call, find the maximum K scores and add them."
+    ]
+}

@@ -16,6 +16,7 @@
         "specialQuesIds": "util/special-ques-ids.json",
         "LCBaseProblemList": "util/web/generated/lc-base-problem-list.json",
         "LCProblemList": "util/web/generated/lc-problem-list.json",
+        "LCProblemListMin": "util/web/generated/lc-problem-list-min.json",
         "LCTopicTag": "util/web/generated/lc-topic-tag.json",
         "config": "util/config.json",
         "webConfig": "util/web/web-config.json"

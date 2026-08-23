@@ -1,0 +1,27 @@
+{
+    "questionId": "2046",
+    "questionFrontendId": "1892",
+    "title": "Page Recommendations II",
+    "titleSlug": "page-recommendations-ii",
+    "difficulty": "Hard",
+    "likes": 93,
+    "dislikes": 24,
+    "acRate": 45.962417470797355,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"10.9K\", \"totalSubmission\": \"23.6K\", \"totalAcceptedRaw\": 10860, \"totalSubmissionRaw\": 23628, \"acRate\": \"46.0%\"}",
+    "similarQuestions": "[{\"title\": \"Page Recommendations\", \"titleSlug\": \"page-recommendations\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Strong Friendship\", \"titleSlug\": \"strong-friendship\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null
+}

@@ -1,0 +1,48 @@
+{
+    "quesId": 1196,
+    "title": "How Many Apples Can You Put into the Basket",
+    "titleSlug": "how-many-apples-can-you-put-into-the-basket",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "53.6K",
+        "totalSubmission": "79.8K",
+        "totalAcceptedRaw": 53628,
+        "totalSubmissionRaw": 79843,
+        "acRate": "67.2%",
+        "acRateRaw": 67.16681487419059,
+        "likes": 230,
+        "dislikes": 17
+    },
+    "similarQuestions": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Greedy",
+            "slug": "greedy"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1141,
+        "hasSolution": true,
+        "hasVideoSolution": true
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "What if you think in a greedy approach?",
+        "The best apple to take in one step is the one with the smallest weight.",
+        "Sort the array and take apples with smaller weight first."
+    ]
+}

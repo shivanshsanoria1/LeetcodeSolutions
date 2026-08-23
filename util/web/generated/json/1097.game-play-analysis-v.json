@@ -1,0 +1,38 @@
+{
+    "quesId": 1097,
+    "title": "Game Play Analysis V",
+    "titleSlug": "game-play-analysis-v",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "29.9K",
+        "totalSubmission": "59.3K",
+        "totalAcceptedRaw": 29857,
+        "totalSubmissionRaw": 59283,
+        "acRate": "50.4%",
+        "acRateRaw": 50.363510618558436,
+        "likes": 193,
+        "dislikes": 37
+    },
+    "similarQuestions": [
+        "game-play-analysis-iv"
+    ],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1193,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": []
+}

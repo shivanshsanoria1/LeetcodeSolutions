@@ -1,0 +1,56 @@
+{
+    "quesId": 1429,
+    "title": "First Unique Number",
+    "titleSlug": "first-unique-number",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "117.9K",
+        "totalSubmission": "203.7K",
+        "totalAcceptedRaw": 117930,
+        "totalSubmissionRaw": 203682,
+        "acRate": "57.9%",
+        "acRateRaw": 57.89907797448964,
+        "likes": 607,
+        "dislikes": 36
+    },
+    "similarQuestions": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Queue",
+            "slug": "queue"
+        },
+        {
+            "name": "Data Stream",
+            "slug": "data-stream"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 1366,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Use doubly Linked list with hashmap of pointers to linked list nodes. add unique number to the linked list. When add is called check if the added number is unique then it have to be added to the linked list and if it is repeated remove it from the linked list if exists. When showFirstUnique is called retrieve the head of the linked list.",
+        "Use queue and check that first element of the queue is always unique.",
+        "Use set or heap to make running time of each function O(logn)."
+    ]
+}
