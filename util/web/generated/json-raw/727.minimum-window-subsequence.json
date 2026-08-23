@@ -1,0 +1,37 @@
+{
+    "questionId": "727",
+    "questionFrontendId": "727",
+    "title": "Minimum Window Subsequence",
+    "titleSlug": "minimum-window-subsequence",
+    "difficulty": "Hard",
+    "likes": 1490,
+    "dislikes": 95,
+    "acRate": 43.855815055688666,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"99.9K\", \"totalSubmission\": \"227.9K\", \"totalAcceptedRaw\": 99936, \"totalSubmissionRaw\": 227874, \"acRate\": \"43.9%\"}",
+    "similarQuestions": "[{\"title\": \"Minimum Window Substring\", \"titleSlug\": \"minimum-window-substring\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Longest Continuous Increasing Subsequence\", \"titleSlug\": \"longest-continuous-increasing-subsequence\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Let dp[j][e] = s be the largest index for which S[s:e+1] has T[:j] as a substring."
+    ],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Sliding Window",
+            "slug": "sliding-window"
+        }
+    ],
+    "codeSnippets": null
+}

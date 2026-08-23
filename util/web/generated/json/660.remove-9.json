@@ -1,0 +1,37 @@
+{
+    "quesId": 660,
+    "title": "Remove 9",
+    "titleSlug": "remove-9",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "11.4K",
+        "totalSubmission": "19.8K",
+        "totalAcceptedRaw": 11394,
+        "totalSubmissionRaw": 19822,
+        "acRate": "57.5%",
+        "acRateRaw": 57.481586116436276,
+        "likes": 167,
+        "dislikes": 204
+    },
+    "similarQuestions": [],
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 660,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}

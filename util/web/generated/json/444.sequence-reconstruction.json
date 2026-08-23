@@ -1,0 +1,50 @@
+{
+    "quesId": 444,
+    "title": "Sequence Reconstruction",
+    "titleSlug": "sequence-reconstruction",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "66.9K",
+        "totalSubmission": "215.1K",
+        "totalAcceptedRaw": 66907,
+        "totalSubmissionRaw": 215116,
+        "acRate": "31.1%",
+        "acRateRaw": 31.10275386303204,
+        "likes": 623,
+        "dislikes": 1550
+    },
+    "similarQuestions": [
+        "course-schedule-ii"
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        },
+        {
+            "name": "Topological Sort",
+            "slug": "topological-sort"
+        },
+        {
+            "name": "Directed Acyclic Graph",
+            "slug": "directed-acyclic-graph"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 444,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}

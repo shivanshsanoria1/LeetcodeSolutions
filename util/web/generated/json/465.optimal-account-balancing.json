@@ -1,0 +1,53 @@
+{
+    "quesId": 465,
+    "title": "Optimal Account Balancing",
+    "titleSlug": "optimal-account-balancing",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "118.1K",
+        "totalSubmission": "233.3K",
+        "totalAcceptedRaw": 118133,
+        "totalSubmissionRaw": 233291,
+        "acRate": "50.6%",
+        "acRateRaw": 50.63761568170225,
+        "likes": 1535,
+        "dislikes": 164
+    },
+    "similarQuestions": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Backtracking",
+            "slug": "backtracking"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        },
+        {
+            "name": "Bitmask",
+            "slug": "bitmask"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 465,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}

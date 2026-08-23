@@ -1,0 +1,48 @@
+{
+    "quesId": 702,
+    "title": "Search in a Sorted Array of Unknown Size",
+    "titleSlug": "search-in-a-sorted-array-of-unknown-size",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "114.6K",
+        "totalSubmission": "156.6K",
+        "totalAcceptedRaw": 114576,
+        "totalSubmissionRaw": 156627,
+        "acRate": "73.2%",
+        "acRateRaw": 73.15213852017851,
+        "likes": 944,
+        "dislikes": 51
+    },
+    "similarQuestions": [
+        "binary-search",
+        "find-the-index-of-the-large-integer"
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Interactive",
+            "slug": "interactive"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 786,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}

@@ -1,0 +1,55 @@
+{
+    "quesId": 379,
+    "title": "Design Phone Directory",
+    "titleSlug": "design-phone-directory",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "77.8K",
+        "totalSubmission": "146.2K",
+        "totalAcceptedRaw": 77792,
+        "totalSubmissionRaw": 146155,
+        "acRate": "53.2%",
+        "acRateRaw": 53.2260050904513,
+        "likes": 369,
+        "dislikes": 486
+    },
+    "similarQuestions": [
+        "seat-reservation-manager"
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Linked List",
+            "slug": "linked-list"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Queue",
+            "slug": "queue"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 379,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}

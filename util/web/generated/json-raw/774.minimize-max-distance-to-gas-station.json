@@ -1,0 +1,36 @@
+{
+    "questionId": "788",
+    "questionFrontendId": "774",
+    "title": "Minimize Max Distance to Gas Station",
+    "titleSlug": "minimize-max-distance-to-gas-station",
+    "difficulty": "Hard",
+    "likes": 716,
+    "dislikes": 104,
+    "acRate": 54.0532121263611,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"38.2K\", \"totalSubmission\": \"70.6K\", \"totalAcceptedRaw\": 38174, \"totalSubmissionRaw\": 70623, \"acRate\": \"54.1%\"}",
+    "similarQuestions": "[{\"title\": \"Koko Eating Bananas\", \"titleSlug\": \"koko-eating-bananas\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Use a binary search.  We'll binary search the monotone function \"possible(D) = can we use K or less gas stations to ensure each adjacent distance between gas stations is at most D?\""
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        }
+    ],
+    "codeSnippets": null
+}

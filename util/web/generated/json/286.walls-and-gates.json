@@ -1,0 +1,54 @@
+{
+    "quesId": 286,
+    "title": "Walls and Gates",
+    "titleSlug": "walls-and-gates",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "435.7K",
+        "totalSubmission": "679.2K",
+        "totalAcceptedRaw": 435696,
+        "totalSubmissionRaw": 679220,
+        "acRate": "64.1%",
+        "acRateRaw": 64.14652100939313,
+        "likes": 3341,
+        "dislikes": 73
+    },
+    "similarQuestions": [
+        "surrounded-regions",
+        "number-of-islands",
+        "shortest-distance-from-all-buildings",
+        "battleships-in-a-board",
+        "robot-room-cleaner",
+        "rotting-oranges",
+        "count-the-number-of-houses-at-a-certain-distance-i",
+        "count-the-number-of-houses-at-a-certain-distance-ii"
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 286,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}

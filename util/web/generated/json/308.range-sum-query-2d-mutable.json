@@ -1,0 +1,61 @@
+{
+    "quesId": 308,
+    "title": "Range Sum Query 2D - Mutable",
+    "titleSlug": "range-sum-query-2d-mutable",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "85.9K",
+        "totalSubmission": "187.1K",
+        "totalAcceptedRaw": 85877,
+        "totalSubmissionRaw": 187085,
+        "acRate": "45.9%",
+        "acRateRaw": 45.90266456423551,
+        "likes": 826,
+        "dislikes": 98
+    },
+    "similarQuestions": [
+        "range-sum-query-2d-immutable",
+        "range-sum-query-mutable",
+        "increment-submatrices-by-one",
+        "sum-of-matrix-after-queries"
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Binary Indexed Tree",
+            "slug": "binary-indexed-tree"
+        },
+        {
+            "name": "Segment Tree",
+            "slug": "segment-tree"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        },
+        {
+            "name": "Sqrt Decomposition",
+            "slug": "sqrt-decomposition"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 308,
+        "hasSolution": true,
+        "hasVideoSolution": true
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}

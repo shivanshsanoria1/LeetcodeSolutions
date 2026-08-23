@@ -1,0 +1,39 @@
+{
+    "quesId": 708,
+    "title": "Insert into a Sorted Circular Linked List",
+    "titleSlug": "insert-into-a-sorted-circular-linked-list",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "246.8K",
+        "totalSubmission": "639.7K",
+        "totalAcceptedRaw": 246838,
+        "totalSubmissionRaw": 639734,
+        "acRate": "38.6%",
+        "acRateRaw": 38.58447417207777,
+        "likes": 1340,
+        "dislikes": 802
+    },
+    "similarQuestions": [
+        "insertion-sort-list"
+    ],
+    "topicTags": [
+        {
+            "name": "Linked List",
+            "slug": "linked-list"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 850,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}

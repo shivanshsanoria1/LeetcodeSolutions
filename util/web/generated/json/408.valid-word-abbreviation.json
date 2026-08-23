@@ -1,0 +1,44 @@
+{
+    "quesId": 408,
+    "title": "Valid Word Abbreviation",
+    "titleSlug": "valid-word-abbreviation",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "364.8K",
+        "totalSubmission": "984.6K",
+        "totalAcceptedRaw": 364804,
+        "totalSubmissionRaw": 984618,
+        "acRate": "37.1%",
+        "acRateRaw": 37.05030783511981,
+        "likes": 929,
+        "dislikes": 2408
+    },
+    "similarQuestions": [
+        "minimum-unique-word-abbreviation",
+        "word-abbreviation",
+        "check-if-an-original-string-exists-given-two-encoded-strings"
+    ],
+    "topicTags": [
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 408,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}

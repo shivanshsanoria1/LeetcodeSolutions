@@ -1,0 +1,54 @@
+{
+    "quesId": 772,
+    "title": "Basic Calculator III",
+    "titleSlug": "basic-calculator-iii",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "158.8K",
+        "totalSubmission": "296.9K",
+        "totalAcceptedRaw": 158817,
+        "totalSubmissionRaw": 296901,
+        "acRate": "53.5%",
+        "acRateRaw": 53.491567896369496,
+        "likes": 1185,
+        "dislikes": 295
+    },
+    "similarQuestions": [
+        "basic-calculator",
+        "basic-calculator-ii",
+        "basic-calculator-iv",
+        "build-binary-expression-tree-from-infix-expression"
+    ],
+    "topicTags": [
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Recursion",
+            "slug": "recursion"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 785,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}

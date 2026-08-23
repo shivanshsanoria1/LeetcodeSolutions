@@ -8,10 +8,11 @@ const timer = require('../timer.js')
 const logger = require('../logger.js');
 const queries = require('./queries.js')
 
-const API_DELAY_MS = webConfig.API_DELAY_MS ?? 250
+const API_DELAY_MS = webConfig.API_DELAY_MS ?? 250 // Default: 250ms 
 const FORCE_REFRESH_BASE_PROBLEM_LIST = webConfig.FORCE_REFRESH_BASE_PROBLEM_LIST ?? false
 const FORCE_REFRESH_PROBLEM_LIST = webConfig.FORCE_REFRESH_PROBLEM_LIST ?? false
 const FETCH_NEXT_COUNT = webConfig.FETCH_NEXT_COUNT ?? 5
+const API_TIMEOUT_MS = webConfig.API_TIMEOUT_MS ?? 8000 // Default: 8 sec 
 
 // provide delay in ms
 const sleep = (time_ms = API_DELAY_MS) => new Promise((resolve) => setTimeout(resolve, time_ms));
@@ -258,6 +259,13 @@ async function verifyProblemJSON(problems) {
 // fetch details for a specific problem by its title-slug,
 // parse in a custom format
 async function fetchProblem(titleSlug, baseProblems) {
+	let fetchAPISuccess = false
+
+	const controller = new AbortController()
+	const timeout = setTimeout(() => {
+		controller.abort()
+	}, API_TIMEOUT_MS)
+
 	try {
 		const query = queries.LC_Problem_Detailed
 
@@ -272,8 +280,11 @@ async function fetchProblem(titleSlug, baseProblems) {
 			body: JSON.stringify({
 				query,
 				variables: { titleSlug }
-			})
+			}),
+			signal: controller.signal
 		});
+
+		fetchAPISuccess = true
 
 		if (!res.ok) {
 			const text = await res.text();
@@ -304,8 +315,22 @@ async function fetchProblem(titleSlug, baseProblems) {
 		return problem
 
 	} catch (err) {
+		if (err.name === "AbortError") {
+			const timeoutError = new Error(`API timeout: LeetCode API did not respond within ${API_TIMEOUT_MS} ms for "${titleSlug}"`)
+			timeoutError.code = "API_TIMEOUT"
+
+			logger.error(timeoutError)
+			throw timeoutError
+		}
+
+
 		logger.info(err);
+		if (fetchAPISuccess === false) {
+			return fetchAPISuccess
+		}
 		throw err;
+	} finally {
+		clearTimeout(timeout)
 	}
 }
 
@@ -347,6 +372,11 @@ async function fetchProblems(baseProblems) {
 			logger.info(`Fetching... ${questionFrontendId}.${title}`)
 
 			const problem = await fetchProblem(titleSlug, baseProblems)
+
+			if (problem === false) {//fetch API failed
+				logger.error('Fetch API Failure. Stopping script...')
+				break;
+			}
 			problems.push(problem)
 
 			await sleep() // prevent overwhelming the API

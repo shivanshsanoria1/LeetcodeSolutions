@@ -1,0 +1,69 @@
+{
+    "quesId": 694,
+    "title": "Number of Distinct Islands",
+    "titleSlug": "number-of-distinct-islands",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "211.3K",
+        "totalSubmission": "335.8K",
+        "totalAcceptedRaw": 211348,
+        "totalSubmissionRaw": 335763,
+        "acRate": "62.9%",
+        "acRateRaw": 62.94558959742438,
+        "likes": 2341,
+        "dislikes": 154
+    },
+    "similarQuestions": [
+        "number-of-islands",
+        "number-of-distinct-islands-ii",
+        "count-sub-islands"
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Union-Find",
+            "slug": "union-find"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        },
+        {
+            "name": "Hash Function",
+            "slug": "hash-function"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 694,
+        "hasSolution": true,
+        "hasVideoSolution": true
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}

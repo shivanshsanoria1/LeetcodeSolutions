@@ -1,0 +1,44 @@
+{
+    "quesId": 422,
+    "title": "Valid Word Square",
+    "titleSlug": "valid-word-square",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "72.2K",
+        "totalSubmission": "168.1K",
+        "totalAcceptedRaw": 72163,
+        "totalSubmissionRaw": 168064,
+        "acRate": "42.9%",
+        "acRateRaw": 42.9378094059406,
+        "likes": 452,
+        "dislikes": 277
+    },
+    "similarQuestions": [
+        "word-squares",
+        "toeplitz-matrix"
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 422,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}

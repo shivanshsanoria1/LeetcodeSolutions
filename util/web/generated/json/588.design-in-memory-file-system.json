@@ -1,0 +1,57 @@
+{
+    "quesId": 588,
+    "title": "Design In-Memory File System",
+    "titleSlug": "design-in-memory-file-system",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "145.1K",
+        "totalSubmission": "300.3K",
+        "totalAcceptedRaw": 145112,
+        "totalSubmissionRaw": 300328,
+        "acRate": "48.3%",
+        "acRateRaw": 48.318699576803084,
+        "likes": 1587,
+        "dislikes": 176
+    },
+    "similarQuestions": [
+        "lru-cache",
+        "lfu-cache",
+        "design-log-storage-system"
+    ],
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Trie",
+            "slug": "trie"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 588,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}

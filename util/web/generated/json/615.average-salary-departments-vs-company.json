@@ -1,0 +1,39 @@
+{
+    "quesId": 615,
+    "title": "Average Salary: Departments VS Company",
+    "titleSlug": "average-salary-departments-vs-company",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "44.7K",
+        "totalSubmission": "78.8K",
+        "totalAcceptedRaw": 44659,
+        "totalSubmissionRaw": 78835,
+        "acRate": "56.6%",
+        "acRateRaw": 56.64869664489123,
+        "likes": 243,
+        "dislikes": 77
+    },
+    "similarQuestions": [
+        "countries-you-can-safely-invest-in"
+    ],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 615,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}

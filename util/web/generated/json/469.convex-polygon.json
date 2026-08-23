@@ -1,0 +1,48 @@
+{
+    "quesId": 469,
+    "title": "Convex Polygon",
+    "titleSlug": "convex-polygon",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "11.8K",
+        "totalSubmission": "29.3K",
+        "totalAcceptedRaw": 11792,
+        "totalSubmissionRaw": 29287,
+        "acRate": "40.3%",
+        "acRateRaw": 40.26359818349438,
+        "likes": 104,
+        "dislikes": 243
+    },
+    "similarQuestions": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Geometry",
+            "slug": "geometry"
+        },
+        {
+            "name": "Polygons",
+            "slug": "polygons"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 469,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}

@@ -1,0 +1,63 @@
+{
+    "quesId": 642,
+    "title": "Design Search Autocomplete System",
+    "titleSlug": "design-search-autocomplete-system",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "171.8K",
+        "totalSubmission": "343.1K",
+        "totalAcceptedRaw": 171756,
+        "totalSubmissionRaw": 343076,
+        "acRate": "50.1%",
+        "acRateRaw": 50.06368758398163,
+        "likes": 2190,
+        "dislikes": 204
+    },
+    "similarQuestions": [
+        "implement-trie-prefix-tree"
+    ],
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Trie",
+            "slug": "trie"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        },
+        {
+            "name": "Heap (Priority Queue)",
+            "slug": "heap-priority-queue"
+        },
+        {
+            "name": "Data Stream",
+            "slug": "data-stream"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 642,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}

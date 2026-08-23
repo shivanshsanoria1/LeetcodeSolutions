@@ -1,0 +1,38 @@
+{
+    "questionId": "786",
+    "questionFrontendId": "702",
+    "title": "Search in a Sorted Array of Unknown Size",
+    "titleSlug": "search-in-a-sorted-array-of-unknown-size",
+    "difficulty": "Medium",
+    "likes": 944,
+    "dislikes": 51,
+    "acRate": 73.15213852017851,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"114.6K\", \"totalSubmission\": \"156.6K\", \"totalAcceptedRaw\": 114576, \"totalSubmissionRaw\": 156627, \"acRate\": \"73.2%\"}",
+    "similarQuestions": "[{\"title\": \"Binary Search\", \"titleSlug\": \"binary-search\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Find the Index of the Large Integer\", \"titleSlug\": \"find-the-index-of-the-large-integer\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Interactive",
+            "slug": "interactive"
+        }
+    ],
+    "codeSnippets": null
+}

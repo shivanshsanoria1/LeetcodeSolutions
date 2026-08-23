@@ -1,0 +1,51 @@
+{
+    "quesId": 635,
+    "title": "Design Log Storage System",
+    "titleSlug": "design-log-storage-system",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "45.7K",
+        "totalSubmission": "76.6K",
+        "totalAcceptedRaw": 45738,
+        "totalSubmissionRaw": 76623,
+        "acRate": "59.7%",
+        "acRateRaw": 59.69225950432637,
+        "likes": 495,
+        "dislikes": 232
+    },
+    "similarQuestions": [
+        "design-in-memory-file-system"
+    ],
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Ordered Set",
+            "slug": "ordered-set"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 635,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}

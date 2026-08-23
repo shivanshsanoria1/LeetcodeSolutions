@@ -1,0 +1,48 @@
+{
+    "quesId": 364,
+    "title": "Nested List Weight Sum II",
+    "titleSlug": "nested-list-weight-sum-ii",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "169.2K",
+        "totalSubmission": "252.3K",
+        "totalAcceptedRaw": 169216,
+        "totalSubmissionRaw": 252331,
+        "acRate": "67.1%",
+        "acRateRaw": 67.06112209756233,
+        "likes": 1172,
+        "dislikes": 482
+    },
+    "similarQuestions": [
+        "nested-list-weight-sum",
+        "array-nesting"
+    ],
+    "topicTags": [
+        {
+            "name": "Stack",
+            "slug": "stack"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 364,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}

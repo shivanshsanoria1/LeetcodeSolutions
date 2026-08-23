@@ -1,0 +1,42 @@
+{
+    "questionId": "311",
+    "questionFrontendId": "311",
+    "title": "Sparse Matrix Multiplication",
+    "titleSlug": "sparse-matrix-multiplication",
+    "difficulty": "Medium",
+    "likes": 1132,
+    "dislikes": 374,
+    "acRate": 69.34784483289602,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"225.2K\", \"totalSubmission\": \"324.7K\", \"totalAcceptedRaw\": 225178, \"totalSubmissionRaw\": 324708, \"acRate\": \"69.3%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        },
+        {
+            "name": "Linear Algebra",
+            "slug": "linear-algebra"
+        }
+    ],
+    "codeSnippets": null
+}

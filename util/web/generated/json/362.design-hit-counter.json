@@ -1,0 +1,55 @@
+{
+    "quesId": 362,
+    "title": "Design Hit Counter",
+    "titleSlug": "design-hit-counter",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "349K",
+        "totalSubmission": "500.4K",
+        "totalAcceptedRaw": 348964,
+        "totalSubmissionRaw": 500355,
+        "acRate": "69.7%",
+        "acRateRaw": 69.74328226958859,
+        "likes": 2154,
+        "dislikes": 257
+    },
+    "similarQuestions": [
+        "logger-rate-limiter"
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Queue",
+            "slug": "queue"
+        },
+        {
+            "name": "Data Stream",
+            "slug": "data-stream"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 362,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}

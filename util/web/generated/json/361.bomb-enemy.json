@@ -1,0 +1,50 @@
+{
+    "quesId": 361,
+    "title": "Bomb Enemy",
+    "titleSlug": "bomb-enemy",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "87.3K",
+        "totalSubmission": "165.2K",
+        "totalAcceptedRaw": 87305,
+        "totalSubmissionRaw": 165179,
+        "acRate": "52.9%",
+        "acRateRaw": 52.85478178218781,
+        "likes": 1003,
+        "dislikes": 118
+    },
+    "similarQuestions": [
+        "minimum-cost-homecoming-of-a-robot-in-a-grid",
+        "stamping-the-grid",
+        "count-unguarded-cells-in-the-grid",
+        "maximum-trailing-zeros-in-a-cornered-path"
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 361,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}

@@ -1,0 +1,48 @@
+{
+    "quesId": 548,
+    "title": "Split Array with Equal Sum",
+    "titleSlug": "split-array-with-equal-sum",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "25.1K",
+        "totalSubmission": "50.2K",
+        "totalAcceptedRaw": 25148,
+        "totalSubmissionRaw": 50223,
+        "acRate": "50.1%",
+        "acRateRaw": 50.07267586563925,
+        "likes": 418,
+        "dislikes": 132
+    },
+    "similarQuestions": [
+        "fair-distribution-of-cookies",
+        "number-of-ways-to-split-a-string"
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 548,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}

@@ -1,0 +1,47 @@
+{
+    "quesId": 359,
+    "title": "Logger Rate Limiter",
+    "titleSlug": "logger-rate-limiter",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "402.1K",
+        "totalSubmission": "523K",
+        "totalAcceptedRaw": 402123,
+        "totalSubmissionRaw": 522982,
+        "acRate": "76.9%",
+        "acRateRaw": 76.89040923014558,
+        "likes": 1813,
+        "dislikes": 198
+    },
+    "similarQuestions": [
+        "design-hit-counter"
+    ],
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Data Stream",
+            "slug": "data-stream"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 359,
+        "hasSolution": true,
+        "hasVideoSolution": true
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}

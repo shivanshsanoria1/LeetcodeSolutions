@@ -1,0 +1,44 @@
+{
+    "questionId": "723",
+    "questionFrontendId": "723",
+    "title": "Candy Crush",
+    "titleSlug": "candy-crush",
+    "difficulty": "Medium",
+    "likes": 1081,
+    "dislikes": 551,
+    "acRate": 77.62773543954698,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"95.1K\", \"totalSubmission\": \"122.6K\", \"totalAcceptedRaw\": 95139, \"totalSubmissionRaw\": 122558, \"acRate\": \"77.6%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [
+        "Carefully perform the \"crush\" and \"gravity\" steps.  In the crush step, flag each candy that should be removed, then go through and crush each flagged candy.  In the gravity step, collect the candy in each column and then rewrite the column appropriately.  Do these steps repeatedly until there's no work left to do."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        }
+    ],
+    "codeSnippets": null
+}

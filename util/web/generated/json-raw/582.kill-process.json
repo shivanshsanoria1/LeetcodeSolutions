@@ -1,0 +1,46 @@
+{
+    "questionId": "582",
+    "questionFrontendId": "582",
+    "title": "Kill Process",
+    "titleSlug": "kill-process",
+    "difficulty": "Medium",
+    "likes": 1142,
+    "dislikes": 22,
+    "acRate": 70.74396135265701,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": true,
+    "stats": "{\"totalAccepted\": \"98.8K\", \"totalSubmission\": \"139.7K\", \"totalAcceptedRaw\": 98846, \"totalSubmissionRaw\": 139724, \"acRate\": \"70.7%\"}",
+    "similarQuestions": "[]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        }
+    ],
+    "codeSnippets": null
+}

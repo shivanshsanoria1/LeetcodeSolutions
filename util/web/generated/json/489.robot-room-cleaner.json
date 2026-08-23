@@ -1,0 +1,46 @@
+{
+    "quesId": 489,
+    "title": "Robot Room Cleaner",
+    "titleSlug": "robot-room-cleaner",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "215.1K",
+        "totalSubmission": "275.6K",
+        "totalAcceptedRaw": 215056,
+        "totalSubmissionRaw": 275616,
+        "acRate": "78.0%",
+        "acRateRaw": 78.02740044119354,
+        "likes": 2913,
+        "dislikes": 193
+    },
+    "similarQuestions": [
+        "walls-and-gates",
+        "shortest-path-in-a-hidden-grid",
+        "minimum-path-cost-in-a-hidden-grid",
+        "number-of-spaces-cleaning-robot-cleaned"
+    ],
+    "topicTags": [
+        {
+            "name": "Backtracking",
+            "slug": "backtracking"
+        },
+        {
+            "name": "Interactive",
+            "slug": "interactive"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 865,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}

@@ -1,0 +1,51 @@
+{
+    "quesId": 346,
+    "title": "Moving Average from Data Stream",
+    "titleSlug": "moving-average-from-data-stream",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "539.5K",
+        "totalSubmission": "672.4K",
+        "totalAcceptedRaw": 539476,
+        "totalSubmissionRaw": 672425,
+        "acRate": "80.2%",
+        "acRateRaw": 80.22842696211472,
+        "likes": 1757,
+        "dislikes": 194
+    },
+    "similarQuestions": [
+        "k-radius-subarray-averages"
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Queue",
+            "slug": "queue"
+        },
+        {
+            "name": "Data Stream",
+            "slug": "data-stream"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 346,
+        "hasSolution": true,
+        "hasVideoSolution": true
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}

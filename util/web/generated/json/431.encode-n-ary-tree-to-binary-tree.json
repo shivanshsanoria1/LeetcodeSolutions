@@ -1,0 +1,55 @@
+{
+    "quesId": 431,
+    "title": "Encode N-ary Tree to Binary Tree",
+    "titleSlug": "encode-n-ary-tree-to-binary-tree",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "25.4K",
+        "totalSubmission": "31.5K",
+        "totalAcceptedRaw": 25385,
+        "totalSubmissionRaw": 31453,
+        "acRate": "80.7%",
+        "acRateRaw": 80.70772263377103,
+        "likes": 538,
+        "dislikes": 30
+    },
+    "similarQuestions": [
+        "serialize-and-deserialize-n-ary-tree"
+    ],
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 771,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}

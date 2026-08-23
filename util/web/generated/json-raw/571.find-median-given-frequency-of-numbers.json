@@ -1,0 +1,27 @@
+{
+    "questionId": "571",
+    "questionFrontendId": "571",
+    "title": "Find Median Given Frequency of Numbers",
+    "titleSlug": "find-median-given-frequency-of-numbers",
+    "difficulty": "Hard",
+    "likes": 321,
+    "dislikes": 79,
+    "acRate": 42.19177142072815,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"36.9K\", \"totalSubmission\": \"87.4K\", \"totalAcceptedRaw\": 36887, \"totalSubmissionRaw\": 87427, \"acRate\": \"42.2%\"}",
+    "similarQuestions": "[{\"title\": \"Median Employee Salary\", \"titleSlug\": \"median-employee-salary\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null
+}

@@ -1,0 +1,34 @@
+{
+    "questionId": "569",
+    "questionFrontendId": "569",
+    "title": "Median Employee Salary",
+    "titleSlug": "median-employee-salary",
+    "difficulty": "Hard",
+    "likes": 341,
+    "dislikes": 156,
+    "acRate": 65.81531922385282,
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"52.3K\", \"totalSubmission\": \"79.5K\", \"totalAcceptedRaw\": 52337, \"totalSubmissionRaw\": 79521, \"acRate\": \"65.8%\"}",
+    "similarQuestions": "[{\"title\": \"Find Median Given Frequency of Numbers\", \"titleSlug\": \"find-median-given-frequency-of-numbers\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [
+        "Still remember how to select the sum which group by one column?",
+        "Try to think about how to get the median from a sorted list.",
+        "How to get the median one item for odd number list while how to get the median two items for even number list, try to unify them."
+    ],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "codeSnippets": null
+}

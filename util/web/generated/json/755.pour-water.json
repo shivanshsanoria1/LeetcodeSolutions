@@ -1,0 +1,42 @@
+{
+    "quesId": 755,
+    "title": "Pour Water",
+    "titleSlug": "pour-water",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "48.4K",
+        "totalSubmission": "98.5K",
+        "totalAcceptedRaw": 48405,
+        "totalSubmissionRaw": 98534,
+        "acRate": "49.1%",
+        "acRateRaw": 49.12517506647452,
+        "likes": 324,
+        "dislikes": 836
+    },
+    "similarQuestions": [
+        "trapping-rain-water"
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Simulation",
+            "slug": "simulation"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 756,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}

@@ -1,0 +1,56 @@
+{
+    "quesId": 325,
+    "title": "Maximum Size Subarray Sum Equals k",
+    "titleSlug": "maximum-size-subarray-sum-equals-k",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "223.8K",
+        "totalSubmission": "439.3K",
+        "totalAcceptedRaw": 223773,
+        "totalSubmissionRaw": 439283,
+        "acRate": "50.9%",
+        "acRateRaw": 50.94050987632118,
+        "likes": 2132,
+        "dislikes": 66
+    },
+    "similarQuestions": [
+        "minimum-size-subarray-sum",
+        "range-sum-query-immutable",
+        "contiguous-array",
+        "subarray-product-less-than-k",
+        "maximum-beauty-of-an-array-after-applying-operation",
+        "shortest-subarray-with-or-at-least-k-ii"
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 325,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Compute the prefix sum array where psum[i] is the sum of all the elements from <i>0</i> to <i>i</i>.",
+        "At each index <i>i</i>, the sum of the prefix is psum[i], so we are searching for the index x where psum[x] = psum[i] - k.\r\nThe subarray [x + 1, i] will be of sum k.",
+        "Use a hashmap to get the index x efficiently or to determine that it does not exist."
+    ],
+    "codeSnippets": null
+}

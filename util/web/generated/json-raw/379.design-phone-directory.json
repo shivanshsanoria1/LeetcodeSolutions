@@ -1,0 +1,46 @@
+{
+    "questionId": "379",
+    "questionFrontendId": "379",
+    "title": "Design Phone Directory",
+    "titleSlug": "design-phone-directory",
+    "difficulty": "Medium",
+    "likes": 369,
+    "dislikes": 486,
+    "acRate": 53.2260050904513,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"77.8K\", \"totalSubmission\": \"146.2K\", \"totalAcceptedRaw\": 77792, \"totalSubmissionRaw\": 146155, \"acRate\": \"53.2%\"}",
+    "similarQuestions": "[{\"title\": \"Seat Reservation Manager\", \"titleSlug\": \"seat-reservation-manager\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Linked List",
+            "slug": "linked-list"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        },
+        {
+            "name": "Queue",
+            "slug": "queue"
+        }
+    ],
+    "codeSnippets": null
+}

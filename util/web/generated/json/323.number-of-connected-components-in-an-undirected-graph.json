@@ -1,0 +1,55 @@
+{
+    "quesId": 323,
+    "title": "Number of Connected Components in an Undirected Graph",
+    "titleSlug": "number-of-connected-components-in-an-undirected-graph",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "552.4K",
+        "totalSubmission": "848.4K",
+        "totalAcceptedRaw": 552390,
+        "totalSubmissionRaw": 848380,
+        "acRate": "65.1%",
+        "acRateRaw": 65.11115302105188,
+        "likes": 2823,
+        "dislikes": 111
+    },
+    "similarQuestions": [
+        "number-of-islands",
+        "graph-valid-tree",
+        "number-of-provinces",
+        "paths-in-maze-that-lead-to-same-room",
+        "count-the-number-of-complete-components"
+    ],
+    "topicTags": [
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Union-Find",
+            "slug": "union-find"
+        },
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 323,
+        "hasSolution": true,
+        "hasVideoSolution": true
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}
