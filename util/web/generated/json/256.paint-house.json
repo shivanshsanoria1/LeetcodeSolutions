@@ -1,0 +1,47 @@
+{
+    "quesId": 256,
+    "title": "Paint House",
+    "titleSlug": "paint-house",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "249.3K",
+        "totalSubmission": "386.3K",
+        "totalAcceptedRaw": 249252,
+        "totalSubmissionRaw": 386271,
+        "acRate": "64.5%",
+        "acRateRaw": 64.52775383085968,
+        "likes": 2388,
+        "dislikes": 134
+    },
+    "similarQuestions": [
+        "house-robber",
+        "house-robber-ii",
+        "paint-house-ii",
+        "paint-fence",
+        "minimum-path-cost-in-a-grid"
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Dynamic Programming",
+            "slug": "dynamic-programming"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 256,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}

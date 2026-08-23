@@ -32,7 +32,7 @@ async function fetchBaseProblemList() {
 		// last update was less than 7 days ago; don't fetch new data from API
 		if (!FORCE_REFRESH_BASE_PROBLEM_LIST &&
 			Date.now() - lastUpdatedTimestamp.getTime() < 7 * 24 * 60 * 60 * 1000) {
-			logger.info('Using the local version of LC-problem-list')
+			logger.info('Using the local version of Base LC-problem-list')
 
 			const baseProblemsLocal = await readFromJSON(filePathJSON)
 			if (baseProblemsLocal.length > 0) {
@@ -91,10 +91,19 @@ async function fetchBaseProblemList() {
 		await writeToJSON(filePathJSON, baseProblems)
 
 		webConfig.LAST_UPDATED_ISO = new Date().toISOString()
-		await updateConfig('web')
+
+		//switch OFF the FORCE REFRESH flag
+		if (webConfig.FORCE_REFRESH_BASE_PROBLEM_LIST) {
+			webConfig.FORCE_REFRESH_BASE_PROBLEM_LIST = false
+			await updateConfig('web')
+			logger.info('FORCE_REFRESH_BASE_PROBLEM_LIST flag Reset to: false')
+		} else {
+			await updateConfig('web')
+		}
 
 		config.MAX_QUES_ID = Number(baseProblems[baseProblems.length - 1].questionFrontendId)
 		await updateConfig('local')
+		logger.info('Updated the MAX_QUES_ID in config.json to ' + config.MAX_QUES_ID)
 
 		return baseProblems
 	} catch (err) {

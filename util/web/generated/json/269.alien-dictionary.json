@@ -1,0 +1,63 @@
+{
+    "quesId": 269,
+    "title": "Alien Dictionary",
+    "titleSlug": "alien-dictionary",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "497.6K",
+        "totalSubmission": "1.3M",
+        "totalAcceptedRaw": 497599,
+        "totalSubmissionRaw": 1334317,
+        "acRate": "37.3%",
+        "acRateRaw": 37.29241252266141,
+        "likes": 4690,
+        "dislikes": 1040
+    },
+    "similarQuestions": [
+        "course-schedule-ii"
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        },
+        {
+            "name": "Topological Sort",
+            "slug": "topological-sort"
+        },
+        {
+            "name": "Directed Acyclic Graph",
+            "slug": "directed-acyclic-graph"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 269,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}

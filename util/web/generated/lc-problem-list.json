@@ -7720,5 +7720,5073 @@
         "solution": {
             "canSeeDetail": false
         }
+    },
+    {
+        "quesId": 171,
+        "title": "Excel Sheet Column Number",
+        "titleSlug": "excel-sheet-column-number",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "946.7K",
+            "totalSubmission": "1.4M",
+            "totalAcceptedRaw": 946742,
+            "totalSubmissionRaw": 1385770,
+            "acRate": "68.3%",
+            "acRateRaw": 68.3190236820039,
+            "likes": 5141,
+            "dislikes": 403
+        },
+        "similarQuestions": [
+            "excel-sheet-column-title",
+            "cells-in-a-range-on-an-excel-sheet"
+        ],
+        "topicTags": [
+            {
+                "name": "Math",
+                "slug": "math"
+            },
+            {
+                "name": "String",
+                "slug": "string"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 171,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 172,
+        "title": "Factorial Trailing Zeroes",
+        "titleSlug": "factorial-trailing-zeroes",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "707.5K",
+            "totalSubmission": "1.5M",
+            "totalAcceptedRaw": 707529,
+            "totalSubmissionRaw": 1496737,
+            "acRate": "47.3%",
+            "acRateRaw": 47.27143111982934,
+            "likes": 3581,
+            "dislikes": 1992
+        },
+        "similarQuestions": [
+            "number-of-digit-one",
+            "preimage-size-of-factorial-zeroes-function",
+            "abbreviating-the-product-of-a-range",
+            "maximum-trailing-zeros-in-a-cornered-path"
+        ],
+        "topicTags": [
+            {
+                "name": "Math",
+                "slug": "math"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 172,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 173,
+        "title": "Binary Search Tree Iterator",
+        "titleSlug": "binary-search-tree-iterator",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "1.1M",
+            "totalSubmission": "1.5M",
+            "totalAcceptedRaw": 1142769,
+            "totalSubmissionRaw": 1485792,
+            "acRate": "76.9%",
+            "acRateRaw": 76.91321431311658,
+            "likes": 9325,
+            "dislikes": 597
+        },
+        "similarQuestions": [
+            "binary-tree-inorder-traversal",
+            "flatten-2d-vector",
+            "zigzag-iterator",
+            "peeking-iterator",
+            "inorder-successor-in-bst",
+            "binary-search-tree-iterator-ii"
+        ],
+        "topicTags": [
+            {
+                "name": "Stack",
+                "slug": "stack"
+            },
+            {
+                "name": "Tree",
+                "slug": "tree"
+            },
+            {
+                "name": "Design",
+                "slug": "design"
+            },
+            {
+                "name": "Binary Search Tree",
+                "slug": "binary-search-tree"
+            },
+            {
+                "name": "Binary Tree",
+                "slug": "binary-tree"
+            },
+            {
+                "name": "Iterator",
+                "slug": "iterator"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 173,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 174,
+        "title": "Dungeon Game",
+        "titleSlug": "dungeon-game",
+        "difficulty": "Hard",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "319.3K",
+            "totalSubmission": "759.4K",
+            "totalAcceptedRaw": 319290,
+            "totalSubmissionRaw": 759420,
+            "acRate": "42.0%",
+            "acRateRaw": 42.04397016686331,
+            "likes": 6348,
+            "dislikes": 118
+        },
+        "similarQuestions": [
+            "unique-paths",
+            "minimum-path-sum",
+            "cherry-pickup",
+            "minimum-path-cost-in-a-grid",
+            "minimum-health-to-beat-game",
+            "paths-in-matrix-whose-sum-is-divisible-by-k",
+            "check-if-there-is-a-path-with-equal-number-of-0s-and-1s"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming"
+            },
+            {
+                "name": "Matrix",
+                "slug": "matrix"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 174,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 175,
+        "title": "Combine Two Tables",
+        "titleSlug": "combine-two-tables",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Database",
+        "stats": {
+            "totalAccepted": "2M",
+            "totalSubmission": "2.5M",
+            "totalAcceptedRaw": 2002986,
+            "totalSubmissionRaw": 2506446,
+            "acRate": "79.9%",
+            "acRateRaw": 79.91339932581857,
+            "likes": 4493,
+            "dislikes": 259
+        },
+        "similarQuestions": [
+            "employee-bonus"
+        ],
+        "topicTags": [
+            {
+                "name": "Database",
+                "slug": "database"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 175,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": true
+        }
+    },
+    {
+        "quesId": 176,
+        "title": "Second Highest Salary",
+        "titleSlug": "second-highest-salary",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Database",
+        "stats": {
+            "totalAccepted": "1.7M",
+            "totalSubmission": "3.5M",
+            "totalAcceptedRaw": 1681132,
+            "totalSubmissionRaw": 3496793,
+            "acRate": "48.1%",
+            "acRateRaw": 48.07684443428922,
+            "likes": 4345,
+            "dislikes": 1014
+        },
+        "similarQuestions": [],
+        "topicTags": [
+            {
+                "name": "Database",
+                "slug": "database"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 176,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 177,
+        "title": "Nth Highest Salary",
+        "titleSlug": "nth-highest-salary",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Database",
+        "stats": {
+            "totalAccepted": "735.3K",
+            "totalSubmission": "1.8M",
+            "totalAcceptedRaw": 735319,
+            "totalSubmissionRaw": 1839771,
+            "acRate": "40.0%",
+            "acRateRaw": 39.967996034291204,
+            "likes": 2351,
+            "dislikes": 1126
+        },
+        "similarQuestions": [
+            "the-number-of-users-that-are-eligible-for-discount"
+        ],
+        "topicTags": [
+            {
+                "name": "Database",
+                "slug": "database"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 177,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 178,
+        "title": "Rank Scores",
+        "titleSlug": "rank-scores",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Database",
+        "stats": {
+            "totalAccepted": "760.5K",
+            "totalSubmission": "1.1M",
+            "totalAcceptedRaw": 760477,
+            "totalSubmissionRaw": 1108558,
+            "acRate": "68.6%",
+            "acRateRaw": 68.600477551731,
+            "likes": 2539,
+            "dislikes": 304
+        },
+        "similarQuestions": [],
+        "topicTags": [
+            {
+                "name": "Database",
+                "slug": "database"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 178,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 179,
+        "title": "Largest Number",
+        "titleSlug": "largest-number",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "869.2K",
+            "totalSubmission": "2M",
+            "totalAcceptedRaw": 869232,
+            "totalSubmissionRaw": 1991964,
+            "acRate": "43.6%",
+            "acRateRaw": 43.63699617664541,
+            "likes": 9561,
+            "dislikes": 809
+        },
+        "similarQuestions": [
+            "smallest-value-of-the-rearranged-number",
+            "find-the-key-of-the-numbers"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "String",
+                "slug": "string"
+            },
+            {
+                "name": "Greedy",
+                "slug": "greedy"
+            },
+            {
+                "name": "Sorting",
+                "slug": "sorting"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 179,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": true
+        }
+    },
+    {
+        "quesId": 180,
+        "title": "Consecutive Numbers",
+        "titleSlug": "consecutive-numbers",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Database",
+        "stats": {
+            "totalAccepted": "849.9K",
+            "totalSubmission": "1.7M",
+            "totalAcceptedRaw": 849927,
+            "totalSubmissionRaw": 1729618,
+            "acRate": "49.1%",
+            "acRateRaw": 49.13955038653021,
+            "likes": 2805,
+            "dislikes": 365
+        },
+        "similarQuestions": [],
+        "topicTags": [
+            {
+                "name": "Database",
+                "slug": "database"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 180,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": true
+        }
+    },
+    {
+        "quesId": 181,
+        "title": "Employees Earning More Than Their Managers",
+        "titleSlug": "employees-earning-more-than-their-managers",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Database",
+        "stats": {
+            "totalAccepted": "1.3M",
+            "totalSubmission": "1.7M",
+            "totalAcceptedRaw": 1290431,
+            "totalSubmissionRaw": 1748939,
+            "acRate": "73.8%",
+            "acRateRaw": 73.78374097815316,
+            "likes": 3246,
+            "dislikes": 303
+        },
+        "similarQuestions": [],
+        "topicTags": [
+            {
+                "name": "Database",
+                "slug": "database"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 181,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 182,
+        "title": "Duplicate Emails",
+        "titleSlug": "duplicate-emails",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Database",
+        "stats": {
+            "totalAccepted": "1.3M",
+            "totalSubmission": "1.7M",
+            "totalAcceptedRaw": 1270638,
+            "totalSubmissionRaw": 1711664,
+            "acRate": "74.2%",
+            "acRateRaw": 74.23427970852183,
+            "likes": 2506,
+            "dislikes": 89
+        },
+        "similarQuestions": [],
+        "topicTags": [
+            {
+                "name": "Database",
+                "slug": "database"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 182,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 183,
+        "title": "Customers Who Never Order",
+        "titleSlug": "customers-who-never-order",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Database",
+        "stats": {
+            "totalAccepted": "1.4M",
+            "totalSubmission": "2M",
+            "totalAcceptedRaw": 1419888,
+            "totalSubmissionRaw": 1964761,
+            "acRate": "72.3%",
+            "acRateRaw": 72.26776046674142,
+            "likes": 3138,
+            "dislikes": 163
+        },
+        "similarQuestions": [],
+        "topicTags": [
+            {
+                "name": "Database",
+                "slug": "database"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 183,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 184,
+        "title": "Department Highest Salary",
+        "titleSlug": "department-highest-salary",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Database",
+        "stats": {
+            "totalAccepted": "741.1K",
+            "totalSubmission": "1.3M",
+            "totalAcceptedRaw": 741129,
+            "totalSubmissionRaw": 1252604,
+            "acRate": "59.2%",
+            "acRateRaw": 59.1671935673411,
+            "likes": 2463,
+            "dislikes": 214
+        },
+        "similarQuestions": [
+            "highest-grade-for-each-student"
+        ],
+        "topicTags": [
+            {
+                "name": "Database",
+                "slug": "database"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 184,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 185,
+        "title": "Department Top Three Salaries",
+        "titleSlug": "department-top-three-salaries",
+        "difficulty": "Hard",
+        "isPaidOnly": false,
+        "categoryTitle": "Database",
+        "stats": {
+            "totalAccepted": "723.8K",
+            "totalSubmission": "1.2M",
+            "totalAcceptedRaw": 723775,
+            "totalSubmissionRaw": 1177354,
+            "acRate": "61.5%",
+            "acRateRaw": 61.474713637529575,
+            "likes": 2662,
+            "dislikes": 283
+        },
+        "similarQuestions": [],
+        "topicTags": [
+            {
+                "name": "Database",
+                "slug": "database"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 185,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": true
+        }
+    },
+    {
+        "quesId": 186,
+        "title": "Reverse Words in a String II",
+        "titleSlug": "reverse-words-in-a-string-ii",
+        "difficulty": "Medium",
+        "isPaidOnly": true,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "182.5K",
+            "totalSubmission": "321.2K",
+            "totalAcceptedRaw": 182520,
+            "totalSubmissionRaw": 321218,
+            "acRate": "56.8%",
+            "acRateRaw": 56.8212242153304,
+            "likes": 1118,
+            "dislikes": 146
+        },
+        "similarQuestions": [
+            "reverse-words-in-a-string",
+            "rotate-array"
+        ],
+        "topicTags": [
+            {
+                "name": "Two Pointers",
+                "slug": "two-pointers"
+            },
+            {
+                "name": "String",
+                "slug": "string"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 186,
+            "hasSolution": true,
+            "hasVideoSolution": true
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 187,
+        "title": "Repeated DNA Sequences",
+        "titleSlug": "repeated-dna-sequences",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "558.5K",
+            "totalSubmission": "1M",
+            "totalAcceptedRaw": 558484,
+            "totalSubmissionRaw": 1036822,
+            "acRate": "53.9%",
+            "acRateRaw": 53.865028071329434,
+            "likes": 3676,
+            "dislikes": 575
+        },
+        "similarQuestions": [],
+        "topicTags": [
+            {
+                "name": "Hash Table",
+                "slug": "hash-table"
+            },
+            {
+                "name": "String",
+                "slug": "string"
+            },
+            {
+                "name": "Bit Manipulation",
+                "slug": "bit-manipulation"
+            },
+            {
+                "name": "Sliding Window",
+                "slug": "sliding-window"
+            },
+            {
+                "name": "Rolling Hash",
+                "slug": "rolling-hash"
+            },
+            {
+                "name": "Hash Function",
+                "slug": "hash-function"
+            },
+            {
+                "name": "Z Algorithm",
+                "slug": "z-algorithm"
+            },
+            {
+                "name": "Boyer–Moore String-Search Algorithm",
+                "slug": "boyer-moore-string-search-algorithm"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 187,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 188,
+        "title": "Best Time to Buy and Sell Stock IV",
+        "titleSlug": "best-time-to-buy-and-sell-stock-iv",
+        "difficulty": "Hard",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "764.9K",
+            "totalSubmission": "1.5M",
+            "totalAcceptedRaw": 764938,
+            "totalSubmissionRaw": 1496844,
+            "acRate": "51.1%",
+            "acRateRaw": 51.103343735114656,
+            "likes": 8083,
+            "dislikes": 228
+        },
+        "similarQuestions": [
+            "best-time-to-buy-and-sell-stock",
+            "best-time-to-buy-and-sell-stock-ii",
+            "best-time-to-buy-and-sell-stock-iii",
+            "maximum-profit-from-trading-stocks"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 188,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 189,
+        "title": "Rotate Array",
+        "titleSlug": "rotate-array",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "4.2M",
+            "totalSubmission": "9.3M",
+            "totalAcceptedRaw": 4214170,
+            "totalSubmissionRaw": 9293927,
+            "acRate": "45.3%",
+            "acRateRaw": 45.343450260087295,
+            "likes": 21446,
+            "dislikes": 2208
+        },
+        "similarQuestions": [
+            "rotate-list",
+            "reverse-words-in-a-string-ii",
+            "make-k-subarray-sums-equal",
+            "maximum-number-of-matching-indices-after-right-shifts"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Math",
+                "slug": "math"
+            },
+            {
+                "name": "Two Pointers",
+                "slug": "two-pointers"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 189,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 190,
+        "title": "Reverse Bits",
+        "titleSlug": "reverse-bits",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "1.4M",
+            "totalSubmission": "2.1M",
+            "totalAcceptedRaw": 1418822,
+            "totalSubmissionRaw": 2051092,
+            "acRate": "69.2%",
+            "acRateRaw": 69.17401152750678,
+            "likes": 5965,
+            "dislikes": 1690
+        },
+        "similarQuestions": [
+            "reverse-integer",
+            "number-of-1-bits",
+            "a-number-after-a-double-reversal"
+        ],
+        "topicTags": [
+            {
+                "name": "Divide and Conquer",
+                "slug": "divide-and-conquer"
+            },
+            {
+                "name": "Bit Manipulation",
+                "slug": "bit-manipulation"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 190,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 191,
+        "title": "Number of 1 Bits",
+        "titleSlug": "number-of-1-bits",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "2.2M",
+            "totalSubmission": "2.9M",
+            "totalAcceptedRaw": 2231138,
+            "totalSubmissionRaw": 2882443,
+            "acRate": "77.4%",
+            "acRateRaw": 77.40444143465604,
+            "likes": 7225,
+            "dislikes": 1373
+        },
+        "similarQuestions": [
+            "reverse-bits",
+            "power-of-two",
+            "counting-bits",
+            "binary-watch",
+            "hamming-distance",
+            "binary-number-with-alternating-bits",
+            "prime-number-of-set-bits-in-binary-representation",
+            "convert-date-to-binary"
+        ],
+        "topicTags": [
+            {
+                "name": "Divide and Conquer",
+                "slug": "divide-and-conquer"
+            },
+            {
+                "name": "Bit Manipulation",
+                "slug": "bit-manipulation"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 191,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 192,
+        "title": "Word Frequency",
+        "titleSlug": "word-frequency",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Shell",
+        "stats": {
+            "totalAccepted": "85.4K",
+            "totalSubmission": "286.1K",
+            "totalAcceptedRaw": 85391,
+            "totalSubmissionRaw": 286073,
+            "acRate": "29.8%",
+            "acRateRaw": 29.849374110803883,
+            "likes": 585,
+            "dislikes": 311
+        },
+        "similarQuestions": [
+            "top-k-frequent-elements"
+        ],
+        "topicTags": [
+            {
+                "name": "Shell",
+                "slug": "shell"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 192,
+            "hasSolution": false,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 193,
+        "title": "Valid Phone Numbers",
+        "titleSlug": "valid-phone-numbers",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Shell",
+        "stats": {
+            "totalAccepted": "142.4K",
+            "totalSubmission": "464.8K",
+            "totalAcceptedRaw": 142414,
+            "totalSubmissionRaw": 464785,
+            "acRate": "30.6%",
+            "acRateRaw": 30.64098316214344,
+            "likes": 490,
+            "dislikes": 984
+        },
+        "similarQuestions": [],
+        "topicTags": [
+            {
+                "name": "Shell",
+                "slug": "shell"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 193,
+            "hasSolution": false,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 194,
+        "title": "Transpose File",
+        "titleSlug": "transpose-file",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Shell",
+        "stats": {
+            "totalAccepted": "49K",
+            "totalSubmission": "147.4K",
+            "totalAcceptedRaw": 48952,
+            "totalSubmissionRaw": 147390,
+            "acRate": "33.2%",
+            "acRateRaw": 33.213018433961366,
+            "likes": 166,
+            "dislikes": 291
+        },
+        "similarQuestions": [],
+        "topicTags": [
+            {
+                "name": "Shell",
+                "slug": "shell"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 194,
+            "hasSolution": false,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 195,
+        "title": "Tenth Line",
+        "titleSlug": "tenth-line",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Shell",
+        "stats": {
+            "totalAccepted": "174.7K",
+            "totalSubmission": "466.3K",
+            "totalAcceptedRaw": 174717,
+            "totalSubmissionRaw": 466318,
+            "acRate": "37.5%",
+            "acRateRaw": 37.467752899826515,
+            "likes": 431,
+            "dislikes": 486
+        },
+        "similarQuestions": [],
+        "topicTags": [
+            {
+                "name": "Shell",
+                "slug": "shell"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 195,
+            "hasSolution": false,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 196,
+        "title": "Delete Duplicate Emails",
+        "titleSlug": "delete-duplicate-emails",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Database",
+        "stats": {
+            "totalAccepted": "1.1M",
+            "totalSubmission": "1.6M",
+            "totalAcceptedRaw": 1059529,
+            "totalSubmissionRaw": 1589986,
+            "acRate": "66.6%",
+            "acRateRaw": 66.63775666795809,
+            "likes": 2169,
+            "dislikes": 431
+        },
+        "similarQuestions": [],
+        "topicTags": [
+            {
+                "name": "Database",
+                "slug": "database"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 196,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 197,
+        "title": "Rising Temperature",
+        "titleSlug": "rising-temperature",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Database",
+        "stats": {
+            "totalAccepted": "1.6M",
+            "totalSubmission": "3.2M",
+            "totalAcceptedRaw": 1638653,
+            "totalSubmissionRaw": 3151968,
+            "acRate": "52.0%",
+            "acRateRaw": 51.98830324011797,
+            "likes": 4398,
+            "dislikes": 749
+        },
+        "similarQuestions": [],
+        "topicTags": [
+            {
+                "name": "Database",
+                "slug": "database"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 197,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": true
+        }
+    },
+    {
+        "quesId": 198,
+        "title": "House Robber",
+        "titleSlug": "house-robber",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "3.8M",
+            "totalSubmission": "7.1M",
+            "totalAcceptedRaw": 3800361,
+            "totalSubmissionRaw": 7100597,
+            "acRate": "53.5%",
+            "acRateRaw": 53.52186087018732,
+            "likes": 23810,
+            "dislikes": 523
+        },
+        "similarQuestions": [
+            "maximum-product-subarray",
+            "house-robber-ii",
+            "paint-house",
+            "paint-fence",
+            "house-robber-iii",
+            "non-negative-integers-without-consecutive-ones",
+            "coin-path",
+            "delete-and-earn",
+            "solving-questions-with-brainpower",
+            "count-number-of-ways-to-place-houses",
+            "house-robber-iv",
+            "mice-and-cheese",
+            "largest-element-in-an-array-after-merge-operations",
+            "house-robber-v"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 198,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 199,
+        "title": "Binary Tree Right Side View",
+        "titleSlug": "binary-tree-right-side-view",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "2.4M",
+            "totalSubmission": "3.3M",
+            "totalAcceptedRaw": 2375254,
+            "totalSubmissionRaw": 3343930,
+            "acRate": "71.0%",
+            "acRateRaw": 71.03194456614021,
+            "likes": 13658,
+            "dislikes": 1098
+        },
+        "similarQuestions": [
+            "populating-next-right-pointers-in-each-node",
+            "boundary-of-binary-tree"
+        ],
+        "topicTags": [
+            {
+                "name": "Tree",
+                "slug": "tree"
+            },
+            {
+                "name": "Depth-First Search",
+                "slug": "depth-first-search"
+            },
+            {
+                "name": "Breadth-First Search",
+                "slug": "breadth-first-search"
+            },
+            {
+                "name": "Binary Tree",
+                "slug": "binary-tree"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 199,
+            "hasSolution": true,
+            "hasVideoSolution": true
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 200,
+        "title": "Number of Islands",
+        "titleSlug": "number-of-islands",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "4.4M",
+            "totalSubmission": "6.8M",
+            "totalAcceptedRaw": 4415392,
+            "totalSubmissionRaw": 6793013,
+            "acRate": "65.0%",
+            "acRateRaw": 64.99908288780524,
+            "likes": 25296,
+            "dislikes": 622
+        },
+        "similarQuestions": [
+            "surrounded-regions",
+            "walls-and-gates",
+            "number-of-islands-ii",
+            "number-of-connected-components-in-an-undirected-graph",
+            "battleships-in-a-board",
+            "number-of-distinct-islands",
+            "max-area-of-island",
+            "count-sub-islands",
+            "find-all-groups-of-farmland",
+            "count-unreachable-pairs-of-nodes-in-an-undirected-graph",
+            "maximum-number-of-fish-in-a-grid",
+            "count-islands-with-total-value-divisible-by-k"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Depth-First Search",
+                "slug": "depth-first-search"
+            },
+            {
+                "name": "Breadth-First Search",
+                "slug": "breadth-first-search"
+            },
+            {
+                "name": "Union-Find",
+                "slug": "union-find"
+            },
+            {
+                "name": "Matrix",
+                "slug": "matrix"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 200,
+            "hasSolution": true,
+            "hasVideoSolution": true
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 201,
+        "title": "Bitwise AND of Numbers Range",
+        "titleSlug": "bitwise-and-of-numbers-range",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "536.1K",
+            "totalSubmission": "1.1M",
+            "totalAcceptedRaw": 536079,
+            "totalSubmissionRaw": 1092912,
+            "acRate": "49.1%",
+            "acRateRaw": 49.050611484526684,
+            "likes": 4327,
+            "dislikes": 320
+        },
+        "similarQuestions": [
+            "longest-nice-subarray"
+        ],
+        "topicTags": [
+            {
+                "name": "Bit Manipulation",
+                "slug": "bit-manipulation"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 201,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 202,
+        "title": "Happy Number",
+        "titleSlug": "happy-number",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "2.4M",
+            "totalSubmission": "4M",
+            "totalAcceptedRaw": 2416444,
+            "totalSubmissionRaw": 4017226,
+            "acRate": "60.2%",
+            "acRateRaw": 60.15208960785734,
+            "likes": 12143,
+            "dislikes": 1652
+        },
+        "similarQuestions": [
+            "linked-list-cycle",
+            "add-digits",
+            "ugly-number",
+            "sum-of-digits-of-string-after-convert",
+            "minimum-addition-to-make-integer-beautiful",
+            "smallest-value-after-replacing-with-sum-of-prime-factors",
+            "count-the-digits-that-divide-a-number"
+        ],
+        "topicTags": [
+            {
+                "name": "Hash Table",
+                "slug": "hash-table"
+            },
+            {
+                "name": "Math",
+                "slug": "math"
+            },
+            {
+                "name": "Two Pointers",
+                "slug": "two-pointers"
+            },
+            {
+                "name": "Floyd's Cycle Finding Algorithm",
+                "slug": "floyds-cycle-finding-algorithm"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 202,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 203,
+        "title": "Remove Linked List Elements",
+        "titleSlug": "remove-linked-list-elements",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "1.7M",
+            "totalSubmission": "3.1M",
+            "totalAcceptedRaw": 1689976,
+            "totalSubmissionRaw": 3057711,
+            "acRate": "55.3%",
+            "acRateRaw": 55.26928561150138,
+            "likes": 9158,
+            "dislikes": 295
+        },
+        "similarQuestions": [
+            "remove-element",
+            "delete-node-in-a-linked-list",
+            "delete-the-middle-node-of-a-linked-list",
+            "delete-nodes-from-linked-list-present-in-array",
+            "convert-doubly-linked-list-to-array-i",
+            "convert-doubly-linked-list-to-array-ii"
+        ],
+        "topicTags": [
+            {
+                "name": "Linked List",
+                "slug": "linked-list"
+            },
+            {
+                "name": "Recursion",
+                "slug": "recursion"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 203,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 204,
+        "title": "Count Primes",
+        "titleSlug": "count-primes",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "1.3M",
+            "totalSubmission": "3.7M",
+            "totalAcceptedRaw": 1344139,
+            "totalSubmissionRaw": 3703854,
+            "acRate": "36.3%",
+            "acRateRaw": 36.2899278355442,
+            "likes": 8954,
+            "dislikes": 1597
+        },
+        "similarQuestions": [
+            "ugly-number",
+            "ugly-number-ii",
+            "perfect-squares",
+            "number-of-common-factors",
+            "prime-pairs-with-target-sum",
+            "find-the-count-of-numbers-which-are-not-special"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Math",
+                "slug": "math"
+            },
+            {
+                "name": "Enumeration",
+                "slug": "enumeration"
+            },
+            {
+                "name": "Number Theory",
+                "slug": "number-theory"
+            },
+            {
+                "name": "Primality Test",
+                "slug": "primality-test"
+            },
+            {
+                "name": "Sieve Theory",
+                "slug": "sieve-theory"
+            },
+            {
+                "name": "Prime Number Sieve",
+                "slug": "prime-number-sieve"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 204,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 205,
+        "title": "Isomorphic Strings",
+        "titleSlug": "isomorphic-strings",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "2.3M",
+            "totalSubmission": "4.7M",
+            "totalAcceptedRaw": 2307406,
+            "totalSubmissionRaw": 4712859,
+            "acRate": "49.0%",
+            "acRateRaw": 48.959890682323085,
+            "likes": 10771,
+            "dislikes": 2298
+        },
+        "similarQuestions": [
+            "word-pattern",
+            "find-and-replace-pattern"
+        ],
+        "topicTags": [
+            {
+                "name": "Hash Table",
+                "slug": "hash-table"
+            },
+            {
+                "name": "String",
+                "slug": "string"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 205,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 206,
+        "title": "Reverse Linked List",
+        "titleSlug": "reverse-linked-list",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "6.6M",
+            "totalSubmission": "8.2M",
+            "totalAcceptedRaw": 6644774,
+            "totalSubmissionRaw": 8206535,
+            "acRate": "81.0%",
+            "acRateRaw": 80.96939053410685,
+            "likes": 24865,
+            "dislikes": 592
+        },
+        "similarQuestions": [
+            "reverse-linked-list-ii",
+            "binary-tree-upside-down",
+            "palindrome-linked-list",
+            "reverse-nodes-in-even-length-groups",
+            "maximum-twin-sum-of-a-linked-list",
+            "remove-nodes-from-linked-list",
+            "insert-greatest-common-divisors-in-linked-list"
+        ],
+        "topicTags": [
+            {
+                "name": "Linked List",
+                "slug": "linked-list"
+            },
+            {
+                "name": "Recursion",
+                "slug": "recursion"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 206,
+            "hasSolution": true,
+            "hasVideoSolution": true
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 207,
+        "title": "Course Schedule",
+        "titleSlug": "course-schedule",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "2.8M",
+            "totalSubmission": "5.3M",
+            "totalAcceptedRaw": 2771190,
+            "totalSubmissionRaw": 5320826,
+            "acRate": "52.1%",
+            "acRateRaw": 52.08204203739154,
+            "likes": 18267,
+            "dislikes": 881
+        },
+        "similarQuestions": [
+            "course-schedule-ii",
+            "graph-valid-tree",
+            "minimum-height-trees",
+            "course-schedule-iii",
+            "build-a-matrix-with-conditions"
+        ],
+        "topicTags": [
+            {
+                "name": "Depth-First Search",
+                "slug": "depth-first-search"
+            },
+            {
+                "name": "Breadth-First Search",
+                "slug": "breadth-first-search"
+            },
+            {
+                "name": "Graph Theory",
+                "slug": "graph"
+            },
+            {
+                "name": "Topological Sort",
+                "slug": "topological-sort"
+            },
+            {
+                "name": "Directed Acyclic Graph",
+                "slug": "directed-acyclic-graph"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 207,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 208,
+        "title": "Implement Trie (Prefix Tree)",
+        "titleSlug": "implement-trie-prefix-tree",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "1.6M",
+            "totalSubmission": "2.3M",
+            "totalAcceptedRaw": 1612511,
+            "totalSubmissionRaw": 2305489,
+            "acRate": "69.9%",
+            "acRateRaw": 69.94241164935518,
+            "likes": 12550,
+            "dislikes": 167
+        },
+        "similarQuestions": [
+            "design-add-and-search-words-data-structure",
+            "design-search-autocomplete-system",
+            "replace-words",
+            "implement-magic-dictionary",
+            "encrypt-and-decrypt-strings",
+            "implement-trie-ii-prefix-tree",
+            "count-prefix-and-suffix-pairs-ii",
+            "count-prefix-and-suffix-pairs-i"
+        ],
+        "topicTags": [
+            {
+                "name": "Hash Table",
+                "slug": "hash-table"
+            },
+            {
+                "name": "String",
+                "slug": "string"
+            },
+            {
+                "name": "Design",
+                "slug": "design"
+            },
+            {
+                "name": "Trie",
+                "slug": "trie"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 208,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 209,
+        "title": "Minimum Size Subarray Sum",
+        "titleSlug": "minimum-size-subarray-sum",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "2.1M",
+            "totalSubmission": "3.9M",
+            "totalAcceptedRaw": 2070754,
+            "totalSubmissionRaw": 3930341,
+            "acRate": "52.7%",
+            "acRateRaw": 52.6861027015846,
+            "likes": 14707,
+            "dislikes": 549
+        },
+        "similarQuestions": [
+            "minimum-window-substring",
+            "maximum-size-subarray-sum-equals-k",
+            "maximum-length-of-repeated-subarray",
+            "minimum-operations-to-reduce-x-to-zero",
+            "k-radius-subarray-averages",
+            "maximum-product-after-k-increments",
+            "shortest-subarray-with-or-at-least-k-i",
+            "minimum-positive-sum-subarray"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Binary Search",
+                "slug": "binary-search"
+            },
+            {
+                "name": "Sliding Window",
+                "slug": "sliding-window"
+            },
+            {
+                "name": "Prefix Sum",
+                "slug": "prefix-sum"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 209,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": true
+        }
+    },
+    {
+        "quesId": 210,
+        "title": "Course Schedule II",
+        "titleSlug": "course-schedule-ii",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "1.8M",
+            "totalSubmission": "3.3M",
+            "totalAcceptedRaw": 1825647,
+            "totalSubmissionRaw": 3252733,
+            "acRate": "56.1%",
+            "acRateRaw": 56.12658708065086,
+            "likes": 12110,
+            "dislikes": 383
+        },
+        "similarQuestions": [
+            "course-schedule",
+            "alien-dictionary",
+            "minimum-height-trees",
+            "sequence-reconstruction",
+            "course-schedule-iii",
+            "parallel-courses",
+            "find-all-possible-recipes-from-given-supplies",
+            "build-a-matrix-with-conditions",
+            "sort-array-by-moving-items-to-empty-space"
+        ],
+        "topicTags": [
+            {
+                "name": "Depth-First Search",
+                "slug": "depth-first-search"
+            },
+            {
+                "name": "Breadth-First Search",
+                "slug": "breadth-first-search"
+            },
+            {
+                "name": "Graph Theory",
+                "slug": "graph"
+            },
+            {
+                "name": "Topological Sort",
+                "slug": "topological-sort"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 210,
+            "hasSolution": true,
+            "hasVideoSolution": true
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 211,
+        "title": "Design Add and Search Words Data Structure",
+        "titleSlug": "design-add-and-search-words-data-structure",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "922.8K",
+            "totalSubmission": "1.9M",
+            "totalAcceptedRaw": 922824,
+            "totalSubmissionRaw": 1886500,
+            "acRate": "48.9%",
+            "acRateRaw": 48.91722939216105,
+            "likes": 8165,
+            "dislikes": 494
+        },
+        "similarQuestions": [
+            "implement-trie-prefix-tree",
+            "prefix-and-suffix-search",
+            "match-substring-after-replacement",
+            "sum-of-prefix-scores-of-strings",
+            "count-prefix-and-suffix-pairs-ii",
+            "count-prefix-and-suffix-pairs-i"
+        ],
+        "topicTags": [
+            {
+                "name": "String",
+                "slug": "string"
+            },
+            {
+                "name": "Depth-First Search",
+                "slug": "depth-first-search"
+            },
+            {
+                "name": "Design",
+                "slug": "design"
+            },
+            {
+                "name": "Trie",
+                "slug": "trie"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 211,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 212,
+        "title": "Word Search II",
+        "titleSlug": "word-search-ii",
+        "difficulty": "Hard",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "944.1K",
+            "totalSubmission": "2.4M",
+            "totalAcceptedRaw": 944092,
+            "totalSubmissionRaw": 2432493,
+            "acRate": "38.8%",
+            "acRateRaw": 38.81169794318264,
+            "likes": 10296,
+            "dislikes": 510
+        },
+        "similarQuestions": [
+            "word-search",
+            "unique-paths-iii",
+            "encrypt-and-decrypt-strings"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "String",
+                "slug": "string"
+            },
+            {
+                "name": "Backtracking",
+                "slug": "backtracking"
+            },
+            {
+                "name": "Trie",
+                "slug": "trie"
+            },
+            {
+                "name": "Matrix",
+                "slug": "matrix"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 212,
+            "hasSolution": true,
+            "hasVideoSolution": true
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 213,
+        "title": "House Robber II",
+        "titleSlug": "house-robber-ii",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "1.4M",
+            "totalSubmission": "3M",
+            "totalAcceptedRaw": 1358595,
+            "totalSubmissionRaw": 2989876,
+            "acRate": "45.4%",
+            "acRateRaw": 45.4397865868954,
+            "likes": 11264,
+            "dislikes": 196
+        },
+        "similarQuestions": [
+            "house-robber",
+            "paint-house",
+            "paint-fence",
+            "house-robber-iii",
+            "non-negative-integers-without-consecutive-ones",
+            "coin-path"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 213,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 214,
+        "title": "Shortest Palindrome",
+        "titleSlug": "shortest-palindrome",
+        "difficulty": "Hard",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "374K",
+            "totalSubmission": "870.2K",
+            "totalAcceptedRaw": 374018,
+            "totalSubmissionRaw": 870170,
+            "acRate": "43.0%",
+            "acRateRaw": 42.98230694621294,
+            "likes": 4626,
+            "dislikes": 296
+        },
+        "similarQuestions": [
+            "longest-palindromic-substring",
+            "find-the-index-of-the-first-occurrence-in-a-string",
+            "palindrome-pairs",
+            "maximum-deletions-on-a-string",
+            "smallest-palindromic-rearrangement-i"
+        ],
+        "topicTags": [
+            {
+                "name": "String",
+                "slug": "string"
+            },
+            {
+                "name": "Rolling Hash",
+                "slug": "rolling-hash"
+            },
+            {
+                "name": "String Matching",
+                "slug": "string-matching"
+            },
+            {
+                "name": "Hash Function",
+                "slug": "hash-function"
+            },
+            {
+                "name": "Manacher",
+                "slug": "manacher"
+            },
+            {
+                "name": "Z Algorithm",
+                "slug": "z-algorithm"
+            },
+            {
+                "name": "Knuth–Morris–Pratt Algorithm",
+                "slug": "knuth-morris-pratt-algorithm"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 214,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": true
+        }
+    },
+    {
+        "quesId": 215,
+        "title": "Kth Largest Element in an Array",
+        "titleSlug": "kth-largest-element-in-an-array",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "3.8M",
+            "totalSubmission": "5.5M",
+            "totalAcceptedRaw": 3815040,
+            "totalSubmissionRaw": 5507992,
+            "acRate": "69.3%",
+            "acRateRaw": 69.26376455222369,
+            "likes": 19009,
+            "dislikes": 980
+        },
+        "similarQuestions": [
+            "wiggle-sort-ii",
+            "top-k-frequent-elements",
+            "third-maximum-number",
+            "kth-largest-element-in-a-stream",
+            "k-closest-points-to-origin",
+            "find-the-kth-largest-integer-in-the-array",
+            "find-subsequence-of-length-k-with-the-largest-sum",
+            "k-highest-ranked-items-within-a-price-range"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Divide and Conquer",
+                "slug": "divide-and-conquer"
+            },
+            {
+                "name": "Sorting",
+                "slug": "sorting"
+            },
+            {
+                "name": "Heap (Priority Queue)",
+                "slug": "heap-priority-queue"
+            },
+            {
+                "name": "Quickselect",
+                "slug": "quickselect"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 215,
+            "hasSolution": true,
+            "hasVideoSolution": true
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 216,
+        "title": "Combination Sum III",
+        "titleSlug": "combination-sum-iii",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "856K",
+            "totalSubmission": "1.2M",
+            "totalAcceptedRaw": 855951,
+            "totalSubmissionRaw": 1161964,
+            "acRate": "73.7%",
+            "acRateRaw": 73.66437144841439,
+            "likes": 6753,
+            "dislikes": 126
+        },
+        "similarQuestions": [
+            "combination-sum"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Backtracking",
+                "slug": "backtracking"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 216,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 217,
+        "title": "Contains Duplicate",
+        "titleSlug": "contains-duplicate",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "6.9M",
+            "totalSubmission": "10.6M",
+            "totalAcceptedRaw": 6871124,
+            "totalSubmissionRaw": 10628913,
+            "acRate": "64.6%",
+            "acRateRaw": 64.64561001959636,
+            "likes": 14176,
+            "dislikes": 1375
+        },
+        "similarQuestions": [
+            "contains-duplicate-ii",
+            "contains-duplicate-iii",
+            "make-array-zero-by-subtracting-equal-amounts",
+            "find-valid-pair-of-adjacent-digits-in-string"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Hash Table",
+                "slug": "hash-table"
+            },
+            {
+                "name": "Sorting",
+                "slug": "sorting"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 217,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 218,
+        "title": "The Skyline Problem",
+        "titleSlug": "the-skyline-problem",
+        "difficulty": "Hard",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "364.5K",
+            "totalSubmission": "795.8K",
+            "totalAcceptedRaw": 364512,
+            "totalSubmissionRaw": 795787,
+            "acRate": "45.8%",
+            "acRateRaw": 45.80549415612894,
+            "likes": 6264,
+            "dislikes": 286
+        },
+        "similarQuestions": [
+            "falling-squares",
+            "shifting-letters-ii"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Divide and Conquer",
+                "slug": "divide-and-conquer"
+            },
+            {
+                "name": "Binary Indexed Tree",
+                "slug": "binary-indexed-tree"
+            },
+            {
+                "name": "Segment Tree",
+                "slug": "segment-tree"
+            },
+            {
+                "name": "Sweep Line",
+                "slug": "sweep-line"
+            },
+            {
+                "name": "Sorting",
+                "slug": "sorting"
+            },
+            {
+                "name": "Heap (Priority Queue)",
+                "slug": "heap-priority-queue"
+            },
+            {
+                "name": "Ordered Set",
+                "slug": "ordered-set"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 218,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 219,
+        "title": "Contains Duplicate II",
+        "titleSlug": "contains-duplicate-ii",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "1.9M",
+            "totalSubmission": "3.7M",
+            "totalAcceptedRaw": 1918923,
+            "totalSubmissionRaw": 3703284,
+            "acRate": "51.8%",
+            "acRateRaw": 51.81686800082953,
+            "likes": 7681,
+            "dislikes": 3336
+        },
+        "similarQuestions": [
+            "contains-duplicate",
+            "contains-duplicate-iii"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Hash Table",
+                "slug": "hash-table"
+            },
+            {
+                "name": "Sliding Window",
+                "slug": "sliding-window"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 219,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 220,
+        "title": "Contains Duplicate III",
+        "titleSlug": "contains-duplicate-iii",
+        "difficulty": "Hard",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "330.3K",
+            "totalSubmission": "1.3M",
+            "totalAcceptedRaw": 330340,
+            "totalSubmissionRaw": 1315572,
+            "acRate": "25.1%",
+            "acRateRaw": 25.110047104949707,
+            "likes": 1338,
+            "dislikes": 155
+        },
+        "similarQuestions": [
+            "contains-duplicate",
+            "contains-duplicate-ii"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Sliding Window",
+                "slug": "sliding-window"
+            },
+            {
+                "name": "Sorting",
+                "slug": "sorting"
+            },
+            {
+                "name": "Bucket Sort",
+                "slug": "bucket-sort"
+            },
+            {
+                "name": "Ordered Set",
+                "slug": "ordered-set"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 220,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 221,
+        "title": "Maximal Square",
+        "titleSlug": "maximal-square",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "965.1K",
+            "totalSubmission": "1.9M",
+            "totalAcceptedRaw": 965073,
+            "totalSubmissionRaw": 1900507,
+            "acRate": "50.8%",
+            "acRateRaw": 50.77979150837566,
+            "likes": 11110,
+            "dislikes": 265
+        },
+        "similarQuestions": [
+            "maximal-rectangle",
+            "largest-plus-sign",
+            "count-artifacts-that-can-be-extracted",
+            "stamping-the-grid",
+            "maximize-area-of-square-hole-in-grid"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming"
+            },
+            {
+                "name": "Matrix",
+                "slug": "matrix"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 221,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 222,
+        "title": "Count Complete Tree Nodes",
+        "titleSlug": "count-complete-tree-nodes",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "1.2M",
+            "totalSubmission": "1.7M",
+            "totalAcceptedRaw": 1242939,
+            "totalSubmissionRaw": 1707529,
+            "acRate": "72.8%",
+            "acRateRaw": 72.7916717422063,
+            "likes": 9613,
+            "dislikes": 626
+        },
+        "similarQuestions": [
+            "closest-binary-search-tree-value"
+        ],
+        "topicTags": [
+            {
+                "name": "Binary Search",
+                "slug": "binary-search"
+            },
+            {
+                "name": "Bit Manipulation",
+                "slug": "bit-manipulation"
+            },
+            {
+                "name": "Tree",
+                "slug": "tree"
+            },
+            {
+                "name": "Binary Tree",
+                "slug": "binary-tree"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 222,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 223,
+        "title": "Rectangle Area",
+        "titleSlug": "rectangle-area",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "300.5K",
+            "totalSubmission": "599.4K",
+            "totalAcceptedRaw": 300501,
+            "totalSubmissionRaw": 599449,
+            "acRate": "50.1%",
+            "acRateRaw": 50.129618817249145,
+            "likes": 2168,
+            "dislikes": 1669
+        },
+        "similarQuestions": [
+            "rectangle-overlap",
+            "find-the-number-of-ways-to-place-people-ii",
+            "find-the-number-of-ways-to-place-people-i",
+            "find-the-largest-area-of-square-inside-two-rectangles"
+        ],
+        "topicTags": [
+            {
+                "name": "Math",
+                "slug": "math"
+            },
+            {
+                "name": "Geometry",
+                "slug": "geometry"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 223,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 224,
+        "title": "Basic Calculator",
+        "titleSlug": "basic-calculator",
+        "difficulty": "Hard",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "737.9K",
+            "totalSubmission": "1.6M",
+            "totalAcceptedRaw": 737883,
+            "totalSubmissionRaw": 1565692,
+            "acRate": "47.1%",
+            "acRateRaw": 47.128354319619596,
+            "likes": 7041,
+            "dislikes": 565
+        },
+        "similarQuestions": [
+            "evaluate-reverse-polish-notation",
+            "basic-calculator-ii",
+            "different-ways-to-add-parentheses",
+            "expression-add-operators",
+            "basic-calculator-iii",
+            "the-score-of-students-solving-math-expression",
+            "minimize-result-by-adding-parentheses-to-expression"
+        ],
+        "topicTags": [
+            {
+                "name": "Math",
+                "slug": "math"
+            },
+            {
+                "name": "String",
+                "slug": "string"
+            },
+            {
+                "name": "Stack",
+                "slug": "stack"
+            },
+            {
+                "name": "Recursion",
+                "slug": "recursion"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 224,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 225,
+        "title": "Implement Stack using Queues",
+        "titleSlug": "implement-stack-using-queues",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "1.3M",
+            "totalSubmission": "1.8M",
+            "totalAcceptedRaw": 1255236,
+            "totalSubmissionRaw": 1779502,
+            "acRate": "70.5%",
+            "acRateRaw": 70.53875733975603,
+            "likes": 7085,
+            "dislikes": 1293
+        },
+        "similarQuestions": [
+            "implement-queue-using-stacks"
+        ],
+        "topicTags": [
+            {
+                "name": "Stack",
+                "slug": "stack"
+            },
+            {
+                "name": "Design",
+                "slug": "design"
+            },
+            {
+                "name": "Queue",
+                "slug": "queue"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 225,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 226,
+        "title": "Invert Binary Tree",
+        "titleSlug": "invert-binary-tree",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "3.2M",
+            "totalSubmission": "4M",
+            "totalAcceptedRaw": 3187104,
+            "totalSubmissionRaw": 3964676,
+            "acRate": "80.4%",
+            "acRateRaw": 80.3875267644484,
+            "likes": 15357,
+            "dislikes": 255
+        },
+        "similarQuestions": [
+            "reverse-odd-levels-of-binary-tree"
+        ],
+        "topicTags": [
+            {
+                "name": "Tree",
+                "slug": "tree"
+            },
+            {
+                "name": "Depth-First Search",
+                "slug": "depth-first-search"
+            },
+            {
+                "name": "Breadth-First Search",
+                "slug": "breadth-first-search"
+            },
+            {
+                "name": "Binary Tree",
+                "slug": "binary-tree"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 226,
+            "hasSolution": true,
+            "hasVideoSolution": true
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 227,
+        "title": "Basic Calculator II",
+        "titleSlug": "basic-calculator-ii",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "976.6K",
+            "totalSubmission": "2.1M",
+            "totalAcceptedRaw": 976573,
+            "totalSubmissionRaw": 2073342,
+            "acRate": "47.1%",
+            "acRateRaw": 47.101445780343255,
+            "likes": 6654,
+            "dislikes": 960
+        },
+        "similarQuestions": [
+            "basic-calculator",
+            "expression-add-operators",
+            "basic-calculator-iii",
+            "evaluate-valid-expressions"
+        ],
+        "topicTags": [
+            {
+                "name": "Math",
+                "slug": "math"
+            },
+            {
+                "name": "String",
+                "slug": "string"
+            },
+            {
+                "name": "Stack",
+                "slug": "stack"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 227,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": true
+        }
+    },
+    {
+        "quesId": 228,
+        "title": "Summary Ranges",
+        "titleSlug": "summary-ranges",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "993.6K",
+            "totalSubmission": "1.8M",
+            "totalAcceptedRaw": 993633,
+            "totalSubmissionRaw": 1818476,
+            "acRate": "54.6%",
+            "acRateRaw": 54.64100866435998,
+            "likes": 4603,
+            "dislikes": 2396
+        },
+        "similarQuestions": [
+            "missing-ranges",
+            "data-stream-as-disjoint-intervals",
+            "find-maximal-uncovered-ranges"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 228,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 229,
+        "title": "Majority Element II",
+        "titleSlug": "majority-element-ii",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "1.4M",
+            "totalSubmission": "2.4M",
+            "totalAcceptedRaw": 1381769,
+            "totalSubmissionRaw": 2437050,
+            "acRate": "56.7%",
+            "acRateRaw": 56.69844797363394,
+            "likes": 11198,
+            "dislikes": 510
+        },
+        "similarQuestions": [
+            "majority-element",
+            "check-if-a-number-is-majority-element-in-a-sorted-array",
+            "most-frequent-even-element"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Hash Table",
+                "slug": "hash-table"
+            },
+            {
+                "name": "Sorting",
+                "slug": "sorting"
+            },
+            {
+                "name": "Counting",
+                "slug": "counting"
+            },
+            {
+                "name": "Boyer–Moore Majority Vote Algorithm",
+                "slug": "boyer-moore-majority-vote-algorithm"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 229,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 230,
+        "title": "Kth Smallest Element in a BST",
+        "titleSlug": "kth-smallest-element-in-a-bst",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "2.4M",
+            "totalSubmission": "3.1M",
+            "totalAcceptedRaw": 2391434,
+            "totalSubmissionRaw": 3096089,
+            "acRate": "77.2%",
+            "acRateRaw": 77.24049454618743,
+            "likes": 12896,
+            "dislikes": 268
+        },
+        "similarQuestions": [
+            "binary-tree-inorder-traversal",
+            "second-minimum-node-in-a-binary-tree"
+        ],
+        "topicTags": [
+            {
+                "name": "Tree",
+                "slug": "tree"
+            },
+            {
+                "name": "Depth-First Search",
+                "slug": "depth-first-search"
+            },
+            {
+                "name": "Binary Search Tree",
+                "slug": "binary-search-tree"
+            },
+            {
+                "name": "Binary Tree",
+                "slug": "binary-tree"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 230,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 231,
+        "title": "Power of Two",
+        "titleSlug": "power-of-two",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "2.4M",
+            "totalSubmission": "4.7M",
+            "totalAcceptedRaw": 2378843,
+            "totalSubmissionRaw": 4715995,
+            "acRate": "50.4%",
+            "acRateRaw": 50.44200612468453,
+            "likes": 8188,
+            "dislikes": 510
+        },
+        "similarQuestions": [
+            "number-of-1-bits",
+            "power-of-three",
+            "power-of-four"
+        ],
+        "topicTags": [
+            {
+                "name": "Math",
+                "slug": "math"
+            },
+            {
+                "name": "Bit Manipulation",
+                "slug": "bit-manipulation"
+            },
+            {
+                "name": "Recursion",
+                "slug": "recursion"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 231,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 232,
+        "title": "Implement Queue using Stacks",
+        "titleSlug": "implement-queue-using-stacks",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "1.6M",
+            "totalSubmission": "2.3M",
+            "totalAcceptedRaw": 1605178,
+            "totalSubmissionRaw": 2285191,
+            "acRate": "70.2%",
+            "acRateRaw": 70.2427134545916,
+            "likes": 8764,
+            "dislikes": 498
+        },
+        "similarQuestions": [
+            "implement-stack-using-queues"
+        ],
+        "topicTags": [
+            {
+                "name": "Stack",
+                "slug": "stack"
+            },
+            {
+                "name": "Design",
+                "slug": "design"
+            },
+            {
+                "name": "Queue",
+                "slug": "queue"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 232,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": true
+        }
+    },
+    {
+        "quesId": 233,
+        "title": "Number of Digit One",
+        "titleSlug": "number-of-digit-one",
+        "difficulty": "Hard",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "158.3K",
+            "totalSubmission": "399.4K",
+            "totalAcceptedRaw": 158305,
+            "totalSubmissionRaw": 399350,
+            "acRate": "39.6%",
+            "acRateRaw": 39.64066608238387,
+            "likes": 1925,
+            "dislikes": 1577
+        },
+        "similarQuestions": [
+            "factorial-trailing-zeroes",
+            "digit-count-in-range"
+        ],
+        "topicTags": [
+            {
+                "name": "Math",
+                "slug": "math"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming"
+            },
+            {
+                "name": "Recursion",
+                "slug": "recursion"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 233,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": true
+        }
+    },
+    {
+        "quesId": 234,
+        "title": "Palindrome Linked List",
+        "titleSlug": "palindrome-linked-list",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "3.1M",
+            "totalSubmission": "5.3M",
+            "totalAcceptedRaw": 3083074,
+            "totalSubmissionRaw": 5256865,
+            "acRate": "58.6%",
+            "acRateRaw": 58.64855857357107,
+            "likes": 18565,
+            "dislikes": 989
+        },
+        "similarQuestions": [
+            "palindrome-number",
+            "valid-palindrome",
+            "reverse-linked-list",
+            "maximum-twin-sum-of-a-linked-list"
+        ],
+        "topicTags": [
+            {
+                "name": "Linked List",
+                "slug": "linked-list"
+            },
+            {
+                "name": "Two Pointers",
+                "slug": "two-pointers"
+            },
+            {
+                "name": "Stack",
+                "slug": "stack"
+            },
+            {
+                "name": "Recursion",
+                "slug": "recursion"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 234,
+            "hasSolution": true,
+            "hasVideoSolution": true
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 235,
+        "title": "Lowest Common Ancestor of a Binary Search Tree",
+        "titleSlug": "lowest-common-ancestor-of-a-binary-search-tree",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "2.4M",
+            "totalSubmission": "3.4M",
+            "totalAcceptedRaw": 2401340,
+            "totalSubmissionRaw": 3371012,
+            "acRate": "71.2%",
+            "acRateRaw": 71.23498818752351,
+            "likes": 12447,
+            "dislikes": 367
+        },
+        "similarQuestions": [
+            "lowest-common-ancestor-of-a-binary-tree",
+            "smallest-common-region",
+            "lowest-common-ancestor-of-a-binary-tree-ii",
+            "lowest-common-ancestor-of-a-binary-tree-iii",
+            "lowest-common-ancestor-of-a-binary-tree-iv"
+        ],
+        "topicTags": [
+            {
+                "name": "Tree",
+                "slug": "tree"
+            },
+            {
+                "name": "Depth-First Search",
+                "slug": "depth-first-search"
+            },
+            {
+                "name": "Binary Search Tree",
+                "slug": "binary-search-tree"
+            },
+            {
+                "name": "Binary Tree",
+                "slug": "binary-tree"
+            },
+            {
+                "name": "Binary Lifting",
+                "slug": "binary-lifting"
+            },
+            {
+                "name": "Lowest Common Ancestor",
+                "slug": "lowest-common-ancestor"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 235,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 236,
+        "title": "Lowest Common Ancestor of a Binary Tree",
+        "titleSlug": "lowest-common-ancestor-of-a-binary-tree",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "2.8M",
+            "totalSubmission": "3.9M",
+            "totalAcceptedRaw": 2754276,
+            "totalSubmissionRaw": 3935233,
+            "acRate": "70.0%",
+            "acRateRaw": 69.99025982853944,
+            "likes": 18994,
+            "dislikes": 496
+        },
+        "similarQuestions": [
+            "lowest-common-ancestor-of-a-binary-search-tree",
+            "smallest-common-region",
+            "find-players-with-zero-or-one-losses",
+            "lowest-common-ancestor-of-a-binary-tree-ii",
+            "lowest-common-ancestor-of-a-binary-tree-iii",
+            "lowest-common-ancestor-of-a-binary-tree-iv",
+            "step-by-step-directions-from-a-binary-tree-node-to-another",
+            "cycle-length-queries-in-a-tree"
+        ],
+        "topicTags": [
+            {
+                "name": "Tree",
+                "slug": "tree"
+            },
+            {
+                "name": "Depth-First Search",
+                "slug": "depth-first-search"
+            },
+            {
+                "name": "Binary Tree",
+                "slug": "binary-tree"
+            },
+            {
+                "name": "Binary Lifting",
+                "slug": "binary-lifting"
+            },
+            {
+                "name": "Lowest Common Ancestor",
+                "slug": "lowest-common-ancestor"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 236,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 237,
+        "title": "Delete Node in a Linked List",
+        "titleSlug": "delete-node-in-a-linked-list",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "2.1M",
+            "totalSubmission": "2.5M",
+            "totalAcceptedRaw": 2136905,
+            "totalSubmissionRaw": 2534297,
+            "acRate": "84.3%",
+            "acRateRaw": 84.31932162995057,
+            "likes": 6467,
+            "dislikes": 1813
+        },
+        "similarQuestions": [
+            "remove-linked-list-elements",
+            "remove-nodes-from-linked-list",
+            "delete-nodes-from-linked-list-present-in-array"
+        ],
+        "topicTags": [
+            {
+                "name": "Linked List",
+                "slug": "linked-list"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 237,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": true
+        }
+    },
+    {
+        "quesId": 238,
+        "title": "Product of Array Except Self",
+        "titleSlug": "product-of-array-except-self",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "4.9M",
+            "totalSubmission": "7M",
+            "totalAcceptedRaw": 4861453,
+            "totalSubmissionRaw": 7026593,
+            "acRate": "69.2%",
+            "acRateRaw": 69.18657713154106,
+            "likes": 26361,
+            "dislikes": 1716
+        },
+        "similarQuestions": [
+            "trapping-rain-water",
+            "maximum-product-subarray",
+            "paint-house-ii",
+            "minimum-difference-in-sums-after-removal-of-elements",
+            "construct-product-matrix",
+            "find-sum-of-array-product-of-magical-sequences"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Prefix Sum",
+                "slug": "prefix-sum"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 238,
+            "hasSolution": true,
+            "hasVideoSolution": true
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 239,
+        "title": "Sliding Window Maximum",
+        "titleSlug": "sliding-window-maximum",
+        "difficulty": "Hard",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "1.8M",
+            "totalSubmission": "3.7M",
+            "totalAcceptedRaw": 1807246,
+            "totalSubmissionRaw": 3678158,
+            "acRate": "49.1%",
+            "acRateRaw": 49.13465919780415,
+            "likes": 20801,
+            "dislikes": 855
+        },
+        "similarQuestions": [
+            "minimum-window-substring",
+            "min-stack",
+            "longest-substring-with-at-most-two-distinct-characters",
+            "paint-house-ii",
+            "jump-game-vi",
+            "maximum-number-of-robots-within-budget",
+            "maximum-tastiness-of-candy-basket",
+            "maximal-score-after-applying-k-operations"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Queue",
+                "slug": "queue"
+            },
+            {
+                "name": "Sliding Window",
+                "slug": "sliding-window"
+            },
+            {
+                "name": "Heap (Priority Queue)",
+                "slug": "heap-priority-queue"
+            },
+            {
+                "name": "Monotonic Queue",
+                "slug": "monotonic-queue"
+            },
+            {
+                "name": "Range Minimum/Maximum Query",
+                "slug": "range-minimum-maximum-query"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 239,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 240,
+        "title": "Search a 2D Matrix II",
+        "titleSlug": "search-a-2d-matrix-ii",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "1.5M",
+            "totalSubmission": "2.5M",
+            "totalAcceptedRaw": 1464991,
+            "totalSubmissionRaw": 2528116,
+            "acRate": "57.9%",
+            "acRateRaw": 57.94795504330883,
+            "likes": 13306,
+            "dislikes": 236
+        },
+        "similarQuestions": [
+            "search-a-2d-matrix"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Binary Search",
+                "slug": "binary-search"
+            },
+            {
+                "name": "Divide and Conquer",
+                "slug": "divide-and-conquer"
+            },
+            {
+                "name": "Matrix",
+                "slug": "matrix"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 240,
+            "hasSolution": true,
+            "hasVideoSolution": true
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 241,
+        "title": "Different Ways to Add Parentheses",
+        "titleSlug": "different-ways-to-add-parentheses",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "391.2K",
+            "totalSubmission": "531.8K",
+            "totalAcceptedRaw": 391176,
+            "totalSubmissionRaw": 531825,
+            "acRate": "73.6%",
+            "acRateRaw": 73.55371745429451,
+            "likes": 6386,
+            "dislikes": 398
+        },
+        "similarQuestions": [
+            "unique-binary-search-trees-ii",
+            "basic-calculator",
+            "expression-add-operators",
+            "the-score-of-students-solving-math-expression",
+            "minimize-result-by-adding-parentheses-to-expression"
+        ],
+        "topicTags": [
+            {
+                "name": "Math",
+                "slug": "math"
+            },
+            {
+                "name": "String",
+                "slug": "string"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming"
+            },
+            {
+                "name": "Recursion",
+                "slug": "recursion"
+            },
+            {
+                "name": "Memoization",
+                "slug": "memoization"
+            },
+            {
+                "name": "Bracket Sequences",
+                "slug": "bracket-sequences"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 241,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": true
+        }
+    },
+    {
+        "quesId": 242,
+        "title": "Valid Anagram",
+        "titleSlug": "valid-anagram",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "6.6M",
+            "totalSubmission": "9.7M",
+            "totalAcceptedRaw": 6648011,
+            "totalSubmissionRaw": 9696511,
+            "acRate": "68.6%",
+            "acRateRaw": 68.56090201060995,
+            "likes": 14640,
+            "dislikes": 483
+        },
+        "similarQuestions": [
+            "group-anagrams",
+            "palindrome-permutation",
+            "find-all-anagrams-in-a-string",
+            "find-resultant-array-after-removing-anagrams"
+        ],
+        "topicTags": [
+            {
+                "name": "Hash Table",
+                "slug": "hash-table"
+            },
+            {
+                "name": "String",
+                "slug": "string"
+            },
+            {
+                "name": "Sorting",
+                "slug": "sorting"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 242,
+            "hasSolution": true,
+            "hasVideoSolution": true
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 243,
+        "title": "Shortest Word Distance",
+        "titleSlug": "shortest-word-distance",
+        "difficulty": "Easy",
+        "isPaidOnly": true,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "248.9K",
+            "totalSubmission": "375K",
+            "totalAcceptedRaw": 248936,
+            "totalSubmissionRaw": 375010,
+            "acRate": "66.4%",
+            "acRateRaw": 66.38125281658405,
+            "likes": 1294,
+            "dislikes": 129
+        },
+        "similarQuestions": [
+            "shortest-word-distance-ii",
+            "shortest-word-distance-iii",
+            "find-all-k-distant-indices-in-an-array"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "String",
+                "slug": "string"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 243,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 244,
+        "title": "Shortest Word Distance II",
+        "titleSlug": "shortest-word-distance-ii",
+        "difficulty": "Medium",
+        "isPaidOnly": true,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "184.2K",
+            "totalSubmission": "292.4K",
+            "totalAcceptedRaw": 184243,
+            "totalSubmissionRaw": 292381,
+            "acRate": "63.0%",
+            "acRateRaw": 63.01469657741098,
+            "likes": 1088,
+            "dislikes": 413
+        },
+        "similarQuestions": [
+            "merge-two-sorted-lists",
+            "shortest-word-distance",
+            "shortest-word-distance-iii"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Hash Table",
+                "slug": "hash-table"
+            },
+            {
+                "name": "Two Pointers",
+                "slug": "two-pointers"
+            },
+            {
+                "name": "String",
+                "slug": "string"
+            },
+            {
+                "name": "Design",
+                "slug": "design"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 244,
+            "hasSolution": true,
+            "hasVideoSolution": true
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 245,
+        "title": "Shortest Word Distance III",
+        "titleSlug": "shortest-word-distance-iii",
+        "difficulty": "Medium",
+        "isPaidOnly": true,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "95.5K",
+            "totalSubmission": "160.4K",
+            "totalAcceptedRaw": 95493,
+            "totalSubmissionRaw": 160363,
+            "acRate": "59.5%",
+            "acRateRaw": 59.54802541733443,
+            "likes": 517,
+            "dislikes": 101
+        },
+        "similarQuestions": [
+            "shortest-word-distance",
+            "shortest-word-distance-ii"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "String",
+                "slug": "string"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 245,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 246,
+        "title": "Strobogrammatic Number",
+        "titleSlug": "strobogrammatic-number",
+        "difficulty": "Easy",
+        "isPaidOnly": true,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "213.5K",
+            "totalSubmission": "449.5K",
+            "totalAcceptedRaw": 213494,
+            "totalSubmissionRaw": 449498,
+            "acRate": "47.5%",
+            "acRateRaw": 47.4960956444745,
+            "likes": 638,
+            "dislikes": 1054
+        },
+        "similarQuestions": [
+            "strobogrammatic-number-ii",
+            "strobogrammatic-number-iii",
+            "confusing-number"
+        ],
+        "topicTags": [
+            {
+                "name": "Hash Table",
+                "slug": "hash-table"
+            },
+            {
+                "name": "Two Pointers",
+                "slug": "two-pointers"
+            },
+            {
+                "name": "String",
+                "slug": "string"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 246,
+            "hasSolution": true,
+            "hasVideoSolution": true
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 247,
+        "title": "Strobogrammatic Number II",
+        "titleSlug": "strobogrammatic-number-ii",
+        "difficulty": "Medium",
+        "isPaidOnly": true,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "163K",
+            "totalSubmission": "304.5K",
+            "totalAcceptedRaw": 163020,
+            "totalSubmissionRaw": 304451,
+            "acRate": "53.5%",
+            "acRateRaw": 53.545562340081,
+            "likes": 962,
+            "dislikes": 263
+        },
+        "similarQuestions": [
+            "strobogrammatic-number",
+            "strobogrammatic-number-iii",
+            "sum-of-k-mirror-numbers"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "String",
+                "slug": "string"
+            },
+            {
+                "name": "Recursion",
+                "slug": "recursion"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 247,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 248,
+        "title": "Strobogrammatic Number III",
+        "titleSlug": "strobogrammatic-number-iii",
+        "difficulty": "Hard",
+        "isPaidOnly": true,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "38.5K",
+            "totalSubmission": "90.1K",
+            "totalAcceptedRaw": 38476,
+            "totalSubmissionRaw": 90095,
+            "acRate": "42.7%",
+            "acRateRaw": 42.70603252122759,
+            "likes": 308,
+            "dislikes": 193
+        },
+        "similarQuestions": [
+            "strobogrammatic-number",
+            "strobogrammatic-number-ii"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "String",
+                "slug": "string"
+            },
+            {
+                "name": "Recursion",
+                "slug": "recursion"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 248,
+            "hasSolution": false,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 249,
+        "title": "Group Shifted Strings",
+        "titleSlug": "group-shifted-strings",
+        "difficulty": "Medium",
+        "isPaidOnly": true,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "319K",
+            "totalSubmission": "470.3K",
+            "totalAcceptedRaw": 319029,
+            "totalSubmissionRaw": 470290,
+            "acRate": "67.8%",
+            "acRateRaw": 67.83657812593027,
+            "likes": 1788,
+            "dislikes": 447
+        },
+        "similarQuestions": [
+            "group-anagrams",
+            "find-maximum-number-of-string-pairs"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Hash Table",
+                "slug": "hash-table"
+            },
+            {
+                "name": "String",
+                "slug": "string"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 249,
+            "hasSolution": true,
+            "hasVideoSolution": true
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 250,
+        "title": "Count Univalue Subtrees",
+        "titleSlug": "count-univalue-subtrees",
+        "difficulty": "Medium",
+        "isPaidOnly": true,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "172.2K",
+            "totalSubmission": "299.1K",
+            "totalAcceptedRaw": 172215,
+            "totalSubmissionRaw": 299100,
+            "acRate": "57.6%",
+            "acRateRaw": 57.5777331995988,
+            "likes": 1246,
+            "dislikes": 457
+        },
+        "similarQuestions": [
+            "subtree-of-another-tree",
+            "longest-univalue-path"
+        ],
+        "topicTags": [
+            {
+                "name": "Tree",
+                "slug": "tree"
+            },
+            {
+                "name": "Depth-First Search",
+                "slug": "depth-first-search"
+            },
+            {
+                "name": "Binary Tree",
+                "slug": "binary-tree"
+            },
+            {
+                "name": "DP on Trees",
+                "slug": "dp-on-trees"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 250,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 251,
+        "title": "Flatten 2D Vector",
+        "titleSlug": "flatten-2d-vector",
+        "difficulty": "Medium",
+        "isPaidOnly": true,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "147.6K",
+            "totalSubmission": "292K",
+            "totalAcceptedRaw": 147555,
+            "totalSubmissionRaw": 291997,
+            "acRate": "50.5%",
+            "acRateRaw": 50.53305342178172,
+            "likes": 740,
+            "dislikes": 418
+        },
+        "similarQuestions": [
+            "binary-search-tree-iterator",
+            "zigzag-iterator",
+            "peeking-iterator",
+            "flatten-nested-list-iterator"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Two Pointers",
+                "slug": "two-pointers"
+            },
+            {
+                "name": "Design",
+                "slug": "design"
+            },
+            {
+                "name": "Iterator",
+                "slug": "iterator"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 251,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 252,
+        "title": "Meeting Rooms",
+        "titleSlug": "meeting-rooms",
+        "difficulty": "Easy",
+        "isPaidOnly": true,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "531.1K",
+            "totalSubmission": "892K",
+            "totalAcceptedRaw": 531085,
+            "totalSubmissionRaw": 892011,
+            "acRate": "59.5%",
+            "acRateRaw": 59.53794291774429,
+            "likes": 2132,
+            "dislikes": 117
+        },
+        "similarQuestions": [
+            "merge-intervals",
+            "meeting-rooms-ii",
+            "meeting-rooms-iii",
+            "points-that-intersect-with-cars"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Sorting",
+                "slug": "sorting"
+            },
+            {
+                "name": "Quicksort",
+                "slug": "quicksort"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 252,
+            "hasSolution": true,
+            "hasVideoSolution": true
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 253,
+        "title": "Meeting Rooms II",
+        "titleSlug": "meeting-rooms-ii",
+        "difficulty": "Medium",
+        "isPaidOnly": true,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "1.2M",
+            "totalSubmission": "2.3M",
+            "totalAcceptedRaw": 1200613,
+            "totalSubmissionRaw": 2274657,
+            "acRate": "52.8%",
+            "acRateRaw": 52.782150834783735,
+            "likes": 7262,
+            "dislikes": 177
+        },
+        "similarQuestions": [
+            "merge-intervals",
+            "meeting-rooms",
+            "minimum-number-of-arrows-to-burst-balloons",
+            "car-pooling",
+            "number-of-flowers-in-full-bloom",
+            "meeting-rooms-iii",
+            "total-cost-to-hire-k-workers",
+            "points-that-intersect-with-cars"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Two Pointers",
+                "slug": "two-pointers"
+            },
+            {
+                "name": "Greedy",
+                "slug": "greedy"
+            },
+            {
+                "name": "Sorting",
+                "slug": "sorting"
+            },
+            {
+                "name": "Heap (Priority Queue)",
+                "slug": "heap-priority-queue"
+            },
+            {
+                "name": "Prefix Sum",
+                "slug": "prefix-sum"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 253,
+            "hasSolution": true,
+            "hasVideoSolution": true
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 254,
+        "title": "Factor Combinations",
+        "titleSlug": "factor-combinations",
+        "difficulty": "Medium",
+        "isPaidOnly": true,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "142K",
+            "totalSubmission": "280.7K",
+            "totalAcceptedRaw": 142011,
+            "totalSubmissionRaw": 280743,
+            "acRate": "50.6%",
+            "acRateRaw": 50.58398606554749,
+            "likes": 1181,
+            "dislikes": 76
+        },
+        "similarQuestions": [
+            "combination-sum"
+        ],
+        "topicTags": [
+            {
+                "name": "Backtracking",
+                "slug": "backtracking"
+            },
+            {
+                "name": "Prime Factorization",
+                "slug": "prime-factorization"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 254,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 255,
+        "title": "Verify Preorder Sequence in Binary Search Tree",
+        "titleSlug": "verify-preorder-sequence-in-binary-search-tree",
+        "difficulty": "Medium",
+        "isPaidOnly": true,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "95.1K",
+            "totalSubmission": "183.5K",
+            "totalAcceptedRaw": 95102,
+            "totalSubmissionRaw": 183480,
+            "acRate": "51.8%",
+            "acRateRaw": 51.832352299978204,
+            "likes": 1271,
+            "dislikes": 90
+        },
+        "similarQuestions": [
+            "binary-tree-preorder-traversal"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Stack",
+                "slug": "stack"
+            },
+            {
+                "name": "Tree",
+                "slug": "tree"
+            },
+            {
+                "name": "Binary Search Tree",
+                "slug": "binary-search-tree"
+            },
+            {
+                "name": "Recursion",
+                "slug": "recursion"
+            },
+            {
+                "name": "Monotonic Stack",
+                "slug": "monotonic-stack"
+            },
+            {
+                "name": "Binary Tree",
+                "slug": "binary-tree"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 255,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 256,
+        "title": "Paint House",
+        "titleSlug": "paint-house",
+        "difficulty": "Medium",
+        "isPaidOnly": true,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "249.3K",
+            "totalSubmission": "386.3K",
+            "totalAcceptedRaw": 249252,
+            "totalSubmissionRaw": 386271,
+            "acRate": "64.5%",
+            "acRateRaw": 64.52775383085968,
+            "likes": 2388,
+            "dislikes": 134
+        },
+        "similarQuestions": [
+            "house-robber",
+            "house-robber-ii",
+            "paint-house-ii",
+            "paint-fence",
+            "minimum-path-cost-in-a-grid"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 256,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 257,
+        "title": "Binary Tree Paths",
+        "titleSlug": "binary-tree-paths",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "1.1M",
+            "totalSubmission": "1.5M",
+            "totalAcceptedRaw": 1067823,
+            "totalSubmissionRaw": 1542730,
+            "acRate": "69.2%",
+            "acRateRaw": 69.21636421620865,
+            "likes": 7346,
+            "dislikes": 356
+        },
+        "similarQuestions": [
+            "path-sum-ii",
+            "smallest-string-starting-from-leaf",
+            "step-by-step-directions-from-a-binary-tree-node-to-another"
+        ],
+        "topicTags": [
+            {
+                "name": "String",
+                "slug": "string"
+            },
+            {
+                "name": "Backtracking",
+                "slug": "backtracking"
+            },
+            {
+                "name": "Tree",
+                "slug": "tree"
+            },
+            {
+                "name": "Depth-First Search",
+                "slug": "depth-first-search"
+            },
+            {
+                "name": "Binary Tree",
+                "slug": "binary-tree"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 257,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 258,
+        "title": "Add Digits",
+        "titleSlug": "add-digits",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "1.3M",
+            "totalSubmission": "1.9M",
+            "totalAcceptedRaw": 1320586,
+            "totalSubmissionRaw": 1907017,
+            "acRate": "69.2%",
+            "acRateRaw": 69.24871895444029,
+            "likes": 5602,
+            "dislikes": 1988
+        },
+        "similarQuestions": [
+            "happy-number",
+            "sum-of-digits-in-the-minimum-number",
+            "sum-of-digits-of-string-after-convert",
+            "minimum-sum-of-four-digit-number-after-splitting-digits",
+            "calculate-digit-sum-of-a-string",
+            "difference-between-element-sum-and-digit-sum-of-an-array",
+            "alternating-digit-sum"
+        ],
+        "topicTags": [
+            {
+                "name": "Math",
+                "slug": "math"
+            },
+            {
+                "name": "Simulation",
+                "slug": "simulation"
+            },
+            {
+                "name": "Number Theory",
+                "slug": "number-theory"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 258,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 259,
+        "title": "3Sum Smaller",
+        "titleSlug": "3sum-smaller",
+        "difficulty": "Medium",
+        "isPaidOnly": true,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "176.9K",
+            "totalSubmission": "344.3K",
+            "totalAcceptedRaw": 176915,
+            "totalSubmissionRaw": 344288,
+            "acRate": "51.4%",
+            "acRateRaw": 51.38575843479878,
+            "likes": 1633,
+            "dislikes": 170
+        },
+        "similarQuestions": [
+            "3sum",
+            "3sum-closest",
+            "valid-triangle-number",
+            "two-sum-less-than-k",
+            "maximize-greatness-of-an-array",
+            "find-polygon-with-the-largest-perimeter"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Two Pointers",
+                "slug": "two-pointers"
+            },
+            {
+                "name": "Binary Search",
+                "slug": "binary-search"
+            },
+            {
+                "name": "Sorting",
+                "slug": "sorting"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 259,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 260,
+        "title": "Single Number III",
+        "titleSlug": "single-number-iii",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "633.6K",
+            "totalSubmission": "903.4K",
+            "totalAcceptedRaw": 633597,
+            "totalSubmissionRaw": 903385,
+            "acRate": "70.1%",
+            "acRateRaw": 70.13610924161384,
+            "likes": 6901,
+            "dislikes": 280
+        },
+        "similarQuestions": [
+            "single-number",
+            "single-number-ii",
+            "find-the-original-array-of-prefix-xor",
+            "find-the-xor-of-numbers-which-appear-twice"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Bit Manipulation",
+                "slug": "bit-manipulation"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 260,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 261,
+        "title": "Graph Valid Tree",
+        "titleSlug": "graph-valid-tree",
+        "difficulty": "Medium",
+        "isPaidOnly": true,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "546.4K",
+            "totalSubmission": "1.1M",
+            "totalAcceptedRaw": 546409,
+            "totalSubmissionRaw": 1090333,
+            "acRate": "50.1%",
+            "acRateRaw": 50.1139560116038,
+            "likes": 3478,
+            "dislikes": 116
+        },
+        "similarQuestions": [
+            "course-schedule",
+            "number-of-connected-components-in-an-undirected-graph",
+            "keys-and-rooms"
+        ],
+        "topicTags": [
+            {
+                "name": "Depth-First Search",
+                "slug": "depth-first-search"
+            },
+            {
+                "name": "Breadth-First Search",
+                "slug": "breadth-first-search"
+            },
+            {
+                "name": "Union-Find",
+                "slug": "union-find"
+            },
+            {
+                "name": "Graph Theory",
+                "slug": "graph"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 261,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 262,
+        "title": "Trips and Users",
+        "titleSlug": "trips-and-users",
+        "difficulty": "Hard",
+        "isPaidOnly": false,
+        "categoryTitle": "Database",
+        "stats": {
+            "totalAccepted": "327.4K",
+            "totalSubmission": "839.7K",
+            "totalAcceptedRaw": 327392,
+            "totalSubmissionRaw": 839670,
+            "acRate": "39.0%",
+            "acRateRaw": 38.990846447549885,
+            "likes": 1467,
+            "dislikes": 711
+        },
+        "similarQuestions": [
+            "hopper-company-queries-i",
+            "hopper-company-queries-ii",
+            "hopper-company-queries-iii"
+        ],
+        "topicTags": [
+            {
+                "name": "Database",
+                "slug": "database"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 262,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": true
+        }
+    },
+    {
+        "quesId": 263,
+        "title": "Ugly Number",
+        "titleSlug": "ugly-number",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "842.1K",
+            "totalSubmission": "1.9M",
+            "totalAcceptedRaw": 842099,
+            "totalSubmissionRaw": 1909615,
+            "acRate": "44.1%",
+            "acRateRaw": 44.09780170808941,
+            "likes": 3936,
+            "dislikes": 1803
+        },
+        "similarQuestions": [
+            "happy-number",
+            "count-primes",
+            "ugly-number-ii"
+        ],
+        "topicTags": [
+            {
+                "name": "Math",
+                "slug": "math"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 263,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 264,
+        "title": "Ugly Number II",
+        "titleSlug": "ugly-number-ii",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "555.7K",
+            "totalSubmission": "1.1M",
+            "totalAcceptedRaw": 555730,
+            "totalSubmissionRaw": 1116716,
+            "acRate": "49.8%",
+            "acRateRaw": 49.76453384506963,
+            "likes": 6931,
+            "dislikes": 456
+        },
+        "similarQuestions": [
+            "merge-k-sorted-lists",
+            "count-primes",
+            "ugly-number",
+            "perfect-squares",
+            "super-ugly-number",
+            "ugly-number-iii"
+        ],
+        "topicTags": [
+            {
+                "name": "Hash Table",
+                "slug": "hash-table"
+            },
+            {
+                "name": "Math",
+                "slug": "math"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming"
+            },
+            {
+                "name": "Heap (Priority Queue)",
+                "slug": "heap-priority-queue"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 264,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": true
+        }
+    },
+    {
+        "quesId": 265,
+        "title": "Paint House II",
+        "titleSlug": "paint-house-ii",
+        "difficulty": "Hard",
+        "isPaidOnly": true,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "146.4K",
+            "totalSubmission": "255.7K",
+            "totalAcceptedRaw": 146435,
+            "totalSubmissionRaw": 255706,
+            "acRate": "57.3%",
+            "acRateRaw": 57.26693937568926,
+            "likes": 1352,
+            "dislikes": 40
+        },
+        "similarQuestions": [
+            "product-of-array-except-self",
+            "sliding-window-maximum",
+            "paint-house",
+            "paint-fence"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 265,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 266,
+        "title": "Palindrome Permutation",
+        "titleSlug": "palindrome-permutation",
+        "difficulty": "Easy",
+        "isPaidOnly": true,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "236.1K",
+            "totalSubmission": "343.7K",
+            "totalAcceptedRaw": 236133,
+            "totalSubmissionRaw": 343705,
+            "acRate": "68.7%",
+            "acRateRaw": 68.70223011012351,
+            "likes": 1106,
+            "dislikes": 75
+        },
+        "similarQuestions": [
+            "longest-palindromic-substring",
+            "valid-anagram",
+            "palindrome-permutation-ii",
+            "longest-palindrome"
+        ],
+        "topicTags": [
+            {
+                "name": "Hash Table",
+                "slug": "hash-table"
+            },
+            {
+                "name": "String",
+                "slug": "string"
+            },
+            {
+                "name": "Bit Manipulation",
+                "slug": "bit-manipulation"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 266,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 267,
+        "title": "Palindrome Permutation II",
+        "titleSlug": "palindrome-permutation-ii",
+        "difficulty": "Medium",
+        "isPaidOnly": true,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "76.4K",
+            "totalSubmission": "180.3K",
+            "totalAcceptedRaw": 76440,
+            "totalSubmissionRaw": 180347,
+            "acRate": "42.4%",
+            "acRateRaw": 42.38495788674056,
+            "likes": 900,
+            "dislikes": 98
+        },
+        "similarQuestions": [
+            "next-permutation",
+            "permutations-ii",
+            "palindrome-permutation"
+        ],
+        "topicTags": [
+            {
+                "name": "Hash Table",
+                "slug": "hash-table"
+            },
+            {
+                "name": "String",
+                "slug": "string"
+            },
+            {
+                "name": "Backtracking",
+                "slug": "backtracking"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 267,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 268,
+        "title": "Missing Number",
+        "titleSlug": "missing-number",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "4.1M",
+            "totalSubmission": "5.7M",
+            "totalAcceptedRaw": 4141846,
+            "totalSubmissionRaw": 5708448,
+            "acRate": "72.6%",
+            "acRateRaw": 72.55650280162243,
+            "likes": 14528,
+            "dislikes": 3482
+        },
+        "similarQuestions": [
+            "first-missing-positive",
+            "single-number",
+            "find-the-duplicate-number",
+            "couples-holding-hands",
+            "find-unique-binary-string",
+            "find-the-largest-almost-missing-integer"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Hash Table",
+                "slug": "hash-table"
+            },
+            {
+                "name": "Math",
+                "slug": "math"
+            },
+            {
+                "name": "Binary Search",
+                "slug": "binary-search"
+            },
+            {
+                "name": "Bit Manipulation",
+                "slug": "bit-manipulation"
+            },
+            {
+                "name": "Sorting",
+                "slug": "sorting"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 268,
+            "hasSolution": true,
+            "hasVideoSolution": true
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 269,
+        "title": "Alien Dictionary",
+        "titleSlug": "alien-dictionary",
+        "difficulty": "Hard",
+        "isPaidOnly": true,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "497.6K",
+            "totalSubmission": "1.3M",
+            "totalAcceptedRaw": 497599,
+            "totalSubmissionRaw": 1334317,
+            "acRate": "37.3%",
+            "acRateRaw": 37.29241252266141,
+            "likes": 4690,
+            "dislikes": 1040
+        },
+        "similarQuestions": [
+            "course-schedule-ii"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "String",
+                "slug": "string"
+            },
+            {
+                "name": "Depth-First Search",
+                "slug": "depth-first-search"
+            },
+            {
+                "name": "Breadth-First Search",
+                "slug": "breadth-first-search"
+            },
+            {
+                "name": "Graph Theory",
+                "slug": "graph"
+            },
+            {
+                "name": "Topological Sort",
+                "slug": "topological-sort"
+            },
+            {
+                "name": "Directed Acyclic Graph",
+                "slug": "directed-acyclic-graph"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 269,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 270,
+        "title": "Closest Binary Search Tree Value",
+        "titleSlug": "closest-binary-search-tree-value",
+        "difficulty": "Easy",
+        "isPaidOnly": true,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "457.4K",
+            "totalSubmission": "931K",
+            "totalAcceptedRaw": 457399,
+            "totalSubmissionRaw": 931001,
+            "acRate": "49.1%",
+            "acRateRaw": 49.129807594191625,
+            "likes": 1905,
+            "dislikes": 166
+        },
+        "similarQuestions": [
+            "count-complete-tree-nodes",
+            "closest-binary-search-tree-value-ii",
+            "search-in-a-binary-search-tree",
+            "closest-nodes-queries-in-a-binary-search-tree"
+        ],
+        "topicTags": [
+            {
+                "name": "Binary Search",
+                "slug": "binary-search"
+            },
+            {
+                "name": "Tree",
+                "slug": "tree"
+            },
+            {
+                "name": "Depth-First Search",
+                "slug": "depth-first-search"
+            },
+            {
+                "name": "Binary Search Tree",
+                "slug": "binary-search-tree"
+            },
+            {
+                "name": "Binary Tree",
+                "slug": "binary-tree"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 270,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 271,
+        "title": "Encode and Decode Strings",
+        "titleSlug": "encode-and-decode-strings",
+        "difficulty": "Medium",
+        "isPaidOnly": true,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "317.1K",
+            "totalSubmission": "611.2K",
+            "totalAcceptedRaw": 317108,
+            "totalSubmissionRaw": 611196,
+            "acRate": "51.9%",
+            "acRateRaw": 51.883192952833454,
+            "likes": 1591,
+            "dislikes": 456
+        },
+        "similarQuestions": [
+            "count-and-say",
+            "serialize-and-deserialize-binary-tree",
+            "string-compression",
+            "count-binary-substrings"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "String",
+                "slug": "string"
+            },
+            {
+                "name": "Design",
+                "slug": "design"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 271,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 272,
+        "title": "Closest Binary Search Tree Value II",
+        "titleSlug": "closest-binary-search-tree-value-ii",
+        "difficulty": "Hard",
+        "isPaidOnly": true,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "142K",
+            "totalSubmission": "231.6K",
+            "totalAcceptedRaw": 141951,
+            "totalSubmissionRaw": 231584,
+            "acRate": "61.3%",
+            "acRateRaw": 61.295685366864724,
+            "likes": 1346,
+            "dislikes": 51
+        },
+        "similarQuestions": [
+            "binary-tree-inorder-traversal",
+            "closest-binary-search-tree-value",
+            "closest-nodes-queries-in-a-binary-search-tree"
+        ],
+        "topicTags": [
+            {
+                "name": "Two Pointers",
+                "slug": "two-pointers"
+            },
+            {
+                "name": "Stack",
+                "slug": "stack"
+            },
+            {
+                "name": "Tree",
+                "slug": "tree"
+            },
+            {
+                "name": "Depth-First Search",
+                "slug": "depth-first-search"
+            },
+            {
+                "name": "Binary Search Tree",
+                "slug": "binary-search-tree"
+            },
+            {
+                "name": "Heap (Priority Queue)",
+                "slug": "heap-priority-queue"
+            },
+            {
+                "name": "Binary Tree",
+                "slug": "binary-tree"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 272,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 273,
+        "title": "Integer to English Words",
+        "titleSlug": "integer-to-english-words",
+        "difficulty": "Hard",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "593.7K",
+            "totalSubmission": "1.7M",
+            "totalAcceptedRaw": 593722,
+            "totalSubmissionRaw": 1687986,
+            "acRate": "35.2%",
+            "acRateRaw": 35.17347279719998,
+            "likes": 3878,
+            "dislikes": 6847
+        },
+        "similarQuestions": [
+            "integer-to-roman"
+        ],
+        "topicTags": [
+            {
+                "name": "Math",
+                "slug": "math"
+            },
+            {
+                "name": "String",
+                "slug": "string"
+            },
+            {
+                "name": "Recursion",
+                "slug": "recursion"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 273,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": true
+        }
+    },
+    {
+        "quesId": 274,
+        "title": "H-Index",
+        "titleSlug": "h-index",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "914.6K",
+            "totalSubmission": "2.2M",
+            "totalAcceptedRaw": 914576,
+            "totalSubmissionRaw": 2187571,
+            "acRate": "41.8%",
+            "acRateRaw": 41.807918902017576,
+            "likes": 1947,
+            "dislikes": 930
+        },
+        "similarQuestions": [
+            "h-index-ii"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Sorting",
+                "slug": "sorting"
+            },
+            {
+                "name": "Counting Sort",
+                "slug": "counting-sort"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 274,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 275,
+        "title": "H-Index II",
+        "titleSlug": "h-index-ii",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "280.2K",
+            "totalSubmission": "701.1K",
+            "totalAcceptedRaw": 280151,
+            "totalSubmissionRaw": 701056,
+            "acRate": "40.0%",
+            "acRateRaw": 39.96131561154712,
+            "likes": 561,
+            "dislikes": 171
+        },
+        "similarQuestions": [
+            "h-index"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Binary Search",
+                "slug": "binary-search"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 275,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 276,
+        "title": "Paint Fence",
+        "titleSlug": "paint-fence",
+        "difficulty": "Medium",
+        "isPaidOnly": true,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "131.4K",
+            "totalSubmission": "270.9K",
+            "totalAcceptedRaw": 131395,
+            "totalSubmissionRaw": 270875,
+            "acRate": "48.5%",
+            "acRateRaw": 48.50761421319797,
+            "likes": 1642,
+            "dislikes": 399
+        },
+        "similarQuestions": [
+            "house-robber",
+            "house-robber-ii",
+            "paint-house",
+            "paint-house-ii"
+        ],
+        "topicTags": [
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 276,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 277,
+        "title": "Find the Celebrity",
+        "titleSlug": "find-the-celebrity",
+        "difficulty": "Medium",
+        "isPaidOnly": true,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "329.5K",
+            "totalSubmission": "671.5K",
+            "totalAcceptedRaw": 329521,
+            "totalSubmissionRaw": 671478,
+            "acRate": "49.1%",
+            "acRateRaw": 49.07398306422549,
+            "likes": 3015,
+            "dislikes": 322
+        },
+        "similarQuestions": [
+            "find-the-town-judge"
+        ],
+        "topicTags": [
+            {
+                "name": "Two Pointers",
+                "slug": "two-pointers"
+            },
+            {
+                "name": "Graph Theory",
+                "slug": "graph"
+            },
+            {
+                "name": "Interactive",
+                "slug": "interactive"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 277,
+            "hasSolution": true,
+            "hasVideoSolution": true
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 278,
+        "title": "First Bad Version",
+        "titleSlug": "first-bad-version",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "2.2M",
+            "totalSubmission": "4.7M",
+            "totalAcceptedRaw": 2239487,
+            "totalSubmissionRaw": 4710001,
+            "acRate": "47.5%",
+            "acRateRaw": 47.547608457261994,
+            "likes": 9129,
+            "dislikes": 3454
+        },
+        "similarQuestions": [
+            "find-first-and-last-position-of-element-in-sorted-array",
+            "search-insert-position",
+            "guess-number-higher-or-lower"
+        ],
+        "topicTags": [
+            {
+                "name": "Binary Search",
+                "slug": "binary-search"
+            },
+            {
+                "name": "Interactive",
+                "slug": "interactive"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 278,
+            "hasSolution": true,
+            "hasVideoSolution": true
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 279,
+        "title": "Perfect Squares",
+        "titleSlug": "perfect-squares",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "1.1M",
+            "totalSubmission": "1.9M",
+            "totalAcceptedRaw": 1094485,
+            "totalSubmissionRaw": 1926167,
+            "acRate": "56.8%",
+            "acRateRaw": 56.82204368761925,
+            "likes": 11964,
+            "dislikes": 493
+        },
+        "similarQuestions": [
+            "count-primes",
+            "ugly-number-ii",
+            "ways-to-express-an-integer-as-sum-of-powers"
+        ],
+        "topicTags": [
+            {
+                "name": "Math",
+                "slug": "math"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming"
+            },
+            {
+                "name": "Breadth-First Search",
+                "slug": "breadth-first-search"
+            },
+            {
+                "name": "Knapsack Problem",
+                "slug": "knapsack-problem"
+            },
+            {
+                "name": "Complete Knapsack",
+                "slug": "complete-knapsack"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 279,
+            "hasSolution": true,
+            "hasVideoSolution": false
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
+    },
+    {
+        "quesId": 280,
+        "title": "Wiggle Sort",
+        "titleSlug": "wiggle-sort",
+        "difficulty": "Medium",
+        "isPaidOnly": true,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "160.2K",
+            "totalSubmission": "233.8K",
+            "totalAcceptedRaw": 160184,
+            "totalSubmissionRaw": 233807,
+            "acRate": "68.5%",
+            "acRateRaw": 68.5112079621226,
+            "likes": 1249,
+            "dislikes": 103
+        },
+        "similarQuestions": [
+            "sort-colors",
+            "wiggle-sort-ii",
+            "array-with-elements-not-equal-to-average-of-neighbors"
+        ],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Greedy",
+                "slug": "greedy"
+            },
+            {
+                "name": "Sorting",
+                "slug": "sorting"
+            }
+        ],
+        "meta": {
+            "quesIdLCBackend": 280,
+            "hasSolution": true,
+            "hasVideoSolution": true
+        },
+        "solution": {
+            "canSeeDetail": false
+        }
     }
 ]

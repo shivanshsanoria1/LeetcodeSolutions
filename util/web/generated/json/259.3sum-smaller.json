@@ -1,0 +1,56 @@
+{
+    "quesId": 259,
+    "title": "3Sum Smaller",
+    "titleSlug": "3sum-smaller",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "176.9K",
+        "totalSubmission": "344.3K",
+        "totalAcceptedRaw": 176915,
+        "totalSubmissionRaw": 344288,
+        "acRate": "51.4%",
+        "acRateRaw": 51.38575843479878,
+        "likes": 1633,
+        "dislikes": 170
+    },
+    "similarQuestions": [
+        "3sum",
+        "3sum-closest",
+        "valid-triangle-number",
+        "two-sum-less-than-k",
+        "maximize-greatness-of-an-array",
+        "find-polygon-with-the-largest-perimeter"
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "Binary Search",
+            "slug": "binary-search"
+        },
+        {
+            "name": "Sorting",
+            "slug": "sorting"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 259,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}

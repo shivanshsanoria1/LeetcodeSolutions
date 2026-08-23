@@ -1,0 +1,48 @@
+{
+    "quesId": 249,
+    "title": "Group Shifted Strings",
+    "titleSlug": "group-shifted-strings",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "319K",
+        "totalSubmission": "470.3K",
+        "totalAcceptedRaw": 319029,
+        "totalSubmissionRaw": 470290,
+        "acRate": "67.8%",
+        "acRateRaw": 67.83657812593027,
+        "likes": 1788,
+        "dislikes": 447
+    },
+    "similarQuestions": [
+        "group-anagrams",
+        "find-maximum-number-of-string-pairs"
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 249,
+        "hasSolution": true,
+        "hasVideoSolution": true
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}

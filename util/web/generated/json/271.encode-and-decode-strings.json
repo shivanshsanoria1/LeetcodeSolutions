@@ -1,0 +1,50 @@
+{
+    "quesId": 271,
+    "title": "Encode and Decode Strings",
+    "titleSlug": "encode-and-decode-strings",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "317.1K",
+        "totalSubmission": "611.2K",
+        "totalAcceptedRaw": 317108,
+        "totalSubmissionRaw": 611196,
+        "acRate": "51.9%",
+        "acRateRaw": 51.883192952833454,
+        "likes": 1591,
+        "dislikes": 456
+    },
+    "similarQuestions": [
+        "count-and-say",
+        "serialize-and-deserialize-binary-tree",
+        "string-compression",
+        "count-binary-substrings"
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Design",
+            "slug": "design"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 271,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}

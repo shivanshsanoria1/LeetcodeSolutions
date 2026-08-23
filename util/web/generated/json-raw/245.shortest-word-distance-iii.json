@@ -1,0 +1,34 @@
+{
+    "questionId": "245",
+    "questionFrontendId": "245",
+    "title": "Shortest Word Distance III",
+    "titleSlug": "shortest-word-distance-iii",
+    "difficulty": "Medium",
+    "likes": 517,
+    "dislikes": 101,
+    "acRate": 59.54802541733443,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"95.5K\", \"totalSubmission\": \"160.4K\", \"totalAcceptedRaw\": 95493, \"totalSubmissionRaw\": 160363, \"acRate\": \"59.5%\"}",
+    "similarQuestions": "[{\"title\": \"Shortest Word Distance\", \"titleSlug\": \"shortest-word-distance\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Shortest Word Distance II\", \"titleSlug\": \"shortest-word-distance-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "codeSnippets": null
+}

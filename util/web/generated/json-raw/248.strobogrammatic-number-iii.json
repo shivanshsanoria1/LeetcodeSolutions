@@ -1,0 +1,35 @@
+{
+    "questionId": "248",
+    "questionFrontendId": "248",
+    "title": "Strobogrammatic Number III",
+    "titleSlug": "strobogrammatic-number-iii",
+    "difficulty": "Hard",
+    "likes": 308,
+    "dislikes": 193,
+    "acRate": 42.70603252122759,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": false,
+    "hasVideoSolution": false,
+    "stats": "{\"totalAccepted\": \"38.5K\", \"totalSubmission\": \"90.1K\", \"totalAcceptedRaw\": 38476, \"totalSubmissionRaw\": 90095, \"acRate\": \"42.7%\"}",
+    "similarQuestions": "[{\"title\": \"Strobogrammatic Number\", \"titleSlug\": \"strobogrammatic-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Strobogrammatic Number II\", \"titleSlug\": \"strobogrammatic-number-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": null,
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Recursion",
+            "slug": "recursion"
+        }
+    ],
+    "codeSnippets": null
+}

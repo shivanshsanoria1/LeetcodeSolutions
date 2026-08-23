@@ -1,0 +1,44 @@
+{
+    "quesId": 245,
+    "title": "Shortest Word Distance III",
+    "titleSlug": "shortest-word-distance-iii",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "95.5K",
+        "totalSubmission": "160.4K",
+        "totalAcceptedRaw": 95493,
+        "totalSubmissionRaw": 160363,
+        "acRate": "59.5%",
+        "acRateRaw": 59.54802541733443,
+        "likes": 517,
+        "dislikes": 101
+    },
+    "similarQuestions": [
+        "shortest-word-distance",
+        "shortest-word-distance-ii"
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 245,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "codeSnippets": null
+}

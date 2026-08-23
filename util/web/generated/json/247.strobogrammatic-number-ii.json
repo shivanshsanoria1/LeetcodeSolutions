@@ -1,0 +1,51 @@
+{
+    "quesId": 247,
+    "title": "Strobogrammatic Number II",
+    "titleSlug": "strobogrammatic-number-ii",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "163K",
+        "totalSubmission": "304.5K",
+        "totalAcceptedRaw": 163020,
+        "totalSubmissionRaw": 304451,
+        "acRate": "53.5%",
+        "acRateRaw": 53.545562340081,
+        "likes": 962,
+        "dislikes": 263
+    },
+    "similarQuestions": [
+        "strobogrammatic-number",
+        "strobogrammatic-number-iii",
+        "sum-of-k-mirror-numbers"
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        },
+        {
+            "name": "Recursion",
+            "slug": "recursion"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 247,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [
+        "Try to use recursion and notice that it should recurse with <i>n</i> - 2 instead of <i>n</i> - 1."
+    ],
+    "codeSnippets": null
+}

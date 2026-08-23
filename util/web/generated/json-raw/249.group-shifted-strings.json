@@ -1,0 +1,38 @@
+{
+    "questionId": "249",
+    "questionFrontendId": "249",
+    "title": "Group Shifted Strings",
+    "titleSlug": "group-shifted-strings",
+    "difficulty": "Medium",
+    "likes": 1788,
+    "dislikes": 447,
+    "acRate": 67.83657812593027,
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "companyTagStats": null,
+    "hasSolution": true,
+    "hasVideoSolution": true,
+    "stats": "{\"totalAccepted\": \"319K\", \"totalSubmission\": \"470.3K\", \"totalAcceptedRaw\": 319029, \"totalSubmissionRaw\": 470290, \"acRate\": \"67.8%\"}",
+    "similarQuestions": "[{\"title\": \"Group Anagrams\", \"titleSlug\": \"group-anagrams\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Find Maximum Number of String Pairs\", \"titleSlug\": \"find-maximum-number-of-string-pairs\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "content": null,
+    "hints": [],
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "codeSnippets": null
+}
