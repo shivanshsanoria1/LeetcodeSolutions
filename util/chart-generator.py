@@ -129,7 +129,7 @@ def generateTypeCounter(stats: List[Dict]) -> Dict:
 
 def plotPieChartTypeCount(counter: Dict) -> None:
 	labelMapping = {
-		"general": ("General", getColorHex('blue')),
+		"algorithm": ("Algorithm", getColorHex('blue')),
 		"database": ("Database", getColorHex('green')),
 		"javascript/typescript": ("Javascript / Typescript", getColorHex('yellow')),
 	}

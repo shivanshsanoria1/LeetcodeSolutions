@@ -7,17 +7,13 @@ echo "[$START_TIME] Started stat-generator script..."
 echo "--------------------"
 
 echo "Running node commands..."
-node ./util/local/stats-generator.js
+node ./util/stats-generator.js
 echo "--------------------"
 
 echo "Running python commands..."
-source ./util/local/.venv/bin/activate
-python3 ./util/local/chart-generator.py
+source ./util/.venv/bin/activate
+python3 ./util/chart-generator.py
 deactivate
-echo "--------------------"
-
-echo "Running node commands for algos ..."
-node ./algorithms/stats/algo-stats-generator.js
 echo "--------------------"
 
 END_TIME=$(date -u +"%Y-%m-%d %H:%M:%S")

@@ -3,7 +3,7 @@
 	"name": "cpp",
 	"formalName": "C++",
 	"extension": "cpp",
-	"types": ["general"],
+	"types": ["algorithm"],
 	"dirNames": [
 		"CPP [0001-0500]",
 		"CPP [0501-1000]",
@@ -19,7 +19,7 @@
 		"name": "js",
 		"formalName": "Javascript",
 		"extension": "js",
-		"types": ["general","javascript/typescript"],
+		"types": ["algorithm","javascript/typescript"],
 		"dirNames": ["Javascript"]
 	},
 	"mysql": {

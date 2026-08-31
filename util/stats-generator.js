@@ -82,14 +82,9 @@ async function generateStatsMap() {
 
 				const quesId = Number(fileName.split('.')[0]);
 				const titleSlug = fileName.split('.')[1].split(' ')[0]
-				const title = titleSlug.split('-').join(' ')
 				const fileExtension = path.extname(filePath).substring(1);
 				const language = getLangNameFromDirPath(dirPath);
 				const isAccepted = !(fileName.includes('TLE') || fileName.includes('MLE'));
-
-				// if (!isAccepted) {
-				// 	logger.info(fileName)
-				// }
 
 				let statObj = null;
 
@@ -101,7 +96,7 @@ async function generateStatsMap() {
 						continue
 					}
 				} else {
-					statObj = { quesId, titleSlug, title, counter: {} };
+					statObj = { quesId, titleSlug, counter: {} };
 				}
 
 				updateCounterObj(statObj.counter, language, isAccepted);
@@ -128,7 +123,7 @@ function convertMapToArray(mp) {
 	return arr;
 }
 
-function generateProblemCounters(problems) {
+function generateProblemCountersAndDeduceType(problems) {
 	// total problem accepted and unaccepted count
 	const totalProblemCounter = { accepted: 0, unaccepted: 0 };
 
@@ -148,7 +143,7 @@ function generateProblemCounters(problems) {
 		const { quesId, counter } = problem;
 
 		let isAccepted = false;
-		let type = 'general';
+		let type = 'algorithm';
 
 		for (const lang in counter) {
 			problemCounterPerLang[lang].accepted += counter[lang].accepted > 0 ? 1 : 0;
@@ -183,19 +178,13 @@ function generateProblemCounters(problems) {
 
 async function generateProblemsJSON(problems) {
 	try {
-		let problemsStringified = '';
-		problemsStringified += '[\n';
-		problemsStringified +=
-			problems
-				.map((problem) => JSON.stringify(problem, null, '\t'))
-				.join(',\n');
-		problemsStringified += '\n]\n';
+		// readable JSON
+		const filePathJSON = helper.getFilePath('LCSolvedProblemList');
+		await fs.writeFile(filePathJSON, JSON.stringify(problems, null, '\t') + '\n');
 
-		// await helper.ensureFileDir('LCSolvedProblemList')
-		const filePathJSON = helper.getFilePath('LCSolvedProblemList')
-
-		await fs.writeFile(filePathJSON, problemsStringified);
-
+		// minified JSON
+		const filePathJSONMin = helper.getFilePath('LCSolvedProblemListMin')
+		await fs.writeFile(filePathJSONMin, JSON.stringify(problems));
 	} catch (err) {
 		throw err
 	}
@@ -204,9 +193,7 @@ async function generateProblemsJSON(problems) {
 async function generateMDlinksFile(problems) {
 	try {
 		for (const lang in langModel) {
-			const problemsAccepted =
-				problems
-					.filter(({ isAccepted, counter }) => isAccepted && counter[lang]);
+			const problemsAccepted = problems.filter(({ isAccepted, counter }) => isAccepted && counter[lang]);
 
 			let fileDataStringified = '';
 			fileDataStringified += '| Id | Title | Link(s) | Type |\n';
@@ -232,7 +219,6 @@ async function generateMDlinksFile(problems) {
 				fileDataStringified += `|${type}|\n`;
 			}
 
-			// await helper.ensureDir('linkTables')
 			const filePathMD = path.join(helper.getDirPath('linkTables'), `leetcode-links-${lang}.md`);
 
 			await fs.writeFile(filePathMD, fileDataStringified);
@@ -318,7 +304,7 @@ async function generateStats() {
 		logger.info(`Problem at index 0 = ${JSON.stringify(problems[0])}`)
 
 		const { totalProblemCounter, problemCounterPerLang, fileCounter } =
-			generateProblemCounters(problems);
+			generateProblemCountersAndDeduceType(problems);
 
 		logger.info(`Total problem counter = ${JSON.stringify(totalProblemCounter)}`);
 		logger.info(`Problem counter per language = ${JSON.stringify(problemCounterPerLang)}`);
@@ -339,7 +325,6 @@ async function generateStats() {
 
 		const endTime = Date.now();
 		logger.time(`Time Taken to Generate Problem stats = ${endTime - startTime} ms`);
-
 	} catch (err) {
 		console.error(err);
 		logger.error(err);

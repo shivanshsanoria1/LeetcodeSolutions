@@ -1,5 +1,5 @@
 {
-    "MAX_QUES_ID": 4029,
+    "MAX_QUES_ID": 4041,
     "ENABLE_LOGGER_PY": true,
     "SAVE_CHART": true,
     "SHOW_CHART": false,
@@ -13,10 +13,11 @@
     },
     "filePaths": {
         "LCSolvedProblemList": "stats/lc-solved-problems-list.json",
+        "LCSolvedProblemListMin": "util/web/generated/json-min/lc-solved-problems-list-min.json",
         "specialQuesIds": "util/special-ques-ids.json",
         "LCBaseProblemList": "util/web/generated/lc-base-problem-list.json",
         "LCProblemList": "util/web/generated/lc-problem-list.json",
-        "LCProblemListMin": "util/web/generated/lc-problem-list-min.json",
+        "LCProblemListMin": "util/web/generated/json-min/lc-problem-list-min.json",
         "LCTopicTag": "util/web/generated/lc-topic-tag.json",
         "config": "util/config.json",
         "webConfig": "util/web/web-config.json"
