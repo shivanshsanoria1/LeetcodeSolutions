@@ -14,9 +14,6 @@ const FORCE_REFRESH_PROBLEM_LIST = webConfig.FORCE_REFRESH_PROBLEM_LIST ?? false
 const FETCH_NEXT_COUNT = webConfig.FETCH_NEXT_COUNT ?? 5
 const API_TIMEOUT_MS = webConfig.API_TIMEOUT_MS ?? 10000 // Default: 10 sec 
 
-// provide delay in ms
-const sleep = (time_ms = API_DELAY_MS) => new Promise((resolve) => setTimeout(resolve, time_ms));
-
 // fetch a list of all problems from LC-API, moves old data to backup;
 // use the local version if last fetch was less than 7 days ago;
 // use manual override to force refresh the list
@@ -41,8 +38,6 @@ async function fetchBaseProblemList() {
 			}
 		}
 
-		const query = queries.LC_Base_Problem_List;
-
 		logger.info('Fetching new problem list from Leetcode API...')
 
 		// start the loading text while waiting for API response
@@ -60,7 +55,7 @@ async function fetchBaseProblemList() {
 				"Referer": webConfig.REFERER,
 				"User-Agent": "Mozilla/5.0"
 			},
-			body: JSON.stringify({ query })
+			body: JSON.stringify({ query: queries.LC_Base_Problem_List })
 		});
 		// stop the loading text
 		clearInterval(apiInProgressInterval);
@@ -112,22 +107,62 @@ async function fetchBaseProblemList() {
 	}
 }
 
-function findQuesIdFromSlug(baseProblems, titleSlug) {
+async function createRawJSONFilenameMap() {
 	try {
-		for (const baseProblem of baseProblems) {
-			if (baseProblem.titleSlug === titleSlug) {
-				return Number(baseProblem.questionFrontendId)
+		const dirPath = helper.getDirPath('LCProblemsJSONRaw')
+		const filenames = await fs.readdir(dirPath);
+
+		const rawJSONFilenameMap = new Map();
+
+		for (const filename of filenames) {
+			if (!filename.endsWith(".json")) {
+				logger.info(`Invalid filename in JSON Raw dir: ${filename}`)
+				continue;
 			}
+
+			const quesId = Number(filename.split('.')[0])
+			const titleSlug = filename.split('.')[1]
+
+			rawJSONFilenameMap.set(quesId, titleSlug)
 		}
 
-		return -1
+		return rawJSONFilenameMap
 	} catch (err) {
 		throw err
 	}
 }
 
-// parse the problem stats in a custom format
-function parseProblem(problem, baseProblems) {
+async function fetchRawProblems(baseProblems, rawJSONFilenameMap) {
+	// provide delay in ms
+	const sleep = (time_ms = API_DELAY_MS) => new Promise((resolve) => setTimeout(resolve, time_ms));
+
+	try {
+		let limit = FETCH_NEXT_COUNT;
+		for (let i = 0; i < baseProblems.length && limit > 0; i++) {
+			const { questionFrontendId, title, titleSlug } = baseProblems[i]
+
+			if (rawJSONFilenameMap.get(Number(questionFrontendId))) {
+				// logger.info(`${questionFrontendId} already has its Raw JSON`)
+				continue;
+			}
+
+			logger.info(`Fetching... ${questionFrontendId}.${title}`)
+			const fetchAPISuccess = await fetchProblem(titleSlug)
+
+			if (fetchAPISuccess === false) {//fetch API failed
+				logger.error('Fetch API Failure. Stopping script...')
+				break;
+			}
+
+			limit--
+			await sleep() // prevent overwhelming the API
+		}
+	} catch (err) {
+		throw err;
+	}
+}
+
+function parseRawProblem(baseProblems, problemRaw) {
 	try {
 		const parseJSONString = (value, fallback = []) => {
 			try {
@@ -137,128 +172,80 @@ function parseProblem(problem, baseProblems) {
 			}
 		};
 
+		const findQuesIdFromSlug = (baseProblems, titleSlug) => Number(baseProblems.find(p => p.titleSlug === titleSlug)?.questionFrontendId ?? -1);
+
 		const parsedProblemObj = {
-			quesId: Number(problem.questionFrontendId),
-			title: problem.title,
-			titleSlug: problem.titleSlug,
-			difficulty: problem.difficulty,
-			isPaidOnly: problem.isPaidOnly,
-			categoryTitle: problem.categoryTitle,
-			stats: JSON.parse(problem.stats),
-			similarQuestions: parseJSONString(problem.similarQuestions).map(q => q.titleSlug),
-			// similarQuesIds: parseJSONString(problem.similarQuestions)
-			// 	.map(({ titleSlug }) => findQuesIdFromSlug(baseProblems, titleSlug)),
-			topicTags: problem.topicTags ?? [],
+			quesId: Number(problemRaw.questionFrontendId),
+			title: problemRaw.title,
+			titleSlug: problemRaw.titleSlug,
+			difficulty: problemRaw.difficulty,
+			isPaidOnly: problemRaw.isPaidOnly,
+			categoryTitle: problemRaw.categoryTitle,
+			stats: JSON.parse(problemRaw.stats),
+			// similarQuestions: parseJSONString(problemRaw.similarQuestions).map(q => q.titleSlug),
+			similarQuesIds: parseJSONString(problemRaw.similarQuestions)
+				.map(({ titleSlug }) => findQuesIdFromSlug(baseProblems, titleSlug)),
+			topicTags: problemRaw.topicTags ?? [],
 			meta: {
-				quesIdLCBackend: Number(problem.questionId),
-				hasSolution: problem.hasSolution,
-				hasVideoSolution: problem.hasVideoSolution,
+				quesIdLCBackend: Number(problemRaw.questionId),
+				hasSolution: problemRaw.hasSolution,
+				hasVideoSolution: problemRaw.hasVideoSolution,
 			},
 			solution: {
-				canSeeDetail: problem.solution?.canSeeDetail ?? false,
+				canSeeDetail: problemRaw.solution?.canSeeDetail ?? false,
 			}
 		};
 
-		parsedProblemObj.stats.acRateRaw = problem.acRate
-		parsedProblemObj.stats.likes = problem.likes
-		parsedProblemObj.stats.dislikes = problem.dislikes
+		parsedProblemObj.stats.acRateRaw = problemRaw.acRate
+		parsedProblemObj.stats.likes = problemRaw.likes
+		parsedProblemObj.stats.dislikes = problemRaw.dislikes
+
+		parsedProblemObj.solution.content = problemRaw.solution?.content
+		parsedProblemObj.content = problemRaw.content
+		parsedProblemObj.hints = problemRaw.hints
+
+		parsedProblemObj.LAST_UPDATED_ISO = timer.getTimestamp('ISO')
 
 		return parsedProblemObj
 	} catch (err) {
-		logger.info(err)
 		throw err;
 	}
 }
 
-// parse the full problem stats in a custom format to store into a JSON file
-function parseProblemJSON(problem, baseProblems) {
+async function parseRawProblems(baseProblems, rawJSONFilenameMap) {
 	try {
-		const parsedProblemObj = parseProblem(problem, baseProblems)
+		const problems = []
+		for (const [quesId, titleSlug] of rawJSONFilenameMap) {
+			const filenameJSON = `${quesId}.${titleSlug}.json`
+			const filePathJSONRaw = path.join(helper.getDirPath('LCProblemsJSONRaw'), filenameJSON)
 
-		parsedProblemObj.solution.content = problem.solution?.content
-		parsedProblemObj.content = problem.content
-		parsedProblemObj.hints = problem.hints
-		// parsedProblemObj.codeSnippets = problem.codeSnippets
+			const problemRaw = await readFromJSON(filePathJSONRaw)
 
-		return parsedProblemObj
+			const problem = parseRawProblem(baseProblems, problemRaw)
+
+			const filePathJSON = path.join(helper.getDirPath('LCProblemsJSON'), filenameJSON)
+			await writeToJSON(filePathJSON, problem)
+
+			problems.push(problem)
+		}
+
+		problems.sort((a, b) => Number(a.quesId) - Number(b.quesId));
+
+		const filePathJSON = helper.getFilePath('LCProblemList')
+		await writeToJSON(filePathJSON, problems)
+
+		const filePathJSONMin = helper.getFilePath('LCProblemListMin')
+		await writeToJSON(filePathJSONMin, problems, true)
+
+		return problems
 	} catch (err) {
-		logger.info(err)
 		throw err;
 	}
 }
 
-// verifies each problem in problems[] has its JSON and Raw JSON files
-async function verifyProblemJSON(problems) {
-	try {
-		//verify JSON dir
-		const dirPathJSON = helper.getDirPath('LCProblemsJSON')
-		const files = await fs.readdir(dirPathJSON);
-
-		if (files.length !== problems.length) {
-			throw new Error('Each item in Problem List must have its individual JSON file.')
-		}
-
-		//verify Raw JSON dir
-		const dirPathJSONRaw = helper.getDirPath('LCProblemsJSONRaw')
-		const filesRaw = await fs.readdir(dirPathJSONRaw);
-
-		if (filesRaw.length !== problems.length) {
-			throw new Error('Each item in Problem List must have its individual Raw JSON file.')
-		}
-
-		//make map of quesId -> titleSlug for json dir files
-		const fileMap = {};
-		for (const file of files) {
-			if (!file.endsWith('.json')) {
-				throw new Error(`Invalid filename = ${file}`)
-			}
-
-			const quesId = Number(file.split('.')[0])
-			const titleSlug = file.split('.')[1]
-
-			if (quesId in fileMap) {
-				throw new Error(`Duplicate quesId = ${quesId} in JSON dir.`);
-			}
-
-			fileMap[quesId] = titleSlug;
-		}
-
-		//match the filenames in JSON and Raw JSON dir
-		for (const file of filesRaw) {
-			if (!file.endsWith('.json')) {
-				throw new Error(`Invalid filename = ${file}`)
-			}
-
-			const quesId = Number(file.split('.')[0])
-			const titleSlug = file.split('.')[1]
-
-			if (!fileMap[quesId]) {
-				throw new Error(`Invalid quesId = ${quesId} in Raw JSON dir`)
-			} else if (fileMap[quesId] !== titleSlug) {
-				throw new Error(`quesId = ${quesId} title slug mismatch. 
-					JSON title slug = ${fileMap[quesId]}, Raw JSON title slug = ${titleSlug}
-				`)
-			}
-		}
-
-		//match the filenames in JSON and input problems list
-		for (const { quesId, titleSlug } of problems) {
-			if (!fileMap[quesId]) {
-				throw new Error(`quesId = ${quesId} JSON file not found.`)
-			} else if (fileMap[quesId] !== titleSlug) {
-				throw new Error(`quesId = ${quesId} title slug mismatch. 
-					Title slug = ${titleSlug}, filename = ${fileMap[quesId]}
-				`)
-			}
-		}
-	} catch (err) {
-		throw err
-	}
-}
-
-// fetch details for a specific problem by its title-slug,
-// parse in a custom format
-async function fetchProblem(titleSlug, baseProblems) {
+// fetch details for a specific problem by its title-slug
+// return API success/failure status
+async function fetchProblem(titleSlug) {
 	let fetchAPISuccess = false
 
 	const controller = new AbortController()
@@ -302,18 +289,23 @@ async function fetchProblem(titleSlug, baseProblems) {
 			throw new Error("Problem not found");
 		}
 
-		const problem = parseProblem(data.question, baseProblems);
+		const problem = data.question
 
-		const filenameJSON = `${problem.quesId}.${problem.titleSlug}.json`
+		//const problem = parseProblem(data.question, baseProblems);
+
+		problem.LAST_UPDATED_ISO = timer.getTimestamp('ISO')
+
+		const filenameJSON = `${problem.questionFrontendId}.${problem.titleSlug}.json`
 
 		const filePathJSONRaw = path.join(helper.getDirPath('LCProblemsJSONRaw'), filenameJSON)
-		await writeToJSON(filePathJSONRaw, data.question)
+		await writeToJSON(filePathJSONRaw, problem)
 
-		const filePathJSON = path.join(helper.getDirPath('LCProblemsJSON'), filenameJSON)
-		await writeToJSON(filePathJSON, parseProblemJSON(data.question, baseProblems))
+		// const filePathJSON = path.join(helper.getDirPath('LCProblemsJSON'), filenameJSON)
+		// await writeToJSON(filePathJSON, parseProblemJSON(data.question, baseProblems))
 
-		return problem
+		// return problem
 
+		return fetchAPISuccess
 	} catch (err) {
 		if (err.name === "AbortError") {
 			logger.error(`API timeout: LeetCode API did not respond within ${API_TIMEOUT_MS} ms for "${titleSlug}"`)
@@ -326,72 +318,6 @@ async function fetchProblem(titleSlug, baseProblems) {
 		throw err;
 	} finally {
 		clearTimeout(timeout)
-	}
-}
-
-// uses the base problem list to fetch the details for each missing problem sequentially (with limiter);
-// append the new items to the old data list;
-// use manual override to force refresh the list (use with CAUTION, full refresh too slow)
-// takes backup before full refresh
-async function fetchProblems(baseProblems) {
-	try {
-		const filePath = helper.getFilePath('LCProblemList')
-		let problems = []
-
-		if (FORCE_REFRESH_PROBLEM_LIST) {
-			logger.info('FORCE_REFRESH_PROBLEM_LIST activated. Creating backup...')
-			// create a backup of the old json
-			await createBackupJSON(filePath)
-
-			await createBackupDir(helper.getDirPath('LCProblemsJSONRaw'))
-			await createBackupDir(helper.getDirPath('LCProblemsJSON'))
-		} else {
-			problems = await readFromJSON(filePath)
-		}
-		logger.info(`Base Problems length = ${baseProblems.length}`)
-		logger.info(`Problems length = ${problems.length}`)
-
-		if (baseProblems.length === problems.length) {
-			return problems
-		}
-		else if (baseProblems.length < problems.length) {
-			throw new Error('Problems length mismatch')
-		}
-
-		await verifyProblemJSON(problems)
-
-		for (let i = problems.length, limit = FETCH_NEXT_COUNT;
-			i < baseProblems.length && limit > 0;
-			i++, limit--) {
-			const { questionFrontendId, title, titleSlug } = baseProblems[i]
-			logger.info(`Fetching... ${questionFrontendId}.${title}`)
-
-			const problem = await fetchProblem(titleSlug, baseProblems)
-
-			if (problem === false) {//fetch API failed
-				logger.error('Fetch API Failure. Stopping script...')
-				break;
-			}
-			problems.push(problem)
-
-			await sleep() // prevent overwhelming the API
-		}
-
-		await writeToJSON(filePath, problems)
-
-		const filePathJSONMin = helper.getFilePath('LCProblemListMin')
-		await writeToJSON(filePathJSONMin, problems, true)
-
-		//switch OFF the FORCE REFRESH flag
-		if (webConfig.FORCE_REFRESH_PROBLEM_LIST) {
-			webConfig.FORCE_REFRESH_PROBLEM_LIST = false
-			await updateConfig('web')
-			logger.info('FORCE_REFRESH_PROBLEM_LIST flag Reset to: false')
-		}
-
-		return problems
-	} catch (err) {
-		throw err;
 	}
 }
 
@@ -428,7 +354,15 @@ async function fetchStatsFromLC() {
 		logger.info('Base Problem list length = ' + baseProblems.length)
 		logger.info('Base Problem at index 0 = ' + JSON.stringify(baseProblems[0]))
 
-		const problems = await fetchProblems(baseProblems)
+		let rawJSONFilenameMap = await createRawJSONFilenameMap()
+		logger.info(`raw JSON file map first pair = 1: ${rawJSONFilenameMap.get(1)}`)
+
+		await fetchRawProblems(baseProblems, rawJSONFilenameMap)
+
+		rawJSONFilenameMap = await createRawJSONFilenameMap()
+		logger.info(`raw JSON file map first pair = 1: ${rawJSONFilenameMap.get(1)}`)
+
+		const problems = await parseRawProblems(baseProblems, rawJSONFilenameMap)
 		logger.info('Main Problem list length = ' + problems.length)
 		logger.info('Main Problem at index 0 = ' + JSON.stringify(problems[0]))
 
@@ -476,19 +410,6 @@ async function readFromJSON(filePath, defaultValue = []) {
 }
 
 async function writeToJSON(filePath, data = {}, minifiedFlag = false) {
-	// try {
-	// 	await fs.access(filePath);
-	// } catch (err) {
-	// 	if (err.code === 'ENOENT') {
-	// 		throw new Error(
-	// 			`JSON file does not exist: ${filePath}. ` +
-	// 			`Use helper.getFilePath() to obtain the file path.`
-	// 		);
-	// 	}
-
-	// 	throw err;
-	// }
-
 	try {
 		if (minifiedFlag) {
 			await fs.writeFile(filePath, JSON.stringify(data), 'utf8');
