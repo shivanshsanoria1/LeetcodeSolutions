@@ -3,6 +3,7 @@ const fs = require('node:fs/promises');
 
 const logger = require('./logger.js')
 const helper = require('./helper.js')
+const timer = require('./timer.js')
 const config = require('./config.json')
 const langModel = require('./language-model.json');
 const specialQuesIds = require('./special-ques-ids.json');
@@ -255,8 +256,7 @@ async function updateStatsinReadmeFile(totalProblemCounter, problemCounterPerLan
 		const fileDataArr = fileData.split(seperator);
 
 		let statData = '';
-		statData += `Last updated at _${new Date().toUTCString()}_\n\n`;
-		statData += `_${new Date().toString()}_\n`;
+		statData += `Last updated at _${timer.getUTCTimestamp('IST')}_\n\n`;
 
 		statData += '### Total problems:\n';
 		statData += '| Accepted | Partially accepted | Out of |\n';

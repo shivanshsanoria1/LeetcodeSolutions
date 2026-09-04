@@ -34,8 +34,37 @@ function getFileSafeISOTimestamp() {
 	return new Date().toISOString().replace(/[:.]/g, '-');
 }
 
+function getUTCTimestamp(timezone = 'GMT') {
+	const isIST = timezone === 'IST';
+	const timeZone = isIST ? 'Asia/Kolkata' : 'UTC';
+	const zone = isIST ? 'IST' : 'GMT';
+
+	const parts = new Intl.DateTimeFormat('en-US', {
+		timeZone,
+		day: '2-digit',
+		month: 'short',
+		year: 'numeric',
+		hour: '2-digit',
+		minute: '2-digit',
+		second: '2-digit',
+		hour12: false,
+		timeZoneName: 'longOffset'
+	}).formatToParts(new Date());
+
+	const get = (type) => parts.find(p => p.type === type)?.value;
+
+	const offset = get('timeZoneName')
+		.replace(':', '')
+		.replace('GMT', 'GMT');
+
+	return `${get('day')} ${get('month')} ${get('year')} ` +
+		`${get('hour')}:${get('minute')}:${get('second')} ` +
+		`${offset} (${zone})`;
+}
+
 module.exports = {
 	getTimestamp,
 	getYYYYMMDD,
-	getFileSafeISOTimestamp
+	getFileSafeISOTimestamp,
+	getUTCTimestamp
 }

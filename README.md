@@ -23,13 +23,12 @@ This repo contains solutions to over **1700** problems from [leetcode.com](https
 ## Stats
 
 <!-- UPDATE STATS HERE -->
-Last updated at _Mon, 31 Aug 2026 18:52:52 GMT_
+Last updated at _05 Sep 2026 02:22:40 GMT+0530 (IST)_
 
-_Tue Sep 01 2026 00:22:52 GMT+0530 (India Standard Time)_
 ### Total problems:
 | Accepted | Partially accepted | Out of |
 | --- | --- | --- |
-| 1792 | 103 | 4041 |
+| 1792 | 103 | 4042 |
 ### Total problems solved per language:
 | Language  | Accepted | Partially accepted | Links Table |
 | --- | --- | --- | --- |
