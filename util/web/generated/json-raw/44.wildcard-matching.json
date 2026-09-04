@@ -4,15 +4,15 @@
     "title": "Wildcard Matching",
     "titleSlug": "wildcard-matching",
     "difficulty": "Hard",
-    "likes": 9239,
+    "likes": 9256,
     "dislikes": 425,
-    "acRate": 32.670607988386216,
+    "acRate": 32.759531791282946,
     "isPaidOnly": false,
     "categoryTitle": "Algorithms",
     "companyTagStats": null,
     "hasSolution": true,
     "hasVideoSolution": false,
-    "stats": "{\"totalAccepted\": \"935.7K\", \"totalSubmission\": \"2.9M\", \"totalAcceptedRaw\": 935739, \"totalSubmissionRaw\": 2864174, \"acRate\": \"32.7%\"}",
+    "stats": "{\"totalAccepted\": \"942.9K\", \"totalSubmission\": \"2.9M\", \"totalAcceptedRaw\": 942911, \"totalSubmissionRaw\": 2878282, \"acRate\": \"32.8%\"}",
     "similarQuestions": "[{\"title\": \"Regular Expression Matching\", \"titleSlug\": \"regular-expression-matching\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Substring Matching Pattern\", \"titleSlug\": \"substring-matching-pattern\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
     "content": "<p>Given an input string (<code>s</code>) and a pattern (<code>p</code>), implement wildcard pattern matching with support for <code>&#39;?&#39;</code> and <code>&#39;*&#39;</code> where:</p>\n\n<ul>\n\t<li><code>&#39;?&#39;</code> Matches any single character.</li>\n\t<li><code>&#39;*&#39;</code> Matches any sequence of characters (including the empty sequence).</li>\n</ul>\n\n<p>The matching should cover the <strong>entire</strong> input string (not partial).</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;aa&quot;, p = &quot;a&quot;\n<strong>Output:</strong> false\n<strong>Explanation:</strong> &quot;a&quot; does not match the entire string &quot;aa&quot;.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;aa&quot;, p = &quot;*&quot;\n<strong>Output:</strong> true\n<strong>Explanation:</strong>&nbsp;&#39;*&#39; matches any sequence.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;cb&quot;, p = &quot;?a&quot;\n<strong>Output:</strong> false\n<strong>Explanation:</strong>&nbsp;&#39;?&#39; matches &#39;c&#39;, but the second letter is &#39;a&#39;, which does not match &#39;b&#39;.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>0 &lt;= s.length, p.length &lt;= 2000</code></li>\n\t<li><code>s</code> contains only lowercase English letters.</li>\n\t<li><code>p</code> contains only lowercase English letters, <code>&#39;?&#39;</code> or <code>&#39;*&#39;</code>.</li>\n</ul>\n",
     "hints": [],
@@ -134,5 +134,6 @@
             "langSlug": "racket",
             "code": "(define/contract (is-match s p)\n  (-> string? string? boolean?)\n  )"
         }
-    ]
+    ],
+    "LAST_UPDATED_ISO": "2026-09-04T19:38:52.999Z"
 }

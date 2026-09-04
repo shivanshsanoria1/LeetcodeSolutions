@@ -4,15 +4,15 @@
     "title": "Permutations II",
     "titleSlug": "permutations-ii",
     "difficulty": "Medium",
-    "likes": 9254,
+    "likes": 9273,
     "dislikes": 165,
-    "acRate": 64.04795065517816,
+    "acRate": 64.12730478960663,
     "isPaidOnly": false,
     "categoryTitle": "Algorithms",
     "companyTagStats": null,
     "hasSolution": true,
     "hasVideoSolution": false,
-    "stats": "{\"totalAccepted\": \"1.4M\", \"totalSubmission\": \"2.1M\", \"totalAcceptedRaw\": 1357981, \"totalSubmissionRaw\": 2120258, \"acRate\": \"64.0%\"}",
+    "stats": "{\"totalAccepted\": \"1.4M\", \"totalSubmission\": \"2.1M\", \"totalAcceptedRaw\": 1366233, \"totalSubmissionRaw\": 2130502, \"acRate\": \"64.1%\"}",
     "similarQuestions": "[{\"title\": \"Next Permutation\", \"titleSlug\": \"next-permutation\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Permutations\", \"titleSlug\": \"permutations\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Palindrome Permutation II\", \"titleSlug\": \"palindrome-permutation-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Number of Squareful Arrays\", \"titleSlug\": \"number-of-squareful-arrays\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
     "content": "<p>Given a collection of numbers, <code>nums</code>,&nbsp;that might contain duplicates, return <em>all possible unique permutations <strong>in any order</strong>.</em></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,1,2]\n<strong>Output:</strong>\n[[1,1,2],\n [1,2,1],\n [2,1,1]]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> nums = [1,2,3]\n<strong>Output:</strong> [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 8</code></li>\n\t<li><code>-10 &lt;= nums[i] &lt;= 10</code></li>\n</ul>\n",
     "hints": [],
@@ -130,5 +130,6 @@
             "langSlug": "racket",
             "code": "(define/contract (permute-unique nums)\n  (-> (listof exact-integer?) (listof (listof exact-integer?)))\n  )"
         }
-    ]
+    ],
+    "LAST_UPDATED_ISO": "2026-09-04T19:38:55.627Z"
 }

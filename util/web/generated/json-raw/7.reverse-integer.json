@@ -4,15 +4,15 @@
     "title": "Reverse Integer",
     "titleSlug": "reverse-integer",
     "difficulty": "Medium",
-    "likes": 15771,
-    "dislikes": 14029,
-    "acRate": 32.39648437535847,
+    "likes": 15818,
+    "dislikes": 14032,
+    "acRate": 32.46002124976755,
     "isPaidOnly": false,
     "categoryTitle": "Algorithms",
     "companyTagStats": null,
     "hasSolution": true,
     "hasVideoSolution": true,
-    "stats": "{\"totalAccepted\": \"5.3M\", \"totalSubmission\": \"16.3M\", \"totalAcceptedRaw\": 5295303, \"totalSubmissionRaw\": 16345319, \"acRate\": \"32.4%\"}",
+    "stats": "{\"totalAccepted\": \"5.3M\", \"totalSubmission\": \"16.4M\", \"totalAcceptedRaw\": 5332650, \"totalSubmissionRaw\": 16428382, \"acRate\": \"32.5%\"}",
     "similarQuestions": "[{\"title\": \"String to Integer (atoi)\", \"titleSlug\": \"string-to-integer-atoi\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Reverse Bits\", \"titleSlug\": \"reverse-bits\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"A Number After a Double Reversal\", \"titleSlug\": \"a-number-after-a-double-reversal\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Count Number of Distinct Integers After Reverse Operations\", \"titleSlug\": \"count-number-of-distinct-integers-after-reverse-operations\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
     "content": "<p>Given a signed 32-bit integer <code>x</code>, return <code>x</code><em> with its digits reversed</em>. If reversing <code>x</code> causes the value to go outside the signed 32-bit integer range <code>[-2<sup>31</sup>, 2<sup>31</sup> - 1]</code>, then return <code>0</code>.</p>\n\n<p><strong>Assume the environment does not allow you to store 64-bit integers (signed or unsigned).</strong></p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> x = 123\n<strong>Output:</strong> 321\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> x = -123\n<strong>Output:</strong> -321\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> x = 120\n<strong>Output:</strong> 21\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>-2<sup>31</sup> &lt;= x &lt;= 2<sup>31</sup> - 1</code></li>\n</ul>\n",
     "hints": [],
@@ -122,5 +122,6 @@
             "langSlug": "racket",
             "code": "(define/contract (reverse x)\n  (-> exact-integer? exact-integer?)\n\n  )"
         }
-    ]
+    ],
+    "LAST_UPDATED_ISO": "2026-09-04T19:32:57.051Z"
 }

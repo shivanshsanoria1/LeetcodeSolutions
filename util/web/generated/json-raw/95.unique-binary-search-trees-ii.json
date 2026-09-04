@@ -4,15 +4,15 @@
     "title": "Unique Binary Search Trees II",
     "titleSlug": "unique-binary-search-trees-ii",
     "difficulty": "Medium",
-    "likes": 7999,
-    "dislikes": 584,
-    "acRate": 63.176926826783856,
+    "likes": 8008,
+    "dislikes": 585,
+    "acRate": 63.256968431033,
     "isPaidOnly": false,
     "categoryTitle": "Algorithms",
     "companyTagStats": null,
     "hasSolution": true,
     "hasVideoSolution": false,
-    "stats": "{\"totalAccepted\": \"607.8K\", \"totalSubmission\": \"962.1K\", \"totalAcceptedRaw\": 607816, \"totalSubmissionRaw\": 962086, \"acRate\": \"63.2%\"}",
+    "stats": "{\"totalAccepted\": \"611.1K\", \"totalSubmission\": \"966.1K\", \"totalAcceptedRaw\": 611129, \"totalSubmissionRaw\": 966106, \"acRate\": \"63.3%\"}",
     "similarQuestions": "[{\"title\": \"Unique Binary Search Trees\", \"titleSlug\": \"unique-binary-search-trees\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Different Ways to Add Parentheses\", \"titleSlug\": \"different-ways-to-add-parentheses\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
     "content": "<p>Given an integer <code>n</code>, return <em>all the structurally unique <strong>BST&#39;</strong>s (binary search trees), which has exactly </em><code>n</code><em> nodes of unique values from</em> <code>1</code> <em>to</em> <code>n</code>. Return the answer in <strong>any order</strong>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/01/18/uniquebstn3.jpg\" style=\"width: 600px; height: 148px;\" />\n<pre>\n<strong>Input:</strong> n = 3\n<strong>Output:</strong> [[1,null,2,null,3],[1,null,3,2],[2,1,3],[3,1,null,null,2],[3,2,null,1]]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> n = 1\n<strong>Output:</strong> [[1]]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 8</code></li>\n</ul>\n",
     "hints": [],
@@ -138,5 +138,6 @@
             "langSlug": "racket",
             "code": "; Definition for a binary tree node.\n#|\n\n; val : integer?\n; left : (or/c tree-node? #f)\n; right : (or/c tree-node? #f)\n(struct tree-node\n  (val left right) #:mutable #:transparent)\n\n; constructor\n(define (make-tree-node [val 0])\n  (tree-node val #f #f))\n\n|#\n\n(define/contract (generate-trees n)\n  (-> exact-integer? (listof (or/c tree-node? #f)))\n  )"
         }
-    ]
+    ],
+    "LAST_UPDATED_ISO": "2026-09-04T19:39:46.237Z"
 }

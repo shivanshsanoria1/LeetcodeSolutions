@@ -7,26 +7,26 @@
     "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "10.2M",
-        "totalSubmission": "25.5M",
-        "totalAcceptedRaw": 10151318,
-        "totalSubmissionRaw": 25486071,
-        "acRate": "39.8%",
-        "acRateRaw": 39.83084731017544,
-        "likes": 45570,
-        "dislikes": 2234
+        "totalSubmission": "25.6M",
+        "totalAcceptedRaw": 10239522,
+        "totalSubmissionRaw": 25646752,
+        "acRate": "39.9%",
+        "acRateRaw": 39.925247795354665,
+        "likes": 45671,
+        "dislikes": 2241
     },
-    "similarQuestions": [
-        "longest-substring-with-at-most-two-distinct-characters",
-        "longest-substring-with-at-most-k-distinct-characters",
-        "subarrays-with-k-different-integers",
-        "maximum-erasure-value",
-        "number-of-equal-count-substrings",
-        "minimum-consecutive-cards-to-pick-up",
-        "longest-nice-subarray",
-        "optimal-partition-of-string",
-        "count-complete-subarrays-in-an-array",
-        "find-longest-special-substring-that-occurs-thrice-ii",
-        "find-longest-special-substring-that-occurs-thrice-i"
+    "similarQuesIds": [
+        159,
+        340,
+        992,
+        1695,
+        2067,
+        2260,
+        2401,
+        2405,
+        2799,
+        2982,
+        2981
     ],
     "topicTags": [
         {
@@ -55,101 +55,5 @@
     "hints": [
         "There are less than 100 unique characters. We can check all substrings with length at most 100 for example. This is a good enough approximation."
     ],
-    "codeSnippets": [
-        {
-            "lang": "C++",
-            "langSlug": "cpp",
-            "code": "class Solution {\npublic:\n    int lengthOfLongestSubstring(string s) {\n        \n    }\n};"
-        },
-        {
-            "lang": "Java",
-            "langSlug": "java",
-            "code": "class Solution {\n    public int lengthOfLongestSubstring(String s) {\n        \n    }\n}"
-        },
-        {
-            "lang": "Python3",
-            "langSlug": "python3",
-            "code": "class Solution:\n    def lengthOfLongestSubstring(self, s: str) -> int:\n        "
-        },
-        {
-            "lang": "Python",
-            "langSlug": "python",
-            "code": "class Solution(object):\n    def lengthOfLongestSubstring(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        "
-        },
-        {
-            "lang": "JavaScript",
-            "langSlug": "javascript",
-            "code": "/**\n * @param {string} s\n * @return {number}\n */\nvar lengthOfLongestSubstring = function(s) {\n    \n};"
-        },
-        {
-            "lang": "TypeScript",
-            "langSlug": "typescript",
-            "code": "function lengthOfLongestSubstring(s: string): number {\n    \n};"
-        },
-        {
-            "lang": "C#",
-            "langSlug": "csharp",
-            "code": "public class Solution {\n    public int LengthOfLongestSubstring(string s) {\n        \n    }\n}"
-        },
-        {
-            "lang": "C",
-            "langSlug": "c",
-            "code": "int lengthOfLongestSubstring(char* s) {\n    \n}"
-        },
-        {
-            "lang": "Go",
-            "langSlug": "golang",
-            "code": "func lengthOfLongestSubstring(s string) int {\n    \n}"
-        },
-        {
-            "lang": "Kotlin",
-            "langSlug": "kotlin",
-            "code": "class Solution {\n    fun lengthOfLongestSubstring(s: String): Int {\n        \n    }\n}"
-        },
-        {
-            "lang": "Swift",
-            "langSlug": "swift",
-            "code": "class Solution {\n    func lengthOfLongestSubstring(_ s: String) -> Int {\n        \n    }\n}"
-        },
-        {
-            "lang": "Rust",
-            "langSlug": "rust",
-            "code": "impl Solution {\n    pub fn length_of_longest_substring(s: String) -> i32 {\n        \n    }\n}"
-        },
-        {
-            "lang": "Ruby",
-            "langSlug": "ruby",
-            "code": "# @param {String} s\n# @return {Integer}\ndef length_of_longest_substring(s)\n    \nend"
-        },
-        {
-            "lang": "PHP",
-            "langSlug": "php",
-            "code": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function lengthOfLongestSubstring($s) {\n        \n    }\n}"
-        },
-        {
-            "lang": "Dart",
-            "langSlug": "dart",
-            "code": "class Solution {\n  int lengthOfLongestSubstring(String s) {\n    \n  }\n}"
-        },
-        {
-            "lang": "Scala",
-            "langSlug": "scala",
-            "code": "object Solution {\n    def lengthOfLongestSubstring(s: String): Int = {\n        \n    }\n}"
-        },
-        {
-            "lang": "Elixir",
-            "langSlug": "elixir",
-            "code": "defmodule Solution do\n  @spec length_of_longest_substring(s :: String.t) :: integer\n  def length_of_longest_substring(s) do\n    \n  end\nend"
-        },
-        {
-            "lang": "Erlang",
-            "langSlug": "erlang",
-            "code": "-spec length_of_longest_substring(S :: unicode:unicode_binary()) -> integer().\nlength_of_longest_substring(S) ->\n  ."
-        },
-        {
-            "lang": "Racket",
-            "langSlug": "racket",
-            "code": "(define/contract (length-of-longest-substring s)\n  (-> string? exact-integer?)\n  )"
-        }
-    ]
+    "LAST_UPDATED_ISO": "2026-09-04T19:39:59.882Z"
 }

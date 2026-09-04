@@ -4,15 +4,15 @@
     "title": "Binary Tree Level Order Traversal",
     "titleSlug": "binary-tree-level-order-traversal",
     "difficulty": "Medium",
-    "likes": 17309,
+    "likes": 17345,
     "dislikes": 390,
-    "acRate": 73.33053121561164,
+    "acRate": 73.40642349423662,
     "isPaidOnly": false,
     "categoryTitle": "Algorithms",
     "companyTagStats": null,
     "hasSolution": true,
     "hasVideoSolution": false,
-    "stats": "{\"totalAccepted\": \"3.6M\", \"totalSubmission\": \"4.9M\", \"totalAcceptedRaw\": 3627088, \"totalSubmissionRaw\": 4946222, \"acRate\": \"73.3%\"}",
+    "stats": "{\"totalAccepted\": \"3.7M\", \"totalSubmission\": \"5M\", \"totalAcceptedRaw\": 3651784, \"totalSubmissionRaw\": 4974752, \"acRate\": \"73.4%\"}",
     "similarQuestions": "[{\"title\": \"Binary Tree Zigzag Level Order Traversal\", \"titleSlug\": \"binary-tree-zigzag-level-order-traversal\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Binary Tree Level Order Traversal II\", \"titleSlug\": \"binary-tree-level-order-traversal-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Minimum Depth of Binary Tree\", \"titleSlug\": \"minimum-depth-of-binary-tree\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Binary Tree Vertical Order Traversal\", \"titleSlug\": \"binary-tree-vertical-order-traversal\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Average of Levels in Binary Tree\", \"titleSlug\": \"average-of-levels-in-binary-tree\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"N-ary Tree Level Order Traversal\", \"titleSlug\": \"n-ary-tree-level-order-traversal\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Cousins in Binary Tree\", \"titleSlug\": \"cousins-in-binary-tree\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Minimum Number of Operations to Sort a Binary Tree by Level\", \"titleSlug\": \"minimum-number-of-operations-to-sort-a-binary-tree-by-level\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Divide Nodes Into the Maximum Number of Groups\", \"titleSlug\": \"divide-nodes-into-the-maximum-number-of-groups\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
     "content": "<p>Given the <code>root</code> of a binary tree, return <em>the level order traversal of its nodes&#39; values</em>. (i.e., from left to right, level by level).</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"https://assets.leetcode.com/uploads/2021/02/19/tree1.jpg\" style=\"width: 277px; height: 302px;\" />\n<pre>\n<strong>Input:</strong> root = [3,9,20,null,null,15,7]\n<strong>Output:</strong> [[3],[9,20],[15,7]]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> root = [1]\n<strong>Output:</strong> [[1]]\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> root = []\n<strong>Output:</strong> []\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the tree is in the range <code>[0, 2000]</code>.</li>\n\t<li><code>-1000 &lt;= Node.val &lt;= 1000</code></li>\n</ul>\n",
     "hints": [
@@ -132,5 +132,6 @@
             "langSlug": "racket",
             "code": "; Definition for a binary tree node.\n#|\n\n; val : integer?\n; left : (or/c tree-node? #f)\n; right : (or/c tree-node? #f)\n(struct tree-node\n  (val left right) #:mutable #:transparent)\n\n; constructor\n(define (make-tree-node [val 0])\n  (tree-node val #f #f))\n\n|#\n\n(define/contract (level-order root)\n  (-> (or/c tree-node? #f) (listof (listof exact-integer?)))\n  )"
         }
-    ]
+    ],
+    "LAST_UPDATED_ISO": "2026-09-04T19:39:51.912Z"
 }

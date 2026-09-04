@@ -4,15 +4,15 @@
     "title": "Generate Parentheses",
     "titleSlug": "generate-parentheses",
     "difficulty": "Medium",
-    "likes": 23532,
-    "dislikes": 1094,
-    "acRate": 79.0907663924713,
+    "likes": 23562,
+    "dislikes": 1097,
+    "acRate": 79.13798169516666,
     "isPaidOnly": false,
     "categoryTitle": "Algorithms",
     "companyTagStats": null,
     "hasSolution": true,
     "hasVideoSolution": true,
-    "stats": "{\"totalAccepted\": \"3.1M\", \"totalSubmission\": \"3.9M\", \"totalAcceptedRaw\": 3063486, \"totalSubmissionRaw\": 3873382, \"acRate\": \"79.1%\"}",
+    "stats": "{\"totalAccepted\": \"3.1M\", \"totalSubmission\": \"3.9M\", \"totalAcceptedRaw\": 3083835, \"totalSubmissionRaw\": 3896782, \"acRate\": \"79.1%\"}",
     "similarQuestions": "[{\"title\": \"Letter Combinations of a Phone Number\", \"titleSlug\": \"letter-combinations-of-a-phone-number\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Valid Parentheses\", \"titleSlug\": \"valid-parentheses\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Check if a Parentheses String Can Be Valid\", \"titleSlug\": \"check-if-a-parentheses-string-can-be-valid\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
     "content": "<p>Given <code>n</code> pairs of parentheses, write a function to <em>generate all combinations of well-formed parentheses</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> n = 3\n<strong>Output:</strong> [\"((()))\",\"(()())\",\"(())()\",\"()(())\",\"()()()\"]\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> n = 1\n<strong>Output:</strong> [\"()\"]\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 8</code></li>\n</ul>\n",
     "hints": [],
@@ -134,5 +134,6 @@
             "langSlug": "racket",
             "code": "(define/contract (generate-parenthesis n)\n  (-> exact-integer? (listof string?))\n  )"
         }
-    ]
+    ],
+    "LAST_UPDATED_ISO": "2026-09-04T19:38:31.704Z"
 }

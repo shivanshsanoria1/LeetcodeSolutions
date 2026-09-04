@@ -4,15 +4,15 @@
     "title": "Regular Expression Matching",
     "titleSlug": "regular-expression-matching",
     "difficulty": "Hard",
-    "likes": 13484,
-    "dislikes": 2413,
-    "acRate": 31.617366504152777,
+    "likes": 13511,
+    "dislikes": 2419,
+    "acRate": 31.69491359208026,
     "isPaidOnly": false,
     "categoryTitle": "Algorithms",
     "companyTagStats": null,
     "hasSolution": true,
     "hasVideoSolution": false,
-    "stats": "{\"totalAccepted\": \"1.5M\", \"totalSubmission\": \"4.7M\", \"totalAcceptedRaw\": 1476644, \"totalSubmissionRaw\": 4670358, \"acRate\": \"31.6%\"}",
+    "stats": "{\"totalAccepted\": \"1.5M\", \"totalSubmission\": \"4.7M\", \"totalAcceptedRaw\": 1486699, \"totalSubmissionRaw\": 4690657, \"acRate\": \"31.7%\"}",
     "similarQuestions": "[{\"title\": \"Wildcard Matching\", \"titleSlug\": \"wildcard-matching\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
     "content": "<p>Given an input string <code>s</code>&nbsp;and a pattern <code>p</code>, implement regular expression matching with support for <code>&#39;.&#39;</code> and <code>&#39;*&#39;</code> where:</p>\n\n<ul>\n\t<li><code>&#39;.&#39;</code> Matches any single character.​​​​</li>\n\t<li><code>&#39;*&#39;</code> Matches zero or more of the preceding element.</li>\n</ul>\n\n<p>Return a boolean indicating whether the matching covers the entire input string (not partial).</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;aa&quot;, p = &quot;a&quot;\n<strong>Output:</strong> false\n<strong>Explanation:</strong> &quot;a&quot; does not match the entire string &quot;aa&quot;.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;aa&quot;, p = &quot;a*&quot;\n<strong>Output:</strong> true\n<strong>Explanation:</strong> &#39;*&#39; means zero or more of the preceding element, &#39;a&#39;. Therefore, by repeating &#39;a&#39; once, it becomes &quot;aa&quot;.\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> s = &quot;ab&quot;, p = &quot;.*&quot;\n<strong>Output:</strong> true\n<strong>Explanation:</strong> &quot;.*&quot; means &quot;zero or more (*) of any character (.)&quot;.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= s.length&nbsp;&lt;= 20</code></li>\n\t<li><code>1 &lt;= p.length&nbsp;&lt;= 20</code></li>\n\t<li><code>s</code> contains only lowercase English letters.</li>\n\t<li><code>p</code> contains only lowercase English letters, <code>&#39;.&#39;</code>, and&nbsp;<code>&#39;*&#39;</code>.</li>\n\t<li>It is guaranteed for each appearance of the character <code>&#39;*&#39;</code>, there will be a previous valid character to match.</li>\n</ul>\n",
     "hints": [],
@@ -130,5 +130,6 @@
             "langSlug": "racket",
             "code": "(define/contract (is-match s p)\n  (-> string? string? boolean?)\n  )"
         }
-    ]
+    ],
+    "LAST_UPDATED_ISO": "2026-09-04T19:32:59.542Z"
 }

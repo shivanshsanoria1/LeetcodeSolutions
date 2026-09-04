@@ -7,19 +7,19 @@
     "categoryTitle": "Algorithms",
     "stats": {
         "totalAccepted": "6.1M",
-        "totalSubmission": "10.9M",
-        "totalAcceptedRaw": 6056041,
-        "totalSubmissionRaw": 10898070,
+        "totalSubmission": "11M",
+        "totalAcceptedRaw": 6098506,
+        "totalSubmissionRaw": 10959092,
         "acRate": "55.6%",
-        "acRateRaw": 55.56985155467614,
-        "likes": 19435,
-        "dislikes": 2679
+        "acRateRaw": 55.64794310215145,
+        "likes": 19525,
+        "dislikes": 2686
     },
-    "similarQuestions": [
-        "merge-two-sorted-lists",
-        "squares-of-a-sorted-array",
-        "interval-list-intersections",
-        "take-k-of-each-character-from-left-and-right"
+    "similarQuesIds": [
+        21,
+        977,
+        986,
+        2516
     ],
     "topicTags": [
         {
@@ -49,86 +49,5 @@
         "You can easily solve this problem if you simply think about two elements at a time rather than two arrays. We know that each of the individual arrays is sorted. What we don't know is how they will intertwine. Can we take a local decision and arrive at an optimal solution?",
         "If you simply consider one element each at a time from the two arrays and make a decision and proceed accordingly, you will arrive at the optimal solution."
     ],
-    "codeSnippets": [
-        {
-            "lang": "C++",
-            "langSlug": "cpp",
-            "code": "class Solution {\npublic:\n    void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {\n        \n    }\n};"
-        },
-        {
-            "lang": "Java",
-            "langSlug": "java",
-            "code": "class Solution {\n    public void merge(int[] nums1, int m, int[] nums2, int n) {\n        \n    }\n}"
-        },
-        {
-            "lang": "Python3",
-            "langSlug": "python3",
-            "code": "class Solution:\n    def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:\n        \"\"\"\n        Do not return anything, modify nums1 in-place instead.\n        \"\"\"\n        "
-        },
-        {
-            "lang": "Python",
-            "langSlug": "python",
-            "code": "class Solution(object):\n    def merge(self, nums1, m, nums2, n):\n        \"\"\"\n        :type nums1: List[int]\n        :type m: int\n        :type nums2: List[int]\n        :type n: int\n        :rtype: None Do not return anything, modify nums1 in-place instead.\n        \"\"\"\n        "
-        },
-        {
-            "lang": "JavaScript",
-            "langSlug": "javascript",
-            "code": "/**\n * @param {number[]} nums1\n * @param {number} m\n * @param {number[]} nums2\n * @param {number} n\n * @return {void} Do not return anything, modify nums1 in-place instead.\n */\nvar merge = function(nums1, m, nums2, n) {\n    \n};"
-        },
-        {
-            "lang": "TypeScript",
-            "langSlug": "typescript",
-            "code": "/**\n Do not return anything, modify nums1 in-place instead.\n */\nfunction merge(nums1: number[], m: number, nums2: number[], n: number): void {\n    \n};"
-        },
-        {
-            "lang": "C#",
-            "langSlug": "csharp",
-            "code": "public class Solution {\n    public void Merge(int[] nums1, int m, int[] nums2, int n) {\n        \n    }\n}"
-        },
-        {
-            "lang": "C",
-            "langSlug": "c",
-            "code": "void merge(int* nums1, int nums1Size, int m, int* nums2, int nums2Size, int n) {\n    \n}"
-        },
-        {
-            "lang": "Go",
-            "langSlug": "golang",
-            "code": "func merge(nums1 []int, m int, nums2 []int, n int)  {\n    \n}"
-        },
-        {
-            "lang": "Kotlin",
-            "langSlug": "kotlin",
-            "code": "class Solution {\n    fun merge(nums1: IntArray, m: Int, nums2: IntArray, n: Int): Unit {\n        \n    }\n}"
-        },
-        {
-            "lang": "Swift",
-            "langSlug": "swift",
-            "code": "class Solution {\n    func merge(_ nums1: inout [Int], _ m: Int, _ nums2: [Int], _ n: Int) {\n        \n    }\n}"
-        },
-        {
-            "lang": "Rust",
-            "langSlug": "rust",
-            "code": "impl Solution {\n    pub fn merge(nums1: &mut Vec<i32>, m: i32, nums2: &mut Vec<i32>, n: i32) {\n        \n    }\n}"
-        },
-        {
-            "lang": "Ruby",
-            "langSlug": "ruby",
-            "code": "# @param {Integer[]} nums1\n# @param {Integer} m\n# @param {Integer[]} nums2\n# @param {Integer} n\n# @return {Void} Do not return anything, modify nums1 in-place instead.\ndef merge(nums1, m, nums2, n)\n    \nend"
-        },
-        {
-            "lang": "PHP",
-            "langSlug": "php",
-            "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums1\n     * @param Integer $m\n     * @param Integer[] $nums2\n     * @param Integer $n\n     * @return NULL\n     */\n    function merge(&$nums1, $m, $nums2, $n) {\n        \n    }\n}"
-        },
-        {
-            "lang": "Dart",
-            "langSlug": "dart",
-            "code": "class Solution {\n  void merge(List<int> nums1, int m, List<int> nums2, int n) {\n    \n  }\n}"
-        },
-        {
-            "lang": "Scala",
-            "langSlug": "scala",
-            "code": "object Solution {\n    def merge(nums1: Array[Int], m: Int, nums2: Array[Int], n: Int): Unit = {\n        \n    }\n}"
-        }
-    ]
+    "LAST_UPDATED_ISO": "2026-09-04T19:40:00.111Z"
 }

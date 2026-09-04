@@ -8,16 +8,16 @@
     "stats": {
         "totalAccepted": "1.5M",
         "totalSubmission": "2.3M",
-        "totalAcceptedRaw": 1488049,
-        "totalSubmissionRaw": 2337224,
-        "acRate": "63.7%",
-        "acRateRaw": 63.66738717831551,
-        "likes": 5205,
-        "dislikes": 9147
+        "totalAcceptedRaw": 1496248,
+        "totalSubmissionRaw": 2346731,
+        "acRate": "63.8%",
+        "acRateRaw": 63.758897464393094,
+        "likes": 5218,
+        "dislikes": 9157
     },
-    "similarQuestions": [
-        "encode-and-decode-strings",
-        "string-compression"
+    "similarQuesIds": [
+        271,
+        443
     ],
     "topicTags": [
         {
@@ -40,101 +40,5 @@
         "Create another helper function that takes the array of pairs and creates a new integer. For example, if you call this function with [[2,2], [3,2], [1,1], [4,5], [1, 2]], it should create \"22\"+\"23\"+\"11\"+\"54\"+\"21\" = \"2223115421\".",
         "Now, with the two helper functions, you can start with \"1\" and call the two functions alternatively n-1 times. The answer is the last integer you will obtain."
     ],
-    "codeSnippets": [
-        {
-            "lang": "C++",
-            "langSlug": "cpp",
-            "code": "class Solution {\npublic:\n    string countAndSay(int n) {\n        \n    }\n};"
-        },
-        {
-            "lang": "Java",
-            "langSlug": "java",
-            "code": "class Solution {\n    public String countAndSay(int n) {\n        \n    }\n}"
-        },
-        {
-            "lang": "Python3",
-            "langSlug": "python3",
-            "code": "class Solution:\n    def countAndSay(self, n: int) -> str:\n        "
-        },
-        {
-            "lang": "Python",
-            "langSlug": "python",
-            "code": "class Solution(object):\n    def countAndSay(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: str\n        \"\"\"\n        "
-        },
-        {
-            "lang": "JavaScript",
-            "langSlug": "javascript",
-            "code": "/**\n * @param {number} n\n * @return {string}\n */\nvar countAndSay = function(n) {\n    \n};"
-        },
-        {
-            "lang": "TypeScript",
-            "langSlug": "typescript",
-            "code": "function countAndSay(n: number): string {\n    \n};"
-        },
-        {
-            "lang": "C#",
-            "langSlug": "csharp",
-            "code": "public class Solution {\n    public string CountAndSay(int n) {\n        \n    }\n}"
-        },
-        {
-            "lang": "C",
-            "langSlug": "c",
-            "code": "char* countAndSay(int n) {\n    \n}"
-        },
-        {
-            "lang": "Go",
-            "langSlug": "golang",
-            "code": "func countAndSay(n int) string {\n    \n}"
-        },
-        {
-            "lang": "Kotlin",
-            "langSlug": "kotlin",
-            "code": "class Solution {\n    fun countAndSay(n: Int): String {\n        \n    }\n}"
-        },
-        {
-            "lang": "Swift",
-            "langSlug": "swift",
-            "code": "class Solution {\n    func countAndSay(_ n: Int) -> String {\n        \n    }\n}"
-        },
-        {
-            "lang": "Rust",
-            "langSlug": "rust",
-            "code": "impl Solution {\n    pub fn count_and_say(n: i32) -> String {\n        \n    }\n}"
-        },
-        {
-            "lang": "Ruby",
-            "langSlug": "ruby",
-            "code": "# @param {Integer} n\n# @return {String}\ndef count_and_say(n)\n    \nend"
-        },
-        {
-            "lang": "PHP",
-            "langSlug": "php",
-            "code": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @return String\n     */\n    function countAndSay($n) {\n        \n    }\n}"
-        },
-        {
-            "lang": "Dart",
-            "langSlug": "dart",
-            "code": "class Solution {\n  String countAndSay(int n) {\n    \n  }\n}"
-        },
-        {
-            "lang": "Scala",
-            "langSlug": "scala",
-            "code": "object Solution {\n    def countAndSay(n: Int): String = {\n        \n    }\n}"
-        },
-        {
-            "lang": "Elixir",
-            "langSlug": "elixir",
-            "code": "defmodule Solution do\n  @spec count_and_say(n :: integer) :: String.t\n  def count_and_say(n) do\n    \n  end\nend"
-        },
-        {
-            "lang": "Erlang",
-            "langSlug": "erlang",
-            "code": "-spec count_and_say(N :: integer()) -> unicode:unicode_binary().\ncount_and_say(N) ->\n  ."
-        },
-        {
-            "lang": "Racket",
-            "langSlug": "racket",
-            "code": "(define/contract (count-and-say n)\n  (-> exact-integer? string?)\n  )"
-        }
-    ]
+    "LAST_UPDATED_ISO": "2026-09-04T19:39:59.923Z"
 }

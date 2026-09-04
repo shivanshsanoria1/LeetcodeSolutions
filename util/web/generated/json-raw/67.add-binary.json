@@ -4,15 +4,15 @@
     "title": "Add Binary",
     "titleSlug": "add-binary",
     "difficulty": "Easy",
-    "likes": 10900,
-    "dislikes": 1123,
-    "acRate": 58.51534445804756,
+    "likes": 10929,
+    "dislikes": 1126,
+    "acRate": 58.57870348652353,
     "isPaidOnly": false,
     "categoryTitle": "Algorithms",
     "companyTagStats": null,
     "hasSolution": true,
     "hasVideoSolution": false,
-    "stats": "{\"totalAccepted\": \"2.5M\", \"totalSubmission\": \"4.2M\", \"totalAcceptedRaw\": 2457648, \"totalSubmissionRaw\": 4200007, \"acRate\": \"58.5%\"}",
+    "stats": "{\"totalAccepted\": \"2.5M\", \"totalSubmission\": \"4.2M\", \"totalAcceptedRaw\": 2472470, \"totalSubmissionRaw\": 4220765, \"acRate\": \"58.6%\"}",
     "similarQuestions": "[{\"title\": \"Add Two Numbers\", \"titleSlug\": \"add-two-numbers\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Multiply Strings\", \"titleSlug\": \"multiply-strings\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Plus One\", \"titleSlug\": \"plus-one\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Add to Array-Form of Integer\", \"titleSlug\": \"add-to-array-form-of-integer\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
     "content": "<p>Given two binary strings <code>a</code> and <code>b</code>, return <em>their sum as a binary string</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> a = \"11\", b = \"1\"\n<strong>Output:</strong> \"100\"\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> a = \"1010\", b = \"1011\"\n<strong>Output:</strong> \"10101\"\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= a.length, b.length &lt;= 10<sup>4</sup></code></li>\n\t<li><code>a</code> and <code>b</code> consist&nbsp;only of <code>&#39;0&#39;</code> or <code>&#39;1&#39;</code> characters.</li>\n\t<li>Each string does not contain leading zeros except for the zero itself.</li>\n</ul>\n",
     "hints": [],
@@ -134,5 +134,6 @@
             "langSlug": "racket",
             "code": "(define/contract (add-binary a b)\n  (-> string? string? string?)\n  )"
         }
-    ]
+    ],
+    "LAST_UPDATED_ISO": "2026-09-04T19:39:17.581Z"
 }

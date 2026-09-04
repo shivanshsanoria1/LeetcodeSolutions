@@ -8,18 +8,18 @@
     "stats": {
         "totalAccepted": "2.8M",
         "totalSubmission": "4.4M",
-        "totalAcceptedRaw": 2769751,
-        "totalSubmissionRaw": 4361494,
+        "totalAcceptedRaw": 2788691,
+        "totalSubmissionRaw": 4388226,
         "acRate": "63.5%",
-        "acRateRaw": 63.5046141098284,
-        "likes": 17412,
-        "dislikes": 870
+        "acRateRaw": 63.54943910276496,
+        "likes": 17467,
+        "dislikes": 871
     },
-    "similarQuestions": [
-        "game-of-life",
-        "number-of-laser-beams-in-a-bank",
-        "minimum-operations-to-remove-adjacent-ones-in-matrix",
-        "remove-all-ones-with-row-and-column-flips-ii"
+    "similarQuesIds": [
+        289,
+        2125,
+        2123,
+        2174
     ],
     "topicTags": [
         {
@@ -51,86 +51,5 @@
         "We could have used 2 sets to keep a record of rows/columns which need to be set to zero. But for an O(1) space solution, you can use one of the rows and and one of the columns to keep track of this information.",
         "We can use the first cell of every row and column as a flag. This flag would determine whether a row or column has been set to zero."
     ],
-    "codeSnippets": [
-        {
-            "lang": "C++",
-            "langSlug": "cpp",
-            "code": "class Solution {\npublic:\n    void setZeroes(vector<vector<int>>& matrix) {\n        \n    }\n};"
-        },
-        {
-            "lang": "Java",
-            "langSlug": "java",
-            "code": "class Solution {\n    public void setZeroes(int[][] matrix) {\n        \n    }\n}"
-        },
-        {
-            "lang": "Python3",
-            "langSlug": "python3",
-            "code": "class Solution:\n    def setZeroes(self, matrix: List[List[int]]) -> None:\n        \"\"\"\n        Do not return anything, modify matrix in-place instead.\n        \"\"\"\n        "
-        },
-        {
-            "lang": "Python",
-            "langSlug": "python",
-            "code": "class Solution(object):\n    def setZeroes(self, matrix):\n        \"\"\"\n        :type matrix: List[List[int]]\n        :rtype: None Do not return anything, modify matrix in-place instead.\n        \"\"\"\n        "
-        },
-        {
-            "lang": "JavaScript",
-            "langSlug": "javascript",
-            "code": "/**\n * @param {number[][]} matrix\n * @return {void} Do not return anything, modify matrix in-place instead.\n */\nvar setZeroes = function(matrix) {\n    \n};"
-        },
-        {
-            "lang": "TypeScript",
-            "langSlug": "typescript",
-            "code": "/**\n Do not return anything, modify matrix in-place instead.\n */\nfunction setZeroes(matrix: number[][]): void {\n    \n};"
-        },
-        {
-            "lang": "C#",
-            "langSlug": "csharp",
-            "code": "public class Solution {\n    public void SetZeroes(int[][] matrix) {\n        \n    }\n}"
-        },
-        {
-            "lang": "C",
-            "langSlug": "c",
-            "code": "void setZeroes(int** matrix, int matrixSize, int* matrixColSize) {\n    \n}"
-        },
-        {
-            "lang": "Go",
-            "langSlug": "golang",
-            "code": "func setZeroes(matrix [][]int)  {\n    \n}"
-        },
-        {
-            "lang": "Kotlin",
-            "langSlug": "kotlin",
-            "code": "class Solution {\n    fun setZeroes(matrix: Array<IntArray>): Unit {\n        \n    }\n}"
-        },
-        {
-            "lang": "Swift",
-            "langSlug": "swift",
-            "code": "class Solution {\n    func setZeroes(_ matrix: inout [[Int]]) {\n        \n    }\n}"
-        },
-        {
-            "lang": "Rust",
-            "langSlug": "rust",
-            "code": "impl Solution {\n    pub fn set_zeroes(matrix: &mut Vec<Vec<i32>>) {\n        \n    }\n}"
-        },
-        {
-            "lang": "Ruby",
-            "langSlug": "ruby",
-            "code": "# @param {Integer[][]} matrix\n# @return {Void} Do not return anything, modify matrix in-place instead.\ndef set_zeroes(matrix)\n    \nend"
-        },
-        {
-            "lang": "PHP",
-            "langSlug": "php",
-            "code": "class Solution {\n\n    /**\n     * @param Integer[][] $matrix\n     * @return NULL\n     */\n    function setZeroes(&$matrix) {\n        \n    }\n}"
-        },
-        {
-            "lang": "Dart",
-            "langSlug": "dart",
-            "code": "class Solution {\n  void setZeroes(List<List<int>> matrix) {\n    \n  }\n}"
-        },
-        {
-            "lang": "Scala",
-            "langSlug": "scala",
-            "code": "object Solution {\n    def setZeroes(matrix: Array[Array[Int]]): Unit = {\n        \n    }\n}"
-        }
-    ]
+    "LAST_UPDATED_ISO": "2026-09-04T19:40:00.056Z"
 }
