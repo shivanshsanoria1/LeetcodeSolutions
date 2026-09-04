@@ -49,5 +49,5 @@
         "We go boundary by boundary and move inwards. That is the essential operation. First row, last column, last row, first column, and then we move inwards by 1 and repeat. That's all. That is all the simulation that we need.",
         "Think about when you want to switch the progress on one of the indexes. If you progress on i out of [i, j], you'll shift in the same column. Similarly, by changing values for j, you'd be shifting in the same row.\r\nAlso, keep track of the end of a boundary so that you can move inwards and then keep repeating. It's always best to simulate edge cases like a single column or a single row to see if anything breaks or not."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T19:39:59.973Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:17:27.109Z"
 }

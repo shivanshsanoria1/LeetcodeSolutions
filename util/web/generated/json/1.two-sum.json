@@ -63,5 +63,5 @@
         "So, if we fix one of the numbers, say <code>x</code>, we have to scan the entire array to find the next number <code>y</code> which is <code>value - x</code> where value is the input parameter. Can we change our array somehow so that this search becomes faster?",
         "The second train of thought is, without changing the array, can we use additional space somehow? Like maybe a hash map to speed up the search?"
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T19:39:59.674Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:17:26.461Z"
 }

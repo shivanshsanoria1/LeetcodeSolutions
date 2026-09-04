@@ -49,5 +49,5 @@
         "Use dynamic programming since, from each cell, you can move to the right or down.",
         "assume dp[i][j] is the number of unique paths to reach (i, j). dp[i][j] = dp[i][j -1] + dp[i - 1][j]. Be careful when you encounter an obstacle. set its value in dp to 0."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T19:40:00.003Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:17:27.156Z"
 }

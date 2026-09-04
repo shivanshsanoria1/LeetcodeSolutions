@@ -1,0 +1,48 @@
+{
+    "quesId": 548,
+    "title": "Split Array with Equal Sum",
+    "titleSlug": "split-array-with-equal-sum",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "25.2K",
+        "totalSubmission": "50.3K",
+        "totalAcceptedRaw": 25168,
+        "totalSubmissionRaw": 50258,
+        "acRate": "50.1%",
+        "acRateRaw": 50.07759958613555,
+        "likes": 418,
+        "dislikes": 132
+    },
+    "similarQuesIds": [
+        2305,
+        1573
+    ],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Prefix Sum",
+            "slug": "prefix-sum"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 548,
+        "hasSolution": true,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false,
+        "content": null
+    },
+    "content": null,
+    "hints": [],
+    "LAST_UPDATED_ISO": "2026-09-04T20:17:27.113Z"
+}
