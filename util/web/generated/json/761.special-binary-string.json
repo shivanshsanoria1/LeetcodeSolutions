@@ -46,5 +46,5 @@
     "hints": [
         "Draw a line from (x, y) to (x+1, y+1) if we see a \"1\", else to (x+1, y-1).\r\nA special substring is just a line that starts and ends at the same y-coordinate, and that is the lowest y-coordinate reached.\r\nCall a mountain a special substring with no special prefixes - ie. only at the beginning and end is the lowest y-coordinate reached.\r\nIf F is the answer function, and S has mountain decomposition M1,M2,M3,...,Mk,  then the answer is:\r\nreverse_sorted(F(M1), F(M2), ..., F(Mk)).\r\nHowever, you'll also need to deal with the case that S is a mountain, such as 11011000 -> 11100100."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:27.220Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:09.078Z"
 }

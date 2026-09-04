@@ -57,5 +57,5 @@
         "The key is how to maintain the order of the ugly numbers. Try a similar approach of merging from three sorted lists: L<sub>1</sub>, L<sub>2</sub>, and L<sub>3</sub>.",
         "Assume you have U<sub>k</sub>, the k<sup>th</sup> ugly number. Then U<sub>k+1</sub> must be Min(L<sub>1</sub> * 2, L<sub>2</sub> * 3, L<sub>3</sub> * 5)."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:26.830Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:03.787Z"
 }

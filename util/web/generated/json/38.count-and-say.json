@@ -40,5 +40,5 @@
         "Create another helper function that takes the array of pairs and creates a new integer. For example, if you call this function with [[2,2], [3,2], [1,1], [4,5], [1, 2]], it should create \"22\"+\"23\"+\"11\"+\"54\"+\"21\" = \"2223115421\".",
         "Now, with the two helper functions, you can start with \"1\" and call the two functions alternatively n-1 times. The answer is the last integer you will obtain."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:27.024Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:05.296Z"
 }

@@ -66,5 +66,5 @@
         "Without parent pointer we just need to keep track of the path from the root to the current node using a stack.",
         "You would need two stacks to track the path in finding predecessor and successor node separately."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:26.843Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:03.900Z"
 }

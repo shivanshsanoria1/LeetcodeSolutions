@@ -51,5 +51,5 @@
         "We could have used 2 sets to keep a record of rows/columns which need to be set to zero. But for an O(1) space solution, you can use one of the rows and and one of the columns to keep track of this information.",
         "We can use the first cell of every row and column as a flag. This flag would determine whether a row or column has been set to zero."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:27.206Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:08.764Z"
 }

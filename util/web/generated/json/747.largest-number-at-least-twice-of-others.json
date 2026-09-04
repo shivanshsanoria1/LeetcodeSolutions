@@ -41,5 +41,5 @@
     "hints": [
         "Scan through the array to find the unique largest element `m`, keeping track of it's index `maxIndex`.\r\n\r\nScan through the array again.  If we find some `x != m` with `m < 2*x`, we should return `-1`.\r\n\r\nOtherwise, we should return `maxIndex`."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:27.214Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:08.941Z"
 }

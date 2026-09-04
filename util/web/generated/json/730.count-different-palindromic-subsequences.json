@@ -41,5 +41,5 @@
     "hints": [
         "Let dp(i, j) be the answer for the string T = S[i:j+1] including the empty sequence. The answer is the number of unique characters in T, plus palindromes of the form \"a_a\", \"b_b\", \"c_c\", and \"d_d\", where \"_\" represents zero or more characters."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:27.206Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:08.766Z"
 }

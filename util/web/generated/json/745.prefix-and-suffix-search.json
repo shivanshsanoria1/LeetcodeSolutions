@@ -55,5 +55,5 @@
         "If the query is: prefix = \"app\", suffix = \"le\", we can find it by querying our trie for\r\n\"le { app\".",
         "We use '{' because in ASCii Table, '{' is next to 'z', so we just need to create new TrieNode[27] instead of 26. Also, compared with traditional Trie, we add the attribute weight in class TrieNode.\r\nYou can still choose any different character."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:27.213Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:08.896Z"
 }

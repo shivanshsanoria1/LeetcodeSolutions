@@ -53,5 +53,5 @@
         "Think carefully about the multiply operator. It has a higher precedence than the addition and subtraction operators. \r\n\r\n<br> 1 + 2 = 3  <br>\r\n1 + 2 - 4 --> 3 - 4 --> -1 <br>\r\n1 + 2 - 4 * 12 --> -1 * 12 --> -12 (WRONG!) <br>\r\n1 + 2 - 4 * 12 --> -1 - (-4) + (-4 * 12) --> 3 + (-48) --> -45 (CORRECT!)",
         "We simply need to keep track of the last operand in our expression and reverse it's effect on the expression's value while considering the multiply operator."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:26.865Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:04.038Z"
 }

@@ -128,5 +128,20 @@
     "tarjans-scc-algorithm": "Tarjan's SCC Algorithm",
     "meet-in-the-middle": "Meet in the Middle",
     "ternary-search": "Ternary Search",
-    "least-common-multiple": "Least Common Multiple"
+    "least-common-multiple": "Least Common Multiple",
+    "inclusion-exclusion-principle": "Inclusion-Exclusion Principle",
+    "timsort": "Timsort",
+    "lexicographically-minimal-string-rotation": "Lexicographically Minimal String Rotation",
+    "hamiltonian-path": "Hamiltonian Path",
+    "planar-graph": "Planar Graph",
+    "k-d-tree": "K-D Tree",
+    "hungarian-algorithm": "Hungarian Algorithm",
+    "successive-shortest-path-algorithm": "Successive Shortest Path Algorithm",
+    "triangulation": "Triangulation",
+    "suffix-array": "Suffix Array",
+    "suffix-automaton": "Suffix Automaton",
+    "suffix-tree": "Suffix Tree",
+    "matching-graph": "Matching (Graph)",
+    "minimum-cost-flow": "Minimum-Cost Flow",
+    "flow-network": "Flow Network"
 }

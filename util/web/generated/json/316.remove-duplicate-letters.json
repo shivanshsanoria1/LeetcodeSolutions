@@ -50,5 +50,5 @@
     "hints": [
         "Greedily try to add one missing character. How to check if adding some character will not cause problems ? Use bit-masks to check whether you will be able to complete the sub-sequence if you add the character at some index i."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:26.951Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:04.430Z"
 }

@@ -56,5 +56,5 @@
         "Is there a better way to do what we are doing in the above hint? Don't you think there is duplication of calculation being done there? Is there some sort of optimization that we can do to achieve the same result? This approach is merely a modification of the basic approach except that it simply reduces duplication of calculations once done.",
         "The third line of thought is also based on this same idea but achieving the result in a different way. We obviously need the window to be sorted for us to be able to find the median. Is there a data-structure out there that we can use (in one or more quantities) to obtain the median element extremely fast, say O(1) time while having the ability to perform the other operations fairly efficiently as well?"
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:27.082Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:06.367Z"
 }

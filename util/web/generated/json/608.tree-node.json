@@ -35,5 +35,5 @@
     "hints": [
         "You can judge the node type by querying whether the node's id shows up in p_id column and whether the node's p_id is null."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:27.145Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:07.626Z"
 }

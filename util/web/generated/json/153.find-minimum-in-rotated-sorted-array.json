@@ -44,5 +44,5 @@
         "You can divide the search space into two and see which direction to go.\r\nCan you think of an algorithm which has O(logN) search complexity?",
         "<ol>\r\n<li>All the elements to the left of inflection point > first element of the array.</li>\r\n<li>All the elements to the right of inflection point < first element of the array.</li>\r\n<ol>"
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:26.597Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:02.765Z"
 }

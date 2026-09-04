@@ -52,5 +52,5 @@
     "hints": [
         "The implementation is long - we want to perfrom the following steps:\r\n\r\n* Find all viral regions (connected components), additionally for each region keeping track of the frontier (neighboring uncontaminated cells), and the perimeter of the region.\r\n\r\n* Disinfect the most viral region, adding it's perimeter to the answer.\r\n\r\n* Spread the virus in the remaining regions outward by 1 square."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:27.214Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:08.947Z"
 }

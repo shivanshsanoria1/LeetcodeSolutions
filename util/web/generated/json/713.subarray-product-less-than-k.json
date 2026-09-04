@@ -54,5 +54,5 @@
     "hints": [
         "For each j, let opt(j) be the smallest i so that nums[i] * nums[i+1] * ... * nums[j] is less than k.  opt is an increasing function."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:27.191Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:08.608Z"
 }

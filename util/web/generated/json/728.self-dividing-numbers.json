@@ -39,5 +39,5 @@
     "hints": [
         "For each number in the range, check whether it is self dividing by converting that number to a character array (or string in Python), then checking that each digit is nonzero and divides the original number."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:27.204Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:08.758Z"
 }

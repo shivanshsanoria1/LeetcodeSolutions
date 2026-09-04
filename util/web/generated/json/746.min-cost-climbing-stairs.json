@@ -44,5 +44,5 @@
         "Assuming we have n staircase labeled from 0 to n - 1 and assuming the top is n, then dp[n] = 0, marking that if you are at the top, the cost is 0.",
         "Now, looping from n - 1 to 0, the dp[i] = cost[i] + min(dp[i + 1], dp[i + 2]). The answer will be the minimum of dp[0] and dp[1]"
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:27.213Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:08.918Z"
 }

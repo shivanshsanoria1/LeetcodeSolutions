@@ -40,5 +40,5 @@
         "Can we use some space to store the number of paths and update them after every move?",
         "One obvious thing: the ball will go out of the boundary only by crossing it. Also, there is only one possible way the ball can go out of the boundary from the boundary cell except for corner cells. From the corner cell, the ball can go out in two different ways.\r\n\r\nCan you use this thing to solve the problem?"
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:27.130Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:07.299Z"
 }

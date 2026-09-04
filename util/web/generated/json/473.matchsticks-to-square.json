@@ -57,5 +57,5 @@
         "We don't really need to keep track of which matchsticks belong to a particular side during recursion. We just need to keep track of the <b>length</b> of each of the 4 sides.",
         "When all matchsticks have been used we simply need to see the length of all 4 sides. If they're equal, we have a square on our hands!"
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:27.079Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:06.303Z"
 }

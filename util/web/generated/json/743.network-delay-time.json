@@ -58,5 +58,5 @@
     "hints": [
         "We visit each node at some time, and if that time is better than the fastest time we've reached this node, we travel along outgoing edges in sorted order.  Alternatively, we could use Dijkstra's algorithm."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:27.212Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:08.870Z"
 }

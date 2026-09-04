@@ -57,5 +57,5 @@
         "Keep track of the count of open parentheses encountered so far. If you encounter a close parenthesis, it should balance with an open parenthesis. Utilize a stack to handle this effectively.",
         "How about using 2 stacks instead of 1? Think about it."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:27.176Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:08.365Z"
 }

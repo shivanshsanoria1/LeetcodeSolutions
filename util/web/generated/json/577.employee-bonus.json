@@ -38,5 +38,5 @@
         "If the EmpId in table Employee has no match in table Bonus, we consider that the corresponding bonus is null and null is smaller than 1000.",
         "Inner join is the default join, we can solve the mismatching problem by using outer join."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:27.130Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:07.315Z"
 }

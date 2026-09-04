@@ -51,5 +51,5 @@
     "hints": [
         "To parse formula[i:], when we see a `'('`, we will parse recursively whatever is inside the brackets (up to the correct closing ending bracket) and add it to our count, multiplying by the following multiplicity if there is one.\r\n\r\nOtherwise, we should see an uppercase character: we will parse the rest of the letters to get the name, and add that (plus the multiplicity if there is one.)"
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:27.199Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:08.752Z"
 }

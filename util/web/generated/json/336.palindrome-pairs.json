@@ -58,5 +58,5 @@
         "If we hash every string in the array, how can we check if two pairs form a palindrome after the concatenation?",
         "We can check every string in words and consider it as words[j] (i.e., the suffix of the target palindrome). We can check if there is a hash of string that can be the prefix to make it a palindrome."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:26.978Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:04.684Z"
 }

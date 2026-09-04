@@ -35,5 +35,5 @@
     "hints": [
         "MySQL uses a different expression to get the first records other than MSSQL's TOP expression."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:27.134Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:07.373Z"
 }

@@ -52,5 +52,5 @@
     "hints": [
         "Each k for which some permutation of arr[:k] is equal to sorted(arr)[:k] is where we should cut each chunk."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:27.223Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:09.111Z"
 }

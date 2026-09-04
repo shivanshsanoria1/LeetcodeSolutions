@@ -47,5 +47,5 @@
     "hints": [
         "Carefully perform the \"crush\" and \"gravity\" steps.  In the crush step, flag each candy that should be removed, then go through and crush each flagged candy.  In the gravity step, collect the candy in each column and then rewrite the column appropriately.  Do these steps repeatedly until there's no work left to do."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:27.195Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:08.693Z"
 }

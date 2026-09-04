@@ -46,5 +46,5 @@
     "hints": [
         "Since House[1] and House[n] are adjacent, they cannot be robbed together. Therefore, the problem becomes to rob either House[1]-House[n-1] or House[2]-House[n], depending on which choice offers more money. Now the problem has degenerated to the <a href =\"https://leetcode.com/problems/house-robber/description/\">House Robber</a>, which is already been solved."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:26.719Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:03.013Z"
 }

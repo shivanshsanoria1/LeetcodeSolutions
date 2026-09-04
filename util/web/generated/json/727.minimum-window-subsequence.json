@@ -45,5 +45,5 @@
     "hints": [
         "Let dp[j][e] = s be the largest index for which S[s:e+1] has T[:j] as a substring."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:27.200Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:08.756Z"
 }

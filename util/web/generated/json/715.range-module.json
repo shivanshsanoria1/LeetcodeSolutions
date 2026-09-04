@@ -47,5 +47,5 @@
     "hints": [
         "Maintain a sorted set of disjoint intervals.  addRange and removeRange can be performed with time complexity linear to the size of this set; queryRange can be performed with time complexity logarithmic to the size of this set."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:27.192Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:08.613Z"
 }

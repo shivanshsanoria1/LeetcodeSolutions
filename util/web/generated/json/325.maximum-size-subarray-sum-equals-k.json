@@ -52,5 +52,5 @@
         "At each index <i>i</i>, the sum of the prefix is psum[i], so we are searching for the index x where psum[x] = psum[i] - k.\r\nThe subarray [x + 1, i] will be of sum k.",
         "Use a hashmap to get the index x efficiently or to determine that it does not exist."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:26.962Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:04.505Z"
 }

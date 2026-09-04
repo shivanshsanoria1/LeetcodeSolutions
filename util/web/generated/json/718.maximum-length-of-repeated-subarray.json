@@ -61,5 +61,5 @@
         "Use dynamic programming.  dp[i][j] will be the longest common prefix of A[i:] and B[j:].",
         "The answer is max(dp[i][j]) over all i, j."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:27.193Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:08.647Z"
 }

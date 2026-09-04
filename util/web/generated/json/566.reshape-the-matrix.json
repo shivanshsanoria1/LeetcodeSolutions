@@ -48,5 +48,5 @@
         "Try to use division and modulus to convert 1-d index into 2-d indices.",
         "M[i] =>  M[i/n][i%n] Will it result in right mapping? Take some example and check this formula."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:27.125Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:07.216Z"
 }

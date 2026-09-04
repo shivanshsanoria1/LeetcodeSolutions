@@ -39,5 +39,5 @@
     "hints": [
         "Create a hashmap so that D[x] = i  whenever B[i] = x.  Then, the answer is [D[x] for x in A]."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:17:27.219Z"
+    "LAST_UPDATED_ISO": "2026-09-04T20:37:09.053Z"
 }
