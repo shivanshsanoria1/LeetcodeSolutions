@@ -52,5 +52,5 @@
         "Using prefix sums (PrefixSum[i+1] = A[0] + A[1] + ... + A[i]), you need to find for each j, the smallest i < j with PrefixSum[i] + 1 == PrefixSum[j]."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:27:13.940Z",
-    "PARSED_ISO": "2026-09-09T17:38:01.210Z"
+    "PARSED_ISO": "2026-09-09T19:00:07.656Z"
 }

@@ -166,5 +166,11 @@
     "strongly-connected-component": "Strongly Connected Component",
     "sparse-table": "Sparse Table",
     "articulation-point": "Articulation Point",
-    "fermats-little-theorem": "Fermat's Little Theorem"
+    "fermats-little-theorem": "Fermat's Little Theorem",
+    "splay-tree": "Splay Tree",
+    "mixed-knapsack": "Mixed Knapsack",
+    "minimum-enclosing-circle": "Minimum Enclosing Circle",
+    "palindromic-tree": "Palindromic Tree",
+    "k-shortest-path": "K Shortest Path",
+    "multiple-knapsack": "Multiple Knapsack"
 }

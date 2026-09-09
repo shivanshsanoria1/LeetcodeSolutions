@@ -48,5 +48,5 @@
         "So the strategy is, apply case 1 as much as possible, then apply case 2 if the last two unmatched are in this case, or fall into impossible if only one pair of unmatched left. This can be done via a simple math."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:29:36.347Z",
-    "PARSED_ISO": "2026-09-09T17:38:01.837Z"
+    "PARSED_ISO": "2026-09-09T19:00:07.910Z"
 }

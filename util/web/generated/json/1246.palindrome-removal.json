@@ -41,5 +41,5 @@
         "Notice that if we have S[i] == S[j] one transition could be just dp(i + 1, j + 1) because in the last turn we would have a palindrome and we can extend this palindrome from both sides, the other transitions are not too difficult to deduce."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:29:35.257Z",
-    "PARSED_ISO": "2026-09-09T17:38:01.835Z"
+    "PARSED_ISO": "2026-09-09T19:00:07.908Z"
 }

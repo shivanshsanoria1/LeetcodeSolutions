@@ -53,5 +53,5 @@
         "Use a Depth First Search (DFS) keeping the frequency (parity) of the digits. Once you are in a leaf node check if at most one digit has an odd frequency (parity)."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:34:44.252Z",
-    "PARSED_ISO": "2026-09-09T17:38:02.358Z"
+    "PARSED_ISO": "2026-09-09T19:00:08.018Z"
 }

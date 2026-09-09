@@ -39,5 +39,5 @@
         "It's very easy to keep track of a monotonically increasing or decreasing ordering of elements. You just need to be able to determine the start of the valley in the mountain and from that point onwards, it should be a valley i.e. no mini-hills after that. Use this information in regards to the values in the array and you will be able to come up with a straightforward solution."
     ],
     "LC_SYNC_ISO": "2026-09-04T20:34:57.272Z",
-    "PARSED_ISO": "2026-09-09T17:38:10.400Z"
+    "PARSED_ISO": "2026-09-09T19:00:11.145Z"
 }

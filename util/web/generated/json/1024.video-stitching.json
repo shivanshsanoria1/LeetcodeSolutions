@@ -44,5 +44,5 @@
         "Let's consider a DP(pos, limit) where pos represents the position of the current interval we are gonna take the decision and limit is the current covered area from [0 - limit]. This DP returns the minimum number of taken intervals or infinite if it's not possible to cover the [0 - T] section."
     ],
     "LC_SYNC_ISO": "2026-09-04T20:35:59.253Z",
-    "PARSED_ISO": "2026-09-09T17:38:00.075Z"
+    "PARSED_ISO": "2026-09-09T19:00:07.427Z"
 }

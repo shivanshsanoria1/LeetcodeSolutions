@@ -44,5 +44,5 @@
         "Define dp[i][j][k] as the minimum cost where we have k neighborhoods in the first i houses and the i-th house is painted with the color j."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:35:01.004Z",
-    "PARSED_ISO": "2026-09-09T17:38:02.382Z"
+    "PARSED_ISO": "2026-09-09T19:00:08.025Z"
 }

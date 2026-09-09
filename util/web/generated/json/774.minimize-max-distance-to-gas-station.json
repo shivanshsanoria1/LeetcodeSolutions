@@ -42,5 +42,5 @@
         "Use a binary search.  We'll binary search the monotone function \"possible(D) = can we use K or less gas stations to ensure each adjacent distance between gas stations is at most D?\""
     ],
     "LC_SYNC_ISO": "2026-09-04T20:16:25.695Z",
-    "PARSED_ISO": "2026-09-09T17:38:08.926Z"
+    "PARSED_ISO": "2026-09-09T19:00:11.065Z"
 }

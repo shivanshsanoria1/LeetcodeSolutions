@@ -48,5 +48,5 @@
         "When you try to get the minimum cost between i and j, try all possible cuts k between them, dp[i][j] = min(dp[i][k] + dp[k][j]) + (j - i) for all possible cuts k between them."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:36:55.440Z",
-    "PARSED_ISO": "2026-09-09T17:38:02.478Z"
+    "PARSED_ISO": "2026-09-09T19:00:08.054Z"
 }

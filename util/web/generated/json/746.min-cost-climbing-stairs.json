@@ -45,5 +45,5 @@
         "Now, looping from n - 1 to 0, the dp[i] = cost[i] + min(dp[i + 1], dp[i + 2]). The answer will be the minimum of dp[0] and dp[1]"
     ],
     "LC_SYNC_ISO": "2026-09-04T20:16:06.149Z",
-    "PARSED_ISO": "2026-09-09T17:38:08.748Z"
+    "PARSED_ISO": "2026-09-09T19:00:11.045Z"
 }

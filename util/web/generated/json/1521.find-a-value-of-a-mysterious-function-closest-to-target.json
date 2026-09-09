@@ -52,5 +52,5 @@
         "For each index i using binary search or ternary search find the index j where |target - AND(arr[i...j])| is minimum, minimize this value with the global answer."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:36:12.889Z",
-    "PARSED_ISO": "2026-09-09T17:38:02.463Z"
+    "PARSED_ISO": "2026-09-09T19:00:08.043Z"
 }

@@ -40,5 +40,5 @@
         "Use greedy solution, taking at every time the greatest Fibonacci number which is smaller than or equal to the current number. Subtract this Fibonacci number from the current number and repeat again the process."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:33:40.710Z",
-    "PARSED_ISO": "2026-09-09T17:38:02.251Z"
+    "PARSED_ISO": "2026-09-09T19:00:08.000Z"
 }

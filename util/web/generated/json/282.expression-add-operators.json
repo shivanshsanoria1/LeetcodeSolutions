@@ -54,5 +54,5 @@
         "We simply need to keep track of the last operand in our expression and reverse it's effect on the expression's value while considering the multiply operator."
     ],
     "LC_SYNC_ISO": "2026-09-04T19:57:25.721Z",
-    "PARSED_ISO": "2026-09-09T17:38:03.811Z"
+    "PARSED_ISO": "2026-09-09T19:00:10.310Z"
 }

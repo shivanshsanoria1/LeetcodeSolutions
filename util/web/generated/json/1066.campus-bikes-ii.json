@@ -78,5 +78,5 @@
         "Model the problem with a dp(pos, mask) where pos represents the current bike to be assigned and mask the set of available workers."
     ],
     "LC_SYNC_ISO": "2026-09-04T20:36:29.011Z",
-    "PARSED_ISO": "2026-09-09T17:38:00.464Z"
+    "PARSED_ISO": "2026-09-09T19:00:07.514Z"
 }

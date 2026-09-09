@@ -48,5 +48,5 @@
         "All cells in the same diagonal (i,j) have the same difference so we can get the diagonal of a cell using the difference i-j."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:31:44.956Z",
-    "PARSED_ISO": "2026-09-09T17:38:01.996Z"
+    "PARSED_ISO": "2026-09-09T19:00:07.957Z"
 }

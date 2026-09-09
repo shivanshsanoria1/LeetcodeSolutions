@@ -55,5 +55,5 @@
         "After popping elements from the queue. If the queue is not empty, calculate the equation with the current point and the point on top of the queue and maximize the answer."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:35:46.577Z",
-    "PARSED_ISO": "2026-09-09T17:38:02.438Z"
+    "PARSED_ISO": "2026-09-09T19:00:08.034Z"
 }

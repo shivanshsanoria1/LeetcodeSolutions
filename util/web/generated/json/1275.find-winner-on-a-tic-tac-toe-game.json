@@ -51,5 +51,5 @@
         "Then if no one wins, the game is a draw iff the board is full, i.e. moves.length = 9 otherwise is pending."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:30:31.066Z",
-    "PARSED_ISO": "2026-09-09T17:38:01.902Z"
+    "PARSED_ISO": "2026-09-09T19:00:07.930Z"
 }

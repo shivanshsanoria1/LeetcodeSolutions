@@ -44,5 +44,5 @@
         "Keep moving the window by one element maintaining its size k until you cover the whole array. Count the number of windows that have an average greater than or equal to the threshold."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:32:03.241Z",
-    "PARSED_ISO": "2026-09-09T17:38:02.008Z"
+    "PARSED_ISO": "2026-09-09T19:00:07.966Z"
 }

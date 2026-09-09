@@ -67,5 +67,5 @@
         "To find if one edge is non-critical (in any MST), include that edge to the accepted edge list and continue the MST algorithm, then see if the resulting MST has the same weight of the initial MST of the entire graph."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:35:25.993Z",
-    "PARSED_ISO": "2026-09-09T17:38:02.417Z"
+    "PARSED_ISO": "2026-09-09T19:00:08.030Z"
 }

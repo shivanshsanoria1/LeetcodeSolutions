@@ -47,5 +47,5 @@
         "Sort 'arr2' and use binary search to get the closest element for each 'arr1[i]', it gives a time complexity of O(nlogn)."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:33:02.509Z",
-    "PARSED_ISO": "2026-09-09T17:38:02.165Z"
+    "PARSED_ISO": "2026-09-09T19:00:07.986Z"
 }

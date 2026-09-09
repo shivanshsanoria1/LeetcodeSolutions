@@ -49,5 +49,5 @@
         "2. (Optimal Approach) Imagine there is a pointer p(x, y) starting from top right corner. p can only move left or down. If the value at p is 0, move down. If the value at p is 1, move left. Try to figure out the correctness and time complexity of this algorithm."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:34:06.730Z",
-    "PARSED_ISO": "2026-09-09T17:38:02.285Z"
+    "PARSED_ISO": "2026-09-09T19:00:08.006Z"
 }
