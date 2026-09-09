@@ -46,5 +46,6 @@
         "We can avoid using extra space for old_node ---> new_node mapping by tweaking the original linked list. Simply interweave the nodes of the old and copied list. For example:\r\nOld List: A --> B --> C --> D\r\nInterWeaved List: A --> A' --> B --> B' --> C --> C' --> D --> D'",
         "The interweaving is done using next</b> pointers and we can make use of interweaved structure to get the correct reference nodes for random</b> pointers."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:02.740Z"
+    "LC_SYNC_ISO": "2026-09-04T19:55:14.914Z",
+    "PARSED_ISO": "2026-09-09T17:38:02.154Z"
 }

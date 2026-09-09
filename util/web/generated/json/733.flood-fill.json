@@ -49,5 +49,6 @@
     "hints": [
         "Write a recursive function that paints the pixel if it's the correct color, then recurses on neighboring pixels."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:08.809Z"
+    "LC_SYNC_ISO": "2026-09-04T20:15:57.170Z",
+    "PARSED_ISO": "2026-09-09T17:38:08.660Z"
 }

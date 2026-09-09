@@ -204,7 +204,10 @@ function parseRawProblem(baseProblems, problemRaw) {
 		parsedProblemObj.content = problemRaw.content
 		parsedProblemObj.hints = problemRaw.hints
 
-		parsedProblemObj.LAST_UPDATED_ISO = timer.getTimestamp('ISO')
+		// timestamp of pulling the data from LC
+		parsedProblemObj.LC_SYNC_ISO = problemRaw.LAST_UPDATED_ISO
+		// timestamp of parsing
+		parsedProblemObj.PARSED_ISO = timer.getTimestamp('ISO')
 
 		return parsedProblemObj
 	} catch (err) {

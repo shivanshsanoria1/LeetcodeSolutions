@@ -56,5 +56,6 @@
         "Instead of adding a character, try deleting a character to form a chain in reverse.",
         "For each word in order of length, for each word2 which is word with one character removed, length[word2] = max(length[word2], length[word] + 1)."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:02.474Z"
+    "LC_SYNC_ISO": "2026-09-04T20:36:16.261Z",
+    "PARSED_ISO": "2026-09-09T17:38:00.295Z"
 }

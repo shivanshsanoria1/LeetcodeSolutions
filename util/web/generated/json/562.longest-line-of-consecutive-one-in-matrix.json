@@ -46,5 +46,6 @@
         "Can we use dynamic programming to make use of intermediate results?",
         "Think of a 3D array which can be used to store the longest line obtained so far for each direction."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:07.205Z"
+    "LC_SYNC_ISO": "2026-09-04T20:08:33.579Z",
+    "PARSED_ISO": "2026-09-09T17:38:07.023Z"
 }

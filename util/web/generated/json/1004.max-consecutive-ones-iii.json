@@ -61,5 +61,6 @@
         "We don't have a fixed size window in this case. The window size can grow and shrink depending upon the number of zeros we have (we don't actually have to flip the zeros here!).",
         "The way to shrink or expand a window would be based on the number of zeros that can still be flipped and so on."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:02.328Z"
+    "LC_SYNC_ISO": "2026-09-04T20:35:45.066Z",
+    "PARSED_ISO": "2026-09-09T17:37:59.951Z"
 }

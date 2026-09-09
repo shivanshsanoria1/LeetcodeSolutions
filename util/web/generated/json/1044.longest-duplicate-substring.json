@@ -72,5 +72,6 @@
         "Binary search for the length of the answer.  (If there's an answer of length 10, then there are answers of length 9, 8, 7, ...)",
         "To check whether an answer of length K exists, we can use Rabin-Karp 's algorithm."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:02.470Z"
+    "LC_SYNC_ISO": "2026-09-04T20:36:13.219Z",
+    "PARSED_ISO": "2026-09-09T17:38:00.266Z"
 }

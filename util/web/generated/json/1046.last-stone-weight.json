@@ -39,5 +39,6 @@
     "hints": [
         "Simulate the process.  We can do it with a heap, or by sorting some list of stones every time we take a turn."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:02.472Z"
+    "LC_SYNC_ISO": "2026-09-04T20:36:14.499Z",
+    "PARSED_ISO": "2026-09-09T17:38:00.290Z"
 }

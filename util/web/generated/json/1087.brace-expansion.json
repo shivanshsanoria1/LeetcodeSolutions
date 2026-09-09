@@ -56,5 +56,6 @@
         "All generated strings are of the same size. How can we generate all of these strings?",
         "Do a backtracking on which each level of it has to choose one single (e.g. 'a') character or any character of the given parenthesized group (e.g. \"{a,b,c}\")"
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:02.500Z"
+    "LC_SYNC_ISO": "2026-09-04T20:36:45.214Z",
+    "PARSED_ISO": "2026-09-09T17:38:00.629Z"
 }

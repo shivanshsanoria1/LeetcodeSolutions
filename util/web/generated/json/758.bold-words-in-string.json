@@ -55,5 +55,6 @@
     "hints": [
         "First, determine which letters are bold and store that information in mask[i] = if i-th character is bold.\r\nThen, insert the tags at the beginning and end of groups.  The start of a group is if and only if (mask[i] and (i == 0 or not mask[i-1])), and the end of a group is similar."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:09.007Z"
+    "LC_SYNC_ISO": "2026-09-04T20:16:14.691Z",
+    "PARSED_ISO": "2026-09-09T17:38:08.826Z"
 }

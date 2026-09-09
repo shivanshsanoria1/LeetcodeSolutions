@@ -38,5 +38,6 @@
     "hints": [
         "For the minimum:  We can always do it in at most 2 moves, by moving one stone next to another, then the third stone next to the other two.  When can we do it in 1 move?  0 moves?\r\n\r\nFor the maximum:  Every move, the maximum position minus the minimum position must decrease by at least 1."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:02.446Z"
+    "LC_SYNC_ISO": "2026-09-04T20:36:05.348Z",
+    "PARSED_ISO": "2026-09-09T17:38:00.185Z"
 }

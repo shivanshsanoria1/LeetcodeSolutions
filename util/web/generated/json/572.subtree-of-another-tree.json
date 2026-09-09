@@ -57,5 +57,6 @@
         "Two trees <b>s</b> and <b>t</b> are said to be identical if their root values are same and their left and right subtrees are identical. Can you write this in form of recursive formulae?",
         "Recursive formulae can be: \r\nisIdentical(s,t)= s.val==t.val AND isIdentical(s.left,t.left) AND isIdentical(s.right,t.right)"
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:07.284Z"
+    "LC_SYNC_ISO": "2026-09-04T20:08:42.928Z",
+    "PARSED_ISO": "2026-09-09T17:38:07.114Z"
 }

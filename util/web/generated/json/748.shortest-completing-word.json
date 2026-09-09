@@ -42,5 +42,6 @@
     "hints": [
         "Count only the letters (possibly converted to lowercase) of each word.  If a word is shorter and the count of each letter is at least the count of that letter in the licensePlate, it is the best answer we've seen yet."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:08.944Z"
+    "LC_SYNC_ISO": "2026-09-04T20:16:07.407Z",
+    "PARSED_ISO": "2026-09-09T17:38:08.762Z"
 }

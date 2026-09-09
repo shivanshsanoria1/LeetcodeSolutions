@@ -53,5 +53,6 @@
     "hints": [
         "The first chunk can be found as the smallest k for which A[:k+1] == [0, 1, 2, ...k]; then we repeat this process."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:09.134Z"
+    "LC_SYNC_ISO": "2026-09-04T20:16:22.321Z",
+    "PARSED_ISO": "2026-09-09T17:38:08.919Z"
 }

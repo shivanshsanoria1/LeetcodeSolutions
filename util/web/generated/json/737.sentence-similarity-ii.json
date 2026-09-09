@@ -59,5 +59,6 @@
     "hints": [
         "Consider the graphs where each pair in \"pairs\" is an edge.  Two words are similar if they are the same, or are in the same connected component of this graph."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:08.819Z"
+    "LC_SYNC_ISO": "2026-09-04T20:15:59.901Z",
+    "PARSED_ISO": "2026-09-09T17:38:08.670Z"
 }

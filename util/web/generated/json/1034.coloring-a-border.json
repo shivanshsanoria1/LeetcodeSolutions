@@ -48,5 +48,6 @@
     "hints": [
         "Use a DFS to find every square in the component.  Then for each square, color it if it has a neighbor that is outside the grid or a different color."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:02.449Z"
+    "LC_SYNC_ISO": "2026-09-04T20:36:06.098Z",
+    "PARSED_ISO": "2026-09-09T17:38:00.186Z"
 }

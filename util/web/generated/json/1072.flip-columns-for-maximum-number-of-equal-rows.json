@@ -43,5 +43,6 @@
     "hints": [
         "Flipping a subset of columns is like doing a bitwise XOR of some number K onto each row.  We want rows X with X ^ K = all 0s or all 1s.  This is the same as X = X^K ^K = (all 0s or all 1s) ^ K, so we want to count rows that have opposite bits set.  For example, if K = 1, then we count rows X = (00000...001, or 1111....110)."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:02.492Z"
+    "LC_SYNC_ISO": "2026-09-04T20:36:33.764Z",
+    "PARSED_ISO": "2026-09-09T17:38:00.509Z"
 }

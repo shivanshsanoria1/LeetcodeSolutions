@@ -67,5 +67,6 @@
         "Divide the array into two parts and sort them.",
         "For each integer in the first part, count the number of integers that satisfy the condition from the second part. Use the pointer to help you in the counting process."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:06.535Z"
+    "LC_SYNC_ISO": "2026-09-04T20:07:31.839Z",
+    "PARSED_ISO": "2026-09-09T17:38:06.286Z"
 }

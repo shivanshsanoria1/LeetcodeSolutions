@@ -55,5 +55,6 @@
     "hints": [
         "For every word in the input list, we can check whether all prefixes of that word are in the input list by using a Set."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:08.685Z"
+    "LC_SYNC_ISO": "2026-09-04T20:15:47.891Z",
+    "PARSED_ISO": "2026-09-09T17:38:08.569Z"
 }

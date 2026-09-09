@@ -69,5 +69,6 @@
         "If the start and end cells are connected then we don't need to add more cells.",
         "Use union-find data structure to check connectivity and return as answer the value of the given cell that makes start and end cells connected."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:02.507Z"
+    "LC_SYNC_ISO": "2026-09-04T20:36:56.143Z",
+    "PARSED_ISO": "2026-09-09T17:38:00.828Z"
 }

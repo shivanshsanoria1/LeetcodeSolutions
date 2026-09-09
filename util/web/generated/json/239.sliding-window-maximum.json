@@ -66,5 +66,6 @@
         "The queue size need not be the same as the window’s size.",
         "Remove redundant elements and the queue should store only elements that need to be considered."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:03.349Z"
+    "LC_SYNC_ISO": "2026-09-04T19:56:45.941Z",
+    "PARSED_ISO": "2026-09-09T17:38:03.078Z"
 }

@@ -61,5 +61,6 @@
     "hints": [
         "We can figure out what target each subset must sum to.  Then, let's recursively search, where at each call to our function, we choose which of k subsets the next value will join."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:08.503Z"
+    "LC_SYNC_ISO": "2026-09-04T20:15:32.870Z",
+    "PARSED_ISO": "2026-09-09T17:38:08.367Z"
 }

@@ -54,5 +54,6 @@
     "hints": [
         "If you notice carefully in the flattened tree, each node's right child points to the next node of a pre-order traversal."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:02.561Z"
+    "LC_SYNC_ISO": "2026-09-04T19:54:54.381Z",
+    "PARSED_ISO": "2026-09-09T17:38:01.349Z"
 }

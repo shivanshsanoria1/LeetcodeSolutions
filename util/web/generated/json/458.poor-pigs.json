@@ -45,5 +45,6 @@
         "How many states can we generate with x pigs and T tests?",
         "Find minimum <code>x</code> such that <code>(T+1)^x >= N</code>"
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:06.093Z"
+    "LC_SYNC_ISO": "2026-09-04T20:07:01.596Z",
+    "PARSED_ISO": "2026-09-09T17:38:05.967Z"
 }

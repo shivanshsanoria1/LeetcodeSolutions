@@ -53,5 +53,6 @@
         "What if we have the array sorted?",
         "Loop the array and get the value A[i] then we need to find a value A[j] such that A[i] + A[j] < K  which means A[j] < K - A[i]. In order to do that we can find that value with a binary search."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:02.504Z"
+    "LC_SYNC_ISO": "2026-09-04T20:36:54.021Z",
+    "PARSED_ISO": "2026-09-09T17:38:00.788Z"
 }

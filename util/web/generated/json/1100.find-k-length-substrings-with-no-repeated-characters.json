@@ -45,5 +45,6 @@
         "First store the first leftmost K-length substring in a hashTable or array of frequencies.",
         "Then iterate through the rest of characters and erase the first element and add the next element from the right. If in the hashTable we have K different character we add 1 to the counter. After that return as answer the counter."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:02.506Z"
+    "LC_SYNC_ISO": "2026-09-04T20:36:54.652Z",
+    "PARSED_ISO": "2026-09-09T17:38:00.821Z"
 }

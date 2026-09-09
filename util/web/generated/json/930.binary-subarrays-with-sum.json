@@ -54,5 +54,6 @@
         "While iterating through the array, keep track of how many times each prefix sum has appeared so far.",
         "If the current prefix sum is <code>curr</code>, how many previous prefix sums equal to <code>curr - goal</code> exist?"
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:10.191Z"
+    "LC_SYNC_ISO": "2026-09-04T20:34:48.909Z",
+    "PARSED_ISO": "2026-09-09T17:38:10.308Z"
 }

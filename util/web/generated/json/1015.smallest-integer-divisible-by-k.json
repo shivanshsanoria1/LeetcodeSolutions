@@ -44,5 +44,6 @@
         "11111 = 1111 * 10 + 1\r\nWe only need to store remainders modulo K.",
         "If we never get a remainder of 0, why would that happen, and how would we know that?"
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:02.380Z"
+    "LC_SYNC_ISO": "2026-09-04T20:35:52.941Z",
+    "PARSED_ISO": "2026-09-09T17:38:00.014Z"
 }

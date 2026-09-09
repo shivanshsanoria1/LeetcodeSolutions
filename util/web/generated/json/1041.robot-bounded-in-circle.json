@@ -44,5 +44,6 @@
         "Calculate the final vector of how the robot travels after executing all instructions once - it consists of a change in position plus a change in direction.",
         "The robot stays in the circle if and only if (looking at the final vector) it changes direction (ie. doesn't stay pointing north), or it moves 0."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:02.465Z"
+    "LC_SYNC_ISO": "2026-09-04T20:36:11.132Z",
+    "PARSED_ISO": "2026-09-09T17:38:00.241Z"
 }

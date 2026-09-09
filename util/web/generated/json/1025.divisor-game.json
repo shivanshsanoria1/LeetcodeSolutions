@@ -50,5 +50,6 @@
     "hints": [
         "If the current number is even, we can always subtract a 1 to make it odd.  If the current number is odd, we must subtract an odd number to make it even."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:02.403Z"
+    "LC_SYNC_ISO": "2026-09-04T20:35:59.971Z",
+    "PARSED_ISO": "2026-09-09T17:38:00.077Z"
 }

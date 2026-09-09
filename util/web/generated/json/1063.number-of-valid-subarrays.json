@@ -46,5 +46,6 @@
         "Given a data structure that answers queries of the type to find the minimum in a range of an array (Range minimum query (RMQ) sparse table) in O(1) time. How can you solve this problem?",
         "For each starting index do a binary search with an RMQ to find the ending possible position."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:02.487Z"
+    "LC_SYNC_ISO": "2026-09-04T20:36:26.888Z",
+    "PARSED_ISO": "2026-09-09T17:38:00.407Z"
 }

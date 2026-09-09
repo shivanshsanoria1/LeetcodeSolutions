@@ -39,5 +39,6 @@
     "hints": [
         "Use dynamic programming:  dp(i) will be the answer to the problem for books[i:]."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:02.508Z"
+    "LC_SYNC_ISO": "2026-09-04T20:36:58.227Z",
+    "PARSED_ISO": "2026-09-09T17:38:00.833Z"
 }

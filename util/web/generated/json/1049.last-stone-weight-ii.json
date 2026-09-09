@@ -49,5 +49,6 @@
         "Think of the final answer as a sum of weights with + or - sign symbols infront of each weight.  Actually, all sums with 1 of each sign symbol are possible.",
         "Use dynamic programming: for every possible sum with N stones, those sums +x or -x is possible with N+1 stones, where x is the value of the newest stone.  (This overcounts sums that are all positive or all negative, but those don't matter.)"
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:02.475Z"
+    "LC_SYNC_ISO": "2026-09-04T20:36:16.910Z",
+    "PARSED_ISO": "2026-09-09T17:38:00.295Z"
 }

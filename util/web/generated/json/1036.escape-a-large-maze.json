@@ -51,5 +51,6 @@
         "If we become stuck, there's either a loop around the source or around the target.",
         "If there is a loop around say, the source, what is the maximum number of squares it can have?"
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:02.453Z"
+    "LC_SYNC_ISO": "2026-09-04T20:36:07.474Z",
+    "PARSED_ISO": "2026-09-09T17:38:00.189Z"
 }

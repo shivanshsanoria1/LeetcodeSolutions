@@ -45,5 +45,6 @@
         "Divide the numbers in ranges like [2-3], [4-7], [8-15] and so on. And try to generate new range from previous.",
         "Or does the odd/even status of the number help you in calculating the number of 1s?"
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:04.728Z"
+    "LC_SYNC_ISO": "2026-09-04T19:58:12.277Z",
+    "PARSED_ISO": "2026-09-09T17:38:04.502Z"
 }

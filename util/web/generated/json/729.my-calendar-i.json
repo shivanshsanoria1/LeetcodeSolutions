@@ -55,5 +55,6 @@
     "hints": [
         "Store the events as a sorted list of intervals.  If none of the events conflict, then the new event can be added."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:08.761Z"
+    "LC_SYNC_ISO": "2026-09-04T20:15:54.132Z",
+    "PARSED_ISO": "2026-09-09T17:38:08.624Z"
 }

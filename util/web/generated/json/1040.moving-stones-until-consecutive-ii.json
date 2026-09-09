@@ -48,5 +48,6 @@
     "hints": [
         "For the minimum, how many stones are already in place?\r\nFor the maximum, we have to lose either the gap A[1] - A[0] or A[N-1] - A[N-2]  (where N = A.length), but every other space can be occupied."
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:02.464Z"
+    "LC_SYNC_ISO": "2026-09-04T20:36:10.220Z",
+    "PARSED_ISO": "2026-09-09T17:38:00.240Z"
 }

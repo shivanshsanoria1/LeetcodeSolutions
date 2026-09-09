@@ -56,5 +56,6 @@
         "The purely recursive implementation of minimax would be worthless for even a small n. You MUST use dynamic programming.",
         "As a follow-up, how would you modify your code to solve the problem of minimizing the expected loss, instead of the worst-case loss?"
     ],
-    "LAST_UPDATED_ISO": "2026-09-04T20:37:05.218Z"
+    "LC_SYNC_ISO": "2026-09-04T20:05:47.631Z",
+    "PARSED_ISO": "2026-09-09T17:38:05.058Z"
 }
