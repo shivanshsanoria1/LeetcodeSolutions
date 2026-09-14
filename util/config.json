@@ -8,7 +8,7 @@
         "logs": "util/logs",
         "linkTables": "stats/link-tables",
         "webBackup": "util/web/generated/backup",
-        "LCProblemsJSON": "util/web/generated/json",
+        "LCProblemsJSONParsed": "util/web/generated/json",
         "LCProblemsJSONRaw": "util/web/generated/json-raw"
     },
     "filePaths": {

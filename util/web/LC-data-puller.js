@@ -107,32 +107,32 @@ async function fetchBaseProblemList() {
 	}
 }
 
-async function createRawJSONFilenameMap() {
+async function createJSONFilenameMap(mode = 'raw') {
 	try {
-		const dirPath = helper.getDirPath('LCProblemsJSONRaw')
+		const dirPath = mode === 'parsed' ? helper.getDirPath('LCProblemsJSONParsed') : helper.getDirPath('LCProblemsJSONRaw')
 		const filenames = await fs.readdir(dirPath);
 
-		const rawJSONFilenameMap = new Map();
+		const filenameMapJSON = new Map();
 
 		for (const filename of filenames) {
 			if (!filename.endsWith(".json")) {
-				logger.info(`Invalid filename in JSON Raw dir: ${filename}`)
+				logger.info(`Invalid filename in ${mode} JSON dir: ${filename}`)
 				continue;
 			}
 
 			const quesId = Number(filename.split('.')[0])
 			const titleSlug = filename.split('.')[1]
 
-			rawJSONFilenameMap.set(quesId, titleSlug)
+			filenameMapJSON.set(quesId, titleSlug)
 		}
 
-		return rawJSONFilenameMap
+		return filenameMapJSON
 	} catch (err) {
 		throw err
 	}
 }
 
-async function fetchRawProblems(baseProblems, rawJSONFilenameMap) {
+async function fetchProblemDetailsInBatch(baseProblems, rawJSONFilenameMap) {
 	// provide delay in ms
 	const sleep = (time_ms = API_DELAY_MS) => new Promise((resolve) => setTimeout(resolve, time_ms));
 
@@ -162,7 +162,7 @@ async function fetchRawProblems(baseProblems, rawJSONFilenameMap) {
 	}
 }
 
-function parseRawProblem(baseProblems, problemRaw) {
+function parseRawProblem(baseProblems, problemRaw, mode = 'full') {
 	try {
 		const parseJSONString = (value, fallback = []) => {
 			try {
@@ -185,22 +185,27 @@ function parseRawProblem(baseProblems, problemRaw) {
 			// similarQuestions: parseJSONString(problemRaw.similarQuestions).map(q => q.titleSlug),
 			similarQuesIds: parseJSONString(problemRaw.similarQuestions)
 				.map(({ titleSlug }) => findQuesIdFromSlug(baseProblems, titleSlug)),
-			topicTags: problemRaw.topicTags ?? [],
-			meta: {
-				quesIdLCBackend: Number(problemRaw.questionId),
-				hasSolution: problemRaw.hasSolution,
-				hasVideoSolution: problemRaw.hasVideoSolution,
-			},
-			solution: {
-				canSeeDetail: problemRaw.solution?.canSeeDetail ?? false,
-			}
+			topicTags: problemRaw.topicTags ?? []
 		};
 
 		parsedProblemObj.stats.acRateRaw = problemRaw.acRate
 		parsedProblemObj.stats.likes = problemRaw.likes
 		parsedProblemObj.stats.dislikes = problemRaw.dislikes
 
-		parsedProblemObj.solution.content = problemRaw.solution?.content
+		if (mode === 'list') {
+			return parsedProblemObj
+		}
+
+		parsedProblemObj.exampleTestcases = problemRaw.exampleTestcases
+		parsedProblemObj.meta = {
+			quesIdLCBackend: Number(problemRaw.questionId),
+			hasSolution: problemRaw.hasSolution,
+			hasVideoSolution: problemRaw.hasVideoSolution,
+		}
+		parsedProblemObj.solution = {
+			canSeeDetail: problemRaw.solution?.canSeeDetail ?? false,
+			content: problemRaw.solution?.content
+		}
 		parsedProblemObj.content = problemRaw.content
 		parsedProblemObj.hints = problemRaw.hints
 
@@ -215,7 +220,7 @@ function parseRawProblem(baseProblems, problemRaw) {
 	}
 }
 
-async function parseRawProblems(baseProblems, rawJSONFilenameMapOld, rawJSONFilenameMap) {
+async function parseRawProblems(baseProblems, rawJSONFilenameMap, parsedJSONFilenameMap) {
 	try {
 		const problems = []
 		for (const [quesId, titleSlug] of rawJSONFilenameMap) {
@@ -224,14 +229,15 @@ async function parseRawProblems(baseProblems, rawJSONFilenameMapOld, rawJSONFile
 
 			const problemRaw = await readFromJSON(filePathJSONRaw)
 
-			const problem = parseRawProblem(baseProblems, problemRaw)
+			//needs to be parsed
+			if (!parsedJSONFilenameMap.get(quesId)) {
+				const problem = parseRawProblem(baseProblems, problemRaw, 'full')
 
-			//only save the parsed
-			if (!rawJSONFilenameMapOld.get(quesId)) {
-				const filePathJSON = path.join(helper.getDirPath('LCProblemsJSON'), filenameJSON)
+				const filePathJSON = path.join(helper.getDirPath('LCProblemsJSONParsed'), filenameJSON)
 				await writeToJSON(filePathJSON, problem)
 			}
 
+			const problem = parseRawProblem(baseProblems, problemRaw, 'list')
 			problems.push(problem)
 		}
 
@@ -354,22 +360,34 @@ async function fetchStatsFromLC() {
 		logger.time(`${scriptName} running...`)
 		logger.time('Open the logs file to see contiuous updates.')
 
+		// 1. Fetch base problem list from LC and save it
 		const baseProblems = await fetchBaseProblemList();
 		logger.info('Base Problem list length = ' + baseProblems.length)
 		logger.info('Base Problem at index 0 = ' + JSON.stringify(baseProblems[0]))
 
-		const rawJSONFilenameMapOld = await createRawJSONFilenameMap()
-		logger.info(`raw JSON file map first pair (before fetching new) = 1: ${rawJSONFilenameMapOld.get(1)}`)
+		// 2. create a map of raw JSON files {quesId -> titleSlug}
+		let rawJSONFilenameMap = await createJSONFilenameMap('raw')
+		logger.info(`raw JSON file map first pair (before fetching new) = 1: ${rawJSONFilenameMap.get(1)}`)
 
-		await fetchRawProblems(baseProblems, rawJSONFilenameMapOld)
+		// 3. fetch the next batch of problem details from LC and save the raw JSON data
+		await fetchProblemDetailsInBatch(baseProblems, rawJSONFilenameMap)
 
-		const rawJSONFilenameMap = await createRawJSONFilenameMap()
-		logger.info(`raw JSON file map first pair = 1: ${rawJSONFilenameMap.get(1)}`)
+		// 4. updated raw json map after new batch is fetched from LC {quesId -> titleSlug}
+		rawJSONFilenameMap = await createJSONFilenameMap('raw')
+		logger.info(`raw JSON file map first pair (after fetching new) = 1: ${rawJSONFilenameMap.get(1)}`)
 
-		const problems = await parseRawProblems(baseProblems, rawJSONFilenameMapOld, rawJSONFilenameMap)
+		// 5. create a map of parsed JSON files {quesId -> titleSlug}
+		const parsedJSONFilenameMap = await createJSONFilenameMap('parsed')
+		logger.info(`raw JSON file map first pair = 1: ${parsedJSONFilenameMap.get(1)}`)
+
+		// 6. parse the new batch of JSON 
+		const problems = await parseRawProblems(baseProblems, rawJSONFilenameMap, parsedJSONFilenameMap)
 		logger.info('Main Problem list length = ' + problems.length)
 		logger.info('Main Problem at index 0 = ' + JSON.stringify(problems[0]))
 
+		// 7. create the problem list from detail problem JSON 
+
+		// 8. create topic tag map 
 		const topicTagMap = await generateTopicTagMap(problems)
 		logger.info('Topic tag map size = ' + Object.keys(topicTagMap).length)
 
