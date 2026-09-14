@@ -172,5 +172,6 @@
     "minimum-enclosing-circle": "Minimum Enclosing Circle",
     "palindromic-tree": "Palindromic Tree",
     "k-shortest-path": "K Shortest Path",
-    "multiple-knapsack": "Multiple Knapsack"
+    "multiple-knapsack": "Multiple Knapsack",
+    "li-chao-tree": "Li Chao Tree"
 }

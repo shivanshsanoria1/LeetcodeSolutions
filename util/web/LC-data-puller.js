@@ -215,7 +215,7 @@ function parseRawProblem(baseProblems, problemRaw) {
 	}
 }
 
-async function parseRawProblems(baseProblems, rawJSONFilenameMap) {
+async function parseRawProblems(baseProblems, rawJSONFilenameMapOld, rawJSONFilenameMap) {
 	try {
 		const problems = []
 		for (const [quesId, titleSlug] of rawJSONFilenameMap) {
@@ -226,8 +226,11 @@ async function parseRawProblems(baseProblems, rawJSONFilenameMap) {
 
 			const problem = parseRawProblem(baseProblems, problemRaw)
 
-			const filePathJSON = path.join(helper.getDirPath('LCProblemsJSON'), filenameJSON)
-			await writeToJSON(filePathJSON, problem)
+			//only save the parsed
+			if (!rawJSONFilenameMapOld.get(quesId)) {
+				const filePathJSON = path.join(helper.getDirPath('LCProblemsJSON'), filenameJSON)
+				await writeToJSON(filePathJSON, problem)
+			}
 
 			problems.push(problem)
 		}
@@ -257,8 +260,6 @@ async function fetchProblem(titleSlug) {
 	}, API_TIMEOUT_MS)
 
 	try {
-		const query = queries.LC_Problem_Detailed
-
 		const res = await fetch(webConfig.API_URL, {
 			method: "POST",
 			headers: {
@@ -268,7 +269,7 @@ async function fetchProblem(titleSlug) {
 				"User-Agent": "Mozilla/5.0"
 			},
 			body: JSON.stringify({
-				query,
+				query: queries.LC_Problem_Detailed,
 				variables: { titleSlug }
 			}),
 			signal: controller.signal
@@ -357,15 +358,15 @@ async function fetchStatsFromLC() {
 		logger.info('Base Problem list length = ' + baseProblems.length)
 		logger.info('Base Problem at index 0 = ' + JSON.stringify(baseProblems[0]))
 
-		let rawJSONFilenameMap = await createRawJSONFilenameMap()
+		const rawJSONFilenameMapOld = await createRawJSONFilenameMap()
+		logger.info(`raw JSON file map first pair (before fetching new) = 1: ${rawJSONFilenameMapOld.get(1)}`)
+
+		await fetchRawProblems(baseProblems, rawJSONFilenameMapOld)
+
+		const rawJSONFilenameMap = await createRawJSONFilenameMap()
 		logger.info(`raw JSON file map first pair = 1: ${rawJSONFilenameMap.get(1)}`)
 
-		await fetchRawProblems(baseProblems, rawJSONFilenameMap)
-
-		rawJSONFilenameMap = await createRawJSONFilenameMap()
-		logger.info(`raw JSON file map first pair = 1: ${rawJSONFilenameMap.get(1)}`)
-
-		const problems = await parseRawProblems(baseProblems, rawJSONFilenameMap)
+		const problems = await parseRawProblems(baseProblems, rawJSONFilenameMapOld, rawJSONFilenameMap)
 		logger.info('Main Problem list length = ' + problems.length)
 		logger.info('Main Problem at index 0 = ' + JSON.stringify(problems[0]))
 

@@ -35,6 +35,7 @@ const queries = {
 				similarQuestions
 				content
 				hints
+				exampleTestcases
 				solution {
 					canSeeDetail
 					content
