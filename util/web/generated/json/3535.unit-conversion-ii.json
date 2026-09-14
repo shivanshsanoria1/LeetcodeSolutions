@@ -1,0 +1,56 @@
+{
+    "quesId": 3535,
+    "title": "Unit Conversion II",
+    "titleSlug": "unit-conversion-ii",
+    "difficulty": "Medium",
+    "isPaidOnly": true,
+    "categoryTitle": "Algorithms",
+    "stats": {
+        "totalAccepted": "740",
+        "totalSubmission": "1.1K",
+        "totalAcceptedRaw": 740,
+        "totalSubmissionRaw": 1141,
+        "acRate": "64.9%",
+        "acRateRaw": 64.85539000876425,
+        "likes": 5,
+        "dislikes": 9
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Graph Theory",
+            "slug": "graph"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3752,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [
+        "Using a dfs, compute an array <code>fromRoot</code> such that <code>fromRoot[a]</code> is the number of units of type <code>a</code> equivalent to a single unit of type 0.",
+        "<code>answer[i] = fromRoot[unitA<sub>i</sub>]<sup>-1</sup> * fromRoot[unitB<sub>i</sub>]</code>"
+    ],
+    "LC_SYNC_ISO": "2026-09-14T16:53:25.910Z",
+    "PARSED_ISO": "2026-09-14T16:55:57.053Z"
+}

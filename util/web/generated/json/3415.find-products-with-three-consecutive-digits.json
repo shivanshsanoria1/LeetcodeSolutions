@@ -1,0 +1,37 @@
+{
+    "quesId": 3415,
+    "title": "Find Products with Three Consecutive Digits ",
+    "titleSlug": "find-products-with-three-consecutive-digits",
+    "difficulty": "Easy",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "2.4K",
+        "totalSubmission": "3K",
+        "totalAcceptedRaw": 2411,
+        "totalSubmissionRaw": 3018,
+        "acRate": "79.9%",
+        "acRateRaw": 79.88734261100066,
+        "likes": 4,
+        "dislikes": 3
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3757,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-14T16:51:20.966Z",
+    "PARSED_ISO": "2026-09-14T16:55:56.991Z"
+}

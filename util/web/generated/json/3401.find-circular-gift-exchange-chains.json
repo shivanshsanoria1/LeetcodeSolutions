@@ -1,0 +1,37 @@
+{
+    "quesId": 3401,
+    "title": "Find Circular Gift Exchange Chains",
+    "titleSlug": "find-circular-gift-exchange-chains",
+    "difficulty": "Hard",
+    "isPaidOnly": true,
+    "categoryTitle": "Database",
+    "stats": {
+        "totalAccepted": "998",
+        "totalSubmission": "2K",
+        "totalAcceptedRaw": 998,
+        "totalSubmissionRaw": 1969,
+        "acRate": "50.7%",
+        "acRateRaw": 50.68562722194007,
+        "likes": 3,
+        "dislikes": 3
+    },
+    "similarQuesIds": [],
+    "topicTags": [
+        {
+            "name": "Database",
+            "slug": "database"
+        }
+    ],
+    "meta": {
+        "quesIdLCBackend": 3746,
+        "hasSolution": false,
+        "hasVideoSolution": false
+    },
+    "solution": {
+        "canSeeDetail": false
+    },
+    "content": null,
+    "hints": [],
+    "LC_SYNC_ISO": "2026-09-14T16:48:37.757Z",
+    "PARSED_ISO": "2026-09-14T16:48:46.928Z"
+}
