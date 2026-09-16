@@ -19,6 +19,7 @@
         "LCProblemList": "util/web/generated/lc-problem-list.json",
         "LCProblemListMin": "util/web/generated/json-min/lc-problem-list-min.json",
         "LCTopicTag": "util/web/generated/lc-topic-tag.json",
+        "LCTopicTagMin": "util/web/generated/json-min/lc-topic-tag-min.json",
         "config": "util/config.json",
         "webConfig": "util/web/web-config.json"
     }

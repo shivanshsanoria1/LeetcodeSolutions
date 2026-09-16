@@ -422,11 +422,14 @@ async function generateTopicTagsList(problems) {
 			}
 		}
 
-		const filePath = helper.getFilePath('LCTopicTag')
-
 		topicTagsList = assignVIBGYORColors(topicTagsList)
 
+		// save the readable json
+		const filePath = helper.getFilePath('LCTopicTag')
 		await writeToJSON(filePath, topicTagsList)
+		// save the minified json
+		const filePathMin = helper.getFilePath('LCTopicTagMin')
+		await writeToJSON(filePathMin, topicTagsList, true)
 
 		return topicTagsList
 	} catch (err) {

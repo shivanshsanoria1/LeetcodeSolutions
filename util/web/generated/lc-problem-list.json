@@ -133182,5 +133182,71 @@
                 "slug": "simulation"
             }
         ]
+    },
+    {
+        "quesId": 3727,
+        "title": "Maximum Alternating Sum of Squares",
+        "titleSlug": "maximum-alternating-sum-of-squares",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "35.5K",
+            "totalSubmission": "58K",
+            "totalAcceptedRaw": 35540,
+            "totalSubmissionRaw": 58004,
+            "acRate": "61.3%",
+            "acRateRaw": 61.27163643886628,
+            "likes": 73,
+            "dislikes": 1
+        },
+        "similarQuesIds": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Greedy",
+                "slug": "greedy"
+            },
+            {
+                "name": "Sorting",
+                "slug": "sorting"
+            }
+        ]
+    },
+    {
+        "quesId": 3728,
+        "title": "Stable Subarrays With Equal Boundary and Interior Sum",
+        "titleSlug": "stable-subarrays-with-equal-boundary-and-interior-sum",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "17.2K",
+            "totalSubmission": "65K",
+            "totalAcceptedRaw": 17223,
+            "totalSubmissionRaw": 64991,
+            "acRate": "26.5%",
+            "acRateRaw": 26.5005923897155,
+            "likes": 184,
+            "dislikes": 3
+        },
+        "similarQuesIds": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Hash Table",
+                "slug": "hash-table"
+            },
+            {
+                "name": "Prefix Sum",
+                "slug": "prefix-sum"
+            }
+        ]
     }
 ]

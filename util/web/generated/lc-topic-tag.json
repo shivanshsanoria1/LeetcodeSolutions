@@ -2,7 +2,7 @@
     {
         "slug": "array",
         "name": "Array",
-        "freq": 2043,
+        "freq": 2045,
         "color": "#a371f7"
     },
     {
@@ -14,7 +14,7 @@
     {
         "slug": "hash-table",
         "name": "Hash Table",
-        "freq": 767,
+        "freq": 768,
         "color": "#a371f7"
     },
     {
@@ -32,13 +32,13 @@
     {
         "slug": "sorting",
         "name": "Sorting",
-        "freq": 494,
+        "freq": 495,
         "color": "#a371f7"
     },
     {
         "slug": "greedy",
         "name": "Greedy",
-        "freq": 437,
+        "freq": 438,
         "color": "#a371f7"
     },
     {
@@ -92,7 +92,7 @@
     {
         "slug": "prefix-sum",
         "name": "Prefix Sum",
-        "freq": 234,
+        "freq": 235,
         "color": "#a371f7"
     },
     {
