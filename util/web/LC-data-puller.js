@@ -331,22 +331,104 @@ async function fetchProblem(titleSlug) {
 	}
 }
 
-async function generateTopicTagMap(problems) {
+function assignVIBGYORColors(topicTags) {
 	try {
-		const topicTagMap = {}
+		if (!topicTags || !topicTags.length) return [];
+
+		const VIBGYOR = [
+			'#a371f7', // Violet (Highest frequency)
+			'#6610f2', // Indigo
+			'#0d6efd', // Blue
+			'#2cbb5d', // Green
+			'#ffc01e', // Yellow
+			'#fd7e14', // Orange
+			'#ef4743'  // Red (Lowest frequency)
+		];
+
+		// 1. Group by frequency to count how many unique tags share each exact frequency count
+		const freqCounts = {};
+		let totalTags = topicTags.length;
+
+		topicTags.forEach(tag => {
+			freqCounts[tag.freq] = (freqCounts[tag.freq] || 0) + 1;
+		});
+
+		// 2. Sort unique frequencies in ASCENDING order (lowest first)
+		const uniqueFreqs = Object.keys(freqCounts).map(Number).sort((a, b) => a - b);
+
+		// 3. Allocate to 7 buckets dynamically (starting from Red)
+		const colorMap = {};
+		let currentBucket = VIBGYOR.length - 1;
+		let currentItemsInBucket = 0;
+		let remainingTags = totalTags;
+		let remainingBuckets = VIBGYOR.length;
+		let targetPerBucket = remainingTags / remainingBuckets;
+
+		for (let i = 0; i < uniqueFreqs.length; i++) {
+			const freq = uniqueFreqs[i];
+			const count = freqCounts[freq];
+
+			// Assign the current frequency to the current color bucket
+			colorMap[freq] = VIBGYOR[currentBucket];
+			currentItemsInBucket += count;
+
+			// If bucket hits target size, move to the next color (towards Violet)
+			if (currentItemsInBucket >= targetPerBucket && currentBucket > 0) {
+				remainingTags -= currentItemsInBucket;
+				remainingBuckets--;
+				targetPerBucket = remainingTags / remainingBuckets;
+
+				currentBucket--;
+				currentItemsInBucket = 0;
+			}
+		}
+
+		// 4. Construct the strictly formatted array
+		const formattedTags = topicTags.map(tag => ({
+			slug: tag.slug,
+			name: tag.name,
+			freq: tag.freq,
+			color: colorMap[tag.freq]
+		}));
+
+		// 5. Sort: Highest frequency -> lowest frequency, tie-breaker: alphabetical slug
+		formattedTags.sort((a, b) =>
+			a.freq === b.freq
+				? a.slug.localeCompare(b.slug)
+				: b.freq - a.freq
+		);
+
+		return formattedTags;
+	} catch (err) {
+		throw err
+	}
+}
+
+async function generateTopicTagsList(problems) {
+	try {
+		let topicTagsList = []
 		for (const { topicTags } of problems) {
 			for (const { name, slug } of topicTags) {
-				topicTagMap[slug] = name
+				const topicTag = topicTagsList.find((topicTag) => topicTag.slug === slug)
+				if (topicTag) {
+					topicTag.freq++
+				} else {
+					topicTagsList.push({
+						slug,
+						name,
+						freq: 1
+					})
+				}
 			}
 		}
 
 		const filePath = helper.getFilePath('LCTopicTag')
 
-		// no need to take backup of topic tags
-		// await createBackupJSON(filePath)
-		await writeToJSON(filePath, topicTagMap)
+		topicTagsList = assignVIBGYORColors(topicTagsList)
 
-		return topicTagMap
+		await writeToJSON(filePath, topicTagsList)
+
+		return topicTagsList
 	} catch (err) {
 		throw err
 	}
@@ -380,16 +462,15 @@ async function fetchStatsFromLC() {
 		const parsedJSONFilenameMap = await createJSONFilenameMap('parsed')
 		logger.info(`raw JSON file map first pair = 1: ${parsedJSONFilenameMap.get(1)}`)
 
-		// 6. parse the new batch of JSON 
+		// 6. parse the new batch of JSON and create a list from parsing
 		const problems = await parseRawProblems(baseProblems, rawJSONFilenameMap, parsedJSONFilenameMap)
 		logger.info('Main Problem list length = ' + problems.length)
 		logger.info('Main Problem at index 0 = ' + JSON.stringify(problems[0]))
 
-		// 7. create the problem list from detail problem JSON 
-
-		// 8. create topic tag map 
-		const topicTagMap = await generateTopicTagMap(problems)
-		logger.info('Topic tag map size = ' + Object.keys(topicTagMap).length)
+		// 7. create topic tag map 
+		const topicTags = await generateTopicTagsList(problems)
+		logger.info('Topic tag list size = ' + topicTags.length)
+		logger.info('Topic tag at index 0 = ' + JSON.stringify(topicTags[0]))
 
 		if (logger.getErrorCount() > 0) {
 			console.log('Issue(s) found during execution: check logs')

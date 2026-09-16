@@ -132816,5 +132816,371 @@
                 "slug": "number-theory"
             }
         ]
+    },
+    {
+        "quesId": 3716,
+        "title": "Find Churn Risk Customers",
+        "titleSlug": "find-churn-risk-customers",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Database",
+        "stats": {
+            "totalAccepted": "10.3K",
+            "totalSubmission": "21.8K",
+            "totalAcceptedRaw": 10255,
+            "totalSubmissionRaw": 21803,
+            "acRate": "47.0%",
+            "acRateRaw": 47.03481172315737,
+            "likes": 39,
+            "dislikes": 4
+        },
+        "similarQuesIds": [],
+        "topicTags": []
+    },
+    {
+        "quesId": 3717,
+        "title": "Minimum Operations to Make the Array Beautiful",
+        "titleSlug": "minimum-operations-to-make-the-array-beautiful",
+        "difficulty": "Medium",
+        "isPaidOnly": true,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "407",
+            "totalSubmission": "1.1K",
+            "totalAcceptedRaw": 407,
+            "totalSubmissionRaw": 1087,
+            "acRate": "37.4%",
+            "acRateRaw": 37.44250229990801,
+            "likes": 8,
+            "dislikes": 2
+        },
+        "similarQuesIds": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming"
+            }
+        ]
+    },
+    {
+        "quesId": 3718,
+        "title": "Smallest Missing Multiple of K",
+        "titleSlug": "smallest-missing-multiple-of-k",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "217.4K",
+            "totalSubmission": "304.2K",
+            "totalAcceptedRaw": 217367,
+            "totalSubmissionRaw": 304183,
+            "acRate": "71.5%",
+            "acRateRaw": 71.45956750146291,
+            "likes": 358,
+            "dislikes": 16
+        },
+        "similarQuesIds": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Hash Table",
+                "slug": "hash-table"
+            }
+        ]
+    },
+    {
+        "quesId": 3719,
+        "title": "Longest Balanced Subarray I",
+        "titleSlug": "longest-balanced-subarray-i",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "148.7K",
+            "totalSubmission": "227.3K",
+            "totalAcceptedRaw": 148716,
+            "totalSubmissionRaw": 227284,
+            "acRate": "65.4%",
+            "acRateRaw": 65.43194667487955,
+            "likes": 494,
+            "dislikes": 42
+        },
+        "similarQuesIds": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Hash Table",
+                "slug": "hash-table"
+            },
+            {
+                "name": "Divide and Conquer",
+                "slug": "divide-and-conquer"
+            },
+            {
+                "name": "Segment Tree",
+                "slug": "segment-tree"
+            },
+            {
+                "name": "Prefix Sum",
+                "slug": "prefix-sum"
+            }
+        ]
+    },
+    {
+        "quesId": 3720,
+        "title": "Lexicographically Smallest Permutation Greater Than Target",
+        "titleSlug": "lexicographically-smallest-permutation-greater-than-target",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "92.3K",
+            "totalSubmission": "190.8K",
+            "totalAcceptedRaw": 92309,
+            "totalSubmissionRaw": 190813,
+            "acRate": "48.4%",
+            "acRateRaw": 48.37644641958745,
+            "likes": 439,
+            "dislikes": 33
+        },
+        "similarQuesIds": [],
+        "topicTags": [
+            {
+                "name": "Hash Table",
+                "slug": "hash-table"
+            },
+            {
+                "name": "String",
+                "slug": "string"
+            },
+            {
+                "name": "Greedy",
+                "slug": "greedy"
+            },
+            {
+                "name": "Counting",
+                "slug": "counting"
+            },
+            {
+                "name": "Enumeration",
+                "slug": "enumeration"
+            }
+        ]
+    },
+    {
+        "quesId": 3721,
+        "title": "Longest Balanced Subarray II",
+        "titleSlug": "longest-balanced-subarray-ii",
+        "difficulty": "Hard",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "61.9K",
+            "totalSubmission": "184K",
+            "totalAcceptedRaw": 61928,
+            "totalSubmissionRaw": 183988,
+            "acRate": "33.7%",
+            "acRateRaw": 33.65907744484725,
+            "likes": 363,
+            "dislikes": 65
+        },
+        "similarQuesIds": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Hash Table",
+                "slug": "hash-table"
+            },
+            {
+                "name": "Divide and Conquer",
+                "slug": "divide-and-conquer"
+            },
+            {
+                "name": "Segment Tree",
+                "slug": "segment-tree"
+            },
+            {
+                "name": "Prefix Sum",
+                "slug": "prefix-sum"
+            }
+        ]
+    },
+    {
+        "quesId": 3722,
+        "title": "Lexicographically Smallest String After Reverse",
+        "titleSlug": "lexicographically-smallest-string-after-reverse",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "26.3K",
+            "totalSubmission": "48.7K",
+            "totalAcceptedRaw": 26256,
+            "totalSubmissionRaw": 48673,
+            "acRate": "53.9%",
+            "acRateRaw": 53.94366486553119,
+            "likes": 45,
+            "dislikes": 7
+        },
+        "similarQuesIds": [],
+        "topicTags": [
+            {
+                "name": "Two Pointers",
+                "slug": "two-pointers"
+            },
+            {
+                "name": "Binary Search",
+                "slug": "binary-search"
+            },
+            {
+                "name": "Enumeration",
+                "slug": "enumeration"
+            }
+        ]
+    },
+    {
+        "quesId": 3723,
+        "title": "Maximize Sum of Squares of Digits",
+        "titleSlug": "maximize-sum-of-squares-of-digits",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "24.5K",
+            "totalSubmission": "42.3K",
+            "totalAcceptedRaw": 24484,
+            "totalSubmissionRaw": 42301,
+            "acRate": "57.9%",
+            "acRateRaw": 57.88042835866764,
+            "likes": 69,
+            "dislikes": 2
+        },
+        "similarQuesIds": [],
+        "topicTags": [
+            {
+                "name": "Math",
+                "slug": "math"
+            },
+            {
+                "name": "Greedy",
+                "slug": "greedy"
+            }
+        ]
+    },
+    {
+        "quesId": 3724,
+        "title": "Minimum Operations to Transform Array",
+        "titleSlug": "minimum-operations-to-transform-array",
+        "difficulty": "Medium",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "15.3K",
+            "totalSubmission": "38.5K",
+            "totalAcceptedRaw": 15271,
+            "totalSubmissionRaw": 38525,
+            "acRate": "39.6%",
+            "acRateRaw": 39.62479566153767,
+            "likes": 92,
+            "dislikes": 7
+        },
+        "similarQuesIds": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Greedy",
+                "slug": "greedy"
+            }
+        ]
+    },
+    {
+        "quesId": 3725,
+        "title": "Count Ways to Choose Coprime Integers from Rows",
+        "titleSlug": "count-ways-to-choose-coprime-integers-from-rows",
+        "difficulty": "Hard",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "10.3K",
+            "totalSubmission": "22.1K",
+            "totalAcceptedRaw": 10326,
+            "totalSubmissionRaw": 22075,
+            "acRate": "46.8%",
+            "acRateRaw": 46.77689694224236,
+            "likes": 68,
+            "dislikes": 4
+        },
+        "similarQuesIds": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Math",
+                "slug": "math"
+            },
+            {
+                "name": "Dynamic Programming",
+                "slug": "dynamic-programming"
+            },
+            {
+                "name": "Matrix",
+                "slug": "matrix"
+            },
+            {
+                "name": "Combinatorics",
+                "slug": "combinatorics"
+            },
+            {
+                "name": "Number Theory",
+                "slug": "number-theory"
+            }
+        ]
+    },
+    {
+        "quesId": 3726,
+        "title": "Remove Zeros in Decimal Representation",
+        "titleSlug": "remove-zeros-in-decimal-representation",
+        "difficulty": "Easy",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "56.3K",
+            "totalSubmission": "74.3K",
+            "totalAcceptedRaw": 56268,
+            "totalSubmissionRaw": 74302,
+            "acRate": "75.7%",
+            "acRateRaw": 75.72878253613631,
+            "likes": 52,
+            "dislikes": 2
+        },
+        "similarQuesIds": [],
+        "topicTags": [
+            {
+                "name": "Math",
+                "slug": "math"
+            },
+            {
+                "name": "Simulation",
+                "slug": "simulation"
+            }
+        ]
     }
 ]
