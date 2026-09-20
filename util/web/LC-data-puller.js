@@ -192,16 +192,17 @@ function parseRawProblem(baseProblems, problemRaw, mode = 'full') {
 		parsedProblemObj.stats.likes = problemRaw.likes
 		parsedProblemObj.stats.dislikes = problemRaw.dislikes
 
-		if (mode === 'list') {
-			return parsedProblemObj
-		}
-
-		parsedProblemObj.exampleTestcases = problemRaw.exampleTestcases
 		parsedProblemObj.meta = {
 			quesIdLCBackend: Number(problemRaw.questionId),
 			hasSolution: problemRaw.hasSolution,
 			hasVideoSolution: problemRaw.hasVideoSolution,
 		}
+
+		if (mode === 'list') {
+			return parsedProblemObj
+		}
+
+		parsedProblemObj.exampleTestcases = problemRaw.exampleTestcases
 		parsedProblemObj.solution = {
 			canSeeDetail: problemRaw.solution?.canSeeDetail ?? false,
 			content: problemRaw.solution?.content

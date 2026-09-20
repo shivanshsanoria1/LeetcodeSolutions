@@ -2,7 +2,7 @@
     {
         "slug": "array",
         "name": "Array",
-        "freq": 2046,
+        "freq": 2047,
         "color": "#a371f7"
     },
     {
@@ -32,13 +32,13 @@
     {
         "slug": "sorting",
         "name": "Sorting",
-        "freq": 495,
+        "freq": 496,
         "color": "#a371f7"
     },
     {
         "slug": "greedy",
         "name": "Greedy",
-        "freq": 438,
+        "freq": 439,
         "color": "#a371f7"
     },
     {
@@ -84,14 +84,14 @@
         "color": "#a371f7"
     },
     {
-        "slug": "prefix-sum",
-        "name": "Prefix Sum",
-        "freq": 236,
+        "slug": "two-pointers",
+        "name": "Two Pointers",
+        "freq": 237,
         "color": "#a371f7"
     },
     {
-        "slug": "two-pointers",
-        "name": "Two Pointers",
+        "slug": "prefix-sum",
+        "name": "Prefix Sum",
         "freq": 236,
         "color": "#a371f7"
     },
