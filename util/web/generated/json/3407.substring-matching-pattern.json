@@ -28,6 +28,7 @@
             "slug": "string-matching"
         }
     ],
+    "exampleTestcases": "\"leetcode\"\n\"ee*e\"\n\"car\"\n\"c*v\"\n\"luck\"\n\"u*\"",
     "meta": {
         "quesIdLCBackend": 3684,
         "hasSolution": false,
@@ -41,5 +42,5 @@
         "Divide the pattern in two strings and search in the string."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:48:42.649Z",
-    "PARSED_ISO": "2026-09-14T16:48:46.933Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.332Z"
 }

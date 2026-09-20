@@ -47,5 +47,5 @@
         "You can iterate from the second last element to the first. If the current value is greater than the previous bound, we want to break it into pieces so that the smaller one is as large as possible but not larger than the previous one."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:23:42.997Z",
-    "PARSED_ISO": "2026-09-09T19:00:09.784Z"
+    "PARSED_ISO": "2026-09-20T08:56:12.453Z"
 }

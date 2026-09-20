@@ -32,6 +32,7 @@
             "slug": "counting"
         }
     ],
+    "exampleTestcases": "[4,3,2,1]\n[1,5,1,4,2]",
     "meta": {
         "quesIdLCBackend": 3778,
         "hasSolution": false,
@@ -45,5 +46,5 @@
         "Let <code>x</code> be the number of even numbers, and <code>y</code> be the number of odd numbers. Output <code>0</code> <code>x</code> times, followed by <code>1</code> <code>y</code> times."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:52:14.136Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.026Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.461Z"
 }

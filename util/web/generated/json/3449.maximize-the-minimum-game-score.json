@@ -30,6 +30,7 @@
             "slug": "greedy"
         }
     ],
+    "exampleTestcases": "[2,4]\n3\n[1,2,3]\n5",
     "meta": {
         "quesIdLCBackend": 3762,
         "hasSolution": false,
@@ -45,5 +46,5 @@
         "We should go from i to (i + 1) back and forth, making the value for each index i (from left to right) no less than x."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:51:57.233Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.019Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.410Z"
 }

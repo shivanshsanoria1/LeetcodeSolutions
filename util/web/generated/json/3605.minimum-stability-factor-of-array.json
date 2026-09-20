@@ -42,6 +42,7 @@
             "slug": "number-theory"
         }
     ],
+    "exampleTestcases": "[3,5,10]\n1\n[2,6,8]\n2\n[2,4,9,6]\n1",
     "meta": {
         "quesIdLCBackend": 3920,
         "hasSolution": false,
@@ -57,5 +58,5 @@
         "Greedily \"hit\" every window of size <code>k+1</code> with an edit if its <code>GCD > 1</code>"
     ],
     "LC_SYNC_ISO": "2026-09-14T16:54:46.442Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.075Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.620Z"
 }

@@ -30,6 +30,7 @@
             "slug": "monotonic-stack"
         }
     ],
+    "exampleTestcases": "[2,5,3,1,4]\n[5,1,2,3,4]\n[1000000000,999999999,999999998]",
     "meta": {
         "quesIdLCBackend": 4000,
         "hasSolution": false,
@@ -46,5 +47,5 @@
         "There's symmetry: you can check both (left endpoint is smaller) and (right endpoint is smaller) cases separately."
     ],
     "LC_SYNC_ISO": "2026-09-14T17:11:22.889Z",
-    "PARSED_ISO": "2026-09-14T17:11:34.594Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.704Z"
 }

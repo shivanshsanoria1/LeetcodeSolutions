@@ -55,5 +55,5 @@
         "If the current prefix sum is <code>curr</code>, how many previous prefix sums equal to <code>curr - goal</code> exist?"
     ],
     "LC_SYNC_ISO": "2026-09-04T20:34:48.909Z",
-    "PARSED_ISO": "2026-09-09T19:00:11.141Z"
+    "PARSED_ISO": "2026-09-20T08:56:15.789Z"
 }

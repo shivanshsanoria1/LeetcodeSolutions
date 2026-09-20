@@ -42,6 +42,7 @@
             "slug": "hash-function"
         }
     ],
+    "exampleTestcases": "[[\"a\",\"a\",\"c\",\"c\"],[\"b\",\"b\",\"b\",\"c\"],[\"a\",\"a\",\"b\",\"a\"],[\"c\",\"a\",\"a\",\"c\"],[\"a\",\"a\",\"b\",\"a\"]]\n\"abaca\"\n[[\"c\",\"a\",\"a\",\"a\"],[\"a\",\"a\",\"b\",\"a\"],[\"b\",\"b\",\"a\",\"a\"],[\"a\",\"a\",\"b\",\"a\"]]\n\"aba\"\n[[\"a\"]]\n\"a\"",
     "meta": {
         "quesIdLCBackend": 3821,
         "hasSolution": false,
@@ -56,5 +57,5 @@
         "Track the positions of each match and count only the cells that appear in both horizontal and vertical matches."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:53:17.131Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.051Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.545Z"
 }

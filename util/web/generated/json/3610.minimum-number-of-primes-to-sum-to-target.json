@@ -34,6 +34,7 @@
             "slug": "number-theory"
         }
     ],
+    "exampleTestcases": "10\n2\n15\n5\n7\n6",
     "meta": {
         "quesIdLCBackend": 3949,
         "hasSolution": false,
@@ -49,5 +50,5 @@
         "Let <code>dp[i]</code> represent the minimum number of prime numbers that sum up to <code>i</code>. Use the generated prime numbers for the transition."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:54:51.971Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.076Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.624Z"
 }

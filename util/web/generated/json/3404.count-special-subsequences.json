@@ -36,6 +36,7 @@
             "slug": "enumeration"
         }
     ],
+    "exampleTestcases": "[1,2,3,4,3,6,1]\n[3,4,3,4,3,4,3,4]",
     "meta": {
         "quesIdLCBackend": 3699,
         "hasSolution": false,
@@ -50,5 +51,5 @@
         "Try iterating over <code>(p, q)</code> pairs and efficiently count valid <code>(r, s)</code> pairs with the same ratio."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:48:40.193Z",
-    "PARSED_ISO": "2026-09-14T16:48:46.931Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.329Z"
 }

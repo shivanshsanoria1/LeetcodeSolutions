@@ -48,5 +48,5 @@
         "Decrement the imbalance value whenever a new number is adjacent (+/- 1) to two old numbers. For example, when you add 3 to [2, 4]. The imbalance value does not change in the case of one adjacent old number."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:42:07.874Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.289Z"
+    "PARSED_ISO": "2026-09-20T08:56:13.411Z"
 }

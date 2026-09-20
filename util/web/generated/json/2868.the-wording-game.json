@@ -58,5 +58,5 @@
         "Now, we can conclude the winner is determined by the first letter which a player doesn’t have a word beginning with, and the other player has the lexicographically greatest word among all the words beginning with the letters before that letter."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:45:33.193Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.330Z"
+    "PARSED_ISO": "2026-09-20T08:56:13.602Z"
 }

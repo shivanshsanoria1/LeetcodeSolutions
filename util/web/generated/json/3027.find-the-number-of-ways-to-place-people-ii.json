@@ -57,5 +57,5 @@
         "The actual values don’t matter, we can compress all x-coordinates and y-coordinates to the range <code>[1, n]</code>. Can we use prefix sum now?"
     ],
     "LC_SYNC_ISO": "2026-09-09T18:47:48.655Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.397Z"
+    "PARSED_ISO": "2026-09-20T08:56:13.774Z"
 }

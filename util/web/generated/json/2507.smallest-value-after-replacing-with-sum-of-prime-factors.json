@@ -67,5 +67,5 @@
         "To find the prime factors, iterate through all numbers less than n from least to greatest and find the maximum number of times each number divides n."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:38:35.085Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.098Z"
+    "PARSED_ISO": "2026-09-20T08:56:12.753Z"
 }

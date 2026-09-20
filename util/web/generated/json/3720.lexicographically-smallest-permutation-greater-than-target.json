@@ -56,5 +56,5 @@
         "If neither, backtrack left to the most recent index where you matched <code>target</code> and try to bump there."
     ],
     "LC_SYNC_ISO": "2026-09-16T17:31:46.509Z",
-    "PARSED_ISO": "2026-09-16T17:31:47.639Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.822Z"
 }

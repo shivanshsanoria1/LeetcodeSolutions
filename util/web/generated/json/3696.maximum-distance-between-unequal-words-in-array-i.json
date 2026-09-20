@@ -26,6 +26,7 @@
             "slug": "string"
         }
     ],
+    "exampleTestcases": "[\"leetcode\",\"leetcode\",\"codeforces\"]\n[\"a\",\"b\",\"c\",\"a\",\"a\"]\n[\"z\",\"z\",\"z\"]",
     "meta": {
         "quesIdLCBackend": 4066,
         "hasSolution": false,
@@ -39,5 +40,5 @@
         "Use bruteforce"
     ],
     "LC_SYNC_ISO": "2026-09-14T17:12:02.420Z",
-    "PARSED_ISO": "2026-09-14T17:12:06.839Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.718Z"
 }

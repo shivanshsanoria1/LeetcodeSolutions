@@ -41,5 +41,5 @@
         "One obvious thing: the ball will go out of the boundary only by crossing it. Also, there is only one possible way the ball can go out of the boundary from the boundary cell except for corner cells. From the corner cell, the ball can go out in two different ways.\r\n\r\nCan you use this thing to solve the problem?"
     ],
     "LC_SYNC_ISO": "2026-09-04T20:08:46.682Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.962Z"
+    "PARSED_ISO": "2026-09-20T08:56:15.013Z"
 }

@@ -54,5 +54,5 @@
         "In the remaining tree, remove each leaf node and its parent from the tree. The remaining nodes in the tree are the ones that must be visited. Hence, the answer is equal to (# remaining nodes -1) * 2"
     ],
     "LC_SYNC_ISO": "2026-09-09T18:39:56.619Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.195Z"
+    "PARSED_ISO": "2026-09-20T08:56:13.247Z"
 }

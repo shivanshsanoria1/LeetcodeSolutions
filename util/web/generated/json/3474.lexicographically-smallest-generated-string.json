@@ -32,6 +32,7 @@
             "slug": "string-matching"
         }
     ],
+    "exampleTestcases": "\"TFTF\"\n\"ab\"\n\"TFTF\"\n\"abc\"\n\"FT\"\n\"aa\"",
     "meta": {
         "quesIdLCBackend": 3770,
         "hasSolution": true,
@@ -51,5 +52,5 @@
         "Can you think of a greedy approach?"
     ],
     "LC_SYNC_ISO": "2026-09-14T16:52:21.000Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.029Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.469Z"
 }

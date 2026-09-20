@@ -38,6 +38,7 @@
             "slug": "combinatorics"
         }
     ],
+    "exampleTestcases": "[1,2,3]\n2\n[5,0,6]\n1\n[1,1,1]\n2",
     "meta": {
         "quesIdLCBackend": 3714,
         "hasSolution": false,
@@ -51,5 +52,5 @@
         "Sort the array."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:51:35.395Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.008Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.391Z"
 }

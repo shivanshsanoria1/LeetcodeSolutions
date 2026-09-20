@@ -53,5 +53,5 @@
         "Convert the input to such an array, skip any row with no security device, then find the sum of the product between adjacent elements."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:05:40.939Z",
-    "PARSED_ISO": "2026-09-09T19:00:09.328Z"
+    "PARSED_ISO": "2026-09-20T08:56:12.083Z"
 }

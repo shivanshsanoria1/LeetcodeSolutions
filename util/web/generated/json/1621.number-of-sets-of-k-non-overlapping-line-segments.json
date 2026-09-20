@@ -49,5 +49,5 @@
         "To make the computation of each state in constant time, we could add another flag to the state that indicates whether or not we are in the middle of placing a line (placed start point but no endpoint)."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:50:55.138Z",
-    "PARSED_ISO": "2026-09-09T19:00:08.172Z"
+    "PARSED_ISO": "2026-09-20T08:56:11.251Z"
 }

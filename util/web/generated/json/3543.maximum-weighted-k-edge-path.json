@@ -30,6 +30,7 @@
             "slug": "graph"
         }
     ],
+    "exampleTestcases": "3\n[[0,1,1],[1,2,2]]\n2\n4\n3\n[[0,1,2],[0,2,3]]\n1\n3\n3\n[[0,1,6],[1,2,8]]\n1\n6",
     "meta": {
         "quesIdLCBackend": 3856,
         "hasSolution": false,
@@ -45,5 +46,5 @@
         "The set <code>dp[i][j]</code> contains all possible path weights that end at node <code>i</code>, have total weight less than <code>T</code>, and consist of exactly <code>j</code> edges"
     ],
     "LC_SYNC_ISO": "2026-09-14T16:53:34.954Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.055Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.553Z"
 }

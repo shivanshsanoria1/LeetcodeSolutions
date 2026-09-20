@@ -42,5 +42,5 @@
         "We need to find the shortest non-empty prefix of the new possible array such that the sum of elements in it is strictly larger than the remaining part."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:48:47.121Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.427Z"
+    "PARSED_ISO": "2026-09-20T08:56:13.921Z"
 }

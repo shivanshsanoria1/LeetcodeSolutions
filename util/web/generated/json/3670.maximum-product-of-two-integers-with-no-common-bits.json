@@ -32,6 +32,7 @@
             "slug": "bit-manipulation"
         }
     ],
+    "exampleTestcases": "[1,2,3,4,5,6,7]\n[5,6,4]\n[64,8,32]",
     "meta": {
         "quesIdLCBackend": 3915,
         "hasSolution": false,
@@ -51,5 +52,5 @@
         "Loop over all <code>x</code> in <code>nums</code>, look up <code>dp[cm]</code>, and track the maximum <code>x * partner</code>."
     ],
     "LC_SYNC_ISO": "2026-09-14T17:09:37.620Z",
-    "PARSED_ISO": "2026-09-14T17:09:46.601Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.701Z"
 }

@@ -44,5 +44,5 @@
         "Use dynamic programming, define DP[i][j][k]: The maximum cherries that both robots can take  starting on the ith row, and column j and k of Robot 1 and 2 respectively."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:34:50.148Z",
-    "PARSED_ISO": "2026-09-09T19:00:08.021Z"
+    "PARSED_ISO": "2026-09-20T08:56:10.905Z"
 }

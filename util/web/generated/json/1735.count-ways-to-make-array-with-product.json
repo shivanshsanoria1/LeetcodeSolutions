@@ -64,5 +64,5 @@
         "After prime factorizing ki, suppose there are x amount of prime factor. There are (x + n - 1) choose (n - 1) ways to distribute the x prime factors into n positions, allowing repetitions."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:53:00.207Z",
-    "PARSED_ISO": "2026-09-09T19:00:08.280Z"
+    "PARSED_ISO": "2026-09-20T08:56:11.410Z"
 }

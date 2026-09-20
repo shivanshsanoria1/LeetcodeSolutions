@@ -56,5 +56,5 @@
         "We can see that we can maintain candidate cars in this way using a stack, removing cars with speed greater than or equal to current car, and then removing cars which can never be first point of intersection. The first car after this process (if any) would be first point of intersection."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:53:46.901Z",
-    "PARSED_ISO": "2026-09-09T19:00:08.363Z"
+    "PARSED_ISO": "2026-09-20T08:56:11.466Z"
 }

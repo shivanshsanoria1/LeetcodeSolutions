@@ -44,5 +44,5 @@
         "For each vertex u, calculate the length of the shortest cycle that contains vertex u using BFS"
     ],
     "LC_SYNC_ISO": "2026-09-09T18:40:00.492Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.197Z"
+    "PARSED_ISO": "2026-09-20T08:56:13.250Z"
 }

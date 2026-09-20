@@ -53,5 +53,5 @@
         "How to solve the general problem in a similar way? Remove all the nodes that are not connected to 1 and n, then apply the previous solution in the new graph."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:25:23.770Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.072Z"
+    "PARSED_ISO": "2026-09-20T08:56:12.741Z"
 }

@@ -57,5 +57,5 @@
         "Let DP(v,1) denote “the maximum price sum from node v to leaf, where v is a parent of that leaf” and let DP(v,0) denote “the maximum price sum from node v to leaf, where v is a parent of that leaf - price[leaf]”. Then the answer is maximum of DP(u,0) + DP(v,1) + price[parent] where u, v are directly connected to vertex “parent”."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:39:00.690Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.160Z"
+    "PARSED_ISO": "2026-09-20T08:56:13.077Z"
 }

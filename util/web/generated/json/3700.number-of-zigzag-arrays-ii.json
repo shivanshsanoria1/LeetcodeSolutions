@@ -26,6 +26,7 @@
             "slug": "dynamic-programming"
         }
     ],
+    "exampleTestcases": "3\n4\n5\n3\n1\n3",
     "meta": {
         "quesIdLCBackend": 3964,
         "hasSolution": true,
@@ -43,5 +44,5 @@
         "Use fast matrix exponentiation to compute <code>T^(n-1)</code>, apply it to the initial vector (ones in the block for starting <code>up</code> and separately for starting <code>down</code>), sum final entries, and add both results (for <code>n=1</code> return <code>m</code>)."
     ],
     "LC_SYNC_ISO": "2026-09-14T17:12:05.697Z",
-    "PARSED_ISO": "2026-09-14T17:12:06.841Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.722Z"
 }

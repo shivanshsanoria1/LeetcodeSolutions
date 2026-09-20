@@ -30,6 +30,7 @@
             "slug": "simulation"
         }
     ],
+    "exampleTestcases": "\"(())\"\n1\n\"(()(\"\n1\n\"((()))()()()\"\n3",
     "meta": {
         "quesIdLCBackend": 4019,
         "hasSolution": false,
@@ -45,5 +46,5 @@
         "When adjacent runs are '(' then ')', you can cancel in blocks of k"
     ],
     "LC_SYNC_ISO": "2026-09-14T17:22:26.653Z",
-    "PARSED_ISO": "2026-09-14T17:22:43.728Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.731Z"
 }

@@ -51,5 +51,5 @@
         "While performing a depth-first search, pass the left and right nodes (which should be paired) to the next level. If the current level is odd, then reverse their values, or else recursively move to the next level."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:24:23.049Z",
-    "PARSED_ISO": "2026-09-09T19:00:09.891Z"
+    "PARSED_ISO": "2026-09-20T08:56:12.546Z"
 }

@@ -44,6 +44,7 @@
             "slug": "monotonic-stack"
         }
     ],
+    "exampleTestcases": "[1,3,2,4,5]\n3\n[5,4,3,2,1]\n4",
     "meta": {
         "quesIdLCBackend": 3890,
         "hasSolution": false,
@@ -58,5 +59,5 @@
         "What are the extreme positions that need to be included in the segment to make the subarray non‑decreasing?"
     ],
     "LC_SYNC_ISO": "2026-09-14T16:53:49.906Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.059Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.560Z"
 }

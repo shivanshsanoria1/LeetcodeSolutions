@@ -49,5 +49,5 @@
         "For each query, get the corresponding set of numbers which will be the sub-array represented by the query, sort it, and check if the result sequence is arithmetic."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:51:05.018Z",
-    "PARSED_ISO": "2026-09-09T19:00:08.176Z"
+    "PARSED_ISO": "2026-09-20T08:56:11.271Z"
 }

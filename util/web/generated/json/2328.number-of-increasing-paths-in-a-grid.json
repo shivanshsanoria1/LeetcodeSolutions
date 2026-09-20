@@ -69,5 +69,5 @@
         "Define f(i, j) as the number of increasing paths starting from cell (i, j). Try to find how f(i, j) is related to each of f(i, j+1), f(i, j-1), f(i+1, j) and f(i-1, j)."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:23:12.737Z",
-    "PARSED_ISO": "2026-09-09T19:00:09.705Z"
+    "PARSED_ISO": "2026-09-20T08:56:12.421Z"
 }

@@ -34,6 +34,7 @@
             "slug": "number-theory"
         }
     ],
+    "exampleTestcases": "[1,2,3]\n[4,6]",
     "meta": {
         "quesIdLCBackend": 3989,
         "hasSolution": false,
@@ -51,5 +52,5 @@
         "The final answer is the sum of contributions <code>g * F[g]</code> for all <code>g</code>."
     ],
     "LC_SYNC_ISO": "2026-09-14T17:09:38.848Z",
-    "PARSED_ISO": "2026-09-14T17:09:46.602Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.702Z"
 }

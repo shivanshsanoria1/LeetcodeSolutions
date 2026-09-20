@@ -57,5 +57,5 @@
         "If the current candidate does not exist in all words&#39; prefix, you could stop backtracking immediately. What kind of data structure could answer such query efficiently? Does a hash table work? Why or why not? How about a Trie? If you would like to learn how to implement a basic trie, please work on this problem: <a href=\"https://leetcode.com/problems/implement-trie-prefix-tree/\">Implement Trie (Prefix Tree)</a> first."
     ],
     "LC_SYNC_ISO": "2026-09-04T19:56:21.401Z",
-    "PARSED_ISO": "2026-09-09T19:00:09.325Z"
+    "PARSED_ISO": "2026-09-20T08:56:12.079Z"
 }

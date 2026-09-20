@@ -42,6 +42,7 @@
             "slug": "prefix-sum"
         }
     ],
+    "exampleTestcases": "[1,2,3,4,5,6]\n1\n[10,2,3,4,5,5,4,3,2,2]\n10",
     "meta": {
         "quesIdLCBackend": 3751,
         "hasSolution": false,
@@ -56,5 +57,5 @@
         "Use prefix sums to optimize counting occurrences of an element."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:51:42.074Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.012Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.394Z"
 }

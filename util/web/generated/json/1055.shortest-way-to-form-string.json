@@ -54,5 +54,5 @@
         "For each used subsequence try to match the leftmost character of the current subsequence with the leftmost character of the target string, if they match then erase both character otherwise erase just the subsequence character whenever the current subsequence gets empty, reset it to a new copy of subsequence and increment the count, do this until the target sequence gets empty. Finally return the count."
     ],
     "LC_SYNC_ISO": "2026-09-04T20:36:21.386Z",
-    "PARSED_ISO": "2026-09-09T19:00:07.494Z"
+    "PARSED_ISO": "2026-09-20T08:56:09.004Z"
 }

@@ -53,5 +53,5 @@
         "The answer is the first value of <code>x</code> in the range <code>[1, m]</code> where it is possible to make <code>time_needed <= x</code>, or <code>-1</code> if there is no such second."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:48:06.472Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.407Z"
+    "PARSED_ISO": "2026-09-20T08:56:13.837Z"
 }

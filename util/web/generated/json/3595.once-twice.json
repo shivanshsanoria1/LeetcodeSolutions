@@ -26,6 +26,7 @@
             "slug": "bit-manipulation"
         }
     ],
+    "exampleTestcases": "[2,2,3,2,5,5,5,7,7]\n[4,4,6,4,9,9,9,6,8]",
     "meta": {
         "quesIdLCBackend": 3935,
         "hasSolution": false,
@@ -39,5 +40,5 @@
         "Use bitmasks"
     ],
     "LC_SYNC_ISO": "2026-09-14T16:54:34.765Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.072Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.614Z"
 }

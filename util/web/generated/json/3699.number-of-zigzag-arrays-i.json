@@ -26,6 +26,7 @@
             "slug": "prefix-sum"
         }
     ],
+    "exampleTestcases": "3\n4\n5\n3\n1\n3",
     "meta": {
         "quesIdLCBackend": 3962,
         "hasSolution": true,
@@ -42,5 +43,5 @@
         "Speed up with prefix/suffix sums so each layer updates in O(<code>m</code>) instead of O(<code>m</code><sup>2</sup>); take values mod <code>10<sup>9</sup>+7</code>."
     ],
     "LC_SYNC_ISO": "2026-09-14T17:12:04.772Z",
-    "PARSED_ISO": "2026-09-14T17:12:06.840Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.720Z"
 }

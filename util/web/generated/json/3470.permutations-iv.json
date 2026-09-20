@@ -36,6 +36,7 @@
             "slug": "enumeration"
         }
     ],
+    "exampleTestcases": "4\n6\n3\n2\n2\n3",
     "meta": {
         "quesIdLCBackend": 3783,
         "hasSolution": false,
@@ -52,5 +53,5 @@
         "The number of permutations can be calculated using factorials."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:52:17.722Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.027Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.465Z"
 }

@@ -30,6 +30,7 @@
             "slug": "prefix-sum"
         }
     ],
+    "exampleTestcases": "[1,5,2,4]\n[5,1,4,2]\n[1,1,1]\n[1,1,1]\n[1,2,3,4]\n[1,2]",
     "meta": {
         "quesIdLCBackend": 3794,
         "hasSolution": true,
@@ -46,5 +47,5 @@
         "Update all other <code>f</code> values by <code>f[i] = f[i + 1] - skill[i + 1] * x</code> for <code>i in [0..n - 2]</code> (in reverse order)."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:52:40.101Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.039Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.484Z"
 }

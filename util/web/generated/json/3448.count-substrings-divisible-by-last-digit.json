@@ -28,6 +28,7 @@
             "slug": "dynamic-programming"
         }
     ],
+    "exampleTestcases": "\"12936\"\n\"5701283\"\n\"1010101010\"",
     "meta": {
         "quesIdLCBackend": 3696,
         "hasSolution": false,
@@ -44,5 +45,5 @@
         "In order to find <code>dp[index][i][j]</code> we use values from <code>dp[index - 1][i][j]</code>. Hence, we can keep only <code>dp[index][i][j]</code> and <code>dp[index - 1][i][j]</code> at every iteration of the loop."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:51:56.209Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.019Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.409Z"
 }

@@ -61,5 +61,5 @@
         "General equation will be: <code>dp[x][t] = max((coins[x] >> t) - k + sigma(dp[y][t]), (coins[x] >> (t + 1)) + sigma(dp[y][t + 1]))</code> where nodes denoted by <code>y</code> in the sigma, are the direct children of node <code>x</code>."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:46:18.442Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.349Z"
+    "PARSED_ISO": "2026-09-20T08:56:13.636Z"
 }

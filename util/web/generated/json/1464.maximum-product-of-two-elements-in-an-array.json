@@ -44,5 +44,5 @@
         "Use brute force: two loops to select i and j, then select the maximum value of (nums[i]-1)*(nums[j]-1)."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:34:51.277Z",
-    "PARSED_ISO": "2026-09-09T19:00:08.021Z"
+    "PARSED_ISO": "2026-09-20T08:56:10.905Z"
 }

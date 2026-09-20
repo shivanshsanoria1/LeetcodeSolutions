@@ -28,6 +28,7 @@
             "slug": "backtracking"
         }
     ],
+    "exampleTestcases": "4\n2\n3",
     "meta": {
         "quesIdLCBackend": 3780,
         "hasSolution": false,
@@ -41,5 +42,5 @@
         "Use backtracking to generate permutations of the first <code>n</code> positive integers while ensuring that each added number alternates between odd and even."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:51:44.326Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.013Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.395Z"
 }

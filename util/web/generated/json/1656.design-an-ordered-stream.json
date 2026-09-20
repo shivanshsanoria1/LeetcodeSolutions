@@ -51,5 +51,5 @@
         "Per each insert, make a loop where you check if the id that has the turn has been inserted, and if so increment the id that has the turn and continue the loop, else break."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:51:30.322Z",
-    "PARSED_ISO": "2026-09-09T19:00:08.193Z"
+    "PARSED_ISO": "2026-09-20T08:56:11.305Z"
 }

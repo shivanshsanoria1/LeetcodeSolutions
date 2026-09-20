@@ -32,6 +32,7 @@
             "slug": "greedy"
         }
     ],
+    "exampleTestcases": "3\n5",
     "meta": {
         "quesIdLCBackend": 3991,
         "hasSolution": false,
@@ -49,5 +50,5 @@
         "If a greedy choice leads to a dead end, try a different match order."
     ],
     "LC_SYNC_ISO": "2026-09-14T17:11:26.372Z",
-    "PARSED_ISO": "2026-09-14T17:11:34.604Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.707Z"
 }

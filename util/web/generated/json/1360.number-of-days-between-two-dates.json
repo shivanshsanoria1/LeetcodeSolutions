@@ -44,5 +44,5 @@
         "For each year from 1900 to year - 1 sum up 365 or 366 in case of leap years. Then sum up for each month the number of days, consider the case when the current year is leap, finally sum up the days."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:32:25.849Z",
-    "PARSED_ISO": "2026-09-09T19:00:07.974Z"
+    "PARSED_ISO": "2026-09-20T08:56:10.728Z"
 }

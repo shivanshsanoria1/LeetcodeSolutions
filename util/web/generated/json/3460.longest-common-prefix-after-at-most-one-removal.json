@@ -28,6 +28,7 @@
             "slug": "string"
         }
     ],
+    "exampleTestcases": "\"madxa\"\n\"madam\"\n\"leetcode\"\n\"eetcode\"\n\"one\"\n\"one\"\n\"a\"\n\"b\"",
     "meta": {
         "quesIdLCBackend": 3796,
         "hasSolution": false,
@@ -41,5 +42,5 @@
         "Maintain pointers to the beginning of both strings and remove the first position where they differ in <code>s</code> (if any)."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:52:08.910Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.023Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.419Z"
 }

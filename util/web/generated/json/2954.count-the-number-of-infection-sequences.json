@@ -54,5 +54,5 @@
         "The answer is: \r\n<code>S! / (len[1]! * len[2]! * ... * len[m]! * len<sub>start</sub>! * len<sub>end</sub>!) * 2<sup>k</sup></code> \r\nwhere <code>len[1], len[2], ..., len[m]</code> are the lengths of each segment of non-infected children that have an infected child at both endpoints, <code>len<sub>start</sub></code> and <code>len<sub>end</sub></code> denote the number of non-infected children with infected child at one endpoint, <code>S</code> is the total length of all segments of non-infected children, and <code>k = (len[1] - 1) + (len[2] - 1) + ... + (len[m] - 1)</code>."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:46:46.497Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.363Z"
+    "PARSED_ISO": "2026-09-20T08:56:13.696Z"
 }

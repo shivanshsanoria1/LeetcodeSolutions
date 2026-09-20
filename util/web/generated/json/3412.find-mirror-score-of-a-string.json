@@ -34,6 +34,7 @@
             "slug": "simulation"
         }
     ],
+    "exampleTestcases": "\"aczzx\"\n\"abcdef\"",
     "meta": {
         "quesIdLCBackend": 3634,
         "hasSolution": false,
@@ -48,5 +49,5 @@
         "For each index, check if the stack for mirror of the letter at that index is empty."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:51:18.923Z",
-    "PARSED_ISO": "2026-09-14T16:55:56.984Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.350Z"
 }

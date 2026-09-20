@@ -57,5 +57,5 @@
         "If you can find two non-intersecting paths from (0, 0) to (m - 1, n - 1) then the answer is false. Otherwise, it is always true."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:39:15.947Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.174Z"
+    "PARSED_ISO": "2026-09-20T08:56:13.143Z"
 }

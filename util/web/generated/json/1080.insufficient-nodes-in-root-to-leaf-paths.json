@@ -45,5 +45,5 @@
         "Consider a DFS traversal of the tree.  You can keep track of the current path sum from root to this node, and you can also use DFS to return the maximum value of any path from this node to the leaf.  This will tell you if this node is insufficient."
     ],
     "LC_SYNC_ISO": "2026-09-04T20:36:39.295Z",
-    "PARSED_ISO": "2026-09-09T19:00:07.555Z"
+    "PARSED_ISO": "2026-09-20T08:56:09.089Z"
 }

@@ -52,5 +52,5 @@
         "You can use dynamic programming to keep track of the maximum number of walls destroyed so far, depending on the direction the previous robot shot."
     ],
     "LC_SYNC_ISO": "2026-09-14T17:01:49.532Z",
-    "PARSED_ISO": "2026-09-14T18:16:57.063Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.696Z"
 }

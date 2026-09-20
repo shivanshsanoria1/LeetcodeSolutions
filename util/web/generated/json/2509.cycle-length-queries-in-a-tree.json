@@ -57,5 +57,5 @@
         "To find LCA(a, b), iterate over all ancestors of node “a” and check if it is the ancestor of node “b” too. If so, take the one with maximum depth."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:38:36.946Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.102Z"
+    "PARSED_ISO": "2026-09-20T08:56:12.754Z"
 }

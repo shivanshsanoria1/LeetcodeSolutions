@@ -26,6 +26,7 @@
             "slug": "prefix-sum"
         }
     ],
+    "exampleTestcases": "\"adcb\"\n\"bace\"",
     "meta": {
         "quesIdLCBackend": 4052,
         "hasSolution": false,
@@ -39,5 +40,5 @@
         "Use brute-force"
     ],
     "LC_SYNC_ISO": "2026-09-14T17:23:30.383Z",
-    "PARSED_ISO": "2026-09-14T17:23:36.251Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.733Z"
 }

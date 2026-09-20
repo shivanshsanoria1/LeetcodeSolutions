@@ -28,6 +28,7 @@
             "slug": "dynamic-programming"
         }
     ],
+    "exampleTestcases": "\"abcdf\"\n\"dacbe\"\n\"abceded\"\n\"baecfef\"\n\"abcdef\"\n\"fedabc\"",
     "meta": {
         "quesIdLCBackend": 3866,
         "hasSolution": false,
@@ -44,5 +45,5 @@
         "For the remaining characters, we use replace operations"
     ],
     "LC_SYNC_ISO": "2026-09-14T16:54:14.282Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.067Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.575Z"
 }

@@ -32,6 +32,7 @@
             "slug": "counting-sort"
         }
     ],
+    "exampleTestcases": "\"z\"\n\"babab\"\n\"daccad\"",
     "meta": {
         "quesIdLCBackend": 3812,
         "hasSolution": true,
@@ -47,5 +48,5 @@
         "Construct one half (using <code>s</code>), and then the other half is its reverse to obtain the lexicographically smallest permutation."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:53:01.974Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.047Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.539Z"
 }

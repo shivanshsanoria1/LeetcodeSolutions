@@ -41,6 +41,7 @@
             "slug": "sorting"
         }
     ],
+    "exampleTestcases": "2\n[[0,2],[2,0],[2,2],[0,0]]\n4\n2\n[[0,0],[1,2],[2,0],[2,2],[2,1]]\n4\n2\n[[0,0],[0,1],[0,2],[1,2],[2,0],[2,2],[2,1]]\n5",
     "meta": {
         "quesIdLCBackend": 3781,
         "hasSolution": true,
@@ -59,5 +60,5 @@
         "Greedily select up to <code>k</code> coordinates."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:52:12.091Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.025Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.458Z"
 }

@@ -34,6 +34,7 @@
             "slug": "ordered-set"
         }
     ],
+    "exampleTestcases": "[-1,0,0]\n[1,1,1]\n[[0,1],[0,2],[0,3]]\n[-1,0,1]\n[5,2,7]\n[[0,1],[1,2],[1,3],[2,1]]",
     "meta": {
         "quesIdLCBackend": 3906,
         "hasSolution": false,
@@ -50,5 +51,5 @@
         "At node <code>u</code>, process each query <code>[u, k]</code> by calling <code>find_by_order(k − 1)</code> (C++ PBDS) or indexing <code>sorted_list[k-1]</code> (Python <code>SortedList</code>)."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:54:29.645Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.070Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.611Z"
 }

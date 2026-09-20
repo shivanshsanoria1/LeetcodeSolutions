@@ -26,6 +26,7 @@
             "slug": "string"
         }
     ],
+    "exampleTestcases": "[\"leetcode\",\"leetcode\",\"codeforces\"]\n[\"a\",\"b\",\"c\",\"a\",\"a\"]\n[\"z\",\"z\",\"z\"]",
     "meta": {
         "quesIdLCBackend": 4070,
         "hasSolution": false,
@@ -41,5 +42,5 @@
         "Fix the last word as <code>words[i]</code> and find the leftmost unequal <code>words[j]</code>"
     ],
     "LC_SYNC_ISO": "2026-09-14T17:23:29.559Z",
-    "PARSED_ISO": "2026-09-14T17:23:36.241Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.733Z"
 }

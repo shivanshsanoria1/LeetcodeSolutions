@@ -53,5 +53,5 @@
         "Finally, to find the final price[i] we will use dynamic programming on the tree. Let dp(v, 0/1) denote the minimum total price with the node v’s price being halved or not."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:40:31.826Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.214Z"
+    "PARSED_ISO": "2026-09-20T08:56:13.279Z"
 }

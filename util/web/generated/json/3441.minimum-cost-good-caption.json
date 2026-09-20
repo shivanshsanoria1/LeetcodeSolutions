@@ -26,6 +26,7 @@
             "slug": "dynamic-programming"
         }
     ],
+    "exampleTestcases": "\"cdcd\"\n\"aca\"\n\"bc\"",
     "meta": {
         "quesIdLCBackend": 3701,
         "hasSolution": false,
@@ -40,5 +41,5 @@
         "Choose characters greedily to get the lexicographically smallest caption."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:51:49.340Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.015Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.402Z"
 }

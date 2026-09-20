@@ -54,5 +54,5 @@
         "Divide the array into multiple subarrays such that each number in each subarray is between minK and maxK inclusive, solve the previous problem for each subarray, and sum all the answers."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:24:45.780Z",
-    "PARSED_ISO": "2026-09-09T19:00:09.971Z"
+    "PARSED_ISO": "2026-09-20T08:56:12.622Z"
 }

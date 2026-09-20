@@ -26,6 +26,7 @@
             "slug": "sorting"
         }
     ],
+    "exampleTestcases": "31\n22\n124",
     "meta": {
         "quesIdLCBackend": 3859,
         "hasSolution": true,
@@ -40,5 +41,5 @@
         "Use brute force"
     ],
     "LC_SYNC_ISO": "2026-09-14T16:53:26.760Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.053Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.549Z"
 }

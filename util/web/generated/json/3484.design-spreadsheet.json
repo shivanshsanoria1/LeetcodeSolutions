@@ -40,6 +40,7 @@
             "slug": "matrix"
         }
     ],
+    "exampleTestcases": "[\"Spreadsheet\",\"getValue\",\"setCell\",\"getValue\",\"setCell\",\"getValue\",\"resetCell\",\"getValue\"]\n[[3],[\"=5+7\"],[\"A1\",10],[\"=A1+6\"],[\"B2\",15],[\"=A1+B2\"],[\"A1\"],[\"=A1+B2\"]]",
     "meta": {
         "quesIdLCBackend": 3797,
         "hasSolution": true,
@@ -57,5 +58,5 @@
         "For <code>getValue</code>, find the values of the operands from the hashmap and return their sum."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:52:31.244Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.036Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.475Z"
 }

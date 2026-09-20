@@ -22,6 +22,7 @@
             "slug": "math"
         }
     ],
+    "exampleTestcases": "2\n7\n4\n2\n5\n6\n1\n5\n3",
     "meta": {
         "quesIdLCBackend": 3830,
         "hasSolution": true,
@@ -36,5 +37,5 @@
         "Compare the distances from Persons 1 and 2 to Person 3 to determine the answer."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:53:01.151Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.046Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.538Z"
 }

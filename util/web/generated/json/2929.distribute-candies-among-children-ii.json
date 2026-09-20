@@ -49,5 +49,5 @@
         "After some transformations, for each <code>i</code>, we have <code>max(0, n - i - limit) <= j <= min(limit, n - i)</code>, each <code>j</code> corresponding to a solution.\r\nSo the number of solutions for some <code>i</code> is <code>max(min(limit, n - i) - max(0, n - i - limit) + 1, 0)</code>. Sum the expression for every <code>i</code> in <code>[0, min(n, limit)]</code>."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:46:25.675Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.352Z"
+    "PARSED_ISO": "2026-09-20T08:56:13.680Z"
 }

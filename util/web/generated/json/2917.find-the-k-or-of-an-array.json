@@ -43,5 +43,5 @@
         "<code>bit</code> is set in integer <code>x</code> if and only if <code>2<sup>bit</sup> AND x == 2<sup>bit</sup></code>, where <code>AND</code> is the bitwise <code>AND</code> operation."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:46:16.291Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.348Z"
+    "PARSED_ISO": "2026-09-20T08:56:13.634Z"
 }

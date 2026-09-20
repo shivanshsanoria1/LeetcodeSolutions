@@ -22,6 +22,7 @@
             "slug": "math"
         }
     ],
+    "exampleTestcases": "99\n23",
     "meta": {
         "quesIdLCBackend": 3918,
         "hasSolution": true,
@@ -36,5 +37,5 @@
         "Compute the digits' sum and product, then check if <code>n % (sum + product) == 0</code>."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:55:05.454Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.081Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.630Z"
 }

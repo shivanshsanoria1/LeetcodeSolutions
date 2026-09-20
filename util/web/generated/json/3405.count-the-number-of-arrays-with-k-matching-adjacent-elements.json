@@ -32,6 +32,7 @@
             "slug": "fermats-little-theorem"
         }
     ],
+    "exampleTestcases": "3\n2\n1\n4\n2\n2\n5\n2\n0",
     "meta": {
         "quesIdLCBackend": 3682,
         "hasSolution": true,
@@ -48,5 +49,5 @@
         "For all other indices, <code>set arr[i] != arr[i - 1]</code> with (<code>m - 1</code>) choices for each of the <code>n - 1 - k</code> positions."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:48:41.015Z",
-    "PARSED_ISO": "2026-09-14T16:48:46.932Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.330Z"
 }

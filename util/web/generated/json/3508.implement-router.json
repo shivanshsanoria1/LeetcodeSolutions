@@ -42,6 +42,7 @@
             "slug": "ordered-set"
         }
     ],
+    "exampleTestcases": "[\"Router\",\"addPacket\",\"addPacket\",\"addPacket\",\"addPacket\",\"addPacket\",\"forwardPacket\",\"addPacket\",\"getCount\"]\n[[3],[1,4,90],[2,5,90],[1,4,90],[3,5,95],[4,5,105],[],[5,2,110],[5,100,110]]\n[\"Router\",\"addPacket\",\"forwardPacket\",\"forwardPacket\"]\n[[2],[7,4,90],[],[]]",
     "meta": {
         "quesIdLCBackend": 3827,
         "hasSolution": true,
@@ -57,5 +58,5 @@
         "Use binary search for counting packets within a timestamp range."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:52:53.167Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.044Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.495Z"
 }

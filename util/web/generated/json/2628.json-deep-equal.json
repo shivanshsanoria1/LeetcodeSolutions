@@ -38,5 +38,5 @@
         "You can use recursion to investigate if the values of an object or array are also deeply equal. The base case is when the values are primitives (string, number, etc), at which case the check is a trivial === check."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:40:16.466Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.205Z"
+    "PARSED_ISO": "2026-09-20T08:56:13.264Z"
 }

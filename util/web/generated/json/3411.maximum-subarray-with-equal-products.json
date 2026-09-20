@@ -40,6 +40,7 @@
             "slug": "number-theory"
         }
     ],
+    "exampleTestcases": "[1,2,1,2,1,1,1]\n[2,3,4,5,6]\n[1,2,3,1,4,5,1]",
     "meta": {
         "quesIdLCBackend": 3702,
         "hasSolution": false,
@@ -53,5 +54,5 @@
         "What is the maximum possible lcm?"
     ],
     "LC_SYNC_ISO": "2026-09-14T16:51:18.109Z",
-    "PARSED_ISO": "2026-09-14T16:55:56.981Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.349Z"
 }

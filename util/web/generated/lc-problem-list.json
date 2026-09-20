@@ -133248,5 +133248,38 @@
                 "slug": "prefix-sum"
             }
         ]
+    },
+    {
+        "quesId": 3729,
+        "title": "Count Distinct Subarrays Divisible by K in Sorted Array",
+        "titleSlug": "count-distinct-subarrays-divisible-by-k-in-sorted-array",
+        "difficulty": "Hard",
+        "isPaidOnly": false,
+        "categoryTitle": "Algorithms",
+        "stats": {
+            "totalAccepted": "6.5K",
+            "totalSubmission": "23.6K",
+            "totalAcceptedRaw": 6478,
+            "totalSubmissionRaw": 23636,
+            "acRate": "27.4%",
+            "acRateRaw": 27.407344728380433,
+            "likes": 63,
+            "dislikes": 3
+        },
+        "similarQuesIds": [],
+        "topicTags": [
+            {
+                "name": "Array",
+                "slug": "array"
+            },
+            {
+                "name": "Hash Table",
+                "slug": "hash-table"
+            },
+            {
+                "name": "Prefix Sum",
+                "slug": "prefix-sum"
+            }
+        ]
     }
 ]

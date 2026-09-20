@@ -54,5 +54,5 @@
         "Let <code>dp[i][lastHeight][isBigger]</code> denote the maximum score if the grid was limited to column <code>i</code>, and where the height of column <code>i - 1</code> is <code>lastHeight</code>. Additionally, if <code>isBigger == 1</code>, the number of black cells in column <code>i</code> is assumed to be larger than the number of black cells in column <code>i - 2</code>, and vice versa. Note that if our assumption is wrong, it would lead to a suboptimal score and, therefore, it would not be considered as the final answer."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:57:47.861Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.506Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.057Z"
 }

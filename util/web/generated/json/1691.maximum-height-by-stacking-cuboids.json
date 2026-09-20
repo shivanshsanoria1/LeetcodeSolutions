@@ -47,5 +47,5 @@
         "Let's say box1 can be placed on top of box2. No matter what orientation box2 is in, we can rotate box1 so that it can be placed on top. Why don't we orient everything such that height is the biggest?"
     ],
     "LC_SYNC_ISO": "2026-09-09T17:52:11.572Z",
-    "PARSED_ISO": "2026-09-09T19:00:08.218Z"
+    "PARSED_ISO": "2026-09-20T08:56:11.334Z"
 }

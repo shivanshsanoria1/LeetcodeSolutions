@@ -30,6 +30,7 @@
             "slug": "counting"
         }
     ],
+    "exampleTestcases": "[6,3,6]\n[0,1,0,0]\n[8,4,2,8,4]",
     "meta": {
         "quesIdLCBackend": 3885,
         "hasSolution": true,
@@ -45,5 +46,5 @@
         "For each index <code>j</code> in the triplet (<code>i</code>,<code>j</code>,<code>k</code>), compute its contribution to the answer using your freqPrev and freqNext counts."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:54:19.404Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.068Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.577Z"
 }

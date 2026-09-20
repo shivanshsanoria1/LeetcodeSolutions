@@ -30,6 +30,7 @@
             "slug": "heap-priority-queue"
         }
     ],
+    "exampleTestcases": "[4,2,1,5,3]\n[10,20,30,40,50]\n2\n[2,2,2,2]\n[3,1,2,3]\n1",
     "meta": {
         "quesIdLCBackend": 3759,
         "hasSolution": false,
@@ -44,5 +45,5 @@
         "Use a max heap to track the top <code>k</code> values of <code>nums2</code> as you process each element in the sorted order."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:52:25.711Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.032Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.472Z"
 }

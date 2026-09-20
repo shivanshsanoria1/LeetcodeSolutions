@@ -26,6 +26,7 @@
             "slug": "combinatorics"
         }
     ],
+    "exampleTestcases": "2\n2\n2\n1\n4\n3",
     "meta": {
         "quesIdLCBackend": 3739,
         "hasSolution": false,
@@ -40,5 +41,5 @@
         "A particular pair of positions will be counted exactly <code>C(m * n - 2, k - 2)</code> times. Calculate the total distance for all pairs of positions and multiply it with <code>C(m * n - 2, k - 2)</code>."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:51:33.567Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.006Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.389Z"
 }

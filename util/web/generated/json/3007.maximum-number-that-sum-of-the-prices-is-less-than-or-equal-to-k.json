@@ -48,5 +48,5 @@
         "In each step of the binary search you should calculate the number of the set bits in the <code>i<sup>th</sup></code> position. Then calculate the sum of them."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:47:30.630Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.387Z"
+    "PARSED_ISO": "2026-09-20T08:56:13.760Z"
 }

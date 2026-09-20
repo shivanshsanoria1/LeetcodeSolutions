@@ -36,6 +36,7 @@
             "slug": "li-chao-tree"
         }
     ],
+    "exampleTestcases": "[3,1,4]\n[4,6,6]\n1\n[4,8,5,1,14,2,2,12,1]\n[7,2,8,4,2,2,1,1,2]\n7",
     "meta": {
         "quesIdLCBackend": 3765,
         "hasSolution": false,
@@ -50,5 +51,5 @@
         "Observe that no matter how many subarrays we have, if we have the first subarray on the left, the total cost of the previous subarrays increases by <code>k * total_cost_of_the_subarray</code>. This is because when we increase <code>i</code> to <code>(i + 1)</code>, the cost increase is just the suffix sum of the cost array."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:52:45.788Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.041Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.490Z"
 }

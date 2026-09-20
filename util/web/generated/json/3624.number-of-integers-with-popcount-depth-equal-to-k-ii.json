@@ -34,6 +34,7 @@
             "slug": "segment-tree"
         }
     ],
+    "exampleTestcases": "[2,4]\n[[1,0,1,1],[2,1,1],[1,0,1,0]]\n[3,5,6]\n[[1,0,2,2],[2,1,4],[1,1,2,1],[1,0,1,0]]\n[1,2]\n[[1,0,1,1],[2,0,3],[1,0,0,1],[1,0,0,2]]",
     "meta": {
         "quesIdLCBackend": 3941,
         "hasSolution": false,
@@ -49,5 +50,5 @@
         "For an update <code>[2, idx, val]</code>, remove index idx from its old <code>fenw[old_depth]</code> and insert into <code>fenw[new_depth]</code>; for a query <code>[1, l, r, k]</code>, return <code>fenw[k].query(r) - fenw[k].query(l-1)</code>."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:55:08.773Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.081Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.632Z"
 }

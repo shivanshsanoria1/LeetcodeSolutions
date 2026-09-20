@@ -38,6 +38,7 @@
             "slug": "graph"
         }
     ],
+    "exampleTestcases": "[[0,1,2],[0,2,6]]\n[[1,2],[1,0]]\n[[0,1,2],[0,2,6],[0,3,8],[2,4,2],[2,5,4],[3,6,3]]\n[[1,2],[0,4],[6,5],[4,6],[6,1]]",
     "meta": {
         "quesIdLCBackend": 3752,
         "hasSolution": false,
@@ -52,5 +53,5 @@
         "<code>answer[i] = fromRoot[unitA<sub>i</sub>]<sup>-1</sup> * fromRoot[unitB<sub>i</sub>]</code>"
     ],
     "LC_SYNC_ISO": "2026-09-14T16:53:25.910Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.053Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.548Z"
 }

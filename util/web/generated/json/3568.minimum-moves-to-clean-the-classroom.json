@@ -38,6 +38,7 @@
             "slug": "matrix"
         }
     ],
+    "exampleTestcases": "[\"S.\", \"XL\"]\n2\n[\"LS\", \"RL\"]\n4\n[\"L.S\", \"RXL\"]\n3",
     "meta": {
         "quesIdLCBackend": 3870,
         "hasSolution": true,
@@ -53,5 +54,5 @@
         "Maintain a 3D array <code>bestEnergy[x][y][mask]</code> storing the maximum <code>e</code> seen for each <code>(x,y,mask)</code> and skip any new state with <code>e <= bestEnergy[x][y][mask]</code> to prune."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:54:03.016Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.064Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.567Z"
 }

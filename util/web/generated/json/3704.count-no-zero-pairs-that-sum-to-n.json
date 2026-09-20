@@ -26,6 +26,7 @@
             "slug": "dynamic-programming"
         }
     ],
+    "exampleTestcases": "2\n3\n11",
     "meta": {
         "quesIdLCBackend": 4049,
         "hasSolution": false,
@@ -42,5 +43,5 @@
         "Subtract the cases where either number ends up being zero-containing when <code>n</code> itself is no-zero."
     ],
     "LC_SYNC_ISO": "2026-09-14T17:22:27.516Z",
-    "PARSED_ISO": "2026-09-14T17:22:43.730Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.732Z"
 }

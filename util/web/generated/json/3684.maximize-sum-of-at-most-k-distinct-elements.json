@@ -34,6 +34,7 @@
             "slug": "sorting"
         }
     ],
+    "exampleTestcases": "[84,93,100,77,90]\n3\n[84,93,100,77,93]\n3\n[1,1,1,2,2,2]\n6",
     "meta": {
         "quesIdLCBackend": 3997,
         "hasSolution": false,
@@ -47,5 +48,5 @@
         "Use a set to dedupe then sort descending and pick top <code>k</code>."
     ],
     "LC_SYNC_ISO": "2026-09-14T17:11:51.588Z",
-    "PARSED_ISO": "2026-09-14T17:12:06.834Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.709Z"
 }

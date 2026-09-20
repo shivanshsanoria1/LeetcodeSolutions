@@ -22,6 +22,7 @@
             "slug": "array"
         }
     ],
+    "exampleTestcases": "[[1,6],[2,3]]\n[[100,100],[100,100],[100,100]]",
     "meta": {
         "quesIdLCBackend": 4012,
         "hasSolution": false,
@@ -35,5 +36,5 @@
         "Compute <code>finish[i] = s[i] + t[i]</code> for each task and take the minimum."
     ],
     "LC_SYNC_ISO": "2026-09-14T17:11:28.627Z",
-    "PARSED_ISO": "2026-09-14T17:11:34.609Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.708Z"
 }

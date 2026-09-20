@@ -30,6 +30,7 @@
             "slug": "breadth-first-search"
         }
     ],
+    "exampleTestcases": "[3,1,2]\n[1,2,3]\n[1,1,2,3,4,5]\n[5,4,3,2,1,1]",
     "meta": {
         "quesIdLCBackend": 3928,
         "hasSolution": false,
@@ -47,5 +48,5 @@
         "Stop as soon as you dequeue <code>nums2</code>, and return its associated operation count."
     ],
     "LC_SYNC_ISO": "2026-09-14T17:11:56.340Z",
-    "PARSED_ISO": "2026-09-14T17:12:06.837Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.712Z"
 }

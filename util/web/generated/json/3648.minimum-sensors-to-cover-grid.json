@@ -22,6 +22,7 @@
             "slug": "math"
         }
     ],
+    "exampleTestcases": "5\n5\n1\n2\n2\n2",
     "meta": {
         "quesIdLCBackend": 3945,
         "hasSolution": false,
@@ -36,5 +37,5 @@
         "The minimum number is <code>ceil(n / s) * ceil(m / s)</code>."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:55:39.594Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.091Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.646Z"
 }

@@ -36,6 +36,7 @@
             "slug": "combinatorics"
         }
     ],
+    "exampleTestcases": "[1,1,1,1,1,1]\n[1,2,2,3,3,4]\n[0,1,2,3,4,5,6,7,8]",
     "meta": {
         "quesIdLCBackend": 3756,
         "hasSolution": false,
@@ -49,5 +50,5 @@
         "Use the Inclusion-Exclusion Principle to account for the different cases of having a unique middle mode."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:51:22.197Z",
-    "PARSED_ISO": "2026-09-14T16:55:56.993Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.366Z"
 }

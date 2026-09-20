@@ -28,6 +28,7 @@
             "slug": "math"
         }
     ],
+    "exampleTestcases": "[1,2,3,4]\n[[1,2],[2,3],[3,4],[4,5]]\n[1,2,3,4]\n[[1,10],[2,9],[3,8],[4,7]]\n[1,2,1,2]\n[[1,1],[2,3],[3,3],[2,3]]",
     "meta": {
         "quesIdLCBackend": 3785,
         "hasSolution": false,
@@ -44,5 +45,5 @@
         "The answer is the size of the valid range for the last index."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:52:15.673Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.026Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.462Z"
 }

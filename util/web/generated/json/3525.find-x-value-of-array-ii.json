@@ -33,6 +33,7 @@
             "slug": "segment-tree"
         }
     ],
+    "exampleTestcases": "[1,2,3,4,5]\n3\n[[2,2,0,2],[3,3,3,0],[0,1,0,1]]\n[1,2,4,8,16,32]\n4\n[[0,2,0,2],[0,2,0,1]]\n[1,1,2,1,1]\n2\n[[2,1,0,1]]",
     "meta": {
         "quesIdLCBackend": 3840,
         "hasSolution": true,
@@ -49,5 +50,5 @@
         "For each query, update <code>nums[index]</code> to <code>value</code>, then merge the segments corresponding to <code>nums[start..n - 1]</code> to compute the <code>x-value</code> for <code>xi</code>."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:53:11.092Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.049Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.544Z"
 }

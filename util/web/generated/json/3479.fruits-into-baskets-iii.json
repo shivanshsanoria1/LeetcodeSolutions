@@ -36,6 +36,7 @@
             "slug": "ordered-set"
         }
     ],
+    "exampleTestcases": "[4,2,5]\n[3,5,4]\n[3,6,1]\n[6,4,7]",
     "meta": {
         "quesIdLCBackend": 3791,
         "hasSolution": true,
@@ -53,5 +54,5 @@
         "When a valid index is found, set the corresponding point to infinity to mark it as used."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:52:26.941Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.033Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.472Z"
 }

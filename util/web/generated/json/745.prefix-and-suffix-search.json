@@ -56,5 +56,5 @@
         "We use '{' because in ASCii Table, '{' is next to 'z', so we just need to create new TrieNode[27] instead of 26. Also, compared with traditional Trie, we add the attribute weight in class TrieNode.\r\nYou can still choose any different character."
     ],
     "LC_SYNC_ISO": "2026-09-04T20:16:05.523Z",
-    "PARSED_ISO": "2026-09-09T19:00:11.044Z"
+    "PARSED_ISO": "2026-09-20T08:56:15.332Z"
 }

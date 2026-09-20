@@ -47,5 +47,5 @@
         "The final string will contain at least one character that is left unchanged; Therefore, the answer is the minimum of prefix[i] + suffix[i] for every i in [0, n - 1]."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:41:26.366Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.258Z"
+    "PARSED_ISO": "2026-09-20T08:56:13.379Z"
 }

@@ -50,5 +50,5 @@
         "Keep a window of size n - k over the array. The answer is max(answer, total_pts - sumOfCurrentWindow)"
     ],
     "LC_SYNC_ISO": "2026-09-09T17:33:56.900Z",
-    "PARSED_ISO": "2026-09-09T19:00:08.003Z"
+    "PARSED_ISO": "2026-09-20T08:56:10.818Z"
 }

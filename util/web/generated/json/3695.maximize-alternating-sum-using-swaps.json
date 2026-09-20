@@ -34,6 +34,7 @@
             "slug": "sorting"
         }
     ],
+    "exampleTestcases": "[1,2,3]\n[[0,2],[1,2]]\n[1,2,3]\n[[1,2]]\n[1,1000000000,1,1000000000,1,1000000000]\n[]",
     "meta": {
         "quesIdLCBackend": 4010,
         "hasSolution": false,
@@ -49,5 +50,5 @@
         "The component's contribution to the alternating sum is <code>2 * sumTopE - sumAll</code>, where <code>sumTopE</code> is the sum of the largest <code>E</code> values and <code>sumAll</code> is the sum of all values in the component."
     ],
     "LC_SYNC_ISO": "2026-09-14T17:12:01.622Z",
-    "PARSED_ISO": "2026-09-14T17:12:06.839Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.717Z"
 }

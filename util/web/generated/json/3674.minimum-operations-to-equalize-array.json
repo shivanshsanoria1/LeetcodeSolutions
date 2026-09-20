@@ -30,6 +30,7 @@
             "slug": "brainteaser"
         }
     ],
+    "exampleTestcases": "[1,2]\n[5,5,5]",
     "meta": {
         "quesIdLCBackend": 3998,
         "hasSolution": false,
@@ -45,5 +46,5 @@
         "The answer is <code>0</code> if all values in the array are initially equal, and <code>1</code> otherwise, since you can apply the AND operation on the whole array in one step."
     ],
     "LC_SYNC_ISO": "2026-09-14T17:11:20.543Z",
-    "PARSED_ISO": "2026-09-14T17:11:34.590Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.703Z"
 }

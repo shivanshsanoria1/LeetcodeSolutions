@@ -50,5 +50,5 @@
         "Find the smallest rowSum or colSum, and let it be x. Place that number in the grid, and subtract x from rowSum and colSum. Continue until all the sums are satisfied."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:50:36.840Z",
-    "PARSED_ISO": "2026-09-09T19:00:08.163Z"
+    "PARSED_ISO": "2026-09-20T08:56:11.190Z"
 }

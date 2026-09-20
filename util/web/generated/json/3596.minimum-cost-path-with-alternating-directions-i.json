@@ -26,6 +26,7 @@
             "slug": "brainteaser"
         }
     ],
+    "exampleTestcases": "1\n1\n2\n1",
     "meta": {
         "quesIdLCBackend": 3925,
         "hasSolution": false,
@@ -39,5 +40,5 @@
         "There are only three grid sizes for which reaching <code>(m - 1, n - 1)</code> is possible under the move rules: <code>m = 1, n = 1</code>; <code>m = 1, n = 2</code>; <code>m = 2, n = 1</code>."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:54:35.379Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.072Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.614Z"
 }

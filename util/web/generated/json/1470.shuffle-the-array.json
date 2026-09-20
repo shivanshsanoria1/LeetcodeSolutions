@@ -36,5 +36,5 @@
         "Use two pointers to create the new array of 2n elements. The first starting at the beginning and the other starting at (n+1)th position. Alternate between them and create the new array."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:34:57.831Z",
-    "PARSED_ISO": "2026-09-09T19:00:08.024Z"
+    "PARSED_ISO": "2026-09-20T08:56:10.912Z"
 }

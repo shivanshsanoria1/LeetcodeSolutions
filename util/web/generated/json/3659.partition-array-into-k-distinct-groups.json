@@ -30,6 +30,7 @@
             "slug": "counting"
         }
     ],
+    "exampleTestcases": "[1,2,3,4]\n2\n[3,5,2,2]\n2\n[1,5,2,3]\n3",
     "meta": {
         "quesIdLCBackend": 3979,
         "hasSolution": false,
@@ -47,5 +48,5 @@
         "If the total number of elements <code>n</code> is not divisible by <code>k</code>, partitioning is impossible."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:55:55.879Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.095Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.654Z"
 }

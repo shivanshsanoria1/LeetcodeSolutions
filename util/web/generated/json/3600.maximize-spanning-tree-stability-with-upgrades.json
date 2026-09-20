@@ -38,6 +38,7 @@
             "slug": "minimum-spanning-tree"
         }
     ],
+    "exampleTestcases": "3\n[[0,1,2,1],[1,2,3,0]]\n1\n3\n[[0,1,4,0],[1,2,3,0],[0,2,1,0]]\n2\n3\n[[0,1,1,1],[1,2,1,1],[2,0,1,1]]\n0",
     "meta": {
         "quesIdLCBackend": 3902,
         "hasSolution": true,
@@ -56,5 +57,5 @@
         "Don't forget the case where you cannot form an MST because more than one component remains after processing all edges."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:54:40.092Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.073Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.618Z"
 }

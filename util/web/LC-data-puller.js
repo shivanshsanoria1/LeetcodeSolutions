@@ -230,7 +230,7 @@ async function parseRawProblems(baseProblems, rawJSONFilenameMap, parsedJSONFile
 			const problemRaw = await readFromJSON(filePathJSONRaw)
 
 			//needs to be parsed
-			if (!parsedJSONFilenameMap.get(quesId)) {
+			if (webConfig.PARSE_ALL_JSON || !parsedJSONFilenameMap.get(quesId)) {
 				const problem = parseRawProblem(baseProblems, problemRaw, 'full')
 
 				const filePathJSON = path.join(helper.getDirPath('LCProblemsJSONParsed'), filenameJSON)

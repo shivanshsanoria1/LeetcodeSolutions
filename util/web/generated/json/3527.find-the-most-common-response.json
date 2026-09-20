@@ -36,6 +36,7 @@
             "slug": "counting"
         }
     ],
+    "exampleTestcases": "[[\"good\",\"ok\",\"good\",\"ok\"],[\"ok\",\"bad\",\"good\",\"ok\",\"ok\"],[\"good\"],[\"bad\"]]\n[[\"good\",\"ok\",\"good\"],[\"ok\",\"bad\"],[\"bad\",\"notsure\"],[\"great\",\"good\"]]",
     "meta": {
         "quesIdLCBackend": 3707,
         "hasSolution": false,
@@ -49,5 +50,5 @@
         "Use a HashMap."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:53:14.673Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.050Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.545Z"
 }

@@ -48,5 +48,5 @@
         "Iterate over the guards, and for each of the 4 directions, advance the current tile and mark the tile. When should you stop advancing?"
     ],
     "LC_SYNC_ISO": "2026-09-09T18:22:13.721Z",
-    "PARSED_ISO": "2026-09-09T19:00:09.577Z"
+    "PARSED_ISO": "2026-09-20T08:56:12.304Z"
 }

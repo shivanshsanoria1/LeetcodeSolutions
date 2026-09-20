@@ -65,5 +65,5 @@
         "For <code>i > 0</code>, we want to <code>dp[i] = max(dp[j] + 1)</code> where <code>sum(nums[i - 1] + nums[i - 2] +… + nums[j]) >= v[j]</code> and <code>v[j]</code> is the last element of the solution ending with <code>nums[j - 1]</code>."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:46:38.101Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.358Z"
+    "PARSED_ISO": "2026-09-20T08:56:13.689Z"
 }

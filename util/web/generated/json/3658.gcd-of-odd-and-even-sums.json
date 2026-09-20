@@ -26,6 +26,7 @@
             "slug": "number-theory"
         }
     ],
+    "exampleTestcases": "4\n5",
     "meta": {
         "quesIdLCBackend": 3995,
         "hasSolution": true,
@@ -42,5 +43,5 @@
         "<code>gcd(n, n + 1) = 1</code>, so the answer is <code>n</code>"
     ],
     "LC_SYNC_ISO": "2026-09-14T16:55:55.059Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.094Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.653Z"
 }

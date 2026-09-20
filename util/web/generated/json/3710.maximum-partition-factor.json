@@ -42,6 +42,7 @@
             "slug": "graph"
         }
     ],
+    "exampleTestcases": "[[0,0],[0,2],[2,0],[2,2]]\n[[0,0],[0,1],[10,0]]",
     "meta": {
         "quesIdLCBackend": 4035,
         "hasSolution": false,
@@ -58,5 +59,5 @@
         "Check whether the resulting graph is bipartite"
     ],
     "LC_SYNC_ISO": "2026-09-14T17:23:35.089Z",
-    "PARSED_ISO": "2026-09-14T17:23:36.253Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.735Z"
 }

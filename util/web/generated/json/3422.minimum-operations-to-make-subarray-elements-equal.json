@@ -41,6 +41,7 @@
             "slug": "heap-priority-queue"
         }
     ],
+    "exampleTestcases": "[4,-3,2,1,-4,6]\n3\n[-2,-2,3,1,4]\n2",
     "meta": {
         "quesIdLCBackend": 3698,
         "hasSolution": false,
@@ -56,5 +57,5 @@
         "Calculate the sums of the 2 multisets dynamically to accelerate the answer calculation."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:51:29.573Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.003Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.385Z"
 }

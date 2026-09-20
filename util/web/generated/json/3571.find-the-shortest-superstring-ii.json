@@ -24,6 +24,7 @@
             "slug": "string"
         }
     ],
+    "exampleTestcases": "\"aba\"\n\"bab\"\n\"aa\"\n\"aaa\"",
     "meta": {
         "quesIdLCBackend": 3911,
         "hasSolution": false,
@@ -37,5 +38,5 @@
         "Check for the maximum suffix of one string that matches a prefix of the other (in both directions) and merge accordingly."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:54:05.679Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.064Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.570Z"
 }

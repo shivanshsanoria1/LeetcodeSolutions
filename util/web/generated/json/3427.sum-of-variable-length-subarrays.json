@@ -29,6 +29,7 @@
             "slug": "prefix-sum"
         }
     ],
+    "exampleTestcases": "[2,3,1]\n[3,1,1,2]",
     "meta": {
         "quesIdLCBackend": 3731,
         "hasSolution": false,
@@ -42,5 +43,5 @@
         "The constraints are small, so brute force for each index."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:51:34.389Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.007Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.390Z"
 }

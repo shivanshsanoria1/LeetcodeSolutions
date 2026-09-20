@@ -49,5 +49,5 @@
         "If a negative would make the balance go below zero, but you previously accepted a larger negative, replace that larger one with the current smaller one (restore balance, swap in the smaller): this trade increases the number of transactions you can keep."
     ],
     "LC_SYNC_ISO": "2026-09-14T17:45:19.672Z",
-    "PARSED_ISO": "2026-09-14T18:16:57.087Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.736Z"
 }

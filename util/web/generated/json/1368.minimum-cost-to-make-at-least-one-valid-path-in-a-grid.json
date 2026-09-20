@@ -68,5 +68,5 @@
         "Do BFS from (0, 0) visit all edges with weight = 0 first. the answer is the distance to (m -1, n - 1)."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:32:36.207Z",
-    "PARSED_ISO": "2026-09-09T19:00:07.978Z"
+    "PARSED_ISO": "2026-09-20T08:56:10.742Z"
 }

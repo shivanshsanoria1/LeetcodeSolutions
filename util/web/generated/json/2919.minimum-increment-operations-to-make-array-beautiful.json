@@ -44,5 +44,5 @@
         "The answer to the problem is <code>min(dp[n - 1], dp[n - 2], dp[n - 3])</code>."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:46:17.725Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.348Z"
+    "PARSED_ISO": "2026-09-20T08:56:13.635Z"
 }

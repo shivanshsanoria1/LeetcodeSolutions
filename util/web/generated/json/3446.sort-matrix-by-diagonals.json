@@ -32,6 +32,7 @@
             "slug": "matrix"
         }
     ],
+    "exampleTestcases": "[[1,7,3],[9,8,2],[4,5,6]]\n[[0,1],[1,2]]\n[[1]]",
     "meta": {
         "quesIdLCBackend": 3748,
         "hasSolution": true,
@@ -47,5 +48,5 @@
         "Sort and replace them in the matrix."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:51:53.751Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.018Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.407Z"
 }

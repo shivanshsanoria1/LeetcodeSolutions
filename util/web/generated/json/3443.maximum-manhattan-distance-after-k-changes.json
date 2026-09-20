@@ -37,6 +37,7 @@
             "slug": "counting"
         }
     ],
+    "exampleTestcases": "\"NWSE\"\n1\n\"NSWWEW\"\n3",
     "meta": {
         "quesIdLCBackend": 3754,
         "hasSolution": true,
@@ -52,5 +53,5 @@
         "Change up to <code>k</code> characters to maximize the distance in the chosen direction."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:51:50.882Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.016Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.404Z"
 }

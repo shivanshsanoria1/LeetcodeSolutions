@@ -52,5 +52,5 @@
         "<code>dp[0][0] = 2</code> if <code>nums[0]</code> is even, and 1 otherwise (since an empty subsequence has an even sum)."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:58:04.335Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.532Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.077Z"
 }

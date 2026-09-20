@@ -30,6 +30,7 @@
             "slug": "sorting"
         }
     ],
+    "exampleTestcases": "[37,100]\n[22,14,33,7]\n[18,43,34,16]",
     "meta": {
         "quesIdLCBackend": 3847,
         "hasSolution": false,
@@ -44,5 +45,5 @@
         "Now, the problem reduces to finding the minimum number of swaps to sort this mapped array. The answer is <code>n - number_of_cycles</code> in the permutation."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:53:44.986Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.058Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.557Z"
 }

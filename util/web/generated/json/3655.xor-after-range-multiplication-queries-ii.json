@@ -30,6 +30,7 @@
             "slug": "prefix-sum"
         }
     ],
+    "exampleTestcases": "[1,1,1]\n[[0,2,1,4]]\n[2,3,1,5,4]\n[[1,4,2,3],[0,2,1,2]]",
     "meta": {
         "quesIdLCBackend": 3975,
         "hasSolution": true,
@@ -45,5 +46,5 @@
         "For <code>k > B</code>: for each query set <code>idx = l</code> and while <code>idx <= r</code> do <code>nums[idx] = (nums[idx] * v) mod (10^9+7)</code> and <code>idx += k</code>."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:55:50.963Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.093Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.652Z"
 }

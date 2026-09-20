@@ -26,6 +26,7 @@
             "slug": "dynamic-programming"
         }
     ],
+    "exampleTestcases": "4\n[1,2,3,4]\n4\n[5,1,6,2]\n3\n[9,8,3]",
     "meta": {
         "quesIdLCBackend": 4041,
         "hasSolution": false,
@@ -42,5 +43,5 @@
         "Initialize <code>dp[0] = 0</code> and compute up to <code>dp[n]</code>; the answer is <code>dp[n]</code>."
     ],
     "LC_SYNC_ISO": "2026-09-14T17:11:58.732Z",
-    "PARSED_ISO": "2026-09-14T17:12:06.838Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.715Z"
 }

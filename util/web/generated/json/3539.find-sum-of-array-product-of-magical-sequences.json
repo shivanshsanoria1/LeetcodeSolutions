@@ -45,6 +45,7 @@
             "slug": "bitmask"
         }
     ],
+    "exampleTestcases": "5\n5\n[1,10,100,10000,1000000]\n2\n2\n[5,4,3,2,1]\n1\n1\n[28]",
     "meta": {
         "quesIdLCBackend": 3851,
         "hasSolution": true,
@@ -64,5 +65,5 @@
         "How many ways are there to permute a sequence of entities where some are repetitive?"
     ],
     "LC_SYNC_ISO": "2026-09-14T16:53:29.831Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.054Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.550Z"
 }

@@ -46,5 +46,5 @@
         "For index <code>j</code>, the maximum triplet value is <code>(prefix_max[j - 1] - nums[j]) * suffix_max[j + 1]</code>."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:45:38.305Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.332Z"
+    "PARSED_ISO": "2026-09-20T08:56:13.607Z"
 }

@@ -49,5 +49,5 @@
         "Iterate on the buildings, maintaining the largest r jumps and the sum of the remaining ones so far, and stop whenever this sum exceeds b."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:51:17.508Z",
-    "PARSED_ISO": "2026-09-09T19:00:08.183Z"
+    "PARSED_ISO": "2026-09-20T08:56:11.293Z"
 }

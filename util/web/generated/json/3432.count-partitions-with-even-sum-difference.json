@@ -30,6 +30,7 @@
             "slug": "prefix-sum"
         }
     ],
+    "exampleTestcases": "[10,10,3,7,6]\n[1,2,2]\n[2,4,6,8]",
     "meta": {
         "quesIdLCBackend": 3704,
         "hasSolution": true,
@@ -44,5 +45,5 @@
         "If the parity of the sum is even, the partition is valid; otherwise, there is no partition."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:51:40.023Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.011Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.393Z"
 }

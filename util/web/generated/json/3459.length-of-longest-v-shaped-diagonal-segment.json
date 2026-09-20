@@ -34,6 +34,7 @@
             "slug": "matrix"
         }
     ],
+    "exampleTestcases": "[[2,2,1,2,2],[2,0,2,2,0],[2,0,1,1,0],[1,0,2,2,2],[2,0,0,2,2]]\n[[2,2,2,2,2],[2,0,2,2,0],[2,0,1,1,0],[1,0,2,2,2],[2,0,0,2,2]]\n[[1,2,2,2,2],[2,2,2,2,0],[2,0,0,0,0],[0,0,2,2,2],[2,0,0,2,0]]\n[[1]]",
     "meta": {
         "quesIdLCBackend": 3733,
         "hasSolution": true,
@@ -49,5 +50,5 @@
         "Represent dynamic programming states as <code>(row, col, currentDirection, hasMadeTurnYet)</code>. Track the current position, direction of traversal, and whether a turn has already been made, and take transitions accordingly to find the longest V-shaped diagonal segment."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:52:08.092Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.023Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.418Z"
 }

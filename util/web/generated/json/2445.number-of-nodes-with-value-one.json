@@ -53,5 +53,5 @@
         "Iterate on nodes from highest to lowest and count the number of times the query was performed on that node and the number of times this node was updated from its parent (direct or indirect). The parity of that number is the answer."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:24:46.598Z",
-    "PARSED_ISO": "2026-09-09T19:00:09.972Z"
+    "PARSED_ISO": "2026-09-20T08:56:12.623Z"
 }

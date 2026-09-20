@@ -30,6 +30,7 @@
             "slug": "counting"
         }
     ],
+    "exampleTestcases": "\"aaaaabbc\"\n\"abcabcab\"",
     "meta": {
         "quesIdLCBackend": 3753,
         "hasSolution": true,
@@ -44,5 +45,5 @@
         "Use a frequency map to identify the maximum odd and minimum even frequencies. Then, calculate their difference."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:51:50.062Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.016Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.403Z"
 }

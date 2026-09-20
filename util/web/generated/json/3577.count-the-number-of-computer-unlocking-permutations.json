@@ -36,6 +36,7 @@
             "slug": "combinatorics"
         }
     ],
+    "exampleTestcases": "[1,2,3]\n[3,3,3,4,4,4]",
     "meta": {
         "quesIdLCBackend": 3864,
         "hasSolution": true,
@@ -52,5 +53,5 @@
         "The remaining indices from <code>1</code> to <code>n - 1</code> can then be arranged arbitrarily, yielding <code>factorial(n - 1)</code> possible orders."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:54:11.619Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.066Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.573Z"
 }

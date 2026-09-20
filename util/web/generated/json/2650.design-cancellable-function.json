@@ -35,5 +35,5 @@
         "You can throw an error back to a generator function by calling generator.throw(err). If this error isn't caught in the generator function, that will throw an error."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:40:34.999Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.215Z"
+    "PARSED_ISO": "2026-09-20T08:56:13.282Z"
 }

@@ -28,6 +28,7 @@
             "slug": "dynamic-programming"
         }
     ],
+    "exampleTestcases": "[1,7,9,8,2]\r\n2\r\n[12,16,19,19,8,1,19,13,9]\r\n3\r",
     "meta": {
         "quesIdLCBackend": 3892,
         "hasSolution": true,
@@ -44,5 +45,5 @@
         "Transactions transition from completed -> running and from running -> completed."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:54:07.218Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.065Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.571Z"
 }

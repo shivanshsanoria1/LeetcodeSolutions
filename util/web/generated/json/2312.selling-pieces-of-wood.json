@@ -48,5 +48,5 @@
         "Notice that cutting a piece breaks the problem down into smaller subproblems, and selling the piece when available is also a case that terminates the process. Thus, we can use DP to efficiently solve this."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:22:58.366Z",
-    "PARSED_ISO": "2026-09-09T19:00:09.680Z"
+    "PARSED_ISO": "2026-09-20T08:56:12.410Z"
 }

@@ -34,6 +34,7 @@
             "slug": "number-theory"
         }
     ],
+    "exampleTestcases": "[2,4]\n1\n[3,5,7]\n2\n[5,5,5]\n1",
     "meta": {
         "quesIdLCBackend": 3888,
         "hasSolution": false,
@@ -48,5 +49,5 @@
         "Handle the 2s in the factors of elements separately"
     ],
     "LC_SYNC_ISO": "2026-09-14T16:54:08.342Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.065Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.572Z"
 }

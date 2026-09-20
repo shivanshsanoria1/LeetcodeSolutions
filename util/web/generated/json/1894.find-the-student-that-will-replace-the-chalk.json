@@ -51,5 +51,5 @@
         "Now iterate over the array. If chalk[i] is less than k, this is the answer. Otherwise, subtract chalk[i] from k and continue."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:55:53.577Z",
-    "PARSED_ISO": "2026-09-09T19:00:08.555Z"
+    "PARSED_ISO": "2026-09-20T08:56:11.698Z"
 }

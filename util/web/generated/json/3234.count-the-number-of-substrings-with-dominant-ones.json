@@ -44,5 +44,5 @@
         "We cannot iterate over every <code>r</code> and check if the  <code>s[l..r]</code> has dominant ones. Instead, we iterate over the next <code>sqrt(n)</code> zeros to the left of <code>l</code> and count the number of substrings with dominant ones where the current zero is the rightmost zero of the substring."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:57:54.703Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.514Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.064Z"
 }

@@ -45,5 +45,5 @@
         "Iterate right to left and count the number of <code>0</code> that have already occurred, whenever you iterate on <code>1</code> add that counter to the answer."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:46:31.859Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.354Z"
+    "PARSED_ISO": "2026-09-20T08:56:13.685Z"
 }

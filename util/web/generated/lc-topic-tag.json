@@ -2,7 +2,7 @@
     {
         "slug": "array",
         "name": "Array",
-        "freq": 2045,
+        "freq": 2046,
         "color": "#a371f7"
     },
     {
@@ -14,7 +14,7 @@
     {
         "slug": "hash-table",
         "name": "Hash Table",
-        "freq": 768,
+        "freq": 769,
         "color": "#a371f7"
     },
     {
@@ -84,15 +84,15 @@
         "color": "#a371f7"
     },
     {
-        "slug": "two-pointers",
-        "name": "Two Pointers",
+        "slug": "prefix-sum",
+        "name": "Prefix Sum",
         "freq": 236,
         "color": "#a371f7"
     },
     {
-        "slug": "prefix-sum",
-        "name": "Prefix Sum",
-        "freq": 235,
+        "slug": "two-pointers",
+        "name": "Two Pointers",
+        "freq": 236,
         "color": "#a371f7"
     },
     {

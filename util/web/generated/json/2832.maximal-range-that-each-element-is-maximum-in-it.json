@@ -49,5 +49,5 @@
         "After that, we push <code>(nums[index], index)</code> to the stack and go for the next element."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:45:03.678Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.316Z"
+    "PARSED_ISO": "2026-09-20T08:56:13.579Z"
 }

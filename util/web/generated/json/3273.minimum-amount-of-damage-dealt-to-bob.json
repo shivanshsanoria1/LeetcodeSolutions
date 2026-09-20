@@ -47,5 +47,5 @@
         "For any two enemies <code>i</code> and <code>j</code> with damages <code>damage[i]</code> and <code>damage[j]</code>, and time to take each of them down <code>t<sub>i</sub></code> and <code>t<sub>j</sub></code>, when is it better to choose enemy <code>i</code> over enemy <code>j</code> first?"
     ],
     "LC_SYNC_ISO": "2026-09-09T18:58:27.077Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.576Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.097Z"
 }

@@ -36,6 +36,7 @@
             "slug": "sweep-line"
         }
     ],
+    "exampleTestcases": "[[0,0,1],[2,2,1]]\n[[0,0,2],[1,1,1]]",
     "meta": {
         "quesIdLCBackend": 3775,
         "hasSolution": true,
@@ -51,5 +52,5 @@
         "The line must lie in one of the squares."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:52:02.975Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.021Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.415Z"
 }

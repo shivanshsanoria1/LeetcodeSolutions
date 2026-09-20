@@ -40,6 +40,7 @@
             "slug": "ordered-set"
         }
     ],
+    "exampleTestcases": "[4,2,5]\n[3,5,4]\n[3,6,1]\n[6,4,7]",
     "meta": {
         "quesIdLCBackend": 3790,
         "hasSolution": true,
@@ -54,5 +55,5 @@
         "Simulate the operations for each fruit as described"
     ],
     "LC_SYNC_ISO": "2026-09-14T16:52:24.074Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.031Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.471Z"
 }

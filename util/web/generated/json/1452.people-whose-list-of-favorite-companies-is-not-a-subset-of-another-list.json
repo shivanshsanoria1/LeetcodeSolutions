@@ -44,5 +44,5 @@
         "In order to check if a list is a subset of another list, use two pointers technique to get a linear solution for this task. The total complexity will be O(n^2 * m) where n is the number of lists and m is the maximum number of elements in a list."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:34:38.169Z",
-    "PARSED_ISO": "2026-09-09T19:00:08.017Z"
+    "PARSED_ISO": "2026-09-20T08:56:10.893Z"
 }

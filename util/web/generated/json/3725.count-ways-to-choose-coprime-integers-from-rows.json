@@ -60,5 +60,5 @@
         "The final answer is <code>dp[n-1][1]</code> (number of ways with gcd 1)."
     ],
     "LC_SYNC_ISO": "2026-09-16T18:06:14.315Z",
-    "PARSED_ISO": "2026-09-16T18:06:15.565Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.837Z"
 }

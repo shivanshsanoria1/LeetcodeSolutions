@@ -32,6 +32,7 @@
             "slug": "dynamic-programming"
         }
     ],
+    "exampleTestcases": "[1,2,3]\n2\n10\n[0,2,3]\n-5\n12\n[2,2,3,3]\n0\n9",
     "meta": {
         "quesIdLCBackend": 3777,
         "hasSolution": false,
@@ -47,5 +48,5 @@
         "Handle the case where a subsequence has a product of <code>0</code> and an alternating sum of <code>k</code>."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:52:53.779Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.045Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.496Z"
 }

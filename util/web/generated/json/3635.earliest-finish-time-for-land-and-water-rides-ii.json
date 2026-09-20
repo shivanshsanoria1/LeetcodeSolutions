@@ -38,6 +38,7 @@
             "slug": "sorting"
         }
     ],
+    "exampleTestcases": "[2,8]\n[4,1]\n[6]\n[3]\n[5]\n[3]\n[1]\n[10]",
     "meta": {
         "quesIdLCBackend": 3967,
         "hasSolution": true,
@@ -55,5 +56,5 @@
         "For each pairing take the smaller finish time and track the overall minimum."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:55:25.157Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.086Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.638Z"
 }

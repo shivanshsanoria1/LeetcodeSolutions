@@ -61,5 +61,5 @@
         "Answer will be <code>false</code> when any of two sides left-right, left-bottom, right-top or top-bottom are reachable using the edges."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:57:55.523Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.515Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.065Z"
 }

@@ -30,6 +30,7 @@
             "slug": "prefix-sum"
         }
     ],
+    "exampleTestcases": "10\n4\n1\n[0,3,8,10]\n[5,8,3,6]\n5\n5\n1\n[0,1,2,3,5]\n[8,3,9,3,3]",
     "meta": {
         "quesIdLCBackend": 3833,
         "hasSolution": false,
@@ -46,5 +47,5 @@
         "Update the DP by either merging (increment <code>s</code> and <code>j</code>) or not merging (reset <code>s</code>) and adding the appropriate travel time."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:53:29.014Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.053Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.550Z"
 }

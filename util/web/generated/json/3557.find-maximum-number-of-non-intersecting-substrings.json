@@ -34,6 +34,7 @@
             "slug": "greedy"
         }
     ],
+    "exampleTestcases": "\"abcdeafdef\"\n\"bcdaaaab\"",
     "meta": {
         "quesIdLCBackend": 3857,
         "hasSolution": false,
@@ -50,5 +51,5 @@
         "For each index, also store the maximum for <b>any</b> substring ending before that index in the dp."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:53:51.444Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.060Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.561Z"
 }

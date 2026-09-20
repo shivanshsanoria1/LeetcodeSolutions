@@ -48,5 +48,5 @@
         "Create recursive function, given a pointer in a Linked List and any node in the Binary Tree. Check if all the elements in the linked list starting from the head correspond to some downward path in the binary tree."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:32:34.424Z",
-    "PARSED_ISO": "2026-09-09T19:00:07.977Z"
+    "PARSED_ISO": "2026-09-20T08:56:10.740Z"
 }

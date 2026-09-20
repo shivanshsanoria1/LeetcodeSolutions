@@ -36,6 +36,7 @@
             "slug": "combinatorics"
         }
     ],
+    "exampleTestcases": "4\n1\n7\n2",
     "meta": {
         "quesIdLCBackend": 3937,
         "hasSolution": false,
@@ -51,5 +52,5 @@
         "After your DP, let <code>dp_final[j]</code> be the count of numbers <= <code>n</code> that have exactly <code>j</code> ones; the answer is the sum of all <code>dp_final[j]</code> for which <code>depth[j] == k</code>."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:55:04.262Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.081Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.630Z"
 }

@@ -30,6 +30,7 @@
             "slug": "matrix"
         }
     ],
+    "exampleTestcases": "[[1,8],[3,-2]]\n2\n[[3,-1]]\n1\n[[1,-2,3],[2,3,5]]\n2",
     "meta": {
         "quesIdLCBackend": 3884,
         "hasSolution": true,
@@ -44,5 +45,5 @@
         "Use bruteforce over the submatrices"
     ],
     "LC_SYNC_ISO": "2026-09-14T16:54:02.197Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.063Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.567Z"
 }

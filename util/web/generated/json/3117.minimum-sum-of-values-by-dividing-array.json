@@ -64,5 +64,5 @@
         "To calculate the result, we need to support RMQ (range minimum query). Segment tree is one way to do it in <code>O(log(n))</code>. But we can use Monotonic Queue since the ranges are indeed “sliding to right” which can be reduced to the classical minimum value in sliding window problem, for a <code>O(n)</code> solution."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:56:22.713Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.441Z"
+    "PARSED_ISO": "2026-09-20T08:56:13.936Z"
 }

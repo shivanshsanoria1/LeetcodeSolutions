@@ -43,5 +43,5 @@
         "Finally, we can compare the best way to split the operations amongst these two types by finding the minimum time across all onlyFirst[i] + withoutFirst[i + 1]."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:06:21.889Z",
-    "PARSED_ISO": "2026-09-09T19:00:09.427Z"
+    "PARSED_ISO": "2026-09-20T08:56:12.172Z"
 }

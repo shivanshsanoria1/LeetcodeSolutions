@@ -39,5 +39,5 @@
         "It can be proven that from each index <code>i</code>, the optimal solution is to jump to the nearest index <code>j > i</code> such that <code>nums[j] > nums[i]</code>."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:58:33.841Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.588Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.104Z"
 }

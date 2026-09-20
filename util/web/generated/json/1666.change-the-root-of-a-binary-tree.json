@@ -44,5 +44,5 @@
         "Change pointers as asked, make the current node's parent its left child, and make the left child the right one if needed."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:51:40.649Z",
-    "PARSED_ISO": "2026-09-09T19:00:08.199Z"
+    "PARSED_ISO": "2026-09-20T08:56:11.312Z"
 }

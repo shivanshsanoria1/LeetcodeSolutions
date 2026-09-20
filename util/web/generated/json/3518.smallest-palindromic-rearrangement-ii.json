@@ -38,6 +38,7 @@
             "slug": "counting"
         }
     ],
+    "exampleTestcases": "\"abba\"\n2\n\"aa\"\n2\n\"bacab\"\n1",
     "meta": {
         "quesIdLCBackend": 3813,
         "hasSolution": true,
@@ -56,5 +57,5 @@
         "Use combinatorics to compute the number of permutations at each step."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:53:02.997Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.047Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.540Z"
 }

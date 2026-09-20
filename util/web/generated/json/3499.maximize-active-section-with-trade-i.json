@@ -26,6 +26,7 @@
             "slug": "enumeration"
         }
     ],
+    "exampleTestcases": "\"01\"\n\"0100\"\n\"1000100\"\n\"01010\"",
     "meta": {
         "quesIdLCBackend": 3805,
         "hasSolution": true,
@@ -42,5 +43,5 @@
         "Find the maximum <code>delta</code> and add it to the total number of ones in the string."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:52:45.005Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.041Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.487Z"
 }

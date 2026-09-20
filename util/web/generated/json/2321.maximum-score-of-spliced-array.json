@@ -43,5 +43,5 @@
         "Suppose the DP is DP(pos, state). pos is the current position you are in. state is one of {0,1,2}, where 0 means taking the array a, 1 means we are taking the subarray b, and 2 means we are again taking the array a. We need to handle the transitions carefully."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:23:04.712Z",
-    "PARSED_ISO": "2026-09-09T19:00:09.692Z"
+    "PARSED_ISO": "2026-09-20T08:56:12.417Z"
 }

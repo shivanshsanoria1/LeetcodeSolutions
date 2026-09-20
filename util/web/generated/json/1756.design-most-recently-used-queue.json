@@ -72,5 +72,5 @@
         "You can build chunks of size sqrt(n). For each fetch operation, You can search for the chunk which has the ith element and update it (i.e., O(sqrt(n)) per operation), and move this element to an empty chunk at the end."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:53:23.152Z",
-    "PARSED_ISO": "2026-09-09T19:00:08.325Z"
+    "PARSED_ISO": "2026-09-20T08:56:11.423Z"
 }

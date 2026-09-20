@@ -34,6 +34,7 @@
             "slug": "enumeration"
         }
     ],
+    "exampleTestcases": "[3,1,6,8,4]\n24\n[2,5,3,7]\n15",
     "meta": {
         "quesIdLCBackend": 3843,
         "hasSolution": false,
@@ -48,5 +49,5 @@
         "Use bitmasks"
     ],
     "LC_SYNC_ISO": "2026-09-14T16:54:01.173Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.063Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.566Z"
 }

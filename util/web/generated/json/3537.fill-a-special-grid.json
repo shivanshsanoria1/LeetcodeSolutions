@@ -30,6 +30,7 @@
             "slug": "matrix"
         }
     ],
+    "exampleTestcases": "0\n1\n2",
     "meta": {
         "quesIdLCBackend": 3822,
         "hasSolution": false,
@@ -43,5 +44,5 @@
         "Solve the problem recursively."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:53:28.193Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.053Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.549Z"
 }

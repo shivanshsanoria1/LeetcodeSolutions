@@ -48,5 +48,5 @@
         "You just need two states in DP which are last_ind in the permutation and the mask of numbers already used."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:41:50.979Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.278Z"
+    "PARSED_ISO": "2026-09-20T08:56:13.398Z"
 }

@@ -30,6 +30,7 @@
             "slug": "prefix-sum"
         }
     ],
+    "exampleTestcases": "[4,2,8]\n[-1,0,1]\n2\n[5,4,3]\n[1,1,0]\n2",
     "meta": {
         "quesIdLCBackend": 3980,
         "hasSolution": true,
@@ -45,5 +46,5 @@
         "Try every segment of length <code>k</code>: compute the profit delta caused by replacing that segment (using the prefix queries) and take the maximum of <code>base + delta</code>."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:55:46.457Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.092Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.650Z"
 }

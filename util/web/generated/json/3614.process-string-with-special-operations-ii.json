@@ -26,6 +26,7 @@
             "slug": "simulation"
         }
     ],
+    "exampleTestcases": "\"a#b%*\"\n1\n\"cd%#*#\"\n3\n\"z*#\"\n0",
     "meta": {
         "quesIdLCBackend": 3939,
         "hasSolution": true,
@@ -41,5 +42,5 @@
         "Walk backwards through <code>s</code>, undoing each # by using modulus on the tracked lengths, and undoing each % by mirroring across the midpoint, to pinpoint the <code>k</code>th character."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:54:55.659Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.078Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.626Z"
 }

@@ -46,5 +46,5 @@
         "<div class=\"_1l1MA\">The answer is the minimum value of <code>t</code>, such that <code>0 <= t <= n</code> and <code>sum(nums1) + sum(nums2) * t - dp[n][t] <= x</code>, or <code>-1</code> if it doesn’t exist.</div>"
     ],
     "LC_SYNC_ISO": "2026-09-09T18:44:45.159Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.305Z"
+    "PARSED_ISO": "2026-09-20T08:56:13.546Z"
 }

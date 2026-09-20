@@ -57,5 +57,5 @@
         "The third line of thought is also based on this same idea but achieving the result in a different way. We obviously need the window to be sorted for us to be able to find the median. Is there a data-structure out there that we can use (in one or more quantities) to obtain the median element extremely fast, say O(1) time while having the ability to perform the other operations fairly efficiently as well?"
     ],
     "LC_SYNC_ISO": "2026-09-04T20:07:20.328Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.893Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.945Z"
 }

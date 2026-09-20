@@ -47,5 +47,5 @@
         "Keep a max heap of the current class sizes and order them by the change in pass ratio. For each extra student, take the top of the heap, update the class size, and put it back in the heap."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:54:04.929Z",
-    "PARSED_ISO": "2026-09-09T19:00:08.388Z"
+    "PARSED_ISO": "2026-09-20T08:56:11.477Z"
 }

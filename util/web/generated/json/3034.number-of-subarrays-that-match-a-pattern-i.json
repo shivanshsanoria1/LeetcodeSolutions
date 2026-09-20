@@ -49,5 +49,5 @@
         "Iterate over all indices <code>i</code> then, using a second loop, check if the subarray starting at index <code>i</code> matches the pattern."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:47:54.796Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.401Z"
+    "PARSED_ISO": "2026-09-20T08:56:13.778Z"
 }

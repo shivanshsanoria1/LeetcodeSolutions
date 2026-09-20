@@ -68,5 +68,5 @@
         "Following up on the previous hint, we can make use of a min-heap to store the end times of the meetings in various rooms. <br><br>So, every time we want to check if any room is free or not, simply check the topmost element of the min heap as that would be the room that would get free the earliest out of all the other rooms currently occupied.\r\n\r\n<br><br>If the room we extracted from the top of the min heap isn't free, then no other room is. So, we can save time here and simply allocate a new room."
     ],
     "LC_SYNC_ISO": "2026-09-04T19:56:58.007Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.142Z"
+    "PARSED_ISO": "2026-09-20T08:56:13.071Z"
 }

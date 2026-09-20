@@ -22,6 +22,7 @@
             "slug": "math"
         }
     ],
+    "exampleTestcases": "6\n5\n5\n4\n4\n6",
     "meta": {
         "quesIdLCBackend": 3879,
         "hasSolution": false,
@@ -38,5 +39,5 @@
         "To minimize the cost <code>len1 * len2</code>, choose <code>len1</code> and <code>len2</code> as far apart as possible (e.g. <code>1</code> and <code>length−1</code>)."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:53:54.885Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.061Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.563Z"
 }

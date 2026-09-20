@@ -44,5 +44,5 @@
         "Every possibility of expression is of the form a * (b + c) * d where a, b, c, d represent integers. Note the edge cases where a and/or d do not exist, in which case use 1 instead of them."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:21:52.018Z",
-    "PARSED_ISO": "2026-09-09T19:00:09.496Z"
+    "PARSED_ISO": "2026-09-20T08:56:12.279Z"
 }

@@ -53,5 +53,5 @@
         "Based on whether A[i-1] < A[i] < A[i+1], A[i-1] < A[i] > A[i+1], or A[i-1] > A[i] > A[i+1], we are either at the left side, peak, or right side of the mountain.  We can binary search to find the peak.\r\nAfter finding the peak, we can binary search two more times to find whether the value occurs on either side of the peak."
     ],
     "LC_SYNC_ISO": "2026-09-04T20:36:51.343Z",
-    "PARSED_ISO": "2026-09-09T19:00:07.593Z"
+    "PARSED_ISO": "2026-09-20T08:56:09.119Z"
 }

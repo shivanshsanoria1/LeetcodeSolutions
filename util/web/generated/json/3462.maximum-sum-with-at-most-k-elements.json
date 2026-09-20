@@ -38,6 +38,7 @@
             "slug": "matrix"
         }
     ],
+    "exampleTestcases": "[[1,2],[3,4]]\n[1,2]\n2\n[[5,3,7],[8,2,6]]\n[2,2]\n3",
     "meta": {
         "quesIdLCBackend": 3764,
         "hasSolution": false,
@@ -52,5 +53,5 @@
         "Use a max-heap to efficiently pick the largest <code>k</code> elements across all rows."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:52:10.321Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.024Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.420Z"
 }

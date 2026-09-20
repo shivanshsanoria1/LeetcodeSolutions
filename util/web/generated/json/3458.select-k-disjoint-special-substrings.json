@@ -40,6 +40,7 @@
             "slug": "sorting"
         }
     ],
+    "exampleTestcases": "\"abcdbaefab\"\n2\n\"cdefdc\"\n3\n\"abeabe\"\n0",
     "meta": {
         "quesIdLCBackend": 3771,
         "hasSolution": false,
@@ -55,5 +56,5 @@
         "Use dynamic programming on the obtained intervals to check if it's possible to pick at least <code>k</code> disjoint intervals."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:52:07.173Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.023Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.417Z"
 }

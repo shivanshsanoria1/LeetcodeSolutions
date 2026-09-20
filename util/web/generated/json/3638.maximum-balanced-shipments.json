@@ -38,6 +38,7 @@
             "slug": "monotonic-stack"
         }
     ],
+    "exampleTestcases": "[2,5,1,4,3]\n[4,4]",
     "meta": {
         "quesIdLCBackend": 3954,
         "hasSolution": false,
@@ -52,5 +53,5 @@
         "Then set <code>dp[i] = best[j] + 1</code> (using <code>best[-1] = 0</code>), and update <code>best[i] = max(best[i-1], dp[i])</code>; the result is <code>best[n-1]</code>."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:55:28.023Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.087Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.640Z"
 }

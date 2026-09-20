@@ -50,6 +50,7 @@
             "slug": "sorting"
         }
     ],
+    "exampleTestcases": "5\n[1,8,3,4,2]\n3\n[[0,3],[2,4]]\n5\n[5,3,1,9,10]\n2\n[[0,1],[0,2],[2,3],[4,3]]\n3\n[3,6,1]\n1\n[[0,0],[0,1],[1,2]]",
     "meta": {
         "quesIdLCBackend": 3852,
         "hasSolution": true,
@@ -66,5 +67,5 @@
         "Use binary jumping with a sparse table data structure."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:53:23.891Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.052Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.548Z"
 }

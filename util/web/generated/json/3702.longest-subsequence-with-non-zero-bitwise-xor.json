@@ -26,6 +26,7 @@
             "slug": "bit-manipulation"
         }
     ],
+    "exampleTestcases": "[1,2,3]\n[2,3,4]",
     "meta": {
         "quesIdLCBackend": 4033,
         "hasSolution": true,
@@ -42,5 +43,5 @@
         "What if all elements are 0?"
     ],
     "LC_SYNC_ISO": "2026-09-14T17:22:25.386Z",
-    "PARSED_ISO": "2026-09-14T17:22:43.726Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.730Z"
 }

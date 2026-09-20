@@ -48,5 +48,5 @@
         "Consider a window of size <code>pattern.length</code>. If <code>dp1[i] + i == i + pattern.length - 1 - dp2[i + pattern.length - 1]</code>, what does this signify?"
     ],
     "LC_SYNC_ISO": "2026-09-09T18:58:49.512Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.628Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.176Z"
 }

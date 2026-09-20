@@ -26,6 +26,7 @@
             "slug": "greedy"
         }
     ],
+    "exampleTestcases": "\"yz\"\n\"a\"",
     "meta": {
         "quesIdLCBackend": 3999,
         "hasSolution": false,
@@ -41,5 +42,5 @@
         "You can plan operations so characters that need more shifts are advanced first and cause merges that don't increase the total number of moves; therefore the minimum number of moves equals the maximum, over characters appearing in <code>s</code>, of <code>(26 - (ord(c) - ord('a'))) % 26</code>."
     ],
     "LC_SYNC_ISO": "2026-09-14T17:11:22.073Z",
-    "PARSED_ISO": "2026-09-14T17:11:34.592Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.704Z"
 }

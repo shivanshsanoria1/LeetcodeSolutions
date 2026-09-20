@@ -28,6 +28,7 @@
             "slug": "hash-table"
         }
     ],
+    "exampleTestcases": "[3,9,2,1,7]\n3\n[3,9,7,2,1,7]\n4\n[0,0]\n1",
     "meta": {
         "quesIdLCBackend": 3705,
         "hasSolution": true,
@@ -45,5 +46,5 @@
         "If <code>1 < k < n</code>, all elements different from <code>nums[0]</code> and <code>nums[n - 1]</code> will occur in more than one subarray of size <code>k</code>. Hence, the answer is the largest of <code>nums[0]</code> and <code>nums[n - 1]</code> if they both occur exactly once in the array. If one of them occurs more than once, return the other. If both of them occur more than once, return -1."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:52:18.541Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.027Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.466Z"
 }

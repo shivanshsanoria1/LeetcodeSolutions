@@ -49,5 +49,5 @@
         "If adding the current element to the previous best like-time coefficient and its corresponding element sum would increase the best like-time coefficient, then go ahead and add it. Otherwise, keep the previous best like-time coefficient."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:33:25.572Z",
-    "PARSED_ISO": "2026-09-09T19:00:07.995Z"
+    "PARSED_ISO": "2026-09-20T08:56:10.803Z"
 }

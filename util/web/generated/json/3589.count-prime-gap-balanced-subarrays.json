@@ -42,6 +42,7 @@
             "slug": "monotonic-queue"
         }
     ],
+    "exampleTestcases": "[1,2,3]\n1\n[2,3,5,7]\n3",
     "meta": {
         "quesIdLCBackend": 3907,
         "hasSolution": false,
@@ -58,5 +59,5 @@
         "Count subarrays via left/right gap multiplication."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:54:28.722Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.070Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.581Z"
 }

@@ -65,5 +65,5 @@
         "let dp[u][c] := the maximum count of vertices with color c of any path starting from vertex u. (by JerryJin2905)"
     ],
     "LC_SYNC_ISO": "2026-09-09T17:55:10.551Z",
-    "PARSED_ISO": "2026-09-09T19:00:08.493Z"
+    "PARSED_ISO": "2026-09-20T08:56:11.518Z"
 }

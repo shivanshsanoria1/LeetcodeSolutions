@@ -34,6 +34,7 @@
             "slug": "prefix-sum"
         }
     ],
+    "exampleTestcases": "\"LUL\"\n1\n\"UDLR\"\n4\n\"UU\"\n1",
     "meta": {
         "quesIdLCBackend": 4021,
         "hasSolution": false,
@@ -48,5 +49,5 @@
         "Using the prefix sum arrays, compute the <code>x</code>-coordinate and <code>y</code>-coordinate after removing a subarray of size <code>k</code>."
     ],
     "LC_SYNC_ISO": "2026-09-14T17:11:59.962Z",
-    "PARSED_ISO": "2026-09-14T17:12:06.839Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.716Z"
 }

@@ -51,5 +51,5 @@
         "To determine if a server is available, keep track of the end times for each task in a heap and add the server to the available set once the soonest task ending time is less than or equal to the next task to add."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:50:37.769Z",
-    "PARSED_ISO": "2026-09-09T19:00:08.163Z"
+    "PARSED_ISO": "2026-09-20T08:56:11.191Z"
 }

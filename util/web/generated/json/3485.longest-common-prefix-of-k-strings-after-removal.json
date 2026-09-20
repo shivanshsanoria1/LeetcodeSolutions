@@ -30,6 +30,7 @@
             "slug": "trie"
         }
     ],
+    "exampleTestcases": "[\"jump\",\"run\",\"run\",\"jump\",\"run\"]\n2\n[\"dog\",\"racer\",\"car\"]\n2",
     "meta": {
         "quesIdLCBackend": 3784,
         "hasSolution": false,
@@ -47,5 +48,5 @@
         "Use a multiset or similar structure to handle updates efficiently."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:52:32.062Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.037Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.476Z"
 }

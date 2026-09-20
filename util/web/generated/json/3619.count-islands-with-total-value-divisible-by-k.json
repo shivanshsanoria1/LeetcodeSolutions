@@ -40,6 +40,7 @@
             "slug": "matrix"
         }
     ],
+    "exampleTestcases": "[[0,2,1,0,0],[0,5,0,0,5],[0,0,1,0,0],[0,1,4,7,0],[0,2,0,0,8]]\n5\n[[3,0,3,0],[0,3,0,3],[3,0,3,0]]\n3",
     "meta": {
         "quesIdLCBackend": 3823,
         "hasSolution": false,
@@ -53,5 +54,5 @@
         "Use a BFS/DFS to find connected components."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:55:01.598Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.080Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.628Z"
 }

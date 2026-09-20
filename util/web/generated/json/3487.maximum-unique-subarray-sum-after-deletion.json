@@ -32,6 +32,7 @@
             "slug": "greedy"
         }
     ],
+    "exampleTestcases": "[1,2,3,4,5]\n[1,1,0,1,1]\n[1,2,-1,-2,1,0,-1]",
     "meta": {
         "quesIdLCBackend": 3788,
         "hasSolution": true,
@@ -47,5 +48,5 @@
         "Otherwise, the answer is the sum of all unique values that are greater than or equal to zero."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:52:33.495Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.037Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.477Z"
 }

@@ -49,5 +49,5 @@
         "Notice that, if <code>u</code> and <code>v</code> are not connected then the answer is <code>-1</code>, otherwise we can use all the edges from the connected component where both belong to."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:56:15.740Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.437Z"
+    "PARSED_ISO": "2026-09-20T08:56:13.930Z"
 }

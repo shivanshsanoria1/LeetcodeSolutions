@@ -54,5 +54,5 @@
         "Finally, to solve the problem for each connected component, we can notice that if for some node v we fix its position to be in the leftmost group, then we can also evaluate the position of every other node. That position is the depth of the node in a bfs tree after rooting at node v."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:25:24.544Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.073Z"
+    "PARSED_ISO": "2026-09-20T08:56:12.742Z"
 }

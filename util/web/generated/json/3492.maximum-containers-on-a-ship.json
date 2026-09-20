@@ -22,6 +22,7 @@
             "slug": "math"
         }
     ],
+    "exampleTestcases": "2\n3\n15\n3\n5\n20",
     "meta": {
         "quesIdLCBackend": 3817,
         "hasSolution": false,
@@ -36,5 +37,5 @@
         "We can load at most <code>min(n * n, maxWeight / w)</code> containers."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:52:38.415Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.039Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.483Z"
 }

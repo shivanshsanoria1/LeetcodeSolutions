@@ -68,5 +68,5 @@
         "Perform a breadth-first-search, where the nodes are the puzzle boards and edges are if two puzzle boards can be transformed into one another with one move."
     ],
     "LC_SYNC_ISO": "2026-09-04T20:16:25.068Z",
-    "PARSED_ISO": "2026-09-09T19:00:11.064Z"
+    "PARSED_ISO": "2026-09-20T08:56:15.357Z"
 }

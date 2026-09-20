@@ -34,6 +34,7 @@
             "slug": "geometry"
         }
     ],
+    "exampleTestcases": "[[-3,2],[3,0],[2,3],[3,2],[2,-3]]\n[[0,0],[1,0],[0,1],[2,1]]",
     "meta": {
         "quesIdLCBackend": 3897,
         "hasSolution": true,
@@ -52,5 +53,5 @@
         "Final answer = total valid base-pairs minus parallelogram overcounts."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:55:09.997Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.082Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.633Z"
 }

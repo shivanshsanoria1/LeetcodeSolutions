@@ -49,5 +49,5 @@
         "Use a min heap to hold all the numbers. Each time we do an operation, replace the top of the heap x by x + 1."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:21:52.731Z",
-    "PARSED_ISO": "2026-09-09T19:00:09.499Z"
+    "PARSED_ISO": "2026-09-20T08:56:12.279Z"
 }

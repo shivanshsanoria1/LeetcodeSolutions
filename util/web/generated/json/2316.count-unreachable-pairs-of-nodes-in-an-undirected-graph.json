@@ -52,5 +52,5 @@
         "The number of unreachable nodes from node u will be the same for the number of nodes that are unreachable from node v if nodes u and v belong to the same connected component."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:23:01.234Z",
-    "PARSED_ISO": "2026-09-09T19:00:09.682Z"
+    "PARSED_ISO": "2026-09-20T08:56:12.412Z"
 }

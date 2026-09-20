@@ -51,5 +51,5 @@
         "Let <code>c</code> be the number of occurences of a digit on a position, that will contribute with <code>c * (n - c)</code> to the final answer, where <code>n</code> is the number of integers in <code>nums</code>."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:56:53.234Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.458Z"
+    "PARSED_ISO": "2026-09-20T08:56:13.992Z"
 }

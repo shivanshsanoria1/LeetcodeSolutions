@@ -37,5 +37,5 @@
         "After noticing the first hint, we can decompose the whole string into disjoint blocks of size <code>2</code> and find the minimum number of changes required to make those blocks beautiful."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:46:14.035Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.347Z"
+    "PARSED_ISO": "2026-09-20T08:56:13.632Z"
 }

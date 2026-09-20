@@ -26,6 +26,7 @@
             "slug": "simulation"
         }
     ],
+    "exampleTestcases": "\"a#b%*\"\n\"z*#\"",
     "meta": {
         "quesIdLCBackend": 3931,
         "hasSolution": true,
@@ -40,5 +41,5 @@
         "Simulate as described"
     ],
     "LC_SYNC_ISO": "2026-09-14T16:54:53.816Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.077Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.625Z"
 }

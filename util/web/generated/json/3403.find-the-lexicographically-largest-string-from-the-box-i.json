@@ -33,6 +33,7 @@
             "slug": "enumeration"
         }
     ],
+    "exampleTestcases": "\"dbca\"\n2\n\"gggg\"\n4",
     "meta": {
         "quesIdLCBackend": 3683,
         "hasSolution": true,
@@ -47,5 +48,5 @@
         "Find lexicographically largest substring of size <code>n - numFriends + 1</code> or less starting at every index."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:48:39.479Z",
-    "PARSED_ISO": "2026-09-14T16:48:46.930Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.328Z"
 }

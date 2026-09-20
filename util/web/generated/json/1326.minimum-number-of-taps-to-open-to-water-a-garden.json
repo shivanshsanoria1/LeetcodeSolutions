@@ -46,5 +46,5 @@
         "What if there is a gap between intervals that is not covered ? we should stop and return -1 as there is some interval that cannot be covered."
     ],
     "LC_SYNC_ISO": "2026-09-09T17:31:41.318Z",
-    "PARSED_ISO": "2026-09-09T19:00:07.956Z"
+    "PARSED_ISO": "2026-09-20T08:56:10.503Z"
 }

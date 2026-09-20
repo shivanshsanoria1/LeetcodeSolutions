@@ -34,6 +34,7 @@
             "slug": "matrix"
         }
     ],
+    "exampleTestcases": "[\"A..\",\".A.\",\"...\"]\n[\".#...\",\".#.#.\",\".#.#.\",\"...#.\"]",
     "meta": {
         "quesIdLCBackend": 3837,
         "hasSolution": false,
@@ -49,5 +50,5 @@
         "Use Breadth-First Search to find the minimum number of moves."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:53:46.322Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.058Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.558Z"
 }

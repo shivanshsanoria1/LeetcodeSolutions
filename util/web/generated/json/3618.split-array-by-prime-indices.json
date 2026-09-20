@@ -30,6 +30,7 @@
             "slug": "number-theory"
         }
     ],
+    "exampleTestcases": "[2,3,4]\n[-1,5,7,0]",
     "meta": {
         "quesIdLCBackend": 3936,
         "hasSolution": false,
@@ -44,5 +45,5 @@
         "Iterate through <code>nums</code>, adding <code>nums[i]</code> to <code>sumA</code> if <code>i</code> is prime, otherwise to <code>sumB</code>, then return <code>|sumA - sumB|</code>."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:55:00.373Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.079Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.628Z"
 }

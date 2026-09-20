@@ -46,6 +46,7 @@
             "slug": "ordered-set"
         }
     ],
+    "exampleTestcases": "[5,2,3,1]\n[1,2,2]",
     "meta": {
         "quesIdLCBackend": 3773,
         "hasSolution": true,
@@ -60,5 +61,5 @@
         "Simulate the operations"
     ],
     "LC_SYNC_ISO": "2026-09-14T16:52:52.345Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.044Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.495Z"
 }

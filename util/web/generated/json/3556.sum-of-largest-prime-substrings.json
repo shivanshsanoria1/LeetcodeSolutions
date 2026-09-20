@@ -38,6 +38,7 @@
             "slug": "number-theory"
         }
     ],
+    "exampleTestcases": "\"12234\"\n\"111\"",
     "meta": {
         "quesIdLCBackend": 3815,
         "hasSolution": false,
@@ -53,5 +54,5 @@
         "Store unique primes, then sum the three largest (or all if fewer than three)."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:53:50.562Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.059Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.560Z"
 }

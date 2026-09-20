@@ -36,6 +36,7 @@
             "slug": "number-theory"
         }
     ],
+    "exampleTestcases": "\"3902\"\n\"34789\"",
     "meta": {
         "quesIdLCBackend": 3774,
         "hasSolution": false,
@@ -51,5 +52,5 @@
         "Use Lucas's theorem."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:52:11.341Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.024Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.420Z"
 }

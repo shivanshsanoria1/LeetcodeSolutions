@@ -42,5 +42,5 @@
         "Scan through the array to find the unique largest element `m`, keeping track of it's index `maxIndex`.\r\n\r\nScan through the array again.  If we find some `x != m` with `m < 2*x`, we should return `-1`.\r\n\r\nOtherwise, we should return `maxIndex`."
     ],
     "LC_SYNC_ISO": "2026-09-04T20:16:06.784Z",
-    "PARSED_ISO": "2026-09-09T19:00:11.045Z"
+    "PARSED_ISO": "2026-09-20T08:56:15.334Z"
 }

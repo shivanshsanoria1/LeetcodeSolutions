@@ -34,6 +34,7 @@
             "slug": "enumeration"
         }
     ],
+    "exampleTestcases": "\"a\"\n\"a\"\n\"abc\"\n\"def\"\n\"b\"\n\"aaaa\"\n\"abcde\"\n\"ecdba\"",
     "meta": {
         "quesIdLCBackend": 3793,
         "hasSolution": false,
@@ -47,5 +48,5 @@
         "Brute force"
     ],
     "LC_SYNC_ISO": "2026-09-14T16:52:48.246Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.042Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.492Z"
 }

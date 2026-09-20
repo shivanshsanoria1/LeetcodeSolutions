@@ -34,6 +34,7 @@
             "slug": "counting"
         }
     ],
+    "exampleTestcases": "41\n20",
     "meta": {
         "quesIdLCBackend": 3924,
         "hasSolution": false,
@@ -47,5 +48,5 @@
         "Simulate as described"
     ],
     "LC_SYNC_ISO": "2026-09-14T16:54:16.230Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.067Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.576Z"
 }

@@ -45,5 +45,5 @@
         "Notice that arr[i] ^ pref[i-1] = pref[i]. This is the same as the previous equation."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:24:37.172Z",
-    "PARSED_ISO": "2026-09-09T19:00:09.942Z"
+    "PARSED_ISO": "2026-09-20T08:56:12.561Z"
 }

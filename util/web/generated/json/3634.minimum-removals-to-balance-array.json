@@ -34,6 +34,7 @@
             "slug": "sorting"
         }
     ],
+    "exampleTestcases": "[2,1,5]\n2\n[1,6,2,9]\n3\n[4,6]\n2",
     "meta": {
         "quesIdLCBackend": 3958,
         "hasSolution": true,
@@ -49,5 +50,5 @@
         "Expand <code>j</code> while <code>nums[j] <= k * nums[i]</code> to maximize the balanced window; answer = <code>n - (j - i + 1)</code>."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:55:22.287Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.086Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.638Z"
 }

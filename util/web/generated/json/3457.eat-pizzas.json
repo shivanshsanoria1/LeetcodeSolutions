@@ -30,6 +30,7 @@
             "slug": "sorting"
         }
     ],
+    "exampleTestcases": "[1,2,3,4,5,6,7,8]\n[2,1,1,1,1,1,1,1]",
     "meta": {
         "quesIdLCBackend": 3779,
         "hasSolution": false,
@@ -46,5 +47,5 @@
         "Select the remaining pizzas for the even-numbered days."
     ],
     "LC_SYNC_ISO": "2026-09-14T16:52:06.044Z",
-    "PARSED_ISO": "2026-09-14T16:55:57.022Z"
+    "PARSED_ISO": "2026-09-20T08:56:14.416Z"
 }

@@ -41,5 +41,5 @@
         "To calculate dp[k][j], you can iterate over the numbers smaller than j and try to use each one as a power of x to make our sum k."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:42:27.963Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.297Z"
+    "PARSED_ISO": "2026-09-20T08:56:13.431Z"
 }

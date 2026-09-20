@@ -45,5 +45,5 @@
         "Otherwise, all of the subarrays should have a score of <code>0</code>, we can greedily split the array while trying to make each subarray as small as possible."
     ],
     "LC_SYNC_ISO": "2026-09-09T18:45:35.748Z",
-    "PARSED_ISO": "2026-09-09T19:00:10.331Z"
+    "PARSED_ISO": "2026-09-20T08:56:13.604Z"
 }
